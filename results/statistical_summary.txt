@@ -1,0 +1,18 @@
+STATISTICAL ANALYSIS SUMMARY
+======================================================================
+
+TWO-WAY ANOVA RESULTS
+----------------------------------------------------------------------
+Architecture: F=227.77, p<0.001, η²=0.407
+Strategy: F=118.59, p<0.001, η²=0.323
+Interaction: F=140.89, p<0.001
+
+POST-HOC COMPARISONS
+----------------------------------------------------------------------
+Hybrid vs Pure AI:
+  Difference: 0.0221 (3.7% improvement)
+  t=5.98, p<0.001, Cohen's d=0.536
+
+Experiential vs Traditional:
+  Difference: 0.0278 (4.6% improvement)
+  t=6.17, p<0.001, Cohen's d=0.618

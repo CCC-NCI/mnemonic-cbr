@@ -1,0 +1,35 @@
+{
+  "traditional_baseline": 0.658,
+  "pure_cbr": {
+    "mean": 0.6053599999999999,
+    "std": 1.1102230246251565e-16,
+    "improvement_pct": 8.00000000000002,
+    "expected_improvement": "8%"
+  },
+  "pure_ai": {
+    "mean": 0.5856200000000001,
+    "std": 1.1102230246251565e-16,
+    "improvement_pct": 10.999999999999982,
+    "expected_improvement": "11%"
+  },
+  "hybrid_mnemonic": {
+    "mean": 0.5593000000000001,
+    "std": 1.1102230246251565e-16,
+    "improvement_pct": 14.999999999999982,
+    "expected_improvement": "15%"
+  },
+  "mnemonic_stats": {
+    "num_chunks": 10,
+    "avg_chunk_size": 20.0,
+    "network_nodes": 200,
+    "network_edges": 57,
+    "network_density": 0.002864321608040201,
+    "retrieval_cues_defined": 5,
+    "elaborated_cases": 200
+  },
+  "meta": {
+    "n_cases": 200,
+    "n_test_queries": 20,
+    "data_path": "data/all_train.csv"
+  }
+}

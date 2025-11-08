@@ -1,0 +1,86 @@
+{
+  "mnemonic_ablations": {
+    "results": [
+      {
+        "configuration": "full_system",
+        "disabled_technique": "none",
+        "mean_performance": 0.38078048442754797,
+        "std_performance": 0.0,
+        "improvement_vs_baseline": -36.53658592874201
+      },
+      {
+        "configuration": "no_chunking",
+        "disabled_technique": "chunking",
+        "mean_performance": 0.38078048442754797,
+        "std_performance": 0.0,
+        "improvement_vs_baseline": -36.53658592874201
+      },
+      {
+        "configuration": "no_associative",
+        "disabled_technique": "associative",
+        "mean_performance": 0.38078048442754797,
+        "std_performance": 0.0,
+        "improvement_vs_baseline": -36.53658592874201
+      },
+      {
+        "configuration": "no_retrieval_cues",
+        "disabled_technique": "retrieval_cues",
+        "mean_performance": 0.39193094245373417,
+        "std_performance": 0.0,
+        "improvement_vs_baseline": -34.678176257710966
+      },
+      {
+        "configuration": "no_elaboration",
+        "disabled_technique": "elaboration",
+        "mean_performance": 0.38078048442754797,
+        "std_performance": 0.0,
+        "improvement_vs_baseline": -36.53658592874201
+      }
+    ],
+    "technique_contributions": {
+      "chunking": 0.0,
+      "associative": 0.0,
+      "retrieval_cues": -2.928316571409746,
+      "elaboration": 0.0
+    },
+    "baseline_performance": 0.6
+  },
+  "llm_ablations": {
+    "results": [
+      {
+        "configuration": "baseline",
+        "description": "No CBR or AI",
+        "mean_mae": 0.1263165304757245,
+        "std_mae": 0.0
+      },
+      {
+        "configuration": "pure_cbr",
+        "description": "CBR only (no LLM)",
+        "mean_mae": 0.0959985081483439,
+        "std_mae": 0.0,
+        "improvement_vs_baseline": 24.00162687591163
+      },
+      {
+        "configuration": "pure_ai",
+        "description": "LLM only (no CBR)",
+        "mean_mae": 0.09506848947805593,
+        "std_mae": 0.0036680901522095247,
+        "improvement_vs_baseline": 24.737887337456446
+      },
+      {
+        "configuration": "hybrid",
+        "description": "Full Hybrid (CBR + LLM)",
+        "mean_mae": 0.04048292351603505,
+        "std_mae": 0.0,
+        "improvement_vs_baseline": 67.95120688988916
+      }
+    ],
+    "baseline_mae": 0.1263165304757245
+  },
+  "metadata": {
+    "n_cases": 100,
+    "n_trials": 5,
+    "use_real_llm": true,
+    "llm_model": "gpt-3.5-turbo"
+  }
+}

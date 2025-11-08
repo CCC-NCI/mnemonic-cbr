@@ -1,0 +1,137 @@
+{
+  "method": "4-fold cross-validation",
+  "metric": "Mean Absolute Error (MAE) - lower is better",
+  "n_total_cases": 200,
+  "n_folds": 4,
+  "sampled_from_full_dataset": false,
+  "fold_results": [
+    {
+      "fold": 1,
+      "n_train": 150,
+      "n_test": 50,
+      "baseline": {
+        "mean": 0.13285372725941316,
+        "std": 0.08117053330049492
+      },
+      "pure_cbr_baseline": {
+        "mean": 0.10476164816466599,
+        "std": 0.07235786758568157,
+        "improvement_pct": 21.145119278357882
+      },
+      "pure_ai_baseline": {
+        "mean": 0.10134560299403012,
+        "std": 0.0811058513299847,
+        "improvement_pct": 23.716402178058264
+      },
+      "hybrid_mnemonic": {
+        "mean": 0.0215034980939799,
+        "std": 0.016574097084719807,
+        "improvement_pct": 83.81415520846345
+      }
+    },
+    {
+      "fold": 2,
+      "n_train": 150,
+      "n_test": 50,
+      "baseline": {
+        "mean": 0.12927081164205634,
+        "std": 0.08859288638331922
+      },
+      "pure_cbr_baseline": {
+        "mean": 0.10338714662360146,
+        "std": 0.06527315717331328,
+        "improvement_pct": 20.022822390970436
+      },
+      "pure_ai_baseline": {
+        "mean": 0.11278586489736314,
+        "std": 0.07694600160457205,
+        "improvement_pct": 12.75225747815299
+      },
+      "hybrid_mnemonic": {
+        "mean": 0.029725197013411853,
+        "std": 0.025757124403106745,
+        "improvement_pct": 77.00548435038897
+      }
+    },
+    {
+      "fold": 3,
+      "n_train": 150,
+      "n_test": 50,
+      "baseline": {
+        "mean": 0.11719269531880254,
+        "std": 0.07366710497374818
+      },
+      "pure_cbr_baseline": {
+        "mean": 0.09187169650353573,
+        "std": 0.054965044275885486,
+        "improvement_pct": 21.606294442145387
+      },
+      "pure_ai_baseline": {
+        "mean": 0.08488397648950649,
+        "std": 0.058491927480923224,
+        "improvement_pct": 27.568884512303214
+      },
+      "hybrid_mnemonic": {
+        "mean": 0.02029068136772084,
+        "std": 0.01249380487506069,
+        "improvement_pct": 82.68605281880109
+      }
+    },
+    {
+      "fold": 4,
+      "n_train": 150,
+      "n_test": 50,
+      "baseline": {
+        "mean": 0.13258253716280824,
+        "std": 0.09199431803005931
+      },
+      "pure_cbr_baseline": {
+        "mean": 0.10072329637862008,
+        "std": 0.07866844546903203,
+        "improvement_pct": 24.029741371645162
+      },
+      "pure_ai_baseline": {
+        "mean": 0.11298328695085509,
+        "std": 0.09675574655660484,
+        "improvement_pct": 14.782678497007288
+      },
+      "hybrid_mnemonic": {
+        "mean": 0.018774588273769526,
+        "std": 0.020145832325487938,
+        "improvement_pct": 85.83932041463743
+      }
+    }
+  ],
+  "aggregated_results": {
+    "baseline": {
+      "mean_across_folds": 0.12797494284577007,
+      "std_across_folds": 0.00638295778646536,
+      "improvement": "0% (reference)"
+    },
+    "pure_cbr_baseline": {
+      "mean_across_folds": 0.10018594691760582,
+      "std_across_folds": 0.005014983196660073,
+      "mean_improvement": 21.700994370779714,
+      "std_improvement": 1.4626422138304311
+    },
+    "pure_ai_baseline": {
+      "mean_across_folds": 0.10299968283293871,
+      "std_across_folds": 0.011471230394080375,
+      "mean_improvement": 19.70505566638044,
+      "std_improvement": 6.13396088588976
+    },
+    "hybrid_mnemonic": {
+      "mean_across_folds": 0.022573491187220532,
+      "std_across_folds": 0.00424071531294522,
+      "mean_improvement": 82.33625319807274,
+      "std_improvement": 3.27853361116615
+    }
+  },
+  "teaching_personas_tested": [
+    "socratic",
+    "constructive",
+    "experiential",
+    "rule_based",
+    "traditional_teaching"
+  ]
+}

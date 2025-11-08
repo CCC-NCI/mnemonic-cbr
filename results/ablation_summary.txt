@@ -1,0 +1,23 @@
+COMPREHENSIVE ABLATION STUDY RESULTS
+======================================================================
+
+PART 1: MNEMONIC TECHNIQUE CONTRIBUTIONS
+----------------------------------------------------------------------
+chunking            :    0.0% degradation when removed
+associative         :    0.0% degradation when removed
+retrieval_cues      :   -2.9% degradation when removed
+elaboration         :    0.0% degradation when removed
+
+PART 2: LLM INTEGRATION IMPROVEMENTS
+----------------------------------------------------------------------
+Baseline (no AI/CBR)          : MAE = 0.1263
+CBR only (no LLM)             : MAE = 0.0960 (+24.0%)
+LLM only (no CBR)             : MAE = 0.0951 (+24.7%)
+Full Hybrid (CBR + LLM)       : MAE = 0.0405 (+68.0%)
+
+KEY FINDINGS:
+----------------------------------------------------------------------
+Most critical mnemonic: chunking (0.0% contribution)
+Best system: Full Hybrid (CBR + LLM) (MAE = 0.0405)
+
+Used real LLM: Yes (GPT-3.5)
