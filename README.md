@@ -5,16 +5,7 @@ _A Hybrid Case-Based Reasoning and AI Simulation Framework for Mathematics Educa
 
 ## Project Summary
 
-This repository offers the full simulation framework, results, and persona prompt engineering for the IJAIED 2025 article "Comparing Teaching Strategies through Misconception Analysis: A Case-Based AI Framework Using the EEDI Dataset".
-
-It simulates five teaching approaches (Socratic, Constructive, Experiential, Rule-Based, Traditional) addressing math misconception using mnemonic-augmented case-based reasoning (CBR) and large language models (GPT-3.5-turbo). 
-All results are based solely on learning outcomes reconstructed from cases of the EEDI Dataset. No real classroom learning outcomes are measured or claimed.
-
-
-The system works with or without LLM support. To use AI-generated teaching interventions, set an OpenAI API key. Without a key, run in CBR-only mode by adding `--no-llm` to a command.
-
-
-
+This repository offers the full simulation framework, results, and persona prompt engineering for the IJAIED 2025 article "Comparing Teaching Strategies through Misconception Analysis: A Case-Based AI Framework Using the EEDI Dataset". It simulates five teaching approaches (Socratic, Constructive, Experiential, Rule-Based, Traditional) addressing math misconception using mnemonic-augmented case-based reasoning (CBR) and large language models (GPT-3.5-turbo). All results are based solely on learning outcomes reconstructed from cases of the EEDI Dataset. No real classroom learning outcomes are measured or claimed. The system works with or without LLM support. To use AI-generated teaching interventions, set an OpenAI API key. Without a key, run in CBR-only mode by adding `--no-llm` to a command.
 
 
 
