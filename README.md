@@ -1,4 +1,5 @@
-# Comparing Teaching Strategies through Misconception Analysis
+# Codebase for  
+# Dovetailing Case-Based Reasoning and Large Language Models to Compare Teaching Strategies: A Mnemonic Augmentation Framework using the EEDI Dataset
 _A Hybrid Case-Based Reasoning and AI Simulation Framework for Mathematics Education (IJAIED 2025)_
 
 ---
