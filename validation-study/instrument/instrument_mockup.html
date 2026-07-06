@@ -1,0 +1,647 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Rating Tutoring Dialogues — Mockup (rev 4)</title>
+<style>
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    max-width: 740px;
+    margin: 32px auto;
+    padding: 0 24px;
+    color: #222;
+    line-height: 1.55;
+    background: #fafafa;
+  }
+  h1 { font-size: 22px; margin: 0 0 16px; }
+  h2 { font-size: 17px; margin: 18px 0 8px; }
+  .screen {
+    display: none;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 24px;
+    margin-bottom: 24px;
+  }
+  .screen.active { display: block; }
+  .progress {
+    font-size: 13px;
+    color: #777;
+    margin-bottom: 6px;
+  }
+  .misc {
+    font-size: 14px;
+    color: #444;
+    margin: 12px 0;
+    padding: 8px 12px;
+    background: #f3f6fa;
+    border-left: 3px solid #6b8eb5;
+    border-radius: 3px;
+  }
+  .turn {
+    margin: 10px 0;
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  .turn.student { background: #f3f3f3; }
+  .turn.teacher { background: #f7f0e8; }
+  .speaker {
+    font-weight: 600;
+    margin-right: 6px;
+    color: #555;
+  }
+  .rubric {
+    margin: 14px 0;
+    padding: 12px;
+    background: #fbfbfb;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+  }
+  .rubric h3 {
+    margin: 0 0 6px;
+    font-size: 14px;
+    color: #333;
+  }
+  .rubric .def {
+    font-size: 13px;
+    color: #555;
+    margin-bottom: 8px;
+  }
+  .rubric .disambig {
+    font-size: 12px;
+    color: #666;
+    font-style: italic;
+    margin: 4px 0 8px;
+  }
+  .radio-row { display: flex; gap: 16px; flex-wrap: wrap; }
+  .radio-row label {
+    font-size: 13px;
+    cursor: pointer;
+    user-select: none;
+  }
+  .radio-row label input { margin-right: 4px; }
+  textarea { width: 100%; box-sizing: border-box; }
+  button {
+    padding: 8px 16px;
+    font-size: 14px;
+    border: 1px solid #888;
+    border-radius: 4px;
+    background: #fff;
+    cursor: pointer;
+    margin-top: 12px;
+  }
+  button:disabled {
+    color: #aaa;
+    border-color: #ddd;
+    cursor: not-allowed;
+  }
+  button.primary {
+    background: #2b5a9d;
+    color: #fff;
+    border-color: #2b5a9d;
+  }
+  button.primary:disabled {
+    background: #ccc;
+    border-color: #ccc;
+    color: #888;
+  }
+  .consent-row {
+    margin: 6px 0;
+    font-size: 14px;
+  }
+  .scoring-instr {
+    font-size: 13px;
+    color: #444;
+    background: #fff8e6;
+    border-left: 3px solid #d6a04a;
+    padding: 8px 12px;
+    border-radius: 3px;
+    margin: 10px 0;
+  }
+  .feedback-box {
+    background: #eef5ee;
+    border: 1px solid #b6d2b6;
+    padding: 12px;
+    border-radius: 4px;
+    margin: 10px 0 14px;
+    font-size: 13px;
+    color: #2a4a2a;
+    display: none;
+  }
+  .mockup-banner {
+    background: #fffbe6;
+    border: 1px solid #f0c040;
+    color: #6d5200;
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-size: 13px;
+    margin-bottom: 18px;
+  }
+  .debrief-code {
+    font-family: "SF Mono", "Menlo", "Consolas", monospace;
+    font-size: 18px;
+    background: #f3f3f3;
+    border: 1px solid #ddd;
+    padding: 8px 16px;
+    border-radius: 4px;
+    display: inline-block;
+    margin: 10px 0;
+  }
+  .small { font-size: 13px; color: #666; }
+  /* Mockup-only elements (rev banner, placeholder explanations).
+     Live deployment sets MOCKUP_MODE=false in the script below and the
+     elements wrapped in .mockup-only get hidden, so the rater never
+     sees pilot-time meta-narration. */
+  .mockup-only { display: none; }
+  body.mockup-mode .mockup-only { display: block; }
+</style>
+</head>
+<body>
+
+<!--
+  Rev 4 (16 June 2026): low R5 sentinel = case_11 socratic pure_cbr_llm leg_b
+  (3D nets, LLM scores R1=2 R2=3 R3=2 R4=4 R5=1 R6=5), distinct from the
+  high R5 sentinel (100-minutes-per-hour). R2 sentinel pass bands anchored to
+  the co-author calibration-pilot expert consensus, not to the LLM judge.
+  Per-rater response-constancy exclusion check and the second practice trial
+  are both registered in the OSF deposit. Stage 3 covers R5 and R2.
+  Rev 4.1 (comment 6): banner shortened; rev detail moved into this comment.
+-->
+<div class="mockup-banner mockup-only">
+  <strong>Mockup mode.</strong> No data is sent. Walk through the rater experience end to end.
+</div>
+
+<!-- Screen 1: Welcome -->
+<div class="screen active" data-screen="welcome">
+  <h1>Assessing tutorial dialogues in math</h1>
+  <p>You will read short conversations between a maths teacher and a student. Each conversation has five turns. You will give each conversation two scores on a 1 to 5 scale.</p>
+  <p>You will read about <strong>32</strong> conversations. The task takes about <strong>20</strong> minutes. You can stop at any time.</p>
+  <!-- The numbers 32 and 20 are illustrative for the mockup. In live deployment
+       they are templated from the design quantity (N_DIALOGUES_PER_ASSIGNMENT)
+       and the timing-pilot result (TIMING_PILOT_MINUTES). See INSTRUMENT_SPEC §Targets. -->
+
+  <h2>Quick example, so you can see if the maths is comfortable</h2>
+  <p class="small">The dialogues are short. Here is a full five-turn example to give you a feel. You do not score this one &mdash; just read it.</p>
+  <div class="misc"><strong>Student's misconception:</strong> Believes you can add fractions by adding the numerators and the denominators separately.</div>
+  <div class="turn student"><span class="speaker">S0</span>For 1/2 + 1/3, I got 2/5 because I added the tops and the bottoms.</div>
+  <div class="turn teacher"><span class="speaker">T1</span>Can you think about what one half and one third look like as parts of a whole? What might be tricky about adding them this way?</div>
+  <div class="turn student"><span class="speaker">S2</span>Hmm, a half is bigger than a third. So a half of a cake plus a third of a cake should be more than a half. But 2/5 is less than a half. So that cannot be right.</div>
+  <div class="turn teacher"><span class="speaker">T3</span>Good thinking. To add fractions with different denominators, the pieces need to be the same size. What is a number that both 2 and 3 divide into?</div>
+  <div class="turn student"><span class="speaker">S4</span>Both 2 and 3 go into 6. So 1/2 is 3/6 and 1/3 is 2/6, and together that is 5/6. Which makes sense because it is bigger than a half.</div>
+  <p class="small">If the level of maths above feels comfortable, continue. If not, you can return your submission to Prolific without penalty.</p>
+
+  <button class="primary" onclick="goto('consent')">Begin</button>
+</div>
+
+<!-- Screen 2: Consent -->
+<div class="screen" data-screen="consent">
+  <h1>Informed consent</h1>
+  <p>This study is run by Dietmar Janetzko and Horacio Gonz&aacute;lez V&eacute;lez at the National College of Ireland. The purpose is to compare ratings from human readers and from a software judge on short tutoring dialogues.</p>
+  <p>You will read about <strong>32</strong> conversations and give each one two scores. <strong>Your responses are pseudonymous</strong>: only your Prolific ID is recorded, not your name or contact details. Prolific can link the ID back to your account; we cannot.</p>
+  <p>Your participation is voluntary. You can withdraw at any time without giving a reason. You will receive Prolific's standard fair pay rate for the time you spend.</p>
+  <p>If you have questions, contact dietmar.janetzko@ncirl.ie. For ethical concerns, contact the NCI Research Ethics Committee at research.ethics@ncirl.ie.</p>
+  <div class="consent-row"><label><input type="checkbox" id="c1" onchange="updateConsent()"> I have read and understood the information above.</label></div>
+  <div class="consent-row"><label><input type="checkbox" id="c2" onchange="updateConsent()"> I consent to participate in this study.</label></div>
+  <button class="primary" id="consent-btn" disabled onclick="goto('screening')">Continue</button>
+</div>
+
+<!-- Screen 3: Screening -->
+<div class="screen" data-screen="screening">
+  <h1>Quick eligibility check</h1>
+  <p>1. Did you complete UK secondary mathematics?</p>
+  <div class="radio-row">
+    <label><input type="radio" name="q1" value="yes" onchange="updateScreening()"> Yes</label>
+    <label><input type="radio" name="q1" value="no" onchange="updateScreening()"> No</label>
+  </div>
+  <p>2. When did you complete it?</p>
+  <div class="radio-row">
+    <label><input type="radio" name="q2" value="within10" onchange="updateScreening()"> Within the last 10 years</label>
+    <label><input type="radio" name="q2" value="over10" onchange="updateScreening()"> More than 10 years ago</label>
+  </div>
+  <p>3. How would you rate your current confidence with school-level mathematics, on a 1 to 5 scale? (This does not affect eligibility; it helps us interpret the ratings.)</p>
+  <div class="radio-row">
+    <label><input type="radio" name="q3" value="1" onchange="updateScreening()"> 1 (not confident)</label>
+    <label><input type="radio" name="q3" value="2" onchange="updateScreening()"> 2</label>
+    <label><input type="radio" name="q3" value="3" onchange="updateScreening()"> 3</label>
+    <label><input type="radio" name="q3" value="4" onchange="updateScreening()"> 4</label>
+    <label><input type="radio" name="q3" value="5" onchange="updateScreening()"> 5 (very confident)</label>
+  </div>
+  <button class="primary" id="screening-btn" disabled onclick="checkScreening()">Continue</button>
+</div>
+
+<!-- Screen 3a: Screen out -->
+<div class="screen" data-screen="screenout">
+  <h1>Thank you for your interest</h1>
+  <p>This particular study needs participants who completed UK secondary mathematics within the last ten years. You will be returned to Prolific now and will not be charged for your time.</p>
+  <p>Thank you for taking the time to check.</p>
+  <button class="primary" onclick="alert('In the live study this would close the session.')">Return to Prolific</button>
+</div>
+
+<!-- Screen 4: Instructions -->
+<div class="screen" data-screen="instructions">
+  <h1>Instructions</h1>
+  <p>You will read short tutoring dialogues. Each dialogue has five turns: the student speaks first, then the teacher, then the student again, alternating, ending on the student. For each dialogue you give two scores on a 1 to 5 scale.</p>
+  <h2>R2. Cognitive demand</h2>
+  <p>Does the teacher require the student to reason, or just state the answer?</p>
+  <p class="small" style="font-style:italic;">For R2, judge from what the teacher asks, regardless of how the student responds. A teacher who demands reasoning but is met with a confused student still scores high on R2. A teacher who states the answer but happens to provoke a thoughtful student response still scores low on R2.</p>
+  <h2>R5. Student trajectory</h2>
+  <p>Does the student's reasoning visibly improve across turns? Consider whether the dialogue plausibly corrects the misconception, judging only from what the student says.</p>
+  <div class="scoring-instr">Score each item from 1 (poor) to 5 (excellent). Be strict; reserve 5 for genuinely strong instances.</div>
+  <p class="small">Before you start rating, you will do two short practice trials. Each practice dialogue is followed by the scores we expected, so you can see how the rubric reads in concrete cases. The practice dialogues do not count toward your assignment.</p>
+  <button class="primary" id="instr-btn" disabled>Start practice</button>
+</div>
+
+<!-- Screen 4a: Practice trial -->
+<div class="screen" data-screen="practice">
+  <h2 id="practice-heading">Practice trial 1 of 2. Not counted.</h2>
+  <div class="misc" id="practice-misc"></div>
+  <div id="practice-dialogue"></div>
+  <div class="rubric">
+    <h3>R2. Cognitive demand</h3>
+    <div class="def">Does the teacher require the student to reason, or just state the answer?</div>
+    <div class="disambig">For R2, judge from what the teacher asks, regardless of how the student responds.</div>
+    <div class="radio-row" id="practice-r2-row"></div>
+  </div>
+  <div class="rubric">
+    <h3>R5. Student trajectory</h3>
+    <div class="def">Does the student's reasoning visibly improve across turns? Consider whether the dialogue plausibly corrects the misconception, judging only from what the student says.</div>
+    <div class="radio-row" id="practice-r5-row"></div>
+  </div>
+  <button class="primary" id="practice-submit" disabled onclick="revealPracticeFeedback()">Submit practice scores</button>
+  <div class="feedback-box" id="practice-feedback">
+    <span id="practice-feedback-text"></span>
+    <br><br>
+    If your scores differed by more than one from the expected, take a moment to reread the rubric definitions above.
+    <br><br>
+    <button class="primary" id="practice-next-btn" onclick="advancePractice()">Continue</button>
+  </div>
+</div>
+
+<!-- Screen 5: Rating -->
+<div class="screen" data-screen="rating">
+  <div class="progress" id="progress"></div>
+  <div class="misc" id="misconception"></div>
+  <div id="dialogue"></div>
+  <!-- R2 first to weaken halo from R5 onto R2 -->
+  <div class="rubric">
+    <h3>R2. Cognitive demand</h3>
+    <div class="def">Does the teacher require the student to reason, or just state the answer?</div>
+    <div class="disambig">For R2, judge from what the teacher asks, regardless of how the student responds.</div>
+    <div class="radio-row" id="r2-row"></div>
+  </div>
+  <div class="rubric">
+    <h3>R5. Student trajectory</h3>
+    <div class="def">Does the student's reasoning visibly improve across turns? Consider whether the dialogue plausibly corrects the misconception, judging only from what the student says.</div>
+    <div class="radio-row" id="r5-row"></div>
+  </div>
+  <div class="rubric" id="justify-box" style="display:none;">
+    <h3>Optional, one sentence each</h3>
+    <div class="def">In one sentence, what is the main reason for your R2 score?</div>
+    <textarea id="justification-r2" rows="2" maxlength="300"></textarea>
+    <div class="def" style="margin-top:10px;">In one sentence, what is the main reason for your R5 score?</div>
+    <textarea id="justification-r5" rows="2" maxlength="300"></textarea>
+  </div>
+  <button class="primary" id="next-btn" disabled onclick="submitRating()">Next dialogue</button>
+</div>
+
+<!-- Screen 6: Debrief -->
+<div class="screen" data-screen="debrief">
+  <h1>Thank you</h1>
+  <p>Your ratings have been recorded. (In this mockup, the data are kept in memory and discarded when the page reloads.)</p>
+  <p>If you have questions about the study, contact dietmar.janetzko@ncirl.ie.</p>
+  <p>Your Prolific completion code is:</p>
+  <div class="debrief-code">DEMO-CODE-12345</div>
+  <p><button class="primary" onclick="alert('In the live study this would return to Prolific.')">Return to Prolific</button></p>
+  <h2 class="small">Mockup only: ratings collected</h2>
+  <pre id="rating-summary" class="small" style="background:#f0f0f0; padding:8px; border-radius:4px; max-height:300px; overflow:auto;"></pre>
+</div>
+
+<script>
+// MOCKUP_MODE toggles pilot-time meta-narration: the rev banner and the
+// placeholder explanation footnote on the welcome screen.
+// Live deployment: change this to false (and remove the mockup HTML
+// blocks for the rating summary on the debrief screen).
+const MOCKUP_MODE = true;
+if (MOCKUP_MODE) document.body.classList.add('mockup-mode');
+
+// ---------- Inline dialogue data -----------------------------------------
+// In the live instrument these are fetched server side. Here we ship the
+// practice trial dialogue, the two new dual extreme sentinels, plus three
+// further sample dialogues so the mockup can walk a rater through a
+// representative slice without external files.
+
+const PRACTICE_TRIALS = [
+  {
+    id: "practice_mid",
+    expected_r5: 3,
+    expected_r2: 3,
+    feedback: "Our expected scores are <strong>R2 = 3</strong> and <strong>R5 = 3</strong>. The teacher asks one focused question without demanding multi-step reasoning (R2 mid). The student starts to use the right method but does not finish (R5 mid).",
+    misconception: "Believes the area of a triangle is base times height (forgets the half).",
+    turns: [
+      {speaker:"student", text:"For a triangle with base 8 cm and height 5 cm, I got 40 cm squared because I did base times height."},
+      {speaker:"teacher", text:"What is the relationship between the triangle and the rectangle that surrounds it?"},
+      {speaker:"student", text:"Um, I think the triangle is half of the rectangle? Because if you draw a line from corner to corner you get two triangles."},
+      {speaker:"teacher", text:"Right. So how does that change the area?"},
+      {speaker:"student", text:"So I think the area is base times height divided by 2, but I'm not sure if I should redo the question or just leave it."}
+    ]
+  },
+  {
+    id: "practice_r2_rule",
+    expected_r5: 4,
+    expected_r2: 2,
+    feedback: "Our expected scores are <strong>R2 = 2</strong> and <strong>R5 = 4</strong>. The teacher is mostly stating the rule rather than asking the student to reason (R2 low). The student's reasoning visibly improves and they correctly apply the rule to their diagram (R5 strong, but not full because they rephrase the teacher's correction rather than reasoning their way there independently). Even when the student's reasoning is good, R2 reads the teacher, not the student.",
+    misconception: "Believes a circle has no perpendicular lines.",
+    turns: [
+      {speaker:"student", text:"A line is drawn from the centre of the circle to the edge, and another line touches the edge at the same point. How are they related? I said they are parallel because the second line just goes off sideways."},
+      {speaker:"teacher", text:"The two lines are perpendicular. The radius drawn to the point of contact and the tangent at that point always meet at 90 degrees. Apply that to your diagram."},
+      {speaker:"student", text:"Oh so the radius and the tangent meet at the edge of the circle at a right angle? Let me redraw it with a right angle marker at that point."},
+      {speaker:"teacher", text:"Correct. The radius and the tangent are perpendicular at the point of contact. This is a theorem."},
+      {speaker:"student", text:"Right, so wherever the tangent touches the circle, if I draw the radius to that same point, they form a 90 degree angle. So in my diagram the two lines I had drawn parallel are actually perpendicular."}
+    ]
+  }
+];
+
+const DIALOGUES = [
+  {
+    id: "sentinel_clear_improvement",
+    is_sentinel: "clear_improvement",
+    misconception: "Answers as if there are 100 minutes in an hour when changing from hours to minutes.",
+    turns: [
+      {speaker:"student", text:"Hannah's journey to camp is 3 hours and 16 minutes. Tori's journey to camp is 214 minutes. What is the difference in their journeys in minutes? I got 102 minutes because I'm not sure I worked it out the right way."},
+      {speaker:"teacher", text:"You are on the right track, but it seems like you may be assuming there are 100 minutes in an hour. Remember, there are 60 minutes in an hour. Let's correct that and rework the calculation using the correct conversion."},
+      {speaker:"student", text:"Oh right, yeah, I forgot there's 60 minutes in an hour, not 100. So if Hannah's journey is 3 hours and 16 minutes, I need to do 3 times 60 to get the minutes, which is 180? Then add the 16 minutes on top?"},
+      {speaker:"teacher", text:"Correct. You are on the right track. You correctly converted the 3 hours to 180 minutes, but don't forget to add the extra 16 minutes on top of that to find the total minutes for Hannah's journey."},
+      {speaker:"student", text:"Oh yeah, so 180 plus 16 is 196 minutes for Hannah's journey. Then I need to minus Tori's 214 minutes from that, so 214 minus 196 equals 18 minutes. Is that right?"}
+    ]
+  },
+  {
+    id: "dialogue_2",
+    misconception: "Does not understand a percentage is out of 100.",
+    turns: [
+      {speaker:"student", text:"Convert this percentage to a fraction: 62 percent. I got 62 over 10 because I treated the percent as if it were already a fraction over 1."},
+      {speaker:"teacher", text:"Why do you think it's necessary to treat the percentage as a fraction over 1? What does it mean for a percentage to be out of 100?"},
+      {speaker:"student", text:"I guess I thought that since percent kind of sounds like per cent, it was just a part of something like a fraction. But if it's out of 100, does that mean I should be thinking of it like 62 over 100 instead?"},
+      {speaker:"teacher", text:"Let me ask you this: what would happen if you tried your method on a simpler version of the problem?"},
+      {speaker:"student", text:"I guess if I tried my method on something like 50 percent, I would get 50 over 10, which is 5. But that doesn't seem right either since 50 percent is actually half of something. So yeah, I think 62 over 100 is right."}
+    ]
+  },
+  {
+    // Rev 4: distinct surface problem from the high R5 sentinel (different
+    // misconception and opening turn) so a blind rater cannot recognise the
+    // pair. Source: mnemonic-cbr/results/phaseB_smoke_5turn/dialogues/
+    // case_11__socratic__pure_cbr_llm__leg_b.json (Phase D, seed 42).
+    // Frozen LLM judge scores: R1=2, R2=3, R3=2, R4=4, R5=1, R6=5.
+    id: "sentinel_clear_flat",
+    is_sentinel: "clear_flat",
+    misconception: "Struggles to visualise nets of 3D shapes.",
+    turns: [
+      {speaker:"student", text:"This is the net of a... a circle touching a sector. I got Triangle because I'm not sure I worked it out the right way."},
+      {speaker:"teacher", text:"Why do you think the net of a 3D shape involves more than just one face? Can you walk me through how you arrived at the shape you selected?"},
+      {speaker:"student", text:"Um, I think I was just looking at the pointy bit and thought it looked like a triangle. But now you're saying it has more faces, so like, when you unfold a 3D shape, you get multiple flat pieces that come together?"},
+      {speaker:"teacher", text:"Can you think about how the flat pieces you mentioned fit together to create the 3D shape? What do you notice about the relationships between the faces, vertices, and edges when you fold the net back into the shape?"},
+      {speaker:"student", text:"Um, so like, the edges have to match up when I fold it? But I'm still not really seeing how a circle and a pointy bit go together. Wouldn't a circle just roll away or something? Like, is the pointy bit the side of the shape and the circle the bottom?"}
+    ]
+  },
+  {
+    id: "dialogue_4",
+    misconception: "Believes if you changed all values by the same proportion the range would not change.",
+    turns: [
+      {speaker:"student", text:"Tom and Katie are discussing the 5 plants with these heights: 24, 17, 42, 26, 13. Tom says if all the plants were cut in half, the range would not change. I agree because I think changing everything by the same amount keeps the range the same."},
+      {speaker:"teacher", text:"Can you explain how changing all the plant heights by the same proportion might impact the range? Have you considered what the definition of range is?"},
+      {speaker:"student", text:"Um, so range is like the difference between the biggest and smallest number, right? If all the plants are cut in half, both the biggest and smallest get smaller by half, so I thought the difference stays the same. But now I'm not sure."},
+      {speaker:"teacher", text:"That's a great observation. Now let's think about how cutting them in half compares to adding 3 cm to each plant. Can you walk me through both?"},
+      {speaker:"student", text:"So if I cut them in half, 42 becomes 21 and 13 becomes 6.5, so the difference is 14.5 instead of 29. But if I add 3 to everything, the difference stays at 29. So the range does change when you multiply, but not when you add."}
+    ]
+  },
+  {
+    id: "dialogue_5",
+    misconception: "Does not know units of area should be squared.",
+    turns: [
+      {speaker:"student", text:"James found the area of a trapezium as 54. Behind a star he wrote the units. I think the right units are just metres because that's what we measure length in."},
+      {speaker:"teacher", text:"Let's go back to the part you do know, and build the next step from there."},
+      {speaker:"student", text:"Yeah, okay. So I know that area is about multiplying the measurements together, like length times width. But I'm not really sure what that has to do with the units."},
+      {speaker:"teacher", text:"Let's start by exploring how the units relate to the measurements you multiply together to find the area."},
+      {speaker:"student", text:"Oh, so like, if I'm multiplying length times width, and they're both in metres, then the units I multiply together would be metres times metres? So it would be square metres."}
+    ]
+  }
+];
+
+// ---------- State -------------------------------------------------------
+const RATINGS = [];
+let dialogueIdx = 0;
+let JUSTIFY_FLAGS = []; // pre-computed fixed count flags per dialogue
+let practiceIdx = 0;
+
+// Persistent random seed for the dialogue order
+function shuffleSeeded(arr, seed) {
+  let t = seed;
+  const rnd = () => {
+    t = (t + 0x6D2B79F5) | 0;
+    let r = Math.imul(t ^ (t >>> 15), 1 | t);
+    r = (r + Math.imul(r ^ (r >>> 7), 61 | r)) ^ r;
+    return ((r ^ (r >>> 14)) >>> 0) / 4294967296;
+  };
+  const out = arr.slice();
+  for (let i = out.length - 1; i > 0; i--) {
+    const j = Math.floor(rnd() * (i + 1));
+    [out[i], out[j]] = [out[j], out[i]];
+  }
+  return out;
+}
+
+const ORDER = shuffleSeeded(DIALOGUES, 17);
+
+// Fixed count justification flags: ceil(0.2 * n) of the non-sentinel
+// dialogues get the justification field.
+function computeJustifyFlags() {
+  const flags = new Array(ORDER.length).fill(false);
+  const nonSentinelIdx = ORDER
+    .map((d, i) => d.is_sentinel ? null : i)
+    .filter(i => i !== null);
+  const k = Math.ceil(0.2 * nonSentinelIdx.length);
+  // Shuffle the non-sentinel indices deterministically and take the first k.
+  const shuffled = shuffleSeeded(nonSentinelIdx, 91);
+  for (let i = 0; i < k; i++) flags[shuffled[i]] = true;
+  return flags;
+}
+
+// ---------- Screen navigation -------------------------------------------
+function goto(name) {
+  document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
+  const el = document.querySelector(`[data-screen="${name}"]`);
+  if (el) el.classList.add('active');
+  if (name === 'instructions') {
+    document.getElementById('instr-btn').disabled = true;
+    // Mockup shortcut: 3 seconds instead of 90. Live instrument uses 90.
+    setTimeout(() => {
+      document.getElementById('instr-btn').disabled = false;
+      document.getElementById('instr-btn').addEventListener('click', startPractice);
+    }, 3000);
+  }
+}
+
+function updateConsent() {
+  const ok = document.getElementById('c1').checked && document.getElementById('c2').checked;
+  document.getElementById('consent-btn').disabled = !ok;
+}
+
+function updateScreening() {
+  const q1 = document.querySelector('input[name=q1]:checked');
+  const q2 = document.querySelector('input[name=q2]:checked');
+  const q3 = document.querySelector('input[name=q3]:checked');
+  document.getElementById('screening-btn').disabled = !(q1 && q2 && q3);
+}
+
+function checkScreening() {
+  const q1 = document.querySelector('input[name=q1]:checked').value;
+  const q2 = document.querySelector('input[name=q2]:checked').value;
+  // Q3 is the self-assessed maths-knowledge 1-5 rating. It is recorded
+  // as a per-rater covariate for exploratory analysis only and does
+  // NOT screen anyone out. See OSF deposit §2.4 and §6 (exploratory).
+  const q3 = parseInt(document.querySelector('input[name=q3]:checked').value, 10);
+  RATINGS.push({
+    screening: true,
+    maths_completed: q1,
+    maths_recency: q2,
+    maths_self_confidence: q3
+  });
+  if (q1 === 'yes' && q2 === 'within10') {
+    goto('instructions');
+  } else {
+    goto('screenout');
+  }
+}
+
+function renderRadioRow(name) {
+  let html = '';
+  for (let i = 1; i <= 5; i++) {
+    html += `<label><input type="radio" name="${name}" value="${i}" onchange="checkRatingComplete('${name}')"> ${i}</label>`;
+  }
+  return html;
+}
+
+// ---------- Practice trial ----------------------------------------------
+function startPractice() {
+  practiceIdx = 0;
+  renderPractice();
+  goto('practice');
+}
+
+function renderPractice() {
+  const p = PRACTICE_TRIALS[practiceIdx];
+  document.getElementById('practice-heading').textContent =
+    `Practice trial ${practiceIdx + 1} of ${PRACTICE_TRIALS.length}. Not counted.`;
+  document.getElementById('practice-misc').innerHTML =
+    `<strong>Student's misconception:</strong> ${p.misconception}`;
+  const html = p.turns.map((t, i) => {
+    const label = t.speaker === 'student' ? `S${i}` : `T${i}`;
+    return `<div class="turn ${t.speaker}"><span class="speaker">${label}</span>${t.text}</div>`;
+  }).join('');
+  document.getElementById('practice-dialogue').innerHTML = html;
+  document.getElementById('practice-r5-row').innerHTML = renderRadioRow('practice-r5');
+  document.getElementById('practice-r2-row').innerHTML = renderRadioRow('practice-r2');
+  document.getElementById('practice-submit').disabled = true;
+  document.getElementById('practice-feedback').style.display = 'none';
+  // Last practice = button reads "Begin live ratings", else "Continue".
+  const isLast = practiceIdx === PRACTICE_TRIALS.length - 1;
+  document.getElementById('practice-next-btn').textContent =
+    isLast ? 'Begin live ratings' : 'Continue to next practice';
+}
+
+function revealPracticeFeedback() {
+  const p = PRACTICE_TRIALS[practiceIdx];
+  const r5 = document.querySelector('input[name=practice-r5]:checked').value;
+  const r2 = document.querySelector('input[name=practice-r2]:checked').value;
+  RATINGS.push({
+    dialogue_id: p.id,
+    practice: true,
+    r5: parseInt(r5, 10),
+    r2: parseInt(r2, 10),
+    expected_r5: p.expected_r5,
+    expected_r2: p.expected_r2
+  });
+  document.getElementById('practice-feedback-text').innerHTML = p.feedback;
+  document.getElementById('practice-feedback').style.display = 'block';
+  document.getElementById('practice-submit').disabled = true;
+}
+
+function advancePractice() {
+  if (practiceIdx + 1 < PRACTICE_TRIALS.length) {
+    practiceIdx++;
+    renderPractice();
+  } else {
+    startRating();
+  }
+}
+
+// ---------- Live rating loop --------------------------------------------
+function startRating() {
+  dialogueIdx = 0;
+  JUSTIFY_FLAGS = computeJustifyFlags();
+  renderDialogue();
+  goto('rating');
+}
+
+function renderDialogue() {
+  const d = ORDER[dialogueIdx];
+  document.getElementById('progress').textContent = `Dialogue ${dialogueIdx + 1} of ${ORDER.length}`;
+  document.getElementById('misconception').innerHTML = `<strong>Student's misconception:</strong> ${d.misconception}`;
+  const turnsHtml = d.turns.map((t, i) => {
+    const label = t.speaker === 'student' ? `S${i}` : `T${i}`;
+    return `<div class="turn ${t.speaker}"><span class="speaker">${label}</span>${t.text}</div>`;
+  }).join('');
+  document.getElementById('dialogue').innerHTML = turnsHtml;
+  document.getElementById('r5-row').innerHTML = renderRadioRow('r5');
+  document.getElementById('r2-row').innerHTML = renderRadioRow('r2');
+  document.getElementById('justify-box').style.display = JUSTIFY_FLAGS[dialogueIdx] ? 'block' : 'none';
+  document.getElementById('justification-r5').value = '';
+  document.getElementById('justification-r2').value = '';
+  document.getElementById('next-btn').disabled = true;
+  window._ratingStart = Date.now();
+}
+
+function checkRatingComplete(group) {
+  // group is one of practice-r5, practice-r2, r5, r2
+  if (group.startsWith('practice')) {
+    const r5 = document.querySelector('input[name=practice-r5]:checked');
+    const r2 = document.querySelector('input[name=practice-r2]:checked');
+    document.getElementById('practice-submit').disabled = !(r5 && r2);
+  } else {
+    const r5 = document.querySelector('input[name=r5]:checked');
+    const r2 = document.querySelector('input[name=r2]:checked');
+    document.getElementById('next-btn').disabled = !(r5 && r2);
+  }
+}
+
+function submitRating() {
+  const d = ORDER[dialogueIdx];
+  const r5 = document.querySelector('input[name=r5]:checked').value;
+  const r2 = document.querySelector('input[name=r2]:checked').value;
+  const justR5 = document.getElementById('justification-r5').value;
+  const justR2 = document.getElementById('justification-r2').value;
+  const elapsedMs = Date.now() - window._ratingStart;
+  RATINGS.push({
+    dialogue_id: d.id,
+    is_sentinel: d.is_sentinel || '',
+    r5: parseInt(r5, 10),
+    r2: parseInt(r2, 10),
+    justification_r5: justR5 || null,
+    justification_r2: justR2 || null,
+    rating_time_seconds: Math.round(elapsedMs / 1000)
+  });
+  dialogueIdx++;
+  if (dialogueIdx >= ORDER.length) {
+    finish();
+  } else {
+    renderDialogue();
+  }
+}
+
+function finish() {
+  document.getElementById('rating-summary').textContent = JSON.stringify(RATINGS, null, 2);
+  goto('debrief');
+}
+</script>
+</body>
+</html>

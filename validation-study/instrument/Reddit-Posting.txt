@@ -1,0 +1,25 @@
+Hi r/matheducation,
+
+I'm Dietmar Janetzko from the National College of Ireland in Dublin. I run a study that asks whether, and to what degree, LLM-simulated students show evidence of learning across a dialogue with an LLM-simulated tutor. Part of the study anchors the LLM rating system against human readers, and I'm looking for ~25 people comfortable with UK secondary-level maths.
+
+The task. Read 15 short tutoring dialogues. Score each on cognitive demand (R2) and student trajectory (R5). About 15 to 20 minutes including two practice trials with feedback up-front.
+
+Eligibility. Anyone comfortable reading school-level algebra, geometry, and fractions (UK secondary, roughly US middle school
+through early high school).
+
+ There's a worked example on the welcome screen so you can decide before committing.
+ 
+Pseudonymous. Random 8-character code. No name, email, or IP recorded in the research data.
+
+ Happy to answer questions in the thread.
+
+
+LINK TO THE STUDY
+https://tutorial-dialogue-rating.netlify.app
+
+
+
+Kind regards, 
+
+
+Dietmar Janetzko, Dublin
