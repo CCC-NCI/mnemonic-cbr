@@ -1,0 +1,66 @@
+{
+  "state": {
+    "case_id": "case_13",
+    "misconception_label": "Answers as if there are 100 minutes in an hour when changing from hours to minutes",
+    "misconception_features": [
+      0.0,
+      13.0,
+      1.0,
+      29.0
+    ],
+    "persona": "constructive",
+    "architecture": "pure_cbr_llm",
+    "student_leg": "leg_a",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T10:17:14.677233Z",
+      "seed": 705,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-12T10:17:20.605181Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: Hannah's journey to camp is \\( 3 \\) hours and \\( 16 \\) minutes. Tori's journey to camp is \\( 214 \\) minutes. What is the difference in their journeys in minutes? I got \\( 102 \\) minutes because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "It seems like you may be assuming there are 100 minutes in an hour when converting between hours and minutes. Let's take a closer look at how to convert hours to minutes using the correct conversion rate. Can you think about how many minutes are in one hour and use that to reevaluate your calculation?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Oh, I see! So there are actually 60 minutes in an hour, not 100. If I change Hannah's journey to minutes, I should multiply \\( 3 \\) hours by \\( 60 \\) instead, right? But then what do I do with the \\( 16 \\) minutes?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Great job recognizing that there are 60 minutes in an hour! To convert Hannah's journey to minutes, you can multiply \\( 3 \\) hours by \\( 60 \\) and then add the \\( 16 \\) minutes. Can you try recalculating the total duration of Hannah's journey using this method?",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 5,
+    "R2": 4,
+    "R3": 4,
+    "R4": 5,
+    "R5": 5,
+    "R6": 5,
+    "justification_pass1": "The teacher explicitly names the specific misconception (100 minutes per hour), the student demonstrates clear understanding of the error and correct conversion method by Turn 2, and the scaffolding appropriately guides without giving away the answer.",
+    "justification_pass2": "The teacher exemplifies the constructive strategy by identifying the specific misconception, breaking the problem into manageable steps (first converting hours, then addressing the additional minutes), and gradually reducing support as the student demonstrates understanding.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 5,\n  \"R2\": 4,\n  \"R3\": 4,\n  \"R4\": 5,\n  \"R5\": 5,\n  \"brief_justification\": \"The teacher explicitly names the specific misconception (100 minutes per hour), the student demonstrates clear understanding of the error and correct conversion method by Turn 2, and the scaffolding appropriately guides without giving away the answer.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 5, \"brief_justification\": \"The teacher exemplifies the constructive strategy by identifying the specific misconception, breaking the problem into manageable steps (first converting hours, then addressing the additional minutes), and gradually reducing support as the student demonstrates understanding.\"}\n```",
+    "quality_composite": 4.333333333333333,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T10:17:27.017303+00:00"
+}

@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_13",
+    "misconception_label": "Answers as if there are 100 minutes in an hour when changing from hours to minutes",
+    "misconception_features": [
+      0.0,
+      13.0,
+      1.0,
+      29.0
+    ],
+    "persona": "traditional",
+    "architecture": "hybrid",
+    "student_leg": "leg_a",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T15:55:38.187640Z",
+      "seed": 741,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T15:55:44.527599Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: Hannah's journey to camp is \\( 3 \\) hours and \\( 16 \\) minutes. Tori's journey to camp is \\( 214 \\) minutes. What is the difference in their journeys in minutes? I got \\( 102 \\) minutes because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "First, let's clarify the conversion from hours to minutes. Remember, there are 60 minutes in 1 hour, not 100. So, for Hannah's journey, you would multiply 3 hours by 60 minutes and then add the 16 minutes she traveled. Can you try recalculating using this conversion?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Okay, so if I multiply 3 hours by 60 minutes, that would be \\( 180 \\) minutes, right? Then I add the \\( 16 \\) minutes, so that makes \\( 196 \\) minutes for Hannah. But then how do I find the difference with Tori's \\( 214 \\) minutes? Do I just subtract?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Great job on calculating Hannah's journey time correctly! Now, to find the difference between Hannah and Tori's journey times, you'll subtract Hannah's total time from Tori's total time. Can you try that calculation now?",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "Okay, so I think I need to subtract \\( 196 \\) minutes from \\( 214 \\) minutes. So, \\( 214 - 196 \\) is \\( 18 \\) minutes, right? But I'm still a bit confused about why I thought there were 100 minutes in an hour. Can you explain that part again?",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 4,
+    "R2": 3,
+    "R3": 4,
+    "R4": 5,
+    "R5": 3,
+    "R6": 3,
+    "justification_pass1": "The teacher directly addresses the 60-vs-100 misconception and guides the student to the correct answer, but the student's final question reveals they still don't understand why they made the error, suggesting incomplete conceptual resolution.",
+    "justification_pass2": "The teacher provides clear explanations and checks understanding at each step, which aligns with traditional teaching, but does not use worked examples to demonstrate the complete solution process before having the student attempt it.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 4,\n  \"R2\": 3,\n  \"R3\": 4,\n  \"R4\": 5,\n  \"R5\": 3,\n  \"brief_justification\": \"The teacher directly addresses the 60-vs-100 misconception and guides the student to the correct answer, but the student's final question reveals they still don't understand why they made the error, suggesting incomplete conceptual resolution.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 3, \"brief_justification\": \"The teacher provides clear explanations and checks understanding at each step, which aligns with traditional teaching, but does not use worked examples to demonstrate the complete solution process before having the student attempt it.\"}\n```",
+    "quality_composite": 3.6666666666666665,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T15:55:50.951712+00:00"
+}

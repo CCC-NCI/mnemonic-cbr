@@ -1,0 +1,66 @@
+{
+  "state": {
+    "case_id": "case_23",
+    "misconception_label": "Confuses rest and movement on a distance time graph",
+    "misconception_features": [
+      0.0,
+      23.0,
+      3.0,
+      62.0
+    ],
+    "persona": "rule_based",
+    "architecture": "baseline",
+    "student_leg": "leg_b",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T11:55:57.438604Z",
+      "seed": 1224,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-12T11:56:02.482681Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: This graph shows how far Fido the dog is from his home. What might the negative-sloping section represent? ![A graph with time (secs) on the horizontal axis and distance (m) on the vertical axis. The graph starts at the origin, travels in a straight line up and right, travels horizontally, then travels in a straight line down and right back to the x-axis. ](). I got Fido has fallen asleep because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "There is a specific procedure for this. Step 1 is to identify the operation; step 2 is to apply the rule for that operation. In this case, you need to differentiate between rest and movement on a distance-time graph. Rest would be when the distance is not changing, while movement would be indicated by a change in distance over time.",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Oh right, so like... the flat bit in the middle is when Fido isn't moving because the distance stays the same, yeah? But I'm still confused about the bit that goes down - does that mean he's moving backwards towards his home, or is that something else?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "There is a specific procedure for this. Step 1 is to identify the operation; step 2 is to apply the rule for that operation. The downward sloping section on the graph indicates that Fido is moving back towards his home, as the distance is decreasing over time.",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 1,
+    "R3": 2,
+    "R4": 5,
+    "R5": 4,
+    "R6": 5,
+    "justification_pass1": "The teacher provides mathematically correct information but uses a rigid procedural approach that tells rather than elicits reasoning, though the student does demonstrate improved understanding by Turn 2 by correctly identifying the flat section as rest and asking a clarifying question about the downward slope.",
+    "justification_pass2": "The teacher consistently states explicit procedures (Step 1 and Step 2), provides clear rules for interpreting distance-time graphs, and gives direct corrective feedback on the student's misconception about the negative-sloping section, which is textbook rule-based instruction.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 1,\n  \"R3\": 2,\n  \"R4\": 5,\n  \"R5\": 4,\n  \"brief_justification\": \"The teacher provides mathematically correct information but uses a rigid procedural approach that tells rather than elicits reasoning, though the student does demonstrate improved understanding by Turn 2 by correctly identifying the flat section as rest and asking a clarifying question about the downward slope.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 5, \"brief_justification\": \"The teacher consistently states explicit procedures (Step 1 and Step 2), provides clear rules for interpreting distance-time graphs, and gives direct corrective feedback on the student's misconception about the negative-sloping section, which is textbook rule-based instruction.\"}\n```",
+    "quality_composite": 1.6666666666666667,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T11:56:10.310762+00:00"
+}

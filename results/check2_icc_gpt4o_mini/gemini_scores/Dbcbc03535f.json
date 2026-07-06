@@ -1,0 +1,53 @@
+{
+  "blind_id": "Dbcbc03535f",
+  "subset_row": {
+    "blind_id": "Dbcbc03535f",
+    "case_id": "case_3",
+    "persona": "traditional",
+    "architecture": "baseline",
+    "student_leg": "leg_b",
+    "llm_R5": "2",
+    "llm_quality_composite": "1.6666666666666667",
+    "llm_R6": "2",
+    "difficulty_band": "long",
+    "r5_band": "low",
+    "word_count": "71",
+    "attention_check_type": "",
+    "attention_check_rationale": "",
+    "file_path": "dialogues/case_3__traditional__baseline__leg_b.json"
+  },
+  "primary_score": {
+    "R1": 2,
+    "R2": 1,
+    "R3": 2,
+    "R4": 4,
+    "R5": 2,
+    "R6": 2,
+    "justification_pass1": "The teacher provides correct information but never addresses the student's specific misconception about diagonal angles, instead lecturing and promising examples rather than eliciting student reasoning, resulting in the student remaining confused about the actual question by Turn 4.",
+    "justification_pass2": "While the teacher claims to use worked examples and checks understanding (Turn 1, Turn 3), they never actually provide the promised worked examples or direct explanations about the diagonal angles, only announcing intentions to do so.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 1,\n  \"R3\": 2,\n  \"R4\": 4,\n  \"R5\": 2,\n  \"brief_justification\": \"The teacher provides correct information but never addresses the student's specific misconception about diagonal angles, instead lecturing and promising examples rather than eliciting student reasoning, resulting in the student remaining confused about the actual question by Turn 4.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 2, \"brief_justification\": \"While the teacher claims to use worked examples and checks understanding (Turn 1, Turn 3), they never actually provide the promised worked examples or direct explanations about the diagonal angles, only announcing intentions to do so.\"}\n```",
+    "quality_composite": 1.6666666666666667,
+    "is_complete": true
+  },
+  "secondary_score": {
+    "R1": 5,
+    "R2": 4,
+    "R3": 4,
+    "R4": 5,
+    "R5": 4,
+    "R6": 4,
+    "justification_pass1": "The teacher effectively addresses the student's misconception about rectangle properties, provides appropriate scaffolding, and the student's understanding visibly improves, though some reasoning could be further developed.",
+    "justification_pass2": "The teacher effectively explains the properties of a rectangle, provides a worked example, and checks for understanding, aligning closely with the traditional strategy.",
+    "judge_provider": "openai",
+    "judge_model": "gpt-4o-mini",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "{\n  \"R1\": 5,\n  \"R2\": 4,\n  \"R3\": 4,\n  \"R4\": 5,\n  \"R5\": 4,\n  \"brief_justification\": \"The teacher effectively addresses the student's misconception about rectangle properties, provides appropriate scaffolding, and the student's understanding visibly improves, though some reasoning could be further developed.\"\n}",
+    "pass2_raw_text": "{\"R6\": 4, \"brief_justification\": \"The teacher effectively explains the properties of a rectangle, provides a worked example, and checks for understanding, aligning closely with the traditional strategy.\"}"
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "state": {
+    "case_id": "case_9",
+    "misconception_label": "Believes f(x - a) translates the function up a units",
+    "misconception_features": [
+      0.0,
+      9.0,
+      3.0,
+      83.0
+    ],
+    "persona": "rule_based",
+    "architecture": "hybrid",
+    "student_leg": "leg_a",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T09:43:59.601080Z",
+      "seed": 531,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-12T09:44:04.597398Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: What transformation maps the graph of \\(y=f(x) \\) to the graph of \\( y=f(x-3) \\). I got Translation by vector\n\\(\n\\left[\\begin{array}{l}\n0 \\\\\n3\n\\end{array}\\right]\n\\) because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "The correct transformation for \\( f(x-3) \\) is a translation to the right by 3 units, not up. Remember, when you have \\( f(x-a) \\), it shifts the graph to the right by a units. Make sure to apply the correct rule for translating functions in the x-direction.",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Oh, I see! So when it\u2019s \\( f(x-3) \\), it actually moves to the right by 3 units instead of up. I guess I got mixed up with how the x-values work. What about if it was \\( f(x + 3) \\)? Would that go to the left?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "That's correct! When it's \\( f(x + 3) \\), the graph actually moves to the left by 3 units. Remember, adding inside the parentheses shifts the graph in the opposite direction of the sign. Keep practicing with different values to reinforce this concept.",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 1,
+    "R3": 2,
+    "R4": 5,
+    "R5": 2,
+    "R6": 5,
+    "justification_pass1": "The teacher directly states the correct answer and rule without engaging the student's reasoning about why they confused vertical and horizontal translations, resulting in the student merely accepting the rule rather than understanding why their original thinking was flawed.",
+    "justification_pass2": "The teacher consistently states explicit rules (e.g., 'when you have f(x-a), it shifts the graph to the right by a units'), provides direct corrective feedback on the procedural error (correcting the translation direction), and reinforces the procedural rule with additional examples, which is a textbook example of rule-based instruction.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\"R1\": 2, \"R2\": 1, \"R3\": 2, \"R4\": 5, \"R5\": 2, \"brief_justification\": \"The teacher directly states the correct answer and rule without engaging the student's reasoning about why they confused vertical and horizontal translations, resulting in the student merely accepting the rule rather than understanding why their original thinking was flawed.\"}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 5, \"brief_justification\": \"The teacher consistently states explicit rules (e.g., 'when you have f(x-a), it shifts the graph to the right by a units'), provides direct corrective feedback on the procedural error (correcting the translation direction), and reinforces the procedural rule with additional examples, which is a textbook example of rule-based instruction.\"}\n```",
+    "quality_composite": 1.6666666666666667,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T09:44:13.177581+00:00"
+}

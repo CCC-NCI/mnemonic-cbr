@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_10",
+    "misconception_label": "Ignores negative sign when expanding bracket",
+    "misconception_features": [
+      0.0,
+      10.0,
+      1.0,
+      68.0
+    ],
+    "persona": "constructive",
+    "architecture": "pure_cbr_llm",
+    "student_leg": "leg_b",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T15:15:39.870027Z",
+      "seed": 556,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T15:15:50.251013Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: John is expanding these three brackets: \\( (x+5)(x-3)(x+6) \\) He finds it helpful to split the first bracket and view the problem as follows: \\( x(x-3)(x+6)+5(x-3)(x+6) \\) He expands the brackets further. Before he simplifies, what are the terms than contain an \\( \\boldsymbol{x}^{2} \\) ? I got \\( \\begin{array}{l}+6 x^{2} \\\\ +3 x^{2} \\\\ +5 x^{2}\\end{array} \\) because I forgot that two negatives multiply to a positive.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "It seems like you may be ignoring the negative sign when expanding the brackets. Let's focus on why the selected terms may not be correct and walk through the reasoning that leads to the correct terms. Can you think about how the negative signs should be handled when multiplying the terms within the brackets?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Um, so like... when I multiply a negative by a positive, I get a negative, right? But I'm still a bit confused about where the negative signs are in this problem - is it in the $(x-3)$ part that I need to be more careful with?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Yes, you're on the right track. When multiplying a negative by a positive, the result is negative. Let's focus on how the negative sign should be handled when expanding the terms within the brackets, especially when dealing with expressions like \\( (x-3) \\). Can you think about how the negative sign affects the multiplication in this context?",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "Oh, I think I see it now - so when I expand something like $x(x-3)$, the $x$ multiplies both the $x$ AND the $-3$, so I should get $x^2 - 3x$, not $x^2 + 3x$? So the negative sign stays with the 3 when I'm multiplying?",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 4,
+    "R2": 3,
+    "R3": 4,
+    "R4": 5,
+    "R5": 4,
+    "R6": 5,
+    "justification_pass1": "The teacher directly addresses the misconception about ignoring negative signs in bracket expansion, uses appropriate questioning to guide reasoning, and the student demonstrates clear progress from confusion to understanding how negative signs operate in multiplication by Turn 4.",
+    "justification_pass2": "The teacher exemplifies the constructive strategy by breaking down the problem into manageable steps (isolating the negative sign issue), scaffolding within the student's ZPD (acknowledging their correct understanding of negative\u00d7positive while guiding them to apply it to the specific context), and adjusting support based on progress (moving from general guidance about negative signs to focusing specifically on the (x-3) term after the student's response).",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 4,\n  \"R2\": 3,\n  \"R3\": 4,\n  \"R4\": 5,\n  \"R5\": 4,\n  \"brief_justification\": \"The teacher directly addresses the misconception about ignoring negative signs in bracket expansion, uses appropriate questioning to guide reasoning, and the student demonstrates clear progress from confusion to understanding how negative signs operate in multiplication by Turn 4.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 5, \"brief_justification\": \"The teacher exemplifies the constructive strategy by breaking down the problem into manageable steps (isolating the negative sign issue), scaffolding within the student's ZPD (acknowledging their correct understanding of negative\u00d7positive while guiding them to apply it to the specific context), and adjusting support based on progress (moving from general guidance about negative signs to focusing specifically on the (x-3) term after the student's response).\"}\n```",
+    "quality_composite": 3.6666666666666665,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T15:15:58.794609+00:00"
+}

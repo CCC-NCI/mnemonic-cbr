@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_9",
+    "misconception_label": "Believes f(x - a) translates the function up a units",
+    "misconception_features": [
+      0.0,
+      9.0,
+      3.0,
+      83.0
+    ],
+    "persona": "rule_based",
+    "architecture": "hybrid",
+    "student_leg": "leg_b",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T15:10:20.357013Z",
+      "seed": 532,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T15:10:25.897961Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: What transformation maps the graph of \\(y=f(x) \\) to the graph of \\( y=f(x-3) \\). I got Translation by vector\n\\(\n\\left[\\begin{array}{l}\n0 \\\\\n3\n\\end{array}\\right]\n\\) because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "The correct transformation for \\(f(x-a)\\) is a translation to the right by a units, not up. You should shift the graph of \\(y = f(x)\\) to the right by 3 units, not up by 3 units. Remember, the value of \"a\" in this case represents a horizontal shift, not a vertical one.",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Oh right, so it's to the right, not up! But I'm still a bit confused - why does it go right when the number is being taken away? Like, shouldn't minus 3 mean it goes left or something?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "The misconception here is similar to thinking that subtracting 3 means moving left on a number line. In this case, when you have \\( f(x-3) \\), it means you are substituting \\( x \\) with \\( x-3 \\), which shifts the graph to the right by 3 units. Remember, in function notation, the operation inside the parentheses affects the x-values, not the y-values.",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "So like... the minus sign is confusing me because it feels backwards? Like, if I'm doing x minus 3, shouldn't that make x smaller, which would move left? Can you maybe show me with an actual example or something, like with a specific point on the graph, so I can see why it actually goes right?",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 1,
+    "R3": 1,
+    "R4": 5,
+    "R5": 1,
+    "R6": 2,
+    "justification_pass1": "The teacher correctly states the answer but never engages with the student's core confusion about why subtraction causes rightward movement, repeatedly telling rather than helping the student reason through it, and by Turn 4 the student remains confused and explicitly requests the concrete example they needed from the start.",
+    "justification_pass2": "While the teacher provides direct corrective feedback and states the rule explicitly in Turn 1, they fail to show worked steps or provide the concrete example with specific points that would demonstrate the procedure, especially when the student explicitly requests this in Turn 4.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\"R1\": 2, \"R2\": 1, \"R3\": 1, \"R4\": 5, \"R5\": 1, \"brief_justification\": \"The teacher correctly states the answer but never engages with the student's core confusion about why subtraction causes rightward movement, repeatedly telling rather than helping the student reason through it, and by Turn 4 the student remains confused and explicitly requests the concrete example they needed from the start.\"}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 2, \"brief_justification\": \"While the teacher provides direct corrective feedback and states the rule explicitly in Turn 1, they fail to show worked steps or provide the concrete example with specific points that would demonstrate the procedure, especially when the student explicitly requests this in Turn 4.\"}\n```",
+    "quality_composite": 1.3333333333333333,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T15:10:34.180539+00:00"
+}

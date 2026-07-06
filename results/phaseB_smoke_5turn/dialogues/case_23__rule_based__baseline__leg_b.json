@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_23",
+    "misconception_label": "Confuses rest and movement on a distance time graph",
+    "misconception_features": [
+      0.0,
+      23.0,
+      3.0,
+      62.0
+    ],
+    "persona": "rule_based",
+    "architecture": "baseline",
+    "student_leg": "leg_b",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T17:39:15.632918Z",
+      "seed": 1224,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T17:39:21.253594Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: This graph shows how far Fido the dog is from his home. What might the negative-sloping section represent? ![A graph with time (secs) on the horizontal axis and distance (m) on the vertical axis. The graph starts at the origin, travels in a straight line up and right, travels horizontally, then travels in a straight line down and right back to the x-axis. ](). I got Fido has fallen asleep because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "There is a specific procedure for this. Step 1 is to identify the operation; step 2 is to apply the rule for that operation. In this case, the negative-sloping section on the distance-time graph represents Fido moving away from his home, not falling asleep.",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Wait, but I thought when the line goes down it means something is getting smaller? So if the distance is going down, shouldn't Fido be getting closer to home, not moving away? I'm confused about why a downward slope means he's moving away.",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "There is a specific procedure for this. Step 1 is to identify the operation; step 2 is to apply the rule for that operation. In this case, a downward slope on a distance-time graph actually represents the object moving away from the starting point, not getting closer.",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "But that doesn't make sense to me... if the line is going down, how can Fido be moving away? Wouldn't moving away mean the distance gets bigger, so the line should go up? I'm really confused because you're saying the opposite of what I thought.",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 1,
+    "R2": 1,
+    "R3": 1,
+    "R4": 1,
+    "R5": 1,
+    "R6": 1,
+    "justification_pass1": "The teacher repeatedly provides incorrect mathematical content (claiming downward slope means moving away when it means returning home), ignores the student's clear articulation of confusion, offers no reasoning opportunities, and the student becomes increasingly confused rather than improving.",
+    "justification_pass2": "The teacher states explicit procedures but provides factually incorrect information (claiming a downward slope means moving away when it actually means returning home), fails to give proper corrective feedback, and repeats the same incorrect rule without addressing the student's valid confusion.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 1,\n  \"R2\": 1,\n  \"R3\": 1,\n  \"R4\": 1,\n  \"R5\": 1,\n  \"brief_justification\": \"The teacher repeatedly provides incorrect mathematical content (claiming downward slope means moving away when it means returning home), ignores the student's clear articulation of confusion, offers no reasoning opportunities, and the student becomes increasingly confused rather than improving.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 1, \"brief_justification\": \"The teacher states explicit procedures but provides factually incorrect information (claiming a downward slope means moving away when it actually means returning home), fails to give proper corrective feedback, and repeats the same incorrect rule without addressing the student's valid confusion.\"}\n```",
+    "quality_composite": 1.0,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T17:39:29.432054+00:00"
+}

@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_0",
+    "misconception_label": "Confuses the order of operations, believes addition comes before multiplication",
+    "misconception_features": [
+      0.0,
+      0.0,
+      1.0,
+      70.0
+    ],
+    "persona": "constructive",
+    "architecture": "baseline",
+    "student_leg": "leg_b",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T11:59:41.079824Z",
+      "seed": 54,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T11:59:45.134277Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: \\[ 3 \\times 2+4-5 \\] Where do the brackets need to go to make the answer equal \\( 13 \\) ? I got Does not need brackets because I worked left to right instead of following the order of operations.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's go back to the part you do know, and build the next step from there. Remember, the order of operations is important in solving this expression.",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Yeah, I know... so like, I need to do multiplication and division before addition and subtraction, right? But when I work it out, I'm getting 3 times 2 which is 6, then 6 plus 4 is 10, then 10 minus 5 is 5... so how does that make 13?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's go back to the part you do know, and build the next step from there. Remember, the order of operations is crucial in determining the correct answer.",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "Oh right, so I'm doing the multiplication first which gives me 6, then adding and subtracting from left to right... but that still only gives me 5, not 13. So like, do I need to put brackets somewhere to change which bits I do first? Maybe around the addition and subtraction part?",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 1,
+    "R2": 1,
+    "R3": 1,
+    "R4": 5,
+    "R5": 3,
+    "R6": 2,
+    "justification_pass1": "The teacher merely repeats generic reminders about order of operations without addressing the student's specific confusion about where brackets should go, though the student does eventually self-correct to recognize brackets might be needed to change the order.",
+    "justification_pass2": "The teacher repeatedly uses generic prompts without breaking the problem into manageable steps, adjusting support based on student progress, or providing scaffolding that helps the student understand where brackets should be placed to achieve 13.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 1,\n  \"R2\": 1,\n  \"R3\": 1,\n  \"R4\": 5,\n  \"R5\": 3,\n  \"brief_justification\": \"The teacher merely repeats generic reminders about order of operations without addressing the student's specific confusion about where brackets should go, though the student does eventually self-correct to recognize brackets might be needed to change the order.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 2, \"brief_justification\": \"The teacher repeatedly uses generic prompts without breaking the problem into manageable steps, adjusting support based on student progress, or providing scaffolding that helps the student understand where brackets should be placed to achieve 13.\"}\n```",
+    "quality_composite": 1.0,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T11:59:52.612884+00:00"
+}

@@ -1,0 +1,66 @@
+{
+  "state": {
+    "case_id": "case_11",
+    "misconception_label": "Struggles to visualise nets of 3D shapes",
+    "misconception_features": [
+      0.0,
+      11.0,
+      3.0,
+      31.0
+    ],
+    "persona": "socratic",
+    "architecture": "pure_cbr_llm",
+    "student_leg": "leg_b",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T09:56:47.402148Z",
+      "seed": 596,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-12T09:56:51.091271Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: This is the net of a... ![A circle touching a sector](). I got Triangle because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Why do you think the net you drew represents a triangle? Can you explain how the shape you see in the net connects to the 3D shape it represents?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Um, I think I was just looking at the pointy bit and thought it would make a triangle shape... but now I'm not really sure how a net actually works? Like, does the circle part fold up or something? I'm confused about which bits connect together.",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Can you identify the faces, vertices, and edges of the 3D shape represented by your net? How do these components connect in the 3D shape?",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 3,
+    "R3": 2,
+    "R4": 4,
+    "R5": 1,
+    "R6": 5,
+    "justification_pass1": "The teacher asks mathematically sound questions requiring reasoning, but fails to address the student's growing confusion about how nets work, and the student becomes more confused rather than improving (explicitly stating increased confusion in Turn 2 with no resolution by dialogue end).",
+    "justification_pass2": "The teacher consistently uses probing questions to guide the student's thinking without providing direct answers, asking the student to explain their reasoning and examine the components of the shape themselves.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 3,\n  \"R3\": 2,\n  \"R4\": 4,\n  \"R5\": 1,\n  \"brief_justification\": \"The teacher asks mathematically sound questions requiring reasoning, but fails to address the student's growing confusion about how nets work, and the student becomes more confused rather than improving (explicitly stating increased confusion in Turn 2 with no resolution by dialogue end).\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 5, \"brief_justification\": \"The teacher consistently uses probing questions to guide the student's thinking without providing direct answers, asking the student to explain their reasoning and examine the components of the shape themselves.\"}\n```",
+    "quality_composite": 2.3333333333333335,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T09:56:58.134491+00:00"
+}

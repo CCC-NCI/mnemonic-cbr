@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_11",
+    "misconception_label": "Struggles to visualise nets of 3D shapes",
+    "misconception_features": [
+      0.0,
+      11.0,
+      3.0,
+      31.0
+    ],
+    "persona": "experiential",
+    "architecture": "hybrid",
+    "student_leg": "leg_a",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T15:30:21.069389Z",
+      "seed": 621,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T15:30:27.627839Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: This is the net of a... ![A circle touching a sector](). I got Triangle because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's think of the net of a 3D shape like unfolding a box. Just like how the sides of a box unfold to make a net, each face of a 3D shape connects together to create its net. So, in this case, the net of a triangular-based pyramid would have a triangle as one of its faces, but it's not just a single triangle, it's all the faces connected together. Can you see how the circle touching a sector doesn't fully represent all the faces connecting in the net of a triangular-based pyramid?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "I think I get that the net has to show all the faces together, but I'm still confused. So, if the net isn't just one triangle, what would the whole net look like for a triangular-based pyramid? Would it have more triangles or something else?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Think of the net of a triangular-based pyramid like a folded origami shape. Just like how you need to follow all the creases and folds to see the final shape, the net of a pyramid would have multiple triangles connected together to form the complete 3D shape. So, it's not just one triangle, but a combination of triangles that fit together to make the pyramid.",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "Okay, I think I get that there are multiple triangles in the net for a triangular-based pyramid. But how do they all fit together? Like, do they all connect at one point or something? I'm still a bit confused about how the shapes actually look when they're unfolded.",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 2,
+    "R3": 2,
+    "R4": 3,
+    "R5": 2,
+    "R6": 4,
+    "justification_pass1": "The teacher uses vague analogies (box, origami) without directly addressing the student's visualization struggle or helping them understand the specific net shown (circle touching sector, which appears to be a cone), and the student remains confused throughout, showing no improvement in their ability to visualize nets.",
+    "justification_pass2": "The teacher consistently uses concrete real-world analogies (unfolding a box, origami with creases and folds) to help the student understand the abstract concept of geometric nets, which is a strong implementation of the experiential strategy.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 2,\n  \"R3\": 2,\n  \"R4\": 3,\n  \"R5\": 2,\n  \"brief_justification\": \"The teacher uses vague analogies (box, origami) without directly addressing the student's visualization struggle or helping them understand the specific net shown (circle touching sector, which appears to be a cone), and the student remains confused throughout, showing no improvement in their ability to visualize nets.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 4, \"brief_justification\": \"The teacher consistently uses concrete real-world analogies (unfolding a box, origami with creases and folds) to help the student understand the abstract concept of geometric nets, which is a strong implementation of the experiential strategy.\"}\n```",
+    "quality_composite": 2.0,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T15:30:34.327261+00:00"
+}

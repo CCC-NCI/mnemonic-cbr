@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_23",
+    "misconception_label": "Confuses rest and movement on a distance time graph",
+    "misconception_features": [
+      0.0,
+      23.0,
+      3.0,
+      62.0
+    ],
+    "persona": "experiential",
+    "architecture": "pure_ai",
+    "student_leg": "leg_b",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T17:38:25.024901Z",
+      "seed": 1220,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T17:38:30.481090Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: This graph shows how far Fido the dog is from his home. What might the negative-sloping section represent? ![A graph with time (secs) on the horizontal axis and distance (m) on the vertical axis. The graph starts at the origin, travels in a straight line up and right, travels horizontally, then travels in a straight line down and right back to the x-axis. ](). I got Fido has fallen asleep because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Think of Fido's movement like a car driving away from home. When the line slopes downwards, it means Fido is moving further away from home. Just like when a car drives in reverse, it's still moving, just in the opposite direction. So, falling asleep wouldn't make sense in this context.",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Oh right, so when the line goes down it means he's moving back towards home, not falling asleep? But I'm still a bit confused - if the line is going down, doesn't that mean the distance is getting smaller, so wouldn't he be getting closer to home instead of further away?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Think of it like this: Imagine Fido is on a leash and someone is pulling him back towards home. When the line slopes downwards, it's like Fido is being pulled closer to his home, not falling asleep. Just like how a person pulling on the leash would make the distance between Fido and home smaller.",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "Oh, I think I get it now! So when the line goes down, the distance is getting smaller, which means Fido is moving back towards home - not falling asleep. So the horizontal bit in the middle must be when he stops and rests, right?",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 2,
+    "R3": 2,
+    "R4": 1,
+    "R5": 4,
+    "R6": 5,
+    "justification_pass1": "The teacher makes a critical domain error in Turn 1 (claiming downward slope means moving further away), though later corrects this, and relies heavily on analogies rather than engaging the student in reasoning about the graph's meaning, but the student does ultimately reach correct understanding by Turn 4.",
+    "justification_pass2": "The teacher consistently uses concrete, everyday analogies (a car driving in reverse, a dog on a leash being pulled) to explain the abstract concept of negative slope on a distance-time graph, which is a textbook example of the experiential strategy.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 2,\n  \"R3\": 2,\n  \"R4\": 1,\n  \"R5\": 4,\n  \"brief_justification\": \"The teacher makes a critical domain error in Turn 1 (claiming downward slope means moving further away), though later corrects this, and relies heavily on analogies rather than engaging the student in reasoning about the graph's meaning, but the student does ultimately reach correct understanding by Turn 4.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 5, \"brief_justification\": \"The teacher consistently uses concrete, everyday analogies (a car driving in reverse, a dog on a leash being pulled) to explain the abstract concept of negative slope on a distance-time graph, which is a textbook example of the experiential strategy.\"}\n```",
+    "quality_composite": 2.0,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T17:38:38.126880+00:00"
+}

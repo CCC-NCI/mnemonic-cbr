@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_24",
+    "misconception_label": "When solving a problem that requires an inverse operation (e.g. missing number problems), does the original operation",
+    "misconception_features": [
+      0.0,
+      24.0,
+      2.0,
+      52.0
+    ],
+    "persona": "traditional",
+    "architecture": "pure_cbr_llm",
+    "student_leg": "leg_b",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T17:51:53.002569Z",
+      "seed": 1286,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T17:51:58.421250Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: What should replace the star? \\[ \\bigstar \\times 4=108 \\]. I got \\( 432 \\) because I added the parts of the ratio as if they were a total.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's focus on the specific operation needed to solve this problem. Remember, when dealing with an inverse operation like multiplication and division, we need to think about how the two operations are related. Can you explain your thought process for solving this equation?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Um, so I multiplied 108 by 4 to get 432, but I'm not really sure why that's wrong? Like, I thought if something times 4 equals 108, then I need to do something with the 4... but I'm confused about whether I should multiply or divide?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's focus on the relationship between multiplication and division in this problem. Remember, when we have an equation like \\( x \\times 4 = 108 \\), we need to use the inverse operation of multiplication to find the missing number. Can you think about how division relates to multiplication in this context?",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "Oh, so like... division is the opposite of multiplication? So if something times 4 equals 108, I need to divide 108 by 4 instead of multiplying? That would give me 27, right? But I'm still a bit confused about why we use the opposite operation - like, why can't we just multiply?",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 3,
+    "R3": 2,
+    "R4": 5,
+    "R5": 3,
+    "R6": 2,
+    "justification_pass1": "The teacher correctly addresses inverse operations but doesn't directly engage with the student's specific confusion about why they initially multiplied, and while the student arrives at the correct answer by Turn 4, they still express fundamental confusion about why the inverse operation is needed.",
+    "justification_pass2": "The teacher uses guided questioning to elicit student reasoning rather than directly explaining the concept with worked examples, which is inconsistent with the traditional strategy of direct explanation.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 3,\n  \"R3\": 2,\n  \"R4\": 5,\n  \"R5\": 3,\n  \"brief_justification\": \"The teacher correctly addresses inverse operations but doesn't directly engage with the student's specific confusion about why they initially multiplied, and while the student arrives at the correct answer by Turn 4, they still express fundamental confusion about why the inverse operation is needed.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 2, \"brief_justification\": \"The teacher uses guided questioning to elicit student reasoning rather than directly explaining the concept with worked examples, which is inconsistent with the traditional strategy of direct explanation.\"}\n```",
+    "quality_composite": 2.3333333333333335,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T17:52:06.309029+00:00"
+}

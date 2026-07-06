@@ -1,0 +1,66 @@
+{
+  "state": {
+    "case_id": "case_19",
+    "misconception_label": "When subtracting fractions, subtracts the numerators and multiplies the denominators",
+    "misconception_features": [
+      0.0,
+      19.0,
+      3.0,
+      104.0
+    ],
+    "persona": "experiential",
+    "architecture": "hybrid",
+    "student_leg": "leg_a",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T11:17:19.310677Z",
+      "seed": 1021,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-12T11:17:23.329024Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: Express the following as a single fraction, writing your answer as simply as possible: \\( \\frac{1}{s}-\\frac{t}{3} \\). I got \\( \\frac{1-t}{3 s} \\) because I treated the fractions like ordinary numbers.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's think of fractions as pieces of a pizza. When you subtract fractions, you need to make sure the pizzas are the same size. So, when you subtract slices from different-sized pizzas, you can't just subtract the toppings. Let's try to find a common denominator before subtracting to make sure our pizzas are the same size.",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Okay, I think I get what you're saying about the pizzas being the same size. So, if I need to find a common denominator, does that mean I have to make both fractions have the same bottom number before I can subtract them? How do I figure out what that common denominator is?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Yes, exactly! Just like with the pizzas, you want to find a common denominator for the fractions so they have the same bottom number. To find the common denominator, you need to look at the denominators of both fractions and find the smallest number that they both divide into evenly. This will ensure that our pizzas are the same size before we subtract the toppings.",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 2,
+    "R3": 2,
+    "R4": 5,
+    "R5": 2,
+    "R6": 5,
+    "justification_pass1": "The teacher uses a pizza analogy but never directly addresses why the student's specific error (subtracting numerators and multiplying denominators) is incorrect, and while the student asks a good question in Turn 2, they are not given opportunity to actually work through the problem or demonstrate corrected understanding.",
+    "justification_pass2": "The teacher consistently uses a concrete, real-world pizza analogy throughout both turns to explain the abstract concept of common denominators, making this a textbook example of the experiential strategy.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 2,\n  \"R3\": 2,\n  \"R4\": 5,\n  \"R5\": 2,\n  \"brief_justification\": \"The teacher uses a pizza analogy but never directly addresses why the student's specific error (subtracting numerators and multiplying denominators) is incorrect, and while the student asks a good question in Turn 2, they are not given opportunity to actually work through the problem or demonstrate corrected understanding.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 5, \"brief_justification\": \"The teacher consistently uses a concrete, real-world pizza analogy throughout both turns to explain the abstract concept of common denominators, making this a textbook example of the experiential strategy.\"}\n```",
+    "quality_composite": 2.0,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T11:17:29.625808+00:00"
+}

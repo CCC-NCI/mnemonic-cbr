@@ -1,0 +1,66 @@
+{
+  "state": {
+    "case_id": "case_8",
+    "misconception_label": "Does not find a common denominator when adding/subtracting fractions",
+    "misconception_features": [
+      0.0,
+      8.0,
+      3.0,
+      88.0
+    ],
+    "persona": "socratic",
+    "architecture": "pure_ai",
+    "student_leg": "leg_b",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T09:27:58.614953Z",
+      "seed": 450,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-12T09:28:02.291785Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: \\( \\frac{4}{5}-\\frac{1}{3}=\\frac{\\bigstar}{15} \\) What should replace the star? I got \\( 5 \\) because I treated the fractions like ordinary numbers.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Why do you think it's important to find a common denominator when adding or subtracting fractions? Can you explain how treating fractions like ordinary numbers might lead to incorrect results in this case?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Um, I think it's because... the bottom numbers are different? Like, 5 and 3 aren't the same, so I can't just subtract 4 minus 1 to get 3? But I'm not really sure why that matters - couldn't I just do 4 minus 1 equals 3 and then put 15 on the bottom since that's what you said?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Can you think of a real-life example where having a common unit of measurement is important for adding or subtracting quantities? How might using different units lead to confusion or incorrect results?",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 3,
+    "R3": 2,
+    "R4": 5,
+    "R5": 1,
+    "R6": 5,
+    "justification_pass1": "While the teacher asks questions requiring reasoning and is mathematically accurate, the scaffolding misses the student's demonstrated confusion (they don't understand why denominators matter), and the student shows no improvement\u2014still wanting to just subtract numerators and use 15 as the denominator without understanding the conversion process.",
+    "justification_pass2": "The teacher consistently uses probing questions to guide the student's understanding without giving direct answers, asking about the importance of common denominators and prompting real-world analogies to help the student discover the concept independently.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 3,\n  \"R3\": 2,\n  \"R4\": 5,\n  \"R5\": 1,\n  \"brief_justification\": \"While the teacher asks questions requiring reasoning and is mathematically accurate, the scaffolding misses the student's demonstrated confusion (they don't understand why denominators matter), and the student shows no improvement\u2014still wanting to just subtract numerators and use 15 as the denominator without understanding the conversion process.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\n  \"R6\": 5,\n  \"brief_justification\": \"The teacher consistently uses probing questions to guide the student's understanding without giving direct answers, asking about the importance of common denominators and prompting real-world analogies to help the student discover the concept independently.\"\n}\n```",
+    "quality_composite": 2.3333333333333335,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T09:28:11.205722+00:00"
+}

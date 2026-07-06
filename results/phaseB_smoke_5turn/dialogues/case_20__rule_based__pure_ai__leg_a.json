@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_20",
+    "misconception_label": "Adds when calculating volume instead of multiplying",
+    "misconception_features": [
+      0.0,
+      20.0,
+      1.0,
+      58.0
+    ],
+    "persona": "rule_based",
+    "architecture": "pure_ai",
+    "student_leg": "leg_a",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T17:07:46.412591Z",
+      "seed": 1079,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T17:07:53.363358Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: The volume of this cuboid is \\( 30 \\mathrm{~cm}^{3} \\) What length should replace the star? ![A cuboid, depth 2cm and height 3cm. The width is labelled with a star.](). I got \\( 25 \\mathrm{~cm} \\) because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "To find the volume of a cuboid, you need to multiply the length, width, and height. In this case, the volume formula is \\( V = l \\times w \\times h \\). You mistakenly added the dimensions instead of multiplying them. Remember to multiply, not add, to find the volume of a cuboid.",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Okay, I think I get that I need to multiply the dimensions instead of adding them. So if the height is 3 cm and the depth is 2 cm, I just need to figure out what the width should be to make the volume 30 cm\u00b3. But how do I set that up?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "To find the missing width, set up the equation as \\( 30 = l \\times w \\times h \\) and substitute in the given values for length, height, and depth. Then solve for the width by dividing both sides of the equation by the product of the length, height, and depth. Let's work through it step by step.",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "Okay, I think I get that I need to set up the equation like \\( 30 = w \\times 2 \\times 3 \\). So, if I multiply 2 and 3, that\u2019s 6, right? Then how do I divide 30 by 6 to find the width?",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 1,
+    "R3": 2,
+    "R4": 5,
+    "R5": 3,
+    "R6": 3,
+    "justification_pass1": "The teacher directly tells the student what they did wrong and what to do instead without exploring the misconception, provides minimal cognitive demand by giving away the method, and while the student shows some progress in setting up the equation, they still ask how to perform basic division at the end, suggesting incomplete resolution of the underlying issue.",
+    "justification_pass2": "The teacher states explicit procedures and identifies procedural errors, but stops short of showing complete worked steps, instead prompting the student to work through the calculation rather than demonstrating it directly.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 1,\n  \"R3\": 2,\n  \"R4\": 5,\n  \"R5\": 3,\n  \"brief_justification\": \"The teacher directly tells the student what they did wrong and what to do instead without exploring the misconception, provides minimal cognitive demand by giving away the method, and while the student shows some progress in setting up the equation, they still ask how to perform basic division at the end, suggesting incomplete resolution of the underlying issue.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 3, \"brief_justification\": \"The teacher states explicit procedures and identifies procedural errors, but stops short of showing complete worked steps, instead prompting the student to work through the calculation rather than demonstrating it directly.\"}\n```",
+    "quality_composite": 1.6666666666666667,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T17:08:00.640058+00:00"
+}

@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_9",
+    "misconception_label": "Believes f(x - a) translates the function up a units",
+    "misconception_features": [
+      0.0,
+      9.0,
+      3.0,
+      83.0
+    ],
+    "persona": "socratic",
+    "architecture": "pure_cbr_llm",
+    "student_leg": "leg_b",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T15:02:16.926338Z",
+      "seed": 496,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T15:02:22.796845Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: What transformation maps the graph of \\(y=f(x) \\) to the graph of \\( y=f(x-3) \\). I got Translation by vector\n\\(\n\\left[\\begin{array}{l}\n0 \\\\\n3\n\\end{array}\\right]\n\\) because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Can you walk me through your thought process on how you arrived at the translation by the vector \\( \\left[\\begin{array}{l} 0 \\\\ 3 \\end{array}\\right] \\)? What specific steps did you take to determine this transformation?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Um, well I saw the minus 3 in the brackets and I thought that meant we move down by 3, but then I got confused because that would be negative, so I just put it as moving up by 3 instead? I'm not really sure why the minus sign is there or what it actually means for the graph though.",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Can you explain why you think moving up by 3 units is the correct transformation when the function is \\( f(x - 3) \\)? How does this align with your understanding of function transformations?",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "Um, I guess I'm not really sure now that you're asking me like that... I just kind of assumed the minus sign meant we go in the opposite direction, so minus 3 would be up instead of down? But I don't actually know why that would be the case, or like, why the number inside the brackets would affect the vertical direction at all - shouldn't that be something outside the brackets?",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 3,
+    "R3": 2,
+    "R4": 5,
+    "R5": 2,
+    "R6": 4,
+    "justification_pass1": "The teacher asks open questions that maintain cognitive demand but never directly addresses the student's specific misconception about vertical vs. horizontal translation, leaving the student confused and making no visible progress toward the correct understanding by Turn 4.",
+    "justification_pass2": "The teacher consistently uses probing questions to guide the student's thinking and never directly provides the answer, though they could have employed a counterexample to more effectively expose the student's confusion about horizontal versus vertical transformations.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 3,\n  \"R3\": 2,\n  \"R4\": 5,\n  \"R5\": 2,\n  \"brief_justification\": \"The teacher asks open questions that maintain cognitive demand but never directly addresses the student's specific misconception about vertical vs. horizontal translation, leaving the student confused and making no visible progress toward the correct understanding by Turn 4.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 4, \"brief_justification\": \"The teacher consistently uses probing questions to guide the student's thinking and never directly provides the answer, though they could have employed a counterexample to more effectively expose the student's confusion about horizontal versus vertical transformations.\"}\n```",
+    "quality_composite": 2.3333333333333335,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T15:02:31.460378+00:00"
+}

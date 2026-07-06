@@ -1,0 +1,66 @@
+{
+  "state": {
+    "case_id": "case_20",
+    "misconception_label": "Adds when calculating volume instead of multiplying",
+    "misconception_features": [
+      0.0,
+      20.0,
+      1.0,
+      58.0
+    ],
+    "persona": "constructive",
+    "architecture": "baseline",
+    "student_leg": "leg_a",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T11:23:16.952866Z",
+      "seed": 1053,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-12T11:23:22.009927Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: The volume of this cuboid is \\( 30 \\mathrm{~cm}^{3} \\) What length should replace the star? ![A cuboid, depth 2cm and height 3cm. The width is labelled with a star.](). I got \\( 25 \\mathrm{~cm} \\) because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's go back to the part you do know, and build the next step from there. Remember, when calculating volume of a cuboid, you need to multiply the length, width, and height. What operation should we use to find the missing length in this case?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "I think I get that I need to multiply the length, width, and height to find the volume. So, if the volume is \\( 30 \\mathrm{~cm}^{3} \\) and the height is \\( 3 \\mathrm{~cm} \\) and the depth is \\( 2 \\mathrm{~cm} \\), how do I use that to find the width? Do I just divide \\( 30 \\) by the other two numbers?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's go back to the part you do know, and build the next step from there. Remember, when calculating the volume of a cuboid, you need to multiply the length, width, and height. How can we use this information to find the missing width in this case?",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 1,
+    "R2": 2,
+    "R3": 1,
+    "R4": 5,
+    "R5": 3,
+    "R6": 2,
+    "justification_pass1": "The teacher never addresses the student's adding misconception, provides nearly identical responses in turns 1 and 3 despite the student showing progress in turn 2, and fails to acknowledge that the student has already correctly identified division as the needed operation.",
+    "justification_pass2": "While the teacher attempts to scaffold by referencing prior knowledge, they repeat the exact same prompt in Turn 3 that was used in Turn 1, failing to adjust support level based on the student's clear progress in Turn 2 where they correctly identified division as the needed operation.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 1,\n  \"R2\": 2,\n  \"R3\": 1,\n  \"R4\": 5,\n  \"R5\": 3,\n  \"brief_justification\": \"The teacher never addresses the student's adding misconception, provides nearly identical responses in turns 1 and 3 despite the student showing progress in turn 2, and fails to acknowledge that the student has already correctly identified division as the needed operation.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 2, \"brief_justification\": \"While the teacher attempts to scaffold by referencing prior knowledge, they repeat the exact same prompt in Turn 3 that was used in Turn 1, failing to adjust support level based on the student's clear progress in Turn 2 where they correctly identified division as the needed operation.\"}\n```",
+    "quality_composite": 1.3333333333333333,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T11:23:29.303634+00:00"
+}

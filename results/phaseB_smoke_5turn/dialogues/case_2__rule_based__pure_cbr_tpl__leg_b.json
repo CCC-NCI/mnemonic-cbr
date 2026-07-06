@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_2",
+    "misconception_label": "Believes if you changed all values by the same proportion the range would not change",
+    "misconception_features": [
+      0.0,
+      2.0,
+      3.0,
+      39.0
+    ],
+    "persona": "rule_based",
+    "architecture": "pure_cbr_tpl",
+    "student_leg": "leg_b",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T13:30:27.379178Z",
+      "seed": 178,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T13:30:33.686075Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: Tom and Katie are discussing the \\( 5 \\) plants with these heights: \\( 24 \\mathrm{~cm}, 17 \\mathrm{~cm}, 42 \\mathrm{~cm}, 26 \\mathrm{~cm}, 13 \\mathrm{~cm} \\) Tom says if all the plants were cut in half, the range wouldn't change. Katie says if all the plants grew by \\( 3 \\mathrm{~cm} \\) each, the range wouldn't change. Who do you agree with? I got Only\nTom because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's think about this. From similar cases:\n  1. Topic: Calculate the range from a list of data. Correct answer (C): Add all the numbers together.. Student selected: Check the units of your answer. Underlying misconception: Believes range does not need units. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.\n  2. Topic: Compare sets of data using the range. Correct answer (A): The girls because their range is lower. Student selected: The boys because their mean is lower. Underlying misconception: Thinks a lower average means the data is more consistent. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.\n  3. Topic: Given information about one part, work out other parts. Correct answer (D): \\( 1600 \\ \\mathrm{ml} \\). Student selected: \\( 1201 \\ \\mathrm{ml} \\). Underlying misconception: Thinks a difference of one part in a ratio means the quantities will differ by one unit. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Oh right, so I need to actually work out what the range is before and after the changes, don't I? Like, I think I just assumed Tom was right because cutting things in half sounds like it would change less than adding 3 to everything, but I didn't actually calculate it properly. Should I work out the range for the original heights first and then see what happens when I cut them all in half?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's think about this. From similar cases:\n  1. Topic: Calculate the range from a list of data. Correct answer (C): Add all the numbers together.. Student selected: Check the units of your answer. Underlying misconception: Believes range does not need units. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.\n  2. Topic: Compare sets of data using the range. Correct answer (A): The girls because their range is lower. Student selected: The boys because their mean is lower. Underlying misconception: Thinks a lower average means the data is more consistent. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.\n  3. Topic: Given information about one part, work out other parts. Correct answer (D): \\( 1600 \\ \\mathrm{ml} \\). Student selected: \\( 1201 \\ \\mathrm{ml} \\). Underlying misconception: Thinks a difference of one part in a ratio means the quantities will differ by one unit. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "Yeah, okay, so the original range would be 42 minus 13 which is 29 cm. Then if I cut them all in half, that would be 21 minus 6.5 which is 14.5... oh wait, that's different! So Tom is actually wrong? But then what about Katie's one with adding 3 - wouldn't that change the range too?",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 1,
+    "R2": 1,
+    "R3": 1,
+    "R4": 1,
+    "R5": 4,
+    "R6": 1,
+    "justification_pass1": "The teacher provides only irrelevant boilerplate text about unrelated misconceptions rather than engaging with the student's actual misconception about proportional changes and range, yet the student independently reasons their way to understanding through self-directed calculation and discovery.",
+    "justification_pass2": "The teacher never states explicit procedures, shows worked steps, or gives direct corrective feedback; instead, they only repeat irrelevant examples from other problems without any rule-based instruction.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 1,\n  \"R2\": 1,\n  \"R3\": 1,\n  \"R4\": 1,\n  \"R5\": 4,\n  \"brief_justification\": \"The teacher provides only irrelevant boilerplate text about unrelated misconceptions rather than engaging with the student's actual misconception about proportional changes and range, yet the student independently reasons their way to understanding through self-directed calculation and discovery.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 1, \"brief_justification\": \"The teacher never states explicit procedures, shows worked steps, or gives direct corrective feedback; instead, they only repeat irrelevant examples from other problems without any rule-based instruction.\"}\n```",
+    "quality_composite": 1.0,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T13:30:39.965965+00:00"
+}

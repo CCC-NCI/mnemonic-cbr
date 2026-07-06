@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_24",
+    "misconception_label": "When solving a problem that requires an inverse operation (e.g. missing number problems), does the original operation",
+    "misconception_features": [
+      0.0,
+      24.0,
+      2.0,
+      52.0
+    ],
+    "persona": "rule_based",
+    "architecture": "pure_cbr_tpl",
+    "student_leg": "leg_b",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T17:50:08.567583Z",
+      "seed": 1278,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T17:50:11.515864Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: What should replace the star? \\[ \\bigstar \\times 4=108 \\]. I got \\( 432 \\) because I added the parts of the ratio as if they were a total.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's think about this. From similar cases:\n  1. Topic: Complete missing number mental subtraction problems up to 100. Correct answer (A): \\( 75 \\). Student selected: \\( 1 \\). Underlying misconception: When solving a problem that requires an inverse operation (e.g. missing number problems), does the original operation. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.\n  2. Topic: Complete missing number mental subtraction problems with numbers over 1000. Correct answer (A): \\( 0 \\). Student selected: \\( 4 \\). Underlying misconception: When solving a problem that requires an inverse operation (e.g. missing number problems), does the original operation. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.\n  3. Topic: Complete missing number mental addition problems with numbers over 1000. Correct answer (D): \\( 4 \\). Student selected: \\( 0 \\). Underlying misconception: When solving a problem that requires an inverse operation (e.g. missing number problems), does the original operation. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Oh, I see... so you're saying I did the wrong operation? Like, instead of multiplying by 4, I should have done something else? But I'm still confused - why would I divide instead of multiply when the problem shows a multiplication sign?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's think about this. From similar cases:\n  1. Topic: Complete missing number mental subtraction problems up to 100. Correct answer (A): \\( 75 \\). Student selected: \\( 1 \\). Underlying misconception: When solving a problem that requires an inverse operation (e.g. missing number problems), does the original operation. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.\n  2. Topic: Complete missing number mental subtraction problems with numbers over 1000. Correct answer (A): \\( 0 \\). Student selected: \\( 4 \\). Underlying misconception: When solving a problem that requires an inverse operation (e.g. missing number problems), does the original operation. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.\n  3. Topic: Complete missing number mental addition problems with numbers over 1000. Correct answer (D): \\( 4 \\). Student selected: \\( 0 \\). Underlying misconception: When solving a problem that requires an inverse operation (e.g. missing number problems), does the original operation. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "Yeah, I'm still confused though... like, if the problem says multiply by 4, why would I do the opposite? Is it because I'm trying to find the missing number, so I have to undo what was done to it? Can you show me with a simpler example or something?",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 1,
+    "R2": 1,
+    "R3": 1,
+    "R4": 2,
+    "R5": 1,
+    "R6": 1,
+    "justification_pass1": "The teacher merely repeats generic examples without addressing the student's specific confusion about why inverse operations are needed, fails to provide the requested simpler example or concrete reasoning, and the student shows no improvement in understanding across turns despite explicitly asking for help.",
+    "justification_pass2": "The teacher never states explicit procedures, shows worked steps, or gives direct corrective feedback; instead, they repeatedly present analogous cases and expect the student to infer the rule, which is contrary to rule-based instruction.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 1,\n  \"R2\": 1,\n  \"R3\": 1,\n  \"R4\": 2,\n  \"R5\": 1,\n  \"brief_justification\": \"The teacher merely repeats generic examples without addressing the student's specific confusion about why inverse operations are needed, fails to provide the requested simpler example or concrete reasoning, and the student shows no improvement in understanding across turns despite explicitly asking for help.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 1, \"brief_justification\": \"The teacher never states explicit procedures, shows worked steps, or gives direct corrective feedback; instead, they repeatedly present analogous cases and expect the student to infer the rule, which is contrary to rule-based instruction.\"}\n```",
+    "quality_composite": 1.0,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T17:50:17.866544+00:00"
+}

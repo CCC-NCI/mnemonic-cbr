@@ -1,0 +1,66 @@
+{
+  "state": {
+    "case_id": "case_11",
+    "misconception_label": "Struggles to visualise nets of 3D shapes",
+    "misconception_features": [
+      0.0,
+      11.0,
+      3.0,
+      31.0
+    ],
+    "persona": "constructive",
+    "architecture": "baseline",
+    "student_leg": "leg_a",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T09:57:58.912734Z",
+      "seed": 603,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-12T09:58:02.956410Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: This is the net of a... ![A circle touching a sector](). I got Triangle because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's go back to the part you do know, and build the next step from there. Can you identify any familiar shapes within the net you have drawn?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Um, I can see that there\u2019s a circle in the net, and maybe that\u2019s part of a shape? But I don\u2019t really get how a circle and a sector can make a 3D shape. Could it be something like a cone? I\u2019m still confused about how to put it all together.",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's continue building on what you do know. Can you think about how a circle and a sector could fit together to form a 3D shape? Let's try to visualize it step by step.",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 3,
+    "R3": 2,
+    "R4": 5,
+    "R5": 3,
+    "R6": 5,
+    "justification_pass1": "The teacher uses generic prompts to encourage visualization without directly addressing the net-folding misconception, and while the student progresses from 'triangle' to correctly identifying 'cone' as a possibility, the teacher's final turn merely repeats the same instruction without providing substantive guidance on how to actually visualize the folding process.",
+    "justification_pass2": "The teacher consistently scaffolds by starting from what the student knows (familiar shapes, then circle), breaks down the problem into manageable steps (identify shapes \u2192 visualize how they fit together), and adjusts support by acknowledging the student's progress from recognizing shapes to considering a cone.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 3,\n  \"R3\": 2,\n  \"R4\": 5,\n  \"R5\": 3,\n  \"brief_justification\": \"The teacher uses generic prompts to encourage visualization without directly addressing the net-folding misconception, and while the student progresses from 'triangle' to correctly identifying 'cone' as a possibility, the teacher's final turn merely repeats the same instruction without providing substantive guidance on how to actually visualize the folding process.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\n  \"R6\": 5,\n  \"brief_justification\": \"The teacher consistently scaffolds by starting from what the student knows (familiar shapes, then circle), breaks down the problem into manageable steps (identify shapes \u2192 visualize how they fit together), and adjusts support by acknowledging the student's progress from recognizing shapes to considering a cone.\"\n}\n```",
+    "quality_composite": 2.3333333333333335,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T09:58:10.339386+00:00"
+}

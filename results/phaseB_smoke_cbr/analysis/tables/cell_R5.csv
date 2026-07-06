@@ -1,0 +1,6 @@
+architecture,constructive,experiential,rule_based,socratic,traditional
+baseline,2.3,1.2,1.8,2.3,1.1
+hybrid,2.4,1.8,1.9,1.9,2.7
+pure_ai,2.5,1.9,1.8,2.5,2.2
+pure_cbr_llm,1.8,2.2,2.2,1.5,1.8
+pure_cbr_tpl,1.0,1.1,1.0,1.2,1.2

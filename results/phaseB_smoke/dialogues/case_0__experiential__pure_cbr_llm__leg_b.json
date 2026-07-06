@@ -1,0 +1,65 @@
+{
+  "state": {
+    "case_id": "case_0",
+    "misconception_label": "Confuses the order of operations, believes addition comes before multiplication",
+    "misconception_features": [
+      0.0,
+      0.0,
+      1.0,
+      70.0
+    ],
+    "persona": "experiential",
+    "architecture": "pure_cbr_llm",
+    "student_leg": "leg_b",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T06:22:52.208364Z",
+      "seed": 66,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "ended_at": "2026-05-12T06:22:55.962091Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: \\[ 3 \\times 2+4-5 \\] Where do the brackets need to go to make the answer equal \\( 13 \\) ? I got Does not need brackets because I worked left to right instead of following the order of operations.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Think about following the order of operations like following a recipe when baking. Just like you wouldn't put frosting on a cake before baking it, you shouldn't add before multiplying in math. Let's walk through the steps together to see where the brackets need to go to get the correct answer of 13.",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Oh right, so I shouldn't just go left to right... but I'm still confused about where the brackets should go. Like, if I do the multiplication first without brackets, I get 3 \u00d7 2 = 6, then 6 + 4 = 10, then 10 - 5 = 5, which isn't 13. So do the brackets go around the addition and subtraction part to make that happen first?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Think of the multiplication like mixing ingredients in a recipe. You need to multiply the 3 and 2 together first, just like you would mix flour and sugar before adding other ingredients. Try putting the brackets around the 3 \u00d7 2 to see if that helps you get to the correct answer of 13.",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 2,
+    "R3": 2,
+    "R4": 1,
+    "R5": 2,
+    "R6": 2,
+    "justification_pass1": "The teacher uses an analogy but fails to address the student's actual misconception about operation order, and critically gives mathematically incorrect advice in Turn 3 by suggesting brackets around '3 \u00d7 2' when the correct answer requires brackets around '2 + 4' or similar groupings that change the order.",
+    "justification_pass2": "While the teacher uses real-world analogies (baking recipe, frosting cake, mixing ingredients), these analogies don't accurately map to the mathematical structure of the problem and actually provide incorrect guidance (suggesting brackets around 3\u00d72, which doesn't lead to the answer of 13).",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 2,\n  \"R3\": 2,\n  \"R4\": 1,\n  \"R5\": 2,\n  \"brief_justification\": \"The teacher uses an analogy but fails to address the student's actual misconception about operation order, and critically gives mathematically incorrect advice in Turn 3 by suggesting brackets around '3 \u00d7 2' when the correct answer requires brackets around '2 + 4' or similar groupings that change the order.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 2, \"brief_justification\": \"While the teacher uses real-world analogies (baking recipe, frosting cake, mixing ingredients), these analogies don't accurately map to the mathematical structure of the problem and actually provide incorrect guidance (suggesting brackets around 3\u00d72, which doesn't lead to the answer of 13).\"}\n```",
+    "quality_composite": 2.0,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T06:23:03.181790+00:00"
+}

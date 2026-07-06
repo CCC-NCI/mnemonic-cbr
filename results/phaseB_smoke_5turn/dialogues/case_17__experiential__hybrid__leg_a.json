@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_17",
+    "misconception_label": "Does not understand that 2n represents an even number",
+    "misconception_features": [
+      0.0,
+      17.0,
+      3.0,
+      47.0
+    ],
+    "persona": "experiential",
+    "architecture": "hybrid",
+    "student_leg": "leg_a",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T16:33:49.434743Z",
+      "seed": 921,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T16:33:54.782210Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: Which of these shows part of the proof that the sum of two odd numbers is even? I got \\( \\begin{array}{l}2 n+(2 m+1) \\\\ =2(n+m)+1\\end{array} \\) because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's think of even numbers as pairs of shoes. Just like when you add two odd numbers together, you're left with one extra shoe that doesn't quite make a pair. So, when we add 2n to (2m + 1), we end up with 2(n + m) and that one extra \"shoe\" which makes it an odd number. Let's try applying this shoe analogy to our math problem to see if it helps clarify things for you.",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Okay, I think I get the shoe thing a bit better now. So, when I add 2n (which is like a pair of shoes) to (2m + 1) (which is like one shoe that doesn't have a pair), it makes sense that I end up with an odd number because of that extra shoe. But why does 2n always mean it's even? Can you explain that part again?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Think of 2n as representing two pairs of shoes. When you add 2n to (2m + 1), you're essentially combining two pairs of shoes with one extra shoe. Just like how having two complete pairs of shoes always results in an even number of shoes, adding 2n to an odd number will always give you an even number. Let's try applying this shoe analogy to the math problem again to reinforce the concept.",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "Turn 4 (student): I think I'm starting to see it! So, 2n is like having two pairs of shoes, which is always even. But when I add that one extra shoe from (2m + 1), it makes it odd. But what if I had two odd numbers, like 3 and 5? How would that work with the pairs of shoes?",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 2,
+    "R3": 2,
+    "R4": 2,
+    "R5": 2,
+    "R6": 5,
+    "justification_pass1": "The teacher uses an analogy but makes mathematical errors (calling 2n 'two pairs of shoes' instead of 'one pair'), doesn't directly address why 2n represents even numbers, provides low cognitive demand by repeatedly telling rather than eliciting reasoning, and the student's Turn 4 question about adding two odd numbers suggests the original misconception about even number representation remains unresolved.",
+    "justification_pass2": "The teacher consistently uses a concrete, everyday analogy (pairs of shoes) to explain the abstract algebraic concept of even and odd numbers throughout the dialogue, which is a textbook example of the experiential strategy.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 2,\n  \"R3\": 2,\n  \"R4\": 2,\n  \"R5\": 2,\n  \"brief_justification\": \"The teacher uses an analogy but makes mathematical errors (calling 2n 'two pairs of shoes' instead of 'one pair'), doesn't directly address why 2n represents even numbers, provides low cognitive demand by repeatedly telling rather than eliciting reasoning, and the student's Turn 4 question about adding two odd numbers suggests the original misconception about even number representation remains unresolved.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 5, \"brief_justification\": \"The teacher consistently uses a concrete, everyday analogy (pairs of shoes) to explain the abstract algebraic concept of even and odd numbers throughout the dialogue, which is a textbook example of the experiential strategy.\"}\n```",
+    "quality_composite": 2.0,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T16:34:01.733678+00:00"
+}

@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_18",
+    "misconception_label": "Assumes that an arrow on a number line starts at zero",
+    "misconception_features": [
+      0.0,
+      18.0,
+      2.0,
+      73.0
+    ],
+    "persona": "traditional",
+    "architecture": "hybrid",
+    "student_leg": "leg_b",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T16:49:10.487978Z",
+      "seed": 992,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T16:49:16.635309Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: ![Number line with -12 and -7 marked. Starting at -12, follow an arrow pointing to the right labelled +10. Then there is an arrow labelled b pointing to the left, which ends at -7 on the number line.]() What is the value of \\( b \\) ? I got \\( -7 \\) because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's address the misconception you seem to have about the starting point of the arrow on the number line. Remember that the arrow does not always start at zero, so we need to consider the direction it is moving in relation to the numbers on the line. Can you explain your reasoning for selecting \\( -7 \\) as the value of \\( b \\)?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Um, I think I just looked at where the arrow ended up, which was at -7, so I thought that was the answer. But now you're saying the arrow doesn't start at zero... so does that mean I need to look at where it starts instead? I'm confused about how to work out what b is if it's not just the number where the arrow ends.",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's address the misconception you have about assuming the starting point of the arrow on the number line. Remember that the arrow's starting point is not always at zero, so we need to consider both where it starts and where it ends. Can you think about how the direction of the arrow relates to the numbers on the number line to determine the value of \\( b \\)?",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "Oh, so I need to look at both where the arrow starts AND where it ends? So like... the arrow starts at -12, goes right by +10, so that gets me to -2, and then the second arrow b goes left from -2 to -7... so b would be -5? Is that how you work out what the arrow represents?",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 4,
+    "R2": 3,
+    "R3": 2,
+    "R4": 5,
+    "R5": 5,
+    "R6": 1,
+    "justification_pass1": "The teacher explicitly names and addresses the specific misconception about arrows starting at zero, and the student successfully corrects their understanding by Turn 4, though the teacher's scaffolding could have been more differentiated between turns 1 and 3.",
+    "justification_pass2": "The teacher never provides direct explanation or worked examples, instead repeatedly asking the student to explain their reasoning and discover the solution themselves, which is characteristic of inquiry-based or Socratic teaching rather than traditional instruction.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 4,\n  \"R2\": 3,\n  \"R3\": 2,\n  \"R4\": 5,\n  \"R5\": 5,\n  \"brief_justification\": \"The teacher explicitly names and addresses the specific misconception about arrows starting at zero, and the student successfully corrects their understanding by Turn 4, though the teacher's scaffolding could have been more differentiated between turns 1 and 3.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 1, \"brief_justification\": \"The teacher never provides direct explanation or worked examples, instead repeatedly asking the student to explain their reasoning and discover the solution themselves, which is characteristic of inquiry-based or Socratic teaching rather than traditional instruction.\"}\n```",
+    "quality_composite": 3.0,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T16:49:23.957805+00:00"
+}

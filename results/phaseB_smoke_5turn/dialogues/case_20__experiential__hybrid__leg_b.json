@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_20",
+    "misconception_label": "Adds when calculating volume instead of multiplying",
+    "misconception_features": [
+      0.0,
+      20.0,
+      1.0,
+      58.0
+    ],
+    "persona": "experiential",
+    "architecture": "hybrid",
+    "student_leg": "leg_b",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T17:06:21.423095Z",
+      "seed": 1072,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T17:06:27.312890Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: The volume of this cuboid is \\( 30 \\mathrm{~cm}^{3} \\) What length should replace the star? ![A cuboid, depth 2cm and height 3cm. The width is labelled with a star.](). I got \\( 25 \\mathrm{~cm} \\) because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Imagine you have a box that is 2 cm deep and 3 cm tall. To find the volume, we need to multiply the depth, height, and width together. So, think of it like filling up the box with cubes that are 1 cm on each side. Can you see how adding the dimensions together wouldn't give us the correct volume in this case?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Oh right, so you multiply them together instead of adding? So it would be 2 times 3 times the star equals 30? But I'm still a bit confused about how to work out what the star is then...",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Think of it like this: when you're filling up a box with smaller boxes, you need to multiply the dimensions to find the total volume. So, in this case, you would need to multiply 2 cm (depth) by 3 cm (height) to get the correct volume. Adding them together wouldn't give you the right answer. Can you try multiplying the dimensions together to find the value of the star?",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "So if I multiply 2 times 3, that gives me 6, and then I need to figure out what times 6 equals 30? So would the star be 5 because 6 times 5 is 30?",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 3,
+    "R2": 2,
+    "R3": 2,
+    "R4": 5,
+    "R5": 4,
+    "R6": 4,
+    "justification_pass1": "The teacher addresses the adding vs. multiplying misconception with a concrete cube-filling analogy, but relies heavily on telling rather than eliciting reasoning, though the student does successfully arrive at the correct answer and demonstrates understanding of the multiplicative relationship by Turn 4.",
+    "justification_pass2": "The teacher consistently uses a concrete real-world analogy of filling a box with 1 cm cubes to ground the abstract concept of volume calculation, though the explanation could have been slightly more vivid or detailed to be a perfect exemplar.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 3,\n  \"R2\": 2,\n  \"R3\": 2,\n  \"R4\": 5,\n  \"R5\": 4,\n  \"brief_justification\": \"The teacher addresses the adding vs. multiplying misconception with a concrete cube-filling analogy, but relies heavily on telling rather than eliciting reasoning, though the student does successfully arrive at the correct answer and demonstrates understanding of the multiplicative relationship by Turn 4.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 4, \"brief_justification\": \"The teacher consistently uses a concrete real-world analogy of filling a box with 1 cm cubes to ground the abstract concept of volume calculation, though the explanation could have been slightly more vivid or detailed to be a perfect exemplar.\"}\n```",
+    "quality_composite": 2.3333333333333335,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T17:06:34.839854+00:00"
+}

@@ -1,0 +1,66 @@
+{
+  "state": {
+    "case_id": "case_21",
+    "misconception_label": "When factorising a quadratic with a non-unit coefficient of x squared, believes that coefficient will be in front of both x terms in the factorised form",
+    "misconception_features": [
+      0.0,
+      21.0,
+      1.0,
+      74.0
+    ],
+    "persona": "rule_based",
+    "architecture": "pure_cbr_llm",
+    "student_leg": "leg_b",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T11:37:02.459557Z",
+      "seed": 1126,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-12T11:37:06.542671Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: Step 1: Factorise the following expression \\( 3 x^{2}+5 x+2 \\). I got \\( (3 x+2)(3 x+1) \\) because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "You made a mistake in your factorisation. Remember, when factorising a quadratic expression, you need to find two numbers that add to give the coefficient of the x term and multiply to give the constant term. Double check your steps and try again using this rule.",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Right, so I need two numbers that add to 5 and multiply to 2, which would be 2 and 1. But then when I expand (3x+2)(3x+1) I get 9x\u00b2 which is wrong... so do I need to put the 3 in front of just one of them instead?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "You are correct in finding the correct numbers to add and multiply. However, remember that the coefficient in front of the x term should only be used once when factorising. Try factoring out the common factor of 3 before applying the rule for factorising a quadratic expression.",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 2,
+    "R3": 1,
+    "R4": 1,
+    "R5": 2,
+    "R6": 2,
+    "justification_pass1": "The teacher gives mathematically incorrect advice (suggesting to factor out 3 from an expression where 3 is not a common factor), fails to directly address the student's specific misconception about coefficient placement, and the student shows some progress in Turn 2 by recognizing the error but receives unhelpful guidance in Turn 3.",
+    "justification_pass2": "While the teacher provides some direct feedback on errors, they do not state explicit procedures or show worked steps, and the guidance given in Turn 3 is actually mathematically incorrect (factoring out 3 would give 3(x\u00b2+5x/3+2/3) which doesn't help), making this a poor implementation of rule-based teaching.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 2,\n  \"R3\": 1,\n  \"R4\": 1,\n  \"R5\": 2,\n  \"brief_justification\": \"The teacher gives mathematically incorrect advice (suggesting to factor out 3 from an expression where 3 is not a common factor), fails to directly address the student's specific misconception about coefficient placement, and the student shows some progress in Turn 2 by recognizing the error but receives unhelpful guidance in Turn 3.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 2, \"brief_justification\": \"While the teacher provides some direct feedback on errors, they do not state explicit procedures or show worked steps, and the guidance given in Turn 3 is actually mathematically incorrect (factoring out 3 would give 3(x\u00b2+5x/3+2/3) which doesn't help), making this a poor implementation of rule-based teaching.\"}\n```",
+    "quality_composite": 1.6666666666666667,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T11:37:14.350999+00:00"
+}

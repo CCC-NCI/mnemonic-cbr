@@ -1,0 +1,66 @@
+{
+  "state": {
+    "case_id": "case_23",
+    "misconception_label": "Confuses rest and movement on a distance time graph",
+    "misconception_features": [
+      0.0,
+      23.0,
+      3.0,
+      62.0
+    ],
+    "persona": "rule_based",
+    "architecture": "baseline",
+    "student_leg": "leg_a",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T11:55:41.044983Z",
+      "seed": 1223,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-12T11:55:50.868617Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: This graph shows how far Fido the dog is from his home. What might the negative-sloping section represent? ![A graph with time (secs) on the horizontal axis and distance (m) on the vertical axis. The graph starts at the origin, travels in a straight line up and right, travels horizontally, then travels in a straight line down and right back to the x-axis. ](). I got Fido has fallen asleep because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "There is a specific procedure for this. Step 1 is to identify the operation; step 2 is to apply the rule for that operation. In this case, the negative-sloping section on the graph represents Fido moving away from his home, not falling asleep.",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Oh, I see! So the negative slope means Fido is actually moving back towards home instead of falling asleep. But how do I know when he's moving away or coming back? Is it just about the direction of the line?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "There is a specific procedure for this. Step 1 is to identify the operation; step 2 is to apply the rule for that operation. In this case, the negative slope indicates that Fido is moving away from his home, while a positive slope would indicate him moving towards his home.",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 1,
+    "R2": 1,
+    "R3": 1,
+    "R4": 1,
+    "R5": 1,
+    "R6": 2,
+    "justification_pass1": "The teacher provides mathematically incorrect information (claiming negative slope means moving away when it actually means returning home), uses an inappropriate procedural approach for a conceptual graph interpretation task, and the student's Turn 2 shows they had actually self-corrected to the right understanding before being confused again by the teacher's incorrect Turn 3.",
+    "justification_pass2": "While the teacher attempts to state explicit procedures and gives direct feedback, the procedural steps are vague and misapplied to a graph interpretation task, and Turn 3 contains a factual error (contradicting Turn 1 about what negative slope means), undermining the rule-based approach.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 1,\n  \"R2\": 1,\n  \"R3\": 1,\n  \"R4\": 1,\n  \"R5\": 1,\n  \"brief_justification\": \"The teacher provides mathematically incorrect information (claiming negative slope means moving away when it actually means returning home), uses an inappropriate procedural approach for a conceptual graph interpretation task, and the student's Turn 2 shows they had actually self-corrected to the right understanding before being confused again by the teacher's incorrect Turn 3.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 2, \"brief_justification\": \"While the teacher attempts to state explicit procedures and gives direct feedback, the procedural steps are vague and misapplied to a graph interpretation task, and Turn 3 contains a factual error (contradicting Turn 1 about what negative slope means), undermining the rule-based approach.\"}\n```",
+    "quality_composite": 1.0,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T11:55:57.433091+00:00"
+}

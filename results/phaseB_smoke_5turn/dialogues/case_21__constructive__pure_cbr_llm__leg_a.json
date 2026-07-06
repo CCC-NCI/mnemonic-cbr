@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_21",
+    "misconception_label": "When factorising a quadratic with a non-unit coefficient of x squared, believes that coefficient will be in front of both x terms in the factorised form",
+    "misconception_features": [
+      0.0,
+      21.0,
+      1.0,
+      74.0
+    ],
+    "persona": "constructive",
+    "architecture": "pure_cbr_llm",
+    "student_leg": "leg_a",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T17:13:17.226502Z",
+      "seed": 1105,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T17:13:25.532239Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: Step 1: Factorise the following expression \\( 3 x^{2}+5 x+2 \\). I got \\( (3 x+2)(3 x+1) \\) because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's focus on why the factorisation \\( (3x+2)(3x+1) \\) is incorrect. Remember, we need to find two numbers that add to give the coefficient of the x term and multiply to give the constant term. Can you try to find the correct pair of numbers for this expression?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Okay, I think I get that I need to find two numbers that add to 5 and multiply to 6, since \\( 3 \\times 2 = 6 \\). So, would those numbers be 2 and 3? But I\u2019m still confused about how to use those numbers in the factorisation. Do I just put them in front of the x's?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "You're on the right track with finding the correct pair of numbers that add to 5 and multiply to 6. Now, let's focus on how to use these numbers in the factorisation. Remember that these numbers will be used in the x terms, not in front of them. Can you try applying this to the expression \\(3x^2 + 5x + 2\\) using the numbers 2 and 3?",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "Okay, so if I have the numbers 2 and 3, I think I should use them in the x terms somehow. So maybe it would look like \\( (3x + 2)(x + 3) \\)? But I\u2019m not sure if that\u2019s right because I still don\u2019t get how the 3 in front of the x works. Can you explain that part again?",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 2,
+    "R3": 2,
+    "R4": 2,
+    "R5": 1,
+    "R6": 4,
+    "justification_pass1": "The teacher never directly addresses the student's core misconception about placing the coefficient 3 in front of both x terms, the mathematical guidance given (finding numbers that multiply to 6) is incomplete for factorising this quadratic, and the student remains confused about the same issue by Turn 4, showing no improvement in understanding.",
+    "justification_pass2": "The teacher consistently breaks down the problem into manageable steps (identifying the number pair, then applying it), provides scaffolded hints rather than direct answers, and adjusts support based on student progress, though could have caught the student's persistent conceptual confusion about coefficient placement earlier.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 2,\n  \"R3\": 2,\n  \"R4\": 2,\n  \"R5\": 1,\n  \"brief_justification\": \"The teacher never directly addresses the student's core misconception about placing the coefficient 3 in front of both x terms, the mathematical guidance given (finding numbers that multiply to 6) is incomplete for factorising this quadratic, and the student remains confused about the same issue by Turn 4, showing no improvement in understanding.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 4, \"brief_justification\": \"The teacher consistently breaks down the problem into manageable steps (identifying the number pair, then applying it), provides scaffolded hints rather than direct answers, and adjusts support based on student progress, though could have caught the student's persistent conceptual confusion about coefficient placement earlier.\"}\n```",
+    "quality_composite": 2.0,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T17:13:33.599444+00:00"
+}

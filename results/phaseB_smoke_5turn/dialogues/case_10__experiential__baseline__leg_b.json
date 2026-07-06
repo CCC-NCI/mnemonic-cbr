@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_10",
+    "misconception_label": "Ignores negative sign when expanding bracket",
+    "misconception_features": [
+      0.0,
+      10.0,
+      1.0,
+      68.0
+    ],
+    "persona": "experiential",
+    "architecture": "baseline",
+    "student_leg": "leg_b",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T15:17:37.123784Z",
+      "seed": 564,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T15:17:42.423397Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: John is expanding these three brackets: \\( (x+5)(x-3)(x+6) \\) He finds it helpful to split the first bracket and view the problem as follows: \\( x(x-3)(x+6)+5(x-3)(x+6) \\) He expands the brackets further. Before he simplifies, what are the terms than contain an \\( \\boldsymbol{x}^{2} \\) ? I got \\( \\begin{array}{l}+6 x^{2} \\\\ +3 x^{2} \\\\ +5 x^{2}\\end{array} \\) because I forgot that two negatives multiply to a positive.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's think about it like this: imagine you were working with a group of friends, some of whom have positive numbers and some have negative numbers. If two friends with negative numbers joined forces, what would happen to their overall value in the group? Would it become positive or negative?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Oh, I think I see what you mean - if two friends with negative numbers work together, they'd kind of cancel each other out and become positive? So like, when I have $-3$ times $-6$, that should give me a positive answer, not negative?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Imagine you were working with your friends again, but this time one friend has $-3$ apples and another friend has $-6$ apples. When they join forces, what would be the total number of apples they have together? Would it be a positive or negative number?",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "Hmm, wait... if one friend has -3 apples and another has -6 apples, they'd have -9 apples together, right? So that would be negative, not positive? But then I'm confused because you said earlier that two negatives make a positive...",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 3,
+    "R3": 2,
+    "R4": 1,
+    "R5": 1,
+    "R6": 2,
+    "justification_pass1": "The teacher uses a flawed analogy that confuses addition with multiplication, leading the student from correct understanding (negative \u00d7 negative = positive) to confusion, demonstrating poor domain accuracy and negative student trajectory.",
+    "justification_pass2": "While the teacher attempts to use real-world analogies (friends with numbers, apples), the analogies are mathematically inaccurate and confusing\u2014they conflate addition with multiplication, undermining rather than clarifying the abstract concept of multiplying negatives.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 3,\n  \"R3\": 2,\n  \"R4\": 1,\n  \"R5\": 1,\n  \"brief_justification\": \"The teacher uses a flawed analogy that confuses addition with multiplication, leading the student from correct understanding (negative \u00d7 negative = positive) to confusion, demonstrating poor domain accuracy and negative student trajectory.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 2, \"brief_justification\": \"While the teacher attempts to use real-world analogies (friends with numbers, apples), the analogies are mathematically inaccurate and confusing\u2014they conflate addition with multiplication, undermining rather than clarifying the abstract concept of multiplying negatives.\"}\n```",
+    "quality_composite": 2.3333333333333335,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T15:17:49.387720+00:00"
+}

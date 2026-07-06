@@ -1,0 +1,141 @@
+log file           = results/phaseB_smoke_5turn/logs/run_phaseB_smoke_20260517T141917Z.txt
+========================================================================
+Phase B-proper smoke — full 250-cell matrix
+========================================================================
+mode               = REAL
+OPENAI_API_KEY     = set
+ANTHROPIC_API_KEY  = set
+student mode       = pure_ai
+turns per dialogue = 5
+output root        = results/phaseB_smoke_5turn
+data file          = data/all_train.csv
+cases × personas × archs × legs = 25 × 5 × 5 × 2 = 1250 cells
+case base          = 500
+resume             = on
+
+[1/5] Loading EEDI cases...
+      loaded 500 cases; using first 25 as targets.
+
+[2/5] Building cleaned mnemonic engine...
+      Base similarity = embeddings (cosine).
+
+[3/5] Wiring providers and scorer...
+      teacher       = OpenAIProvider(provider='openai', model='gpt-3.5-turbo')
+      student_leg_a = OpenAIProvider(provider='openai', model='gpt-4o-mini')
+      student_leg_b = AnthropicProvider(provider='anthropic', model='claude-haiku-4-5')
+      judge_primary = AnthropicProvider(provider='anthropic', model='claude-sonnet-4-5')
+
+[4/5] Cost estimate (REAL mode): ~$11.96 for 1250 cells
+       Press Ctrl-C in the next 5 seconds to abort.
+
+[5/5] Running 1250 cells...
+  [275/1250] completed=25 skipped=250 degraded=0 (0.1 cells/sec)
+  [300/1250] completed=50 skipped=250 degraded=0 (0.1 cells/sec)
+  [325/1250] completed=75 skipped=250 degraded=0 (0.1 cells/sec)
+  [350/1250] completed=100 skipped=250 degraded=0 (0.1 cells/sec)
+  [375/1250] completed=125 skipped=250 degraded=0 (0.1 cells/sec)
+  [400/1250] completed=150 skipped=250 degraded=0 (0.1 cells/sec)
+  [425/1250] completed=175 skipped=250 degraded=0 (0.1 cells/sec)
+  [450/1250] completed=200 skipped=250 degraded=0 (0.1 cells/sec)
+  [475/1250] completed=225 skipped=250 degraded=0 (0.1 cells/sec)
+  [500/1250] completed=250 skipped=250 degraded=0 (0.1 cells/sec)
+  [525/1250] completed=275 skipped=250 degraded=0 (0.1 cells/sec)
+  [550/1250] completed=300 skipped=250 degraded=0 (0.1 cells/sec)
+  [575/1250] completed=325 skipped=250 degraded=0 (0.1 cells/sec)
+  [600/1250] completed=350 skipped=250 degraded=0 (0.1 cells/sec)
+  [625/1250] completed=375 skipped=250 degraded=0 (0.1 cells/sec)
+  [650/1250] completed=400 skipped=250 degraded=0 (0.1 cells/sec)
+  [675/1250] completed=425 skipped=250 degraded=0 (0.1 cells/sec)
+  [700/1250] completed=450 skipped=250 degraded=0 (0.1 cells/sec)
+  [725/1250] completed=475 skipped=250 degraded=0 (0.1 cells/sec)
+  [750/1250] completed=500 skipped=250 degraded=0 (0.1 cells/sec)
+  [775/1250] completed=525 skipped=250 degraded=0 (0.1 cells/sec)
+  [800/1250] completed=550 skipped=250 degraded=0 (0.1 cells/sec)
+  [825/1250] completed=575 skipped=250 degraded=0 (0.1 cells/sec)
+  [850/1250] completed=600 skipped=250 degraded=0 (0.1 cells/sec)
+  [875/1250] completed=625 skipped=250 degraded=0 (0.1 cells/sec)
+  [900/1250] completed=650 skipped=250 degraded=0 (0.1 cells/sec)
+  [925/1250] completed=675 skipped=250 degraded=0 (0.1 cells/sec)
+  [950/1250] completed=700 skipped=250 degraded=0 (0.1 cells/sec)
+  [975/1250] completed=725 skipped=250 degraded=0 (0.1 cells/sec)
+  [1000/1250] completed=750 skipped=250 degraded=0 (0.1 cells/sec)
+  [1025/1250] completed=775 skipped=250 degraded=0 (0.1 cells/sec)
+  [1050/1250] completed=800 skipped=250 degraded=0 (0.1 cells/sec)
+  [1075/1250] completed=825 skipped=250 degraded=0 (0.1 cells/sec)
+  [1100/1250] completed=850 skipped=250 degraded=0 (0.1 cells/sec)
+  [1125/1250] completed=875 skipped=250 degraded=1 (0.1 cells/sec)
+  [1150/1250] completed=900 skipped=250 degraded=1 (0.1 cells/sec)
+  [1175/1250] completed=925 skipped=250 degraded=1 (0.1 cells/sec)
+  [1200/1250] completed=950 skipped=250 degraded=1 (0.1 cells/sec)
+  [1225/1250] completed=975 skipped=250 degraded=1 (0.1 cells/sec)
+  [1250/1250] completed=1000 skipped=250 degraded=1 (0.1 cells/sec)
+
+------------------------------------------------------------------------
+Phase B-proper run summary
+------------------------------------------------------------------------
+cells in matrix    = 1250
+completed this run = 1000
+skipped (resumed)  = 250
+degraded           = 1
+manifest rows      = 1250
+elapsed            = 12822.1s
+
+  [PASS] manifest row count >= cells run
+  [PASS] JSON dir exists
+  [PASS] SQLite manifest exists
+  [WARN] 1 cells degraded (0.1% of 1250) — under the 25% hard-fail threshold; continuing
+
+Phase B-proper finished with 1 degraded cell(s) (within tolerance).
+
+[post] dialogues inspection → results/phaseB_smoke_5turn/dialogues_inspection.md
+Phase D analysis summary
+
+- Generated: 2026-05-17T17:53:27Z
+- Manifest:  `results/phaseB_smoke_5turn/manifest.sqlite`
+- Filter:    `real`
+
+---
+
+Manifest summary
+- Total rows in manifest: 1250
+- Rows after filter:      1250
+- Personas:      ['constructive', 'experiential', 'rule_based', 'socratic', 'traditional']
+- Architectures: ['baseline', 'hybrid', 'pure_ai', 'pure_cbr_llm', 'pure_cbr_tpl']
+- Student legs:  ['leg_a', 'leg_b']
+
+Per-persona marginals
+     persona  R5_n  R5_mean    R5_sd  quality_composite_n  quality_composite_mean  quality_composite_sd  R4_n  R4_mean    R4_sd  R6_n  R6_mean    R6_sd
+constructive 249.0 2.951807 1.381651                249.0                2.311914              0.929160 249.0 3.875502 1.466206 249.0 2.967871 1.461527
+    socratic 250.0 2.892000 1.308121                250.0                2.474667              0.994195 250.0 4.068000 1.396847 250.0 3.860000 1.560172
+ traditional 250.0 2.620000 1.312437                250.0                1.990667              0.837754 250.0 3.452000 1.595581 250.0 2.084000 1.008470
+experiential 249.0 2.534137 1.263571                249.0                1.898260              0.716799 249.0 3.160643 1.520789 250.0 3.128000 1.613079
+  rule_based 250.0 2.348000 1.312167                250.0                1.654667              0.618283 250.0 3.048000 1.661547 250.0 2.988000 1.561284
+
+Per-architecture marginals
+architecture  R5_n  R5_mean    R5_sd  quality_composite_n  quality_composite_mean  quality_composite_sd  R4_n  R4_mean    R4_sd  R6_n  R6_mean    R6_sd
+      hybrid 250.0 2.920000 1.332932                250.0                2.434667              0.756025 250.0 3.872000 1.502213 250.0 3.400000 1.311059
+pure_cbr_llm 249.0 2.803213 1.334042                249.0                2.319946              0.720165 249.0 3.783133 1.524384 250.0 3.280000 1.356821
+     pure_ai 249.0 2.791165 1.336734                249.0                2.423025              0.773373 249.0 3.847390 1.560863 249.0 3.650602 1.299197
+    baseline 250.0 2.708000 1.301349                250.0                2.154667              0.845540 250.0 3.956000 1.406405 250.0 3.700000 1.345079
+pure_cbr_tpl 250.0 2.124000 1.217602                250.0                1.000000              0.000000 250.0 2.148000 1.063305 250.0 1.000000 0.000000
+
+Architecture × Persona cell means
+Wrote `tables/cell_R5.{csv,md,tex}` and `tables/cell_quality.{csv,md,tex}`.
+
+Two-way ANOVA (Architecture × Persona)
+- **R5**: F_arch=14.97 (p=6e-12, η²p=0.047); F_persona=9.60 (p=1.21e-07, η²p=0.030); F_interaction=1.54 (p=0.0784).
+- **quality_composite**: F_arch=256.42 (p=1.11e-16, η²p=0.456); F_persona=74.96 (p=1.11e-16, η²p=0.197); F_interaction=8.92 (p=1.11e-16).
+
+Pairwise Cohen's d on R5
+- **architecture**: largest |d|=0.62 (hybrid vs pure_cbr_tpl, medium)
+- **persona**: largest |d|=0.45 (constructive vs rule_based, small)
+
+Cross-student variance on R5 (leg_a vs leg_b)
+- Mean |Δ R5| across cells = 1.31
+
+Output locations
+- Tables: `results/phaseB_smoke_5turn/analysis/tables/`
+- Summary: `results/phaseB_smoke_5turn/analysis/analysis_summary.md` (also archived as `analysis_summary_20260517T175327Z.md`)
+[post] analysis summary → results/phaseB_smoke_5turn/analysis/analysis_summary.md
+
+[DONE] run_phaseB_smoke completed in 3h34m — log: results/phaseB_smoke_5turn/logs/run_phaseB_smoke_20260517T141917Z.txt

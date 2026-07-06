@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_21",
+    "misconception_label": "When factorising a quadratic with a non-unit coefficient of x squared, believes that coefficient will be in front of both x terms in the factorised form",
+    "misconception_features": [
+      0.0,
+      21.0,
+      1.0,
+      74.0
+    ],
+    "persona": "experiential",
+    "architecture": "pure_ai",
+    "student_leg": "leg_b",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T17:16:42.506598Z",
+      "seed": 1120,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T17:16:48.888270Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: Step 1: Factorise the following expression \\( 3 x^{2}+5 x+2 \\). I got \\( (3 x+2)(3 x+1) \\) because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's think about this in terms of a cake recipe. Imagine you have a recipe that calls for 3 cups of flour, 5 eggs, and 2 cups of sugar. Would you mix all the ingredients together in the same bowl, or would you keep them separate? Think about how each ingredient in the recipe corresponds to a term in the expression. What do you notice about how the terms are grouped in your factorisation?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Um, I think I see what you mean... like, you'd keep them separate because they do different things? But I'm still confused about the factorising bit - when I expand my answer (3x+2)(3x+1), I get 9x\u00b2 which is wrong, isn't it? So does that mean I shouldn't put the 3 in front of both brackets?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Imagine you have a garden with different types of flowers planted in rows. Each row represents a different term in the expression. Just like you wouldn't mix all the flowers together, we don't mix the coefficients in front of the x terms. Let's try factorising it again, but this time keeping the coefficients separate for each x term. Let's see what we get.",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "Oh right, so like... maybe one bracket should have 3x and the other just x? So it could be something like (3x+2)(x+1)? Let me check - that would give 3x\u00b2 + 3x + 2x + 2 = 3x\u00b2 + 5x + 2... yeah, that works! But how do I know which bracket gets the 3 and which one doesn't?",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 2,
+    "R3": 2,
+    "R4": 5,
+    "R5": 4,
+    "R6": 5,
+    "justification_pass1": "While the student successfully corrects their misconception through self-discovery when checking their expansion, the teacher's vague analogies (cake recipe, garden flowers) don't directly address why the coefficient shouldn't appear in both brackets, making the pedagogical approach weak despite the positive outcome.",
+    "justification_pass2": "The teacher consistently uses concrete real-world analogies (cake recipe, garden with flowers) to ground the abstract algebraic concept of factorization, which is a textbook example of the experiential strategy.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\"R1\": 2, \"R2\": 2, \"R3\": 2, \"R4\": 5, \"R5\": 4, \"brief_justification\": \"While the student successfully corrects their misconception through self-discovery when checking their expansion, the teacher's vague analogies (cake recipe, garden flowers) don't directly address why the coefficient shouldn't appear in both brackets, making the pedagogical approach weak despite the positive outcome.\"}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 5, \"brief_justification\": \"The teacher consistently uses concrete real-world analogies (cake recipe, garden with flowers) to ground the abstract algebraic concept of factorization, which is a textbook example of the experiential strategy.\"}\n```",
+    "quality_composite": 2.0,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T17:16:55.379940+00:00"
+}

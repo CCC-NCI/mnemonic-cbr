@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_19",
+    "misconception_label": "When subtracting fractions, subtracts the numerators and multiplies the denominators",
+    "misconception_features": [
+      0.0,
+      19.0,
+      3.0,
+      104.0
+    ],
+    "persona": "constructive",
+    "architecture": "hybrid",
+    "student_leg": "leg_a",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T16:53:11.026885Z",
+      "seed": 1011,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T16:53:17.313017Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: Express the following as a single fraction, writing your answer as simply as possible: \\( \\frac{1}{s}-\\frac{t}{3} \\). I got \\( \\frac{1-t}{3 s} \\) because I treated the fractions like ordinary numbers.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "It seems like you're approaching the subtraction of fractions as if they were whole numbers. Let's focus on how to correctly subtract fractions by keeping the denominators the same and subtracting only the numerators. Can you think about how you might adjust your approach to align with this method?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Okay, I think I get what you're saying about keeping the denominators the same. So, if I want to subtract \\( \\frac{1}{s} \\) and \\( \\frac{t}{3} \\), I need to find a common denominator first, right? But how do I actually do that?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Great job recognizing the importance of finding a common denominator! To find a common denominator between \\( s \\) and \\( 3 \\), you can simply multiply the two denominators together. Can you try finding the common denominator for \\( \\frac{1}{s} \\) and \\( \\frac{t}{3} \\) using this method?",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "Okay, so if I multiply \\( s \\) and \\( 3 \\), I get \\( 3s \\) as the common denominator. But then what do I do with the numerators? Do I just leave them like they are, or do I need to change them somehow? I'm a bit confused about that part!",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 3,
+    "R3": 3,
+    "R4": 5,
+    "R5": 4,
+    "R6": 5,
+    "justification_pass1": "The teacher addresses the misconception somewhat generically in Turn 1, provides mathematically correct guidance, and the student progresses from the initial error to understanding common denominators, though hasn't yet completed the full procedure by Turn 4.",
+    "justification_pass2": "The teacher exemplifies the constructive strategy by breaking down the fraction subtraction problem into manageable steps (first understanding common denominators, then finding them), scaffolding from the student's initial misconception, providing appropriately leveled hints rather than direct answers, and adjusting support based on the student's demonstrated understanding at each turn.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 3,\n  \"R3\": 3,\n  \"R4\": 5,\n  \"R5\": 4,\n  \"brief_justification\": \"The teacher addresses the misconception somewhat generically in Turn 1, provides mathematically correct guidance, and the student progresses from the initial error to understanding common denominators, though hasn't yet completed the full procedure by Turn 4.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 5, \"brief_justification\": \"The teacher exemplifies the constructive strategy by breaking down the fraction subtraction problem into manageable steps (first understanding common denominators, then finding them), scaffolding from the student's initial misconception, providing appropriately leveled hints rather than direct answers, and adjusting support based on the student's demonstrated understanding at each turn.\"}\n```",
+    "quality_composite": 2.6666666666666665,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T16:53:24.245112+00:00"
+}

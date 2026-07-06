@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_24",
+    "misconception_label": "When solving a problem that requires an inverse operation (e.g. missing number problems), does the original operation",
+    "misconception_features": [
+      0.0,
+      24.0,
+      2.0,
+      52.0
+    ],
+    "persona": "traditional",
+    "architecture": "baseline",
+    "student_leg": "leg_a",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T17:51:16.860207Z",
+      "seed": 1283,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T17:51:20.740533Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: What should replace the star? \\[ \\bigstar \\times 4=108 \\]. I got \\( 432 \\) because I added the parts of the ratio as if they were a total.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let me explain the correct method for solving this type of problem. First, we need to identify the inverse operation for multiplication, which is division. Then, we can work through the example together to find the correct answer.",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Okay, so if division is the inverse of multiplication, then to find the star, I should divide 108 by 4, right? But I\u2019m still a bit confused about how that works with the problem. Can you show me how to do the division step?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let me work through the division step with you to clarify how to find the correct answer for the missing number problem.",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "Okay, so if I divide 108 by 4, I think that would give me the star. But how do I actually do that division? Like, what do I need to remember to make sure I get it right?",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 1,
+    "R2": 1,
+    "R3": 2,
+    "R4": 4,
+    "R5": 2,
+    "R6": 2,
+    "justification_pass1": "The teacher ignores the student's specific misconception about ratios and merely tells them the correct procedure without engaging their reasoning, resulting in the student still asking basic procedural questions by Turn 4 without demonstrating conceptual understanding of why inverse operations work.",
+    "justification_pass2": "While the teacher mentions using inverse operations and promises to work through examples, they repeatedly fail to actually provide the worked examples or clear explanations that are central to the traditional strategy, leaving the student waiting for instruction across multiple turns.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 1,\n  \"R2\": 1,\n  \"R3\": 2,\n  \"R4\": 4,\n  \"R5\": 2,\n  \"brief_justification\": \"The teacher ignores the student's specific misconception about ratios and merely tells them the correct procedure without engaging their reasoning, resulting in the student still asking basic procedural questions by Turn 4 without demonstrating conceptual understanding of why inverse operations work.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 2, \"brief_justification\": \"While the teacher mentions using inverse operations and promises to work through examples, they repeatedly fail to actually provide the worked examples or clear explanations that are central to the traditional strategy, leaving the student waiting for instruction across multiple turns.\"}\n```",
+    "quality_composite": 1.3333333333333333,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T17:51:28.005310+00:00"
+}

@@ -1,0 +1,65 @@
+{
+  "state": {
+    "case_id": "case_0",
+    "misconception_label": "Confuses the order of operations, believes addition comes before multiplication",
+    "misconception_features": [
+      0.0,
+      0.0,
+      1.0,
+      70.0
+    ],
+    "persona": "socratic",
+    "architecture": "pure_cbr_llm",
+    "student_leg": "leg_b",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-11T21:46:37.914991Z",
+      "seed": 46,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "ended_at": "2026-05-11T21:46:41.851021Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: \\[ 3 \\times 2+4-5 \\] Where do the brackets need to go to make the answer equal \\( 13 \\) ? I got Does not need brackets because I worked left to right instead of following the order of operations.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Why do you think it's important to follow the order of operations when solving math problems? How might the order of operations impact the final answer in this particular problem?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Um, I guess it matters because you could get different answers depending on what you do first? Like, if I do the addition first I get 3 \u00d7 2 + 4 - 5 = 3 \u00d7 6 - 5 = 18 - 5 = 13, which is the right answer! But I'm confused because I thought you always just go left to right... so why do we have to do multiplication before addition?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Can you think of a situation where it might be important to follow a specific order when performing calculations? How might changing the order of operations impact the outcome in a different math problem?",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 3,
+    "R3": 2,
+    "R4": 5,
+    "R5": 1,
+    "R6": 4,
+    "justification_pass1": "The teacher asks generic reflective questions without directly addressing the student's specific misconception about order of operations, and by Turn 2 the student has accidentally arrived at the correct answer through incorrect reasoning (adding 2+4 first), which goes unaddressed and likely reinforces the original misconception.",
+    "justification_pass2": "The teacher consistently uses probing questions to guide the student's thinking about order of operations without directly providing the answer, though they don't employ a counterexample to expose the student's flawed reasoning in Turn 2 when the student incorrectly calculates 2+4=6.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 3,\n  \"R3\": 2,\n  \"R4\": 5,\n  \"R5\": 1,\n  \"brief_justification\": \"The teacher asks generic reflective questions without directly addressing the student's specific misconception about order of operations, and by Turn 2 the student has accidentally arrived at the correct answer through incorrect reasoning (adding 2+4 first), which goes unaddressed and likely reinforces the original misconception.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\n  \"R6\": 4,\n  \"brief_justification\": \"The teacher consistently uses probing questions to guide the student's thinking about order of operations without directly providing the answer, though they don't employ a counterexample to expose the student's flawed reasoning in Turn 2 when the student incorrectly calculates 2+4=6.\"\n}\n```",
+    "quality_composite": 2.3333333333333335,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-11T21:46:48.784121+00:00"
+}

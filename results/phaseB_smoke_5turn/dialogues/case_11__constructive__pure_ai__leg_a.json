@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_11",
+    "misconception_label": "Struggles to visualise nets of 3D shapes",
+    "misconception_features": [
+      0.0,
+      11.0,
+      3.0,
+      31.0
+    ],
+    "persona": "constructive",
+    "architecture": "pure_ai",
+    "student_leg": "leg_a",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T15:27:24.377911Z",
+      "seed": 609,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T15:27:33.925391Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: This is the net of a... ![A circle touching a sector](). I got Triangle because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Great job starting to work through the net of a 3D shape! Let's focus on breaking down the net into individual shapes to help with visualization. Try identifying each shape in the net and think about how they might fit together to form a 3D shape. Keep up the good work!",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Okay, I think I see what you mean about breaking it down. So, the circle is like the base, and the sector could be the side? But I'm still not sure how they all fit together to make a 3D shape. What shape would that actually be?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "You're on the right track with identifying the base and side of the 3D shape. Think about how those two shapes can be folded and connected to form a complete shape. Consider how the sector can be wrapped around the circle to create a solid figure. Keep exploring different ways to visualize it!",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "Okay, I think I get it a bit more now. So, if the sector wraps around the circle, could it make something like a cone? But I'm still confused about how it all fits together. How do I know for sure that it's a cone and not something else?",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 2,
+    "R3": 2,
+    "R4": 5,
+    "R5": 4,
+    "R6": 4,
+    "justification_pass1": "While the teacher provides mathematically correct guidance and the student progresses from thinking it's a triangle to recognizing it's likely a cone, the teacher relies heavily on generic prompts to 'visualize' and 'explore' rather than directly addressing the visualization struggle with concrete strategies, and doesn't provide sufficient scaffolding when the student explicitly asks for confirmation.",
+    "justification_pass2": "The teacher consistently breaks down the problem into manageable steps (identifying shapes, then considering how they connect), scaffolds by building on the student's correct observations without giving direct answers, and adjusts support by providing more specific guidance about wrapping when the student remains uncertain.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 2,\n  \"R3\": 2,\n  \"R4\": 5,\n  \"R5\": 4,\n  \"brief_justification\": \"While the teacher provides mathematically correct guidance and the student progresses from thinking it's a triangle to recognizing it's likely a cone, the teacher relies heavily on generic prompts to 'visualize' and 'explore' rather than directly addressing the visualization struggle with concrete strategies, and doesn't provide sufficient scaffolding when the student explicitly asks for confirmation.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\n  \"R6\": 4,\n  \"brief_justification\": \"The teacher consistently breaks down the problem into manageable steps (identifying shapes, then considering how they connect), scaffolds by building on the student's correct observations without giving direct answers, and adjusts support by providing more specific guidance about wrapping when the student remains uncertain.\"\n}\n```",
+    "quality_composite": 2.0,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T15:27:47.362971+00:00"
+}

@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_19",
+    "misconception_label": "When subtracting fractions, subtracts the numerators and multiplies the denominators",
+    "misconception_features": [
+      0.0,
+      19.0,
+      3.0,
+      104.0
+    ],
+    "persona": "rule_based",
+    "architecture": "pure_cbr_llm",
+    "student_leg": "leg_a",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T16:56:11.126533Z",
+      "seed": 1025,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T16:56:16.529147Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: Express the following as a single fraction, writing your answer as simply as possible: \\( \\frac{1}{s}-\\frac{t}{3} \\). I got \\( \\frac{1-t}{3 s} \\) because I treated the fractions like ordinary numbers.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "When subtracting fractions, you should actually subtract the numerators and keep the denominators the same. In this case, the correct answer is \\( \\frac{1-3t}{3s} \\). Remember to subtract the numerators and keep the denominator unchanged when subtracting fractions.",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Oh, I see! So I need to keep the denominators the same when I subtract. But why do I have to multiply the denominators when I\u2019m subtracting? Can you explain that part again?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "When subtracting fractions, you don't actually multiply the denominators. Instead, you keep the denominators the same and just subtract the numerators. This ensures that the fractions are being combined correctly in the subtraction process. Keep practicing this rule to improve your fraction subtraction skills.",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "Okay, I think I get it now that I shouldn't multiply the denominators when I subtract. So, I just need to keep them the same and only subtract the top numbers. But what if the denominators are different? Do I still keep them the same then?",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 1,
+    "R2": 1,
+    "R3": 1,
+    "R4": 1,
+    "R5": 1,
+    "R6": 1,
+    "justification_pass1": "The teacher provides mathematically incorrect instruction (claiming to subtract numerators while keeping denominators the same without finding a common denominator), fails to address the student's actual misconception about multiplying denominators, and the student remains confused about the fundamental process by Turn 4.",
+    "justification_pass2": "The teacher provides incorrect mathematical procedures (claiming to keep denominators the same when subtracting fractions with different denominators, and giving a wrong answer), which directly contradicts the rule-based strategy's requirement to state explicit correct procedures and show proper worked steps.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 1,\n  \"R2\": 1,\n  \"R3\": 1,\n  \"R4\": 1,\n  \"R5\": 1,\n  \"brief_justification\": \"The teacher provides mathematically incorrect instruction (claiming to subtract numerators while keeping denominators the same without finding a common denominator), fails to address the student's actual misconception about multiplying denominators, and the student remains confused about the fundamental process by Turn 4.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 1, \"brief_justification\": \"The teacher provides incorrect mathematical procedures (claiming to keep denominators the same when subtracting fractions with different denominators, and giving a wrong answer), which directly contradicts the rule-based strategy's requirement to state explicit correct procedures and show proper worked steps.\"}\n```",
+    "quality_composite": 1.0,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T16:56:22.874120+00:00"
+}

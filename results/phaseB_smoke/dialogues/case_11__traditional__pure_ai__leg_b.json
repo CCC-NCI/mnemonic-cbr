@@ -1,0 +1,66 @@
+{
+  "state": {
+    "case_id": "case_11",
+    "misconception_label": "Struggles to visualise nets of 3D shapes",
+    "misconception_features": [
+      0.0,
+      11.0,
+      3.0,
+      31.0
+    ],
+    "persona": "traditional",
+    "architecture": "pure_ai",
+    "student_leg": "leg_b",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T10:05:01.556601Z",
+      "seed": 640,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-12T10:05:05.457381Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: This is the net of a... ![A circle touching a sector](). I got Triangle because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's start by identifying the shapes that make up the net. Remember that the net of a shape shows all the faces unfolded. Can you point out the different shapes you see in the net you drew?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Um, okay... so I can see there's a circle and then like a curved bit next to it? Is the curved bit a sector? I'm still not really sure how those pieces fit together to make a 3D shape though.",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's focus on the circle and sector you identified. Remember that the circle represents the base of the 3D shape, and the sector is like a slice that will fold up to create the curved surface. Can you think about how these two shapes could come together to form a 3D object?",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 3,
+    "R2": 3,
+    "R3": 2,
+    "R4": 5,
+    "R5": 2,
+    "R6": 2,
+    "justification_pass1": "The teacher correctly identifies the net components and asks appropriate questions, but the student remains confused about how the pieces fit together by the end, showing minimal progress in visualizing the 3D shape from its net.",
+    "justification_pass2": "The teacher uses guided questioning to elicit student thinking rather than directly explaining with worked examples, which is inconsistent with the traditional strategy of explicit instruction.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 3,\n  \"R2\": 3,\n  \"R3\": 2,\n  \"R4\": 5,\n  \"R5\": 2,\n  \"brief_justification\": \"The teacher correctly identifies the net components and asks appropriate questions, but the student remains confused about how the pieces fit together by the end, showing minimal progress in visualizing the 3D shape from its net.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 2, \"brief_justification\": \"The teacher uses guided questioning to elicit student thinking rather than directly explaining with worked examples, which is inconsistent with the traditional strategy of explicit instruction.\"}\n```",
+    "quality_composite": 2.6666666666666665,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T10:05:11.103688+00:00"
+}

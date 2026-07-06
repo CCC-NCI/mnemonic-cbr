@@ -1,0 +1,10 @@
+{
+  "name": "Check 5: dialogue-order corruption [filter: R5 >= 3]",
+  "pass": false,
+  "summary": "n = 40 [filter: R5 >= 3]; mean R5 original = 3.65; mean R5 swapped = 3.35; drop = +0.30 (pass drop >= 0.5: False).",
+  "n": 40,
+  "min_R5_filter": 3,
+  "mean_R5_original": 3.65,
+  "mean_R5_corrupted": 3.35,
+  "drop": 0.2999999999999998
+}

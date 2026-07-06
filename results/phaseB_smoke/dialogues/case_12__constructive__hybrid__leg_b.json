@@ -1,0 +1,66 @@
+{
+  "state": {
+    "case_id": "case_12",
+    "misconception_label": "Thinks alternate angles are always equal",
+    "misconception_features": [
+      0.0,
+      12.0,
+      3.0,
+      25.0
+    ],
+    "persona": "constructive",
+    "architecture": "hybrid",
+    "student_leg": "leg_b",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T10:09:13.884598Z",
+      "seed": 662,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-12T10:09:17.729458Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: Tom and Katie are arguing about alternate angles. Tom says angles \\( p \\) and \\( q \\) are alternate. Katie says angles \\( p \\) and \\( q \\) are equal. Who is correct? ![Shows two non parallel lines that are intersected by another line. Angles P and Q are both on the outside of the lines and on opposite sides of the transversal.](). I got Only\nKatie because I assumed all the angles in the figure are equal.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "It seems like you may be confusing alternate angles with angles that are equal. Let's focus on the definition of alternate angles in relation to the positions of angles \\( p \\) and \\( q \\) in the diagram. Can you think about how the positions of these angles relate to each other based on what we know about alternate angles?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Um, so alternate angles are on opposite sides of the line that crosses through, right? But I'm confused because you're saying they're not always equal... does that mean they're only equal sometimes? Like, when do they become equal?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "You're on the right track with recognizing that alternate angles are on opposite sides of the transversal. They are equal only when the two intersected lines are parallel. Can you think about how the relationship between the intersected lines affects the equality of alternate angles?",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 4,
+    "R2": 3,
+    "R3": 4,
+    "R4": 5,
+    "R5": 4,
+    "R6": 4,
+    "justification_pass1": "The teacher directly addresses the misconception that alternate angles are always equal by explicitly stating they're only equal when lines are parallel, and the student's Turn 2 response shows they're beginning to question their initial assumption, demonstrating meaningful progress toward understanding the conditional nature of the relationship.",
+    "justification_pass2": "The teacher effectively breaks down the concept into manageable steps (first focusing on position, then introducing the parallel lines condition), scaffolds by building on the student's partial understanding, and adjusts support by providing more specific guidance when the student expresses confusion about when alternate angles are equal.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 4,\n  \"R2\": 3,\n  \"R3\": 4,\n  \"R4\": 5,\n  \"R5\": 4,\n  \"brief_justification\": \"The teacher directly addresses the misconception that alternate angles are always equal by explicitly stating they're only equal when lines are parallel, and the student's Turn 2 response shows they're beginning to question their initial assumption, demonstrating meaningful progress toward understanding the conditional nature of the relationship.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 4, \"brief_justification\": \"The teacher effectively breaks down the concept into manageable steps (first focusing on position, then introducing the parallel lines condition), scaffolds by building on the student's partial understanding, and adjusts support by providing more specific guidance when the student expresses confusion about when alternate angles are equal.\"}\n```",
+    "quality_composite": 3.6666666666666665,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T10:09:25.616477+00:00"
+}

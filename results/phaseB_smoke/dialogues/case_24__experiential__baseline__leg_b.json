@@ -1,0 +1,66 @@
+{
+  "state": {
+    "case_id": "case_24",
+    "misconception_label": "When solving a problem that requires an inverse operation (e.g. missing number problems), does the original operation",
+    "misconception_features": [
+      0.0,
+      24.0,
+      2.0,
+      52.0
+    ],
+    "persona": "experiential",
+    "architecture": "baseline",
+    "student_leg": "leg_b",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T12:03:29.988666Z",
+      "seed": 1264,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-12T12:03:34.255592Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: What should replace the star? \\[ \\bigstar \\times 4=108 \\]. I got \\( 432 \\) because I added the parts of the ratio as if they were a total.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Imagine you were setting the table for a dinner party and you needed to figure out how many plates you would need. Would adding all the plates together give you the right answer, or would you need to do something different to find the missing number of plates?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Um, I think I'd need to do something different... like if I know how many plates go on each table and how many tables there are, I'd multiply them together, not add them? But I'm confused because in my problem I already have the multiplication done - so why did I multiply by 4 again to get 432?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Imagine you were planning a bake sale and you needed to figure out how many cookies to bake. If you already knew how many cookies were on each tray and how many trays you had, would you need to add them together or multiply them to find the total number of cookies?",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 1,
+    "R2": 2,
+    "R3": 1,
+    "R4": 3,
+    "R5": 1,
+    "R6": 2,
+    "justification_pass1": "The teacher repeatedly uses analogies about forward operations (multiplication) when the student's misconception is about inverse operations (needing to divide), and the student's Turn 2 response shows they recognize the core issue but receive no acknowledgment or guidance on using division to solve for the missing factor.",
+    "justification_pass2": "While the teacher consistently uses real-world analogies (dinner plates, bake sale cookies), these analogies describe multiplication scenarios rather than addressing the student's actual problem of needing to divide to solve for the unknown factor, making the concrete examples misaligned with the mathematical operation required.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 1,\n  \"R2\": 2,\n  \"R3\": 1,\n  \"R4\": 3,\n  \"R5\": 1,\n  \"brief_justification\": \"The teacher repeatedly uses analogies about forward operations (multiplication) when the student's misconception is about inverse operations (needing to divide), and the student's Turn 2 response shows they recognize the core issue but receive no acknowledgment or guidance on using division to solve for the missing factor.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 2, \"brief_justification\": \"While the teacher consistently uses real-world analogies (dinner plates, bake sale cookies), these analogies describe multiplication scenarios rather than addressing the student's actual problem of needing to divide to solve for the unknown factor, making the concrete examples misaligned with the mathematical operation required.\"}\n```",
+    "quality_composite": 1.3333333333333333,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T12:03:42.268128+00:00"
+}

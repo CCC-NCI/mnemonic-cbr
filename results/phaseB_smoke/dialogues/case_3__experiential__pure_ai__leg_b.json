@@ -1,0 +1,65 @@
+{
+  "state": {
+    "case_id": "case_3",
+    "misconception_label": "Does not know the properties of a rectangle",
+    "misconception_features": [
+      0.0,
+      3.0,
+      3.0,
+      67.0
+    ],
+    "persona": "experiential",
+    "architecture": "pure_ai",
+    "student_leg": "leg_b",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T07:00:47.109271Z",
+      "seed": 220,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "ended_at": "2026-05-12T07:00:50.883083Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: The angles highlighted on this rectangle with different length sides can never be... ![A rectangle with the diagonals drawn in. The angle on the right hand side at the centre is highlighted in red and the angle at the bottom at the centre is highlighted in yellow.](). I got acute because I assumed all the angles in the figure are equal.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Imagine you have a rectangular piece of paper and you fold it in half along the longer side. The angles where the fold meets the paper will be equal. This can help us understand why the angles on opposite sides of a rectangle are equal.",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Oh, I think I see what you mean about the opposite angles being equal when you fold it... but I'm still a bit confused about the angles in the middle where the diagonals cross. Are you saying those angles at the centre can't be acute, or are the angles at the corners of the rectangle the ones that are always the same?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Imagine you have a rectangular cake and you cut it along the diagonal. The angles where the diagonal cuts the cake will always be equal. This can help us understand why the angles at the centre of a rectangle where the diagonals cross are always equal.",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 1,
+    "R3": 2,
+    "R4": 2,
+    "R5": 1,
+    "R6": 5,
+    "justification_pass1": "The teacher uses vague analogies that don't address the student's specific confusion about which angles are acute versus right angles, provides no reasoning opportunities, and the student remains confused about the actual question by the end.",
+    "justification_pass2": "The teacher consistently uses concrete, everyday analogies (folding paper, cutting a cake) to help the student visualize and understand abstract geometric properties, which is a textbook example of the experiential strategy.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\"R1\": 2, \"R2\": 1, \"R3\": 2, \"R4\": 2, \"R5\": 1, \"brief_justification\": \"The teacher uses vague analogies that don't address the student's specific confusion about which angles are acute versus right angles, provides no reasoning opportunities, and the student remains confused about the actual question by the end.\"}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 5, \"brief_justification\": \"The teacher consistently uses concrete, everyday analogies (folding paper, cutting a cake) to help the student visualize and understand abstract geometric properties, which is a textbook example of the experiential strategy.\"}\n```",
+    "quality_composite": 1.6666666666666667,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T07:01:00.776231+00:00"
+}

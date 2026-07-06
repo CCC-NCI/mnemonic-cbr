@@ -1,0 +1,66 @@
+{
+  "state": {
+    "case_id": "case_0",
+    "misconception_label": "Confuses the order of operations, believes addition comes before multiplication",
+    "misconception_features": [
+      0.0,
+      0.0,
+      1.0,
+      70.0
+    ],
+    "persona": "constructive",
+    "architecture": "pure_ai",
+    "student_leg": "leg_b",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T08:07:56.772798Z",
+      "seed": 60,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "cbr_grounded",
+      "ended_at": "2026-05-12T08:08:00.740077Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: \\[ 3 \\times 2+4-5 \\] Where do the brackets need to go to make the answer equal \\( 13 \\) ? I got Does not need brackets because I worked left to right instead of following the order of operations.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "It's great that you're recognizing the importance of following the order of operations. To make the answer equal \\( 13 \\), try grouping the multiplication before the addition. This will help ensure that each operation is carried out in the correct order.",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "So you're saying I should do the multiplication first? Let me try: 3 \u00d7 2 = 6, then 6 + 4 = 10, then 10 - 5 = 5... but that gives me 5, not 13. Do I need to put brackets around something like 3 \u00d7 (2 + 4 - 5) instead?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "You're on the right track with grouping the multiplication before the addition, but remember that subtraction should also come after multiplication in the order of operations. Try recalculating using that order, and see if you get closer to the desired answer of 13. Keep going, you're making progress!",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 2,
+    "R3": 2,
+    "R4": 1,
+    "R5": 1,
+    "R6": 2,
+    "justification_pass1": "The teacher's guidance is mathematically incorrect (the standard order already gives 5, not 13, and brackets are needed to change this), fails to address the student's actual confusion about where brackets should go, and the student ends up more confused by Turn 2 with no resolution by Turn 3.",
+    "justification_pass2": "While the teacher attempts to scaffold by breaking down the problem, they provide mathematically incorrect guidance (suggesting standard order of operations will yield 13, when it yields 5) and fail to adjust their approach when the student correctly identifies this doesn't work, missing the actual solution of 3 \u00d7 (2 + 4) - 5.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 2,\n  \"R3\": 2,\n  \"R4\": 1,\n  \"R5\": 1,\n  \"brief_justification\": \"The teacher's guidance is mathematically incorrect (the standard order already gives 5, not 13, and brackets are needed to change this), fails to address the student's actual confusion about where brackets should go, and the student ends up more confused by Turn 2 with no resolution by Turn 3.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 2, \"brief_justification\": \"While the teacher attempts to scaffold by breaking down the problem, they provide mathematically incorrect guidance (suggesting standard order of operations will yield 13, when it yields 5) and fail to adjust their approach when the student correctly identifies this doesn't work, missing the actual solution of 3 \u00d7 (2 + 4) - 5.\"}\n```",
+    "quality_composite": 2.0,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T08:08:08.412014+00:00"
+}

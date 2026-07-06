@@ -1,0 +1,66 @@
+{
+  "state": {
+    "case_id": "case_20",
+    "misconception_label": "Adds when calculating volume instead of multiplying",
+    "misconception_features": [
+      0.0,
+      20.0,
+      1.0,
+      58.0
+    ],
+    "persona": "experiential",
+    "architecture": "pure_cbr_llm",
+    "student_leg": "leg_b",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T11:25:48.963606Z",
+      "seed": 1066,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-12T11:25:53.576206Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: The volume of this cuboid is \\( 30 \\mathrm{~cm}^{3} \\) What length should replace the star? ![A cuboid, depth 2cm and height 3cm. The width is labelled with a star.](). I got \\( 25 \\mathrm{~cm} \\) because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Imagine you have a toy box with a certain volume, and you know the height and depth. To figure out the missing side length, you would need to think about how all three measurements work together. Let's try approaching this problem by thinking about how the dimensions of the cuboid interact to give us the total volume.",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "So like... do I need to multiply all three numbers together instead of adding them? Because I think I added 2 + 3 + 25 to get 30, but now I'm wondering if it should be 2 \u00d7 3 \u00d7 something?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's think of it this way: when you're trying to figure out the total volume of a toy box, you wouldn't just add the height, depth, and missing side length together. Instead, you need to multiply them all to get the correct volume. So in this case, you would need to multiply the height, depth, and the missing length to find the total volume of the cuboid.",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 4,
+    "R2": 2,
+    "R3": 3,
+    "R4": 5,
+    "R5": 4,
+    "R6": 4,
+    "justification_pass1": "The teacher effectively addresses the addition misconception and the student self-corrects to multiplication, though the teacher could have pushed for the student to complete the calculation rather than just restating the correct operation.",
+    "justification_pass2": "The teacher consistently uses a concrete real-world analogy (toy box) to ground the abstract concept of volume calculation, though the explanation could have been slightly more vivid or detailed to be a perfect exemplar.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 4,\n  \"R2\": 2,\n  \"R3\": 3,\n  \"R4\": 5,\n  \"R5\": 4,\n  \"brief_justification\": \"The teacher effectively addresses the addition misconception and the student self-corrects to multiplication, though the teacher could have pushed for the student to complete the calculation rather than just restating the correct operation.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 4, \"brief_justification\": \"The teacher consistently uses a concrete real-world analogy (toy box) to ground the abstract concept of volume calculation, though the explanation could have been slightly more vivid or detailed to be a perfect exemplar.\"}\n```",
+    "quality_composite": 3.0,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T11:25:59.852470+00:00"
+}

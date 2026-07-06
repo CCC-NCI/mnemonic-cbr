@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_12",
+    "misconception_label": "Thinks alternate angles are always equal",
+    "misconception_features": [
+      0.0,
+      12.0,
+      3.0,
+      25.0
+    ],
+    "persona": "traditional",
+    "architecture": "baseline",
+    "student_leg": "leg_b",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T15:43:34.431588Z",
+      "seed": 684,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T15:43:40.769542Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: Tom and Katie are arguing about alternate angles. Tom says angles \\( p \\) and \\( q \\) are alternate. Katie says angles \\( p \\) and \\( q \\) are equal. Who is correct? ![Shows two non parallel lines that are intersected by another line. Angles P and Q are both on the outside of the lines and on opposite sides of the transversal.](). I got Only\nKatie because I assumed all the angles in the figure are equal.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let me explain the correct method, and then we will work through an example together. Can you tell me what alternate angles are supposed to be?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Um, I think alternate angles are like... angles that are on opposite sides of the line that crosses through? But I'm not really sure what makes them equal or not equal, like is it just because they're in that position?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let me clarify the concept of alternate angles for you. Alternate angles are formed when a transversal intersects two lines, and they are always equal in measure. Let's work through an example together to see this in action. Can you think of any examples where you have seen alternate angles before?",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "Um, I think I've seen them in geometry lessons before, but I'm still a bit confused... like, you said alternate angles are *always* equal, but in the problem I did, the angles weren't equal because the lines weren't parallel or something? So does that mean they're only equal sometimes, not always?",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 1,
+    "R2": 1,
+    "R3": 1,
+    "R4": 1,
+    "R5": 1,
+    "R6": 2,
+    "justification_pass1": "The teacher explicitly reinforces the misconception by stating alternate angles are 'always equal' (Turn 3), which directly contradicts the student's emerging correct understanding that they're only equal when lines are parallel (Turn 4), resulting in no improvement and likely confusion.",
+    "justification_pass2": "The teacher attempts to provide direct explanation but makes a critical mathematical error by stating that alternate angles are 'always equal in measure' without the necessary condition that the lines must be parallel, which undermines the clarity that is central to traditional teaching.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 1,\n  \"R2\": 1,\n  \"R3\": 1,\n  \"R4\": 1,\n  \"R5\": 1,\n  \"brief_justification\": \"The teacher explicitly reinforces the misconception by stating alternate angles are 'always equal' (Turn 3), which directly contradicts the student's emerging correct understanding that they're only equal when lines are parallel (Turn 4), resulting in no improvement and likely confusion.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 2, \"brief_justification\": \"The teacher attempts to provide direct explanation but makes a critical mathematical error by stating that alternate angles are 'always equal in measure' without the necessary condition that the lines must be parallel, which undermines the clarity that is central to traditional teaching.\"}\n```",
+    "quality_composite": 1.0,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T15:43:50.973883+00:00"
+}

@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_18",
+    "misconception_label": "Assumes that an arrow on a number line starts at zero",
+    "misconception_features": [
+      0.0,
+      18.0,
+      2.0,
+      73.0
+    ],
+    "persona": "experiential",
+    "architecture": "pure_ai",
+    "student_leg": "leg_a",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T16:44:08.832027Z",
+      "seed": 969,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T16:44:13.880168Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: ![Number line with -12 and -7 marked. Starting at -12, follow an arrow pointing to the right labelled +10. Then there is an arrow labelled b pointing to the left, which ends at -7 on the number line.]() What is the value of \\( b \\) ? I got \\( -7 \\) because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Imagine you are walking along a path in a park. You start at -12 and walk 10 steps to the right (adding 10). Then, you turn around and walk back 5 steps to the left. Where would you end up? Let's use this real-world scenario to help us find the value of \\( b \\).",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Okay, so if I start at -12 and walk 10 steps to the right, I think I would end up at -2. But then if I walk back 5 steps to the left, wouldn't I just go to -7? I'm still confused about how that relates to \\( b \\) though. Does \\( b \\) mean where I end up after all the steps?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Imagine you are playing a game where you move along a path. Starting at -12, you move 10 spaces to the right, landing at -2. Then, you move back 5 spaces to the left, ending up at -7. So, \\( b \\) represents where you end up after all the steps. Can you see how the value of \\( b \\) is related to the movements along the number line in this game scenario?",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "I think I get it a bit better now! So, \\( b \\) is where I end up after moving from -12 to -2 and then back to -7. But I'm still not sure how to find \\( b \\) if I don't have the steps written out like in the game. Do I just need to remember to add and subtract the numbers?",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 1,
+    "R2": 2,
+    "R3": 2,
+    "R4": 2,
+    "R5": 1,
+    "R6": 5,
+    "justification_pass1": "The teacher never addresses the core misconception that the student thinks arrows start at zero (leading to answer -7), instead providing analogies that accidentally confirm the student's incorrect answer, and by Turn 4 the student still doesn't understand what b represents or how to find it.",
+    "justification_pass2": "The teacher consistently grounds the abstract number line problem in concrete real-world analogies (walking in a park, playing a movement game), making this a textbook example of the experiential strategy.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 1,\n  \"R2\": 2,\n  \"R3\": 2,\n  \"R4\": 2,\n  \"R5\": 1,\n  \"brief_justification\": \"The teacher never addresses the core misconception that the student thinks arrows start at zero (leading to answer -7), instead providing analogies that accidentally confirm the student's incorrect answer, and by Turn 4 the student still doesn't understand what b represents or how to find it.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 5, \"brief_justification\": \"The teacher consistently grounds the abstract number line problem in concrete real-world analogies (walking in a park, playing a movement game), making this a textbook example of the experiential strategy.\"}\n```",
+    "quality_composite": 1.6666666666666667,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T16:44:20.130967+00:00"
+}

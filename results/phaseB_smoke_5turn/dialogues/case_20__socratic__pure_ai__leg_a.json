@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_20",
+    "misconception_label": "Adds when calculating volume instead of multiplying",
+    "misconception_features": [
+      0.0,
+      20.0,
+      1.0,
+      58.0
+    ],
+    "persona": "socratic",
+    "architecture": "pure_ai",
+    "student_leg": "leg_a",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T17:01:23.420949Z",
+      "seed": 1049,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T17:01:28.723953Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: The volume of this cuboid is \\( 30 \\mathrm{~cm}^{3} \\) What length should replace the star? ![A cuboid, depth 2cm and height 3cm. The width is labelled with a star.](). I got \\( 25 \\mathrm{~cm} \\) because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Why do you think adding the dimensions together would give you the correct volume of the cuboid? Can you think of a different way to approach this problem that might lead to the correct answer?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "I guess I thought that since volume is about how much space something takes up, maybe adding the sides together made sense? But now I\u2019m not sure how to use multiplication instead. Can you explain how that works with the cuboid?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Why do you think multiplying the dimensions would give you the correct volume of the cuboid? Can you think about what each dimension represents in the calculation of volume and how they should be combined to find the total space occupied by the cuboid?",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "I think I get that each dimension is like a side of the cuboid, and when you multiply them, it shows how many little cubes fit inside. But I still don\u2019t really understand how to set it up. Like, what exactly do I multiply together for this cuboid?",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 3,
+    "R2": 3,
+    "R3": 2,
+    "R4": 5,
+    "R5": 2,
+    "R6": 4,
+    "justification_pass1": "The teacher directly addresses the adding misconception and maintains cognitive demand through questioning, but provides insufficient scaffolding when the student explicitly requests concrete guidance in Turn 4, leaving the student still unable to set up the calculation despite showing conceptual progress.",
+    "justification_pass2": "The teacher consistently uses probing questions to guide the student's thinking about volume calculation without directly providing the formula or answer, though they could have employed a counterexample to more effectively expose the flawed addition reasoning.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 3,\n  \"R2\": 3,\n  \"R3\": 2,\n  \"R4\": 5,\n  \"R5\": 2,\n  \"brief_justification\": \"The teacher directly addresses the adding misconception and maintains cognitive demand through questioning, but provides insufficient scaffolding when the student explicitly requests concrete guidance in Turn 4, leaving the student still unable to set up the calculation despite showing conceptual progress.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 4, \"brief_justification\": \"The teacher consistently uses probing questions to guide the student's thinking about volume calculation without directly providing the formula or answer, though they could have employed a counterexample to more effectively expose the flawed addition reasoning.\"}\n```",
+    "quality_composite": 2.6666666666666665,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T17:01:36.178920+00:00"
+}

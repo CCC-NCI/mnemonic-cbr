@@ -1,0 +1,89 @@
+[
+  {
+    "name": "Check 1: persona discriminability",
+    "pass": true,
+    "summary": "Mean pairwise cosine = 0.580 (pass <= 0.85: True); max = 0.752 (pass <= 0.95: True). Observation (not gating): socratic-vs-rule_based = 0.752 (vs median 0.546: at or above).",
+    "mean_pairwise": 0.5802303075790405,
+    "max_pairwise": 0.7517240643501282,
+    "median_pairwise": 0.5457990169525146,
+    "socratic_rulebased": 0.7517240643501282,
+    "pair_similarities": [
+      {
+        "a": "constructive",
+        "b": "experiential",
+        "cosine": 0.6125122308731079
+      },
+      {
+        "a": "constructive",
+        "b": "rule_based",
+        "cosine": 0.530113935470581
+      },
+      {
+        "a": "constructive",
+        "b": "socratic",
+        "cosine": 0.4915820360183716
+      },
+      {
+        "a": "constructive",
+        "b": "traditional",
+        "cosine": 0.5420167446136475
+      },
+      {
+        "a": "experiential",
+        "b": "rule_based",
+        "cosine": 0.5512768030166626
+      },
+      {
+        "a": "experiential",
+        "b": "socratic",
+        "cosine": 0.5450551509857178
+      },
+      {
+        "a": "experiential",
+        "b": "traditional",
+        "cosine": 0.5163569450378418
+      },
+      {
+        "a": "rule_based",
+        "b": "socratic",
+        "cosine": 0.7517240643501282
+      },
+      {
+        "a": "rule_based",
+        "b": "traditional",
+        "cosine": 0.7151222825050354
+      },
+      {
+        "a": "socratic",
+        "b": "traditional",
+        "cosine": 0.5465428829193115
+      }
+    ]
+  },
+  {
+    "name": "Check 3: R5 contamination",
+    "pass": true,
+    "summary": "r(R5, length) = -0.294 (pass |r|<=0.5: True); r(R5, sentiment) = 0.278 (pass: True).",
+    "n": 1250,
+    "r_R5_length": -0.29435813332283506,
+    "r_R5_sentiment": 0.2781109005835998
+  },
+  {
+    "name": "Check 4: shuffle-persona",
+    "pass": true,
+    "summary": "n = 40; mean R6 original = 3.10; mean R6 shuffled = 1.73; drop = +1.38 (pass drop >= 1.0: True).",
+    "n": 40,
+    "mean_R6_original": 3.1,
+    "mean_R6_shuffled": 1.725,
+    "drop": 1.375
+  },
+  {
+    "name": "Check 5: dialogue-order corruption",
+    "pass": false,
+    "summary": "n = 40; mean R5 original = 1.85; mean R5 swapped = 1.50; drop = +0.35 (pass drop >= 0.5: False).",
+    "n": 40,
+    "mean_R5_original": 1.85,
+    "mean_R5_corrupted": 1.5,
+    "drop": 0.3500000000000001
+  }
+]

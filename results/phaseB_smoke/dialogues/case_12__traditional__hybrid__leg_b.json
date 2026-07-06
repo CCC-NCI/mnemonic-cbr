@@ -1,0 +1,66 @@
+{
+  "state": {
+    "case_id": "case_12",
+    "misconception_label": "Thinks alternate angles are always equal",
+    "misconception_features": [
+      0.0,
+      12.0,
+      3.0,
+      25.0
+    ],
+    "persona": "traditional",
+    "architecture": "hybrid",
+    "student_leg": "leg_b",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T10:14:48.998702Z",
+      "seed": 692,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-12T10:14:52.934093Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: Tom and Katie are arguing about alternate angles. Tom says angles \\( p \\) and \\( q \\) are alternate. Katie says angles \\( p \\) and \\( q \\) are equal. Who is correct? ![Shows two non parallel lines that are intersected by another line. Angles P and Q are both on the outside of the lines and on opposite sides of the transversal.](). I got Only\nKatie because I assumed all the angles in the figure are equal.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Actually, in this case, alternate angles are not always equal. Alternate angles are formed when a transversal intersects two parallel lines, and they are equal in that specific scenario. In the figure you showed, angles \\( p \\) and \\( q \\) are alternate, but they are not necessarily equal. Can you explain why Katie's statement might not be correct in this situation?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Oh right, so you're saying that p and q are alternate angles because they're on opposite sides of the transversal, but they're only equal if the two lines are parallel? So Katie is wrong because the lines in the diagram aren't parallel, so even though they're alternate angles, they don't have to be equal?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "That's correct! In this case, the lines are not parallel, so even though angles \\( p \\) and \\( q \\) are alternate, they are not necessarily equal. It's important to differentiate between alternate angles on intersecting lines and alternate angles on parallel lines. Can you think of another scenario where alternate angles would be equal?",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 4,
+    "R2": 2,
+    "R3": 3,
+    "R4": 5,
+    "R5": 4,
+    "R6": 2,
+    "justification_pass1": "The teacher directly addresses the misconception that alternate angles are always equal by clarifying the parallel lines condition, the mathematics is accurate, and the student demonstrates clear improvement in understanding, though cognitive demand is limited as the teacher provides most of the reasoning rather than eliciting it from the student.",
+    "justification_pass2": "The teacher uses questioning to elicit student reasoning rather than directly explaining with worked examples, which is more characteristic of inquiry-based or Socratic methods than traditional direct instruction.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 4,\n  \"R2\": 2,\n  \"R3\": 3,\n  \"R4\": 5,\n  \"R5\": 4,\n  \"brief_justification\": \"The teacher directly addresses the misconception that alternate angles are always equal by clarifying the parallel lines condition, the mathematics is accurate, and the student demonstrates clear improvement in understanding, though cognitive demand is limited as the teacher provides most of the reasoning rather than eliciting it from the student.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 2, \"brief_justification\": \"The teacher uses questioning to elicit student reasoning rather than directly explaining with worked examples, which is more characteristic of inquiry-based or Socratic methods than traditional direct instruction.\"}\n```",
+    "quality_composite": 3.0,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T10:14:59.609121+00:00"
+}

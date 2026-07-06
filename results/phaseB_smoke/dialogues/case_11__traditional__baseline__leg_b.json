@@ -1,0 +1,66 @@
+{
+  "state": {
+    "case_id": "case_11",
+    "misconception_label": "Struggles to visualise nets of 3D shapes",
+    "misconception_features": [
+      0.0,
+      11.0,
+      3.0,
+      31.0
+    ],
+    "persona": "traditional",
+    "architecture": "baseline",
+    "student_leg": "leg_b",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T10:03:53.896415Z",
+      "seed": 634,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-12T10:03:58.089153Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: This is the net of a... ![A circle touching a sector](). I got Triangle because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let me explain the correct method for visualizing nets of 3D shapes, and then we will work through an example together. Can you tell me how you approached this net to see if we can pinpoint where the confusion lies?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Um, I think I just looked at the shapes and guessed? Like, I saw there was a circle and something pointy, so I thought it might be a triangle when they fold up together. But I'm not really sure how you're supposed to know what 3D shape it makes - do you have to imagine it folding or something?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's work through an example together to help you visualize how the net folds up into a 3D shape. Can you try to imagine how the circle and the sector would fold together to form a 3D shape?",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 2,
+    "R3": 2,
+    "R4": 4,
+    "R5": 1,
+    "R6": 2,
+    "justification_pass1": "The teacher repeatedly asks the student to visualize without providing concrete strategies or addressing the specific difficulty with spatial reasoning, and the student shows no improvement in their ability to work with nets across the dialogue.",
+    "justification_pass2": "The teacher asks guiding questions rather than directly explaining the method with worked examples, which is inconsistent with the traditional strategy of explicit instruction and demonstration.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 2,\n  \"R3\": 2,\n  \"R4\": 4,\n  \"R5\": 1,\n  \"brief_justification\": \"The teacher repeatedly asks the student to visualize without providing concrete strategies or addressing the specific difficulty with spatial reasoning, and the student shows no improvement in their ability to work with nets across the dialogue.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\n  \"R6\": 2,\n  \"brief_justification\": \"The teacher asks guiding questions rather than directly explaining the method with worked examples, which is inconsistent with the traditional strategy of explicit instruction and demonstration.\"\n}\n```",
+    "quality_composite": 2.0,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T10:04:05.666978+00:00"
+}

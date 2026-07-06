@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_12",
+    "misconception_label": "Thinks alternate angles are always equal",
+    "misconception_features": [
+      0.0,
+      12.0,
+      3.0,
+      25.0
+    ],
+    "persona": "traditional",
+    "architecture": "pure_ai",
+    "student_leg": "leg_b",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T15:44:51.241298Z",
+      "seed": 690,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T15:44:57.358675Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: Tom and Katie are arguing about alternate angles. Tom says angles \\( p \\) and \\( q \\) are alternate. Katie says angles \\( p \\) and \\( q \\) are equal. Who is correct? ![Shows two non parallel lines that are intersected by another line. Angles P and Q are both on the outside of the lines and on opposite sides of the transversal.](). I got Only\nKatie because I assumed all the angles in the figure are equal.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's clarify the concept of alternate angles. Alternate angles are equal only when two lines are parallel. In the given figure, the lines are not parallel, so angles \\( p \\) and \\( q \\) are not necessarily equal. Can you think of a different relationship that could help us determine the relationship between angles \\( p \\) and \\( q \\)?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Oh right, so alternate angles are only equal when the lines are parallel! So in this case, since the lines aren't parallel, Tom would be correct that they're alternate angles, but Katie's wrong because they're not actually equal. But I'm still a bit confused - if they're not equal, what would make them equal or not equal then?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "That's correct! In this case, since the lines are not parallel, angles \\( p \\) and \\( q \\) are not equal. What determines if angles are equal in this scenario is their relationship to the transversal line - specifically whether they are corresponding, alternate interior, alternate exterior, or consecutive interior angles. Let's go over those relationships with a quick example to solidify the concept.",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "So like, you're saying that angles p and q are alternate angles because of where they're positioned relative to the transversal, but they're only equal if the two lines are parallel? And if the lines aren't parallel, then even though they're still called alternate angles, they won't actually be equal to each other? I think I get it now, but could you show me an example with parallel lines so I can see what it looks like when alternate angles actually ARE equal?",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 4,
+    "R2": 2,
+    "R3": 3,
+    "R4": 2,
+    "R5": 4,
+    "R6": 3,
+    "justification_pass1": "The teacher directly addresses the misconception that alternate angles are always equal by clarifying the parallel lines condition, and the student shows clear improvement in understanding by Turn 4, though the teacher mostly tells rather than prompts reasoning, and there's a domain accuracy issue in Turn 3 where the teacher doesn't clarify that p and q aren't actually alternate angles in the non-parallel case.",
+    "justification_pass2": "The teacher provides direct explanations and checks understanding, which aligns with traditional teaching, but lacks worked examples that are central to the traditional strategy, especially when the student explicitly requests one in Turn 4.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 4,\n  \"R2\": 2,\n  \"R3\": 3,\n  \"R4\": 2,\n  \"R5\": 4,\n  \"brief_justification\": \"The teacher directly addresses the misconception that alternate angles are always equal by clarifying the parallel lines condition, and the student shows clear improvement in understanding by Turn 4, though the teacher mostly tells rather than prompts reasoning, and there's a domain accuracy issue in Turn 3 where the teacher doesn't clarify that p and q aren't actually alternate angles in the non-parallel case.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 3, \"brief_justification\": \"The teacher provides direct explanations and checks understanding, which aligns with traditional teaching, but lacks worked examples that are central to the traditional strategy, especially when the student explicitly requests one in Turn 4.\"}\n```",
+    "quality_composite": 3.0,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T15:45:04.636860+00:00"
+}

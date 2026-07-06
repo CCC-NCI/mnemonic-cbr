@@ -1,0 +1,66 @@
+{
+  "state": {
+    "case_id": "case_21",
+    "misconception_label": "When factorising a quadratic with a non-unit coefficient of x squared, believes that coefficient will be in front of both x terms in the factorised form",
+    "misconception_features": [
+      0.0,
+      21.0,
+      1.0,
+      74.0
+    ],
+    "persona": "traditional",
+    "architecture": "hybrid",
+    "student_leg": "leg_a",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T11:39:53.608547Z",
+      "seed": 1141,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-12T11:39:57.366832Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: Step 1: Factorise the following expression \\( 3 x^{2}+5 x+2 \\). I got \\( (3 x+2)(3 x+1) \\) because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Okay, let's go through the process of factorising this quadratic expression step by step. First, we need to find two numbers that multiply to \\( 3 \\times 2 = 6 \\) and add up to \\( 5 \\). Can you try finding those two numbers and see if you can correct your factorised form based on that?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Okay, so I need two numbers that multiply to 6 and add to 5. I think those numbers are 2 and 3. But I'm still confused about how to use those to write the factorised form correctly. Do I just put them in front of the x's like I did before?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Actually, when factorising a quadratic expression, you need to consider both the coefficient of the x term and the constant term. The correct factorised form for \\(3x^2 + 5x + 2\\) would be \\((3x + 2)(x + 1)\\) because the numbers should be placed in a way that respects both terms in the expression. Can you see how this fits the criteria we discussed earlier?",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 1,
+    "R2": 2,
+    "R3": 2,
+    "R4": 5,
+    "R5": 1,
+    "R6": 2,
+    "justification_pass1": "The teacher never explicitly addresses the student's specific misconception about placing the coefficient 3 in front of both x terms, instead providing the correct answer directly in Turn 3 without helping the student understand why their approach was wrong, and the student shows no evidence of improved understanding by the end.",
+    "justification_pass2": "The teacher uses some guided questioning rather than directly explaining with worked examples as traditional teaching would dictate, though they do eventually provide the correct answer directly in Turn 3.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 1,\n  \"R2\": 2,\n  \"R3\": 2,\n  \"R4\": 5,\n  \"R5\": 1,\n  \"brief_justification\": \"The teacher never explicitly addresses the student's specific misconception about placing the coefficient 3 in front of both x terms, instead providing the correct answer directly in Turn 3 without helping the student understand why their approach was wrong, and the student shows no evidence of improved understanding by the end.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 2, \"brief_justification\": \"The teacher uses some guided questioning rather than directly explaining with worked examples as traditional teaching would dictate, though they do eventually provide the correct answer directly in Turn 3.\"}\n```",
+    "quality_composite": 1.6666666666666667,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T11:40:04.123113+00:00"
+}

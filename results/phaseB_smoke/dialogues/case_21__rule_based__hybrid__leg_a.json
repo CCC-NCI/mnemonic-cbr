@@ -1,0 +1,66 @@
+{
+  "state": {
+    "case_id": "case_21",
+    "misconception_label": "When factorising a quadratic with a non-unit coefficient of x squared, believes that coefficient will be in front of both x terms in the factorised form",
+    "misconception_features": [
+      0.0,
+      21.0,
+      1.0,
+      74.0
+    ],
+    "persona": "rule_based",
+    "architecture": "hybrid",
+    "student_leg": "leg_a",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T11:37:54.537836Z",
+      "seed": 1131,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-12T11:37:59.222018Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: Step 1: Factorise the following expression \\( 3 x^{2}+5 x+2 \\). I got \\( (3 x+2)(3 x+1) \\) because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "When factorising a quadratic expression like \\( 3x^{2}+5x+2 \\), remember that you need to find two numbers that multiply to the coefficient of \\( x^{2} \\) (which is 3) and add up to the coefficient of \\( x \\) (which is 5). Your factorisation should reflect this relationship. Let's revisit the steps together to ensure you understand the correct process.",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Okay, I think I get that I need to find two numbers that multiply to 3 and add up to 5, but I'm still confused about how to write the factors. If the coefficient of \\( x^{2} \\) is 3, does that mean it has to be in both brackets? I thought that was how it worked. Can you explain that part again?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "When factorising a quadratic expression like \\( 3x^{2}+5x+2 \\), the coefficient of \\( x^{2} \\) only needs to appear once in each bracket, not in both. The goal is to find two numbers that satisfy the given conditions and can be used to correctly factorise the expression. Let's work through the steps together to ensure you understand how to write the factors correctly.",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 1,
+    "R3": 2,
+    "R4": 2,
+    "R5": 1,
+    "R6": 2,
+    "justification_pass1": "The teacher provides vague guidance that doesn't clearly address the misconception (the student explicitly asks about the 3 in both brackets in Turn 2 but gets an unclear response), gives mathematically incorrect instructions about finding numbers that multiply to 3 and add to 5, doesn't require student reasoning, and the student shows no improvement in understanding by the end.",
+    "justification_pass2": "The teacher provides some procedural guidance but never explicitly states the complete factorization procedure, shows worked steps with the actual solution, or gives direct corrective feedback by showing the correct answer (3x+2)(x+1), instead offering vague guidance that contains an error in Turn 1 about multiplying to 3 rather than to 3\u00d72=6.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 1,\n  \"R3\": 2,\n  \"R4\": 2,\n  \"R5\": 1,\n  \"brief_justification\": \"The teacher provides vague guidance that doesn't clearly address the misconception (the student explicitly asks about the 3 in both brackets in Turn 2 but gets an unclear response), gives mathematically incorrect instructions about finding numbers that multiply to 3 and add to 5, doesn't require student reasoning, and the student shows no improvement in understanding by the end.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 2, \"brief_justification\": \"The teacher provides some procedural guidance but never explicitly states the complete factorization procedure, shows worked steps with the actual solution, or gives direct corrective feedback by showing the correct answer (3x+2)(x+1), instead offering vague guidance that contains an error in Turn 1 about multiplying to 3 rather than to 3\u00d72=6.\"}\n```",
+    "quality_composite": 1.6666666666666667,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T11:38:07.676719+00:00"
+}

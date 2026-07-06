@@ -1,0 +1,66 @@
+{
+  "state": {
+    "case_id": "case_18",
+    "misconception_label": "Assumes that an arrow on a number line starts at zero",
+    "misconception_features": [
+      0.0,
+      18.0,
+      2.0,
+      73.0
+    ],
+    "persona": "experiential",
+    "architecture": "pure_ai",
+    "student_leg": "leg_b",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T11:06:54.714912Z",
+      "seed": 970,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-12T11:06:59.167420Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: ![Number line with -12 and -7 marked. Starting at -12, follow an arrow pointing to the right labelled +10. Then there is an arrow labelled b pointing to the left, which ends at -7 on the number line.]() What is the value of \\( b \\) ? I got \\( -7 \\) because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Imagine you are playing a game where you start at -12 on the number line. When you move to the right by +10, you end up at -2. Now, when you move back to the left by \\( b \\), you end up at -7. What number do you need to add to -2 to get to -7?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Oh right, so I need to go from -2 to -7... that's going down by 5, isn't it? So b would be -5? But I'm still a bit confused about why the arrow doesn't just equal -7 like where it ends up.",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Think of it like this: Imagine you are walking along a path and you reach a sign that says -2. Then you walk backwards 5 steps and end up at -7. The starting point on the number line doesn't always have to be zero. So in this case, the arrow starting at -12 represents adding 10 to get to -2, and then the arrow labelled b represents subtracting 5 to get to -7. So, b would indeed be -5 in this scenario.",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 4,
+    "R2": 3,
+    "R3": 4,
+    "R4": 5,
+    "R5": 3,
+    "R6": 5,
+    "justification_pass1": "The teacher effectively addresses the misconception that arrows start at zero by explicitly stating 'The starting point on the number line doesn't always have to be zero' after the student reveals lingering confusion, though the student gets the correct answer without fully articulating understanding of why the misconception was wrong.",
+    "justification_pass2": "The teacher consistently grounds the abstract number line problem in concrete, relatable scenarios (playing a game, walking along a path with signs and steps), making this a textbook example of the experiential strategy.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 4,\n  \"R2\": 3,\n  \"R3\": 4,\n  \"R4\": 5,\n  \"R5\": 3,\n  \"brief_justification\": \"The teacher effectively addresses the misconception that arrows start at zero by explicitly stating 'The starting point on the number line doesn't always have to be zero' after the student reveals lingering confusion, though the student gets the correct answer without fully articulating understanding of why the misconception was wrong.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 5, \"brief_justification\": \"The teacher consistently grounds the abstract number line problem in concrete, relatable scenarios (playing a game, walking along a path with signs and steps), making this a textbook example of the experiential strategy.\"}\n```",
+    "quality_composite": 3.6666666666666665,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T11:07:12.276269+00:00"
+}

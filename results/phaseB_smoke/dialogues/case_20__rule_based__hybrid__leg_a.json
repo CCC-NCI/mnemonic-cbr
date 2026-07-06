@@ -1,0 +1,66 @@
+{
+  "state": {
+    "case_id": "case_20",
+    "misconception_label": "Adds when calculating volume instead of multiplying",
+    "misconception_features": [
+      0.0,
+      20.0,
+      1.0,
+      58.0
+    ],
+    "persona": "rule_based",
+    "architecture": "hybrid",
+    "student_leg": "leg_a",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T11:28:30.350571Z",
+      "seed": 1081,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-12T11:28:35.353798Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: The volume of this cuboid is \\( 30 \\mathrm{~cm}^{3} \\) What length should replace the star? ![A cuboid, depth 2cm and height 3cm. The width is labelled with a star.](). I got \\( 25 \\mathrm{~cm} \\) because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "When calculating the volume of a cuboid, remember that you need to multiply the length, width, and height. In this case, to find the missing length, you should multiply the given dimensions. So, to find the correct length to replace the star, you need to multiply 2 cm (depth) by 3 cm (height) and not add them together like you did.",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Oh, I see! So I should multiply the depth and height instead of adding them. But if I multiply 2 cm and 3 cm, I get 6 cm\u00b2. How do I use that to find the width?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "You are on the right track in multiplying the dimensions to find the volume, but remember that volume is measured in cubic units (e.g., cm^3), not square units. So, when you multiply 2 cm by 3 cm, you should get 6 cm^3, not 6 cm^2. This will give you the correct volume of the cuboid.",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 1,
+    "R3": 2,
+    "R4": 2,
+    "R5": 1,
+    "R6": 2,
+    "justification_pass1": "The teacher mentions the misconception but provides confusing guidance (telling the student to multiply the two given dimensions rather than divide volume by their product), makes a domain error about units in Turn 3, and the student shows no progress toward finding the correct width of 5 cm.",
+    "justification_pass2": "While the teacher does state some explicit procedures about multiplying dimensions, they fail to provide direct corrective feedback on the actual procedural error (the student needs to divide 30 by 6 to find the width), never show worked steps to reach the correct answer of 5 cm, and in Turn 3 focus on unit notation rather than correcting the fundamental misunderstanding about solving for the missing dimension.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 1,\n  \"R3\": 2,\n  \"R4\": 2,\n  \"R5\": 1,\n  \"brief_justification\": \"The teacher mentions the misconception but provides confusing guidance (telling the student to multiply the two given dimensions rather than divide volume by their product), makes a domain error about units in Turn 3, and the student shows no progress toward finding the correct width of 5 cm.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 2, \"brief_justification\": \"While the teacher does state some explicit procedures about multiplying dimensions, they fail to provide direct corrective feedback on the actual procedural error (the student needs to divide 30 by 6 to find the width), never show worked steps to reach the correct answer of 5 cm, and in Turn 3 focus on unit notation rather than correcting the fundamental misunderstanding about solving for the missing dimension.\"}\n```",
+    "quality_composite": 1.6666666666666667,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T11:28:43.976899+00:00"
+}

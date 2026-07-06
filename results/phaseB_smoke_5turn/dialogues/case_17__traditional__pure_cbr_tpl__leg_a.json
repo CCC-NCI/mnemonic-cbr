@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_17",
+    "misconception_label": "Does not understand that 2n represents an even number",
+    "misconception_features": [
+      0.0,
+      17.0,
+      3.0,
+      47.0
+    ],
+    "persona": "traditional",
+    "architecture": "pure_cbr_tpl",
+    "student_leg": "leg_a",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T16:37:14.463453Z",
+      "seed": 937,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T16:37:17.825431Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: Which of these shows part of the proof that the sum of two odd numbers is even? I got \\( \\begin{array}{l}2 n+(2 m+1) \\\\ =2(n+m)+1\\end{array} \\) because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's think about this. From similar cases:\n  1. Topic: Fill in regions of a double Venn diagram with numbers from given information. Correct answer (A): A. Student selected: B. Underlying misconception: Mixes up odd and even numbers. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.\n  2. Topic: Read an integer on a scale where the required measurement is marked by a dash between two numbers. Correct answer (D): \\( 160 \\). Student selected: \\( 154 \\). Underlying misconception: When reading integers on a number line, assumes each dash is 2. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.\n  3. Topic: Read a fraction on a scale where the required number is marked by a dash between two numbers. Correct answer (C): \\( \\frac{5}{12} \\). Student selected: \\( \\frac{3}{4} \\). Underlying misconception: When reading a dash on a number line does not take into account the number at the start or the width of each division. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "I think I kind of get it, but I'm still confused about how \\(2n\\) is even. I thought that since \\(n\\) can be any number, it could be odd or even. So how does that make \\(2n\\) always even? Can you explain that part again?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's think about this. From similar cases:\n  1. Topic: Fill in regions of a double Venn diagram with numbers from given information. Correct answer (A): A. Student selected: B. Underlying misconception: Mixes up odd and even numbers. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.\n  2. Topic: Read an integer on a scale where the required measurement is marked by a dash between two numbers. Correct answer (D): \\( 160 \\). Student selected: \\( 154 \\). Underlying misconception: When reading integers on a number line, assumes each dash is 2. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.\n  3. Topic: Read a fraction on a scale where the required number is marked by a dash between two numbers. Correct answer (C): \\( \\frac{5}{12} \\). Student selected: \\( \\frac{3}{4} \\). Underlying misconception: When reading a dash on a number line does not take into account the number at the start or the width of each division. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "Okay, I think I get that \\(2n\\) is even because it's like taking any number \\(n\\) and doubling it. But I'm still a bit confused because if \\(n\\) is odd, doesn't that make \\(2n\\) odd too? Can you help me see why \\(2n\\) is always even, no matter what \\(n\\) is?",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 1,
+    "R2": 1,
+    "R3": 1,
+    "R4": 1,
+    "R5": 1,
+    "R6": 1,
+    "justification_pass1": "The teacher completely fails to address the student's specific misconception about 2n representing even numbers, instead repeatedly providing irrelevant examples about Venn diagrams and number lines, while the student's confusion persists and even deepens across turns.",
+    "justification_pass2": "The teacher never directly explains the concept or provides worked examples, instead repeatedly copying irrelevant examples about Venn diagrams and number lines that don't address the student's question about why 2n is always even.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 1,\n  \"R2\": 1,\n  \"R3\": 1,\n  \"R4\": 1,\n  \"R5\": 1,\n  \"brief_justification\": \"The teacher completely fails to address the student's specific misconception about 2n representing even numbers, instead repeatedly providing irrelevant examples about Venn diagrams and number lines, while the student's confusion persists and even deepens across turns.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 1, \"brief_justification\": \"The teacher never directly explains the concept or provides worked examples, instead repeatedly copying irrelevant examples about Venn diagrams and number lines that don't address the student's question about why 2n is always even.\"}\n```",
+    "quality_composite": 1.0,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T16:37:24.237643+00:00"
+}

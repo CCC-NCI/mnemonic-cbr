@@ -1,0 +1,66 @@
+{
+  "state": {
+    "case_id": "case_12",
+    "misconception_label": "Thinks alternate angles are always equal",
+    "misconception_features": [
+      0.0,
+      12.0,
+      3.0,
+      25.0
+    ],
+    "persona": "rule_based",
+    "architecture": "pure_cbr_llm",
+    "student_leg": "leg_b",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T10:11:54.230174Z",
+      "seed": 676,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-12T10:11:58.403568Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: Tom and Katie are arguing about alternate angles. Tom says angles \\( p \\) and \\( q \\) are alternate. Katie says angles \\( p \\) and \\( q \\) are equal. Who is correct? ![Shows two non parallel lines that are intersected by another line. Angles P and Q are both on the outside of the lines and on opposite sides of the transversal.](). I got Only\nKatie because I assumed all the angles in the figure are equal.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "You are correct to select Katie. However, the reason is not because all angles are equal. In this case, angles \\( p \\) and \\( q \\) are not alternate angles. Remember, alternate angles are formed when a transversal intersects two parallel lines. Keep practicing to differentiate between different angle relationships.",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Oh right, so alternate angles only work when the two lines are parallel? That makes sense now - in the diagram the lines aren't parallel so p and q can't actually be alternate angles even though they're on opposite sides. But I'm still a bit confused about what makes angles actually equal then - is it only when the lines ARE parallel?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "That's correct! When the lines are not parallel, like in the diagram you mentioned, angles \\( p \\) and \\( q \\) cannot be alternate angles. In this case, angles are equal when they are vertically opposite to each other. Keep practicing to differentiate between the different angle relationships.",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 1,
+    "R3": 2,
+    "R4": 2,
+    "R5": 2,
+    "R6": 3,
+    "justification_pass1": "The teacher correctly identifies that the lines must be parallel for alternate angles but fails to address why Katie is correct (the angles ARE equal in this specific diagram despite not being alternate), creates confusion by not explaining when angles are equal beyond vertical angles, and provides answers rather than prompting reasoning.",
+    "justification_pass2": "The teacher provides some direct corrective feedback and states explicit rules (e.g., 'alternate angles are formed when a transversal intersects two parallel lines'), but does not show worked steps or demonstrate procedures through examples, which would be characteristic of a stronger rule-based approach.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 1,\n  \"R3\": 2,\n  \"R4\": 2,\n  \"R5\": 2,\n  \"brief_justification\": \"The teacher correctly identifies that the lines must be parallel for alternate angles but fails to address why Katie is correct (the angles ARE equal in this specific diagram despite not being alternate), creates confusion by not explaining when angles are equal beyond vertical angles, and provides answers rather than prompting reasoning.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 3, \"brief_justification\": \"The teacher provides some direct corrective feedback and states explicit rules (e.g., 'alternate angles are formed when a transversal intersects two parallel lines'), but does not show worked steps or demonstrate procedures through examples, which would be characteristic of a stronger rule-based approach.\"}\n```",
+    "quality_composite": 1.6666666666666667,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T10:12:05.818046+00:00"
+}

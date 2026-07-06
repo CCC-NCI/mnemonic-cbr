@@ -1,0 +1,66 @@
+{
+  "state": {
+    "case_id": "case_0",
+    "misconception_label": "Confuses the order of operations, believes addition comes before multiplication",
+    "misconception_features": [
+      0.0,
+      0.0,
+      1.0,
+      70.0
+    ],
+    "persona": "rule_based",
+    "architecture": "baseline",
+    "student_leg": "leg_a",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T08:10:24.598350Z",
+      "seed": 73,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "cbr_grounded",
+      "ended_at": "2026-05-12T08:10:28.286303Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: \\[ 3 \\times 2+4-5 \\] Where do the brackets need to go to make the answer equal \\( 13 \\) ? I got Does not need brackets because I worked left to right instead of following the order of operations.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "There is a specific procedure for this. Step 1 is to identify the operation; step 2 is to apply the rule for that operation. In this case, you need to remember that multiplication comes before addition in the order of operations.",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Okay, I think I get that multiplication comes before addition, but I'm still not sure how to use that to figure out where the brackets go. If I put brackets around \\( 2 + 4 \\), would that help? Or do I need to do something else?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "There is a specific procedure for this. Step 1 is to identify the operation; step 2 is to apply the rule for that operation. In this case, remember to perform the multiplication before the addition when deciding where to place the brackets.",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 1,
+    "R3": 1,
+    "R4": 3,
+    "R5": 1,
+    "R6": 5,
+    "justification_pass1": "The teacher repeatedly states the same procedural rule without engaging the student's specific confusion about bracket placement, provides no opportunity for reasoning, and the student shows no improvement in understanding how to solve the actual problem by Turn 3.",
+    "justification_pass2": "The teacher consistently states explicit procedures (Step 1 and Step 2), references the specific rule about order of operations, and provides direct corrective feedback about the procedural error of not applying multiplication before addition.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 1,\n  \"R3\": 1,\n  \"R4\": 3,\n  \"R5\": 1,\n  \"brief_justification\": \"The teacher repeatedly states the same procedural rule without engaging the student's specific confusion about bracket placement, provides no opportunity for reasoning, and the student shows no improvement in understanding how to solve the actual problem by Turn 3.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 5, \"brief_justification\": \"The teacher consistently states explicit procedures (Step 1 and Step 2), references the specific rule about order of operations, and provides direct corrective feedback about the procedural error of not applying multiplication before addition.\"}\n```",
+    "quality_composite": 1.3333333333333333,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T08:10:34.934386+00:00"
+}

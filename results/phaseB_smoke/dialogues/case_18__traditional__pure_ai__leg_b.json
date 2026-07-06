@@ -1,0 +1,66 @@
+{
+  "state": {
+    "case_id": "case_18",
+    "misconception_label": "Assumes that an arrow on a number line starts at zero",
+    "misconception_features": [
+      0.0,
+      18.0,
+      2.0,
+      73.0
+    ],
+    "persona": "traditional",
+    "architecture": "pure_ai",
+    "student_leg": "leg_b",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T11:11:21.052309Z",
+      "seed": 990,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-12T11:11:27.461390Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: ![Number line with -12 and -7 marked. Starting at -12, follow an arrow pointing to the right labelled +10. Then there is an arrow labelled b pointing to the left, which ends at -7 on the number line.]() What is the value of \\( b \\) ? I got \\( -7 \\) because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's first clarify that the arrow on the number line does not necessarily start at zero. In this case, the arrow labeled \\( b \\) actually starts at \\( -12 \\) and ends at \\( -7 \\). To find the value of \\( b \\), we need to calculate the difference between the starting point and ending point: \\( -7 - (-12) = 5 \\). So, the value of \\( b \\) is \\( 5 \\). Can you explain how you reached \\( -7 \\) before?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Oh right, I see now - I was just looking at where the arrow ended up on the number line and thought that was the answer. So the arrow labeled *b* starts at -12 and goes left to -7, and I need to work out how far it moved, not just read off the number? That makes more sense, but I'm still a bit confused about why we do -7 minus -12 instead of the other way around - why does the order matter?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Turn 3 (teacher): You're on the right track with moving from -12 to -7 to find the value of \\( b \\). When subtracting two negative numbers, like -7 - (-12), it's helpful to think of it as adding the opposite: -7 + 12. This way, you're finding the difference between the two numbers regardless of their signs. Does that clarify it for you?",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 4,
+    "R2": 2,
+    "R3": 2,
+    "R4": 2,
+    "R5": 3,
+    "R6": 4,
+    "justification_pass1": "The teacher explicitly addresses the misconception that arrows start at zero, but provides mathematically problematic guidance (the arrow goes left/decreases but b=5 is positive, and -7-(-12) doesn't represent the leftward movement), while the student shows partial progress in understanding they need to find distance rather than just read the endpoint.",
+    "justification_pass2": "The teacher provides direct explanations with worked examples (calculating -7 - (-12) = 5), checks understanding by asking the student to explain their thinking, and offers clear step-by-step reasoning, though could be slightly more comprehensive in addressing the directional aspect of the number line movement.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 4,\n  \"R2\": 2,\n  \"R3\": 2,\n  \"R4\": 2,\n  \"R5\": 3,\n  \"brief_justification\": \"The teacher explicitly addresses the misconception that arrows start at zero, but provides mathematically problematic guidance (the arrow goes left/decreases but b=5 is positive, and -7-(-12) doesn't represent the leftward movement), while the student shows partial progress in understanding they need to find distance rather than just read the endpoint.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 4, \"brief_justification\": \"The teacher provides direct explanations with worked examples (calculating -7 - (-12) = 5), checks understanding by asking the student to explain their thinking, and offers clear step-by-step reasoning, though could be slightly more comprehensive in addressing the directional aspect of the number line movement.\"}\n```",
+    "quality_composite": 2.6666666666666665,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T11:11:42.507693+00:00"
+}

@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_14",
+    "misconception_label": "Stops iteration too early when solving equations",
+    "misconception_features": [
+      0.0,
+      14.0,
+      3.0,
+      85.0
+    ],
+    "persona": "constructive",
+    "architecture": "pure_cbr_tpl",
+    "student_leg": "leg_a",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T15:59:06.663078Z",
+      "seed": 757,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T15:59:09.619224Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: \\( x_{n+1}=5-\\frac{1}{x_{n}} \\) Using a starting value of \\( x_{1}=2 \\), what is the solution to \\( x=5-\\frac{1}{x} \\) to \\( 2 \\) decimal places? I got \\( 4.78 \\) because I added the parts of the ratio as if they were a total.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's think about this. From similar cases:\n  1. Topic: Select the correct answer to an iteration question to the required degree of accuracy. Correct answer (A): \\( 0.826 \\). Student selected: \\( 0.830 \\). Underlying misconception: Stops iteration too early when solving equations. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.\n  2. Topic: Carry out the first stage in an iteration solution. Correct answer (A): \\( \\frac{8}{9} \\). Student selected: \\( \\frac{7}{9} \\). Underlying misconception: Believes the subscript in iteration notation is the value to be substituted. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.\n  3. Topic: Solve a linear equation using a function machine. Correct answer (D): \\( \\begin{array}{l}-4 \\\\ \\times 3\\end{array} \\). Student selected: \\( \\begin{array}{l}\\times 3 \\\\ -4\\end{array} \\). Underlying misconception: Does not reverse the order of operations when finding the input of a function machine. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "I think I get that I might have stopped too early with my calculations. I just thought I could add the parts together and get the answer, but now I'm not sure how many times I need to keep going. How do I know when I've done enough iterations to get it right?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's think about this. From similar cases:\n  1. Topic: Select the correct answer to an iteration question to the required degree of accuracy. Correct answer (A): \\( 0.826 \\). Student selected: \\( 0.830 \\). Underlying misconception: Stops iteration too early when solving equations. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.\n  2. Topic: Carry out the first stage in an iteration solution. Correct answer (A): \\( \\frac{8}{9} \\). Student selected: \\( \\frac{7}{9} \\). Underlying misconception: Believes the subscript in iteration notation is the value to be substituted. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.\n  3. Topic: Solve a linear equation using a function machine. Correct answer (D): \\( \\begin{array}{l}-4 \\\\ \\times 3\\end{array} \\). Student selected: \\( \\begin{array}{l}\\times 3 \\\\ -4\\end{array} \\). Underlying misconception: Does not reverse the order of operations when finding the input of a function machine. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "I think I get that I need to keep going with the iterations until the numbers are really close together, but how do I know when they\u2019re close enough? Like, if I keep getting different answers, how can I tell which one is right?",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 1,
+    "R2": 1,
+    "R3": 1,
+    "R4": 2,
+    "R5": 2,
+    "R6": 1,
+    "justification_pass1": "The teacher merely repeats generic case examples without engaging the student's specific misconception or question, failing to explain iteration convergence criteria despite the student explicitly asking how to know when to stop iterating.",
+    "justification_pass2": "The teacher merely repeats the same list of similar cases verbatim without scaffolding, breaking down the problem into steps, or adjusting support based on the student's evolving questions about convergence criteria.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 1,\n  \"R2\": 1,\n  \"R3\": 1,\n  \"R4\": 2,\n  \"R5\": 2,\n  \"brief_justification\": \"The teacher merely repeats generic case examples without engaging the student's specific misconception or question, failing to explain iteration convergence criteria despite the student explicitly asking how to know when to stop iterating.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 1, \"brief_justification\": \"The teacher merely repeats the same list of similar cases verbatim without scaffolding, breaking down the problem into steps, or adjusting support based on the student's evolving questions about convergence criteria.\"}\n```",
+    "quality_composite": 1.0,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T15:59:16.448797+00:00"
+}

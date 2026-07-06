@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_10",
+    "misconception_label": "Ignores negative sign when expanding bracket",
+    "misconception_features": [
+      0.0,
+      10.0,
+      1.0,
+      68.0
+    ],
+    "persona": "constructive",
+    "architecture": "baseline",
+    "student_leg": "leg_a",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T15:14:54.492149Z",
+      "seed": 553,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T15:15:00.730036Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: John is expanding these three brackets: \\( (x+5)(x-3)(x+6) \\) He finds it helpful to split the first bracket and view the problem as follows: \\( x(x-3)(x+6)+5(x-3)(x+6) \\) He expands the brackets further. Before he simplifies, what are the terms than contain an \\( \\boldsymbol{x}^{2} \\) ? I got \\( \\begin{array}{l}+6 x^{2} \\\\ +3 x^{2} \\\\ +5 x^{2}\\end{array} \\) because I forgot that two negatives multiply to a positive.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's go back to the part you do know, and build the next step from there. Remember to be careful with the negative signs when expanding the brackets.",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Okay, so I think I need to be more careful with the negative signs when I expand. For the \\( (x-3)(x+6) \\) part, I guess I should remember that \\( -3 \\times +6 \\) gives me a negative, right? Can you help me figure out what the correct \\( x^2 \\) terms would be?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's go back to the part you do know, and build the next step from there. Remember to carefully consider the signs when multiplying the terms in the brackets.",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "Okay, so if I look at \\( (x-3)(x+6) \\), I think I need to do \\( x \\times x \\) for the \\( x^2 \\) term, which gives me \\( x^2 \\). Then, I also have to do \\( -3 \\times x \\) and \\( x \\times 6 \\), but I get confused about the signs. So, I guess I should have \\( -3x \\) and \\( +6x \\) too? Can you help me figure out how those combine for the \\( x^2 \\) terms?",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 1,
+    "R3": 2,
+    "R4": 5,
+    "R5": 2,
+    "R6": 2,
+    "justification_pass1": "The teacher gives only generic reminders about negative signs without addressing the specific misconception, provides no cognitive challenge by merely repeating vague prompts, and the student remains confused about the core issue (identifying x\u00b2 terms vs. x terms) by Turn 4.",
+    "justification_pass2": "The teacher repeats nearly identical generic prompts without breaking down the problem into manageable steps, adjusting support based on the student's specific confusion, or scaffolding toward the correct identification of x\u00b2 terms.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 1,\n  \"R3\": 2,\n  \"R4\": 5,\n  \"R5\": 2,\n  \"brief_justification\": \"The teacher gives only generic reminders about negative signs without addressing the specific misconception, provides no cognitive challenge by merely repeating vague prompts, and the student remains confused about the core issue (identifying x\u00b2 terms vs. x terms) by Turn 4.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 2, \"brief_justification\": \"The teacher repeats nearly identical generic prompts without breaking down the problem into manageable steps, adjusting support based on the student's specific confusion, or scaffolding toward the correct identification of x\u00b2 terms.\"}\n```",
+    "quality_composite": 1.6666666666666667,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T15:15:09.537503+00:00"
+}

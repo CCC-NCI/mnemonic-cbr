@@ -1,0 +1,66 @@
+{
+  "state": {
+    "case_id": "case_16",
+    "misconception_label": "Divides total amount by each side of the ratio instead of dividing by the sum of the parts",
+    "misconception_features": [
+      0.0,
+      16.0,
+      3.0,
+      83.0
+    ],
+    "persona": "traditional",
+    "architecture": "pure_cbr_llm",
+    "student_leg": "leg_a",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T10:50:27.002679Z",
+      "seed": 885,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-12T10:50:30.779680Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: In the diagram, AN : NB \\( =3: 5 \\) What is the distance AN? ![A line that begins with point A, ends with point B, and has point N in between. The entire length of the line measures 48 m.](). I got \\( 16 \\mathrm{~m} \\) because I added the parts of the ratio as if they were a total.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's focus on understanding the relationship between the parts in the ratio. In this case, we need to find the total distance, not just add the parts together. Can you explain why just adding the parts of the ratio might not give us the correct answer in this situation?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "I think I get that adding the parts of the ratio isn't enough because it doesn't give me the whole distance. But I'm still confused about how to actually find the distance of AN. Do I need to do something with the total length of 48 m instead?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's focus on understanding the relationship between the parts in the ratio. In this case, we need to find the total distance, not just add the parts together. Can you explain why just adding the parts of the ratio might not give us the correct answer in this situation?",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 3,
+    "R3": 1,
+    "R4": 3,
+    "R5": 1,
+    "R6": 1,
+    "justification_pass1": "The teacher asks the same vague question twice without addressing the student's specific misconception about dividing by each part versus the sum, and the student shows no progress in understanding how to solve the problem correctly.",
+    "justification_pass2": "The teacher uses Socratic questioning rather than direct explanation with worked examples, which is the opposite of the traditional strategy that should explicitly show how to solve ratio problems step-by-step.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 3,\n  \"R3\": 1,\n  \"R4\": 3,\n  \"R5\": 1,\n  \"brief_justification\": \"The teacher asks the same vague question twice without addressing the student's specific misconception about dividing by each part versus the sum, and the student shows no progress in understanding how to solve the problem correctly.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 1, \"brief_justification\": \"The teacher uses Socratic questioning rather than direct explanation with worked examples, which is the opposite of the traditional strategy that should explicitly show how to solve ratio problems step-by-step.\"}\n```",
+    "quality_composite": 2.0,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T10:50:36.724487+00:00"
+}

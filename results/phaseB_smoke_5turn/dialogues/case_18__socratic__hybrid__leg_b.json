@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_18",
+    "misconception_label": "Assumes that an arrow on a number line starts at zero",
+    "misconception_features": [
+      0.0,
+      18.0,
+      2.0,
+      73.0
+    ],
+    "persona": "socratic",
+    "architecture": "hybrid",
+    "student_leg": "leg_b",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T16:40:25.915463Z",
+      "seed": 952,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T16:40:35.225698Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: ![Number line with -12 and -7 marked. Starting at -12, follow an arrow pointing to the right labelled +10. Then there is an arrow labelled b pointing to the left, which ends at -7 on the number line.]() What is the value of \\( b \\) ? I got \\( -7 \\) because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Why do you think the arrow on the number line starts at zero? Can you walk me through your thought process in determining the value of \\( b \\) starting from -12?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Oh right, um... so I start at -12, then the arrow going right with +10 means I move 10 spaces to the right, so that gets me to -2, doesn't it? But then I'm confused about the second arrow - does the *b* mean I move *b* spaces to the left, or does it mean the arrow ends at *b*?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Why do you think the arrow direction matters in this case? How might you approach determining the value of \\( b \\) if the arrow was pointing in a different direction?",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "Um, I think the arrow direction matters because it tells me which way to move... so if it's pointing left, I move left, and if it's pointing right, I move right? So if I'm at -2 after the first arrow, and then the second arrow labeled *b* points left to -7, does that mean *b* is the distance I move, like -5? Or is *b* just the number -7 where the arrow ends?",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 3,
+    "R3": 2,
+    "R4": 5,
+    "R5": 4,
+    "R6": 4,
+    "justification_pass1": "While the teacher asks questions requiring reasoning, they don't directly address the zero-starting misconception mentioned in Turn 1, though the student does self-correct their starting point and makes visible progress in understanding the problem structure by Turn 4.",
+    "justification_pass2": "The teacher consistently uses probing questions to guide the student's thinking without giving direct answers, though they could have used a counterexample to address the student's initial confusion about starting at zero versus -12.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 3,\n  \"R3\": 2,\n  \"R4\": 5,\n  \"R5\": 4,\n  \"brief_justification\": \"While the teacher asks questions requiring reasoning, they don't directly address the zero-starting misconception mentioned in Turn 1, though the student does self-correct their starting point and makes visible progress in understanding the problem structure by Turn 4.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 4, \"brief_justification\": \"The teacher consistently uses probing questions to guide the student's thinking without giving direct answers, though they could have used a counterexample to address the student's initial confusion about starting at zero versus -12.\"}\n```",
+    "quality_composite": 2.3333333333333335,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T16:40:42.021375+00:00"
+}

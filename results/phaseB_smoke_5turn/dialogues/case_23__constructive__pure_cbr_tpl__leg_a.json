@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_23",
+    "misconception_label": "Confuses rest and movement on a distance time graph",
+    "misconception_features": [
+      0.0,
+      23.0,
+      3.0,
+      62.0
+    ],
+    "persona": "constructive",
+    "architecture": "pure_cbr_tpl",
+    "student_leg": "leg_a",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T17:35:50.336309Z",
+      "seed": 1207,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T17:35:53.372790Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: This graph shows how far Fido the dog is from his home. What might the negative-sloping section represent? ![A graph with time (secs) on the horizontal axis and distance (m) on the vertical axis. The graph starts at the origin, travels in a straight line up and right, travels horizontally, then travels in a straight line down and right back to the x-axis. ](). I got Fido has fallen asleep because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's think about this. From similar cases:\n  1. Topic: Read values off a displacement-time graph. Correct answer (D): \\( 7500 \\mathrm{~m} \\). Student selected: \\( 0 \\mathrm{~km} \\). Underlying misconception: Thinks a horizontal line on a distance time graph means a distance of 0. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.\n  2. Topic: Calculate the distance travelled using a speed-time graph. Correct answer (C): \\( 24 m \\). Student selected: \\( 30 m \\). Underlying misconception: Believes that when finding area under graph you can use the upper y value rather than average of upper and lower. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.\n  3. Topic: Read values off a speed-time graph. Correct answer (A): \\( 1 \\mathrm{sec} \\). Student selected: \\( 4 \\) secs. Underlying misconception: When reading value from graph, reads from the wrong axes.. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Okay, I think I get that the negative slope means Fido is getting closer to home, but I'm still confused about why it's not just him falling asleep. If he's moving back towards home, does that mean he was far away before? How do I tell the difference between resting and actually moving back?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's think about this. From similar cases:\n  1. Topic: Read values off a displacement-time graph. Correct answer (D): \\( 7500 \\mathrm{~m} \\). Student selected: \\( 0 \\mathrm{~km} \\). Underlying misconception: Thinks a horizontal line on a distance time graph means a distance of 0. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.\n  2. Topic: Calculate the distance travelled using a speed-time graph. Correct answer (C): \\( 24 m \\). Student selected: \\( 30 m \\). Underlying misconception: Believes that when finding area under graph you can use the upper y value rather than average of upper and lower. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.\n  3. Topic: Read values off a speed-time graph. Correct answer (A): \\( 1 \\mathrm{sec} \\). Student selected: \\( 4 \\) secs. Underlying misconception: When reading value from graph, reads from the wrong axes.. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "I think I get that the negative slope means Fido is moving closer to home, but I'm still not sure how to tell when he's resting versus moving. Like, if he was far away before, does that mean he was running or just hanging out? How do I know when he's actually moving back and not just taking a break?",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 1,
+    "R2": 1,
+    "R3": 1,
+    "R4": 2,
+    "R5": 1,
+    "R6": 1,
+    "justification_pass1": "The teacher repeatedly provides irrelevant examples from unrelated misconceptions instead of addressing the student's core confusion about distinguishing rest (horizontal line) from movement (sloped line) on a distance-time graph, resulting in no progress as the student asks essentially the same question across all turns.",
+    "justification_pass2": "The teacher simply repeats the same list of similar cases verbatim in both turns without scaffolding, breaking down the problem into steps, or adjusting support based on the student's evolving understanding, which directly contradicts the constructive strategy.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 1,\n  \"R2\": 1,\n  \"R3\": 1,\n  \"R4\": 2,\n  \"R5\": 1,\n  \"brief_justification\": \"The teacher repeatedly provides irrelevant examples from unrelated misconceptions instead of addressing the student's core confusion about distinguishing rest (horizontal line) from movement (sloped line) on a distance-time graph, resulting in no progress as the student asks essentially the same question across all turns.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 1, \"brief_justification\": \"The teacher simply repeats the same list of similar cases verbatim in both turns without scaffolding, breaking down the problem into steps, or adjusting support based on the student's evolving understanding, which directly contradicts the constructive strategy.\"}\n```",
+    "quality_composite": 1.0,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T17:36:01.318214+00:00"
+}

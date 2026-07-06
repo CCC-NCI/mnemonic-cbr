@@ -1,0 +1,53 @@
+{
+  "blind_id": "D1d4f1c610c",
+  "subset_row": {
+    "blind_id": "D1d4f1c610c",
+    "case_id": "case_8",
+    "persona": "traditional",
+    "architecture": "pure_cbr_llm",
+    "student_leg": "leg_a",
+    "llm_R5": "2",
+    "llm_quality_composite": "2.0",
+    "llm_R6": "3",
+    "difficulty_band": "medium",
+    "r5_band": "low",
+    "word_count": "32",
+    "attention_check_type": "",
+    "attention_check_rationale": "",
+    "file_path": "dialogues/case_8__traditional__pure_cbr_llm__leg_a.json"
+  },
+  "primary_score": {
+    "R1": 2,
+    "R2": 2,
+    "R3": 2,
+    "R4": 5,
+    "R5": 2,
+    "R6": 3,
+    "justification_pass1": "The teacher correctly identifies the need for common denominators but immediately provides the answer rather than addressing why the student's approach of 'treating fractions like ordinary numbers' fails, asks questions that elicit minimal reasoning, and the student remains confused about the fundamental procedure after four turns.",
+    "justification_pass2": "The teacher provides direct explanations and checks understanding, which aligns with traditional teaching, but stops short of providing complete worked examples by not showing the full step-by-step conversion of numerators when the student explicitly requests it.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 2,\n  \"R3\": 2,\n  \"R4\": 5,\n  \"R5\": 2,\n  \"brief_justification\": \"The teacher correctly identifies the need for common denominators but immediately provides the answer rather than addressing why the student's approach of 'treating fractions like ordinary numbers' fails, asks questions that elicit minimal reasoning, and the student remains confused about the fundamental procedure after four turns.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 3, \"brief_justification\": \"The teacher provides direct explanations and checks understanding, which aligns with traditional teaching, but stops short of providing complete worked examples by not showing the full step-by-step conversion of numerators when the student explicitly requests it.\"}\n```",
+    "quality_composite": 2.0,
+    "is_complete": true
+  },
+  "secondary_score": {
+    "R1": 2,
+    "R2": 2,
+    "R3": 2,
+    "R4": 5,
+    "R5": 3,
+    "R6": 2,
+    "justification_pass1": "The teacher gives away the final answer and explains the procedure directly, which limits cognitive demand, though the student does show improved conceptual understanding.",
+    "justification_pass2": "The teacher provides the final answer and asks for a conceptual explanation rather than leading with a direct, step-by-step worked example as the strategy prescribes.",
+    "judge_provider": "gemini",
+    "judge_model": "gemini-2.5-pro",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 2,\n  \"R3\": 2,\n  \"R4\": 5,\n  \"R5\": 3,\n  \"brief_justification\": \"The teacher gives away the final answer and explains the procedure directly, which limits cognitive demand, though the student does show improved conceptual understanding.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\n  \"R6\": 2,\n  \"brief_justification\": \"The teacher provides the final answer and asks for a conceptual explanation rather than leading with a direct, step-by-step worked example as the strategy prescribes.\"\n}\n```"
+  }
+}

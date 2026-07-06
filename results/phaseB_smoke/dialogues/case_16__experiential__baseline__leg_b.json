@@ -1,0 +1,66 @@
+{
+  "state": {
+    "case_id": "case_16",
+    "misconception_label": "Divides total amount by each side of the ratio instead of dividing by the sum of the parts",
+    "misconception_features": [
+      0.0,
+      16.0,
+      3.0,
+      83.0
+    ],
+    "persona": "experiential",
+    "architecture": "baseline",
+    "student_leg": "leg_b",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T10:46:25.864537Z",
+      "seed": 864,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-12T10:46:29.830612Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: In the diagram, AN : NB \\( =3: 5 \\) What is the distance AN? ![A line that begins with point A, ends with point B, and has point N in between. The entire length of the line measures 48 m.](). I got \\( 16 \\mathrm{~m} \\) because I added the parts of the ratio as if they were a total.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Think of the parts of the ratio as separate objects that need to be divided between AN and NB. If you were dividing objects between two people, would you divide the total amount between them or give each person their share based on the ratio?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Oh, I think I see what you mean... so I need to divide the 48 m between them based on the ratio, not just divide 48 by 3 and 48 by 5? But I'm still a bit confused about how to actually do that - do I need to add the 3 and 5 together first?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Imagine you were dividing a pizza between two people based on their preferences \u2014 would you divide the total number of slices by each person's preference, or divide the slices based on the ratio of their preferences?",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 3,
+    "R3": 2,
+    "R4": 5,
+    "R5": 2,
+    "R6": 5,
+    "justification_pass1": "The teacher uses analogies to prompt reasoning but doesn't directly address the misconception, and when the student explicitly asks whether to add 3 and 5 (showing progress toward the correct method), the teacher repeats a similar analogy instead of confirming or building on this insight.",
+    "justification_pass2": "The teacher consistently uses concrete, everyday analogies (dividing objects between people, sharing pizza slices) to help the student understand the abstract concept of ratio division, which is a textbook example of the experiential strategy.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 3,\n  \"R3\": 2,\n  \"R4\": 5,\n  \"R5\": 2,\n  \"brief_justification\": \"The teacher uses analogies to prompt reasoning but doesn't directly address the misconception, and when the student explicitly asks whether to add 3 and 5 (showing progress toward the correct method), the teacher repeats a similar analogy instead of confirming or building on this insight.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 5, \"brief_justification\": \"The teacher consistently uses concrete, everyday analogies (dividing objects between people, sharing pizza slices) to help the student understand the abstract concept of ratio division, which is a textbook example of the experiential strategy.\"}\n```",
+    "quality_composite": 2.3333333333333335,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T10:46:36.825344+00:00"
+}

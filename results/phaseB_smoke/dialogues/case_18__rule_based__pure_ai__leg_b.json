@@ -1,0 +1,66 @@
+{
+  "state": {
+    "case_id": "case_18",
+    "misconception_label": "Assumes that an arrow on a number line starts at zero",
+    "misconception_features": [
+      0.0,
+      18.0,
+      2.0,
+      73.0
+    ],
+    "persona": "rule_based",
+    "architecture": "pure_ai",
+    "student_leg": "leg_b",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T11:08:56.908747Z",
+      "seed": 980,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-12T11:09:02.080421Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: ![Number line with -12 and -7 marked. Starting at -12, follow an arrow pointing to the right labelled +10. Then there is an arrow labelled b pointing to the left, which ends at -7 on the number line.]() What is the value of \\( b \\) ? I got \\( -7 \\) because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "The arrow on the number line does not necessarily start at zero. To find the value of \\( b \\), you need to move in the direction indicated by the arrow labeled +10 from -12. Since you are moving to the right, you should add 10 to -12, not start at zero. So, the correct value of \\( b \\) is -2.",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Oh right, so I need to start at -12 and add 10 to it? So -12 + 10 = -2, and that's where the first arrow ends up. Then the arrow b goes left from -2 to -7, so b must be -5? Is that how you work out what b is?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Almost there! Remember that when moving to the left on the number line, you need to subtract. So, starting at -2 and moving left to -7, you should subtract 5, not 5. Therefore, the correct value of \\( b \\) is -5. Keep up the good work!",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 4,
+    "R2": 1,
+    "R3": 2,
+    "R4": 3,
+    "R5": 4,
+    "R6": 4,
+    "justification_pass1": "The teacher explicitly addresses the misconception that arrows start at zero and the student demonstrates clear improvement in understanding, but the teacher provides direct answers rather than eliciting reasoning, and there's a confusing typo in Turn 3 ('subtract 5, not 5').",
+    "justification_pass2": "The teacher consistently provides explicit procedures (e.g., 'add 10 to -12', 'when moving left you subtract'), gives direct corrective feedback on errors, and walks through worked steps, though could be slightly more systematic in presenting the complete rule-based procedure.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 4,\n  \"R2\": 1,\n  \"R3\": 2,\n  \"R4\": 3,\n  \"R5\": 4,\n  \"brief_justification\": \"The teacher explicitly addresses the misconception that arrows start at zero and the student demonstrates clear improvement in understanding, but the teacher provides direct answers rather than eliciting reasoning, and there's a confusing typo in Turn 3 ('subtract 5, not 5').\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 4, \"brief_justification\": \"The teacher consistently provides explicit procedures (e.g., 'add 10 to -12', 'when moving left you subtract'), gives direct corrective feedback on errors, and walks through worked steps, though could be slightly more systematic in presenting the complete rule-based procedure.\"}\n```",
+    "quality_composite": 2.3333333333333335,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T11:09:09.455436+00:00"
+}

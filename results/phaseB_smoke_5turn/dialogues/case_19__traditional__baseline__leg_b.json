@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_19",
+    "misconception_label": "When subtracting fractions, subtracts the numerators and multiplies the denominators",
+    "misconception_features": [
+      0.0,
+      19.0,
+      3.0,
+      104.0
+    ],
+    "persona": "traditional",
+    "architecture": "baseline",
+    "student_leg": "leg_b",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T16:58:22.883817Z",
+      "seed": 1034,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T16:58:27.606359Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: Express the following as a single fraction, writing your answer as simply as possible: \\( \\frac{1}{s}-\\frac{t}{3} \\). I got \\( \\frac{1-t}{3 s} \\) because I treated the fractions like ordinary numbers.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let me explain the correct method for subtracting fractions. We subtract the numerators and keep the denominator the same. Let's work through an example together to clarify.",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Oh right, so we keep the denominator the same? But miss/sir, how do we do that when the denominators are different numbers like *s* and 3 in my problem? Don't we need to do something to make them match first?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let me explain the correct method, and then we will work through an example together. In this case, we need to find a common denominator for the fractions before subtracting the numerators. Let's go through the steps together to clarify.",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "Oh okay, so we need a common denominator first - that makes sense! So would the common denominator be like... 3s? And then I'd have to change both fractions to have that denominator before I subtract them?",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 1,
+    "R3": 2,
+    "R4": 2,
+    "R5": 3,
+    "R6": 3,
+    "justification_pass1": "The teacher provides direct explanations without engaging the specific misconception (subtracting numerators and multiplying denominators), demands no reasoning from the student, but the student does show some improvement by recognizing the need for common denominators by Turn 4, though the teacher's Turn 1 incorrectly suggests keeping denominators the same when they differ.",
+    "justification_pass2": "The teacher attempts to explain directly and work through examples as traditional teaching prescribes, but the explanation in Turn 1 is initially incorrect (stating to keep denominators the same when they differ), and the teacher doesn't provide an actual worked example, only promises to do so.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 1,\n  \"R3\": 2,\n  \"R4\": 2,\n  \"R5\": 3,\n  \"brief_justification\": \"The teacher provides direct explanations without engaging the specific misconception (subtracting numerators and multiplying denominators), demands no reasoning from the student, but the student does show some improvement by recognizing the need for common denominators by Turn 4, though the teacher's Turn 1 incorrectly suggests keeping denominators the same when they differ.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 3, \"brief_justification\": \"The teacher attempts to explain directly and work through examples as traditional teaching prescribes, but the explanation in Turn 1 is initially incorrect (stating to keep denominators the same when they differ), and the teacher doesn't provide an actual worked example, only promises to do so.\"}\n```",
+    "quality_composite": 1.6666666666666667,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T16:58:35.756124+00:00"
+}

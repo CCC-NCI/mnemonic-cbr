@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_23",
+    "misconception_label": "Confuses rest and movement on a distance time graph",
+    "misconception_features": [
+      0.0,
+      23.0,
+      3.0,
+      62.0
+    ],
+    "persona": "constructive",
+    "architecture": "pure_ai",
+    "student_leg": "leg_a",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T17:36:12.008368Z",
+      "seed": 1209,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T17:36:17.631238Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: This graph shows how far Fido the dog is from his home. What might the negative-sloping section represent? ![A graph with time (secs) on the horizontal axis and distance (m) on the vertical axis. The graph starts at the origin, travels in a straight line up and right, travels horizontally, then travels in a straight line down and right back to the x-axis. ](). I got Fido has fallen asleep because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "You're on the right track with considering Fido falling asleep, but let's focus on the movement on the graph. Think about how the slope of the line relates to Fido's motion. Can you describe how the change in distance over time corresponds to movement in real life?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "I think I get what you're saying about the slope showing movement. So, if the line is going down, does that mean Fido is getting closer to home? But if he's just resting, wouldn't that be when the line is flat? I'm still a bit confused about how to tell the difference between resting and moving on the graph.",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "You're making progress in understanding how the slope of the line represents movement on the graph. To differentiate between resting and moving, think about how Fido's distance from home changes over time. When the line is flat, it means Fido is staying at the same distance from home, while a downward slope indicates he's getting closer. Can you think of a scenario in real life where someone is resting and not moving from a fixed location?",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "Okay, I think I get it a bit better now! So when the line is flat, it means Fido is just sitting still, like when I take a break at the park. But when the line goes down, he's moving closer to home. What about when the line goes up? Does that mean he's moving away from home? I'm still not totally sure about that part.",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 4,
+    "R2": 3,
+    "R3": 4,
+    "R4": 5,
+    "R5": 5,
+    "R6": 5,
+    "justification_pass1": "The teacher effectively addresses the specific misconception by helping the student distinguish between flat lines (rest) and sloped lines (movement), and the student demonstrates clear progression from confusing rest with negative slope to correctly understanding that flat means stationary and slopes indicate movement toward or away from home.",
+    "justification_pass2": "The teacher exemplifies the constructive strategy by breaking down the graph interpretation into manageable steps (focusing first on slope-movement relationship, then differentiating flat vs. downward slopes), scaffolding from the student's partial understanding about sleep/rest, and adjusting support by providing concrete prompts that build on what the student demonstrates they know at each turn.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 4,\n  \"R2\": 3,\n  \"R3\": 4,\n  \"R4\": 5,\n  \"R5\": 5,\n  \"brief_justification\": \"The teacher effectively addresses the specific misconception by helping the student distinguish between flat lines (rest) and sloped lines (movement), and the student demonstrates clear progression from confusing rest with negative slope to correctly understanding that flat means stationary and slopes indicate movement toward or away from home.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 5, \"brief_justification\": \"The teacher exemplifies the constructive strategy by breaking down the graph interpretation into manageable steps (focusing first on slope-movement relationship, then differentiating flat vs. downward slopes), scaffolding from the student's partial understanding about sleep/rest, and adjusting support by providing concrete prompts that build on what the student demonstrates they know at each turn.\"}\n```",
+    "quality_composite": 3.6666666666666665,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T17:36:25.317404+00:00"
+}

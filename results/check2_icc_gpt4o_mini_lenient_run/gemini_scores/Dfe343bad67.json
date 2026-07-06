@@ -1,0 +1,53 @@
+{
+  "blind_id": "Dfe343bad67",
+  "subset_row": {
+    "blind_id": "Dfe343bad67",
+    "case_id": "case_7",
+    "persona": "experiential",
+    "architecture": "pure_ai",
+    "student_leg": "leg_b",
+    "llm_R5": "4",
+    "llm_quality_composite": "2.0",
+    "llm_R6": "5",
+    "difficulty_band": "medium",
+    "r5_band": "high",
+    "word_count": "29",
+    "attention_check_type": "",
+    "attention_check_rationale": "",
+    "file_path": "dialogues/case_7__experiential__pure_ai__leg_b.json"
+  },
+  "primary_score": {
+    "R1": 2,
+    "R2": 2,
+    "R3": 2,
+    "R4": 5,
+    "R5": 4,
+    "R6": 5,
+    "justification_pass1": "The teacher directly tells the correct answer and procedure rather than eliciting reasoning about why the student divided by 100 instead of 10, though the student does show improvement by the end and correctly generalizes the pattern.",
+    "justification_pass2": "The teacher consistently grounds the abstract concept of decimal division in concrete, everyday analogies (money with dollars and dimes) that make the mathematical operation tangible and relatable.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 2,\n  \"R3\": 2,\n  \"R4\": 5,\n  \"R5\": 4,\n  \"brief_justification\": \"The teacher directly tells the correct answer and procedure rather than eliciting reasoning about why the student divided by 100 instead of 10, though the student does show improvement by the end and correctly generalizes the pattern.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 5, \"brief_justification\": \"The teacher consistently grounds the abstract concept of decimal division in concrete, everyday analogies (money with dollars and dimes) that make the mathematical operation tangible and relatable.\"}\n```",
+    "quality_composite": 2.0,
+    "is_complete": true
+  },
+  "secondary_score": {
+    "R1": 5,
+    "R2": 4,
+    "R3": 4,
+    "R4": 5,
+    "R5": 5,
+    "R6": 5,
+    "justification_pass1": "The teacher effectively addresses the student's misconception about dividing by 10, encourages reasoning about the process, provides appropriate scaffolding, maintains mathematical accuracy, and the student's understanding visibly improves throughout the dialogue.",
+    "justification_pass2": "The teacher effectively uses real-world analogies, such as money and dividing a dollar into dimes, to connect the abstract concept of division by 10 to concrete experiences, demonstrating a strong adherence to the experiential strategy.",
+    "judge_provider": "openai",
+    "judge_model": "gpt-4o-mini",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "{\n  \"R1\": 5,\n  \"R2\": 4,\n  \"R3\": 4,\n  \"R4\": 5,\n  \"R5\": 5,\n  \"brief_justification\": \"The teacher effectively addresses the student's misconception about dividing by 10, encourages reasoning about the process, provides appropriate scaffolding, maintains mathematical accuracy, and the student's understanding visibly improves throughout the dialogue.\"\n}",
+    "pass2_raw_text": "{\"R6\": 5, \"brief_justification\": \"The teacher effectively uses real-world analogies, such as money and dividing a dollar into dimes, to connect the abstract concept of division by 10 to concrete experiences, demonstrating a strong adherence to the experiential strategy.\"}"
+  }
+}

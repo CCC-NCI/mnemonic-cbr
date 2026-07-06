@@ -1,0 +1,66 @@
+{
+  "state": {
+    "case_id": "case_8",
+    "misconception_label": "Does not find a common denominator when adding/subtracting fractions",
+    "misconception_features": [
+      0.0,
+      8.0,
+      3.0,
+      88.0
+    ],
+    "persona": "socratic",
+    "architecture": "baseline",
+    "student_leg": "leg_a",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T09:26:41.222129Z",
+      "seed": 443,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-12T09:26:44.544776Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: \\( \\frac{4}{5}-\\frac{1}{3}=\\frac{\\bigstar}{15} \\) What should replace the star? I got \\( 5 \\) because I treated the fractions like ordinary numbers.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "What would happen if you tried finding a common denominator for the fractions before subtracting them? How could that approach help simplify the problem?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "I guess if I found a common denominator first, it would make it easier to subtract them properly. But how do I actually find the common denominator? Is it just the biggest number or something?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let me ask you this: what would happen if you tried finding a common denominator for the fractions before subtracting them? How could that approach help simplify the problem even further?",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 3,
+    "R3": 1,
+    "R4": 5,
+    "R5": 1,
+    "R6": 2,
+    "justification_pass1": "The teacher correctly identifies the need for a common denominator but fails to scaffold appropriately, repeating the same question in Turn 3 when the student explicitly asks for help finding the common denominator, resulting in no visible progress in addressing the misconception.",
+    "justification_pass2": "While the teacher uses questions rather than direct answers (consistent with Socratic method), they simply repeat the exact same question in Turn 3 instead of probing deeper or using counterexamples to address the student's confusion about finding common denominators.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 3,\n  \"R3\": 1,\n  \"R4\": 5,\n  \"R5\": 1,\n  \"brief_justification\": \"The teacher correctly identifies the need for a common denominator but fails to scaffold appropriately, repeating the same question in Turn 3 when the student explicitly asks for help finding the common denominator, resulting in no visible progress in addressing the misconception.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 2, \"brief_justification\": \"While the teacher uses questions rather than direct answers (consistent with Socratic method), they simply repeat the exact same question in Turn 3 instead of probing deeper or using counterexamples to address the student's confusion about finding common denominators.\"}\n```",
+    "quality_composite": 2.0,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T09:26:51.730934+00:00"
+}

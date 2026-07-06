@@ -1,0 +1,66 @@
+{
+  "state": {
+    "case_id": "case_12",
+    "misconception_label": "Thinks alternate angles are always equal",
+    "misconception_features": [
+      0.0,
+      12.0,
+      3.0,
+      25.0
+    ],
+    "persona": "traditional",
+    "architecture": "pure_cbr_tpl",
+    "student_leg": "leg_b",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T10:14:09.533775Z",
+      "seed": 688,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-12T10:14:11.172505Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: Tom and Katie are arguing about alternate angles. Tom says angles \\( p \\) and \\( q \\) are alternate. Katie says angles \\( p \\) and \\( q \\) are equal. Who is correct? ![Shows two non parallel lines that are intersected by another line. Angles P and Q are both on the outside of the lines and on opposite sides of the transversal.](). I got Only\nKatie because I assumed all the angles in the figure are equal.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's think about this. From similar cases:\n  1. Topic: Recognise the vertically opposite angles relationship. Correct answer (C): Vertically opposite angles. Student selected: Alternate angles. Underlying misconception: Confuses alternate and opposite angles. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.\n  2. Topic: Identify corresponding angles. Correct answer (C): C. Student selected: A. Underlying misconception: Confuses corresponding and vertically opposite angles. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.\n  3. Topic: Recognise the vertically opposite angles relationship. Correct answer (C): C. Student selected: A. Underlying misconception: Confuses vertically opposite angles with angles on a straight line. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Oh right, so I'm confusing different types of angles... but I'm still a bit confused because I thought if angles are in the same position or opposite each other, they'd always be equal? Like, does it matter whether the lines are parallel or not?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's think about this. From similar cases:\n  1. Topic: Recognise the vertically opposite angles relationship. Correct answer (C): Vertically opposite angles. Student selected: Alternate angles. Underlying misconception: Confuses alternate and opposite angles. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.\n  2. Topic: Identify corresponding angles. Correct answer (C): C. Student selected: A. Underlying misconception: Confuses corresponding and vertically opposite angles. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.\n  3. Topic: Recognise the vertically opposite angles relationship. Correct answer (C): C. Student selected: A. Underlying misconception: Confuses vertically opposite angles with angles on a straight line. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 1,
+    "R2": 1,
+    "R3": 1,
+    "R4": 2,
+    "R5": 1,
+    "R6": 1,
+    "justification_pass1": "The teacher merely pastes identical lists of other students' misconceptions twice without addressing the student's specific question about whether parallel lines matter, providing no actual teaching, scaffolding, or engagement with the misconception.",
+    "justification_pass2": "The teacher does not explain anything directly, provide worked examples, or check understanding; instead, they repeatedly paste the same list of misconceptions from similar cases without any actual instruction or clarification.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 1,\n  \"R2\": 1,\n  \"R3\": 1,\n  \"R4\": 2,\n  \"R5\": 1,\n  \"brief_justification\": \"The teacher merely pastes identical lists of other students' misconceptions twice without addressing the student's specific question about whether parallel lines matter, providing no actual teaching, scaffolding, or engagement with the misconception.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 1, \"brief_justification\": \"The teacher does not explain anything directly, provide worked examples, or check understanding; instead, they repeatedly paste the same list of misconceptions from similar cases without any actual instruction or clarification.\"}\n```",
+    "quality_composite": 1.0,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T10:14:17.126911+00:00"
+}

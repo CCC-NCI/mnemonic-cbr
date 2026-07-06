@@ -1,0 +1,25 @@
+# Check 5 floor-compression probe
+
+- Generated: 2026-05-17T19:27:50Z
+- Manifest:  `results/phaseB_smoke_5turn/manifest.sqlite`
+- Real mode: True
+- Filter:    R5 >= 3
+- Target n:  40
+
+---
+
+## Result
+
+- **Pass:** `False`
+- n = 40 [filter: R5 >= 3]; mean R5 original = 3.65; mean R5 swapped = 3.35; drop = +0.30 (pass drop >= 0.5: False).
+
+**Interpretation.** Even on the high-R5 subset, the drop does not reach 0.5. R5's order-sensitivity is genuinely weaker than the spec's pre-registered threshold expected. Document in Limitations.
+
+---
+
+_The strict full-sample Check 5 result is preserved in `results/phaseB_smoke_5turn/sanity_summary.md`._
+
+Wrote results/phaseB_smoke_5turn/check5_probe_summary.md
+Wrote results/phaseB_smoke_5turn/check5_probe_summary.json
+
+[ERROR] run_check5_probe failed (ExitCode: 1) after 2m36s — log: results/phaseB_smoke_5turn/logs/run_check5_probe_20260517T192750Z.txt

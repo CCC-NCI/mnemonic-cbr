@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_21",
+    "misconception_label": "When factorising a quadratic with a non-unit coefficient of x squared, believes that coefficient will be in front of both x terms in the factorised form",
+    "misconception_features": [
+      0.0,
+      21.0,
+      1.0,
+      74.0
+    ],
+    "persona": "experiential",
+    "architecture": "hybrid",
+    "student_leg": "leg_b",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T17:17:09.446015Z",
+      "seed": 1122,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T17:17:15.244986Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: Step 1: Factorise the following expression \\( 3 x^{2}+5 x+2 \\). I got \\( (3 x+2)(3 x+1) \\) because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's think of factorising as finding two numbers that add up to the coefficient of the x term (in this case, 5) and multiply to give the constant term (in this case, 6). Just like when you're trying to find two numbers that fit a puzzle, they have to work together to match both the sum and the product. Let's try working through it step by step together.",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "So you're saying I need to find two numbers that add to 5 and multiply to 6? That would be 2 and 3, right? But I'm still confused about where the 3 from the 3x\u00b2 goes - do I need to put it in both brackets like I did, or does it go somewhere else?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Think of it like this: when you factorise, you're essentially breaking the original expression into smaller pieces that fit together. The 3 from 3x\u00b2 needs to be divided between the two brackets to make sure the expression still adds up and multiplies correctly. So, just like with a puzzle, each piece has to fit in its proper place to complete the whole picture.",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "Oh, so the 3 doesn't go in both brackets - it gets split between them? So like, one bracket might have 3x and the other just x? Can you show me how to actually split it up, because I'm not sure which number goes where?",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 2,
+    "R3": 2,
+    "R4": 2,
+    "R5": 3,
+    "R6": 2,
+    "justification_pass1": "The teacher uses vague metaphors about puzzles and splitting rather than directly addressing the misconception that 3 appears in both brackets, the mathematical guidance is imprecise (the product should be 3\u00d72=6, not just 2), and while the student progresses from putting 3 in both brackets to understanding it gets split, they still need explicit instruction on the actual method by Turn 4.",
+    "justification_pass2": "While the teacher attempts to use analogies (puzzle pieces), these are vague metaphors rather than concrete real-world situations, and they don't effectively ground the mathematical procedure in experiential understanding that would help the student grasp the actual factorization process.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 2,\n  \"R3\": 2,\n  \"R4\": 2,\n  \"R5\": 3,\n  \"brief_justification\": \"The teacher uses vague metaphors about puzzles and splitting rather than directly addressing the misconception that 3 appears in both brackets, the mathematical guidance is imprecise (the product should be 3\u00d72=6, not just 2), and while the student progresses from putting 3 in both brackets to understanding it gets split, they still need explicit instruction on the actual method by Turn 4.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 2, \"brief_justification\": \"While the teacher attempts to use analogies (puzzle pieces), these are vague metaphors rather than concrete real-world situations, and they don't effectively ground the mathematical procedure in experiential understanding that would help the student grasp the actual factorization process.\"}\n```",
+    "quality_composite": 2.0,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T17:17:23.233156+00:00"
+}

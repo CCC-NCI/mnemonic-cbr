@@ -1,0 +1,65 @@
+{
+  "state": {
+    "case_id": "case_1",
+    "misconception_label": "Does not know that to factorise a quadratic expression, to find two numbers that add to give the coefficient of the x term, and multiply to give the non variable term",
+    "misconception_features": [
+      0.0,
+      1.0,
+      3.0,
+      59.0
+    ],
+    "persona": "experiential",
+    "architecture": "pure_cbr_llm",
+    "student_leg": "leg_b",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T06:41:28.881138Z",
+      "seed": 116,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "ended_at": "2026-05-12T06:41:33.500844Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: Simplify the following, if possible: \\( \\frac{m^{2}+2 m-3}{m-3} \\). I got \\( m+1 \\) because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's think of it like this: when we factorise a quadratic expression, we need to find two numbers that add to give the coefficient of the x term and multiply to give the non-variable term. In this case, we need to consider both the addition and multiplication properties to simplify the expression correctly.",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Oh right, so I need to find two numbers that add up to 2 and multiply to give -3? So that would be like 3 and -1, because 3 plus -1 is 2 and 3 times -1 is -3? But I'm still not really sure how that helps me simplify the fraction...",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's think of it like this: when we factorise a quadratic expression, we need to find two numbers that add to give the coefficient of the x term and multiply to give the non-variable term, just like you did with 3 and -1. Now, let's apply that same concept to simplify the fraction by factoring the numerator.",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 2,
+    "R3": 2,
+    "R4": 5,
+    "R5": 2,
+    "R6": 1,
+    "justification_pass1": "While the teacher provides mathematically correct information about factorising quadratics, they repeat the same general instruction twice without addressing the student's specific confusion about how factorisation connects to simplifying the fraction, and the student shows no progress in understanding this connection by the end.",
+    "justification_pass2": "The teacher provides purely abstract mathematical explanations about factoring quadratics without any concrete real-world analogies or everyday situations, which is the opposite of the experiential strategy.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 2,\n  \"R3\": 2,\n  \"R4\": 5,\n  \"R5\": 2,\n  \"brief_justification\": \"While the teacher provides mathematically correct information about factorising quadratics, they repeat the same general instruction twice without addressing the student's specific confusion about how factorisation connects to simplifying the fraction, and the student shows no progress in understanding this connection by the end.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 1, \"brief_justification\": \"The teacher provides purely abstract mathematical explanations about factoring quadratics without any concrete real-world analogies or everyday situations, which is the opposite of the experiential strategy.\"}\n```",
+    "quality_composite": 2.0,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T06:41:40.038241+00:00"
+}

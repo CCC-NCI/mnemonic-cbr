@@ -1,0 +1,66 @@
+{
+  "state": {
+    "case_id": "case_1",
+    "misconception_label": "Does not know that to factorise a quadratic expression, to find two numbers that add to give the coefficient of the x term, and multiply to give the non variable term",
+    "misconception_features": [
+      0.0,
+      1.0,
+      3.0,
+      59.0
+    ],
+    "persona": "constructive",
+    "architecture": "baseline",
+    "student_leg": "leg_a",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T08:15:53.411215Z",
+      "seed": 103,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "cbr_grounded",
+      "ended_at": "2026-05-12T08:15:57.878315Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: Simplify the following, if possible: \\( \\frac{m^{2}+2 m-3}{m-3} \\). I got \\( m+1 \\) because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's go back to the part you do know, and build the next step from there. Can you identify the coefficient of the \\( m \\) term in the numerator of the expression?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "The coefficient of the \\( m \\) term in the numerator \\( m^{2}+2 m-3 \\) is \\( 2 \\). But I\u2019m still not really sure how that helps me factor it or what to do next. Do I just need to find two numbers that add to \\( 2 \\) or something?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's go back to the part you do know, and build the next step from there. Can you think about how knowing the coefficient of the \\( m \\) term can help us factorise the expression?",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 2,
+    "R3": 1,
+    "R4": 5,
+    "R5": 1,
+    "R6": 2,
+    "justification_pass1": "The teacher identifies the coefficient but doesn't explain the factorisation process, repeats the same unhelpful prompt in Turn 3 despite the student explicitly asking for guidance, and the student shows no progress in understanding how to factorise quadratics.",
+    "justification_pass2": "While the teacher attempts to break down the problem and build from known parts, they repeat the same vague prompt in Turn 3 instead of adjusting support based on the student's clear signal that they need more scaffolding to understand how the coefficient helps with factoring.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 2,\n  \"R3\": 1,\n  \"R4\": 5,\n  \"R5\": 1,\n  \"brief_justification\": \"The teacher identifies the coefficient but doesn't explain the factorisation process, repeats the same unhelpful prompt in Turn 3 despite the student explicitly asking for guidance, and the student shows no progress in understanding how to factorise quadratics.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 2, \"brief_justification\": \"While the teacher attempts to break down the problem and build from known parts, they repeat the same vague prompt in Turn 3 instead of adjusting support based on the student's clear signal that they need more scaffolding to understand how the coefficient helps with factoring.\"}\n```",
+    "quality_composite": 1.6666666666666667,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T08:16:05.546086+00:00"
+}

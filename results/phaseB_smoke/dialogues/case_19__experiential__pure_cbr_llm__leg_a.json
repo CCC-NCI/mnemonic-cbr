@@ -1,0 +1,66 @@
+{
+  "state": {
+    "case_id": "case_19",
+    "misconception_label": "When subtracting fractions, subtracts the numerators and multiplies the denominators",
+    "misconception_features": [
+      0.0,
+      19.0,
+      3.0,
+      104.0
+    ],
+    "persona": "experiential",
+    "architecture": "pure_cbr_llm",
+    "student_leg": "leg_a",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T11:16:14.922172Z",
+      "seed": 1015,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-12T11:16:19.832780Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: Express the following as a single fraction, writing your answer as simply as possible: \\( \\frac{1}{s}-\\frac{t}{3} \\). I got \\( \\frac{1-t}{3 s} \\) because I treated the fractions like ordinary numbers.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Imagine you have a pizza that is divided into 3 equal slices. If you take away t slices from it, how many slices are left? This situation can help you see why we need to subtract the fractions differently. Can you think about how this relates to the fractions you are working with in this problem?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "I think I get what you're saying about the pizza. If I take away t slices from 3, I can't just subtract the numbers like I did with the fractions. But how do I actually combine the fractions properly? Do I need to find a common denominator or something?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Think about it this way: if you have two pizzas, one divided into s slices and the other into 3 slices, and you want to find out how many slices are left when you take away t slices from each pizza, how would you combine the fractions to represent this situation? This analogy can help you understand why finding a common denominator is important in subtracting fractions correctly.",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 3,
+    "R3": 2,
+    "R4": 2,
+    "R5": 2,
+    "R6": 2,
+    "justification_pass1": "The teacher uses pizza analogies that are mathematically inaccurate (confusing slices with fractional parts) and don't directly address the student's specific error of subtracting numerators and multiplying denominators, though the student does recognize the need for a common denominator by Turn 2.",
+    "justification_pass2": "While the teacher attempts to use pizza analogies to ground the concept in real-world situations, the analogies are mathematically inaccurate and confusing (e.g., taking away t slices from each pizza doesn't correspond to the original problem), undermining the experiential approach.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\"R1\": 2, \"R2\": 3, \"R3\": 2, \"R4\": 2, \"R5\": 2, \"brief_justification\": \"The teacher uses pizza analogies that are mathematically inaccurate (confusing slices with fractional parts) and don't directly address the student's specific error of subtracting numerators and multiplying denominators, though the student does recognize the need for a common denominator by Turn 2.\"}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 2, \"brief_justification\": \"While the teacher attempts to use pizza analogies to ground the concept in real-world situations, the analogies are mathematically inaccurate and confusing (e.g., taking away t slices from each pizza doesn't correspond to the original problem), undermining the experiential approach.\"}\n```",
+    "quality_composite": 2.3333333333333335,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T11:16:28.701794+00:00"
+}

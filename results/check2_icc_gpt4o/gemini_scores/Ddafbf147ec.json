@@ -1,0 +1,53 @@
+{
+  "blind_id": "Ddafbf147ec",
+  "subset_row": {
+    "blind_id": "Ddafbf147ec",
+    "case_id": "case_6",
+    "persona": "constructive",
+    "architecture": "baseline",
+    "student_leg": "leg_a",
+    "llm_R5": "4",
+    "llm_quality_composite": "2.0",
+    "llm_R6": "3",
+    "difficulty_band": "long",
+    "r5_band": "high",
+    "word_count": "40",
+    "attention_check_type": "",
+    "attention_check_rationale": "",
+    "file_path": "dialogues/case_6__constructive__baseline__leg_a.json"
+  },
+  "primary_score": {
+    "R1": 2,
+    "R2": 2,
+    "R3": 2,
+    "R4": 5,
+    "R5": 4,
+    "R6": 3,
+    "justification_pass1": "While the teacher correctly addresses the percentage-to-fraction conversion and the student successfully moves from the misconception (62/10) to the correct answer (31/50), the teacher uses generic prompts rather than engaging specifically with why the student initially used 10 as the denominator, and provides minimal scaffolding for the student's expressed uncertainties about why 100 matters and how to simplify.",
+    "justification_pass2": "The teacher breaks the problem into manageable steps (converting percentage to fraction, then simplifying) and scaffolds by redirecting to known concepts, but uses repetitive prompting without adjusting support level when the student explicitly requests help understanding simplification in Turn 4.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 2,\n  \"R3\": 2,\n  \"R4\": 5,\n  \"R5\": 4,\n  \"brief_justification\": \"While the teacher correctly addresses the percentage-to-fraction conversion and the student successfully moves from the misconception (62/10) to the correct answer (31/50), the teacher uses generic prompts rather than engaging specifically with why the student initially used 10 as the denominator, and provides minimal scaffolding for the student's expressed uncertainties about why 100 matters and how to simplify.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 3, \"brief_justification\": \"The teacher breaks the problem into manageable steps (converting percentage to fraction, then simplifying) and scaffolds by redirecting to known concepts, but uses repetitive prompting without adjusting support level when the student explicitly requests help understanding simplification in Turn 4.\"}\n```",
+    "quality_composite": 2.0,
+    "is_complete": true
+  },
+  "secondary_score": {
+    "R1": 4,
+    "R2": 4,
+    "R3": 3,
+    "R4": 5,
+    "R5": 4,
+    "R6": 5,
+    "justification_pass1": "The teacher addresses the misconception by emphasizing percentages as parts out of 100, encourages reasoning by asking the student to simplify, provides adequate but repetitive scaffolding, maintains correct mathematical content, and the student's understanding improves as they correctly convert and simplify the percentage.",
+    "justification_pass2": "The teacher effectively scaffolds by guiding the student to use known information about percentages and fractions, and encourages simplification, aligning with the constructive strategy.",
+    "judge_provider": "openai",
+    "judge_model": "gpt-4o",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 4,\n  \"R2\": 4,\n  \"R3\": 3,\n  \"R4\": 5,\n  \"R5\": 4,\n  \"brief_justification\": \"The teacher addresses the misconception by emphasizing percentages as parts out of 100, encourages reasoning by asking the student to simplify, provides adequate but repetitive scaffolding, maintains correct mathematical content, and the student's understanding improves as they correctly convert and simplify the percentage.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 5, \"brief_justification\": \"The teacher effectively scaffolds by guiding the student to use known information about percentages and fractions, and encourages simplification, aligning with the constructive strategy.\"}\n```"
+  }
+}

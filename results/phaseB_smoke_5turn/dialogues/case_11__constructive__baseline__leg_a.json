@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_11",
+    "misconception_label": "Struggles to visualise nets of 3D shapes",
+    "misconception_features": [
+      0.0,
+      11.0,
+      3.0,
+      31.0
+    ],
+    "persona": "constructive",
+    "architecture": "baseline",
+    "student_leg": "leg_a",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T15:26:08.088097Z",
+      "seed": 603,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T15:26:12.999383Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: This is the net of a... ![A circle touching a sector](). I got Triangle because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's go back to the part you do know, and build the next step from there. Can you try to identify the different shapes that make up the net you have drawn?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Um, I see that there\u2019s a circle and a curved part, which I think is a sector, but I'm not really sure how they fit together. So, if it\u2019s not a triangle, what shape could it be? I\u2019m confused about how the net turns into a 3D shape.",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's go back to the part you do know, and build the next step from there. Can you try to visualize how the circle and sector could fit together to form a 3D shape?",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "Okay, so I think the circle could be the base, and the sector might wrap around it somehow? But I'm still not sure how that makes a 3D shape. Does that mean it could be something like a cone? I'm just really confused about how they connect.",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 3,
+    "R3": 2,
+    "R4": 5,
+    "R5": 4,
+    "R6": 3,
+    "justification_pass1": "The teacher uses generic prompts that don't specifically address the visualization struggle, but the student does progress from confusion to correctly identifying a cone and understanding how the net components connect, suggesting some learning occurred despite minimal scaffolding.",
+    "justification_pass2": "The teacher attempts scaffolding by breaking down the problem and starting from known elements, but provides repetitive prompts without adjusting support level based on the student's continued confusion, missing opportunities to provide more targeted guidance when the student struggles to visualize the 3D shape.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 3,\n  \"R3\": 2,\n  \"R4\": 5,\n  \"R5\": 4,\n  \"brief_justification\": \"The teacher uses generic prompts that don't specifically address the visualization struggle, but the student does progress from confusion to correctly identifying a cone and understanding how the net components connect, suggesting some learning occurred despite minimal scaffolding.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 3, \"brief_justification\": \"The teacher attempts scaffolding by breaking down the problem and starting from known elements, but provides repetitive prompts without adjusting support level based on the student's continued confusion, missing opportunities to provide more targeted guidance when the student struggles to visualize the 3D shape.\"}\n```",
+    "quality_composite": 2.3333333333333335,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T15:26:20.284927+00:00"
+}

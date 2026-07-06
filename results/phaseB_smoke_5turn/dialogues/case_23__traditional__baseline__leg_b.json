@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_23",
+    "misconception_label": "Confuses rest and movement on a distance time graph",
+    "misconception_features": [
+      0.0,
+      23.0,
+      3.0,
+      62.0
+    ],
+    "persona": "traditional",
+    "architecture": "baseline",
+    "student_leg": "leg_b",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T17:41:27.331329Z",
+      "seed": 1234,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T17:41:32.066253Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: This graph shows how far Fido the dog is from his home. What might the negative-sloping section represent? ![A graph with time (secs) on the horizontal axis and distance (m) on the vertical axis. The graph starts at the origin, travels in a straight line up and right, travels horizontally, then travels in a straight line down and right back to the x-axis. ](). I got Fido has fallen asleep because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let me explain the correct method, and then we will work through an example together. The negative-sloping section actually represents Fido moving away from his home, not falling asleep. Let's go through a worked example to clarify this concept.",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Wait, but I thought a negative slope meant going down? And if the line is going down on the graph, doesn't that mean the distance is getting smaller, so Fido would be getting closer to home, not further away? I'm confused about what negative slope actually means on a distance-time graph.",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let me explain the correct interpretation of negative slope on a distance-time graph. Negative slope actually indicates that the object is moving away from the reference point, in this case, Fido's home. Let's work through an example together to solidify this concept.",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "But wait, that doesn't make sense to me... if the line goes down on the graph, the distance number on the y-axis is getting smaller, so shouldn't that mean Fido is getting closer to home, not further away? Can you show me an example with actual numbers so I can see what's happening?",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 1,
+    "R2": 1,
+    "R3": 1,
+    "R4": 1,
+    "R5": 1,
+    "R6": 1,
+    "justification_pass1": "The teacher repeatedly provides incorrect mathematical content (claiming negative slope means moving away when it actually means returning home), ignores the student's correct reasoning about decreasing distance values, and fails to engage with the student's valid confusion, resulting in no progress toward resolving the misconception.",
+    "justification_pass2": "The teacher repeatedly provides incorrect explanations (claiming negative slope means moving away when it actually means returning home) and fails to use worked examples with actual numbers despite claiming to do so, which contradicts the traditional strategy's emphasis on clarity and worked examples.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 1,\n  \"R2\": 1,\n  \"R3\": 1,\n  \"R4\": 1,\n  \"R5\": 1,\n  \"brief_justification\": \"The teacher repeatedly provides incorrect mathematical content (claiming negative slope means moving away when it actually means returning home), ignores the student's correct reasoning about decreasing distance values, and fails to engage with the student's valid confusion, resulting in no progress toward resolving the misconception.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 1, \"brief_justification\": \"The teacher repeatedly provides incorrect explanations (claiming negative slope means moving away when it actually means returning home) and fails to use worked examples with actual numbers despite claiming to do so, which contradicts the traditional strategy's emphasis on clarity and worked examples.\"}\n```",
+    "quality_composite": 1.0,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T17:41:40.034340+00:00"
+}

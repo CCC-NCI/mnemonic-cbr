@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_7",
+    "misconception_label": "Divided by 100 rather than 10",
+    "misconception_features": [
+      0.0,
+      7.0,
+      3.0,
+      21.0
+    ],
+    "persona": "rule_based",
+    "architecture": "hybrid",
+    "student_leg": "leg_a",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T14:48:21.247870Z",
+      "seed": 431,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T14:48:35.616025Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: \\( 43.2 \\div 10= \\). I got \\( 0.432 \\) because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "You divided by 100 instead of 10. Remember, when dividing by 10, you move the decimal point one place to the left. So, the correct answer is \\( 43.2 \\div 10 = 4.32 \\). Keep in mind to divide by 10, not 100.",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Oh, okay! So I should move the decimal point one place to the left for dividing by 10. But why do I keep thinking it\u2019s 100? Is there a trick to remember which way to move it?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Remember, when dividing by 10, you only need to move the decimal point one place to the left. It's a common misconception to divide by 100 instead of 10, but just keep practicing and soon it will become second nature to you. Great job catching your mistake and being open to correcting it!",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "Thanks for explaining that! I think I get that I need to move the decimal point one place to the left when dividing by 10. But sometimes I still mix it up with 100. Is there a way to practice this so I don\u2019t keep making the same mistake?",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 3,
+    "R2": 1,
+    "R3": 2,
+    "R4": 5,
+    "R5": 2,
+    "R6": 5,
+    "justification_pass1": "The teacher correctly identifies and names the misconception but simply tells the answer without engaging the student in reasoning, and the student's repeated questions about mixing up 10 and 100 suggest the underlying confusion remains unresolved.",
+    "justification_pass2": "The teacher consistently provides explicit procedural rules (move decimal one place left when dividing by 10), gives direct corrective feedback on the specific error (divided by 100 instead of 10), and reinforces the correct procedure throughout, which is a textbook example of rule-based instruction.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 3,\n  \"R2\": 1,\n  \"R3\": 2,\n  \"R4\": 5,\n  \"R5\": 2,\n  \"brief_justification\": \"The teacher correctly identifies and names the misconception but simply tells the answer without engaging the student in reasoning, and the student's repeated questions about mixing up 10 and 100 suggest the underlying confusion remains unresolved.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 5, \"brief_justification\": \"The teacher consistently provides explicit procedural rules (move decimal one place left when dividing by 10), gives direct corrective feedback on the specific error (divided by 100 instead of 10), and reinforces the correct procedure throughout, which is a textbook example of rule-based instruction.\"}\n```",
+    "quality_composite": 2.0,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T14:48:42.148773+00:00"
+}

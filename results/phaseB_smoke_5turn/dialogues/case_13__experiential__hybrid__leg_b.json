@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_13",
+    "misconception_label": "Answers as if there are 100 minutes in an hour when changing from hours to minutes",
+    "misconception_features": [
+      0.0,
+      13.0,
+      1.0,
+      29.0
+    ],
+    "persona": "experiential",
+    "architecture": "hybrid",
+    "student_leg": "leg_b",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T15:51:35.892471Z",
+      "seed": 722,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T15:51:41.544768Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: Hannah's journey to camp is \\( 3 \\) hours and \\( 16 \\) minutes. Tori's journey to camp is \\( 214 \\) minutes. What is the difference in their journeys in minutes? I got \\( 102 \\) minutes because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's think about it this way: Imagine Hannah's journey is like a clock with 3 hours as the big hand and 16 minutes as the small hand. And Tori's journey is like a clock with 214 minutes as the small hand. How many minutes are in 3 hours and 16 minutes? And how does that compare to 214 minutes? Let's break it down step by step to see where the difference lies.",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Um, so if I think about the clock... I'm not really sure how that helps? But like, if there are 3 hours, does that mean I times 3 by 100 to get the minutes? So that would be 300 minutes, and then I add the 16 minutes to get 316 minutes for Hannah?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's think of it this way: Imagine Hannah's journey as a clock where each hour is like a full rotation, so it's like the big hand moving around the clock. Remember, there are 60 minutes in an hour, not 100. Can you try breaking down the hours and minutes separately to see if that helps you get the correct total minutes for Hannah's journey?",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "Oh right, so there's 60 minutes in an hour, not 100? So if Hannah's journey is 3 hours, I should do 3 times 60 which is 180 minutes, and then add the 16 minutes to get 196 minutes total? Is that right?",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 2,
+    "R3": 2,
+    "R4": 5,
+    "R5": 4,
+    "R6": 2,
+    "justification_pass1": "The teacher eventually addresses the 100-minutes misconception directly in Turn 3, but the initial clock analogy was confusing and poorly fitted to the student's demonstrated need; however, the student does successfully correct their misconception by Turn 4.",
+    "justification_pass2": "The teacher attempts to use a clock analogy but applies it incorrectly and confusingly (calling hours 'big hand' and minutes 'small hand'), which undermines the experiential approach and fails to create a meaningful real-world connection that aids understanding.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 2,\n  \"R3\": 2,\n  \"R4\": 5,\n  \"R5\": 4,\n  \"brief_justification\": \"The teacher eventually addresses the 100-minutes misconception directly in Turn 3, but the initial clock analogy was confusing and poorly fitted to the student's demonstrated need; however, the student does successfully correct their misconception by Turn 4.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 2, \"brief_justification\": \"The teacher attempts to use a clock analogy but applies it incorrectly and confusingly (calling hours 'big hand' and minutes 'small hand'), which undermines the experiential approach and fails to create a meaningful real-world connection that aids understanding.\"}\n```",
+    "quality_composite": 2.0,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T15:51:50.280098+00:00"
+}

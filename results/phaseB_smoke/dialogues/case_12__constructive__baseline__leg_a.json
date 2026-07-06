@@ -1,0 +1,66 @@
+{
+  "state": {
+    "case_id": "case_12",
+    "misconception_label": "Thinks alternate angles are always equal",
+    "misconception_features": [
+      0.0,
+      12.0,
+      3.0,
+      25.0
+    ],
+    "persona": "constructive",
+    "architecture": "baseline",
+    "student_leg": "leg_a",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T10:07:37.002233Z",
+      "seed": 653,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-12T10:07:41.069010Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: Tom and Katie are arguing about alternate angles. Tom says angles \\( p \\) and \\( q \\) are alternate. Katie says angles \\( p \\) and \\( q \\) are equal. Who is correct? ![Shows two non parallel lines that are intersected by another line. Angles P and Q are both on the outside of the lines and on opposite sides of the transversal.](). I got Only\nKatie because I assumed all the angles in the figure are equal.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's go back to the part you do know, and build the next step from there. Remember, alternate angles are not always equal. Let's think about the relationships between the angles in the figure you showed.",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Okay, I think I get that alternate angles aren\u2019t always equal. So, if the lines aren\u2019t parallel, then \\( p \\) and \\( q \\) can be different. But how do I know when they are equal? Is it only when the lines are parallel?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's continue building on what you've just realized. Think about the relationship between the angles when the lines are parallel and how that compares to when they are not parallel.",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 4,
+    "R2": 2,
+    "R3": 3,
+    "R4": 5,
+    "R5": 4,
+    "R6": 4,
+    "justification_pass1": "The teacher directly addresses the misconception that alternate angles are always equal and the student demonstrates clear progress by Turn 2 in understanding the role of parallel lines, though the teacher could have demanded more active reasoning rather than prompting reflection.",
+    "justification_pass2": "The teacher consistently scaffolds by breaking down the problem into manageable steps (first clarifying the relationship between alternate angles and equality, then building toward understanding the parallel line condition), working within the student's ZPD by building on their emerging understanding rather than directly providing answers.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 4,\n  \"R2\": 2,\n  \"R3\": 3,\n  \"R4\": 5,\n  \"R5\": 4,\n  \"brief_justification\": \"The teacher directly addresses the misconception that alternate angles are always equal and the student demonstrates clear progress by Turn 2 in understanding the role of parallel lines, though the teacher could have demanded more active reasoning rather than prompting reflection.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\n  \"R6\": 4,\n  \"brief_justification\": \"The teacher consistently scaffolds by breaking down the problem into manageable steps (first clarifying the relationship between alternate angles and equality, then building toward understanding the parallel line condition), working within the student's ZPD by building on their emerging understanding rather than directly providing answers.\"\n}\n```",
+    "quality_composite": 3.0,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T10:07:47.818488+00:00"
+}

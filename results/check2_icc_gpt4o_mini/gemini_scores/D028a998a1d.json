@@ -1,0 +1,53 @@
+{
+  "blind_id": "D028a998a1d",
+  "subset_row": {
+    "blind_id": "D028a998a1d",
+    "case_id": "case_11",
+    "persona": "constructive",
+    "architecture": "pure_cbr_tpl",
+    "student_leg": "leg_a",
+    "llm_R5": "1",
+    "llm_quality_composite": "1.0",
+    "llm_R6": "1",
+    "difficulty_band": "medium",
+    "r5_band": "low",
+    "word_count": "34",
+    "attention_check_type": "",
+    "attention_check_rationale": "",
+    "file_path": "dialogues/case_11__constructive__pure_cbr_tpl__leg_a.json"
+  },
+  "primary_score": {
+    "R1": 1,
+    "R2": 1,
+    "R3": 1,
+    "R4": 2,
+    "R5": 1,
+    "R6": 1,
+    "justification_pass1": "The teacher merely repeats identical lists of similar cases without addressing the student's specific questions about visualizing nets, and the student shows no progress in understanding, repeatedly asking the same question about distinguishing nets from individual faces.",
+    "justification_pass2": "The teacher simply repeats identical generic case examples without scaffolding, breaking down the problem into steps, or adjusting support based on the student's specific confusion about distinguishing nets from individual faces.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 1,\n  \"R2\": 1,\n  \"R3\": 1,\n  \"R4\": 2,\n  \"R5\": 1,\n  \"brief_justification\": \"The teacher merely repeats identical lists of similar cases without addressing the student's specific questions about visualizing nets, and the student shows no progress in understanding, repeatedly asking the same question about distinguishing nets from individual faces.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 1, \"brief_justification\": \"The teacher simply repeats identical generic case examples without scaffolding, breaking down the problem into steps, or adjusting support based on the student's specific confusion about distinguishing nets from individual faces.\"}\n```",
+    "quality_composite": 1.0,
+    "is_complete": true
+  },
+  "secondary_score": {
+    "R1": 4,
+    "R2": 4,
+    "R3": 3,
+    "R4": 5,
+    "R5": 3,
+    "R6": 3,
+    "justification_pass1": "The teacher engages with the student's misconceptions effectively and encourages reasoning, but the scaffolding could be more tailored to the student's specific needs.",
+    "justification_pass2": "The teacher attempts to scaffold the student's understanding by referencing similar cases and addressing misconceptions, but does not break down the problem into manageable steps or adjust support based on the student's progress.",
+    "judge_provider": "openai",
+    "judge_model": "gpt-4o-mini",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\"R1\": 4, \"R2\": 4, \"R3\": 3, \"R4\": 5, \"R5\": 3, \"brief_justification\": \"The teacher engages with the student's misconceptions effectively and encourages reasoning, but the scaffolding could be more tailored to the student's specific needs.\"}\n```",
+    "pass2_raw_text": "{\"R6\": 3, \"brief_justification\": \"The teacher attempts to scaffold the student's understanding by referencing similar cases and addressing misconceptions, but does not break down the problem into manageable steps or adjust support based on the student's progress.\"}"
+  }
+}

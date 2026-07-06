@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_8",
+    "misconception_label": "Does not find a common denominator when adding/subtracting fractions",
+    "misconception_features": [
+      0.0,
+      8.0,
+      3.0,
+      88.0
+    ],
+    "persona": "experiential",
+    "architecture": "pure_ai",
+    "student_leg": "leg_b",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T14:56:27.220415Z",
+      "seed": 470,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T14:56:32.950659Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: \\( \\frac{4}{5}-\\frac{1}{3}=\\frac{\\bigstar}{15} \\) What should replace the star? I got \\( 5 \\) because I treated the fractions like ordinary numbers.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Imagine you have a pizza cut into 5 slices and another pizza cut into 3 slices. When you put them together, you need to make sure each slice is the same size to add them up correctly. So, to find the common denominator for \\( \\frac{4}{5} \\) and \\( \\frac{1}{3} \\), we need to think about what the smallest number is that both 5 and 3 can divide evenly into. Can you figure out what that is?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Um, so you need a number that both 5 and 3 go into? Like... is it 15? Because 5 times 3 is 15, so that works for both of them?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Exactly! Just like how you need to have the same size slices of pizza to add them together, you need a common denominator when adding or subtracting fractions. So in this case, the common denominator for \\( \\frac{4}{5} \\) and \\( \\frac{1}{3} \\) is 15 because both 5 and 3 can divide evenly into 15. Now, can you go ahead and find the correct sum for \\( \\frac{4}{5}-\\frac{1}{3} \\)?",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "Okay, so I need to change both fractions to have 15 as the bottom number, right? So like... \\( \\frac{4}{5} \\) becomes \\( \\frac{12}{15} \\) because 4 times 3 is 12, and then \\( \\frac{1}{3} \\) becomes \\( \\frac{5}{15} \\) because 1 times 5 is 5? Then I can do 12 minus 5 which is 7, so the answer is \\( \\frac{7}{15} \\)?",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 3,
+    "R3": 3,
+    "R4": 5,
+    "R5": 4,
+    "R6": 5,
+    "justification_pass1": "The teacher uses a pizza analogy but doesn't explicitly address why treating fractions like ordinary numbers fails; however, the student successfully demonstrates understanding of the common denominator procedure and correctly solves the problem by the end.",
+    "justification_pass2": "The teacher consistently uses a concrete pizza analogy to ground the abstract concept of common denominators in an everyday situation, making this a textbook example of the experiential strategy.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 3,\n  \"R3\": 3,\n  \"R4\": 5,\n  \"R5\": 4,\n  \"brief_justification\": \"The teacher uses a pizza analogy but doesn't explicitly address why treating fractions like ordinary numbers fails; however, the student successfully demonstrates understanding of the common denominator procedure and correctly solves the problem by the end.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 5, \"brief_justification\": \"The teacher consistently uses a concrete pizza analogy to ground the abstract concept of common denominators in an everyday situation, making this a textbook example of the experiential strategy.\"}\n```",
+    "quality_composite": 2.6666666666666665,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T14:56:38.522025+00:00"
+}

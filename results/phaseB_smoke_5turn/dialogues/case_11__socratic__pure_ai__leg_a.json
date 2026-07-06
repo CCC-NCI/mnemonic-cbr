@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_11",
+    "misconception_label": "Struggles to visualise nets of 3D shapes",
+    "misconception_features": [
+      0.0,
+      11.0,
+      3.0,
+      31.0
+    ],
+    "persona": "socratic",
+    "architecture": "pure_ai",
+    "student_leg": "leg_a",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T15:25:15.763046Z",
+      "seed": 599,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T15:25:21.310654Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: This is the net of a... ![A circle touching a sector](). I got Triangle because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Can you identify the individual shapes that make up the net you drew? How do you think those shapes fit together to form the 3D shape? Let's explore different ways to visualize and analyze the net to determine its corresponding 3D shape.",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "I see the circle and the sector, but I'm not really sure how they fit together. I thought maybe they could make a triangle because of the pointy part, but now I'm confused. What kind of 3D shape do those pieces actually make?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Can you think of any other 3D shapes that involve circles and sectors? How can you manipulate the net to see if it could form a different 3D shape that fits those components better? Let's explore different possibilities to help you visualize the relationship between the net and the 3D shape.",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "I guess I can think of a cylinder because it has a circle on the top and a curved part, but I'm not sure how the sector fits in. Does the sector wrap around the circle to make the curved part? I'm still a bit lost on how to see it all come together.",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 3,
+    "R3": 2,
+    "R4": 5,
+    "R5": 2,
+    "R6": 4,
+    "justification_pass1": "The teacher asks open questions requiring reasoning but provides insufficient scaffolding for a student struggling to visualize nets, resulting in the student remaining confused about how the shapes connect despite moving from 'triangle' to 'cylinder' guesses.",
+    "justification_pass2": "The teacher consistently uses probing questions to guide discovery without directly revealing the answer (cone), though they could have employed counterexamples more explicitly when the student suggested triangle to expose that flawed reasoning.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 3,\n  \"R3\": 2,\n  \"R4\": 5,\n  \"R5\": 2,\n  \"brief_justification\": \"The teacher asks open questions requiring reasoning but provides insufficient scaffolding for a student struggling to visualize nets, resulting in the student remaining confused about how the shapes connect despite moving from 'triangle' to 'cylinder' guesses.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 4, \"brief_justification\": \"The teacher consistently uses probing questions to guide discovery without directly revealing the answer (cone), though they could have employed counterexamples more explicitly when the student suggested triangle to expose that flawed reasoning.\"}\n```",
+    "quality_composite": 2.3333333333333335,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T15:25:30.297968+00:00"
+}

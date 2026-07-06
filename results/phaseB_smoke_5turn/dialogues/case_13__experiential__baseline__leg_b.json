@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_13",
+    "misconception_label": "Answers as if there are 100 minutes in an hour when changing from hours to minutes",
+    "misconception_features": [
+      0.0,
+      13.0,
+      1.0,
+      29.0
+    ],
+    "persona": "experiential",
+    "architecture": "baseline",
+    "student_leg": "leg_b",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T15:49:53.819213Z",
+      "seed": 714,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T15:50:00.063528Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: Hannah's journey to camp is \\( 3 \\) hours and \\( 16 \\) minutes. Tori's journey to camp is \\( 214 \\) minutes. What is the difference in their journeys in minutes? I got \\( 102 \\) minutes because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's think about it in terms of a clock. If Hannah's journey is \\(3\\) hours and \\(16\\) minutes, that's like saying \\(3\\) hours plus \\(16\\) minutes. Can you think of a way to break down Tori's journey in a similar way to help us find the difference in their journeys in minutes?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Um, so you mean I need to convert Tori's 214 minutes into hours and minutes first? Like, so I can compare them the same way? But I'm not sure how many minutes are in an hour - is it 100?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's think about it in terms of a clock. If we were using a clock to represent time, would there be 100 minutes in an hour? Can you think of any other everyday objects that could help us understand the concept of time conversion better?",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "Oh right, no... a clock has 60 minutes in an hour, doesn't it? I think I was confusing it with something else. So if Tori's journey is 214 minutes, I need to divide that by 60 to convert it to hours and minutes?",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 3,
+    "R3": 2,
+    "R4": 5,
+    "R5": 4,
+    "R6": 4,
+    "justification_pass1": "The teacher uses generic clock references rather than directly addressing the 100-minutes misconception, but the student does successfully self-correct and arrive at the correct understanding that there are 60 minutes in an hour.",
+    "justification_pass2": "The teacher consistently grounds the abstract time conversion problem in the concrete, everyday analogy of a clock, helping the student connect to familiar real-world experience to understand the mathematical concept.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 3,\n  \"R3\": 2,\n  \"R4\": 5,\n  \"R5\": 4,\n  \"brief_justification\": \"The teacher uses generic clock references rather than directly addressing the 100-minutes misconception, but the student does successfully self-correct and arrive at the correct understanding that there are 60 minutes in an hour.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 4, \"brief_justification\": \"The teacher consistently grounds the abstract time conversion problem in the concrete, everyday analogy of a clock, helping the student connect to familiar real-world experience to understand the mathematical concept.\"}\n```",
+    "quality_composite": 2.3333333333333335,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T15:50:06.224933+00:00"
+}

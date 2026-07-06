@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_8",
+    "misconception_label": "Does not find a common denominator when adding/subtracting fractions",
+    "misconception_features": [
+      0.0,
+      8.0,
+      3.0,
+      88.0
+    ],
+    "persona": "socratic",
+    "architecture": "pure_ai",
+    "student_leg": "leg_a",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T14:52:05.780612Z",
+      "seed": 449,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T14:52:10.702055Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: \\( \\frac{4}{5}-\\frac{1}{3}=\\frac{\\bigstar}{15} \\) What should replace the star? I got \\( 5 \\) because I treated the fractions like ordinary numbers.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Why do you think treating fractions like ordinary numbers would lead you to the correct answer in this case? Can you explain why finding a common denominator is important when adding or subtracting fractions?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "I guess I thought that since I was just subtracting, I could just take the top numbers and the bottom numbers separately. But now I see that the denominators need to be the same to really do the subtraction right. How do I find the common denominator again?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "That's a great realization! To find a common denominator, you need to look at the multiples of each denominator and find the smallest number they both divide into evenly. Can you think of a way to determine the common denominator for \\( \\frac{4}{5} \\) and \\( \\frac{1}{3} \\)?",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "Okay, so for \\( \\frac{4}{5} \\) and \\( \\frac{1}{3} \\), the denominators are 5 and 3. I think the common multiples would be 15, since 5 goes into 15 and 3 goes into 15 too. But how do I actually change the fractions to use that common denominator?",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 4,
+    "R2": 4,
+    "R3": 4,
+    "R4": 5,
+    "R5": 4,
+    "R6": 5,
+    "justification_pass1": "The teacher effectively addresses the misconception by prompting reflection on why common denominators matter, maintains cognitive demand through questioning rather than telling, and the student progresses from treating fractions like ordinary numbers to understanding the need for common denominators and successfully identifying 15, though the dialogue ends before completing the conversion process.",
+    "justification_pass2": "The teacher consistently uses probing questions to guide the student's thinking, never provides direct answers, and helps the student discover the solution through their own reasoning at each turn.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 4,\n  \"R2\": 4,\n  \"R3\": 4,\n  \"R4\": 5,\n  \"R5\": 4,\n  \"brief_justification\": \"The teacher effectively addresses the misconception by prompting reflection on why common denominators matter, maintains cognitive demand through questioning rather than telling, and the student progresses from treating fractions like ordinary numbers to understanding the need for common denominators and successfully identifying 15, though the dialogue ends before completing the conversion process.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 5, \"brief_justification\": \"The teacher consistently uses probing questions to guide the student's thinking, never provides direct answers, and helps the student discover the solution through their own reasoning at each turn.\"}\n```",
+    "quality_composite": 4.0,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T14:52:17.563173+00:00"
+}

@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_2",
+    "misconception_label": "Believes if you changed all values by the same proportion the range would not change",
+    "misconception_features": [
+      0.0,
+      2.0,
+      3.0,
+      39.0
+    ],
+    "persona": "constructive",
+    "architecture": "pure_ai",
+    "student_leg": "leg_a",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T13:26:27.477229Z",
+      "seed": 159,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T13:26:37.423170Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: Tom and Katie are discussing the \\( 5 \\) plants with these heights: \\( 24 \\mathrm{~cm}, 17 \\mathrm{~cm}, 42 \\mathrm{~cm}, 26 \\mathrm{~cm}, 13 \\mathrm{~cm} \\) Tom says if all the plants were cut in half, the range wouldn't change. Katie says if all the plants grew by \\( 3 \\mathrm{~cm} \\) each, the range wouldn't change. Who do you agree with? I got Only\nTom because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's think about how changing all the values by the same proportion would affect the range. Can you try to work out the new heights if all the plants were cut in half or grew by 3 cm each, and see how that affects the range? Let's take it one step at a time and see if we can figure this out together.",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Okay, so if I cut all the heights in half, the new heights would be \\( 12 \\mathrm{~cm}, 8.5 \\mathrm{~cm}, 21 \\mathrm{~cm}, 13 \\mathrm{~cm}, 6.5 \\mathrm{~cm} \\). The range would be \\( 21 \\mathrm{~cm} - 6.5 \\mathrm{~cm} = 14.5 \\mathrm{~cm} \\). But if I grow them all by \\( 3 \\mathrm{~cm} \\), then the new heights would be \\( 27 \\mathrm{~cm}, 20 \\mathrm{~cm}, 45 \\mathrm{~cm}, 29 \\mathrm{~cm}, 16 \\mathrm{~cm} \\), and the range would be \\( 45 \\mathrm{~cm} - 16 \\mathrm{~cm} = 29 \\mathrm{~cm}",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Great job on calculating the new heights and ranges for both scenarios! Now, let's compare the original range with the new ranges after cutting the heights in half and growing them by 3 cm. Can you determine if the range stays the same or changes in each case?",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "Okay, so the original range was \\( 42 \\mathrm{~cm} - 13 \\mathrm{~cm} = 29 \\mathrm{~cm} \\). After cutting the heights in half, the range changed to \\( 14.5 \\mathrm{~cm} \\), and when I grew them by \\( 3 \\mathrm{~cm} \\), it became \\( 29 \\mathrm{~cm} \\) again. So I guess Katie was right about the range staying the same when you add \\( 3 \\mathrm{~cm} \\), but Tom was wrong because the range did change when we cut the heights in half. Why does cutting the heights affect the range but adding doesn't?",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 4,
+    "R2": 4,
+    "R3": 4,
+    "R4": 5,
+    "R5": 5,
+    "R6": 5,
+    "justification_pass1": "The teacher effectively addresses the proportional change misconception by having the student calculate both scenarios, leading to the student correctly identifying that additive changes preserve range while multiplicative changes do not, demonstrating clear conceptual progress from the initial error.",
+    "justification_pass2": "The teacher exemplifies the constructive strategy by breaking the problem into manageable steps (calculating new heights, then comparing ranges), scaffolding within the student's ZPD without giving direct answers, and adjusting support as the student progresses from confusion to correct understanding.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 4,\n  \"R2\": 4,\n  \"R3\": 4,\n  \"R4\": 5,\n  \"R5\": 5,\n  \"brief_justification\": \"The teacher effectively addresses the proportional change misconception by having the student calculate both scenarios, leading to the student correctly identifying that additive changes preserve range while multiplicative changes do not, demonstrating clear conceptual progress from the initial error.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 5, \"brief_justification\": \"The teacher exemplifies the constructive strategy by breaking the problem into manageable steps (calculating new heights, then comparing ranges), scaffolding within the student's ZPD without giving direct answers, and adjusting support as the student progresses from confusion to correct understanding.\"}\n```",
+    "quality_composite": 4.0,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T13:26:43.829824+00:00"
+}

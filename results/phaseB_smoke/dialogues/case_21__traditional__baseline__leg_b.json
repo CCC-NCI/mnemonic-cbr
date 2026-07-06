@@ -1,0 +1,66 @@
+{
+  "state": {
+    "case_id": "case_21",
+    "misconception_label": "When factorising a quadratic with a non-unit coefficient of x squared, believes that coefficient will be in front of both x terms in the factorised form",
+    "misconception_features": [
+      0.0,
+      21.0,
+      1.0,
+      74.0
+    ],
+    "persona": "traditional",
+    "architecture": "baseline",
+    "student_leg": "leg_b",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T11:38:30.261090Z",
+      "seed": 1134,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-12T11:38:34.065774Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: Step 1: Factorise the following expression \\( 3 x^{2}+5 x+2 \\). I got \\( (3 x+2)(3 x+1) \\) because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let me explain the correct method, and then we will work through an example together. So, when factorising a quadratic with a non-unit coefficient of x squared, we need to find two numbers that multiply to the coefficient of x squared term and add up to the coefficient of the x term. Let's try factorising \\( 3x^{2}+5x+2 \\) using this method.",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "So we need to find two numbers that multiply to make 3, and add up to make 5? That doesn't really work though... do you mean multiply to make 6 instead, because 3 times 2 is 6 and 3 plus 2 is 5?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let me show you the correct method step by step. Let's find two numbers that multiply to 3 and add up to 5.",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 1,
+    "R2": 1,
+    "R3": 1,
+    "R4": 1,
+    "R5": 1,
+    "R6": 2,
+    "justification_pass1": "The teacher provides mathematically incorrect instruction (claiming to find numbers that multiply to 3 and add to 5, which is impossible), never addresses the student's specific misconception about the coefficient appearing in both brackets, and the student's confusion increases rather than decreases by the end of the dialogue.",
+    "justification_pass2": "While the teacher attempts to explain directly, they provide an incorrect method and fail to correct their error when the student identifies the problem, demonstrating poor clarity and comprehension which are core to traditional teaching.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 1,\n  \"R2\": 1,\n  \"R3\": 1,\n  \"R4\": 1,\n  \"R5\": 1,\n  \"brief_justification\": \"The teacher provides mathematically incorrect instruction (claiming to find numbers that multiply to 3 and add to 5, which is impossible), never addresses the student's specific misconception about the coefficient appearing in both brackets, and the student's confusion increases rather than decreases by the end of the dialogue.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 2, \"brief_justification\": \"While the teacher attempts to explain directly, they provide an incorrect method and fail to correct their error when the student identifies the problem, demonstrating poor clarity and comprehension which are core to traditional teaching.\"}\n```",
+    "quality_composite": 1.0,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T11:38:41.277668+00:00"
+}

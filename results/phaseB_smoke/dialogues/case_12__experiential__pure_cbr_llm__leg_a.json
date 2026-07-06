@@ -1,0 +1,66 @@
+{
+  "state": {
+    "case_id": "case_12",
+    "misconception_label": "Thinks alternate angles are always equal",
+    "misconception_features": [
+      0.0,
+      12.0,
+      3.0,
+      25.0
+    ],
+    "persona": "experiential",
+    "architecture": "pure_cbr_llm",
+    "student_leg": "leg_a",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T10:09:46.409097Z",
+      "seed": 665,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-12T10:09:50.433395Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: Tom and Katie are arguing about alternate angles. Tom says angles \\( p \\) and \\( q \\) are alternate. Katie says angles \\( p \\) and \\( q \\) are equal. Who is correct? ![Shows two non parallel lines that are intersected by another line. Angles P and Q are both on the outside of the lines and on opposite sides of the transversal.](). I got Only\nKatie because I assumed all the angles in the figure are equal.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's imagine you and a friend are standing on opposite sides of a street. If you both look at a street sign, are the angles you form with the sign the same? Think about how this real-world situation relates to the angles in the diagram with Tom and Katie.",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "I think I get what you're saying. So, if me and my friend are on opposite sides of the street, the angles we make with the sign might not be the same, right? But I still don\u2019t really understand how that connects to angles \\( p \\) and \\( q \\). Are they equal only if the lines are parallel?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Imagine you and your friend are standing at opposite ends of a seesaw. When one end goes up, the other goes down. In the same way, when one angle increases in the diagram, the other decreases. This relationship helps us understand why angles \\( p \\) and \\( q \\) are not always equal, even when they are alternate.",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 2,
+    "R3": 2,
+    "R4": 2,
+    "R5": 2,
+    "R6": 2,
+    "justification_pass1": "The teacher uses vague analogies (street sign, seesaw) that don't directly address the parallel lines requirement for alternate angles being equal, and while the student shows some progress by questioning whether parallelism matters, the seesaw analogy in Turn 3 is mathematically misleading and doesn't confirm the student's correct insight.",
+    "justification_pass2": "While the teacher attempts to use real-world analogies (street sign, seesaw), these analogies are imprecise and potentially misleading\u2014the seesaw analogy in Turn 3 incorrectly suggests angles change dynamically rather than clarifying the geometric relationship between alternate angles and parallel lines.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 2,\n  \"R3\": 2,\n  \"R4\": 2,\n  \"R5\": 2,\n  \"brief_justification\": \"The teacher uses vague analogies (street sign, seesaw) that don't directly address the parallel lines requirement for alternate angles being equal, and while the student shows some progress by questioning whether parallelism matters, the seesaw analogy in Turn 3 is mathematically misleading and doesn't confirm the student's correct insight.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 2, \"brief_justification\": \"While the teacher attempts to use real-world analogies (street sign, seesaw), these analogies are imprecise and potentially misleading\u2014the seesaw analogy in Turn 3 incorrectly suggests angles change dynamically rather than clarifying the geometric relationship between alternate angles and parallel lines.\"}\n```",
+    "quality_composite": 2.0,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T10:10:03.970710+00:00"
+}

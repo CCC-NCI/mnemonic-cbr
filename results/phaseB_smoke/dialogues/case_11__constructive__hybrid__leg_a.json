@@ -1,0 +1,66 @@
+{
+  "state": {
+    "case_id": "case_11",
+    "misconception_label": "Struggles to visualise nets of 3D shapes",
+    "misconception_features": [
+      0.0,
+      11.0,
+      3.0,
+      31.0
+    ],
+    "persona": "constructive",
+    "architecture": "hybrid",
+    "student_leg": "leg_a",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T09:59:29.741365Z",
+      "seed": 611,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-12T09:59:33.850937Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: This is the net of a... ![A circle touching a sector](). I got Triangle because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "It seems like you may be struggling with visualizing the net of a 3D shape. Let's focus on identifying the overall shape of the net first before considering the individual faces. Can you try breaking down the shape into simpler components to help you see the overall structure more clearly?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Okay, I think I get what you mean about breaking it down. So, the circle is like the base, but I'm not sure how the sector fits in. Is the sector like a part of the side or something? How do I figure out what 3D shape it makes?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "It's great that you're breaking down the shape into components. The sector is actually a part of the surface area of the 3D shape, not just a side. Try visualizing how the circle and sector connect to form a solid shape. Can you think about what shape would result from combining them?",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 4,
+    "R2": 3,
+    "R3": 2,
+    "R4": 5,
+    "R5": 2,
+    "R6": 4,
+    "justification_pass1": "The teacher correctly identifies and addresses the visualization misconception with accurate content, but the scaffolding remains too vague for the student's level, and while the student shows some progress in breaking down components, they still cannot identify the cone by the end.",
+    "justification_pass2": "The teacher consistently breaks down the problem into manageable steps (identifying overall shape, then components, then how they connect), scaffolds by building on the student's own observations about the circle and sector, and adjusts support by providing more specific guidance in Turn 3 when the student shows partial understanding.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 4,\n  \"R2\": 3,\n  \"R3\": 2,\n  \"R4\": 5,\n  \"R5\": 2,\n  \"brief_justification\": \"The teacher correctly identifies and addresses the visualization misconception with accurate content, but the scaffolding remains too vague for the student's level, and while the student shows some progress in breaking down components, they still cannot identify the cone by the end.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\n  \"R6\": 4,\n  \"brief_justification\": \"The teacher consistently breaks down the problem into manageable steps (identifying overall shape, then components, then how they connect), scaffolds by building on the student's own observations about the circle and sector, and adjusts support by providing more specific guidance in Turn 3 when the student shows partial understanding.\"\n}\n```",
+    "quality_composite": 3.0,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T09:59:41.640516+00:00"
+}

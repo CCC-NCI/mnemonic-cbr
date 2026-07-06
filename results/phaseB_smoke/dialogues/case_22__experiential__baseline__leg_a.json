@@ -1,0 +1,66 @@
+{
+  "state": {
+    "case_id": "case_22",
+    "misconception_label": "Does not realise that adding a larger number gives a larger answer",
+    "misconception_features": [
+      0.0,
+      22.0,
+      2.0,
+      98.0
+    ],
+    "persona": "experiential",
+    "architecture": "baseline",
+    "student_leg": "leg_a",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T11:44:01.895591Z",
+      "seed": 1163,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-12T11:44:05.489963Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: Tom and Katie are discussing related calculations Tom says if you know that \\( 3748+426=4174 \\), then \\( 3748+427 \\) must equal \\( \\mathbf{4 1 7 5} \\) Katie says if you know that \\( 3748-426=3322 \\), then \\( 3748 \\) - \\( 427 \\) must equal \\( \\mathbf{3 3 2 3} \\) Who is correct? I got Only Katie because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Imagine you were comparing the number of friends Tom and Katie have. If Tom has 426 friends and Katie has 427 friends, who would have more friends? Would your method still give the right answer?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "I guess if Tom has 426 friends and Katie has 427 friends, then Katie has more friends because 427 is bigger than 426. But I still don't get why adding a bigger number to 3748 would make it bigger than adding a smaller number. Can you explain that part again?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Imagine you were filling up two different-sized containers with water. If you pour more water into the larger container, would it hold more water than the smaller container? Would your method still give the right answer?",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 2,
+    "R3": 1,
+    "R4": 3,
+    "R5": 1,
+    "R6": 5,
+    "justification_pass1": "The teacher uses analogies that don't directly address the student's explicit request for explanation about why adding larger numbers gives larger results, and the student shows no improvement, explicitly stating they still don't understand the core concept even after the interventions.",
+    "justification_pass2": "The teacher consistently uses concrete, everyday analogies (comparing numbers of friends, filling water containers) to help the student understand the abstract mathematical concept of how adding larger versus smaller numbers affects the result.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 2,\n  \"R3\": 1,\n  \"R4\": 3,\n  \"R5\": 1,\n  \"brief_justification\": \"The teacher uses analogies that don't directly address the student's explicit request for explanation about why adding larger numbers gives larger results, and the student shows no improvement, explicitly stating they still don't understand the core concept even after the interventions.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 5, \"brief_justification\": \"The teacher consistently uses concrete, everyday analogies (comparing numbers of friends, filling water containers) to help the student understand the abstract mathematical concept of how adding larger versus smaller numbers affects the result.\"}\n```",
+    "quality_composite": 1.6666666666666667,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T11:44:13.360281+00:00"
+}

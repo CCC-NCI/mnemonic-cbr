@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_24",
+    "misconception_label": "When solving a problem that requires an inverse operation (e.g. missing number problems), does the original operation",
+    "misconception_features": [
+      0.0,
+      24.0,
+      2.0,
+      52.0
+    ],
+    "persona": "experiential",
+    "architecture": "pure_ai",
+    "student_leg": "leg_a",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T17:48:14.479928Z",
+      "seed": 1269,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T17:48:28.701970Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: What should replace the star? \\[ \\bigstar \\times 4=108 \\]. I got \\( 432 \\) because I added the parts of the ratio as if they were a total.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's think of this problem like a recipe. If you add 4 cups of flour to make a cake, and you want to know how much flour you started with, you would need to do the opposite operation. What would you do to find the original amount of flour?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "I think I get what you're saying about doing the opposite operation. So if I want to find out how much flour I started with, I would need to take away or divide instead of adding? But how does that work with the numbers in my problem? Like, how do I know what to do with the \\( 108 \\) and the \\( 4 \\)?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Think of it like this: when you're trying to figure out how much flour you started with in the cake recipe, you need to undo the adding of the 4 cups of flour. So, in this problem with the star, you need to undo the multiplying by 4. What operation can you do to undo multiplying by 4 in order to find the original number?",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "Okay, I think I get it a bit better now. So to undo multiplying by 4, I should divide by 4 instead? But then, what do I do with the \\( 108 \\)? Do I just divide that by 4 too?",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 3,
+    "R3": 2,
+    "R4": 2,
+    "R5": 3,
+    "R6": 2,
+    "justification_pass1": "The teacher uses an analogy that doesn't match the mathematical structure (adding flour vs. multiplying), fails to address why the student initially added ratio parts, and while the student progresses toward division, they still express uncertainty about applying it to 108 by Turn 4.",
+    "justification_pass2": "While the teacher attempts to use a recipe analogy to connect to real-world experience, the analogy is flawed (adding flour vs. multiplying) and creates confusion rather than grounding the mathematical concept in a coherent everyday situation.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 3,\n  \"R3\": 2,\n  \"R4\": 2,\n  \"R5\": 3,\n  \"brief_justification\": \"The teacher uses an analogy that doesn't match the mathematical structure (adding flour vs. multiplying), fails to address why the student initially added ratio parts, and while the student progresses toward division, they still express uncertainty about applying it to 108 by Turn 4.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 2, \"brief_justification\": \"While the teacher attempts to use a recipe analogy to connect to real-world experience, the analogy is flawed (adding flour vs. multiplying) and creates confusion rather than grounding the mathematical concept in a coherent everyday situation.\"}\n```",
+    "quality_composite": 2.3333333333333335,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T17:48:35.793241+00:00"
+}

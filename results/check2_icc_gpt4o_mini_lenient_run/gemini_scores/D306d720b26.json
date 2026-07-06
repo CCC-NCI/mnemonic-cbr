@@ -1,0 +1,53 @@
+{
+  "blind_id": "D306d720b26",
+  "subset_row": {
+    "blind_id": "D306d720b26",
+    "case_id": "case_13",
+    "persona": "socratic",
+    "architecture": "pure_cbr_llm",
+    "student_leg": "leg_b",
+    "llm_R5": "5",
+    "llm_quality_composite": "4.0",
+    "llm_R6": "5",
+    "difficulty_band": "long",
+    "r5_band": "high",
+    "word_count": "67",
+    "attention_check_type": "",
+    "attention_check_rationale": "",
+    "file_path": "dialogues/case_13__socratic__pure_cbr_llm__leg_b.json"
+  },
+  "primary_score": {
+    "R1": 4,
+    "R2": 4,
+    "R3": 4,
+    "R4": 5,
+    "R5": 5,
+    "R6": 5,
+    "justification_pass1": "The teacher effectively elicits the specific misconception (multiplying by 100) through questioning rather than direct correction, maintains high cognitive demand by asking the student to reason about their choice, and the student successfully self-corrects to identify 60 minutes in an hour.",
+    "justification_pass2": "The teacher consistently uses probing questions to guide the student's thinking without directly providing the answer, successfully leading the student to identify their own error and discover the correct conversion factor through self-reflection.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 4,\n  \"R2\": 4,\n  \"R3\": 4,\n  \"R4\": 5,\n  \"R5\": 5,\n  \"brief_justification\": \"The teacher effectively elicits the specific misconception (multiplying by 100) through questioning rather than direct correction, maintains high cognitive demand by asking the student to reason about their choice, and the student successfully self-corrects to identify 60 minutes in an hour.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 5, \"brief_justification\": \"The teacher consistently uses probing questions to guide the student's thinking without directly providing the answer, successfully leading the student to identify their own error and discover the correct conversion factor through self-reflection.\"}\n```",
+    "quality_composite": 4.0,
+    "is_complete": true
+  },
+  "secondary_score": {
+    "R1": 4,
+    "R2": 4,
+    "R3": 4,
+    "R4": 5,
+    "R5": 4,
+    "R6": 5,
+    "justification_pass1": "The teacher effectively engages the student's misconception about converting hours to minutes, encourages reasoning, provides appropriate scaffolding, and the student shows improvement in understanding by the end of the dialogue.",
+    "justification_pass2": "The teacher effectively uses probing questions to guide the student towards discovering their own errors without providing direct answers, exemplifying the Socratic method.",
+    "judge_provider": "openai",
+    "judge_model": "gpt-4o-mini",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "{\n  \"R1\": 4,\n  \"R2\": 4,\n  \"R3\": 4,\n  \"R4\": 5,\n  \"R5\": 4,\n  \"brief_justification\": \"The teacher effectively engages the student's misconception about converting hours to minutes, encourages reasoning, provides appropriate scaffolding, and the student shows improvement in understanding by the end of the dialogue.\" \n}",
+    "pass2_raw_text": "{\"R6\": 5, \"brief_justification\": \"The teacher effectively uses probing questions to guide the student towards discovering their own errors without providing direct answers, exemplifying the Socratic method.\"}"
+  }
+}

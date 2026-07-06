@@ -1,0 +1,36 @@
+# Phase C sanity-check battery
+
+- Generated: 2026-05-17T18:42:30Z
+- Manifest:  `results/phaseB_smoke_5turn/manifest.sqlite`
+- Real mode: False (checks 4 and 5 need this)
+
+---
+
+## Check 1 — Persona discriminability
+sentence-transformers not installed; retrieval will use the legacy feature-based similarity. To enable embedding-based retrieval: pip install sentence-transformers
+- **Pass:** `None`
+- Not computable: sentence-transformers not available.
+
+## Check 3 — R5 contamination (length / sentiment)
+- **Pass:** `True`
+- r(R5, length) = -0.205 (pass |r|<=0.5: True); r(R5, sentiment) = 0.300 (pass: True).
+
+## Check 4 — Shuffle-persona (adversarial; needs real judge)
+- **Skipped (stub mode)** — needs USE_REAL_LLMS=1 to call the real judge for adversarial re-scoring; under stubs the drop is uninformative. Re-run with `USE_REAL_LLMS=1` (~$0.40, ~1 min).
+
+## Check 5 — Dialogue-order corruption (adversarial; needs real judge)
+- **Skipped (stub mode)** — needs USE_REAL_LLMS=1 to call the real judge for adversarial re-scoring; under stubs the drop is uninformative. Re-run with `USE_REAL_LLMS=1` (~$0.40, ~1 min).
+
+---
+
+## Gate decision
+
+**All runnable checks PASSED.** Not yet run: Check 1: persona discriminability, Check 4, Check 5. To complete the gate, re-run with `USE_REAL_LLMS=1` so the adversarial checks call the real judge.
+
+_Output also written as JSON: `results/phaseB_smoke_5turn/sanity_summary.json`._
+
+
+Wrote results/phaseB_smoke_5turn/sanity_summary.md
+Wrote results/phaseB_smoke_5turn/sanity_summary.json
+
+[DONE] run_sanity_battery completed in 0.7s — log: results/phaseB_smoke_5turn/logs/run_sanity_battery_20260517T184230Z.txt

@@ -1,0 +1,66 @@
+{
+  "state": {
+    "case_id": "case_24",
+    "misconception_label": "When solving a problem that requires an inverse operation (e.g. missing number problems), does the original operation",
+    "misconception_features": [
+      0.0,
+      24.0,
+      2.0,
+      52.0
+    ],
+    "persona": "constructive",
+    "architecture": "pure_ai",
+    "student_leg": "leg_b",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T12:02:33.172619Z",
+      "seed": 1260,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-12T12:02:45.943219Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: What should replace the star? \\[ \\bigstar \\times 4=108 \\]. I got \\( 432 \\) because I added the parts of the ratio as if they were a total.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Great job identifying that you added the parts of the ratio as if they were a total. To find the missing number, remember that when using an inverse operation, you need to do the opposite of what was originally done. Think about how you can undo the multiplication by 4 to find the missing number. Can you think of a way to reverse that operation?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Oh right, so I need to do the opposite of multiplying by 4... so that would be dividing by 4? So I should do 108 \u00f7 4 to find the star? Let me check: that would give me 27, which seems way smaller than my answer of 432.",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "You're on the right track with dividing by 4 to undo the multiplication. However, remember that division is the inverse operation of multiplication. Think about how you can double check your calculations to ensure you find the correct missing number.",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 2,
+    "R3": 2,
+    "R4": 5,
+    "R5": 4,
+    "R6": 4,
+    "justification_pass1": "While the student successfully identifies the correct inverse operation and arrives at the right answer (27), the teacher's engagement with the stated misconception about ratios is minimal, and the scaffolding in Turn 3 is vague when the student has already demonstrated correct reasoning.",
+    "justification_pass2": "The teacher effectively scaffolds by breaking down the problem into manageable steps (identifying the inverse operation, applying it, checking work), adjusts support based on student progress, and guides without directly giving the answer, though could have been slightly more responsive to the student's specific uncertainty about the magnitude difference.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 2,\n  \"R3\": 2,\n  \"R4\": 5,\n  \"R5\": 4,\n  \"brief_justification\": \"While the student successfully identifies the correct inverse operation and arrives at the right answer (27), the teacher's engagement with the stated misconception about ratios is minimal, and the scaffolding in Turn 3 is vague when the student has already demonstrated correct reasoning.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 4, \"brief_justification\": \"The teacher effectively scaffolds by breaking down the problem into manageable steps (identifying the inverse operation, applying it, checking work), adjusts support based on student progress, and guides without directly giving the answer, though could have been slightly more responsive to the student's specific uncertainty about the magnitude difference.\"}\n```",
+    "quality_composite": 2.0,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T12:02:53.979523+00:00"
+}

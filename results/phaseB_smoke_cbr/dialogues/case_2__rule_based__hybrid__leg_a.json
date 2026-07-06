@@ -1,0 +1,66 @@
+{
+  "state": {
+    "case_id": "case_2",
+    "misconception_label": "Believes if you changed all values by the same proportion the range would not change",
+    "misconception_features": [
+      0.0,
+      2.0,
+      3.0,
+      39.0
+    ],
+    "persona": "rule_based",
+    "architecture": "hybrid",
+    "student_leg": "leg_a",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T08:30:55.494096Z",
+      "seed": 181,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "cbr_grounded",
+      "ended_at": "2026-05-12T08:30:58.831999Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: Tom and Katie are discussing the \\( 5 \\) plants with these heights: \\( 24 \\mathrm{~cm}, 17 \\mathrm{~cm}, 42 \\mathrm{~cm}, 26 \\mathrm{~cm}, 13 \\mathrm{~cm} \\) Tom says if all the plants were cut in half, the range wouldn't change. Katie says if all the plants grew by \\( 3 \\mathrm{~cm} \\) each, the range wouldn't change. Who do you agree with? I got Only\nTom because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "The range of a set of data is affected by the difference between the largest and smallest values. Even if all values are changed by the same proportion, the range can still change. Let's walk through the calculation together to see where the misconception occurred.",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Okay, I think I get that the range is the difference between the biggest and smallest numbers. So if I cut all the heights in half, wouldn't the biggest and smallest numbers also change, but still keep the same difference? I'm not sure how that works with Katie's example either. Can you explain that part again?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "When all values are changed by the same proportion, the actual numerical difference between the largest and smallest values can still change, affecting the range. Let's work through an example to illustrate this concept further.",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 1,
+    "R3": 2,
+    "R4": 2,
+    "R5": 1,
+    "R6": 2,
+    "justification_pass1": "The teacher identifies the misconception but repeatedly tells rather than guides discovery, provides mathematically incorrect statements (claiming proportional changes affect range when only multiplicative changes do), and the student remains confused by Turn 2, showing no improvement in understanding.",
+    "justification_pass2": "The teacher discusses concepts about range and proportional changes but never states explicit procedures, shows worked calculation steps, or gives direct corrective feedback on the student's specific procedural error of confusing additive versus multiplicative transformations.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 1,\n  \"R3\": 2,\n  \"R4\": 2,\n  \"R5\": 1,\n  \"brief_justification\": \"The teacher identifies the misconception but repeatedly tells rather than guides discovery, provides mathematically incorrect statements (claiming proportional changes affect range when only multiplicative changes do), and the student remains confused by Turn 2, showing no improvement in understanding.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 2, \"brief_justification\": \"The teacher discusses concepts about range and proportional changes but never states explicit procedures, shows worked calculation steps, or gives direct corrective feedback on the student's specific procedural error of confusing additive versus multiplicative transformations.\"}\n```",
+    "quality_composite": 1.6666666666666667,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T08:31:05.825047+00:00"
+}

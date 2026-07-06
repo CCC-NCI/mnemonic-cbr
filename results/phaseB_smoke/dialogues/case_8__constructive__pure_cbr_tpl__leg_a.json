@@ -1,0 +1,66 @@
+{
+  "state": {
+    "case_id": "case_8",
+    "misconception_label": "Does not find a common denominator when adding/subtracting fractions",
+    "misconception_features": [
+      0.0,
+      8.0,
+      3.0,
+      88.0
+    ],
+    "persona": "constructive",
+    "architecture": "pure_cbr_tpl",
+    "student_leg": "leg_a",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T09:29:21.498300Z",
+      "seed": 457,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-12T09:29:22.647302Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: \\( \\frac{4}{5}-\\frac{1}{3}=\\frac{\\bigstar}{15} \\) What should replace the star? I got \\( 5 \\) because I treated the fractions like ordinary numbers.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's think about this. From similar cases:\n  1. Topic: Add proper fractions with the same denominator. Correct answer (D): \\( 1 \\). Student selected: \\( \\frac{11}{22} \\). Underlying misconception: When adding fractions, adds the numerators and denominators. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.\n  2. Topic: Add proper fractions with different denominators where one is a multiple of the other. Correct answer (A): \\( \\frac{5}{9} \\). Student selected: \\( \\frac{3}{12} \\). Underlying misconception: When adding fractions, adds the numerators and denominators. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.\n  3. Topic: Subtract proper fractions with different denominators which do not share a common factor. Correct answer (C): \\( 17 \\). Student selected: \\( 19 \\). Underlying misconception: Forgets to change the numerators when finding equivalent fractions. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "I think I get that I can't just treat the fractions like normal numbers. But when I try to find a common denominator, I get confused about what to do with the numerators. How do I know what to change them to?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's think about this. From similar cases:\n  1. Topic: Add proper fractions with the same denominator. Correct answer (D): \\( 1 \\). Student selected: \\( \\frac{11}{22} \\). Underlying misconception: When adding fractions, adds the numerators and denominators. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.\n  2. Topic: Add proper fractions with different denominators where one is a multiple of the other. Correct answer (A): \\( \\frac{5}{9} \\). Student selected: \\( \\frac{3}{12} \\). Underlying misconception: When adding fractions, adds the numerators and denominators. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.\n  3. Topic: Subtract proper fractions with different denominators which do not share a common factor. Correct answer (C): \\( 17 \\). Student selected: \\( 19 \\). Underlying misconception: Forgets to change the numerators when finding equivalent fractions. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 1,
+    "R2": 1,
+    "R3": 1,
+    "R4": 2,
+    "R5": 1,
+    "R6": 1,
+    "justification_pass1": "The teacher merely presents lists of similar cases without engaging the student's specific misconception or providing any actual instruction, and the student shows no improvement, ending more confused than they started.",
+    "justification_pass2": "The teacher simply repeats identical lists of misconceptions without scaffolding, breaking down the problem into steps, or adjusting support based on the student's specific question about how to change numerators when finding common denominators.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 1,\n  \"R2\": 1,\n  \"R3\": 1,\n  \"R4\": 2,\n  \"R5\": 1,\n  \"brief_justification\": \"The teacher merely presents lists of similar cases without engaging the student's specific misconception or providing any actual instruction, and the student shows no improvement, ending more confused than they started.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 1, \"brief_justification\": \"The teacher simply repeats identical lists of misconceptions without scaffolding, breaking down the problem into steps, or adjusting support based on the student's specific question about how to change numerators when finding common denominators.\"}\n```",
+    "quality_composite": 1.0,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T09:29:29.491665+00:00"
+}

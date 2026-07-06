@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_16",
+    "misconception_label": "Divides total amount by each side of the ratio instead of dividing by the sum of the parts",
+    "misconception_features": [
+      0.0,
+      16.0,
+      3.0,
+      83.0
+    ],
+    "persona": "rule_based",
+    "architecture": "pure_cbr_tpl",
+    "student_leg": "leg_b",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T16:24:38.224710Z",
+      "seed": 878,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T16:24:41.082340Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: In the diagram, AN : NB \\( =3: 5 \\) What is the distance AN? ![A line that begins with point A, ends with point B, and has point N in between. The entire length of the line measures 48 m.](). I got \\( 16 \\mathrm{~m} \\) because I added the parts of the ratio as if they were a total.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's think about this. From similar cases:\n  1. Topic: Given information about one part, work out the whole. Correct answer (B): \\( 98 \\). Student selected: \\( 72 \\). Underlying misconception: Thinks the number in the ratio is the total. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.\n  2. Topic: Given information about the relationship between two parts (e.g. one part is worth 5 more than another), work out the whole. Correct answer (C): \\( \u00a3 252 \\). Student selected: \\( \u00a3 112 \\). Underlying misconception: In ratio question where the difference between the sides is given, uses that as the total for one side instead. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.\n  3. Topic: Given information about the relationship between two parts (e.g. one part is worth 5 more than another), work out other parts. Correct answer (B): \\( 72 \\). Student selected: \\( 96 \\). Underlying misconception: In ratio question where the difference between the sides is given, uses that as the total for one side instead. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Oh right, so I see now that I shouldn't just divide 48 by 3 or by 5... but I'm still a bit confused about what I should actually do instead? Should I be dividing 48 by something else?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's think about this. From similar cases:\n  1. Topic: Given information about one part, work out the whole. Correct answer (B): \\( 98 \\). Student selected: \\( 72 \\). Underlying misconception: Thinks the number in the ratio is the total. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.\n  2. Topic: Given information about the relationship between two parts (e.g. one part is worth 5 more than another), work out the whole. Correct answer (C): \\( \u00a3 252 \\). Student selected: \\( \u00a3 112 \\). Underlying misconception: In ratio question where the difference between the sides is given, uses that as the total for one side instead. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.\n  3. Topic: Given information about the relationship between two parts (e.g. one part is worth 5 more than another), work out other parts. Correct answer (B): \\( 72 \\). Student selected: \\( 96 \\). Underlying misconception: In ratio question where the difference between the sides is given, uses that as the total for one side instead. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "Yeah, so should I divide 48 by both 3 and 5 added together? Like 48 divided by 8? I'm not really sure why that would work though...",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 1,
+    "R2": 1,
+    "R3": 1,
+    "R4": 2,
+    "R5": 2,
+    "R6": 1,
+    "justification_pass1": "The teacher merely presents lists of similar misconceptions without engaging the student's specific error, provides no scaffolding or reasoning opportunities, and while the student stumbles toward the correct procedure by Turn 4, they explicitly state they don't understand why it works, indicating the misconception remains unaddressed.",
+    "justification_pass2": "The teacher never states explicit procedures, shows worked steps, or gives direct corrective feedback; instead, they repeatedly present vague references to similar cases without any concrete instruction or demonstration of the correct method.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 1,\n  \"R2\": 1,\n  \"R3\": 1,\n  \"R4\": 2,\n  \"R5\": 2,\n  \"brief_justification\": \"The teacher merely presents lists of similar misconceptions without engaging the student's specific error, provides no scaffolding or reasoning opportunities, and while the student stumbles toward the correct procedure by Turn 4, they explicitly state they don't understand why it works, indicating the misconception remains unaddressed.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 1, \"brief_justification\": \"The teacher never states explicit procedures, shows worked steps, or gives direct corrective feedback; instead, they repeatedly present vague references to similar cases without any concrete instruction or demonstration of the correct method.\"}\n```",
+    "quality_composite": 1.0,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T16:24:47.639665+00:00"
+}

@@ -1,0 +1,53 @@
+{
+  "blind_id": "D810ba45972",
+  "subset_row": {
+    "blind_id": "D810ba45972",
+    "case_id": "case_8",
+    "persona": "traditional",
+    "architecture": "hybrid",
+    "student_leg": "leg_b",
+    "llm_R5": "4",
+    "llm_quality_composite": "2.3333333333333335",
+    "llm_R6": "5",
+    "difficulty_band": "medium",
+    "r5_band": "high",
+    "word_count": "32",
+    "attention_check_type": "",
+    "attention_check_rationale": "",
+    "file_path": "dialogues/case_8__traditional__hybrid__leg_b.json"
+  },
+  "primary_score": {
+    "R1": 2,
+    "R2": 2,
+    "R3": 3,
+    "R4": 5,
+    "R5": 4,
+    "R6": 5,
+    "justification_pass1": "The teacher directly tells the student the procedure and answer rather than engaging with why 'treating fractions like ordinary numbers' fails, though the student does show improved understanding by Turn 4 when they articulate the multiplying-by-one concept independently.",
+    "justification_pass2": "The teacher exemplifies the traditional strategy by directly explaining the procedure with a worked example (finding common denominators), checking understanding at each step, and providing clear, comprehensive explanations of the mathematical concepts involved.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 2,\n  \"R3\": 3,\n  \"R4\": 5,\n  \"R5\": 4,\n  \"brief_justification\": \"The teacher directly tells the student the procedure and answer rather than engaging with why 'treating fractions like ordinary numbers' fails, though the student does show improved understanding by Turn 4 when they articulate the multiplying-by-one concept independently.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\n  \"R6\": 5,\n  \"brief_justification\": \"The teacher exemplifies the traditional strategy by directly explaining the procedure with a worked example (finding common denominators), checking understanding at each step, and providing clear, comprehensive explanations of the mathematical concepts involved.\"\n}\n```",
+    "quality_composite": 2.3333333333333335,
+    "is_complete": true
+  },
+  "secondary_score": {
+    "R1": 3,
+    "R2": 2,
+    "R3": 2,
+    "R4": 5,
+    "R5": 5,
+    "R6": 5,
+    "justification_pass1": "The teacher provides mathematically correct but overly direct instruction, doing most of the reasoning for the student, yet the student still shows a remarkable improvement in their conceptual understanding.",
+    "justification_pass2": "The teacher directly explains the procedure for subtracting fractions, provides a worked example of the key step, and checks for understanding, which is a textbook instantiation of the described traditional strategy.",
+    "judge_provider": "gemini",
+    "judge_model": "gemini-2.5-pro",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 3,\n  \"R2\": 2,\n  \"R3\": 2,\n  \"R4\": 5,\n  \"R5\": 5,\n  \"brief_justification\": \"The teacher provides mathematically correct but overly direct instruction, doing most of the reasoning for the student, yet the student still shows a remarkable improvement in their conceptual understanding.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\n  \"R6\": 5,\n  \"brief_justification\": \"The teacher directly explains the procedure for subtracting fractions, provides a worked example of the key step, and checks for understanding, which is a textbook instantiation of the described traditional strategy.\"\n}\n```"
+  }
+}

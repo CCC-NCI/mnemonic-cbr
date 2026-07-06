@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_12",
+    "misconception_label": "Thinks alternate angles are always equal",
+    "misconception_features": [
+      0.0,
+      12.0,
+      3.0,
+      25.0
+    ],
+    "persona": "socratic",
+    "architecture": "hybrid",
+    "student_leg": "leg_a",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T15:36:33.429646Z",
+      "seed": 651,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T15:36:44.214862Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: Tom and Katie are arguing about alternate angles. Tom says angles \\( p \\) and \\( q \\) are alternate. Katie says angles \\( p \\) and \\( q \\) are equal. Who is correct? ![Shows two non parallel lines that are intersected by another line. Angles P and Q are both on the outside of the lines and on opposite sides of the transversal.](). I got Only\nKatie because I assumed all the angles in the figure are equal.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Can you explain why you assumed all angles in the figure are equal? Let's revisit the concept of alternate angles and think about how they are related in this scenario.",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "I thought all the angles were equal because they look similar and are on opposite sides of the transversal. But now I'm not sure if that's right. Can you explain more about when alternate angles are equal and when they aren't?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Can you think of a situation where alternate angles may not be equal? Let's explore different scenarios to see if we can find a counterexample to the idea that all angles are equal in this figure.",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "I guess if the lines aren't parallel, then the alternate angles might not be equal, right? But I'm still a bit confused about how to tell when they are equal and when they aren't. Can you give me an example of lines that are parallel and how the angles would look?",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 4,
+    "R2": 3,
+    "R3": 3,
+    "R4": 5,
+    "R5": 4,
+    "R6": 4,
+    "justification_pass1": "The teacher effectively addresses the misconception by prompting the student to consider when alternate angles are not equal, leading the student to correctly identify that parallelism is the key condition (Turn 4), though the teacher could have been more explicit about the definition of alternate angles versus their equality condition.",
+    "justification_pass2": "The teacher consistently uses probing questions to guide the student's thinking and successfully prompts exploration of counterexamples (non-parallel lines), though the student's final request for a direct example tests the teacher's commitment to avoiding direct answers.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 4,\n  \"R2\": 3,\n  \"R3\": 3,\n  \"R4\": 5,\n  \"R5\": 4,\n  \"brief_justification\": \"The teacher effectively addresses the misconception by prompting the student to consider when alternate angles are not equal, leading the student to correctly identify that parallelism is the key condition (Turn 4), though the teacher could have been more explicit about the definition of alternate angles versus their equality condition.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 4, \"brief_justification\": \"The teacher consistently uses probing questions to guide the student's thinking and successfully prompts exploration of counterexamples (non-parallel lines), though the student's final request for a direct example tests the teacher's commitment to avoiding direct answers.\"}\n```",
+    "quality_composite": 3.3333333333333335,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T15:36:50.841421+00:00"
+}

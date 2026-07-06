@@ -1,0 +1,66 @@
+{
+  "state": {
+    "case_id": "case_0",
+    "misconception_label": "Confuses the order of operations, believes addition comes before multiplication",
+    "misconception_features": [
+      0.0,
+      0.0,
+      1.0,
+      70.0
+    ],
+    "persona": "rule_based",
+    "architecture": "pure_cbr_tpl",
+    "student_leg": "leg_b",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T08:11:18.867512Z",
+      "seed": 78,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "cbr_grounded",
+      "ended_at": "2026-05-12T08:11:21.068754Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: \\[ 3 \\times 2+4-5 \\] Where do the brackets need to go to make the answer equal \\( 13 \\) ? I got Does not need brackets because I worked left to right instead of following the order of operations.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's think about this. From similar cases:\n  1. Topic: Use the order of operations to carry out calculations involving addition, subtraction, multiplication, and/or division. Correct answer (B): Problem P: \\( 4-5 \\)\nProblem Q: \\( 5 \\times 6 \\). Student selected: Problem P: \\( 4-5 \\)\nProblem Q: \\( 4+5 \\). Underlying misconception: Carries out operations from left to right regardless of priority order. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.\n  2. Topic: Recognise and use efficient methods for mental multiplication. Correct answer (D): Neither is correct. Student selected: Only Tom. Underlying misconception: Does not correctly apply the commutative property of multiplication. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.\n  3. Topic: Carry out multiplication problems involving one negative integer. Correct answer (B): \\( -15 \\). Student selected: \\( +2 \\). Underlying misconception: Adds instead of multiplying when expanding bracket. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Oh right, so you're saying I need to follow the order of operations properly instead of just going left to right? So like... multiplication has to come before addition, doesn't it? But I'm still confused about where the brackets should actually go to make it equal 13 - can you walk me through it step by step?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's think about this. From similar cases:\n  1. Topic: Use the order of operations to carry out calculations involving addition, subtraction, multiplication, and/or division. Correct answer (B): Problem P: \\( 4-5 \\)\nProblem Q: \\( 5 \\times 6 \\). Student selected: Problem P: \\( 4-5 \\)\nProblem Q: \\( 4+5 \\). Underlying misconception: Carries out operations from left to right regardless of priority order. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.\n  2. Topic: Recognise and use efficient methods for mental multiplication. Correct answer (D): Neither is correct. Student selected: Only Tom. Underlying misconception: Does not correctly apply the commutative property of multiplication. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.\n  3. Topic: Carry out multiplication problems involving one negative integer. Correct answer (B): \\( -15 \\). Student selected: \\( +2 \\). Underlying misconception: Adds instead of multiplying when expanding bracket. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 1,
+    "R2": 1,
+    "R3": 1,
+    "R4": 2,
+    "R5": 1,
+    "R6": 1,
+    "justification_pass1": "The teacher merely repeats irrelevant case examples without addressing the student's specific misconception or question about bracket placement, providing no actual instruction despite the student explicitly requesting step-by-step guidance.",
+    "justification_pass2": "The teacher does not demonstrate any rule-based teaching behaviors\u2014instead of stating explicit procedures, showing worked steps, or giving direct corrective feedback, the teacher only presents vague references to similar cases without any clear instruction or procedural guidance.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 1,\n  \"R2\": 1,\n  \"R3\": 1,\n  \"R4\": 2,\n  \"R5\": 1,\n  \"brief_justification\": \"The teacher merely repeats irrelevant case examples without addressing the student's specific misconception or question about bracket placement, providing no actual instruction despite the student explicitly requesting step-by-step guidance.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 1, \"brief_justification\": \"The teacher does not demonstrate any rule-based teaching behaviors\u2014instead of stating explicit procedures, showing worked steps, or giving direct corrective feedback, the teacher only presents vague references to similar cases without any clear instruction or procedural guidance.\"}\n```",
+    "quality_composite": 1.0,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T08:11:28.321864+00:00"
+}

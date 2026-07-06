@@ -1,0 +1,66 @@
+{
+  "state": {
+    "case_id": "case_2",
+    "misconception_label": "Believes if you changed all values by the same proportion the range would not change",
+    "misconception_features": [
+      0.0,
+      2.0,
+      3.0,
+      39.0
+    ],
+    "persona": "rule_based",
+    "architecture": "pure_ai",
+    "student_leg": "leg_a",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T08:30:30.045700Z",
+      "seed": 179,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "cbr_grounded",
+      "ended_at": "2026-05-12T08:30:35.280478Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: Tom and Katie are discussing the \\( 5 \\) plants with these heights: \\( 24 \\mathrm{~cm}, 17 \\mathrm{~cm}, 42 \\mathrm{~cm}, 26 \\mathrm{~cm}, 13 \\mathrm{~cm} \\) Tom says if all the plants were cut in half, the range wouldn't change. Katie says if all the plants grew by \\( 3 \\mathrm{~cm} \\) each, the range wouldn't change. Who do you agree with? I got Only\nTom because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "To determine if the range changes when all values are changed by the same proportion, we must consider how the values spread out from each other. Let's revisit the definition of range and how changing all values affects it. Can you explain how the range is calculated and what changing all values by the same proportion does to the spread of the values?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "I think the range is found by taking the biggest number and subtracting the smallest number. So, if we cut all the plants in half, the biggest and smallest would both be smaller, but I thought they would still be the same distance apart. But if we add \\( 3 \\mathrm{~cm} \\) to each, wouldn't that just make everything bigger but not change how far apart they are? I'm still a bit confused about how the range actually changes.",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "When all values are changed by the same proportion, the spread of the values changes, affecting the range. Cutting all the plants in half would indeed change the range, as the difference between the smallest and largest values would also decrease. Adding 3 cm to each plant would also impact the range by increasing the spread of the values. The range is not just about the distance between the smallest and largest values, but also how the values are distributed within that range.",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 2,
+    "R3": 2,
+    "R4": 1,
+    "R5": 1,
+    "R6": 1,
+    "justification_pass1": "The teacher provides mathematically incorrect information (claiming adding a constant changes the range and misdefining what range measures), fails to effectively address the student's misconception about proportional changes, and the student remains confused by the end with no visible improvement in understanding.",
+    "justification_pass2": "The teacher uses inquiry-based questioning rather than stating explicit procedures or showing worked steps, and provides conceptually incorrect information instead of direct corrective feedback on the procedural error.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 2,\n  \"R3\": 2,\n  \"R4\": 1,\n  \"R5\": 1,\n  \"brief_justification\": \"The teacher provides mathematically incorrect information (claiming adding a constant changes the range and misdefining what range measures), fails to effectively address the student's misconception about proportional changes, and the student remains confused by the end with no visible improvement in understanding.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 1, \"brief_justification\": \"The teacher uses inquiry-based questioning rather than stating explicit procedures or showing worked steps, and provides conceptually incorrect information instead of direct corrective feedback on the procedural error.\"}\n```",
+    "quality_composite": 2.0,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T08:30:41.768671+00:00"
+}

@@ -1,0 +1,66 @@
+{
+  "state": {
+    "case_id": "case_19",
+    "misconception_label": "When subtracting fractions, subtracts the numerators and multiplies the denominators",
+    "misconception_features": [
+      0.0,
+      19.0,
+      3.0,
+      104.0
+    ],
+    "persona": "traditional",
+    "architecture": "pure_cbr_llm",
+    "student_leg": "leg_a",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T11:19:49.458277Z",
+      "seed": 1035,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-12T11:19:53.430323Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: Express the following as a single fraction, writing your answer as simply as possible: \\( \\frac{1}{s}-\\frac{t}{3} \\). I got \\( \\frac{1-t}{3 s} \\) because I treated the fractions like ordinary numbers.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's correct that misconception. When subtracting fractions, we need to find a common denominator and then subtract the numerators while keeping the denominator the same. In this case, the common denominator is 3s. So the correct answer is \\( \\frac{3-t}{3s} \\). Can you explain why we need to find a common denominator when subtracting fractions?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Okay, I think I get that we need a common denominator to make sure we're working with the same size pieces when we subtract. So, if the denominators are different, we can't just subtract the numerators like regular numbers. But why do we keep the common denominator the same when we subtract?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "That's correct! By keeping the common denominator the same, we ensure that the fractions we are subtracting are equivalent and can be combined properly. This helps us maintain the integrity of the fractions and accurately perform the subtraction operation.",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 2,
+    "R3": 2,
+    "R4": 2,
+    "R5": 2,
+    "R6": 4,
+    "justification_pass1": "The teacher directly states the correct answer without engaging the specific misconception (subtracting numerators and multiplying denominators), provides mathematically incorrect content (the correct answer should be \\(\\frac{3-st}{3s}\\), not \\(\\frac{3-t}{3s}\\)), and while the student shows some conceptual understanding about common denominators, there's no evidence they can now correctly execute the original problem.",
+    "justification_pass2": "The teacher directly explains the correct procedure with a worked example, identifies the misconception, checks understanding with a question, and provides clear explanations, which aligns well with traditional teaching methods, though could be slightly more comprehensive in showing the step-by-step conversion process.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 2,\n  \"R3\": 2,\n  \"R4\": 2,\n  \"R5\": 2,\n  \"brief_justification\": \"The teacher directly states the correct answer without engaging the specific misconception (subtracting numerators and multiplying denominators), provides mathematically incorrect content (the correct answer should be \\\\(\\\\frac{3-st}{3s}\\\\), not \\\\(\\\\frac{3-t}{3s}\\\\)), and while the student shows some conceptual understanding about common denominators, there's no evidence they can now correctly execute the original problem.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 4, \"brief_justification\": \"The teacher directly explains the correct procedure with a worked example, identifies the misconception, checks understanding with a question, and provides clear explanations, which aligns well with traditional teaching methods, though could be slightly more comprehensive in showing the step-by-step conversion process.\"}\n```",
+    "quality_composite": 2.0,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T11:20:00.993840+00:00"
+}

@@ -1,0 +1,66 @@
+{
+  "state": {
+    "case_id": "case_7",
+    "misconception_label": "Divided by 100 rather than 10",
+    "misconception_features": [
+      0.0,
+      7.0,
+      3.0,
+      21.0
+    ],
+    "persona": "rule_based",
+    "architecture": "hybrid",
+    "student_leg": "leg_b",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T09:24:37.913564Z",
+      "seed": 432,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-12T09:24:41.720881Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: \\( 43.2 \\div 10= \\). I got \\( 0.432 \\) because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "You divided by 100 instead of 10. Remember, when dividing by 10, you move the decimal point one place to the left. So, \\( 43.2 \\div 10 = 4.32 \\). Keep in mind to divide by 10, not 100.",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Oh right, I see! So I moved the decimal point two places instead of one. So for dividing by 10 I just move it one place to the left, not two? That makes sense now, thanks!",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "That's correct! Remember, when dividing by 10, you only need to move the decimal point one place to the left. Great job on understanding the correct procedure now. Keep practicing and you'll become even more confident with dividing by 10.",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 4,
+    "R2": 1,
+    "R3": 2,
+    "R4": 5,
+    "R5": 3,
+    "R6": 5,
+    "justification_pass1": "The teacher explicitly identifies the specific misconception (dividing by 100 instead of 10) and provides accurate mathematical content, but simply tells the student the answer and procedure rather than eliciting reasoning, while the student shows surface-level understanding by repeating the rule without demonstrating deeper comprehension.",
+    "justification_pass2": "The teacher exemplifies rule-based instruction by explicitly stating the procedural rule for dividing by 10, providing direct corrective feedback on the specific error (dividing by 100 instead of 10), and reinforcing the correct procedure with clear step-by-step guidance.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 4,\n  \"R2\": 1,\n  \"R3\": 2,\n  \"R4\": 5,\n  \"R5\": 3,\n  \"brief_justification\": \"The teacher explicitly identifies the specific misconception (dividing by 100 instead of 10) and provides accurate mathematical content, but simply tells the student the answer and procedure rather than eliciting reasoning, while the student shows surface-level understanding by repeating the rule without demonstrating deeper comprehension.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 5, \"brief_justification\": \"The teacher exemplifies rule-based instruction by explicitly stating the procedural rule for dividing by 10, providing direct corrective feedback on the specific error (dividing by 100 instead of 10), and reinforcing the correct procedure with clear step-by-step guidance.\"}\n```",
+    "quality_composite": 2.3333333333333335,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T09:24:50.927284+00:00"
+}

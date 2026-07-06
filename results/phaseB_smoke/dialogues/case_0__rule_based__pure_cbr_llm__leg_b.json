@@ -1,0 +1,65 @@
+{
+  "state": {
+    "case_id": "case_0",
+    "misconception_label": "Confuses the order of operations, believes addition comes before multiplication",
+    "misconception_features": [
+      0.0,
+      0.0,
+      1.0,
+      70.0
+    ],
+    "persona": "rule_based",
+    "architecture": "pure_cbr_llm",
+    "student_leg": "leg_b",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T06:24:43.470023Z",
+      "seed": 76,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "ended_at": "2026-05-12T06:24:47.261426Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: \\[ 3 \\times 2+4-5 \\] Where do the brackets need to go to make the answer equal \\( 13 \\) ? I got Does not need brackets because I worked left to right instead of following the order of operations.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "You are correct in identifying the misconception of carrying out operations from left to right instead of following the order of operations. To correctly solve the expression \\[ 3 \\times 2 + 4 - 5 \\] and make the answer equal to 13, you need to prioritize multiplication before addition and subtraction. Let's walk through the steps together to reinforce the correct order of operations.",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Oh right, so I need to do the multiplication first? So that would be 3 \u00d7 2 = 6, and then 6 + 4 - 5 = 5, but that's not 13... so I must need to put brackets somewhere to change it, yeah?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "You are on the right track by recognizing the need to prioritize multiplication first. However, your calculation of \\( 6 + 4 - 5 = 5 \\) is where the error lies. Let's revisit the order of operations and ensure we correctly follow them to find the answer equal to 13.",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 1,
+    "R3": 2,
+    "R4": 1,
+    "R5": 2,
+    "R6": 2,
+    "justification_pass1": "The teacher acknowledges the misconception but provides confusing guidance, as the student's calculation (6+4-5=5) is actually correct and brackets ARE needed to get 13, yet the teacher suggests revisiting order of operations rather than addressing bracket placement, creating mathematical confusion.",
+    "justification_pass2": "While the teacher mentions procedures and identifies errors, they consistently avoid stating explicit rules, showing worked steps, or giving direct corrective feedback, instead using vague phrases like 'let's walk through' and 'let's revisit' without actually doing so.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 1,\n  \"R3\": 2,\n  \"R4\": 1,\n  \"R5\": 2,\n  \"brief_justification\": \"The teacher acknowledges the misconception but provides confusing guidance, as the student's calculation (6+4-5=5) is actually correct and brackets ARE needed to get 13, yet the teacher suggests revisiting order of operations rather than addressing bracket placement, creating mathematical confusion.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\n  \"R6\": 2,\n  \"brief_justification\": \"While the teacher mentions procedures and identifies errors, they consistently avoid stating explicit rules, showing worked steps, or giving direct corrective feedback, instead using vague phrases like 'let's walk through' and 'let's revisit' without actually doing so.\"\n}\n```",
+    "quality_composite": 1.6666666666666667,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T06:24:55.100915+00:00"
+}

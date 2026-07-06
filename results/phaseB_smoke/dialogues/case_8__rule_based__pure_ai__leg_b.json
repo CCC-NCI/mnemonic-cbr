@@ -1,0 +1,66 @@
+{
+  "state": {
+    "case_id": "case_8",
+    "misconception_label": "Does not find a common denominator when adding/subtracting fractions",
+    "misconception_features": [
+      0.0,
+      8.0,
+      3.0,
+      88.0
+    ],
+    "persona": "rule_based",
+    "architecture": "pure_ai",
+    "student_leg": "leg_b",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T09:33:50.907464Z",
+      "seed": 480,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-12T09:33:56.687415Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: \\( \\frac{4}{5}-\\frac{1}{3}=\\frac{\\bigstar}{15} \\) What should replace the star? I got \\( 5 \\) because I treated the fractions like ordinary numbers.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "To add or subtract fractions, you need to find a common denominator. In this case, the common denominator for 5 and 3 is 15. When subtracting fractions, you subtract the numerators while keeping the common denominator the same. So the correct answer is \\( \\frac{4}{5}-\\frac{1}{3}=\\frac{7}{15} \\). Remember to always find a common denominator when working with fractions.",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Oh right, so I need to change both fractions to have 15 on the bottom first? So like, \\( \\frac{4}{5} \\) becomes \\( \\frac{12}{15} \\) and \\( \\frac{1}{3} \\) becomes \\( \\frac{5}{15} \\), and then I can do \\( 12 - 5 = 7 \\)? But how do I know what to multiply by to get 15 on the bottom?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Yes, you are correct. To find a common denominator, you need to think about the least common multiple of the denominators. In this case, the least common multiple of 5 and 3 is 15. So you can multiply the numerator and denominator of \\( \\frac{4}{5} \\) by 3 to get \\( \\frac{12}{15} \\) and \\( \\frac{1}{3} \\) by 5 to get \\( \\frac{5}{15} \\).",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 1,
+    "R3": 2,
+    "R4": 5,
+    "R5": 4,
+    "R6": 5,
+    "justification_pass1": "The teacher provides mathematically correct explanations but simply tells the student the procedure and answer rather than engaging with why treating fractions like ordinary numbers fails or prompting the student to reason through the steps themselves, though the student does show improved understanding by Turn 2.",
+    "justification_pass2": "The teacher consistently states explicit procedures (find common denominator, subtract numerators), provides worked steps with specific calculations, and gives direct corrective feedback on the student's procedural error, which is a textbook example of rule-based instruction.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 1,\n  \"R3\": 2,\n  \"R4\": 5,\n  \"R5\": 4,\n  \"brief_justification\": \"The teacher provides mathematically correct explanations but simply tells the student the procedure and answer rather than engaging with why treating fractions like ordinary numbers fails or prompting the student to reason through the steps themselves, though the student does show improved understanding by Turn 2.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 5, \"brief_justification\": \"The teacher consistently states explicit procedures (find common denominator, subtract numerators), provides worked steps with specific calculations, and gives direct corrective feedback on the student's procedural error, which is a textbook example of rule-based instruction.\"}\n```",
+    "quality_composite": 1.6666666666666667,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T09:34:03.607013+00:00"
+}

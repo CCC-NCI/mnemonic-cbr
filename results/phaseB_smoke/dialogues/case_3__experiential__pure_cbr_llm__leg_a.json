@@ -1,0 +1,65 @@
+{
+  "state": {
+    "case_id": "case_3",
+    "misconception_label": "Does not know the properties of a rectangle",
+    "misconception_features": [
+      0.0,
+      3.0,
+      3.0,
+      67.0
+    ],
+    "persona": "experiential",
+    "architecture": "pure_cbr_llm",
+    "student_leg": "leg_a",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T06:59:48.053963Z",
+      "seed": 215,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "ended_at": "2026-05-12T06:59:52.453626Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: The angles highlighted on this rectangle with different length sides can never be... ![A rectangle with the diagonals drawn in. The angle on the right hand side at the centre is highlighted in red and the angle at the bottom at the centre is highlighted in yellow.](). I got acute because I assumed all the angles in the figure are equal.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's think of a rectangle like a table with four legs of equal length. Just like how all the legs of the table need to be the same to keep it stable, all the angles in a rectangle need to be the same for it to be a rectangle. So, if some of the angles are different, it can't be a rectangle.",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Okay, I think I get that all the angles in a rectangle are the same, but what about the angles where the diagonals meet? Are they always the same too? I thought they could be different since the sides are different lengths.",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Think of the intersecting diagonals in a rectangle like the intersecting lines on a tic-tac-toe board. Just like how the lines always meet at the same point in the center of the board, the diagonals of a rectangle always meet at the same point and create equal angles.",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 1,
+    "R3": 2,
+    "R4": 1,
+    "R5": 1,
+    "R6": 5,
+    "justification_pass1": "The teacher uses inaccurate analogies (table legs for angles, tic-tac-toe for diagonal intersections) that don't address the student's actual confusion about angles at the center where diagonals meet, and the student shows no improvement in understanding by the end.",
+    "justification_pass2": "The teacher consistently uses concrete, everyday analogies (table legs, tic-tac-toe board) to explain abstract geometric properties, which is a textbook example of the experiential strategy.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\"R1\": 2, \"R2\": 1, \"R3\": 2, \"R4\": 1, \"R5\": 1, \"brief_justification\": \"The teacher uses inaccurate analogies (table legs for angles, tic-tac-toe for diagonal intersections) that don't address the student's actual confusion about angles at the center where diagonals meet, and the student shows no improvement in understanding by the end.\"}\n```\n\nThe teacher misunderstands the student's question (which is about the angles formed where diagonals intersect at the center, not the corner angles of the rectangle), provides mathematically incorrect information (the angles where diagonals meet are NOT always equal unless the rectangle is a square), uses poor analogies that don't illuminate the geometry, requires no reasoning from the student, and the student demonstrates no progress in correcting their misconception.",
+    "pass2_raw_text": "```json\n{\"R6\": 5, \"brief_justification\": \"The teacher consistently uses concrete, everyday analogies (table legs, tic-tac-toe board) to explain abstract geometric properties, which is a textbook example of the experiential strategy.\"}\n```",
+    "quality_composite": 1.6666666666666667,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T07:00:01.314192+00:00"
+}

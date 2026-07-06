@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_19",
+    "misconception_label": "When subtracting fractions, subtracts the numerators and multiplies the denominators",
+    "misconception_features": [
+      0.0,
+      19.0,
+      3.0,
+      104.0
+    ],
+    "persona": "traditional",
+    "architecture": "baseline",
+    "student_leg": "leg_a",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T16:57:57.433851Z",
+      "seed": 1033,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T16:58:15.411067Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: Express the following as a single fraction, writing your answer as simply as possible: \\( \\frac{1}{s}-\\frac{t}{3} \\). I got \\( \\frac{1-t}{3 s} \\) because I treated the fractions like ordinary numbers.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let me explain the correct method, and then we will work through an example together. When subtracting fractions, we actually need to find a common denominator first before combining them. Can you tell me what the common denominator would be in this case?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Okay, so I think the common denominator for \\( \\frac{1}{s} \\) and \\( \\frac{t}{3} \\) would be \\( 3s \\), right? But I\u2019m not really sure how to use that to actually subtract the fractions. Do I just change both fractions to have that denominator and then subtract?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let me explain the correct method, and then we will work through an example together. Yes, you are correct that the common denominator for \\( \\frac{1}{s} \\) and \\( \\frac{t}{3} \\) is \\( 3s \\). To subtract the fractions, we need to rewrite each fraction so they have the same denominator before combining them. Can you try rewriting the fractions with the common denominator of \\( 3s \\)?",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "Okay, so for \\( \\frac{1}{s} \\), I think I need to multiply the top and bottom by 3 to get \\( \\frac{3}{3s} \\). And for \\( \\frac{t}{3} \\), I would multiply the top and bottom by \\( s \\) to get \\( \\frac{ts}{3s} \\). But then, how do I actually subtract those two fractions? Do I just take the numerators and subtract them like I did before?",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 2,
+    "R3": 2,
+    "R4": 5,
+    "R5": 3,
+    "R6": 2,
+    "justification_pass1": "The teacher provides mathematically correct guidance but doesn't explicitly address the specific misconception (subtracting numerators and multiplying denominators), instead offering generic procedural steps; the student shows some progress in finding common denominators and rewriting fractions but still expresses uncertainty about the subtraction step at the end.",
+    "justification_pass2": "While the teacher does check understanding by asking questions, they fail to provide the direct explanation and worked example that defines the traditional strategy, instead repeatedly prompting the student to work through it themselves in a more guided discovery approach.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 2,\n  \"R3\": 2,\n  \"R4\": 5,\n  \"R5\": 3,\n  \"brief_justification\": \"The teacher provides mathematically correct guidance but doesn't explicitly address the specific misconception (subtracting numerators and multiplying denominators), instead offering generic procedural steps; the student shows some progress in finding common denominators and rewriting fractions but still expresses uncertainty about the subtraction step at the end.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 2, \"brief_justification\": \"While the teacher does check understanding by asking questions, they fail to provide the direct explanation and worked example that defines the traditional strategy, instead repeatedly prompting the student to work through it themselves in a more guided discovery approach.\"}\n```",
+    "quality_composite": 2.0,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T16:58:22.874533+00:00"
+}

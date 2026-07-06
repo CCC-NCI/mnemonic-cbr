@@ -1,0 +1,66 @@
+{
+  "state": {
+    "case_id": "case_14",
+    "misconception_label": "Stops iteration too early when solving equations",
+    "misconception_features": [
+      0.0,
+      14.0,
+      3.0,
+      85.0
+    ],
+    "persona": "constructive",
+    "architecture": "baseline",
+    "student_leg": "leg_a",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T10:25:56.203370Z",
+      "seed": 753,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-12T10:25:59.366138Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: \\( x_{n+1}=5-\\frac{1}{x_{n}} \\) Using a starting value of \\( x_{1}=2 \\), what is the solution to \\( x=5-\\frac{1}{x} \\) to \\( 2 \\) decimal places? I got \\( 4.78 \\) because I added the parts of the ratio as if they were a total.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's go back to the part you do know, and build the next step from there.",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Okay, so I think I need to keep going with the iterations instead of stopping too early. I started with \\( x_1 = 2 \\), and then I found \\( x_2 = 5 - \\frac{1}{2} = 4.5 \\). But I'm not sure what to do next or how many times I should keep going. How do I know when I've got the answer to two decimal places?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's keep building on what you've already done. Remember to continue the iteration process to get closer to the solution.",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 2,
+    "R3": 2,
+    "R4": 3,
+    "R5": 3,
+    "R6": 2,
+    "justification_pass1": "The teacher provides only generic encouragement to 'keep going' without addressing the student's specific question about convergence criteria, though the student does show some progress in recognizing they need to continue iterating.",
+    "justification_pass2": "While the teacher attempts to scaffold by encouraging the student to build on known steps, they fail to break the problem into manageable parts, provide no specific guidance on the convergence criterion the student explicitly asks about, and don't adjust support level when the student clearly needs more concrete direction about when to stop iterating.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 2,\n  \"R3\": 2,\n  \"R4\": 3,\n  \"R5\": 3,\n  \"brief_justification\": \"The teacher provides only generic encouragement to 'keep going' without addressing the student's specific question about convergence criteria, though the student does show some progress in recognizing they need to continue iterating.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 2, \"brief_justification\": \"While the teacher attempts to scaffold by encouraging the student to build on known steps, they fail to break the problem into manageable parts, provide no specific guidance on the convergence criterion the student explicitly asks about, and don't adjust support level when the student clearly needs more concrete direction about when to stop iterating.\"}\n```",
+    "quality_composite": 2.0,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T10:26:06.550182+00:00"
+}

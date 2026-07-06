@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_23",
+    "misconception_label": "Confuses rest and movement on a distance time graph",
+    "misconception_features": [
+      0.0,
+      23.0,
+      3.0,
+      62.0
+    ],
+    "persona": "socratic",
+    "architecture": "pure_ai",
+    "student_leg": "leg_b",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T17:34:21.435157Z",
+      "seed": 1200,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T17:34:26.527659Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: This graph shows how far Fido the dog is from his home. What might the negative-sloping section represent? ![A graph with time (secs) on the horizontal axis and distance (m) on the vertical axis. The graph starts at the origin, travels in a straight line up and right, travels horizontally, then travels in a straight line down and right back to the x-axis. ](). I got Fido has fallen asleep because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Why do you think Fido falling asleep would result in a negative-sloping section on the graph? Can you think of any other scenarios that might explain that part of the graph?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Um, I guess if Fido fell asleep the line would just be flat, wouldn't it? So maybe the negative slope means he's moving... but I'm confused because the distance is going down, so does that mean he's going backwards or something? Is he moving away from home or towards home?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "What do you think would happen to the distance if Fido was moving towards his home? How could you use the information on the graph to determine his direction of movement?",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "Oh right, so if the distance is going down, that means he's getting closer to home, so he must be moving *towards* home! But I'm still a bit confused - does that mean a negative slope always means moving towards something, or is it just because the distance numbers are getting smaller?",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 4,
+    "R2": 4,
+    "R3": 4,
+    "R4": 5,
+    "R5": 5,
+    "R6": 5,
+    "justification_pass1": "The teacher effectively addresses the rest/movement confusion through well-calibrated questions that prompt the student to reason through the graph's meaning, resulting in clear progression from thinking sleep causes negative slope to correctly understanding that decreasing distance indicates movement toward home.",
+    "justification_pass2": "The teacher consistently uses probing questions to guide the student's thinking, never provides direct answers, and effectively uses the student's initial flawed reasoning (Fido falling asleep) to prompt deeper analysis through questioning.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 4,\n  \"R2\": 4,\n  \"R3\": 4,\n  \"R4\": 5,\n  \"R5\": 5,\n  \"brief_justification\": \"The teacher effectively addresses the rest/movement confusion through well-calibrated questions that prompt the student to reason through the graph's meaning, resulting in clear progression from thinking sleep causes negative slope to correctly understanding that decreasing distance indicates movement toward home.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 5, \"brief_justification\": \"The teacher consistently uses probing questions to guide the student's thinking, never provides direct answers, and effectively uses the student's initial flawed reasoning (Fido falling asleep) to prompt deeper analysis through questioning.\"}\n```",
+    "quality_composite": 4.0,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T17:34:32.980564+00:00"
+}

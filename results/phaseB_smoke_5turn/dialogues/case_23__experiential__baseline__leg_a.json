@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_23",
+    "misconception_label": "Confuses rest and movement on a distance time graph",
+    "misconception_features": [
+      0.0,
+      23.0,
+      3.0,
+      62.0
+    ],
+    "persona": "experiential",
+    "architecture": "baseline",
+    "student_leg": "leg_a",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T17:37:05.358199Z",
+      "seed": 1213,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T17:37:09.650486Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: This graph shows how far Fido the dog is from his home. What might the negative-sloping section represent? ![A graph with time (secs) on the horizontal axis and distance (m) on the vertical axis. The graph starts at the origin, travels in a straight line up and right, travels horizontally, then travels in a straight line down and right back to the x-axis. ](). I got Fido has fallen asleep because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Imagine you were walking your dog and tracking how far they are from home. Would your method still give the right answer if your dog stopped to take a nap?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "I guess if the dog stopped to take a nap, the graph would go flat instead of going down, right? But I still don\u2019t really get what the negative slope means. Does it mean Fido is moving back towards home?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Imagine you were riding a bike away from your house, then stopped to rest for a bit. Would the graph show you moving backwards towards home during that rest period?",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "I think I get it a bit better now. So when the graph goes down, it means Fido is actually moving back towards home, right? But I still don\u2019t really understand how to tell the difference between when he\u2019s resting and when he\u2019s moving back. Can you explain that again?",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 4,
+    "R2": 3,
+    "R3": 3,
+    "R4": 5,
+    "R5": 4,
+    "R6": 5,
+    "justification_pass1": "The teacher effectively addresses the specific misconception through well-chosen analogies that prompt student reasoning, and the student demonstrates clear progress from confusing rest with negative slope to correctly understanding that negative slope means returning home, though they still seek clarification on distinguishing rest from movement.",
+    "justification_pass2": "The teacher consistently uses concrete, everyday scenarios (walking a dog, riding a bike away from home) to help the student understand the abstract concept of negative slope on a distance-time graph, which is a textbook example of the experiential strategy.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 4,\n  \"R2\": 3,\n  \"R3\": 3,\n  \"R4\": 5,\n  \"R5\": 4,\n  \"brief_justification\": \"The teacher effectively addresses the specific misconception through well-chosen analogies that prompt student reasoning, and the student demonstrates clear progress from confusing rest with negative slope to correctly understanding that negative slope means returning home, though they still seek clarification on distinguishing rest from movement.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 5, \"brief_justification\": \"The teacher consistently uses concrete, everyday scenarios (walking a dog, riding a bike away from home) to help the student understand the abstract concept of negative slope on a distance-time graph, which is a textbook example of the experiential strategy.\"}\n```",
+    "quality_composite": 3.3333333333333335,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T17:37:16.103471+00:00"
+}

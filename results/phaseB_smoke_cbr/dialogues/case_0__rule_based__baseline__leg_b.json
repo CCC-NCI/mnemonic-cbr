@@ -1,0 +1,66 @@
+{
+  "state": {
+    "case_id": "case_0",
+    "misconception_label": "Confuses the order of operations, believes addition comes before multiplication",
+    "misconception_features": [
+      0.0,
+      0.0,
+      1.0,
+      70.0
+    ],
+    "persona": "rule_based",
+    "architecture": "baseline",
+    "student_leg": "leg_b",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T08:10:34.938455Z",
+      "seed": 74,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "cbr_grounded",
+      "ended_at": "2026-05-12T08:10:39.410800Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: \\[ 3 \\times 2+4-5 \\] Where do the brackets need to go to make the answer equal \\( 13 \\) ? I got Does not need brackets because I worked left to right instead of following the order of operations.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "There is a specific procedure for this. Step 1 is to identify the operation; step 2 is to apply the rule for that operation. In this case, you need to remember that multiplication comes before addition in the order of operations.",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Oh right, so multiplication comes *before* addition? I think I was doing it backwards then. So if I do the multiplication first, that would be 3 \u00d7 2 = 6, and then 6 + 4 - 5... but that gives me 5, not 13. Do I still need brackets somewhere to make it 13?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "There is a specific procedure for this. Step 1 is to identify the operation; step 2 is to apply the rule for that operation. In this case, you correctly performed the multiplication step, but you still need to follow the order of operations when adding and subtracting. Let's double check your addition and subtraction steps.",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 1,
+    "R3": 1,
+    "R4": 2,
+    "R5": 3,
+    "R6": 5,
+    "justification_pass1": "The teacher uses a rigid procedural script that doesn't engage the student's actual question about bracket placement, provides minimal cognitive demand by just telling rather than prompting reasoning, and misses that the student needs help determining where brackets go to make the expression equal 13 (not just checking arithmetic).",
+    "justification_pass2": "The teacher consistently states explicit procedures (Step 1, Step 2), directly corrects the procedural error about order of operations, and provides structured guidance on following the multiplication-before-addition rule, which is a textbook example of rule-based instruction.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 1,\n  \"R3\": 1,\n  \"R4\": 2,\n  \"R5\": 3,\n  \"brief_justification\": \"The teacher uses a rigid procedural script that doesn't engage the student's actual question about bracket placement, provides minimal cognitive demand by just telling rather than prompting reasoning, and misses that the student needs help determining where brackets go to make the expression equal 13 (not just checking arithmetic).\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 5, \"brief_justification\": \"The teacher consistently states explicit procedures (Step 1, Step 2), directly corrects the procedural error about order of operations, and provides structured guidance on following the multiplication-before-addition rule, which is a textbook example of rule-based instruction.\"}\n```",
+    "quality_composite": 1.3333333333333333,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T08:10:47.295149+00:00"
+}

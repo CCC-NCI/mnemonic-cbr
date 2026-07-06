@@ -1,0 +1,66 @@
+{
+  "state": {
+    "case_id": "case_19",
+    "misconception_label": "When subtracting fractions, subtracts the numerators and multiplies the denominators",
+    "misconception_features": [
+      0.0,
+      19.0,
+      3.0,
+      104.0
+    ],
+    "persona": "experiential",
+    "architecture": "hybrid",
+    "student_leg": "leg_b",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T11:17:29.632362Z",
+      "seed": 1022,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-12T11:17:33.742468Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: Express the following as a single fraction, writing your answer as simply as possible: \\( \\frac{1}{s}-\\frac{t}{3} \\). I got \\( \\frac{1-t}{3 s} \\) because I treated the fractions like ordinary numbers.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Imagine you have a pizza sliced into thirds. If you take away one slice from one pizza and one slice from another, how many slices do you have left in total? Subtracting fractions is like taking away slices of pizza, not just the numbers themselves. Let's think about how we can subtract fractions by looking at the parts we're taking away.",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Oh right, so I need to think about what the pieces actually are, not just subtract any numbers... But I'm still confused about how to actually do it with different denominators like 3 and s. Do I need to make them the same somehow first?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Think of the different denominators as different sizes of pizzas. Just like you wouldn't try to subtract slices from pizzas of different sizes, we need to make the denominators the same size before we can subtract the fractions. Let's find a common denominator that both 3 and s can fit into, so we can subtract the slices properly.",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 2,
+    "R3": 3,
+    "R4": 4,
+    "R5": 3,
+    "R6": 5,
+    "justification_pass1": "The teacher uses a pizza analogy but doesn't directly address the specific misconception (subtracting numerators and multiplying denominators), and while the student progresses to recognizing the need for common denominators, they haven't yet demonstrated ability to execute the correct procedure.",
+    "justification_pass2": "The teacher consistently uses concrete pizza analogies throughout both turns to ground the abstract concepts of fraction subtraction and common denominators in everyday, tangible experiences.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 2,\n  \"R3\": 3,\n  \"R4\": 4,\n  \"R5\": 3,\n  \"brief_justification\": \"The teacher uses a pizza analogy but doesn't directly address the specific misconception (subtracting numerators and multiplying denominators), and while the student progresses to recognizing the need for common denominators, they haven't yet demonstrated ability to execute the correct procedure.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 5, \"brief_justification\": \"The teacher consistently uses concrete pizza analogies throughout both turns to ground the abstract concepts of fraction subtraction and common denominators in everyday, tangible experiences.\"}\n```",
+    "quality_composite": 2.3333333333333335,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T11:17:40.193467+00:00"
+}

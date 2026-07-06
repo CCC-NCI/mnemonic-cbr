@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_18",
+    "misconception_label": "Assumes that an arrow on a number line starts at zero",
+    "misconception_features": [
+      0.0,
+      18.0,
+      2.0,
+      73.0
+    ],
+    "persona": "constructive",
+    "architecture": "pure_cbr_tpl",
+    "student_leg": "leg_a",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T16:41:37.201307Z",
+      "seed": 957,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T16:41:40.562189Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: ![Number line with -12 and -7 marked. Starting at -12, follow an arrow pointing to the right labelled +10. Then there is an arrow labelled b pointing to the left, which ends at -7 on the number line.]() What is the value of \\( b \\) ? I got \\( -7 \\) because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's think about this. From similar cases:\n  1. Topic: Count backwards through zero starting from a positive integer. Correct answer (A): \\( 5 \\). Student selected: \\( 6 \\). Underlying misconception: Counts the starting number when counting backwards. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.\n  2. Topic: Use the nth term rule for descending integer linear sequences to find another term in a the sequence. Correct answer (A): \\( -44 \\). Student selected: \\( -46 \\). Underlying misconception: When subtracting past zero, adds the absolute values and then writes the answer with a negative sign. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.\n  3. Topic: Read an integer on a scale where the required measurement is marked by a dash between two numbers. Correct answer (C): \\( -4 \\). Student selected: \\( -7 \\). Underlying misconception: When reading integers on a number line, assumes each dash is 1. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "I think I get what you're saying, but I'm still confused. So, if the arrow starts at -12 and goes to the right by +10, that means I should add 10 to -12, right? But then how do I figure out what \\( b \\) is? I thought it just went straight to -7. Can you help me understand that part better?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's think about this. From similar cases:\n  1. Topic: Count backwards through zero starting from a positive integer. Correct answer (A): \\( 5 \\). Student selected: \\( 6 \\). Underlying misconception: Counts the starting number when counting backwards. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.\n  2. Topic: Use the nth term rule for descending integer linear sequences to find another term in a the sequence. Correct answer (A): \\( -44 \\). Student selected: \\( -46 \\). Underlying misconception: When subtracting past zero, adds the absolute values and then writes the answer with a negative sign. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.\n  3. Topic: Read an integer on a scale where the required measurement is marked by a dash between two numbers. Correct answer (C): \\( -4 \\). Student selected: \\( -7 \\). Underlying misconception: When reading integers on a number line, assumes each dash is 1. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "Okay, I think I understand that I need to add 10 to -12, which gives me -2. But I'm still not sure how to find \\( b \\) from there. If the arrow goes to the left and ends at -7, does that mean I have to do something else with -2? I'm a bit lost on how to connect those steps.",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 1,
+    "R2": 1,
+    "R3": 1,
+    "R4": 2,
+    "R5": 2,
+    "R6": 1,
+    "justification_pass1": "The teacher repeatedly provides irrelevant examples from unrelated problems instead of addressing the student's actual misconception about arrow starting points, offering no meaningful scaffolding while the student struggles to connect the steps despite making some progress independently.",
+    "justification_pass2": "The teacher merely repeats identical lists of similar cases without scaffolding, breaking down the problem into steps, or adjusting support based on the student's demonstrated progress from Turn 2 to Turn 4.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 1,\n  \"R2\": 1,\n  \"R3\": 1,\n  \"R4\": 2,\n  \"R5\": 2,\n  \"brief_justification\": \"The teacher repeatedly provides irrelevant examples from unrelated problems instead of addressing the student's actual misconception about arrow starting points, offering no meaningful scaffolding while the student struggles to connect the steps despite making some progress independently.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 1, \"brief_justification\": \"The teacher merely repeats identical lists of similar cases without scaffolding, breaking down the problem into steps, or adjusting support based on the student's demonstrated progress from Turn 2 to Turn 4.\"}\n```",
+    "quality_composite": 1.0,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T16:41:47.950128+00:00"
+}

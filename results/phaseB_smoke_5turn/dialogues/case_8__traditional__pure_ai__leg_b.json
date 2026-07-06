@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_8",
+    "misconception_label": "Does not find a common denominator when adding/subtracting fractions",
+    "misconception_features": [
+      0.0,
+      8.0,
+      3.0,
+      88.0
+    ],
+    "persona": "traditional",
+    "architecture": "pure_ai",
+    "student_leg": "leg_b",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T15:00:58.060046Z",
+      "seed": 490,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T15:01:04.418277Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: \\( \\frac{4}{5}-\\frac{1}{3}=\\frac{\\bigstar}{15} \\) What should replace the star? I got \\( 5 \\) because I treated the fractions like ordinary numbers.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "First, when adding or subtracting fractions, we need to find a common denominator. In this case, the common denominator for 5 and 3 is 15. Therefore, the correct answer is \\( \\frac{4}{5}-\\frac{1}{3}=\\frac{12}{15}-\\frac{5}{15}=\\frac{7}{15} \\). Can you explain why we need to find a common denominator in this situation?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Um, I think it's because the pieces are different sizes? Like, fifths and thirds aren't the same size so you can't just subtract them directly... but I'm still a bit confused about how you got 12 and 5 from 4 and 1. Can you show me that part again?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Sure, let's break it down. To find a common denominator, we need to multiply the denominators together. In this case, 5 and 3 have a common multiple of 15. So, when we convert 4/5 and 1/3 to have a denominator of 15, we get 12/15 and 5/15 respectively. This allows us to subtract the fractions accurately. Does that make sense?",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "Oh right, so you multiply the top and bottom by the same number to make them have the same denominator? So like, 4/5 becomes 12/15 because you multiply both the 4 and the 5 by 3? And then 1/3 becomes 5/15 because you multiply by 5? That makes more sense now, but why do we multiply by those specific numbers - like, how do you know to multiply by 3 and 5?",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 2,
+    "R3": 2,
+    "R4": 5,
+    "R5": 4,
+    "R6": 4,
+    "justification_pass1": "The teacher provides correct mathematics but primarily tells rather than elicits reasoning, though the student does show genuine progress from treating fractions as ordinary numbers to understanding equivalent fractions and asking insightful questions about the conversion process.",
+    "justification_pass2": "The teacher consistently provides direct explanations with worked examples (showing the conversion to 12/15 and 5/15), checks understanding with questions, and breaks down the procedure step-by-step, though could have been slightly more comprehensive in initially explaining the conversion multipliers.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 2,\n  \"R3\": 2,\n  \"R4\": 5,\n  \"R5\": 4,\n  \"brief_justification\": \"The teacher provides correct mathematics but primarily tells rather than elicits reasoning, though the student does show genuine progress from treating fractions as ordinary numbers to understanding equivalent fractions and asking insightful questions about the conversion process.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 4, \"brief_justification\": \"The teacher consistently provides direct explanations with worked examples (showing the conversion to 12/15 and 5/15), checks understanding with questions, and breaks down the procedure step-by-step, though could have been slightly more comprehensive in initially explaining the conversion multipliers.\"}\n```",
+    "quality_composite": 2.0,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T15:01:11.688665+00:00"
+}

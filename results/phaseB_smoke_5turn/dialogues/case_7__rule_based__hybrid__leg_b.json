@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_7",
+    "misconception_label": "Divided by 100 rather than 10",
+    "misconception_features": [
+      0.0,
+      7.0,
+      3.0,
+      21.0
+    ],
+    "persona": "rule_based",
+    "architecture": "hybrid",
+    "student_leg": "leg_b",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T14:48:42.153297Z",
+      "seed": 432,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T14:48:48.150672Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: \\( 43.2 \\div 10= \\). I got \\( 0.432 \\) because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "You divided by 100 instead of 10. Remember, when dividing by 10, you move the decimal point one place to the left. So the correct answer is \\( 43.2 \\div 10 = 4.32 \\). Keep in mind the rule that dividing by 10 shifts the decimal point to the left.",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Oh right, I see! So I moved it two places when I should've only moved it one place to the left. So 43.2 becomes 4.32, not 0.432. But how do I remember which way to move it and how many places - is it always just one place for dividing by 10?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Yes, that's correct! When dividing by 10, you always move the decimal point one place to the left. Remember, dividing by 10 means you are dividing by a power of 10, so the decimal point shifts to the left. Keep practicing and it will become more natural to you.",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "Yeah, that makes sense! So like, if I was dividing by 100 instead, would I move it two places to the left? And does this work the same way for multiplying by 10 - would I move it to the right instead?",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 4,
+    "R2": 1,
+    "R3": 2,
+    "R4": 5,
+    "R5": 4,
+    "R6": 5,
+    "justification_pass1": "The teacher explicitly identifies the specific misconception (dividing by 100 instead of 10) and provides mathematically correct information, but simply tells the student the rule and answer rather than eliciting reasoning, though the student does show improved understanding by correctly generalizing the pattern in Turn 4.",
+    "justification_pass2": "The teacher consistently states explicit rules (decimal point movement), provides direct corrective feedback on the procedural error (divided by 100 instead of 10), and repeatedly reinforces the specific procedure throughout the dialogue.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 4,\n  \"R2\": 1,\n  \"R3\": 2,\n  \"R4\": 5,\n  \"R5\": 4,\n  \"brief_justification\": \"The teacher explicitly identifies the specific misconception (dividing by 100 instead of 10) and provides mathematically correct information, but simply tells the student the rule and answer rather than eliciting reasoning, though the student does show improved understanding by correctly generalizing the pattern in Turn 4.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 5, \"brief_justification\": \"The teacher consistently states explicit rules (decimal point movement), provides direct corrective feedback on the procedural error (divided by 100 instead of 10), and repeatedly reinforces the specific procedure throughout the dialogue.\"}\n```",
+    "quality_composite": 2.3333333333333335,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T14:48:54.806844+00:00"
+}

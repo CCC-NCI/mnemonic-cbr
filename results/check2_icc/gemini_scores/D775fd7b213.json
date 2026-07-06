@@ -1,0 +1,53 @@
+{
+  "blind_id": "D775fd7b213",
+  "subset_row": {
+    "blind_id": "D775fd7b213",
+    "case_id": "case_16",
+    "persona": "experiential",
+    "architecture": "baseline",
+    "student_leg": "leg_a",
+    "llm_R5": "3",
+    "llm_quality_composite": "2.3333333333333335",
+    "llm_R6": "2",
+    "difficulty_band": "long",
+    "r5_band": "mid",
+    "word_count": "81",
+    "attention_check_type": "",
+    "attention_check_rationale": "",
+    "file_path": "dialogues/case_16__experiential__baseline__leg_a.json"
+  },
+  "primary_score": {
+    "R1": 2,
+    "R2": 3,
+    "R3": 2,
+    "R4": 5,
+    "R5": 3,
+    "R6": 2,
+    "justification_pass1": "The teacher uses analogies to prompt reasoning but doesn't directly address the specific misconception of dividing by each part separately, and while the student makes some progress by Turn 4, they still haven't completed the solution or fully corrected their understanding.",
+    "justification_pass2": "While the teacher attempts to use concrete analogies (apples, friends in rooms), these examples don't effectively ground the mathematical concept of ratios and proportional division in a way that clarifies the problem, instead creating confusion about the procedure.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 3,\n  \"R3\": 2,\n  \"R4\": 5,\n  \"R5\": 3,\n  \"brief_justification\": \"The teacher uses analogies to prompt reasoning but doesn't directly address the specific misconception of dividing by each part separately, and while the student makes some progress by Turn 4, they still haven't completed the solution or fully corrected their understanding.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 2, \"brief_justification\": \"While the teacher attempts to use concrete analogies (apples, friends in rooms), these examples don't effectively ground the mathematical concept of ratios and proportional division in a way that clarifies the problem, instead creating confusion about the procedure.\"}\n```",
+    "quality_composite": 2.3333333333333335,
+    "is_complete": true
+  },
+  "secondary_score": {
+    "R1": 3,
+    "R2": 4,
+    "R3": 3,
+    "R4": 5,
+    "R5": 4,
+    "R6": 5,
+    "justification_pass1": "The teacher's second analogy successfully engages the student's reasoning and leads to a clear improvement, but the first attempt was poorly targeted to the student's actual error.",
+    "justification_pass2": "The teacher consistently uses concrete, real-world analogies like apples and friends to help the student reason about the abstract properties of ratios.",
+    "judge_provider": "gemini",
+    "judge_model": "gemini-2.5-pro",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 3,\n  \"R2\": 4,\n  \"R3\": 3,\n  \"R4\": 5,\n  \"R5\": 4,\n  \"brief_justification\": \"The teacher's second analogy successfully engages the student's reasoning and leads to a clear improvement, but the first attempt was poorly targeted to the student's actual error.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\n  \"R6\": 5,\n  \"brief_justification\": \"The teacher consistently uses concrete, real-world analogies like apples and friends to help the student reason about the abstract properties of ratios.\"\n}\n```"
+  }
+}

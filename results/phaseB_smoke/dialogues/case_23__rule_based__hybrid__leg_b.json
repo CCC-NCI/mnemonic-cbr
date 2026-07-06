@@ -1,0 +1,66 @@
+{
+  "state": {
+    "case_id": "case_23",
+    "misconception_label": "Confuses rest and movement on a distance time graph",
+    "misconception_features": [
+      0.0,
+      23.0,
+      3.0,
+      62.0
+    ],
+    "persona": "rule_based",
+    "architecture": "hybrid",
+    "student_leg": "leg_b",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T11:57:24.177059Z",
+      "seed": 1232,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-12T11:57:29.323307Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: This graph shows how far Fido the dog is from his home. What might the negative-sloping section represent? ![A graph with time (secs) on the horizontal axis and distance (m) on the vertical axis. The graph starts at the origin, travels in a straight line up and right, travels horizontally, then travels in a straight line down and right back to the x-axis. ](). I got Fido has fallen asleep because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "To find out what the negative-sloping section represents, we need to focus on the movement of Fido from his home. Remember, a negative slope on a distance-time graph indicates that Fido is moving away from his home. Make sure to correctly interpret the direction of Fido's movement on the graph.",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Oh wait, so a negative slope means he's moving away? But I thought you said the line was going down... doesn't that mean he's getting closer to home? I'm confused because I thought negative slope meant going backwards or something.",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "When interpreting a negative slope on a distance-time graph, it actually indicates that the object is moving away from its starting point. Just like with reading values from a graph, it's important to understand the direction of movement based on the slope. Let's focus on correctly identifying the direction of Fido's movement on the graph.",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 1,
+    "R2": 1,
+    "R3": 1,
+    "R4": 1,
+    "R5": 1,
+    "R6": 1,
+    "justification_pass1": "The teacher provides mathematically incorrect information (claiming negative slope means moving away when it actually means returning home), fails to engage with the student's confusion about the downward slope, and the student becomes more confused rather than improving their understanding.",
+    "justification_pass2": "The teacher provides incorrect information (claiming negative slope means moving away when it actually means returning home) and fails to state explicit procedures, show worked steps, or give direct corrective feedback on the procedural error, which are core elements of rule-based instruction.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 1,\n  \"R2\": 1,\n  \"R3\": 1,\n  \"R4\": 1,\n  \"R5\": 1,\n  \"brief_justification\": \"The teacher provides mathematically incorrect information (claiming negative slope means moving away when it actually means returning home), fails to engage with the student's confusion about the downward slope, and the student becomes more confused rather than improving their understanding.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 1, \"brief_justification\": \"The teacher provides incorrect information (claiming negative slope means moving away when it actually means returning home) and fails to state explicit procedures, show worked steps, or give direct corrective feedback on the procedural error, which are core elements of rule-based instruction.\"}\n```",
+    "quality_composite": 1.0,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T11:57:36.269250+00:00"
+}

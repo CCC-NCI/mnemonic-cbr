@@ -1,0 +1,66 @@
+{
+  "state": {
+    "case_id": "case_22",
+    "misconception_label": "Does not realise that adding a larger number gives a larger answer",
+    "misconception_features": [
+      0.0,
+      22.0,
+      2.0,
+      98.0
+    ],
+    "persona": "rule_based",
+    "architecture": "baseline",
+    "student_leg": "leg_b",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T11:46:14.668726Z",
+      "seed": 1174,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-12T11:46:18.520518Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: Tom and Katie are discussing related calculations Tom says if you know that \\( 3748+426=4174 \\), then \\( 3748+427 \\) must equal \\( \\mathbf{4 1 7 5} \\) Katie says if you know that \\( 3748-426=3322 \\), then \\( 3748 \\) - \\( 427 \\) must equal \\( \\mathbf{3 3 2 3} \\) Who is correct? I got Only Katie because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "There is a specific procedure for this. Step 1 is to identify the operation; step 2 is to apply the rule for that operation. In this case, adding a larger number will give a larger answer. So, for \\(3748+427\\), the correct answer is \\(4175\\).",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Oh right, so Tom is actually correct then? So when you add a bigger number like 427 instead of 426, you get a bigger answer... but I'm still a bit confused about why Katie's one doesn't work the same way - doesn't subtracting a bigger number also make the answer bigger?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "There is a specific procedure for this. Step 1 is to identify the operation; step 2 is to apply the rule for that operation. In this case, subtracting a larger number will give a smaller answer. So, for \\(3748-427\\), the correct answer is \\(3321\\).",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 1,
+    "R3": 1,
+    "R4": 5,
+    "R5": 1,
+    "R6": 5,
+    "justification_pass1": "The teacher provides correct mathematical information but merely states rules without engaging the student's reasoning, and the student's Turn 2 response reveals the core misconception remains unaddressed, showing no improvement in understanding why operations behave differently.",
+    "justification_pass2": "The teacher consistently states explicit procedures (Step 1 and Step 2), provides direct rules for operations (adding/subtracting larger numbers), and gives direct corrective feedback on the procedural errors in both turns, making this a textbook example of rule-based instruction.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 1,\n  \"R3\": 1,\n  \"R4\": 5,\n  \"R5\": 1,\n  \"brief_justification\": \"The teacher provides correct mathematical information but merely states rules without engaging the student's reasoning, and the student's Turn 2 response reveals the core misconception remains unaddressed, showing no improvement in understanding why operations behave differently.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 5, \"brief_justification\": \"The teacher consistently states explicit procedures (Step 1 and Step 2), provides direct rules for operations (adding/subtracting larger numbers), and gives direct corrective feedback on the procedural errors in both turns, making this a textbook example of rule-based instruction.\"}\n```",
+    "quality_composite": 1.3333333333333333,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T11:46:25.258945+00:00"
+}

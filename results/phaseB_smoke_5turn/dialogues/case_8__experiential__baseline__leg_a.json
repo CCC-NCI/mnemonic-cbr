@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_8",
+    "misconception_label": "Does not find a common denominator when adding/subtracting fractions",
+    "misconception_features": [
+      0.0,
+      8.0,
+      3.0,
+      88.0
+    ],
+    "persona": "experiential",
+    "architecture": "baseline",
+    "student_leg": "leg_a",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T14:55:05.095473Z",
+      "seed": 463,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T14:55:11.440933Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: \\( \\frac{4}{5}-\\frac{1}{3}=\\frac{\\bigstar}{15} \\) What should replace the star? I got \\( 5 \\) because I treated the fractions like ordinary numbers.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Imagine you were baking cookies and needed to combine 4/5 of a cup of flour with 1/3 of a cup of sugar. Would you still use 5 as the denominator when finding a common denominator?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "I guess I wouldn't use 5 because I need to combine the amounts properly. But I'm still confused about how to find the right common denominator. Should I just multiply the denominators together or is there a better way?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Imagine you were planning a party and needed to combine 5 groups of 3 friends each with 4 groups of 5 friends each. Would you still use 5 as the denominator when finding a common denominator?",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "I think I get what you're saying about needing to combine things properly, but I'm still not sure how to find the common denominator. If I can't just multiply the denominators together, what should I do instead? Is there a way to find the smallest common denominator?",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 2,
+    "R3": 1,
+    "R4": 2,
+    "R5": 1,
+    "R6": 2,
+    "justification_pass1": "The teacher uses vague analogies that don't address the specific misconception of adding numerators directly, fails to respond to the student's explicit requests for help finding common denominators, and the student shows no progress toward understanding the actual procedure by the end.",
+    "justification_pass2": "While the teacher attempts to use real-world analogies (baking cookies, party planning), these analogies are confusing and don't actually map onto the mathematical structure of finding common denominators, failing to effectively ground the abstract concept in concrete experience.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 2,\n  \"R3\": 1,\n  \"R4\": 2,\n  \"R5\": 1,\n  \"brief_justification\": \"The teacher uses vague analogies that don't address the specific misconception of adding numerators directly, fails to respond to the student's explicit requests for help finding common denominators, and the student shows no progress toward understanding the actual procedure by the end.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 2, \"brief_justification\": \"While the teacher attempts to use real-world analogies (baking cookies, party planning), these analogies are confusing and don't actually map onto the mathematical structure of finding common denominators, failing to effectively ground the abstract concept in concrete experience.\"}\n```",
+    "quality_composite": 1.6666666666666667,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T14:55:17.688645+00:00"
+}

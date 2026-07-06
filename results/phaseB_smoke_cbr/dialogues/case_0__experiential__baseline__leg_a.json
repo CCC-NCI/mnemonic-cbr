@@ -1,0 +1,66 @@
+{
+  "state": {
+    "case_id": "case_0",
+    "misconception_label": "Confuses the order of operations, believes addition comes before multiplication",
+    "misconception_features": [
+      0.0,
+      0.0,
+      1.0,
+      70.0
+    ],
+    "persona": "experiential",
+    "architecture": "baseline",
+    "student_leg": "leg_a",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T08:08:36.572438Z",
+      "seed": 63,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "cbr_grounded",
+      "ended_at": "2026-05-12T08:08:40.085327Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: \\[ 3 \\times 2+4-5 \\] Where do the brackets need to go to make the answer equal \\( 13 \\) ? I got Does not need brackets because I worked left to right instead of following the order of operations.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Imagine you were trying to figure out how many boxes of pencils you need for each student in your class. If you count the number of students first, and then multiply by the number of pencils per student, will you get the same answer as if you multiply the number of pencils per student by the total number of students in your class?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "I think I get what you're saying about counting students first and then multiplying, but I'm still not sure how that helps with the brackets in my problem. So, like, if I do the multiplication first, would that change the answer? Can you explain how the order of operations really works?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Imagine you were making a sandwich with ham, cheese, and bread. If you put the ham and cheese together first, and then add the bread, would it taste the same as if you put the cheese and bread together first, and then add the ham? The order in which you combine the ingredients can change the outcome, just like in the order of operations in math.",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 1,
+    "R2": 2,
+    "R3": 1,
+    "R4": 2,
+    "R5": 1,
+    "R6": 2,
+    "justification_pass1": "The teacher uses vague analogies that don't address the specific misconception about addition before multiplication, the student explicitly asks for direct help with order of operations in Turn 2 but receives another unhelpful analogy, and there's no evidence of improved understanding.",
+    "justification_pass2": "While the teacher attempts to use real-world analogies (pencils/students, sandwich-making), these analogies are poorly matched to the mathematical concept and fail to meaningfully connect the concrete situations to how brackets and order of operations actually work in the given problem.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 1,\n  \"R2\": 2,\n  \"R3\": 1,\n  \"R4\": 2,\n  \"R5\": 1,\n  \"brief_justification\": \"The teacher uses vague analogies that don't address the specific misconception about addition before multiplication, the student explicitly asks for direct help with order of operations in Turn 2 but receives another unhelpful analogy, and there's no evidence of improved understanding.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 2, \"brief_justification\": \"While the teacher attempts to use real-world analogies (pencils/students, sandwich-making), these analogies are poorly matched to the mathematical concept and fail to meaningfully connect the concrete situations to how brackets and order of operations actually work in the given problem.\"}\n```",
+    "quality_composite": 1.3333333333333333,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T08:08:47.375450+00:00"
+}

@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_18",
+    "misconception_label": "Assumes that an arrow on a number line starts at zero",
+    "misconception_features": [
+      0.0,
+      18.0,
+      2.0,
+      73.0
+    ],
+    "persona": "socratic",
+    "architecture": "pure_cbr_llm",
+    "student_leg": "leg_b",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T16:39:12.729827Z",
+      "seed": 946,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T16:39:19.732333Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: ![Number line with -12 and -7 marked. Starting at -12, follow an arrow pointing to the right labelled +10. Then there is an arrow labelled b pointing to the left, which ends at -7 on the number line.]() What is the value of \\( b \\) ? I got \\( -7 \\) because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Can you explain your reasoning for why you chose \\( -7 \\) as the value of \\( b \\)? What assumption might you be making about the direction of the arrow on the number line starting at -12?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Um, I think I just looked at where the arrow ended up and said that number? Like, I thought the arrow b ends at -7 so b must be -7. But now you're asking about the direction... does that mean I need to think about which way the arrow is pointing instead of just where it lands?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Can you think about any assumptions you might be making about the direction of the arrow on the number line starting at -12? How does that assumption influence your interpretation of where the arrow b ends up?",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "Oh, I think I see what you mean... am I assuming that the arrow starts at zero instead of at -12? Like, maybe I need to work out where the first arrow +10 takes me from -12, and then figure out how far left the arrow b goes from there? So b isn't just -7, it's the *movement* or the distance, right?",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 5,
+    "R2": 4,
+    "R3": 4,
+    "R4": 5,
+    "R5": 5,
+    "R6": 5,
+    "justification_pass1": "The teacher precisely targets the zero-starting assumption through carefully calibrated questions, leading the student to independently articulate both the misconception and the correct understanding that arrows represent movements rather than endpoints.",
+    "justification_pass2": "The teacher consistently uses probing questions to guide the student's thinking without ever directly providing the answer, successfully leading the student to discover their own misconception about position versus movement through strategic questioning.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 5,\n  \"R2\": 4,\n  \"R3\": 4,\n  \"R4\": 5,\n  \"R5\": 5,\n  \"brief_justification\": \"The teacher precisely targets the zero-starting assumption through carefully calibrated questions, leading the student to independently articulate both the misconception and the correct understanding that arrows represent movements rather than endpoints.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 5, \"brief_justification\": \"The teacher consistently uses probing questions to guide the student's thinking without ever directly providing the answer, successfully leading the student to discover their own misconception about position versus movement through strategic questioning.\"}\n```",
+    "quality_composite": 4.333333333333333,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T16:39:26.078576+00:00"
+}

@@ -1,0 +1,66 @@
+{
+  "state": {
+    "case_id": "case_22",
+    "misconception_label": "Does not realise that adding a larger number gives a larger answer",
+    "misconception_features": [
+      0.0,
+      22.0,
+      2.0,
+      98.0
+    ],
+    "persona": "socratic",
+    "architecture": "pure_cbr_llm",
+    "student_leg": "leg_b",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T11:40:56.440832Z",
+      "seed": 1146,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-12T11:41:00.523737Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: Tom and Katie are discussing related calculations Tom says if you know that \\( 3748+426=4174 \\), then \\( 3748+427 \\) must equal \\( \\mathbf{4 1 7 5} \\) Katie says if you know that \\( 3748-426=3322 \\), then \\( 3748 \\) - \\( 427 \\) must equal \\( \\mathbf{3 3 2 3} \\) Who is correct? I got Only Katie because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Can you walk me through your thought process when adding and subtracting these numbers? How are you approaching the columns and carrying over numbers?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Um, well for Tom's one I was thinking like... if you add 427 instead of 426, it's only one more so the answer should be like 4174 plus 1, which is 4175? But then for Katie's I thought subtracting 427 instead of 426 means you're taking away more, so the answer gets smaller to 3323? I'm a bit confused though because I'm not really sure if that's how it works with the columns and stuff.",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Can you explain why adding or subtracting just one more changes the answer so significantly in each case? How might focusing on the columns and carrying over numbers help clarify your thinking in these calculations?",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 1,
+    "R2": 3,
+    "R3": 1,
+    "R4": 5,
+    "R5": 5,
+    "R6": 5,
+    "justification_pass1": "The teacher misses that the student has actually corrected their own misconception by Turn 2 (correctly reasoning through both problems), yet continues to question the student's correct understanding and redirects to irrelevant column arithmetic details.",
+    "justification_pass2": "The teacher consistently uses probing questions to guide the student's reasoning without giving direct answers, asking the student to explain their thinking process and consider the implications of their approach, which is a textbook example of Socratic method.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 1,\n  \"R2\": 3,\n  \"R3\": 1,\n  \"R4\": 5,\n  \"R5\": 5,\n  \"brief_justification\": \"The teacher misses that the student has actually corrected their own misconception by Turn 2 (correctly reasoning through both problems), yet continues to question the student's correct understanding and redirects to irrelevant column arithmetic details.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 5, \"brief_justification\": \"The teacher consistently uses probing questions to guide the student's reasoning without giving direct answers, asking the student to explain their thinking process and consider the implications of their approach, which is a textbook example of Socratic method.\"}\n```",
+    "quality_composite": 1.6666666666666667,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T11:41:07.373636+00:00"
+}

@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_0",
+    "misconception_label": "Confuses the order of operations, believes addition comes before multiplication",
+    "misconception_features": [
+      0.0,
+      0.0,
+      1.0,
+      70.0
+    ],
+    "persona": "experiential",
+    "architecture": "baseline",
+    "student_leg": "leg_a",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T12:01:45.320182Z",
+      "seed": 63,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T12:01:50.620483Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: \\[ 3 \\times 2+4-5 \\] Where do the brackets need to go to make the answer equal \\( 13 \\) ? I got Does not need brackets because I worked left to right instead of following the order of operations.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Imagine you were organizing a picnic with sandwiches, drinks, and snacks. If you put the drinks before making the sandwiches, would the picnic be as enjoyable as if you followed the order of operations?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "I guess that makes sense, but I still don't really get how the order of operations works. So, if I put the drinks first, it messes everything up? Can you explain how I should know when to do multiplication or addition first?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Imagine you were trying to build a tower out of different-sized blocks. If you put the smallest blocks on the bottom and the largest blocks on top, would the tower be stable? Just like with your math problem, following the order of operations ensures a solid foundation for your answer.",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "I think I get what you're saying about the blocks and the foundation, but I'm still confused. So, is it like I have to do multiplication before addition, like the blocks need to be stacked in a certain order? What happens if I just do it the other way around?",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 1,
+    "R2": 1,
+    "R3": 1,
+    "R4": 2,
+    "R5": 1,
+    "R6": 2,
+    "justification_pass1": "The teacher uses vague analogies (picnics, blocks) that fail to address the specific misconception about operation order, never directly explains why multiplication precedes addition, and the student remains confused throughout, explicitly asking the same question twice without receiving a clear answer.",
+    "justification_pass2": "While the teacher attempts to use real-world analogies (picnic organization and block towers), these analogies are poorly mapped to the mathematical concept and fail to concretely illustrate how order of operations actually works, making them superficial rather than genuinely experiential.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 1,\n  \"R2\": 1,\n  \"R3\": 1,\n  \"R4\": 2,\n  \"R5\": 1,\n  \"brief_justification\": \"The teacher uses vague analogies (picnics, blocks) that fail to address the specific misconception about operation order, never directly explains why multiplication precedes addition, and the student remains confused throughout, explicitly asking the same question twice without receiving a clear answer.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 2, \"brief_justification\": \"While the teacher attempts to use real-world analogies (picnic organization and block towers), these analogies are poorly mapped to the mathematical concept and fail to concretely illustrate how order of operations actually works, making them superficial rather than genuinely experiential.\"}\n```",
+    "quality_composite": 1.0,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T12:01:57.802246+00:00"
+}

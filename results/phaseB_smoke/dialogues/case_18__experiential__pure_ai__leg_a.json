@@ -1,0 +1,66 @@
+{
+  "state": {
+    "case_id": "case_18",
+    "misconception_label": "Assumes that an arrow on a number line starts at zero",
+    "misconception_features": [
+      0.0,
+      18.0,
+      2.0,
+      73.0
+    ],
+    "persona": "experiential",
+    "architecture": "pure_ai",
+    "student_leg": "leg_a",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T11:06:43.113559Z",
+      "seed": 969,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-12T11:06:47.819533Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: ![Number line with -12 and -7 marked. Starting at -12, follow an arrow pointing to the right labelled +10. Then there is an arrow labelled b pointing to the left, which ends at -7 on the number line.]() What is the value of \\( b \\) ? I got \\( -7 \\) because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Imagine you're starting at a specific point on a road and you take a 10-mile drive to the right. If you then drive 5 miles back to the left, where would you end up? Think about how this relates to the number line and the direction of the arrows you're following.",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "I think I get what you're saying about the driving example. So if I start at -12 and go 10 to the right, I end up at -2, right? But then if I go back 5 to the left, I would be at -7. But I'm still confused about how that helps me find \\( b \\). Does \\( b \\) start from -12 or from somewhere else?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Imagine you're playing a game where you start at a specific point on a playground and take 10 steps to the right. After that, you take 5 steps back to the left. Where would you end up on the playground? Think about how this relates to the number line and the direction of the arrows you're following.",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 1,
+    "R2": 3,
+    "R3": 1,
+    "R4": 5,
+    "R5": 1,
+    "R6": 4,
+    "justification_pass1": "The teacher repeats the same analogy without addressing the student's explicit confusion about where b starts from, and the student shows no progress in understanding that arrows represent movements from their starting positions rather than from zero.",
+    "justification_pass2": "The teacher consistently uses concrete real-world analogies (driving on a road, walking on a playground) to represent abstract number line operations, which is a strong implementation of the experiential strategy, though the repetition in Turn 3 suggests some limitation in adapting the approach.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\"R1\": 1, \"R2\": 3, \"R3\": 1, \"R4\": 5, \"R5\": 1, \"brief_justification\": \"The teacher repeats the same analogy without addressing the student's explicit confusion about where b starts from, and the student shows no progress in understanding that arrows represent movements from their starting positions rather than from zero.\"}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 4, \"brief_justification\": \"The teacher consistently uses concrete real-world analogies (driving on a road, walking on a playground) to represent abstract number line operations, which is a strong implementation of the experiential strategy, though the repetition in Turn 3 suggests some limitation in adapting the approach.\"}\n```",
+    "quality_composite": 1.6666666666666667,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T11:06:54.708447+00:00"
+}

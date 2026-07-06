@@ -1,0 +1,66 @@
+{
+  "state": {
+    "case_id": "case_8",
+    "misconception_label": "Does not find a common denominator when adding/subtracting fractions",
+    "misconception_features": [
+      0.0,
+      8.0,
+      3.0,
+      88.0
+    ],
+    "persona": "experiential",
+    "architecture": "pure_cbr_llm",
+    "student_leg": "leg_a",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T09:30:51.730823Z",
+      "seed": 465,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-12T09:30:56.789110Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: \\( \\frac{4}{5}-\\frac{1}{3}=\\frac{\\bigstar}{15} \\) What should replace the star? I got \\( 5 \\) because I treated the fractions like ordinary numbers.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Imagine you have a pizza cut into 5 slices and another pizza cut into 3 slices. When you combine them, you need to make sure the slices are the same size to add them together accurately. Can you see how finding a common denominator is like making sure the pizza slices match up before adding them together?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "I think I get what you mean about the pizza slices needing to match, but I\u2019m still not sure how to find the common denominator. So, if I have 5 slices and 3 slices, how do I know what size to make them so I can add or subtract? Do I just multiply them together or something?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Imagine you have a recipe that calls for 5 cups of flour and another recipe that calls for 3 cups of flour. To combine the recipes, you need to make sure the measurements match up, just like making sure the pizza slices match. Can you think of a way to adjust the measurements so they can be added together accurately?",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 2,
+    "R3": 1,
+    "R4": 3,
+    "R5": 1,
+    "R6": 4,
+    "justification_pass1": "The teacher uses analogies that don't directly address the misconception of treating numerators and denominators as separate numbers, the student shows confusion rather than progress (explicitly stating they don't know how to find common denominators), and the teacher responds with yet another vague analogy instead of adjusting support.",
+    "justification_pass2": "The teacher consistently uses concrete real-world analogies (pizza slices, recipe measurements) to explain the abstract concept of common denominators, though the second analogy in Turn 3 is slightly less precise than the pizza example.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 2,\n  \"R3\": 1,\n  \"R4\": 3,\n  \"R5\": 1,\n  \"brief_justification\": \"The teacher uses analogies that don't directly address the misconception of treating numerators and denominators as separate numbers, the student shows confusion rather than progress (explicitly stating they don't know how to find common denominators), and the teacher responds with yet another vague analogy instead of adjusting support.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 4, \"brief_justification\": \"The teacher consistently uses concrete real-world analogies (pizza slices, recipe measurements) to explain the abstract concept of common denominators, though the second analogy in Turn 3 is slightly less precise than the pizza example.\"}\n```",
+    "quality_composite": 1.6666666666666667,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T09:31:03.689857+00:00"
+}

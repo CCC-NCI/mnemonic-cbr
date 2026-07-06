@@ -1,0 +1,53 @@
+{
+  "blind_id": "De8ee373b7f",
+  "subset_row": {
+    "blind_id": "De8ee373b7f",
+    "case_id": "case_6",
+    "persona": "constructive",
+    "architecture": "pure_cbr_llm",
+    "student_leg": "leg_a",
+    "llm_R5": "4",
+    "llm_quality_composite": "3.3333333333333335",
+    "llm_R6": "4",
+    "difficulty_band": "long",
+    "r5_band": "high",
+    "word_count": "40",
+    "attention_check_type": "",
+    "attention_check_rationale": "",
+    "file_path": "dialogues/case_6__constructive__pure_cbr_llm__leg_a.json"
+  },
+  "primary_score": {
+    "R1": 4,
+    "R2": 3,
+    "R3": 3,
+    "R4": 5,
+    "R5": 4,
+    "R6": 4,
+    "justification_pass1": "The teacher directly addresses the specific misconception about percentages being out of 100, the mathematics is correct, and the student demonstrates clear progress from the initial error to correct understanding by Turn 2, though the cognitive demand could be higher with more challenging prompts.",
+    "justification_pass2": "The teacher effectively scaffolds by breaking down the percentage concept into manageable steps (identifying the error, focusing on the /100 convention, then building toward application), adjusts support based on student progress, and works within the student's ZPD by building on their partial understanding rather than simply providing answers.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 4,\n  \"R2\": 3,\n  \"R3\": 3,\n  \"R4\": 5,\n  \"R5\": 4,\n  \"brief_justification\": \"The teacher directly addresses the specific misconception about percentages being out of 100, the mathematics is correct, and the student demonstrates clear progress from the initial error to correct understanding by Turn 2, though the cognitive demand could be higher with more challenging prompts.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 4, \"brief_justification\": \"The teacher effectively scaffolds by breaking down the percentage concept into manageable steps (identifying the error, focusing on the /100 convention, then building toward application), adjusts support based on student progress, and works within the student's ZPD by building on their partial understanding rather than simply providing answers.\"}\n```",
+    "quality_composite": 3.3333333333333335,
+    "is_complete": true
+  },
+  "secondary_score": {
+    "R1": 5,
+    "R2": 4,
+    "R3": 4,
+    "R4": 5,
+    "R5": 4,
+    "R6": 4,
+    "justification_pass1": "The teacher effectively addresses the student's misconception about percentages, encourages reasoning, provides appropriate scaffolding, ensures mathematical accuracy, and shows that the student's understanding improves throughout the dialogue.",
+    "justification_pass2": "The teacher effectively scaffolds the student's understanding by guiding them to reconsider their approach to percentages and encouraging further exploration of the concept, though there could be more explicit step-by-step support.",
+    "judge_provider": "openai",
+    "judge_model": "gpt-4o-mini",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "{\"R1\": 5, \"R2\": 4, \"R3\": 4, \"R4\": 5, \"R5\": 4, \"brief_justification\": \"The teacher effectively addresses the student's misconception about percentages, encourages reasoning, provides appropriate scaffolding, ensures mathematical accuracy, and shows that the student's understanding improves throughout the dialogue.\"}",
+    "pass2_raw_text": "{\"R6\": 4, \"brief_justification\": \"The teacher effectively scaffolds the student's understanding by guiding them to reconsider their approach to percentages and encouraging further exploration of the concept, though there could be more explicit step-by-step support.\"}"
+  }
+}

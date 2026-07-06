@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_22",
+    "misconception_label": "Does not realise that adding a larger number gives a larger answer",
+    "misconception_features": [
+      0.0,
+      22.0,
+      2.0,
+      98.0
+    ],
+    "persona": "socratic",
+    "architecture": "baseline",
+    "student_leg": "leg_b",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T17:22:06.174440Z",
+      "seed": 1144,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T17:22:11.951694Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: Tom and Katie are discussing related calculations Tom says if you know that \\( 3748+426=4174 \\), then \\( 3748+427 \\) must equal \\( \\mathbf{4 1 7 5} \\) Katie says if you know that \\( 3748-426=3322 \\), then \\( 3748 \\) - \\( 427 \\) must equal \\( \\mathbf{3 3 2 3} \\) Who is correct? I got Only Katie because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "What would happen if you tried your method on a simpler version of the problem, such as adding 1 to a smaller number?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Um, okay... so like if I have 5 + 3 = 8, then 5 + 4 would be 9, right? So adding a bigger number does make the answer bigger. But I'm still confused about why that means Tom is correct though - doesn't Katie's subtraction one work the same way?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Why do you think Katie's subtraction method might work differently than Tom's addition method? Would it be helpful to compare the two operations in a different context to see if there are any similarities or differences?",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "Oh wait... I think I see it now. If I'm subtracting a bigger number, like 10 - 5 = 5, but then 10 - 6 would be 4, so subtracting more actually makes the answer *smaller*, not bigger like with adding. So Katie should be wrong too then, right?",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 4,
+    "R2": 4,
+    "R3": 4,
+    "R4": 5,
+    "R5": 5,
+    "R6": 5,
+    "justification_pass1": "The teacher effectively addresses the misconception by prompting the student to test their reasoning with simpler cases, leading the student to independently discover that adding larger numbers increases results while subtracting larger numbers decreases them, demonstrating clear conceptual progress from initial confusion to correct understanding.",
+    "justification_pass2": "The teacher exemplifies the Socratic method by exclusively using probing questions to guide the student's thinking, never providing direct answers, and successfully leading the student to discover their own error through simplified examples and comparative reasoning.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 4,\n  \"R2\": 4,\n  \"R3\": 4,\n  \"R4\": 5,\n  \"R5\": 5,\n  \"brief_justification\": \"The teacher effectively addresses the misconception by prompting the student to test their reasoning with simpler cases, leading the student to independently discover that adding larger numbers increases results while subtracting larger numbers decreases them, demonstrating clear conceptual progress from initial confusion to correct understanding.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 5, \"brief_justification\": \"The teacher exemplifies the Socratic method by exclusively using probing questions to guide the student's thinking, never providing direct answers, and successfully leading the student to discover their own error through simplified examples and comparative reasoning.\"}\n```",
+    "quality_composite": 4.0,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T17:22:19.286502+00:00"
+}

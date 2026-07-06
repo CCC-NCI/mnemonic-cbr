@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_22",
+    "misconception_label": "Does not realise that adding a larger number gives a larger answer",
+    "misconception_features": [
+      0.0,
+      22.0,
+      2.0,
+      98.0
+    ],
+    "persona": "rule_based",
+    "architecture": "pure_cbr_llm",
+    "student_leg": "leg_b",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T17:29:05.991832Z",
+      "seed": 1176,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T17:29:11.248840Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: Tom and Katie are discussing related calculations Tom says if you know that \\( 3748+426=4174 \\), then \\( 3748+427 \\) must equal \\( \\mathbf{4 1 7 5} \\) Katie says if you know that \\( 3748-426=3322 \\), then \\( 3748 \\) - \\( 427 \\) must equal \\( \\mathbf{3 3 2 3} \\) Who is correct? I got Only Katie because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "You are correct in selecting Katie's answer. However, your mistake lies in adding a larger number in the subtraction problem, which should result in a larger answer. Let's walk through the reasoning to find the correct answer of 3 3 2 1.",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Oh right, so when we subtract a bigger number like 427 instead of 426, we take away more, so the answer should be smaller, not bigger? So it should be 3321 not 3323? I'm still a bit confused about why adding a bigger number makes the answer bigger though - can you explain that bit again?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "You are correct that subtracting a larger number like 427 results in a smaller answer, as you are taking away more. When adding a larger number, like in the case of 3748+427, the sum is larger because you are combining more. So, in this case, 3748+427 equals 4175.",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "Oh okay, so when you add a bigger number you're putting more in, so the answer gets bigger - that makes sense now! So Tom is actually correct too then? Like, 3748+427 would be 4175, which is bigger than 4174?",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 1,
+    "R2": 1,
+    "R3": 1,
+    "R4": 1,
+    "R5": 5,
+    "R6": 4,
+    "justification_pass1": "The teacher makes a critical error in Turn 1 by stating the student's mistake is \"adding a larger number in the subtraction problem, which should result in a larger answer\" (the opposite of the truth), yet paradoxically the student arrives at correct understanding by Turn 4, demonstrating excellent trajectory despite poor teaching.",
+    "justification_pass2": "The teacher consistently provides direct corrective feedback on procedural errors and explicitly states the rules for addition and subtraction (subtracting larger numbers gives smaller results, adding larger numbers gives larger results), though they could have shown more worked-out step-by-step calculations.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 1,\n  \"R2\": 1,\n  \"R3\": 1,\n  \"R4\": 1,\n  \"R5\": 5,\n  \"brief_justification\": \"The teacher makes a critical error in Turn 1 by stating the student's mistake is \\\"adding a larger number in the subtraction problem, which should result in a larger answer\\\" (the opposite of the truth), yet paradoxically the student arrives at correct understanding by Turn 4, demonstrating excellent trajectory despite poor teaching.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 4, \"brief_justification\": \"The teacher consistently provides direct corrective feedback on procedural errors and explicitly states the rules for addition and subtraction (subtracting larger numbers gives smaller results, adding larger numbers gives larger results), though they could have shown more worked-out step-by-step calculations.\"}\n```",
+    "quality_composite": 1.0,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T17:29:18.574670+00:00"
+}

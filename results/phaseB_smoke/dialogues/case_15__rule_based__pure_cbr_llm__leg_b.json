@@ -1,0 +1,66 @@
+{
+  "state": {
+    "case_id": "case_15",
+    "misconception_label": "Has used slant height and base to find area of a triangle rather than perpendicular height and base",
+    "misconception_features": [
+      0.0,
+      15.0,
+      2.0,
+      94.0
+    ],
+    "persona": "rule_based",
+    "architecture": "pure_cbr_llm",
+    "student_leg": "leg_b",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T10:39:12.700715Z",
+      "seed": 826,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-12T10:39:16.567170Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: How would you calculate the area of this triangle? ![A triangle, base 12m. All three sides are equal.](). I got \\( \\frac{12 \\times 12}{2} \\) because I added the side lengths instead of multiplying.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "You actually used the incorrect method to find the area of the triangle. Remember, to calculate the area of a triangle, you need to use the perpendicular height and base, not the slant height and base. Let's correct this by using the correct formula: \\( \\frac{1}{2} \\times \\text{base} \\times \\text{perpendicular height} \\).",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Oh right, so I need to use the perpendicular height, not just any side of the triangle? But how do I find the perpendicular height - is that different from the slant height you mentioned?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Yes, that's correct. The perpendicular height is the vertical distance from the base to the opposite vertex. It is different from the slant height, which is the diagonal distance from one vertex to the opposite side. To find the perpendicular height, you may need to use concepts like similar triangles or trigonometry. Let's work through an example together to clarify this concept.",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 4,
+    "R2": 1,
+    "R3": 2,
+    "R4": 3,
+    "R5": 2,
+    "R6": 2,
+    "justification_pass1": "The teacher clearly identifies the perpendicular vs. slant height misconception and explains the distinction, but simply tells the student what to do rather than prompting reasoning, and the definition of slant height as 'diagonal distance from one vertex to the opposite side' is imprecise for an equilateral triangle where all sides could be considered slant heights.",
+    "justification_pass2": "While the teacher provides direct corrective feedback and states the correct formula, they fail to show worked steps or demonstrate explicit procedures for finding the perpendicular height, instead only mentioning methods abstractly and deferring the actual calculation.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 4,\n  \"R2\": 1,\n  \"R3\": 2,\n  \"R4\": 3,\n  \"R5\": 2,\n  \"brief_justification\": \"The teacher clearly identifies the perpendicular vs. slant height misconception and explains the distinction, but simply tells the student what to do rather than prompting reasoning, and the definition of slant height as 'diagonal distance from one vertex to the opposite side' is imprecise for an equilateral triangle where all sides could be considered slant heights.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 2, \"brief_justification\": \"While the teacher provides direct corrective feedback and states the correct formula, they fail to show worked steps or demonstrate explicit procedures for finding the perpendicular height, instead only mentioning methods abstractly and deferring the actual calculation.\"}\n```",
+    "quality_composite": 2.3333333333333335,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T10:39:24.353360+00:00"
+}

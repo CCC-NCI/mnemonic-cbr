@@ -1,0 +1,53 @@
+{
+  "blind_id": "D91b63273cd",
+  "subset_row": {
+    "blind_id": "D91b63273cd",
+    "case_id": "case_16",
+    "persona": "constructive",
+    "architecture": "baseline",
+    "student_leg": "leg_b",
+    "llm_R5": "5",
+    "llm_quality_composite": "3.6666666666666665",
+    "llm_R6": "5",
+    "difficulty_band": "long",
+    "r5_band": "high",
+    "word_count": "81",
+    "attention_check_type": "B_intended_5",
+    "attention_check_rationale": "Ratio problem AN:NB=3:5 over a 48 m line. Student starts with wrong answer 16 m (added parts as total). By turn 2 they have asked the correct procedural question. By turn 4 they compute 48/8=6, then 6 x 3 = 18 m for AN \u2014 the correct answer arrived at with correct reasoning. Clean type B: student demonstrates the full computation and the underlying rule.",
+    "file_path": "dialogues/case_16__constructive__baseline__leg_b.json"
+  },
+  "primary_score": {
+    "R1": 4,
+    "R2": 3,
+    "R3": 4,
+    "R4": 5,
+    "R5": 5,
+    "R6": 5,
+    "justification_pass1": "The teacher directly addresses the specific misconception about dividing by individual parts versus the sum, provides appropriately calibrated scaffolding, and the student successfully moves from the initial error to correct reasoning about finding one part then multiplying by the ratio component.",
+    "justification_pass2": "The teacher exemplifies the constructive strategy by breaking the problem into manageable steps (finding the sum of ratio parts, then dividing, then applying to find AN), scaffolding within the student's ZPD by building on what they already understand, and adjusting support by providing less explicit guidance as the student demonstrates progress from Turn 1 to Turn 3.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 4,\n  \"R2\": 3,\n  \"R3\": 4,\n  \"R4\": 5,\n  \"R5\": 5,\n  \"brief_justification\": \"The teacher directly addresses the specific misconception about dividing by individual parts versus the sum, provides appropriately calibrated scaffolding, and the student successfully moves from the initial error to correct reasoning about finding one part then multiplying by the ratio component.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 5, \"brief_justification\": \"The teacher exemplifies the constructive strategy by breaking the problem into manageable steps (finding the sum of ratio parts, then dividing, then applying to find AN), scaffolding within the student's ZPD by building on what they already understand, and adjusting support by providing less explicit guidance as the student demonstrates progress from Turn 1 to Turn 3.\"}\n```",
+    "quality_composite": 3.6666666666666665,
+    "is_complete": true
+  },
+  "secondary_score": {
+    "R1": 5,
+    "R2": 5,
+    "R3": 4,
+    "R4": 5,
+    "R5": 5,
+    "R6": 5,
+    "justification_pass1": "The teacher effectively addresses the student's misconception about ratios, encourages reasoning, provides appropriate scaffolding, ensures mathematical accuracy, and the student's understanding visibly improves throughout the dialogue.",
+    "justification_pass2": "The teacher effectively scaffolds the student's understanding by guiding them through manageable steps, reinforcing prior knowledge, and adjusting support based on the student's progress.",
+    "judge_provider": "openai",
+    "judge_model": "gpt-4o-mini",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "{\n  \"R1\": 5,\n  \"R2\": 5,\n  \"R3\": 4,\n  \"R4\": 5,\n  \"R5\": 5,\n  \"brief_justification\": \"The teacher effectively addresses the student's misconception about ratios, encourages reasoning, provides appropriate scaffolding, ensures mathematical accuracy, and the student's understanding visibly improves throughout the dialogue.\"\n}",
+    "pass2_raw_text": "{\"R6\": 5, \"brief_justification\": \"The teacher effectively scaffolds the student's understanding by guiding them through manageable steps, reinforcing prior knowledge, and adjusting support based on the student's progress.\"}"
+  }
+}

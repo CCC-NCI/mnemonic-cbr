@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_14",
+    "misconception_label": "Stops iteration too early when solving equations",
+    "misconception_features": [
+      0.0,
+      14.0,
+      3.0,
+      85.0
+    ],
+    "persona": "rule_based",
+    "architecture": "baseline",
+    "student_leg": "leg_a",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T16:02:23.576786Z",
+      "seed": 773,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T16:02:28.450381Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: \\( x_{n+1}=5-\\frac{1}{x_{n}} \\) Using a starting value of \\( x_{1}=2 \\), what is the solution to \\( x=5-\\frac{1}{x} \\) to \\( 2 \\) decimal places? I got \\( 4.78 \\) because I added the parts of the ratio as if they were a total.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "There is a specific procedure for this. Step 1 is to identify the operation; step 2 is to apply the rule for that operation. In this case, you need to follow the iterative process of substituting the previous result back into the equation until you reach a solution.",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Okay, I think I get that I need to keep using the previous result to find the next one, but I'm not sure how many times I should do that. Do I just keep going until I get a number that doesn't change much? And how do I know when to stop?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "There is a specific procedure for this. Step 1 is to identify the operation; step 2 is to apply the rule for that operation. In this case, you need to keep iterating by substituting the previous result back into the equation until the solution stabilizes.",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "Okay, I think I get that I need to keep using the last answer to find the next one, but I'm still a bit confused about how to tell when the answers are close enough to stop. Like, if I get 4.78 and then 4.79, is that close enough, or do I need to keep going? How do I know when I've really found the answer?",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 1,
+    "R2": 1,
+    "R3": 1,
+    "R4": 3,
+    "R5": 1,
+    "R6": 3,
+    "justification_pass1": "The teacher provides only generic procedural instructions without addressing the specific misconception about stopping iteration too early, and the student's repeated questions show no improvement in understanding the convergence criterion.",
+    "justification_pass2": "The teacher states explicit procedures and mentions specific steps, which aligns with rule-based teaching, but fails to provide worked examples, show actual computational steps with numbers, or give direct corrective feedback on the student's specific procedural error of 'adding parts of the ratio.'",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 1,\n  \"R2\": 1,\n  \"R3\": 1,\n  \"R4\": 3,\n  \"R5\": 1,\n  \"brief_justification\": \"The teacher provides only generic procedural instructions without addressing the specific misconception about stopping iteration too early, and the student's repeated questions show no improvement in understanding the convergence criterion.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 3, \"brief_justification\": \"The teacher states explicit procedures and mentions specific steps, which aligns with rule-based teaching, but fails to provide worked examples, show actual computational steps with numbers, or give direct corrective feedback on the student's specific procedural error of 'adding parts of the ratio.'\"}\n```",
+    "quality_composite": 1.0,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T16:02:35.558599+00:00"
+}

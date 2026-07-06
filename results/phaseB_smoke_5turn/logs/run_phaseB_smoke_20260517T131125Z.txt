@@ -1,0 +1,58 @@
+log file           = results/phaseB_smoke_5turn/logs/run_phaseB_smoke_20260517T131125Z.txt
+========================================================================
+Phase B-proper smoke — full 250-cell matrix
+========================================================================
+mode               = REAL
+OPENAI_API_KEY     = set
+ANTHROPIC_API_KEY  = set
+student mode       = pure_ai
+turns per dialogue = 5
+output root        = results/phaseB_smoke_5turn
+data file          = data/all_train.csv
+cases × personas × archs × legs = 5 × 5 × 5 × 2 = 250 cells
+case base          = 500
+resume             = on
+
+[1/5] Loading EEDI cases...
+      loaded 500 cases; using first 5 as targets.
+
+[2/5] Building cleaned mnemonic engine...
+      Base similarity = embeddings (cosine).
+
+[3/5] Wiring providers and scorer...
+      teacher       = OpenAIProvider(provider='openai', model='gpt-3.5-turbo')
+      student_leg_a = OpenAIProvider(provider='openai', model='gpt-4o-mini')
+      student_leg_b = AnthropicProvider(provider='anthropic', model='claude-haiku-4-5')
+      judge_primary = AnthropicProvider(provider='anthropic', model='claude-sonnet-4-5')
+
+[4/5] Cost estimate (REAL mode): ~$2.39 for 250 cells
+       Press Ctrl-C in the next 5 seconds to abort.
+
+[5/5] Running 250 cells...
+  [75/250] completed=25 skipped=50 degraded=1 (0.1 cells/sec)
+  [100/250] completed=50 skipped=50 degraded=1 (0.1 cells/sec)
+  [125/250] completed=75 skipped=50 degraded=1 (0.1 cells/sec)
+  [150/250] completed=100 skipped=50 degraded=1 (0.1 cells/sec)
+  [175/250] completed=125 skipped=50 degraded=1 (0.1 cells/sec)
+  [200/250] completed=150 skipped=50 degraded=1 (0.1 cells/sec)
+  [225/250] completed=175 skipped=50 degraded=1 (0.1 cells/sec)
+  [250/250] completed=200 skipped=50 degraded=1 (0.1 cells/sec)
+
+------------------------------------------------------------------------
+Phase B-proper run summary
+------------------------------------------------------------------------
+cells in matrix    = 250
+completed this run = 200
+skipped (resumed)  = 50
+degraded           = 1
+manifest rows      = 250
+elapsed            = 2588.7s
+
+  [PASS] manifest row count >= cells run
+  [FAIL] no degraded cells
+  [PASS] JSON dir exists
+  [PASS] SQLite manifest exists
+
+One or more checks FAILED.
+
+[ERROR] run_phaseB_smoke failed (ExitCode: 1) after 43m29s — log: results/phaseB_smoke_5turn/logs/run_phaseB_smoke_20260517T131125Z.txt

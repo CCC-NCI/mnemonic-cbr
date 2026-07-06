@@ -1,0 +1,66 @@
+{
+  "state": {
+    "case_id": "case_0",
+    "misconception_label": "Confuses the order of operations, believes addition comes before multiplication",
+    "misconception_features": [
+      0.0,
+      0.0,
+      1.0,
+      70.0
+    ],
+    "persona": "socratic",
+    "architecture": "hybrid",
+    "student_leg": "leg_a",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T08:06:24.269839Z",
+      "seed": 51,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "cbr_grounded",
+      "ended_at": "2026-05-12T08:06:28.132978Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: \\[ 3 \\times 2+4-5 \\] Where do the brackets need to go to make the answer equal \\( 13 \\) ? I got Does not need brackets because I worked left to right instead of following the order of operations.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Why do you think it's important to follow the order of operations when solving mathematical expressions? Can you walk me through the steps of the order of operations and how they apply to the expression \\( 3 \\times 2+4-5 \\)?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "I guess it's important to follow the order of operations so we get the right answer. I thought you just do it left to right, but now I'm not sure how multiplication and addition should actually be done. Can you explain how I should be looking at \\( 3 \\times 2+4-5 \\) step by step?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Can you think of a situation where following the order of operations might make a difference in the final answer? How can we apply that concept to the expression \\(3 \\times 2 + 4 - 5\\) to ensure we get the correct result of 13? Let's break it down step by step together.",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 2,
+    "R3": 2,
+    "R4": 3,
+    "R5": 1,
+    "R6": 3,
+    "justification_pass1": "The teacher asks generic questions about order of operations without directly addressing the left-to-right misconception, and the student ends up more confused and dependent, explicitly asking the teacher to explain rather than developing their own understanding.",
+    "justification_pass2": "The teacher uses probing questions consistently, which aligns with Socratic method, but undermines the strategy by offering to break it down 'step by step together' in Turn 3, which suggests direct guidance rather than pure questioning, and never employs counterexamples to expose the student's flawed reasoning about working left to right.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 2,\n  \"R3\": 2,\n  \"R4\": 3,\n  \"R5\": 1,\n  \"brief_justification\": \"The teacher asks generic questions about order of operations without directly addressing the left-to-right misconception, and the student ends up more confused and dependent, explicitly asking the teacher to explain rather than developing their own understanding.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 3, \"brief_justification\": \"The teacher uses probing questions consistently, which aligns with Socratic method, but undermines the strategy by offering to break it down 'step by step together' in Turn 3, which suggests direct guidance rather than pure questioning, and never employs counterexamples to expose the student's flawed reasoning about working left to right.\"}\n```",
+    "quality_composite": 2.0,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T08:06:35.154698+00:00"
+}

@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_16",
+    "misconception_label": "Divides total amount by each side of the ratio instead of dividing by the sum of the parts",
+    "misconception_features": [
+      0.0,
+      16.0,
+      3.0,
+      83.0
+    ],
+    "persona": "constructive",
+    "architecture": "pure_ai",
+    "student_leg": "leg_a",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T16:20:32.371542Z",
+      "seed": 859,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T16:20:36.787430Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: In the diagram, AN : NB \\( =3: 5 \\) What is the distance AN? ![A line that begins with point A, ends with point B, and has point N in between. The entire length of the line measures 48 m.](). I got \\( 16 \\mathrm{~m} \\) because I added the parts of the ratio as if they were a total.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Great job recognizing that you added the parts of the ratio as if they were a total. To find the distance AN, remember that you need to divide the total length of the line by the sum of the parts in the ratio. Can you think about how you might adjust your approach to find the correct distance for AN?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Okay, so I think I need to add the parts of the ratio first, which is \\(3 + 5 = 8\\). Then, I should divide the total length of the line, 48 m, by 8. But what do I do after that to find AN? Do I multiply by 3?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "That's a great start! After dividing the total length by the sum of the parts of the ratio, you will get the length of each part. Since AN represents 3 parts out of the total 8 parts, you can then multiply the length of each part by 3 to find the distance of AN. Give it a try!",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "Okay, so if I divide 48 m by 8, I get 6 m for each part. Then, if I multiply that by 3 for AN, I think I get 18 m. Is that right? But I'm not sure if I did everything correctly. What if I made a mistake somewhere?",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 3,
+    "R3": 4,
+    "R4": 5,
+    "R5": 4,
+    "R6": 5,
+    "justification_pass1": "The teacher addresses the misconception somewhat generically and uses moderate cognitive demand through prompting, but the student successfully corrects their approach and arrives at the right answer (18m), showing clear improvement from the initial error of 16m.",
+    "justification_pass2": "The teacher exemplifies the constructive strategy by breaking the problem into manageable steps (finding sum of ratio parts, dividing total, then multiplying), scaffolding within the student's ZPD by building on their partial understanding, and adjusting support by providing more guidance when the student asks what to do next.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 3,\n  \"R3\": 4,\n  \"R4\": 5,\n  \"R5\": 4,\n  \"brief_justification\": \"The teacher addresses the misconception somewhat generically and uses moderate cognitive demand through prompting, but the student successfully corrects their approach and arrives at the right answer (18m), showing clear improvement from the initial error of 16m.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 5, \"brief_justification\": \"The teacher exemplifies the constructive strategy by breaking the problem into manageable steps (finding sum of ratio parts, dividing total, then multiplying), scaffolding within the student's ZPD by building on their partial understanding, and adjusting support by providing more guidance when the student asks what to do next.\"}\n```",
+    "quality_composite": 3.0,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T16:20:44.656013+00:00"
+}

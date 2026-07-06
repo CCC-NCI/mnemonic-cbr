@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_23",
+    "misconception_label": "Confuses rest and movement on a distance time graph",
+    "misconception_features": [
+      0.0,
+      23.0,
+      3.0,
+      62.0
+    ],
+    "persona": "traditional",
+    "architecture": "pure_ai",
+    "student_leg": "leg_a",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T17:42:23.472899Z",
+      "seed": 1239,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T17:42:27.718534Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: This graph shows how far Fido the dog is from his home. What might the negative-sloping section represent? ![A graph with time (secs) on the horizontal axis and distance (m) on the vertical axis. The graph starts at the origin, travels in a straight line up and right, travels horizontally, then travels in a straight line down and right back to the x-axis. ](). I got Fido has fallen asleep because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "First, let's clarify the concept of distance-time graphs. Remember, the slope of the graph represents the speed of the object. In this case, the negative-sloping section indicates that Fido is moving away from his home. Can you think of a scenario where Fido might be moving away from his home while still awake?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Okay, I think I get it a bit better now. So, if Fido is moving away from home, maybe he\u2019s chasing a squirrel or something? But if he\u2019s not asleep, why does the line go down? Does that mean he\u2019s coming back home?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "That's a good interpretation! Yes, if Fido is moving away from home while still awake, it could be because he's chasing a squirrel or exploring his surroundings. The downward slope on the graph actually indicates that he's returning back home after moving away. So, the negative slope represents movement away from home, while the positive slope represents movement towards home.",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "Oh, okay! So the downward slope means Fido is coming back home after running away. That makes sense! But what if the line was flat? Does that mean he\u2019s just staying in one place?",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 2,
+    "R3": 2,
+    "R4": 1,
+    "R5": 1,
+    "R6": 2,
+    "justification_pass1": "The teacher provides mathematically incorrect information (stating negative slope means moving away when it actually means returning home), fails to directly address the student's confusion between rest and movement, and the student remains confused as evidenced by their contradictory statements in Turn 2 and 4.",
+    "justification_pass2": "The teacher makes a critical conceptual error by stating that negative slope means moving away from home when it actually means returning home (decreasing distance), which contradicts the traditional strategy's emphasis on clear, accurate direct explanation.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 2,\n  \"R3\": 2,\n  \"R4\": 1,\n  \"R5\": 1,\n  \"brief_justification\": \"The teacher provides mathematically incorrect information (stating negative slope means moving away when it actually means returning home), fails to directly address the student's confusion between rest and movement, and the student remains confused as evidenced by their contradictory statements in Turn 2 and 4.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 2, \"brief_justification\": \"The teacher makes a critical conceptual error by stating that negative slope means moving away from home when it actually means returning home (decreasing distance), which contradicts the traditional strategy's emphasis on clear, accurate direct explanation.\"}\n```",
+    "quality_composite": 2.0,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T17:42:34.705202+00:00"
+}

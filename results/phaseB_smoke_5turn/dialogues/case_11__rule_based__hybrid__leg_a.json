@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_11",
+    "misconception_label": "Struggles to visualise nets of 3D shapes",
+    "misconception_features": [
+      0.0,
+      11.0,
+      3.0,
+      31.0
+    ],
+    "persona": "rule_based",
+    "architecture": "hybrid",
+    "student_leg": "leg_a",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T15:32:30.152198Z",
+      "seed": 631,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T15:32:37.006961Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: This is the net of a... ![A circle touching a sector](). I got Triangle because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "The shape you are looking at is the net of a triangular-based pyramid, not just a triangle. Remember, the net shows how the 3D shape unfolds into 2D. Let's break down the faces and edges to see how it forms a pyramid.",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Oh, I see! So the net shows all the sides of the pyramid laid out flat. But how do I know which parts are the base and the sides? And why does it look like a triangle if it\u2019s a pyramid?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "You can identify the base of the pyramid in the net by looking for the shape that forms the bottom when the net is folded into a 3D shape. The sides of the pyramid will be the triangular faces that meet at the apex. Remember, the net is a representation of how the 3D shape unfolds into a 2D surface for easier visualization.",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "Okay, I think I get that the base is the flat part and the triangles are the sides. But what if the base was a different shape, like a square? Would the net look different then? And how do I know which triangles go where when I fold it up?",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 1,
+    "R3": 2,
+    "R4": 5,
+    "R5": 2,
+    "R6": 2,
+    "justification_pass1": "The teacher correctly identifies the shape but primarily tells rather than helps the student develop visualization skills, and while the student asks more sophisticated questions by Turn 4, they still express confusion about fundamental aspects of folding nets, suggesting the core misconception persists.",
+    "justification_pass2": "The teacher provides conceptual explanations about nets and 3D shapes rather than explicit step-by-step procedures or worked examples, and does not give direct corrective feedback on specific procedural errors.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 1,\n  \"R3\": 2,\n  \"R4\": 5,\n  \"R5\": 2,\n  \"brief_justification\": \"The teacher correctly identifies the shape but primarily tells rather than helps the student develop visualization skills, and while the student asks more sophisticated questions by Turn 4, they still express confusion about fundamental aspects of folding nets, suggesting the core misconception persists.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 2, \"brief_justification\": \"The teacher provides conceptual explanations about nets and 3D shapes rather than explicit step-by-step procedures or worked examples, and does not give direct corrective feedback on specific procedural errors.\"}\n```",
+    "quality_composite": 1.6666666666666667,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T15:32:43.558739+00:00"
+}

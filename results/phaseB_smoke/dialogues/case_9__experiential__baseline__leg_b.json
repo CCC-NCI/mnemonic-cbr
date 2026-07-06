@@ -1,0 +1,66 @@
+{
+  "state": {
+    "case_id": "case_9",
+    "misconception_label": "Believes f(x - a) translates the function up a units",
+    "misconception_features": [
+      0.0,
+      9.0,
+      3.0,
+      83.0
+    ],
+    "persona": "experiential",
+    "architecture": "baseline",
+    "student_leg": "leg_b",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T09:40:29.472580Z",
+      "seed": 514,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-12T09:40:33.653489Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: What transformation maps the graph of \\(y=f(x) \\) to the graph of \\( y=f(x-3) \\). I got Translation by vector\n\\(\n\\left[\\begin{array}{l}\n0 \\\\\n3\n\\end{array}\\right]\n\\) because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Think about it this way: if you were moving a bookshelf in your room, would you push it up 3 units or would you move it in a different direction? Try connecting the abstract translation to a real-world scenario that you can visualize.",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Oh right, so you'd push it sideways, not up... but I'm still confused about which way though? Like, is it to the right or left? And how does that connect to the minus 3 in the brackets?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Imagine you were rearranging your furniture in your room \u2014 would you move the bookshelf to the right or to the left by 3 units? Think about how this real-world scenario connects to the minus 3 in the brackets of the function.",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 2,
+    "R3": 2,
+    "R4": 5,
+    "R5": 2,
+    "R6": 5,
+    "justification_pass1": "The teacher uses a vague real-world analogy that doesn't address the specific misconception about why x-3 moves right (not up), and the student remains confused about the direction and connection to the algebraic form by the end.",
+    "justification_pass2": "The teacher consistently uses a concrete real-world analogy (moving a bookshelf in a room) to help the student visualize and understand the abstract concept of function transformation, which is a textbook example of the experiential strategy.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 2,\n  \"R3\": 2,\n  \"R4\": 5,\n  \"R5\": 2,\n  \"brief_justification\": \"The teacher uses a vague real-world analogy that doesn't address the specific misconception about why x-3 moves right (not up), and the student remains confused about the direction and connection to the algebraic form by the end.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 5, \"brief_justification\": \"The teacher consistently uses a concrete real-world analogy (moving a bookshelf in a room) to help the student visualize and understand the abstract concept of function transformation, which is a textbook example of the experiential strategy.\"}\n```",
+    "quality_composite": 2.0,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T09:40:40.971589+00:00"
+}

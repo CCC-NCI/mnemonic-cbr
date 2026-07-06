@@ -1,0 +1,53 @@
+{
+  "blind_id": "D64fa921380",
+  "subset_row": {
+    "blind_id": "D64fa921380",
+    "case_id": "case_21",
+    "persona": "rule_based",
+    "architecture": "pure_cbr_tpl",
+    "student_leg": "leg_a",
+    "llm_R5": "1",
+    "llm_quality_composite": "1.0",
+    "llm_R6": "1",
+    "difficulty_band": "long",
+    "r5_band": "low",
+    "word_count": "57",
+    "attention_check_type": "",
+    "attention_check_rationale": "",
+    "file_path": "dialogues/case_21__rule_based__pure_cbr_tpl__leg_a.json"
+  },
+  "primary_score": {
+    "R1": 1,
+    "R2": 1,
+    "R3": 1,
+    "R4": 2,
+    "R5": 1,
+    "R6": 1,
+    "justification_pass1": "The teacher repeatedly provides identical examples about simpler x\u00b2+bx+c factorisation that completely ignore the student's explicit and repeated question about how the coefficient 3 in front of x\u00b2 distributes in the factorised form, showing no engagement with the actual misconception and resulting in no student progress.",
+    "justification_pass2": "The teacher does not state explicit procedures, show worked steps, or give direct corrective feedback; instead, they repeatedly present the same three example cases without demonstrating the factorization process or directly addressing the student's specific confusion about the leading coefficient.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 1,\n  \"R2\": 1,\n  \"R3\": 1,\n  \"R4\": 2,\n  \"R5\": 1,\n  \"brief_justification\": \"The teacher repeatedly provides identical examples about simpler x\u00b2+bx+c factorisation that completely ignore the student's explicit and repeated question about how the coefficient 3 in front of x\u00b2 distributes in the factorised form, showing no engagement with the actual misconception and resulting in no student progress.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 1, \"brief_justification\": \"The teacher does not state explicit procedures, show worked steps, or give direct corrective feedback; instead, they repeatedly present the same three example cases without demonstrating the factorization process or directly addressing the student's specific confusion about the leading coefficient.\"}\n```",
+    "quality_composite": 1.0,
+    "is_complete": true
+  },
+  "secondary_score": {
+    "R1": 3,
+    "R2": 4,
+    "R3": 3,
+    "R4": 5,
+    "R5": 4,
+    "R6": 2,
+    "justification_pass1": "The teacher engages with the student's misconception about the coefficient but does not provide a clear explanation of how it affects the factorization, though the student shows improvement in understanding the process.",
+    "justification_pass2": "The teacher does not explicitly state procedures or show worked steps, focusing instead on discussing misconceptions without providing direct corrective feedback or clear procedural guidance.",
+    "judge_provider": "openai",
+    "judge_model": "gpt-4o-mini",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\"R1\": 3, \"R2\": 4, \"R3\": 3, \"R4\": 5, \"R5\": 4, \"brief_justification\": \"The teacher engages with the student's misconception about the coefficient but does not provide a clear explanation of how it affects the factorization, though the student shows improvement in understanding the process.\"}\n```",
+    "pass2_raw_text": "{\"R6\": 2, \"brief_justification\": \"The teacher does not explicitly state procedures or show worked steps, focusing instead on discussing misconceptions without providing direct corrective feedback or clear procedural guidance.\"}"
+  }
+}

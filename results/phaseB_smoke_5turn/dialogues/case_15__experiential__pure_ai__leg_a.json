@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_15",
+    "misconception_label": "Has used slant height and base to find area of a triangle rather than perpendicular height and base",
+    "misconception_features": [
+      0.0,
+      15.0,
+      2.0,
+      94.0
+    ],
+    "persona": "experiential",
+    "architecture": "pure_ai",
+    "student_leg": "leg_a",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T16:12:18.030718Z",
+      "seed": 819,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T16:12:23.180536Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: How would you calculate the area of this triangle? ![A triangle, base 12m. All three sides are equal.](). I got \\( \\frac{12 \\times 12}{2} \\) because I added the side lengths instead of multiplying.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's think of the triangle as a tent. The slant height is like the length of the tent pole, but we need to find the perpendicular height from the top of the tent to the ground. This will give us the correct height to use in calculating the area.",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Oh, I see! So the perpendicular height is like the straight line from the top of the tent to the ground, not just any height? How do I find that height for this triangle? Do I need to use something special?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Imagine the triangle as a roof of a house. The perpendicular height would be like the distance from the peak of the roof straight down to the ground. To find this height, you can use the Pythagorean theorem to calculate the missing side length of the right triangle formed by the height, the base, and the slant height.",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "Okay, I think I get it a bit better now! So, if I want to find the perpendicular height, I can use the Pythagorean theorem. But how do I set that up? What do I need to know about the triangle to use it?",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 4,
+    "R2": 2,
+    "R3": 3,
+    "R4": 5,
+    "R5": 3,
+    "R6": 5,
+    "justification_pass1": "The teacher effectively addresses the slant vs. perpendicular height misconception with clear analogies, but provides mostly direct instruction rather than eliciting student reasoning, and while the student shows improved conceptual understanding, they remain dependent on teacher guidance for the procedural steps.",
+    "justification_pass2": "The teacher consistently uses concrete real-world analogies (tent, house roof) to explain the abstract concept of perpendicular height, which is a textbook example of the experiential strategy.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 4,\n  \"R2\": 2,\n  \"R3\": 3,\n  \"R4\": 5,\n  \"R5\": 3,\n  \"brief_justification\": \"The teacher effectively addresses the slant vs. perpendicular height misconception with clear analogies, but provides mostly direct instruction rather than eliciting student reasoning, and while the student shows improved conceptual understanding, they remain dependent on teacher guidance for the procedural steps.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 5, \"brief_justification\": \"The teacher consistently uses concrete real-world analogies (tent, house roof) to explain the abstract concept of perpendicular height, which is a textbook example of the experiential strategy.\"}\n```",
+    "quality_composite": 3.0,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T16:12:29.652646+00:00"
+}

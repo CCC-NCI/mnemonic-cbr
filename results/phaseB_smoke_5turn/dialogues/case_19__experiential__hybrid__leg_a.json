@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_19",
+    "misconception_label": "When subtracting fractions, subtracts the numerators and multiplies the denominators",
+    "misconception_features": [
+      0.0,
+      19.0,
+      3.0,
+      104.0
+    ],
+    "persona": "experiential",
+    "architecture": "hybrid",
+    "student_leg": "leg_a",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T16:55:22.166549Z",
+      "seed": 1021,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T16:55:28.193614Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: Express the following as a single fraction, writing your answer as simply as possible: \\( \\frac{1}{s}-\\frac{t}{3} \\). I got \\( \\frac{1-t}{3 s} \\) because I treated the fractions like ordinary numbers.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's think of subtracting fractions as sharing a pizza. When you take away a slice from one pizza and a different number of slices from another pizza, the sizes of the pizzas matter. In this case, the denominators in the fractions act like the sizes of the pizzas, so we can't just subtract the numerators like we would with whole numbers. Let's revisit the concept of finding a common denominator to correctly subtract these fractions.",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Okay, I think I get what you're saying about the pizzas and how the sizes matter. So, I need to find a common denominator first before I can subtract the fractions, right? But how do I actually find that common denominator for \\(s\\) and \\(3\\)?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's think of finding a common denominator like finding a common size for the pizzas before we can subtract the slices. For fractions involving variables like \\(s\\) and \\(3\\), we need to look at the factors of each denominator and choose the smallest number that they can both divide into evenly. So, for \\(s\\) and \\(3\\), what do you think would be a common denominator that both numbers can divide into evenly?",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "I think the common denominator for \\(s\\) and \\(3\\) would be \\(3s\\) because it includes both parts. So, do I change both fractions to have \\(3s\\) as the denominator before I can subtract them? How do I do that exactly?",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 2,
+    "R3": 2,
+    "R4": 5,
+    "R5": 3,
+    "R6": 4,
+    "justification_pass1": "The teacher uses a pizza analogy but doesn't directly address why subtracting numerators and multiplying denominators is wrong, asks leading questions that require minimal reasoning, and while the student progresses to finding a common denominator, they still ask 'how do I do that exactly' suggesting incomplete understanding of the procedure.",
+    "justification_pass2": "The teacher consistently uses a concrete pizza analogy to explain the abstract concept of common denominators and fraction subtraction, though the analogy could be slightly more developed to show the actual mechanics of converting fractions.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 2,\n  \"R3\": 2,\n  \"R4\": 5,\n  \"R5\": 3,\n  \"brief_justification\": \"The teacher uses a pizza analogy but doesn't directly address why subtracting numerators and multiplying denominators is wrong, asks leading questions that require minimal reasoning, and while the student progresses to finding a common denominator, they still ask 'how do I do that exactly' suggesting incomplete understanding of the procedure.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 4, \"brief_justification\": \"The teacher consistently uses a concrete pizza analogy to explain the abstract concept of common denominators and fraction subtraction, though the analogy could be slightly more developed to show the actual mechanics of converting fractions.\"}\n```",
+    "quality_composite": 2.0,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T16:55:34.750780+00:00"
+}

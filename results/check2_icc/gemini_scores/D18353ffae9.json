@@ -1,0 +1,53 @@
+{
+  "blind_id": "D18353ffae9",
+  "subset_row": {
+    "blind_id": "D18353ffae9",
+    "case_id": "case_7",
+    "persona": "experiential",
+    "architecture": "pure_cbr_llm",
+    "student_leg": "leg_b",
+    "llm_R5": "4",
+    "llm_quality_composite": "2.3333333333333335",
+    "llm_R6": "3",
+    "difficulty_band": "medium",
+    "r5_band": "high",
+    "word_count": "29",
+    "attention_check_type": "",
+    "attention_check_rationale": "",
+    "file_path": "dialogues/case_7__experiential__pure_cbr_llm__leg_b.json"
+  },
+  "primary_score": {
+    "R1": 2,
+    "R2": 3,
+    "R3": 2,
+    "R4": 4,
+    "R5": 4,
+    "R6": 3,
+    "justification_pass1": "The teacher uses a concrete context to help the student arrive at the correct answer, and the student does improve from 0.432 to 4.32, but the percentage analogy in Turn 3 confuses rather than clarifies the misconception, and the teacher doesn't explicitly address why the student divided by 100 instead of 10.",
+    "justification_pass2": "The teacher starts strong with a concrete money-sharing analogy (Turn 1) that grounds the division in everyday experience, but then shifts to an abstract percentage conversion comparison (Turn 3) that confuses rather than clarifies, diluting the experiential approach.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 3,\n  \"R3\": 2,\n  \"R4\": 4,\n  \"R5\": 4,\n  \"brief_justification\": \"The teacher uses a concrete context to help the student arrive at the correct answer, and the student does improve from 0.432 to 4.32, but the percentage analogy in Turn 3 confuses rather than clarifies the misconception, and the teacher doesn't explicitly address why the student divided by 100 instead of 10.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 3, \"brief_justification\": \"The teacher starts strong with a concrete money-sharing analogy (Turn 1) that grounds the division in everyday experience, but then shifts to an abstract percentage conversion comparison (Turn 3) that confuses rather than clarifies, diluting the experiential approach.\"}\n```",
+    "quality_composite": 2.3333333333333335,
+    "is_complete": true
+  },
+  "secondary_score": {
+    "R1": 3,
+    "R2": 3,
+    "R3": 2,
+    "R4": 2,
+    "R5": 3,
+    "R6": 3,
+    "justification_pass1": "The teacher's initial real-world analogy is effective, but they follow it up by stating the rule and introducing a confusing, mathematically inappropriate analogy about percentages.",
+    "justification_pass2": "The teacher began with a strong, concrete analogy of sharing money but then deviated by introducing a confusing and abstract comparison to percentages.",
+    "judge_provider": "gemini",
+    "judge_model": "gemini-2.5-pro",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 3,\n  \"R2\": 3,\n  \"R3\": 2,\n  \"R4\": 2,\n  \"R5\": 3,\n  \"brief_justification\": \"The teacher's initial real-world analogy is effective, but they follow it up by stating the rule and introducing a confusing, mathematically inappropriate analogy about percentages.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\n  \"R6\": 3,\n  \"brief_justification\": \"The teacher began with a strong, concrete analogy of sharing money but then deviated by introducing a confusing and abstract comparison to percentages.\"\n}\n```"
+  }
+}

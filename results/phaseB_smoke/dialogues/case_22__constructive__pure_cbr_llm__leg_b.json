@@ -1,0 +1,66 @@
+{
+  "state": {
+    "case_id": "case_22",
+    "misconception_label": "Does not realise that adding a larger number gives a larger answer",
+    "misconception_features": [
+      0.0,
+      22.0,
+      2.0,
+      98.0
+    ],
+    "persona": "constructive",
+    "architecture": "pure_cbr_llm",
+    "student_leg": "leg_b",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T11:42:43.480151Z",
+      "seed": 1156,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-12T11:42:47.531980Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: Tom and Katie are discussing related calculations Tom says if you know that \\( 3748+426=4174 \\), then \\( 3748+427 \\) must equal \\( \\mathbf{4 1 7 5} \\) Katie says if you know that \\( 3748-426=3322 \\), then \\( 3748 \\) - \\( 427 \\) must equal \\( \\mathbf{3 3 2 3} \\) Who is correct? I got Only Katie because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's revisit the concept of adding larger numbers. Think about how adding a larger number affects the total sum in our calculations. Can you identify any patterns or strategies that might help us approach this problem differently?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Um, so like... if we're adding a bigger number, the answer should get bigger too, right? So if 3748 + 426 = 4174, then adding 427 instead of 426 means we're adding 1 more, so the answer should be 4175 not 4174? But I'm still confused about why I thought Katie was right then...",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's think about similar cases where students had misconceptions about adding numbers. Remember when students thought adding a larger number of powers of 10 added onto the wrong column? We can apply that same concept here. Can you think about how that relates to our current problem with adding 427 instead of 426?",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 3,
+    "R3": 2,
+    "R4": 2,
+    "R5": 4,
+    "R6": 2,
+    "justification_pass1": "While the student shows clear improvement in understanding that adding larger numbers gives larger answers (Turn 2), the teacher's final turn introduces a confusing and irrelevant analogy about powers of 10 that doesn't match the student's demonstrated needs, and the teacher never addresses Katie's subtraction claim which is actually incorrect.",
+    "justification_pass2": "While the teacher attempts to scaffold by breaking down the problem, Turn 1 provides vague guidance that doesn't meet the student where they are, and Turn 3 references an unclear external example rather than building directly on the student's emerging correct understanding in Turn 2.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 3,\n  \"R3\": 2,\n  \"R4\": 2,\n  \"R5\": 4,\n  \"brief_justification\": \"While the student shows clear improvement in understanding that adding larger numbers gives larger answers (Turn 2), the teacher's final turn introduces a confusing and irrelevant analogy about powers of 10 that doesn't match the student's demonstrated needs, and the teacher never addresses Katie's subtraction claim which is actually incorrect.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 2, \"brief_justification\": \"While the teacher attempts to scaffold by breaking down the problem, Turn 1 provides vague guidance that doesn't meet the student where they are, and Turn 3 references an unclear external example rather than building directly on the student's emerging correct understanding in Turn 2.\"}\n```",
+    "quality_composite": 2.3333333333333335,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T11:42:55.744994+00:00"
+}

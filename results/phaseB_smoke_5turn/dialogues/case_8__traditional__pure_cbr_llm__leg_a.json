@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_8",
+    "misconception_label": "Does not find a common denominator when adding/subtracting fractions",
+    "misconception_features": [
+      0.0,
+      8.0,
+      3.0,
+      88.0
+    ],
+    "persona": "traditional",
+    "architecture": "pure_cbr_llm",
+    "student_leg": "leg_a",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T14:59:51.927650Z",
+      "seed": 485,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T14:59:58.163291Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: \\( \\frac{4}{5}-\\frac{1}{3}=\\frac{\\bigstar}{15} \\) What should replace the star? I got \\( 5 \\) because I treated the fractions like ordinary numbers.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "When adding or subtracting fractions, it's important to find a common denominator. In this case, the common denominator for \\( \\frac{4}{5} \\) and \\( \\frac{1}{3} \\) is 15. So, the correct answer should be \\( \\frac{4}{5}-\\frac{1}{3}=\\frac{7}{15} \\). Can you explain why finding a common denominator is necessary in this situation?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "I think I get that finding a common denominator is important because the fractions need to be the same size to subtract them properly. But I\u2019m still confused about how to actually change them to have that common denominator. Can you show me how to do that step by step?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's start by finding a common denominator for \\( \\frac{4}{5} \\) and \\( \\frac{1}{3} \\). Since 5 and 3 do not share a common factor, we can multiply them together to get 15. Next, we need to rewrite each fraction with the denominator of 15.",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "Okay, I think I understand that we need to change both fractions to have 15 as the denominator. But how do we actually rewrite \\( \\frac{4}{5} \\) and \\( \\frac{1}{3} \\) to make them fit? Like, what do I do to the top numbers?",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 2,
+    "R3": 2,
+    "R4": 5,
+    "R5": 2,
+    "R6": 3,
+    "justification_pass1": "The teacher correctly identifies the need for common denominators but immediately provides the answer rather than addressing why the student's approach of 'treating fractions like ordinary numbers' fails, asks questions that elicit minimal reasoning, and the student remains confused about the fundamental procedure after four turns.",
+    "justification_pass2": "The teacher provides direct explanations and checks understanding, which aligns with traditional teaching, but stops short of providing complete worked examples by not showing the full step-by-step conversion of numerators when the student explicitly requests it.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 2,\n  \"R3\": 2,\n  \"R4\": 5,\n  \"R5\": 2,\n  \"brief_justification\": \"The teacher correctly identifies the need for common denominators but immediately provides the answer rather than addressing why the student's approach of 'treating fractions like ordinary numbers' fails, asks questions that elicit minimal reasoning, and the student remains confused about the fundamental procedure after four turns.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 3, \"brief_justification\": \"The teacher provides direct explanations and checks understanding, which aligns with traditional teaching, but stops short of providing complete worked examples by not showing the full step-by-step conversion of numerators when the student explicitly requests it.\"}\n```",
+    "quality_composite": 2.0,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T15:00:06.459329+00:00"
+}

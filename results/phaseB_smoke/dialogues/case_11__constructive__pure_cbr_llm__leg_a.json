@@ -1,0 +1,66 @@
+{
+  "state": {
+    "case_id": "case_11",
+    "misconception_label": "Struggles to visualise nets of 3D shapes",
+    "misconception_features": [
+      0.0,
+      11.0,
+      3.0,
+      31.0
+    ],
+    "persona": "constructive",
+    "architecture": "pure_cbr_llm",
+    "student_leg": "leg_a",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T09:58:20.441917Z",
+      "seed": 605,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-12T09:58:26.720410Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: This is the net of a... ![A circle touching a sector](). I got Triangle because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "It seems like you may be struggling to visualize the net of a 3D shape. Let's focus on identifying the correct shape name instead of just one of its faces. Can you think about how the sides of the net connect to form a 3D shape?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "I think I get what you're saying about the sides connecting, but I'm still not sure how to picture that. Like, if the net has a circle and a sector, does that mean it could be something like a cone? But then, how do I know for sure?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "It's great that you're thinking about how the sides of the net connect to form a 3D shape like a cone. To be sure, think about the shape of the net and how it would fold together to create a solid shape with curved surfaces. This can help you determine the correct 3D shape name.",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 3,
+    "R2": 2,
+    "R3": 2,
+    "R4": 5,
+    "R5": 3,
+    "R6": 3,
+    "justification_pass1": "The teacher acknowledges the visualization struggle and the content is accurate, but provides vague prompts rather than concrete scaffolding, and while the student moves from 'triangle' to 'cone,' they remain uncertain about how to verify their answer.",
+    "justification_pass2": "The teacher breaks down the problem into manageable steps (identifying shape vs. faces, thinking about connections) and provides some scaffolding, but doesn't adjust support level based on the student's clear confusion in Turn 2, instead offering similar general guidance rather than more concrete support.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 3,\n  \"R2\": 2,\n  \"R3\": 2,\n  \"R4\": 5,\n  \"R5\": 3,\n  \"brief_justification\": \"The teacher acknowledges the visualization struggle and the content is accurate, but provides vague prompts rather than concrete scaffolding, and while the student moves from 'triangle' to 'cone,' they remain uncertain about how to verify their answer.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\n  \"R6\": 3,\n  \"brief_justification\": \"The teacher breaks down the problem into manageable steps (identifying shape vs. faces, thinking about connections) and provides some scaffolding, but doesn't adjust support level based on the student's clear confusion in Turn 2, instead offering similar general guidance rather than more concrete support.\"\n}\n```",
+    "quality_composite": 2.3333333333333335,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T09:58:33.851974+00:00"
+}

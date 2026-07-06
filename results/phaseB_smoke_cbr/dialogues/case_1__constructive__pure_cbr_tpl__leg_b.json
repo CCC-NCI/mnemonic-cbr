@@ -1,0 +1,66 @@
+{
+  "state": {
+    "case_id": "case_1",
+    "misconception_label": "Does not know that to factorise a quadratic expression, to find two numbers that add to give the coefficient of the x term, and multiply to give the non variable term",
+    "misconception_features": [
+      0.0,
+      1.0,
+      3.0,
+      59.0
+    ],
+    "persona": "constructive",
+    "architecture": "pure_cbr_tpl",
+    "student_leg": "leg_b",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T08:16:53.247217Z",
+      "seed": 108,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "cbr_grounded",
+      "ended_at": "2026-05-12T08:16:55.121418Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: Simplify the following, if possible: \\( \\frac{m^{2}+2 m-3}{m-3} \\). I got \\( m+1 \\) because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's think about this. From similar cases:\n  1. Topic: Factorise a quadratic expression in the form x\u00b2 + bx + c. Correct answer (C): Add to give \\( 5 \\) and multiply to give \\( 6 \\). Student selected: Add to give \\( 6 \\) and multiply to give \\( 5 \\). Underlying misconception: Does not know that to factorise a quadratic expression, to find two numbers that add to give the coefficient of the x term, and multiply to give the non variable term. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.\n  2. Topic: Factorise a quadratic expression in the form x\u00b2 + bx + c. Correct answer (C): \\( (x+1)(x+5) \\). Student selected: \\( (x+2)(x+3) \\). Underlying misconception: Does not know that to factorise a quadratic expression, to find two numbers that add to give the coefficient of the x term, and multiply to give the non variable term. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.\n  3. Topic: Factorise a quadratic expression in the form x\u00b2 + bx + c. Correct answer (B): \\( (x+3)(x+12) \\) \\( (x+3)(x+12) \\). Student selected: \\( (x+4)(x+9) \\) \\( (x+4)(x+9) \\). Underlying misconception: Believes that when factorising a quadratic, they can choose any two numbers that multiply to give the constant. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Oh right, so I think I see the problem now - I was just picking any two numbers that multiply together, wasn't I? But you're saying I need to find two numbers that do *both* things at the same time - add up to give one number AND multiply to give another? Can you show me how that works with the m\u00b2 + 2m - 3 bit?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's think about this. From similar cases:\n  1. Topic: Factorise a quadratic expression in the form x\u00b2 + bx + c. Correct answer (C): Add to give \\( 5 \\) and multiply to give \\( 6 \\). Student selected: Add to give \\( 6 \\) and multiply to give \\( 5 \\). Underlying misconception: Does not know that to factorise a quadratic expression, to find two numbers that add to give the coefficient of the x term, and multiply to give the non variable term. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.\n  2. Topic: Factorise a quadratic expression in the form x\u00b2 + bx + c. Correct answer (C): \\( (x+1)(x+5) \\). Student selected: \\( (x+2)(x+3) \\). Underlying misconception: Does not know that to factorise a quadratic expression, to find two numbers that add to give the coefficient of the x term, and multiply to give the non variable term. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.\n  3. Topic: Factorise a quadratic expression in the form x\u00b2 + bx + c. Correct answer (B): \\( (x+3)(x+12) \\) \\( (x+3)(x+12) \\). Student selected: \\( (x+4)(x+9) \\) \\( (x+4)(x+9) \\). Underlying misconception: Believes that when factorising a quadratic, they can choose any two numbers that multiply to give the constant. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 1,
+    "R2": 1,
+    "R3": 1,
+    "R4": 3,
+    "R5": 1,
+    "R6": 1,
+    "justification_pass1": "The teacher simply repeats identical generic examples twice without addressing the student's direct request for help with their specific problem (m\u00b2 + 2m - 3), failing to engage with the student's emerging understanding or provide any actual instruction.",
+    "justification_pass2": "The teacher simply repeats identical generic examples without scaffolding, breaking down the specific problem, or adjusting support based on the student's clear request for help with their particular expression m\u00b2 + 2m - 3.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 1,\n  \"R2\": 1,\n  \"R3\": 1,\n  \"R4\": 3,\n  \"R5\": 1,\n  \"brief_justification\": \"The teacher simply repeats identical generic examples twice without addressing the student's direct request for help with their specific problem (m\u00b2 + 2m - 3), failing to engage with the student's emerging understanding or provide any actual instruction.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 1, \"brief_justification\": \"The teacher simply repeats identical generic examples without scaffolding, breaking down the specific problem, or adjusting support based on the student's clear request for help with their particular expression m\u00b2 + 2m - 3.\"}\n```",
+    "quality_composite": 1.0,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T08:17:02.504741+00:00"
+}

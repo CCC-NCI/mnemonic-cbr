@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_4",
+    "misconception_label": "Thinks you can find missing values in a given table by treating the row as linear and adding on the difference between the first two values given.",
+    "misconception_features": [
+      0.0,
+      4.0,
+      1.0,
+      74.0
+    ],
+    "persona": "rule_based",
+    "architecture": "hybrid",
+    "student_leg": "leg_b",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T13:52:35.768126Z",
+      "seed": 282,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T13:52:41.190143Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: The equation \\( f=3 r^{2}+3 \\) is used to find values in the table below. What is the value covered by the star? \\begin{tabular}{|c|c|c|c|c|} \\hline\\( r \\) & \\( 1 \\) & \\( 2 \\) & \\( 3 \\) & \\( 4 \\) \\\\ \\hline\\( f \\) & \\( 6 \\) & \\( 15 \\) & \\( \\color{gold}\\bigstar \\) & \\\\ \\hline \\end{tabular}. I got \\( 24 \\) because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "You are correct that the equation \\( f=3 r^{2}+3 \\) is used to find values in the table. However, to find the missing value represented by the star, you cannot simply add on the difference between the first two values. Instead, you need to substitute the given value of \\( r \\) into the equation and solve for \\( f \\) using the correct formula. Let's walk through the correct procedure together.",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Oh right, so I shouldn't just keep adding 9 each time? So I need to use the equation itself... so for the star where r = 3, I'd do f = 3 times 3 squared plus 3? Is that how you substitute it in?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Yes, that's correct. You have the right idea. Let's go ahead and substitute \\( r = 3 \\) into the equation \\( f = 3r^2 + 3 \\) to find the value for \\( f \\) at \\( r = 3 \\). Can you go ahead and calculate that for me step by step?",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "So I do 3 times 3 squared first, which is 3 times 9, that's 27, and then I add 3 to get 30? So the star should be 30, not 24?",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 4,
+    "R2": 3,
+    "R3": 4,
+    "R4": 5,
+    "R5": 5,
+    "R6": 3,
+    "justification_pass1": "The teacher explicitly names and addresses the linear addition misconception, guides the student to substitute correctly into the quadratic equation, and the student successfully moves from the incorrect answer (24) to the correct one (30) while demonstrating understanding of the substitution process.",
+    "justification_pass2": "The teacher provides direct corrective feedback on the procedural error and guides the student through the correct substitution procedure, but stops short of explicitly showing worked steps themselves, instead prompting the student to perform the calculations.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 4,\n  \"R2\": 3,\n  \"R3\": 4,\n  \"R4\": 5,\n  \"R5\": 5,\n  \"brief_justification\": \"The teacher explicitly names and addresses the linear addition misconception, guides the student to substitute correctly into the quadratic equation, and the student successfully moves from the incorrect answer (24) to the correct one (30) while demonstrating understanding of the substitution process.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 3, \"brief_justification\": \"The teacher provides direct corrective feedback on the procedural error and guides the student through the correct substitution procedure, but stops short of explicitly showing worked steps themselves, instead prompting the student to perform the calculations.\"}\n```",
+    "quality_composite": 3.6666666666666665,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T13:52:47.757044+00:00"
+}

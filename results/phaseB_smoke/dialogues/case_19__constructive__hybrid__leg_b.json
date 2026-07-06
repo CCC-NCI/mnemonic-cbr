@@ -1,0 +1,66 @@
+{
+  "state": {
+    "case_id": "case_19",
+    "misconception_label": "When subtracting fractions, subtracts the numerators and multiplies the denominators",
+    "misconception_features": [
+      0.0,
+      19.0,
+      3.0,
+      104.0
+    ],
+    "persona": "constructive",
+    "architecture": "hybrid",
+    "student_leg": "leg_b",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T11:15:42.898051Z",
+      "seed": 1012,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-12T11:15:47.142523Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: Express the following as a single fraction, writing your answer as simply as possible: \\( \\frac{1}{s}-\\frac{t}{3} \\). I got \\( \\frac{1-t}{3 s} \\) because I treated the fractions like ordinary numbers.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "It seems like you're applying a common misconception when subtracting fractions. Remember, when subtracting fractions, we need to find a common denominator and then subtract the numerators while keeping the denominator the same. Can you think about how we can find a common denominator for \\( \\frac{1}{s} \\) and \\( \\frac{t}{3} \\) in this case?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Oh right, so I need to find a common denominator instead of multiplying them... Um, would that be like 3s? So I'd have to change both fractions to have 3s on the bottom?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Great job recognizing the need for a common denominator, and yes, 3s would be the correct common denominator in this case. Now, can you think about how you would adjust both fractions to have 3s as the denominator while keeping the numerators the same? Remember, we want to subtract the numerators while keeping the denominator the same.",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 4,
+    "R2": 3,
+    "R3": 4,
+    "R4": 4,
+    "R5": 4,
+    "R6": 4,
+    "justification_pass1": "The teacher explicitly addresses the misconception about subtracting fractions, scaffolds appropriately by prompting for common denominators, and the student shows clear progress from multiplying denominators to correctly identifying 3s as the common denominator, though there's a minor error in Turn 3 about 'keeping numerators the same' when they actually need adjustment.",
+    "justification_pass2": "The teacher effectively scaffolds by breaking the problem into manageable steps (first finding common denominator, then adjusting fractions), provides appropriate support that builds on the student's correct insight about 3s, and adjusts guidance based on student progress, though could have been slightly more exploratory rather than directive.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 4,\n  \"R2\": 3,\n  \"R3\": 4,\n  \"R4\": 4,\n  \"R5\": 4,\n  \"brief_justification\": \"The teacher explicitly addresses the misconception about subtracting fractions, scaffolds appropriately by prompting for common denominators, and the student shows clear progress from multiplying denominators to correctly identifying 3s as the common denominator, though there's a minor error in Turn 3 about 'keeping numerators the same' when they actually need adjustment.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 4, \"brief_justification\": \"The teacher effectively scaffolds by breaking the problem into manageable steps (first finding common denominator, then adjusting fractions), provides appropriate support that builds on the student's correct insight about 3s, and adjusts guidance based on student progress, though could have been slightly more exploratory rather than directive.\"}\n```",
+    "quality_composite": 3.6666666666666665,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T11:15:54.008483+00:00"
+}

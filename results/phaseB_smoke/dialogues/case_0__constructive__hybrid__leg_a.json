@@ -1,0 +1,65 @@
+{
+  "state": {
+    "case_id": "case_0",
+    "misconception_label": "Confuses the order of operations, believes addition comes before multiplication",
+    "misconception_features": [
+      0.0,
+      0.0,
+      1.0,
+      70.0
+    ],
+    "persona": "constructive",
+    "architecture": "hybrid",
+    "student_leg": "leg_a",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T06:21:50.002171Z",
+      "seed": 61,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "ended_at": "2026-05-12T06:21:57.036498Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: \\[ 3 \\times 2+4-5 \\] Where do the brackets need to go to make the answer equal \\( 13 \\) ? I got Does not need brackets because I worked left to right instead of following the order of operations.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "It seems like you're struggling with the order of operations. Remember, multiplication should be done before addition. Let's focus on correctly applying the order of operations to solve this problem step by step. You're on the right track, we just need to adjust the order in which we perform the operations.",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Okay, I think I get that multiplication comes before addition, but I still don\u2019t really see how to get to 13. If I do the multiplication first, wouldn\u2019t it just be \\(3 \\times 2 = 6\\), and then I add 4 and subtract 5? That would give me \\(6 + 4 - 5 = 5\\), not 13. How do I make it equal 13?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "You're correct that the first step is to multiply 3 by 2, which equals 6. But don't forget that you need to add 4 before subtracting 5. Try breaking it down into smaller steps: first multiply, then add, and finally subtract. Remember, the order of operations is crucial in getting the correct answer. Keep going, you're on the right track!",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 1,
+    "R3": 1,
+    "R4": 1,
+    "R5": 1,
+    "R6": 2,
+    "justification_pass1": "The teacher misses the actual task (placing brackets to get 13), provides mathematically incorrect guidance about order of operations with addition/subtraction, fails to engage the student in reasoning, and the student remains confused about how to achieve the target answer.",
+    "justification_pass2": "The teacher provides general encouragement and restates the order of operations rule but fails to scaffold effectively by not addressing the student's core confusion about bracket placement or breaking down the problem into manageable steps that would help the student discover where brackets are needed to achieve 13.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 1,\n  \"R3\": 1,\n  \"R4\": 1,\n  \"R5\": 1,\n  \"brief_justification\": \"The teacher misses the actual task (placing brackets to get 13), provides mathematically incorrect guidance about order of operations with addition/subtraction, fails to engage the student in reasoning, and the student remains confused about how to achieve the target answer.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 2, \"brief_justification\": \"The teacher provides general encouragement and restates the order of operations rule but fails to scaffold effectively by not addressing the student's core confusion about bracket placement or breaking down the problem into manageable steps that would help the student discover where brackets are needed to achieve 13.\"}\n```",
+    "quality_composite": 1.3333333333333333,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T06:22:03.558310+00:00"
+}

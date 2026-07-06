@@ -1,0 +1,66 @@
+{
+  "state": {
+    "case_id": "case_19",
+    "misconception_label": "When subtracting fractions, subtracts the numerators and multiplies the denominators",
+    "misconception_features": [
+      0.0,
+      19.0,
+      3.0,
+      104.0
+    ],
+    "persona": "socratic",
+    "architecture": "pure_cbr_llm",
+    "student_leg": "leg_b",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T11:12:39.557110Z",
+      "seed": 996,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-12T11:12:43.429738Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: Express the following as a single fraction, writing your answer as simply as possible: \\( \\frac{1}{s}-\\frac{t}{3} \\). I got \\( \\frac{1-t}{3 s} \\) because I treated the fractions like ordinary numbers.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Why do you think treating fractions like ordinary numbers led you to that answer? Can you explain the difference in how fractions are subtracted compared to whole numbers?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Um, I think I just subtracted the top numbers like normal and then multiplied the bottom numbers together? But I'm not really sure why that's wrong... like, when you subtract normal numbers you just take one away from the other, so I thought you'd do the same with the tops of fractions. Is it because the denominators have to be the same or something?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Can you think of a situation where you subtract fractions with different denominators? How would you approach that problem differently than subtracting whole numbers?",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 3,
+    "R2": 3,
+    "R3": 2,
+    "R4": 5,
+    "R5": 2,
+    "R6": 5,
+    "justification_pass1": "The teacher correctly identifies the misconception and asks reasoning questions, but the scaffolding is too vague for a student who already shows confusion, and by Turn 2 the student demonstrates emerging understanding of needing common denominators but receives only another open question rather than targeted support to build on this insight.",
+    "justification_pass2": "The teacher consistently uses probing questions to guide the student toward discovering the common denominator rule without ever stating it directly, which is a textbook example of the Socratic method.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 3,\n  \"R2\": 3,\n  \"R3\": 2,\n  \"R4\": 5,\n  \"R5\": 2,\n  \"brief_justification\": \"The teacher correctly identifies the misconception and asks reasoning questions, but the scaffolding is too vague for a student who already shows confusion, and by Turn 2 the student demonstrates emerging understanding of needing common denominators but receives only another open question rather than targeted support to build on this insight.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 5, \"brief_justification\": \"The teacher consistently uses probing questions to guide the student toward discovering the common denominator rule without ever stating it directly, which is a textbook example of the Socratic method.\"}\n```",
+    "quality_composite": 2.6666666666666665,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T11:12:50.354997+00:00"
+}

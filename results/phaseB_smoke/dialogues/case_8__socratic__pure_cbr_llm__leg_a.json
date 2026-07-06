@@ -1,0 +1,66 @@
+{
+  "state": {
+    "case_id": "case_8",
+    "misconception_label": "Does not find a common denominator when adding/subtracting fractions",
+    "misconception_features": [
+      0.0,
+      8.0,
+      3.0,
+      88.0
+    ],
+    "persona": "socratic",
+    "architecture": "pure_cbr_llm",
+    "student_leg": "leg_a",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T09:27:02.087725Z",
+      "seed": 445,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-12T09:27:13.425308Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: \\( \\frac{4}{5}-\\frac{1}{3}=\\frac{\\bigstar}{15} \\) What should replace the star? I got \\( 5 \\) because I treated the fractions like ordinary numbers.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Why do you think treating fractions like ordinary numbers led you to the answer of \\(5\\)? Can you think of a situation where adding or subtracting fractions would require finding a common denominator?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "I guess I thought I could just subtract the top numbers and leave the bottom ones the same, like with regular numbers. But now I\u2019m confused about why I need a common denominator. Can you explain what that means and how it helps when adding or subtracting fractions?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Can you think of a situation where adding or subtracting fractions with different denominators would require finding a common denominator? How does finding a common denominator help ensure that the fractions are being combined correctly?",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 3,
+    "R3": 1,
+    "R4": 5,
+    "R5": 1,
+    "R6": 4,
+    "justification_pass1": "The teacher repeatedly asks abstract questions about common denominators without addressing the student's specific misconception of treating numerators and denominators separately, and the student explicitly states increased confusion by Turn 2, showing no improvement in understanding.",
+    "justification_pass2": "The teacher consistently uses probing questions to guide the student toward understanding common denominators without directly explaining the concept, though they don't employ counterexamples to expose the flawed reasoning about treating fractions like ordinary numbers.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 3,\n  \"R3\": 1,\n  \"R4\": 5,\n  \"R5\": 1,\n  \"brief_justification\": \"The teacher repeatedly asks abstract questions about common denominators without addressing the student's specific misconception of treating numerators and denominators separately, and the student explicitly states increased confusion by Turn 2, showing no improvement in understanding.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 4, \"brief_justification\": \"The teacher consistently uses probing questions to guide the student toward understanding common denominators without directly explaining the concept, though they don't employ counterexamples to expose the flawed reasoning about treating fractions like ordinary numbers.\"}\n```",
+    "quality_composite": 2.0,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T09:27:21.186099+00:00"
+}

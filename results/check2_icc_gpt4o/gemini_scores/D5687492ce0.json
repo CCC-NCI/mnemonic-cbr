@@ -1,0 +1,53 @@
+{
+  "blind_id": "D5687492ce0",
+  "subset_row": {
+    "blind_id": "D5687492ce0",
+    "case_id": "case_8",
+    "persona": "constructive",
+    "architecture": "baseline",
+    "student_leg": "leg_b",
+    "llm_R5": "3",
+    "llm_quality_composite": "2.0",
+    "llm_R6": "4",
+    "difficulty_band": "medium",
+    "r5_band": "mid",
+    "word_count": "32",
+    "attention_check_type": "",
+    "attention_check_rationale": "",
+    "file_path": "dialogues/case_8__constructive__baseline__leg_b.json"
+  },
+  "primary_score": {
+    "R1": 2,
+    "R2": 2,
+    "R3": 2,
+    "R4": 5,
+    "R5": 3,
+    "R6": 4,
+    "justification_pass1": "The teacher correctly identifies the need for a common denominator but doesn't directly address the student's specific error of subtracting numerators without adjustment (4-1=3, not 5), and while the student shows some progress toward understanding the procedure, they still haven't demonstrated they can correctly convert the fractions or complete the subtraction.",
+    "justification_pass2": "The teacher consistently scaffolds by breaking the problem into steps (common denominator first, then adjustment), builds on the student's existing knowledge, and adjusts support based on progress, though could have been slightly more explicit about the specific next step when the student showed readiness in Turn 4.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 2,\n  \"R3\": 2,\n  \"R4\": 5,\n  \"R5\": 3,\n  \"brief_justification\": \"The teacher correctly identifies the need for a common denominator but doesn't directly address the student's specific error of subtracting numerators without adjustment (4-1=3, not 5), and while the student shows some progress toward understanding the procedure, they still haven't demonstrated they can correctly convert the fractions or complete the subtraction.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\n  \"R6\": 4,\n  \"brief_justification\": \"The teacher consistently scaffolds by breaking the problem into steps (common denominator first, then adjustment), builds on the student's existing knowledge, and adjusts support based on progress, though could have been slightly more explicit about the specific next step when the student showed readiness in Turn 4.\"\n}\n```",
+    "quality_composite": 2.0,
+    "is_complete": true
+  },
+  "secondary_score": {
+    "R1": 3,
+    "R2": 4,
+    "R3": 3,
+    "R4": 5,
+    "R5": 3,
+    "R6": 5,
+    "justification_pass1": "The teacher addresses the misconception about common denominators but does not fully clarify the process; the student is encouraged to reason, but scaffolding could be more tailored to the student's confusion, and while the content is accurate, the student's understanding shows some improvement but remains incomplete.",
+    "justification_pass2": "The teacher effectively scaffolds the student's understanding by guiding them to find a common denominator and encouraging them to adjust the fractions, aligning with the constructive strategy.",
+    "judge_provider": "openai",
+    "judge_model": "gpt-4o",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 3,\n  \"R2\": 4,\n  \"R3\": 3,\n  \"R4\": 5,\n  \"R5\": 3,\n  \"brief_justification\": \"The teacher addresses the misconception about common denominators but does not fully clarify the process; the student is encouraged to reason, but scaffolding could be more tailored to the student's confusion, and while the content is accurate, the student's understanding shows some improvement but remains incomplete.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 5, \"brief_justification\": \"The teacher effectively scaffolds the student's understanding by guiding them to find a common denominator and encouraging them to adjust the fractions, aligning with the constructive strategy.\"}\n```"
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "state": {
+    "case_id": "case_21",
+    "misconception_label": "When factorising a quadratic with a non-unit coefficient of x squared, believes that coefficient will be in front of both x terms in the factorised form",
+    "misconception_features": [
+      0.0,
+      21.0,
+      1.0,
+      74.0
+    ],
+    "persona": "constructive",
+    "architecture": "baseline",
+    "student_leg": "leg_b",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T11:32:52.618467Z",
+      "seed": 1104,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-12T11:32:56.499911Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: Step 1: Factorise the following expression \\( 3 x^{2}+5 x+2 \\). I got \\( (3 x+2)(3 x+1) \\) because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's go back to the part you do know, and build the next step from there. Remember, you correctly identified the factors for the constant term, now let's focus on the coefficient of x squared. What can we do next to factorize the expression correctly?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Um, so you're saying the 3 doesn't have to go in front of both the x's? Like, maybe it only goes in one of them? But I'm not really sure how to know which bracket it should go in, or if I'm supposed to split it up differently...",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's go back to the part you do know, and build the next step from there. You're on the right track with considering where the coefficient should go. Can you think about how you can split up the coefficient of x squared to factorize the expression correctly?",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 2,
+    "R3": 2,
+    "R4": 3,
+    "R5": 1,
+    "R6": 2,
+    "justification_pass1": "The teacher uses vague prompts that don't directly address the misconception about coefficient placement, and the student shows confusion rather than progress, ending more uncertain about how to proceed than at the start.",
+    "justification_pass2": "While the teacher attempts to break down the problem and references building from known parts, they repeat nearly identical prompts without adjusting support based on the student's clear confusion about how to distribute the coefficient, failing to provide the scaffolding needed within the student's ZPD.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 2,\n  \"R3\": 2,\n  \"R4\": 3,\n  \"R5\": 1,\n  \"brief_justification\": \"The teacher uses vague prompts that don't directly address the misconception about coefficient placement, and the student shows confusion rather than progress, ending more uncertain about how to proceed than at the start.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\n  \"R6\": 2,\n  \"brief_justification\": \"While the teacher attempts to break down the problem and references building from known parts, they repeat nearly identical prompts without adjusting support based on the student's clear confusion about how to distribute the coefficient, failing to provide the scaffolding needed within the student's ZPD.\"\n}\n```",
+    "quality_composite": 2.0,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T11:33:02.835593+00:00"
+}

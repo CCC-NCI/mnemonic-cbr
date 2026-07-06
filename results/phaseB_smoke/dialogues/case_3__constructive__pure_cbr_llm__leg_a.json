@@ -1,0 +1,65 @@
+{
+  "state": {
+    "case_id": "case_3",
+    "misconception_label": "Does not know the properties of a rectangle",
+    "misconception_features": [
+      0.0,
+      3.0,
+      3.0,
+      67.0
+    ],
+    "persona": "constructive",
+    "architecture": "pure_cbr_llm",
+    "student_leg": "leg_a",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T06:57:53.831936Z",
+      "seed": 205,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "ended_at": "2026-05-12T06:57:58.396026Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: The angles highlighted on this rectangle with different length sides can never be... ![A rectangle with the diagonals drawn in. The angle on the right hand side at the centre is highlighted in red and the angle at the bottom at the centre is highlighted in yellow.](). I got acute because I assumed all the angles in the figure are equal.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's focus on the properties of a rectangle. Remember that a rectangle has four right angles, which means all its angles are equal to 90 degrees. Can you think about how this information might help you determine the correct answer for the angles in the figure you provided?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Oh, I see! So if all the angles in a rectangle are 90 degrees, then the angles in the middle where the diagonals meet can\u2019t be acute because they can\u2019t be less than 90 degrees. But what about those angles? Are they always right angles too?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "You're on the right track! Remember that the intersecting diagonals of a rectangle bisect each other and create four congruent right triangles. Think about how this property relates to the angles at the center where the diagonals meet.",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 2,
+    "R3": 2,
+    "R4": 2,
+    "R5": 2,
+    "R6": 4,
+    "justification_pass1": "The teacher addresses rectangle properties but misses the student's core confusion about central angles formed by diagonals, provides mathematically incorrect information (the diagonals don't create right triangles or right angles at the center), and the student remains confused about whether central angles are right angles by Turn 2.",
+    "justification_pass2": "The teacher effectively scaffolds by breaking down the problem into manageable steps (first focusing on rectangle properties, then diagonal properties), provides hints rather than direct answers, and adjusts support based on the student's partial understanding in Turn 2, though could have been slightly more responsive to the student's specific misconception about the angles being right angles.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 2,\n  \"R3\": 2,\n  \"R4\": 2,\n  \"R5\": 2,\n  \"brief_justification\": \"The teacher addresses rectangle properties but misses the student's core confusion about central angles formed by diagonals, provides mathematically incorrect information (the diagonals don't create right triangles or right angles at the center), and the student remains confused about whether central angles are right angles by Turn 2.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\n  \"R6\": 4,\n  \"brief_justification\": \"The teacher effectively scaffolds by breaking down the problem into manageable steps (first focusing on rectangle properties, then diagonal properties), provides hints rather than direct answers, and adjusts support based on the student's partial understanding in Turn 2, though could have been slightly more responsive to the student's specific misconception about the angles being right angles.\"\n}\n```",
+    "quality_composite": 2.0,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T06:58:05.584902+00:00"
+}

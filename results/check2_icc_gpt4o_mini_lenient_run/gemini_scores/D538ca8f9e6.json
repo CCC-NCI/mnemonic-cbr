@@ -1,0 +1,53 @@
+{
+  "blind_id": "D538ca8f9e6",
+  "subset_row": {
+    "blind_id": "D538ca8f9e6",
+    "case_id": "case_11",
+    "persona": "socratic",
+    "architecture": "hybrid",
+    "student_leg": "leg_a",
+    "llm_R5": "1",
+    "llm_quality_composite": "2.3333333333333335",
+    "llm_R6": "4",
+    "difficulty_band": "medium",
+    "r5_band": "low",
+    "word_count": "34",
+    "attention_check_type": "",
+    "attention_check_rationale": "",
+    "file_path": "dialogues/case_11__socratic__hybrid__leg_a.json"
+  },
+  "primary_score": {
+    "R1": 2,
+    "R2": 3,
+    "R3": 2,
+    "R4": 2,
+    "R5": 1,
+    "R6": 4,
+    "justification_pass1": "The teacher asks questions about faces and vertices but never addresses why the student incorrectly matched a circle-sector net to a triangular pyramid (it's actually a cone), and by Turn 4 the student remains confused about the same fundamental issue.",
+    "justification_pass2": "The teacher consistently uses probing questions to guide the student's thinking about faces, edges, and vertices without directly providing the answer, though they could have used a counterexample to more explicitly expose the flawed reasoning about the circle and sector forming a triangular pyramid net.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 3,\n  \"R3\": 2,\n  \"R4\": 2,\n  \"R5\": 1,\n  \"brief_justification\": \"The teacher asks questions about faces and vertices but never addresses why the student incorrectly matched a circle-sector net to a triangular pyramid (it's actually a cone), and by Turn 4 the student remains confused about the same fundamental issue.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 4, \"brief_justification\": \"The teacher consistently uses probing questions to guide the student's thinking about faces, edges, and vertices without directly providing the answer, though they could have used a counterexample to more explicitly expose the flawed reasoning about the circle and sector forming a triangular pyramid net.\"}\n```",
+    "quality_composite": 2.3333333333333335,
+    "is_complete": true
+  },
+  "secondary_score": {
+    "R1": 4,
+    "R2": 4,
+    "R3": 4,
+    "R4": 5,
+    "R5": 4,
+    "R6": 5,
+    "justification_pass1": "The teacher effectively engages with the student's misconception about the net of a triangular-based pyramid, prompting reasoning and clarification while providing appropriate scaffolding, leading to visible improvement in the student's understanding.",
+    "justification_pass2": "The teacher consistently uses probing questions to guide the student\u2019s thinking without providing direct answers, effectively employing the Socratic method.",
+    "judge_provider": "openai",
+    "judge_model": "gpt-4o-mini",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\"R1\": 4, \"R2\": 4, \"R3\": 4, \"R4\": 5, \"R5\": 4, \"brief_justification\": \"The teacher effectively engages with the student's misconception about the net of a triangular-based pyramid, prompting reasoning and clarification while providing appropriate scaffolding, leading to visible improvement in the student's understanding.\"}\n```",
+    "pass2_raw_text": "{\"R6\": 5, \"brief_justification\": \"The teacher consistently uses probing questions to guide the student\u2019s thinking without providing direct answers, effectively employing the Socratic method.\"}"
+  }
+}

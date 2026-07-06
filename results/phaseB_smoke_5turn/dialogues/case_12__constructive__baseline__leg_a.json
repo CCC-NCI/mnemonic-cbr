@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_12",
+    "misconception_label": "Thinks alternate angles are always equal",
+    "misconception_features": [
+      0.0,
+      12.0,
+      3.0,
+      25.0
+    ],
+    "persona": "constructive",
+    "architecture": "baseline",
+    "student_leg": "leg_a",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T15:37:02.431408Z",
+      "seed": 653,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T15:37:06.822168Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: Tom and Katie are arguing about alternate angles. Tom says angles \\( p \\) and \\( q \\) are alternate. Katie says angles \\( p \\) and \\( q \\) are equal. Who is correct? ![Shows two non parallel lines that are intersected by another line. Angles P and Q are both on the outside of the lines and on opposite sides of the transversal.](). I got Only\nKatie because I assumed all the angles in the figure are equal.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's go back to the part you do know, and build the next step from there. Remember, alternate angles are not always equal.",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Okay, I think I get that alternate angles aren't always equal. So, if the lines aren't parallel, then angles \\( p \\) and \\( q \\) can be different, right? But how do I know when they are equal?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's continue building on what you've just realized. Think about the relationship between the angles and the lines in the diagram to determine when alternate angles are equal.",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "So, if the lines are parallel, then angles \\( p \\) and \\( q \\) are equal, right? But how do I tell if the lines are parallel just by looking at the angles? Do I need to check something specific?",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 4,
+    "R2": 2,
+    "R3": 2,
+    "R4": 5,
+    "R5": 4,
+    "R6": 4,
+    "justification_pass1": "The teacher directly addresses the misconception that alternate angles are always equal and the student progresses from believing all angles are equal to understanding the parallel line condition, though the teacher could have pushed for more active reasoning rather than just prompting reflection.",
+    "justification_pass2": "The teacher consistently scaffolds by building on the student's current understanding, breaks down the concept into manageable steps (first establishing that alternate angles aren't always equal, then guiding toward the parallel line condition), though could have provided slightly more explicit support when the student asked specific questions about identifying parallel lines.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 4,\n  \"R2\": 2,\n  \"R3\": 2,\n  \"R4\": 5,\n  \"R5\": 4,\n  \"brief_justification\": \"The teacher directly addresses the misconception that alternate angles are always equal and the student progresses from believing all angles are equal to understanding the parallel line condition, though the teacher could have pushed for more active reasoning rather than just prompting reflection.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 4, \"brief_justification\": \"The teacher consistently scaffolds by building on the student's current understanding, breaks down the concept into manageable steps (first establishing that alternate angles aren't always equal, then guiding toward the parallel line condition), though could have provided slightly more explicit support when the student asked specific questions about identifying parallel lines.\"}\n```",
+    "quality_composite": 2.6666666666666665,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T15:37:13.241924+00:00"
+}

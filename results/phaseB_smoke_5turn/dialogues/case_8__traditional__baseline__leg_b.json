@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_8",
+    "misconception_label": "Does not find a common denominator when adding/subtracting fractions",
+    "misconception_features": [
+      0.0,
+      8.0,
+      3.0,
+      88.0
+    ],
+    "persona": "traditional",
+    "architecture": "baseline",
+    "student_leg": "leg_b",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T14:59:38.972201Z",
+      "seed": 484,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T14:59:43.851805Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: \\( \\frac{4}{5}-\\frac{1}{3}=\\frac{\\bigstar}{15} \\) What should replace the star? I got \\( 5 \\) because I treated the fractions like ordinary numbers.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let me explain the correct method, and then we will work through an example together. When adding or subtracting fractions, it's important to find a common denominator. Let's find the common denominator for \\( \\frac{4}{5} \\) and \\( \\frac{1}{3} \\) first.",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Um, okay... so I need to find a common denominator? Does that mean I need to find a number that both 5 and 3 go into? Like, would that be 15 since that's what the answer already has?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Yes, that's correct. The common denominator is the least common multiple of the denominators, which in this case is 15. Let's now find the equivalent fractions with a denominator of 15 for \\( \\frac{4}{5} \\) and \\( \\frac{1}{3} \\).",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "Okay, so I need to make both fractions have 15 on the bottom... but how do I do that? Do I just change the numbers, or do I have to multiply something?",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 2,
+    "R3": 2,
+    "R4": 5,
+    "R5": 3,
+    "R6": 5,
+    "justification_pass1": "The teacher provides mathematically correct instruction but primarily tells rather than engages with the student's specific error of 'treating fractions like ordinary numbers,' and while the student shows some progress in understanding the need for common denominators, they still don't demonstrate how to actually convert the fractions by Turn 4.",
+    "justification_pass2": "The teacher exemplifies the traditional strategy by directly explaining the correct method (finding common denominators), providing a worked example with step-by-step guidance, and checking understanding at each stage before proceeding.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 2,\n  \"R3\": 2,\n  \"R4\": 5,\n  \"R5\": 3,\n  \"brief_justification\": \"The teacher provides mathematically correct instruction but primarily tells rather than engages with the student's specific error of 'treating fractions like ordinary numbers,' and while the student shows some progress in understanding the need for common denominators, they still don't demonstrate how to actually convert the fractions by Turn 4.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 5, \"brief_justification\": \"The teacher exemplifies the traditional strategy by directly explaining the correct method (finding common denominators), providing a worked example with step-by-step guidance, and checking understanding at each stage before proceeding.\"}\n```",
+    "quality_composite": 2.0,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T14:59:51.922252+00:00"
+}

@@ -1,0 +1,66 @@
+{
+  "state": {
+    "case_id": "case_14",
+    "misconception_label": "Stops iteration too early when solving equations",
+    "misconception_features": [
+      0.0,
+      14.0,
+      3.0,
+      85.0
+    ],
+    "persona": "experiential",
+    "architecture": "pure_ai",
+    "student_leg": "leg_b",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T10:29:01.928201Z",
+      "seed": 770,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-12T10:29:05.792450Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: \\( x_{n+1}=5-\\frac{1}{x_{n}} \\) Using a starting value of \\( x_{1}=2 \\), what is the solution to \\( x=5-\\frac{1}{x} \\) to \\( 2 \\) decimal places? I got \\( 4.78 \\) because I added the parts of the ratio as if they were a total.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Think of solving this equation as a puzzle where you need to find the missing piece to complete the picture. Just like how you wouldn't stop putting together a jigsaw puzzle until all the pieces fit perfectly, you need to keep iterating until you reach the solution that fits the equation correctly. Keep going until you find the right answer!",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Oh right, so I need to keep going with more iterations instead of stopping at 4.78? Like, I should keep plugging the answer back into the formula until the numbers stop changing much? How many times do I need to do it before I know I've got the right answer?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Think of it like trying to find the right combination to unlock a treasure chest. You keep trying different combinations until the lock finally clicks open. Similarly, keep iterating by plugging the answer back into the formula until the numbers stabilize and you reach the correct solution. The number of iterations needed can vary, but you'll know you've found the right answer when the numbers stop changing significantly.",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 1,
+    "R2": 1,
+    "R3": 2,
+    "R4": 4,
+    "R5": 3,
+    "R6": 2,
+    "justification_pass1": "The teacher uses vague metaphors (puzzles, treasure chests) that don't address the specific misconception of stopping iteration too early, provides no concrete guidance on convergence criteria, though the student does show some improvement by recognizing the need to continue iterating.",
+    "justification_pass2": "While the teacher uses analogies (jigsaw puzzle, treasure chest lock), these are abstract metaphors for the iterative process itself rather than concrete real-world situations that ground the mathematical concept of fixed-point iteration in everyday experience.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 1,\n  \"R2\": 1,\n  \"R3\": 2,\n  \"R4\": 4,\n  \"R5\": 3,\n  \"brief_justification\": \"The teacher uses vague metaphors (puzzles, treasure chests) that don't address the specific misconception of stopping iteration too early, provides no concrete guidance on convergence criteria, though the student does show some improvement by recognizing the need to continue iterating.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 2, \"brief_justification\": \"While the teacher uses analogies (jigsaw puzzle, treasure chest lock), these are abstract metaphors for the iterative process itself rather than concrete real-world situations that ground the mathematical concept of fixed-point iteration in everyday experience.\"}\n```",
+    "quality_composite": 1.3333333333333333,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T10:29:14.750084+00:00"
+}

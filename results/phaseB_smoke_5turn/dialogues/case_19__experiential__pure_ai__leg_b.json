@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_19",
+    "misconception_label": "When subtracting fractions, subtracts the numerators and multiplies the denominators",
+    "misconception_features": [
+      0.0,
+      19.0,
+      3.0,
+      104.0
+    ],
+    "persona": "experiential",
+    "architecture": "pure_ai",
+    "student_leg": "leg_b",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T16:55:08.030777Z",
+      "seed": 1020,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T16:55:15.184459Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: Express the following as a single fraction, writing your answer as simply as possible: \\( \\frac{1}{s}-\\frac{t}{3} \\). I got \\( \\frac{1-t}{3 s} \\) because I treated the fractions like ordinary numbers.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Imagine you have a pizza sliced into \\( s \\) equal parts and another pizza sliced into 3 equal parts. When you subtract a slice of the second pizza from a slice of the first pizza, you are left with \\( s-3 \\) slices. So, in the same way, when subtracting fractions, you should only subtract the numerators and keep the denominators the same. Can you see how this relates to your current misconception?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Um, I think I see what you mean about the pizza slices, but I'm a bit confused... if the pizzas are cut into different numbers of pieces, how can I just subtract the numerators? Wouldn't I need to make them the same size first or something?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Imagine you have two different-sized containers, one holding \\(s\\) marbles and the other holding \\(3t\\) marbles. If you take away \\(t\\) marbles from each container, you will be left with \\(s-t\\) marbles in the first container and \\(2t\\) marbles in the second container. Just like with the pizzas, you can subtract the numerators when subtracting fractions, as long as you keep the denominators the same. Can you see how this analogy applies to subtracting fractions?",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "Um, I think I'm getting a bit more confused actually... In your marble example, the containers have different amounts in them, but with my fractions, the denominators are different numbers like *s* and 3, so how do I know what to do? Like, shouldn't I need to find a common denominator or something before I can subtract them properly?",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 2,
+    "R3": 1,
+    "R4": 1,
+    "R5": 1,
+    "R6": 2,
+    "justification_pass1": "The teacher provides mathematically incorrect analogies (claiming you can subtract numerators without common denominators), fails to address the student's correct intuition about needing common denominators, and the student becomes increasingly confused rather than improving.",
+    "justification_pass2": "While the teacher attempts to use concrete analogies (pizzas and marbles), the analogies are mathematically incorrect and misleading, failing to properly ground the abstract concept of finding common denominators in accurate real-world situations.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 2,\n  \"R3\": 1,\n  \"R4\": 1,\n  \"R5\": 1,\n  \"brief_justification\": \"The teacher provides mathematically incorrect analogies (claiming you can subtract numerators without common denominators), fails to address the student's correct intuition about needing common denominators, and the student becomes increasingly confused rather than improving.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 2, \"brief_justification\": \"While the teacher attempts to use concrete analogies (pizzas and marbles), the analogies are mathematically incorrect and misleading, failing to properly ground the abstract concept of finding common denominators in accurate real-world situations.\"}\n```",
+    "quality_composite": 1.6666666666666667,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T16:55:22.160580+00:00"
+}

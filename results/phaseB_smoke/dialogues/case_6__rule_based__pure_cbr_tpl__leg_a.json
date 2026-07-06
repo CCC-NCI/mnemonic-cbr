@@ -1,0 +1,66 @@
+{
+  "state": {
+    "case_id": "case_6",
+    "misconception_label": "Does not understand a percentage is out of 100",
+    "misconception_features": [
+      0.0,
+      6.0,
+      3.0,
+      50.0
+    ],
+    "persona": "rule_based",
+    "architecture": "pure_cbr_tpl",
+    "student_leg": "leg_a",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T09:14:32.818235Z",
+      "seed": 377,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-12T09:14:34.070237Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: Convert this percentage to a fraction \\( 62 \\% \\). I got \\( \\frac{62}{10} \\) because I treated the percent as if it were already a fraction over 1.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's think about this. From similar cases:\n  1. Topic: Calculate percentage of an amount mentally where the percent is a decimal. Correct answer (A): \\( 22 \\). Student selected: \\( 5.5 \\). Underlying misconception: Does not understand a percentage can be applied to something not out of 100. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.\n  2. Topic: Convert decimals less than 1 with 2 decimal place to percentages. Correct answer (B): \\( 58 \\% \\). Student selected: \\( 57.1 \\% \\). Underlying misconception: Multiplies by 10 instead of 100 when converting decimal to percentage. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.\n  3. Topic: Calculate percentage of an amount mentally where the percent is greater than 100. Correct answer (B): \\( 52 \\). Student selected: \\( 12 \\). Underlying misconception: Found the percentage but forgot to add to 100%. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "I see what you're saying about percentages being out of 100, but I'm still a bit confused. So, when I have \\( 62\\% \\), I should think of it as \\( \\frac{62}{100} \\) instead of \\( \\frac{62}{10} \\)? How does that work when I\u2019m trying to use it for other problems?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's think about this. From similar cases:\n  1. Topic: Calculate percentage of an amount mentally where the percent is a decimal. Correct answer (A): \\( 22 \\). Student selected: \\( 5.5 \\). Underlying misconception: Does not understand a percentage can be applied to something not out of 100. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.\n  2. Topic: Convert decimals less than 1 with 2 decimal place to percentages. Correct answer (B): \\( 58 \\% \\). Student selected: \\( 57.1 \\% \\). Underlying misconception: Multiplies by 10 instead of 100 when converting decimal to percentage. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.\n  3. Topic: Calculate percentage of an amount mentally where the percent is greater than 100. Correct answer (B): \\( 52 \\). Student selected: \\( 12 \\). Underlying misconception: Found the percentage but forgot to add to 100%. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 1,
+    "R2": 1,
+    "R3": 1,
+    "R4": 2,
+    "R5": 1,
+    "R6": 1,
+    "justification_pass1": "The teacher merely presents unrelated example problems twice without addressing the student's specific misconception about percentages being out of 100, provides no scaffolding or reasoning opportunities, and the student shows no improvement\u2014in fact expressing continued confusion in their final turn.",
+    "justification_pass2": "The teacher never states explicit procedures, shows worked steps, or gives direct corrective feedback; instead, they only present analogous cases from other topics without any rule-based instruction.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 1,\n  \"R2\": 1,\n  \"R3\": 1,\n  \"R4\": 2,\n  \"R5\": 1,\n  \"brief_justification\": \"The teacher merely presents unrelated example problems twice without addressing the student's specific misconception about percentages being out of 100, provides no scaffolding or reasoning opportunities, and the student shows no improvement\u2014in fact expressing continued confusion in their final turn.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 1, \"brief_justification\": \"The teacher never states explicit procedures, shows worked steps, or gives direct corrective feedback; instead, they only present analogous cases from other topics without any rule-based instruction.\"}\n```",
+    "quality_composite": 1.0,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T09:14:39.531411+00:00"
+}

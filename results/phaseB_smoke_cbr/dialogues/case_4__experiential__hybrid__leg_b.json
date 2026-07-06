@@ -1,0 +1,66 @@
+{
+  "state": {
+    "case_id": "case_4",
+    "misconception_label": "Thinks you can find missing values in a given table by treating the row as linear and adding on the difference between the first two values given.",
+    "misconception_features": [
+      0.0,
+      4.0,
+      1.0,
+      74.0
+    ],
+    "persona": "experiential",
+    "architecture": "hybrid",
+    "student_leg": "leg_b",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T08:48:43.989920Z",
+      "seed": 272,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "cbr_grounded",
+      "ended_at": "2026-05-12T08:48:49.412500Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: The equation \\( f=3 r^{2}+3 \\) is used to find values in the table below. What is the value covered by the star? \\begin{tabular}{|c|c|c|c|c|} \\hline\\( r \\) & \\( 1 \\) & \\( 2 \\) & \\( 3 \\) & \\( 4 \\) \\\\ \\hline\\( f \\) & \\( 6 \\) & \\( 15 \\) & \\( \\color{gold}\\bigstar \\) & \\\\ \\hline \\end{tabular}. I got \\( 24 \\) because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Think of the table as a map where each pair of values is like a coordinate. Just like on a map, you need both the x and y values to pinpoint a location. So, to find the missing value, you'll need to use the equation to calculate it based on the given coordinates. Can you see how this analogy helps clarify the process for finding the value covered by the star?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Oh, I think I see what you mean... so I need to use the equation with the r value to find f, not just add on the difference like I did? So for r = 3, I'd put it into f = 3r\u00b2 + 3 to get the answer? But I'm still a bit confused about how to actually work that out - do I do 3 times 3 squared first?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Think of the equation as a set of directions on a treasure map. Just like you would follow the instructions step by step to reach the treasure, you need to follow the equation step by step to find the value of f. So, start by replacing r with 3 in the equation and then follow the order of operations to calculate the final answer. Can you see how this approach helps make sense of solving for the missing value in the table?",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 2,
+    "R3": 2,
+    "R4": 4,
+    "R5": 4,
+    "R6": 3,
+    "justification_pass1": "The teacher uses elaborate analogies (maps, treasure) rather than directly addressing the linear-addition misconception, but the student does recognize their error and shows improved understanding by Turn 2, asking appropriate follow-up questions about order of operations.",
+    "justification_pass2": "The teacher uses real-world analogies (maps with coordinates, treasure map directions) to explain abstract concepts, which aligns with the experiential strategy, but the analogies remain somewhat superficial and don't deeply ground the mathematical operations in genuinely concrete everyday experiences.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 2,\n  \"R3\": 2,\n  \"R4\": 4,\n  \"R5\": 4,\n  \"brief_justification\": \"The teacher uses elaborate analogies (maps, treasure) rather than directly addressing the linear-addition misconception, but the student does recognize their error and shows improved understanding by Turn 2, asking appropriate follow-up questions about order of operations.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 3, \"brief_justification\": \"The teacher uses real-world analogies (maps with coordinates, treasure map directions) to explain abstract concepts, which aligns with the experiential strategy, but the analogies remain somewhat superficial and don't deeply ground the mathematical operations in genuinely concrete everyday experiences.\"}\n```",
+    "quality_composite": 2.0,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T08:48:56.686736+00:00"
+}

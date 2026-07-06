@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_19",
+    "misconception_label": "When subtracting fractions, subtracts the numerators and multiplies the denominators",
+    "misconception_features": [
+      0.0,
+      19.0,
+      3.0,
+      104.0
+    ],
+    "persona": "experiential",
+    "architecture": "baseline",
+    "student_leg": "leg_b",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T16:53:52.660813Z",
+      "seed": 1014,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T16:53:58.083165Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: Express the following as a single fraction, writing your answer as simply as possible: \\( \\frac{1}{s}-\\frac{t}{3} \\). I got \\( \\frac{1-t}{3 s} \\) because I treated the fractions like ordinary numbers.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Imagine you were working with groups of marbles instead of numbers. Would subtracting the numerators and multiplying the denominators still make sense in that context?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Hmm, I'm not really sure... like, if I had groups of marbles, subtracting them would just mean taking some away, right? But I don't see how that connects to the numerators and denominators - are you saying I shouldn't multiply the denominators?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Imagine you had a group of marbles representing \\( \\frac{1}{s} \\) and another group representing \\( \\frac{t}{3} \\). If you subtracted one group from the other, what would that look like with the marbles? Would multiplying the denominators still make sense in that context?",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "Oh, I see what you mean now - if I'm taking away marbles from different sized groups, I can't just multiply the group sizes together, that doesn't make sense. But then... how do I actually subtract them if the denominators are different? Do I need to make them the same somehow first?",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 4,
+    "R2": 4,
+    "R3": 3,
+    "R4": 5,
+    "R5": 4,
+    "R6": 5,
+    "justification_pass1": "The teacher effectively targets the specific misconception about multiplying denominators through concrete reasoning, leading the student from confusion to recognizing the need for common denominators, though the marble analogy requires some inferential leaps.",
+    "justification_pass2": "The teacher consistently uses a concrete real-world analogy (groups of marbles) to help the student understand the abstract concept of subtracting fractions with different denominators, which is a textbook example of the experiential strategy.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 4,\n  \"R2\": 4,\n  \"R3\": 3,\n  \"R4\": 5,\n  \"R5\": 4,\n  \"brief_justification\": \"The teacher effectively targets the specific misconception about multiplying denominators through concrete reasoning, leading the student from confusion to recognizing the need for common denominators, though the marble analogy requires some inferential leaps.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 5, \"brief_justification\": \"The teacher consistently uses a concrete real-world analogy (groups of marbles) to help the student understand the abstract concept of subtracting fractions with different denominators, which is a textbook example of the experiential strategy.\"}\n```",
+    "quality_composite": 3.6666666666666665,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T16:54:04.651906+00:00"
+}

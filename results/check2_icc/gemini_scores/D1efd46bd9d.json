@@ -1,0 +1,53 @@
+{
+  "blind_id": "D1efd46bd9d",
+  "subset_row": {
+    "blind_id": "D1efd46bd9d",
+    "case_id": "case_7",
+    "persona": "experiential",
+    "architecture": "baseline",
+    "student_leg": "leg_b",
+    "llm_R5": "3",
+    "llm_quality_composite": "1.6666666666666667",
+    "llm_R6": "4",
+    "difficulty_band": "medium",
+    "r5_band": "mid",
+    "word_count": "29",
+    "attention_check_type": "",
+    "attention_check_rationale": "",
+    "file_path": "dialogues/case_7__experiential__baseline__leg_b.json"
+  },
+  "primary_score": {
+    "R1": 2,
+    "R2": 2,
+    "R3": 1,
+    "R4": 5,
+    "R5": 3,
+    "R6": 4,
+    "justification_pass1": "The teacher uses a concrete context but repeats the exact same prompt verbatim in Turn 3 despite the student already self-correcting and asking a specific follow-up question, showing poor responsiveness to student progress and leaving the core misconception (why one place not two) unaddressed.",
+    "justification_pass2": "The teacher consistently uses a concrete real-world analogy (dividing marbles among friends) to help the student reason about the abstract decimal division problem, though could have extended the analogy further in Turn 3 to address the student's specific insight about the decimal point rule.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 2,\n  \"R3\": 1,\n  \"R4\": 5,\n  \"R5\": 3,\n  \"brief_justification\": \"The teacher uses a concrete context but repeats the exact same prompt verbatim in Turn 3 despite the student already self-correcting and asking a specific follow-up question, showing poor responsiveness to student progress and leaving the core misconception (why one place not two) unaddressed.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 4, \"brief_justification\": \"The teacher consistently uses a concrete real-world analogy (dividing marbles among friends) to help the student reason about the abstract decimal division problem, though could have extended the analogy further in Turn 3 to address the student's specific insight about the decimal point rule.\"}\n```",
+    "quality_composite": 1.6666666666666667,
+    "is_complete": true
+  },
+  "secondary_score": {
+    "R1": 2,
+    "R2": 3,
+    "R3": 1,
+    "R4": 5,
+    "R5": 4,
+    "R6": 5,
+    "justification_pass1": "The teacher's initial sense-making prompt is effective and leads to student improvement, but the dialogue fails completely when the teacher repeats the exact same turn instead of adapting to the student's progress and addressing their specific question.",
+    "justification_pass2": "The teacher perfectly instantiates the strategy by grounding the abstract division problem in the concrete, real-world analogy of sharing marbles.",
+    "judge_provider": "gemini",
+    "judge_model": "gemini-2.5-pro",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 3,\n  \"R3\": 1,\n  \"R4\": 5,\n  \"R5\": 4,\n  \"brief_justification\": \"The teacher's initial sense-making prompt is effective and leads to student improvement, but the dialogue fails completely when the teacher repeats the exact same turn instead of adapting to the student's progress and addressing their specific question.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\n  \"R6\": 5,\n  \"brief_justification\": \"The teacher perfectly instantiates the strategy by grounding the abstract division problem in the concrete, real-world analogy of sharing marbles.\"\n}\n```"
+  }
+}

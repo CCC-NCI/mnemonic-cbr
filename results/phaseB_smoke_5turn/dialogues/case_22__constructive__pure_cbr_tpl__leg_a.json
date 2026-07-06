@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_22",
+    "misconception_label": "Does not realise that adding a larger number gives a larger answer",
+    "misconception_features": [
+      0.0,
+      22.0,
+      2.0,
+      98.0
+    ],
+    "persona": "constructive",
+    "architecture": "pure_cbr_tpl",
+    "student_leg": "leg_a",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T17:24:53.721879Z",
+      "seed": 1157,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T17:24:58.302259Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: Tom and Katie are discussing related calculations Tom says if you know that \\( 3748+426=4174 \\), then \\( 3748+427 \\) must equal \\( \\mathbf{4 1 7 5} \\) Katie says if you know that \\( 3748-426=3322 \\), then \\( 3748 \\) - \\( 427 \\) must equal \\( \\mathbf{3 3 2 3} \\) Who is correct? I got Only Katie because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's think about this. From similar cases:\n  1. Topic: Find 100 more than a given number. Correct answer (A): \\( 73,080 \\). Student selected: \\( 73,980 \\). Underlying misconception: When adding powers of 10 adds onto the wrong column. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.\n  2. Topic: Divide decimals by 1000. Correct answer (A): \\( 0.02304 \\). Student selected: \\( 0.2304 \\). Underlying misconception: When dividing involving a power of 10, gives an answer 10 times bigger than it should be. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.\n  3. Topic: Add fractions involving mixed number fractions with the same denominator. Correct answer (D): \\( 2 \\). Student selected: \\( \\frac{4}{3} \\). Underlying misconception: Thinks you add the number of wholes to the numerator when converting a mixed number to an improper fraction.. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "I think I get what you're saying about adding numbers now. So, if Tom is right and \\( 3748 + 427 \\) should be bigger than \\( 4174 \\), then that means I was wrong about him. But I still don\u2019t really understand why Katie's answer is also wrong. Can you help me see why \\( 3748 - 427 \\) isn\u2019t \\( 3 3 2 3 \\)?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's think about this. From similar cases:\n  1. Topic: Find 100 more than a given number. Correct answer (A): \\( 73,080 \\). Student selected: \\( 73,980 \\). Underlying misconception: When adding powers of 10 adds onto the wrong column. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.\n  2. Topic: Divide decimals by 1000. Correct answer (A): \\( 0.02304 \\). Student selected: \\( 0.2304 \\). Underlying misconception: When dividing involving a power of 10, gives an answer 10 times bigger than it should be. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.\n  3. Topic: Add fractions involving mixed number fractions with the same denominator. Correct answer (D): \\( 2 \\). Student selected: \\( \\frac{4}{3} \\). Underlying misconception: Thinks you add the number of wholes to the numerator when converting a mixed number to an improper fraction.. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "Okay, I think I get that Tom's answer is right because adding a bigger number makes it larger. But I'm still confused about Katie's answer. If \\( 3748 - 427 \\) isn't \\( 3 3 2 3 \\), then what is it? I don't really see how subtracting a bigger number from a smaller one works. Can you explain that part again?",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 1,
+    "R2": 1,
+    "R3": 1,
+    "R4": 1,
+    "R5": 1,
+    "R6": 1,
+    "justification_pass1": "The teacher provides completely irrelevant examples about unrelated topics (powers of 10, decimals, fractions) instead of addressing the student's specific misconception about how adding/subtracting larger numbers affects results, and the student shows no meaningful progress in understanding.",
+    "justification_pass2": "The teacher repeatedly provides identical, irrelevant examples from unrelated topics rather than scaffolding the student's understanding of the specific problem, breaking it into steps, or adjusting support based on the student's demonstrated confusion about the relationship between consecutive numbers in addition and subtraction.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 1,\n  \"R2\": 1,\n  \"R3\": 1,\n  \"R4\": 1,\n  \"R5\": 1,\n  \"brief_justification\": \"The teacher provides completely irrelevant examples about unrelated topics (powers of 10, decimals, fractions) instead of addressing the student's specific misconception about how adding/subtracting larger numbers affects results, and the student shows no meaningful progress in understanding.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 1, \"brief_justification\": \"The teacher repeatedly provides identical, irrelevant examples from unrelated topics rather than scaffolding the student's understanding of the specific problem, breaking it into steps, or adjusting support based on the student's demonstrated confusion about the relationship between consecutive numbers in addition and subtraction.\"}\n```",
+    "quality_composite": 1.0,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T17:25:04.448728+00:00"
+}

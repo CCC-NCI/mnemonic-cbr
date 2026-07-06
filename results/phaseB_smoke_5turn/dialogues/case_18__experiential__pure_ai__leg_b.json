@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_18",
+    "misconception_label": "Assumes that an arrow on a number line starts at zero",
+    "misconception_features": [
+      0.0,
+      18.0,
+      2.0,
+      73.0
+    ],
+    "persona": "experiential",
+    "architecture": "pure_ai",
+    "student_leg": "leg_b",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T16:44:20.135199Z",
+      "seed": 970,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T16:44:25.555761Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: ![Number line with -12 and -7 marked. Starting at -12, follow an arrow pointing to the right labelled +10. Then there is an arrow labelled b pointing to the left, which ends at -7 on the number line.]() What is the value of \\( b \\) ? I got \\( -7 \\) because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Imagine you are starting at a certain point on a road, and then you walk 10 steps forward and 5 steps back. What would be your final position? Just like on a number line, the starting point matters. So, let's reconsider where the arrow actually starts on the number line in this problem.",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Oh right, so the arrow starts at -12, not at zero! So if I start at -12 and go right 10 steps, that would take me to -2, and then the arrow b goes left from there to -7... so b would be -5? Is that right?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "That's almost there! Let's think of it this way: if you start at -2 and move 5 steps back to the left, where would you end up on the number line? Think about how the arrow b is moving in relation to the starting point at -2.",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "So if I start at -2 and move 5 steps to the left, I'd go to -7, which is where the arrow ends up. So b = -5 because that's how many steps left I moved? Or wait, does b represent the actual number -5, or does it represent the movement itself?",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 4,
+    "R2": 4,
+    "R3": 4,
+    "R4": 5,
+    "R5": 5,
+    "R6": 5,
+    "justification_pass1": "The teacher effectively addresses the zero-starting misconception through an analogy that prompts reasoning, the student successfully corrects their understanding and arrives at the right answer with appropriate conceptual clarity by Turn 4, though some minor confusion about representation remains.",
+    "justification_pass2": "The teacher consistently uses concrete real-world analogies (walking on a road, taking steps forward and backward) to help the student understand the abstract concept of movement on a number line, which is a textbook example of the experiential strategy.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 4,\n  \"R2\": 4,\n  \"R3\": 4,\n  \"R4\": 5,\n  \"R5\": 5,\n  \"brief_justification\": \"The teacher effectively addresses the zero-starting misconception through an analogy that prompts reasoning, the student successfully corrects their understanding and arrives at the right answer with appropriate conceptual clarity by Turn 4, though some minor confusion about representation remains.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 5, \"brief_justification\": \"The teacher consistently uses concrete real-world analogies (walking on a road, taking steps forward and backward) to help the student understand the abstract concept of movement on a number line, which is a textbook example of the experiential strategy.\"}\n```",
+    "quality_composite": 4.0,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T16:44:32.419310+00:00"
+}

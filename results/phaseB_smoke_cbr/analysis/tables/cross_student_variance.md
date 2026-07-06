@@ -1,0 +1,27 @@
+| persona | architecture | mean_abs_diff | pearson_r | n |
+|---|---|---|---|---|
+| constructive | baseline | 0.600 | 0.658 | 5 |
+| constructive | hybrid | 1.600 | -0.372 | 5 |
+| constructive | pure_ai | 1.000 | 0.590 | 5 |
+| constructive | pure_cbr_llm | 0.400 | 0.645 | 5 |
+| constructive | pure_cbr_tpl | 0.000 | — | 5 |
+| experiential | baseline | 0.400 | -0.250 | 5 |
+| experiential | hybrid | 1.200 | 0.000 | 5 |
+| experiential | pure_ai | 1.000 | -0.299 | 5 |
+| experiential | pure_cbr_llm | 1.600 | -0.514 | 5 |
+| experiential | pure_cbr_tpl | 0.200 | — | 5 |
+| rule_based | baseline | 1.600 | — | 5 |
+| rule_based | hybrid | 0.600 | 0.919 | 5 |
+| rule_based | pure_ai | 1.200 | -0.140 | 5 |
+| rule_based | pure_cbr_llm | 0.800 | 0.784 | 5 |
+| rule_based | pure_cbr_tpl | 0.000 | — | 5 |
+| socratic | baseline | 1.000 | 0.584 | 5 |
+| socratic | hybrid | 1.000 | 0.000 | 5 |
+| socratic | pure_ai | 0.600 | 0.765 | 5 |
+| socratic | pure_cbr_llm | 0.600 | 0.408 | 5 |
+| socratic | pure_cbr_tpl | 0.400 | — | 5 |
+| traditional | baseline | 0.200 | — | 5 |
+| traditional | hybrid | 1.400 | -0.219 | 5 |
+| traditional | pure_ai | 1.600 | 0.745 | 5 |
+| traditional | pure_cbr_llm | 0.400 | 0.000 | 5 |
+| traditional | pure_cbr_tpl | 0.400 | -0.250 | 5 |

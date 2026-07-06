@@ -1,0 +1,66 @@
+{
+  "state": {
+    "case_id": "case_23",
+    "misconception_label": "Confuses rest and movement on a distance time graph",
+    "misconception_features": [
+      0.0,
+      23.0,
+      3.0,
+      62.0
+    ],
+    "persona": "experiential",
+    "architecture": "baseline",
+    "student_leg": "leg_b",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T11:53:55.196366Z",
+      "seed": 1214,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-12T11:54:03.618078Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: This graph shows how far Fido the dog is from his home. What might the negative-sloping section represent? ![A graph with time (secs) on the horizontal axis and distance (m) on the vertical axis. The graph starts at the origin, travels in a straight line up and right, travels horizontally, then travels in a straight line down and right back to the x-axis. ](). I got Fido has fallen asleep because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Think of it like this: if you were tracking how far a ball rolled away from you, would the negative-sloping section of the graph represent the ball moving towards you or away from you?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Oh right, so if the line is going down, that means the distance is getting smaller, so the ball would be moving towards me? But wait, I'm confused - I thought a negative slope meant something bad was happening, like the dog stopping or something. So does that mean Fido is actually walking back towards his home in that section?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Imagine you were playing catch with a friend and the ball was getting closer to you as the negative-sloping section of the graph shows. Would that mean something bad was happening, or just that the ball was moving towards you?",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 2,
+    "R3": 2,
+    "R4": 5,
+    "R5": 4,
+    "R6": 5,
+    "justification_pass1": "While the teacher uses analogies to prompt reasoning and the student does progress from thinking negative slope means 'stopping' to understanding it means 'moving back towards home,' the teacher doesn't directly address the core misconception (confusing rest with movement) and relies heavily on leading questions rather than building on what the student demonstrates they understand.",
+    "justification_pass2": "The teacher consistently grounds the abstract concept of negative slope in concrete, relatable scenarios (tracking a rolling ball, playing catch) that connect directly to the student's everyday experience.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\"R1\": 2, \"R2\": 2, \"R3\": 2, \"R4\": 5, \"R5\": 4, \"brief_justification\": \"While the teacher uses analogies to prompt reasoning and the student does progress from thinking negative slope means 'stopping' to understanding it means 'moving back towards home,' the teacher doesn't directly address the core misconception (confusing rest with movement) and relies heavily on leading questions rather than building on what the student demonstrates they understand.\"}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 5, \"brief_justification\": \"The teacher consistently grounds the abstract concept of negative slope in concrete, relatable scenarios (tracking a rolling ball, playing catch) that connect directly to the student's everyday experience.\"}\n```",
+    "quality_composite": 2.0,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T11:54:10.460521+00:00"
+}

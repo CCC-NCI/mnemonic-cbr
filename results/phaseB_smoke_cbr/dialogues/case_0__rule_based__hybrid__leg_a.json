@@ -1,0 +1,66 @@
+{
+  "state": {
+    "case_id": "case_0",
+    "misconception_label": "Confuses the order of operations, believes addition comes before multiplication",
+    "misconception_features": [
+      0.0,
+      0.0,
+      1.0,
+      70.0
+    ],
+    "persona": "rule_based",
+    "architecture": "hybrid",
+    "student_leg": "leg_a",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T08:11:54.374910Z",
+      "seed": 81,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "cbr_grounded",
+      "ended_at": "2026-05-12T08:11:58.958377Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: \\[ 3 \\times 2+4-5 \\] Where do the brackets need to go to make the answer equal \\( 13 \\) ? I got Does not need brackets because I worked left to right instead of following the order of operations.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "You are correct in recognizing the need to follow the order of operations. The correct order is to first perform multiplication, then addition, and finally subtraction. Let's revisit the expression \\( 3 \\times 2+4-5 \\) and correctly apply the order of operations step by step to find the solution.",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Okay, so I see that I should do the multiplication first. So for \\( 3 \\times 2 \\), that\u2019s \\( 6 \\). Then I would add \\( 4 \\) and subtract \\( 5 \\), right? But if I do it that way, I get \\( 6 + 4 - 5 = 5 \\), not \\( 13 \\). Where do the brackets go to make it equal \\( 13 \\)?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "You are correct in performing the multiplication first. However, the mistake occurred when adding and subtracting. Remember, addition and subtraction have the same priority, so you should perform them from left to right. Let's correct the calculation step by step to find the correct answer.",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 1,
+    "R2": 1,
+    "R3": 1,
+    "R4": 1,
+    "R5": 1,
+    "R6": 2,
+    "justification_pass1": "The teacher completely misunderstands the problem (which asks where to place brackets to make the answer 13, not to evaluate the expression), provides mathematically incorrect guidance (claiming 6+4-5 wasn't done left to right when it was), and never addresses the student's actual misconception about order of operations or helps them find the bracket placement.",
+    "justification_pass2": "While the teacher mentions procedural steps and identifies errors, they fail to provide explicit worked examples or show the actual step-by-step calculations, instead repeatedly asking the student to work through it themselves, which is inconsistent with a rule-based approach that should directly demonstrate the procedure.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 1,\n  \"R2\": 1,\n  \"R3\": 1,\n  \"R4\": 1,\n  \"R5\": 1,\n  \"brief_justification\": \"The teacher completely misunderstands the problem (which asks where to place brackets to make the answer 13, not to evaluate the expression), provides mathematically incorrect guidance (claiming 6+4-5 wasn't done left to right when it was), and never addresses the student's actual misconception about order of operations or helps them find the bracket placement.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 2, \"brief_justification\": \"While the teacher mentions procedural steps and identifies errors, they fail to provide explicit worked examples or show the actual step-by-step calculations, instead repeatedly asking the student to work through it themselves, which is inconsistent with a rule-based approach that should directly demonstrate the procedure.\"}\n```",
+    "quality_composite": 1.0,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T08:12:07.635018+00:00"
+}

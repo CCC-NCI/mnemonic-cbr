@@ -1,0 +1,66 @@
+{
+  "state": {
+    "case_id": "case_18",
+    "misconception_label": "Assumes that an arrow on a number line starts at zero",
+    "misconception_features": [
+      0.0,
+      18.0,
+      2.0,
+      73.0
+    ],
+    "persona": "rule_based",
+    "architecture": "pure_cbr_llm",
+    "student_leg": "leg_b",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T11:08:13.907216Z",
+      "seed": 976,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-12T11:08:18.416351Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: ![Number line with -12 and -7 marked. Starting at -12, follow an arrow pointing to the right labelled +10. Then there is an arrow labelled b pointing to the left, which ends at -7 on the number line.]() What is the value of \\( b \\) ? I got \\( -7 \\) because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "You assumed that the arrow on the number line starts at zero, which caused the error in your calculation. Remember that the starting point of the arrow does not necessarily have to be zero. Try to reconsider the starting point and direction of the arrows on the number line to find the correct value of \\( b \\).",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Oh right, so the arrow doesn't start at zero... so I need to look at where it actually starts? So the first arrow starts at -12 and goes right by +10, which would take me to -2, and then the second arrow b goes left from -2 to -7? Is that how I'm supposed to work it out?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Yes, that's correct! You correctly identified that the first arrow starts at -12 and moves right by +10 to reach -2. Then, the second arrow labeled b starts at -2 and moves left to -7. Therefore, the value of b is -7. Keep in mind the starting point and direction of the arrows as you work through the number line.",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 4,
+    "R2": 2,
+    "R3": 3,
+    "R4": 1,
+    "R5": 3,
+    "R6": 2,
+    "justification_pass1": "The teacher explicitly addresses the misconception about arrows starting at zero and the student shows improved reasoning, but the teacher makes a critical mathematical error by confirming that b = -7 when it should be -5 (the change from -2 to -7).",
+    "justification_pass2": "The teacher provides indirect hints about reconsidering the starting point rather than explicitly stating the procedure or showing worked steps, and the final feedback incorrectly confirms b = -7 instead of providing direct correction that b should be -5 (the distance from -2 to -7).",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 4,\n  \"R2\": 2,\n  \"R3\": 3,\n  \"R4\": 1,\n  \"R5\": 3,\n  \"brief_justification\": \"The teacher explicitly addresses the misconception about arrows starting at zero and the student shows improved reasoning, but the teacher makes a critical mathematical error by confirming that b = -7 when it should be -5 (the change from -2 to -7).\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 2, \"brief_justification\": \"The teacher provides indirect hints about reconsidering the starting point rather than explicitly stating the procedure or showing worked steps, and the final feedback incorrectly confirms b = -7 instead of providing direct correction that b should be -5 (the distance from -2 to -7).\"}\n```",
+    "quality_composite": 3.0,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T11:08:28.967422+00:00"
+}

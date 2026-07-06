@@ -1,0 +1,65 @@
+{
+  "state": {
+    "case_id": "case_0",
+    "misconception_label": "Confuses the order of operations, believes addition comes before multiplication",
+    "misconception_features": [
+      0.0,
+      0.0,
+      1.0,
+      70.0
+    ],
+    "persona": "socratic",
+    "architecture": "pure_cbr_tpl",
+    "student_leg": "leg_b",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-11T15:46:40.513967Z",
+      "seed": 44,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "ended_at": "2026-05-11T15:46:40.526761Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: \\[ 3 \\times 2+4-5 \\] Where do the brackets need to go to make the answer equal \\( 13 \\) ? I got Does not need brackets because I worked left to right instead of following the order of operations.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's think about this. From similar cases:\n  1. For students with 'Thinks you can find missing values in a given table by treating the row as linear and adding on the difference between the first two values given.', explain the underlying rule and try a worked example.\n  2. For students with 'Ignores negative sign when expanding bracket', explain the underlying rule and try a worked example.\n  3. For students with 'Answers as if there are 100 minutes in an hour when changing from hours to minutes', explain the underlying rule and try a worked example.",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "[STUB:student_leg_b#1] You are simulating a UK secondary school student (Years 7-11\u2026",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's think about this. From similar cases:\n  1. For students with 'Thinks you can find missing values in a given table by treating the row as linear and adding on the difference between the first two values given.', explain the underlying rule and try a worked example.\n  2. For students with 'Ignores negative sign when expanding bracket', explain the underlying rule and try a worked example.\n  3. For students with 'Answers as if there are 100 minutes in an hour when changing from hours to minutes', explain the underlying rule and try a worked example.",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 1,
+    "R2": 3,
+    "R3": 4,
+    "R4": 5,
+    "R5": 5,
+    "R6": 1,
+    "justification_pass1": "[STUB:judge_primary] deterministic pass-1 score #3",
+    "justification_pass2": "[STUB:judge_primary] deterministic pass-2 score #4",
+    "judge_provider": "stub",
+    "judge_model": "stub",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "{\"R1\": 1, \"R2\": 3, \"R3\": 4, \"R4\": 5, \"R5\": 5, \"brief_justification\": \"[STUB:judge_primary] deterministic pass-1 score #3\"}",
+    "pass2_raw_text": "{\"R6\": 1, \"brief_justification\": \"[STUB:judge_primary] deterministic pass-2 score #4\"}",
+    "quality_composite": 2.6666666666666665,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-11T15:46:40.527059+00:00"
+}

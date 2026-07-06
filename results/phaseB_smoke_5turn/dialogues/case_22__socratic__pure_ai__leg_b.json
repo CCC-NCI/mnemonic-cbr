@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_22",
+    "misconception_label": "Does not realise that adding a larger number gives a larger answer",
+    "misconception_features": [
+      0.0,
+      22.0,
+      2.0,
+      98.0
+    ],
+    "persona": "socratic",
+    "architecture": "pure_ai",
+    "student_leg": "leg_b",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T17:23:22.353444Z",
+      "seed": 1150,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T17:23:27.354613Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: Tom and Katie are discussing related calculations Tom says if you know that \\( 3748+426=4174 \\), then \\( 3748+427 \\) must equal \\( \\mathbf{4 1 7 5} \\) Katie says if you know that \\( 3748-426=3322 \\), then \\( 3748 \\) - \\( 427 \\) must equal \\( \\mathbf{3 3 2 3} \\) Who is correct? I got Only Katie because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Can you explain why you think Katie is correct in both cases? How did you approach solving the equations to come to that conclusion?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Um, well I thought that if you add 1 more to 426 to get 427, then the answer would go up by 1, so 4174 + 1 = 4175, which is what Tom said... but then for Katie's one with subtraction, I thought subtracting a bigger number like 427 instead of 426 would make the answer smaller, so 3322 - 1 = 3321, not 3323 like Katie said. So actually I'm confused now because I don't think Katie is right either?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Interesting observations! Let's explore this further. Can you think of any other examples where adding a larger number actually results in a smaller sum?",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "Um, no I don't think so... like if I add a bigger number it should give me a bigger answer, right? But then I'm confused about Katie's one because if you're subtracting 427 instead of 426, you're taking away more, so shouldn't the answer get smaller, not bigger like she said?",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 1,
+    "R2": 2,
+    "R3": 1,
+    "R4": 1,
+    "R5": 4,
+    "R6": 2,
+    "justification_pass1": "The teacher's Turn 3 question asks the student to find examples where adding a larger number gives a smaller sum, which is mathematically impossible and directly contradicts the correct principle the student is developing, though the student does show improvement by Turn 4 in recognizing that adding larger numbers gives larger answers.",
+    "justification_pass2": "While the teacher does use questions rather than direct answers, the question in Turn 3 asks about a mathematically impossible scenario ('adding a larger number resulting in a smaller sum') rather than using probing questions or counterexamples to guide the student toward recognizing their correct reasoning about Tom being right and Katie being wrong.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 1,\n  \"R2\": 2,\n  \"R3\": 1,\n  \"R4\": 1,\n  \"R5\": 4,\n  \"brief_justification\": \"The teacher's Turn 3 question asks the student to find examples where adding a larger number gives a smaller sum, which is mathematically impossible and directly contradicts the correct principle the student is developing, though the student does show improvement by Turn 4 in recognizing that adding larger numbers gives larger answers.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 2, \"brief_justification\": \"While the teacher does use questions rather than direct answers, the question in Turn 3 asks about a mathematically impossible scenario ('adding a larger number resulting in a smaller sum') rather than using probing questions or counterexamples to guide the student toward recognizing their correct reasoning about Tom being right and Katie being wrong.\"}\n```",
+    "quality_composite": 1.3333333333333333,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T17:23:34.905915+00:00"
+}

@@ -1,0 +1,53 @@
+{
+  "blind_id": "D7e73b02c29",
+  "subset_row": {
+    "blind_id": "D7e73b02c29",
+    "case_id": "case_7",
+    "persona": "rule_based",
+    "architecture": "pure_cbr_tpl",
+    "student_leg": "leg_b",
+    "llm_R5": "3",
+    "llm_quality_composite": "1.0",
+    "llm_R6": "1",
+    "difficulty_band": "medium",
+    "r5_band": "mid",
+    "word_count": "29",
+    "attention_check_type": "",
+    "attention_check_rationale": "",
+    "file_path": "dialogues/case_7__rule_based__pure_cbr_tpl__leg_b.json"
+  },
+  "primary_score": {
+    "R1": 1,
+    "R2": 1,
+    "R3": 1,
+    "R4": 3,
+    "R5": 3,
+    "R6": 1,
+    "justification_pass1": "The teacher merely presents unrelated example cases without addressing the student's specific misconception about dividing by 10 vs 100, though the student does eventually self-correct to the right answer (4.32) by Turn 4.",
+    "justification_pass2": "The teacher never states explicit procedures, shows worked steps, or gives direct corrective feedback; instead, they only present lists of similar misconceptions from other problems without any rule-based instruction.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 1,\n  \"R2\": 1,\n  \"R3\": 1,\n  \"R4\": 3,\n  \"R5\": 3,\n  \"brief_justification\": \"The teacher merely presents unrelated example cases without addressing the student's specific misconception about dividing by 10 vs 100, though the student does eventually self-correct to the right answer (4.32) by Turn 4.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 1, \"brief_justification\": \"The teacher never states explicit procedures, shows worked steps, or gives direct corrective feedback; instead, they only present lists of similar misconceptions from other problems without any rule-based instruction.\"}\n```",
+    "quality_composite": 1.0,
+    "is_complete": true
+  },
+  "secondary_score": {
+    "R1": 1,
+    "R2": 1,
+    "R3": 1,
+    "R4": 5,
+    "R5": 4,
+    "R6": 1,
+    "justification_pass1": "The teacher provides the exact same non-responsive, generic information dump twice, failing to engage with the student's specific error or questions, though the student impressively makes progress largely on their own.",
+    "justification_pass2": "The teacher does not state an explicit procedure, show worked steps, or provide direct corrective feedback, instead repeatedly presenting a list of other students' errors.",
+    "judge_provider": "gemini",
+    "judge_model": "gemini-2.5-pro",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 1,\n  \"R2\": 1,\n  \"R3\": 1,\n  \"R4\": 5,\n  \"R5\": 4,\n  \"brief_justification\": \"The teacher provides the exact same non-responsive, generic information dump twice, failing to engage with the student's specific error or questions, though the student impressively makes progress largely on their own.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\n  \"R6\": 1,\n  \"brief_justification\": \"The teacher does not state an explicit procedure, show worked steps, or provide direct corrective feedback, instead repeatedly presenting a list of other students' errors.\"\n}\n```"
+  }
+}

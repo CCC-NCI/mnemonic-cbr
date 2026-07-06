@@ -1,0 +1,53 @@
+{
+  "blind_id": "D74ccde6f9c",
+  "subset_row": {
+    "blind_id": "D74ccde6f9c",
+    "case_id": "case_23",
+    "persona": "traditional",
+    "architecture": "pure_cbr_llm",
+    "student_leg": "leg_b",
+    "llm_R5": "4",
+    "llm_quality_composite": "2.3333333333333335",
+    "llm_R6": "2",
+    "difficulty_band": "long",
+    "r5_band": "high",
+    "word_count": "92",
+    "attention_check_type": "",
+    "attention_check_rationale": "",
+    "file_path": "dialogues/case_23__traditional__pure_cbr_llm__leg_b.json"
+  },
+  "primary_score": {
+    "R1": 3,
+    "R2": 2,
+    "R3": 2,
+    "R4": 5,
+    "R5": 4,
+    "R6": 2,
+    "justification_pass1": "The teacher correctly identifies and addresses the misconception about rest vs. movement, but provides too much direct telling rather than eliciting reasoning, though the student does show clear progress from confusing negative slope with rest to understanding it represents returning home.",
+    "justification_pass2": "The teacher uses questioning to elicit student thinking rather than directly explaining with worked examples, which is inconsistent with the traditional strategy of clear, direct explanation.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 3,\n  \"R2\": 2,\n  \"R3\": 2,\n  \"R4\": 5,\n  \"R5\": 4,\n  \"brief_justification\": \"The teacher correctly identifies and addresses the misconception about rest vs. movement, but provides too much direct telling rather than eliciting reasoning, though the student does show clear progress from confusing negative slope with rest to understanding it represents returning home.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 2, \"brief_justification\": \"The teacher uses questioning to elicit student thinking rather than directly explaining with worked examples, which is inconsistent with the traditional strategy of clear, direct explanation.\"}\n```",
+    "quality_composite": 2.3333333333333335,
+    "is_complete": true
+  },
+  "secondary_score": {
+    "R1": 5,
+    "R2": 4,
+    "R3": 4,
+    "R4": 5,
+    "R5": 4,
+    "R6": 3,
+    "justification_pass1": "The teacher effectively engages with the student's specific misconception about negative slopes on a distance-time graph, prompting reasoning and showing a clear improvement in the student's understanding.",
+    "justification_pass2": "The teacher provides explanations and checks for understanding, but does not use worked examples or a clear, direct explanation typical of the traditional strategy.",
+    "judge_provider": "openai",
+    "judge_model": "gpt-4o-mini",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "{\"R1\": 5, \"R2\": 4, \"R3\": 4, \"R4\": 5, \"R5\": 4, \"brief_justification\": \"The teacher effectively engages with the student's specific misconception about negative slopes on a distance-time graph, prompting reasoning and showing a clear improvement in the student's understanding.\"}",
+    "pass2_raw_text": "{\"R6\": 3, \"brief_justification\": \"The teacher provides explanations and checks for understanding, but does not use worked examples or a clear, direct explanation typical of the traditional strategy.\"}"
+  }
+}

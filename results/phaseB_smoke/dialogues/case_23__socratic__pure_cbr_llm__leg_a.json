@@ -1,0 +1,66 @@
+{
+  "state": {
+    "case_id": "case_23",
+    "misconception_label": "Confuses rest and movement on a distance time graph",
+    "misconception_features": [
+      0.0,
+      23.0,
+      3.0,
+      62.0
+    ],
+    "persona": "socratic",
+    "architecture": "pure_cbr_llm",
+    "student_leg": "leg_a",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T11:50:20.562864Z",
+      "seed": 1195,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-12T11:50:28.209245Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: This graph shows how far Fido the dog is from his home. What might the negative-sloping section represent? ![A graph with time (secs) on the horizontal axis and distance (m) on the vertical axis. The graph starts at the origin, travels in a straight line up and right, travels horizontally, then travels in a straight line down and right back to the x-axis. ](). I got Fido has fallen asleep because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Why do you think Fido falling asleep would correspond to the negative-sloping section on the graph? How does the movement on the graph relate to Fido's distance from home?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "I thought that if Fido was asleep, he wouldn't be moving, so the line going down meant he was just staying still or something. But now I'm not sure if that makes sense because the line is going down, which might mean he's getting closer to home? Can you explain how the negative slope really shows movement instead of just resting?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Why do you think the negative slope might indicate movement rather than rest? How does the direction of the line on the graph relate to Fido's distance from home?",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 4,
+    "R2": 4,
+    "R3": 2,
+    "R4": 5,
+    "R5": 4,
+    "R6": 5,
+    "justification_pass1": "The teacher effectively engages the specific misconception through targeted questioning and maintains high cognitive demand, but in Turn 3 repeats essentially the same question after the student has already self-corrected and explicitly requested explanation, showing poor scaffolding fit despite the student's clear progress toward understanding.",
+    "justification_pass2": "The teacher consistently uses probing questions to guide the student's thinking without ever directly stating the answer, and redirects the student to reason about the relationship between graph features and real-world meaning, which is textbook Socratic method.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 4,\n  \"R2\": 4,\n  \"R3\": 2,\n  \"R4\": 5,\n  \"R5\": 4,\n  \"brief_justification\": \"The teacher effectively engages the specific misconception through targeted questioning and maintains high cognitive demand, but in Turn 3 repeats essentially the same question after the student has already self-corrected and explicitly requested explanation, showing poor scaffolding fit despite the student's clear progress toward understanding.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\n  \"R6\": 5,\n  \"brief_justification\": \"The teacher consistently uses probing questions to guide the student's thinking without ever directly stating the answer, and redirects the student to reason about the relationship between graph features and real-world meaning, which is textbook Socratic method.\"\n}\n```",
+    "quality_composite": 3.3333333333333335,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T11:50:36.055184+00:00"
+}

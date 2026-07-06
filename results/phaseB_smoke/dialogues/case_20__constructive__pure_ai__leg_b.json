@@ -1,0 +1,66 @@
+{
+  "state": {
+    "case_id": "case_20",
+    "misconception_label": "Adds when calculating volume instead of multiplying",
+    "misconception_features": [
+      0.0,
+      20.0,
+      1.0,
+      58.0
+    ],
+    "persona": "constructive",
+    "architecture": "pure_ai",
+    "student_leg": "leg_b",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T11:24:36.696233Z",
+      "seed": 1060,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-12T11:24:40.754767Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: The volume of this cuboid is \\( 30 \\mathrm{~cm}^{3} \\) What length should replace the star? ![A cuboid, depth 2cm and height 3cm. The width is labelled with a star.](). I got \\( 25 \\mathrm{~cm} \\) because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "It seems like you may have added the dimensions together instead of multiplying them to find the volume. Remember, to find the volume of a cuboid, you need to multiply the length, width, and height. Try multiplying the given dimensions together to find the correct volume.",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Oh right, so I need to multiply instead of add? So would it be like 2 times 3 times the star equals 30? That would make the star 5 cm then, wouldn't it? But I'm still a bit confused about why we multiply for volume instead of add.",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Great job recognizing the mistake and correcting it! To find the volume of a cuboid, you multiply the length, width, and height because you are calculating the total space inside the shape. Think about how adding the dimensions together would give you the perimeter instead of the volume. Can you think of other examples where you multiply dimensions to find the total amount of something?",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 4,
+    "R2": 2,
+    "R3": 3,
+    "R4": 3,
+    "R5": 2,
+    "R6": 4,
+    "justification_pass1": "The teacher directly addresses the adding vs. multiplying misconception and the student corrects the calculation, but the student explicitly states continued confusion about why multiplication is used, and the teacher's explanation conflates perimeter with adding dimensions (which is mathematically inaccurate), while the final question asks for examples rather than building conceptual understanding of volume as repeated layers.",
+    "justification_pass2": "The teacher effectively scaffolds by breaking down the volume concept into manageable steps, correctly identifies the student's misconception, guides them to self-correct, and adjusts support by providing conceptual explanation when confusion persists, though could have probed the student's understanding more deeply before explaining.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 4,\n  \"R2\": 2,\n  \"R3\": 3,\n  \"R4\": 3,\n  \"R5\": 2,\n  \"brief_justification\": \"The teacher directly addresses the adding vs. multiplying misconception and the student corrects the calculation, but the student explicitly states continued confusion about why multiplication is used, and the teacher's explanation conflates perimeter with adding dimensions (which is mathematically inaccurate), while the final question asks for examples rather than building conceptual understanding of volume as repeated layers.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 4, \"brief_justification\": \"The teacher effectively scaffolds by breaking down the volume concept into manageable steps, correctly identifies the student's misconception, guides them to self-correct, and adjusts support by providing conceptual explanation when confusion persists, though could have probed the student's understanding more deeply before explaining.\"}\n```",
+    "quality_composite": 3.0,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T11:24:48.782712+00:00"
+}

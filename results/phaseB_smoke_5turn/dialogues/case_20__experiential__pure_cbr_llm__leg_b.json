@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_20",
+    "misconception_label": "Adds when calculating volume instead of multiplying",
+    "misconception_features": [
+      0.0,
+      20.0,
+      1.0,
+      58.0
+    ],
+    "persona": "experiential",
+    "architecture": "pure_cbr_llm",
+    "student_leg": "leg_b",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T17:05:07.892323Z",
+      "seed": 1066,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T17:05:13.214518Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: The volume of this cuboid is \\( 30 \\mathrm{~cm}^{3} \\) What length should replace the star? ![A cuboid, depth 2cm and height 3cm. The width is labelled with a star.](). I got \\( 25 \\mathrm{~cm} \\) because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Imagine you have a box of chocolates, and each chocolate is 2cm wide and 3cm tall. If you want to know how much space all the chocolates take up, would you add the widths together or multiply them? Think about how this relates to finding the volume of the cuboid.",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Oh, I think I'd multiply them together to get the total space? So for the cuboid, I should do 2 times 3 times the star instead of adding them? But I'm still confused about why we multiply instead of add - doesn't that just make the number bigger?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Think about it this way: when you add the widths and heights of the chocolates in the box, you're just counting them individually. But when you multiply them, you're actually calculating the total amount of space they take up together. It's the same idea with finding the volume of the cuboid - multiplying the dimensions gives you the total space it occupies.",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "Oh right, so multiplying gives me the actual space inside the box, not just adding up the sides... So if I multiply 2 times 3 times the star and that equals 30, then the star would be 5cm? Is that right, or am I still getting it wrong?",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 3,
+    "R2": 2,
+    "R3": 2,
+    "R4": 5,
+    "R5": 4,
+    "R6": 5,
+    "justification_pass1": "The teacher addresses the add-versus-multiply misconception through analogy but provides limited conceptual explanation for why multiplication captures volume, yet the student does arrive at the correct answer and shows improved understanding by Turn 4.",
+    "justification_pass2": "The teacher consistently uses a concrete real-world analogy (box of chocolates) to explain the abstract concept of volume multiplication, grounding the mathematical operation in an everyday situation the student can visualize and understand.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 3,\n  \"R2\": 2,\n  \"R3\": 2,\n  \"R4\": 5,\n  \"R5\": 4,\n  \"brief_justification\": \"The teacher addresses the add-versus-multiply misconception through analogy but provides limited conceptual explanation for why multiplication captures volume, yet the student does arrive at the correct answer and shows improved understanding by Turn 4.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 5, \"brief_justification\": \"The teacher consistently uses a concrete real-world analogy (box of chocolates) to explain the abstract concept of volume multiplication, grounding the mathematical operation in an everyday situation the student can visualize and understand.\"}\n```",
+    "quality_composite": 2.3333333333333335,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T17:05:19.845113+00:00"
+}

@@ -1,0 +1,66 @@
+{
+  "state": {
+    "case_id": "case_11",
+    "misconception_label": "Struggles to visualise nets of 3D shapes",
+    "misconception_features": [
+      0.0,
+      11.0,
+      3.0,
+      31.0
+    ],
+    "persona": "traditional",
+    "architecture": "pure_cbr_llm",
+    "student_leg": "leg_a",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T10:04:05.670573Z",
+      "seed": 635,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-12T10:04:10.950941Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: This is the net of a... ![A circle touching a sector](). I got Triangle because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's revisit the concept of identifying nets of 3D shapes. Remember, we need to consider the entire shape, not just one of its faces. Can you explain how you arrived at the answer of Triangle and we can work through it together?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "I thought it was a triangle because I saw the pointy part and the curved edge, but now I'm not sure. I guess I didn't really think about what the whole shape would look like when it's put together. How do I know what the net of a shape is supposed to look like?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's focus on understanding that the net of a 3D shape shows how the shape will fold up into a solid. Just like we saw in the previous examples, it's important to consider the overall shape and how the pieces fit together. Can you think about how the different parts of the net might connect to form the complete shape?",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 2,
+    "R3": 2,
+    "R4": 3,
+    "R5": 1,
+    "R6": 2,
+    "justification_pass1": "The teacher uses generic prompts about considering 'the whole shape' and 'how pieces fit together' without addressing the specific visualization difficulty with this circle-sector net (likely a cone), and the student's final turn shows they remain confused about how to identify nets, indicating no meaningful progress.",
+    "justification_pass2": "The teacher uses questioning and guided discovery rather than directly explaining with worked examples, which is inconsistent with the traditional strategy of explicit instruction and demonstration.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 2,\n  \"R3\": 2,\n  \"R4\": 3,\n  \"R5\": 1,\n  \"brief_justification\": \"The teacher uses generic prompts about considering 'the whole shape' and 'how pieces fit together' without addressing the specific visualization difficulty with this circle-sector net (likely a cone), and the student's final turn shows they remain confused about how to identify nets, indicating no meaningful progress.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 2, \"brief_justification\": \"The teacher uses questioning and guided discovery rather than directly explaining with worked examples, which is inconsistent with the traditional strategy of explicit instruction and demonstration.\"}\n```",
+    "quality_composite": 2.0,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T10:04:17.809686+00:00"
+}

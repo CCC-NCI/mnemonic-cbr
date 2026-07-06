@@ -1,0 +1,66 @@
+{
+  "state": {
+    "case_id": "case_22",
+    "misconception_label": "Does not realise that adding a larger number gives a larger answer",
+    "misconception_features": [
+      0.0,
+      22.0,
+      2.0,
+      98.0
+    ],
+    "persona": "experiential",
+    "architecture": "hybrid",
+    "student_leg": "leg_b",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T11:45:49.339241Z",
+      "seed": 1172,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-12T11:45:53.524107Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: Tom and Katie are discussing related calculations Tom says if you know that \\( 3748+426=4174 \\), then \\( 3748+427 \\) must equal \\( \\mathbf{4 1 7 5} \\) Katie says if you know that \\( 3748-426=3322 \\), then \\( 3748 \\) - \\( 427 \\) must equal \\( \\mathbf{3 3 2 3} \\) Who is correct? I got Only Katie because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's think about adding larger numbers in a different context. Imagine you have $3748 and you add $426 to it, you end up with $4174. Now, if you add $427 instead, would you expect to have more or less money? This can help you see that adding a larger number does give a larger answer.",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Oh right, yeah, I see what you mean - if I add more money, I should have more at the end, so it would be more than $4174. So Tom would actually be right then? But I'm still a bit confused about why Katie's one doesn't work the same way...",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's think about it this way: imagine you have a cake that's divided into 3748 pieces. If you take away 426 pieces, you'll have 3322 pieces left. Now, if you take away 427 pieces instead, would you expect to have more or less pieces left? This can help you see that subtracting a larger number gives a smaller answer.",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 4,
+    "R2": 3,
+    "R3": 4,
+    "R4": 5,
+    "R5": 4,
+    "R6": 5,
+    "justification_pass1": "The teacher directly addresses the misconception with well-chosen concrete analogies (money, cake pieces) that help the student reason through both addition and subtraction cases, and the student demonstrates clear progress from confusion to understanding both operations by the end.",
+    "justification_pass2": "The teacher consistently grounds both mathematical concepts (addition and subtraction) in concrete, everyday analogies (money and cake pieces) that make the abstract relationships tangible and relatable.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 4,\n  \"R2\": 3,\n  \"R3\": 4,\n  \"R4\": 5,\n  \"R5\": 4,\n  \"brief_justification\": \"The teacher directly addresses the misconception with well-chosen concrete analogies (money, cake pieces) that help the student reason through both addition and subtraction cases, and the student demonstrates clear progress from confusion to understanding both operations by the end.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 5, \"brief_justification\": \"The teacher consistently grounds both mathematical concepts (addition and subtraction) in concrete, everyday analogies (money and cake pieces) that make the abstract relationships tangible and relatable.\"}\n```",
+    "quality_composite": 3.6666666666666665,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T11:46:00.088134+00:00"
+}

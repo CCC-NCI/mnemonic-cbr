@@ -1,0 +1,66 @@
+{
+  "state": {
+    "case_id": "case_22",
+    "misconception_label": "Does not realise that adding a larger number gives a larger answer",
+    "misconception_features": [
+      0.0,
+      22.0,
+      2.0,
+      98.0
+    ],
+    "persona": "constructive",
+    "architecture": "hybrid",
+    "student_leg": "leg_b",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T11:43:49.846190Z",
+      "seed": 1162,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-12T11:43:54.188978Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: Tom and Katie are discussing related calculations Tom says if you know that \\( 3748+426=4174 \\), then \\( 3748+427 \\) must equal \\( \\mathbf{4 1 7 5} \\) Katie says if you know that \\( 3748-426=3322 \\), then \\( 3748 \\) - \\( 427 \\) must equal \\( \\mathbf{3 3 2 3} \\) Who is correct? I got Only Katie because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "It seems like you may be struggling with the concept that adding a larger number results in a larger answer. Let's focus on understanding how adding works with these numbers. Can you explain your thought process when adding 426 and 427 to see if we can identify where the misconception might be arising?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Um, I think I was just looking at the numbers and seeing that 427 is bigger than 426, so I thought the answer would be bigger too... but then I got confused because I wasn't sure if that actually matters when you're adding? Like, does adding a bigger number always give you a bigger answer, or does it depend on something else?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "It's great that you're questioning whether adding a larger number always gives you a bigger answer. Let's explore this further by considering some similar cases where students had misconceptions about adding numbers. Can you think of any other situations where adding a larger number might not result in a larger answer? Let's work through this together to deepen our understanding of addition.",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 2,
+    "R3": 1,
+    "R4": 1,
+    "R5": 1,
+    "R6": 2,
+    "justification_pass1": "The teacher identifies the misconception but then asks the student to find cases where adding a larger number doesn't give a larger answer (which don't exist), creating mathematical confusion rather than correcting the misconception, and the student shows no improvement in understanding.",
+    "justification_pass2": "While the teacher attempts to break down the problem and engage the student in dialogue, they misdiagnose the student's understanding (the student actually correctly identified that adding a larger number gives a larger answer) and then ask the student to find counterexamples that don't exist in standard arithmetic, which moves away from scaffolding within the ZPD rather than building on the student's correct intuition.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 2,\n  \"R3\": 1,\n  \"R4\": 1,\n  \"R5\": 1,\n  \"brief_justification\": \"The teacher identifies the misconception but then asks the student to find cases where adding a larger number doesn't give a larger answer (which don't exist), creating mathematical confusion rather than correcting the misconception, and the student shows no improvement in understanding.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 2, \"brief_justification\": \"While the teacher attempts to break down the problem and engage the student in dialogue, they misdiagnose the student's understanding (the student actually correctly identified that adding a larger number gives a larger answer) and then ask the student to find counterexamples that don't exist in standard arithmetic, which moves away from scaffolding within the ZPD rather than building on the student's correct intuition.\"}\n```",
+    "quality_composite": 1.6666666666666667,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T11:44:01.888983+00:00"
+}

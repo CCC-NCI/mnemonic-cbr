@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_11",
+    "misconception_label": "Struggles to visualise nets of 3D shapes",
+    "misconception_features": [
+      0.0,
+      11.0,
+      3.0,
+      31.0
+    ],
+    "persona": "traditional",
+    "architecture": "pure_cbr_llm",
+    "student_leg": "leg_a",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T15:33:20.087241Z",
+      "seed": 635,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T15:33:25.135432Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: This is the net of a... ![A circle touching a sector](). I got Triangle because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's work through this together. Remember, the net represents the 3D shape as a flat pattern that can be folded to form the shape. Can you identify the shapes that make up the net and think about how they come together to form a 3D shape?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "I think I see that the net has a circle and a curved part, but I\u2019m not sure how they fit together to make a 3D shape. Does the circle become the base or something? I\u2019m confused about how the shapes connect.",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's focus on how the shapes in the net connect to form the 3D shape. Remember, the net shows how the shapes fit together when folded. Can you think about how the circle and curved part could come together to create a 3D shape like a cone or cylinder?",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "Okay, I think I get it a bit better now. So, the circle could be the base, and the curved part wraps around it? But how does that make a cone? I\u2019m still not sure how the shapes actually fold together.",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 2,
+    "R3": 2,
+    "R4": 4,
+    "R5": 1,
+    "R6": 2,
+    "justification_pass1": "The teacher provides generic prompts about folding nets without addressing the specific visualization difficulty, and the student remains confused about how the shapes actually connect, showing no meaningful progress from initial to final turn.",
+    "justification_pass2": "The teacher uses guided questioning rather than direct explanation with worked examples, which contradicts the core traditional approach of explicitly explaining concepts and demonstrating solutions.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 2,\n  \"R3\": 2,\n  \"R4\": 4,\n  \"R5\": 1,\n  \"brief_justification\": \"The teacher provides generic prompts about folding nets without addressing the specific visualization difficulty, and the student remains confused about how the shapes actually connect, showing no meaningful progress from initial to final turn.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 2, \"brief_justification\": \"The teacher uses guided questioning rather than direct explanation with worked examples, which contradicts the core traditional approach of explicitly explaining concepts and demonstrating solutions.\"}\n```",
+    "quality_composite": 2.0,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T15:33:31.612811+00:00"
+}

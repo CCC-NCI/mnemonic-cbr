@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_10",
+    "misconception_label": "Ignores negative sign when expanding bracket",
+    "misconception_features": [
+      0.0,
+      10.0,
+      1.0,
+      68.0
+    ],
+    "persona": "socratic",
+    "architecture": "pure_cbr_tpl",
+    "student_leg": "leg_b",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T15:13:51.287957Z",
+      "seed": 548,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T15:13:54.785448Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: John is expanding these three brackets: \\( (x+5)(x-3)(x+6) \\) He finds it helpful to split the first bracket and view the problem as follows: \\( x(x-3)(x+6)+5(x-3)(x+6) \\) He expands the brackets further. Before he simplifies, what are the terms than contain an \\( \\boldsymbol{x}^{2} \\) ? I got \\( \\begin{array}{l}+6 x^{2} \\\\ +3 x^{2} \\\\ +5 x^{2}\\end{array} \\) because I forgot that two negatives multiply to a positive.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's think about this. From similar cases:\n  1. Topic: Prove statements involving multiples. Correct answer (B): Line \\( 2 \\). Student selected: Line \\( 1 \\). Underlying misconception: Ignores negative sign when expanding bracket. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.\n  2. Topic: Expand double brackets with an extra variable outside. Correct answer (A): \\( \\triangle=-25 \\). Student selected: \\( \\triangle=+25 \\). Underlying misconception: Believes multiplying a positive by a negative gives a positive answer. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.\n  3. Topic: Carry out multiplication problems involving one negative integer. Correct answer (B): \\( -15 \\). Student selected: \\( +2 \\). Underlying misconception: Adds instead of multiplying when expanding bracket. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Yeah, I see what you mean about the negatives, but I'm still a bit confused about where exactly I went wrong in my answer. Like, when I expand \\(5(x-3)(x+6)\\), am I supposed to multiply the 5 by the negative 3, or does the negative sign work differently when there are brackets involved?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's think about this. From similar cases:\n  1. Topic: Prove statements involving multiples. Correct answer (B): Line \\( 2 \\). Student selected: Line \\( 1 \\). Underlying misconception: Ignores negative sign when expanding bracket. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.\n  2. Topic: Expand double brackets with an extra variable outside. Correct answer (A): \\( \\triangle=-25 \\). Student selected: \\( \\triangle=+25 \\). Underlying misconception: Believes multiplying a positive by a negative gives a positive answer. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.\n  3. Topic: Carry out multiplication problems involving one negative integer. Correct answer (B): \\( -15 \\). Student selected: \\( +2 \\). Underlying misconception: Adds instead of multiplying when expanding bracket. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "Oh right, so when I do 5 times (x-3), I need to multiply the 5 by both the x AND the -3, so I'd get 5x and -15, not 5x and +15? And then that -15 is what I need to use when I multiply by (x+6)?",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 1,
+    "R2": 1,
+    "R3": 1,
+    "R4": 3,
+    "R5": 4,
+    "R6": 1,
+    "justification_pass1": "The teacher merely repeats generic case examples without engaging the student's specific questions, yet the student somehow self-corrects and arrives at the right understanding despite receiving no substantive help.",
+    "justification_pass2": "The teacher does not ask any probing questions or use counterexamples; instead, they repeatedly provide the same list of similar cases with correct answers and misconceptions explicitly stated, which directly tells rather than guides through questioning.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 1,\n  \"R2\": 1,\n  \"R3\": 1,\n  \"R4\": 3,\n  \"R5\": 4,\n  \"brief_justification\": \"The teacher merely repeats generic case examples without engaging the student's specific questions, yet the student somehow self-corrects and arrives at the right understanding despite receiving no substantive help.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 1, \"brief_justification\": \"The teacher does not ask any probing questions or use counterexamples; instead, they repeatedly provide the same list of similar cases with correct answers and misconceptions explicitly stated, which directly tells rather than guides through questioning.\"}\n```",
+    "quality_composite": 1.0,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T15:14:01.101299+00:00"
+}

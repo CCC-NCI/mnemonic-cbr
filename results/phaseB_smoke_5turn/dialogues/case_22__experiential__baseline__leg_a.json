@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_22",
+    "misconception_label": "Does not realise that adding a larger number gives a larger answer",
+    "misconception_features": [
+      0.0,
+      22.0,
+      2.0,
+      98.0
+    ],
+    "persona": "experiential",
+    "architecture": "baseline",
+    "student_leg": "leg_a",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T17:26:20.539159Z",
+      "seed": 1163,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T17:26:25.956906Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: Tom and Katie are discussing related calculations Tom says if you know that \\( 3748+426=4174 \\), then \\( 3748+427 \\) must equal \\( \\mathbf{4 1 7 5} \\) Katie says if you know that \\( 3748-426=3322 \\), then \\( 3748 \\) - \\( 427 \\) must equal \\( \\mathbf{3 3 2 3} \\) Who is correct? I got Only Katie because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Imagine you were using marbles to represent the numbers in these calculations. If you added one more marble to the first group, would you expect the total to be larger? And if you took away one marble from the second group, would you expect the total to be smaller?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "I think I get what you're saying about the marbles. So if I add one more marble, the total should be bigger, right? But I'm still confused about how that works with the numbers. Why does it change the answer when I add or take away?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Imagine you were using money to represent the numbers in these calculations. If you added one more dollar to the first group, would you expect the total to be larger? And if you took away one dollar from the second group, would you expect the total to be smaller?",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "Okay, I think I get it a bit better with the money example. So if I add one dollar, the total goes up, and if I take one away, it goes down. But I'm still not sure how that works with the numbers in the problem. Why does adding 427 to 3748 make it bigger than adding 426?",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 2,
+    "R3": 1,
+    "R4": 5,
+    "R5": 1,
+    "R6": 5,
+    "justification_pass1": "The teacher uses concrete analogies (marbles, money) but doesn't address the student's specific confusion about why adding a larger number yields a larger sum, and the student shows no improvement across turns, ending more confused than they started.",
+    "justification_pass2": "The teacher consistently uses concrete real-world analogies (marbles, money) to help ground the abstract arithmetic concepts in everyday situations the student can visualize and understand.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 2,\n  \"R3\": 1,\n  \"R4\": 5,\n  \"R5\": 1,\n  \"brief_justification\": \"The teacher uses concrete analogies (marbles, money) but doesn't address the student's specific confusion about why adding a larger number yields a larger sum, and the student shows no improvement across turns, ending more confused than they started.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 5, \"brief_justification\": \"The teacher consistently uses concrete real-world analogies (marbles, money) to help ground the abstract arithmetic concepts in everyday situations the student can visualize and understand.\"}\n```",
+    "quality_composite": 1.6666666666666667,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T17:26:32.459327+00:00"
+}

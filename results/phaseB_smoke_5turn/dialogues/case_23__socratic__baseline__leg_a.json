@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_23",
+    "misconception_label": "Confuses rest and movement on a distance time graph",
+    "misconception_features": [
+      0.0,
+      23.0,
+      3.0,
+      62.0
+    ],
+    "persona": "socratic",
+    "architecture": "baseline",
+    "student_leg": "leg_a",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T17:32:35.944737Z",
+      "seed": 1193,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T17:32:40.643036Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: This graph shows how far Fido the dog is from his home. What might the negative-sloping section represent? ![A graph with time (secs) on the horizontal axis and distance (m) on the vertical axis. The graph starts at the origin, travels in a straight line up and right, travels horizontally, then travels in a straight line down and right back to the x-axis. ](). I got Fido has fallen asleep because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let me ask you this: what would happen if you tried your method on a simpler version of the problem?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "I guess I could try it with a simpler graph, like if it just showed a person walking away from home and then coming back. But I'm still not sure how to tell the difference between when they're moving and when they're not. Like, if the line goes down, does that mean they're going back home or just standing still?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let me ask you this: how can you determine if someone is moving or standing still based on the direction of the line on the graph?",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "I think if the line is going up, that means they're moving away from home, and if it's flat, they're not moving at all. But I'm still confused about the line going down. Does that mean they're definitely going back home, or could it mean something else?",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 3,
+    "R3": 2,
+    "R4": 5,
+    "R5": 4,
+    "R6": 5,
+    "justification_pass1": "The teacher uses generic prompting rather than directly addressing the rest/movement confusion, but the student does make visible progress from thinking negative slope means 'asleep' to correctly understanding flat means stationary and recognizing that downward slope indicates movement back home.",
+    "justification_pass2": "The teacher consistently uses probing questions to guide the student's reasoning without directly providing answers, exemplifying the Socratic method by asking the student to consider simpler cases and to think through the relationship between line direction and movement.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 3,\n  \"R3\": 2,\n  \"R4\": 5,\n  \"R5\": 4,\n  \"brief_justification\": \"The teacher uses generic prompting rather than directly addressing the rest/movement confusion, but the student does make visible progress from thinking negative slope means 'asleep' to correctly understanding flat means stationary and recognizing that downward slope indicates movement back home.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 5, \"brief_justification\": \"The teacher consistently uses probing questions to guide the student's reasoning without directly providing answers, exemplifying the Socratic method by asking the student to consider simpler cases and to think through the relationship between line direction and movement.\"}\n```",
+    "quality_composite": 2.3333333333333335,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T17:32:47.916186+00:00"
+}

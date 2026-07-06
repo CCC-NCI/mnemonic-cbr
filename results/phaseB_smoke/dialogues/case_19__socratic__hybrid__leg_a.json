@@ -1,0 +1,66 @@
+{
+  "state": {
+    "case_id": "case_19",
+    "misconception_label": "When subtracting fractions, subtracts the numerators and multiplies the denominators",
+    "misconception_features": [
+      0.0,
+      19.0,
+      3.0,
+      104.0
+    ],
+    "persona": "socratic",
+    "architecture": "hybrid",
+    "student_leg": "leg_a",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T11:13:34.974453Z",
+      "seed": 1001,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-12T11:13:43.337115Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: Express the following as a single fraction, writing your answer as simply as possible: \\( \\frac{1}{s}-\\frac{t}{3} \\). I got \\( \\frac{1-t}{3 s} \\) because I treated the fractions like ordinary numbers.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Why did you choose to subtract the numerators and multiply the denominators in this case? Can you walk me through your thought process for how you approached this problem?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "I thought it would be easier to just treat the fractions like normal numbers, so I figured I could just subtract the top numbers and multiply the bottom ones. But now I'm not sure if that's right. Should I be doing something different with the denominators?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Can you think of a situation where subtracting the numerators and multiplying the denominators might not give you the correct answer when dealing with fractions? Let's consider how we can approach this problem by keeping the fractions separate and finding a common denominator to work with.",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 4,
+    "R2": 3,
+    "R3": 3,
+    "R4": 5,
+    "R5": 2,
+    "R6": 3,
+    "justification_pass1": "The teacher directly addresses the specific misconception and provides mathematically correct guidance toward common denominators, but the student only expresses doubt without demonstrating improved understanding or correct reasoning by the end of the dialogue.",
+    "justification_pass2": "The teacher uses probing questions effectively in Turns 1 and 3, but in Turn 3 partially violates the Socratic method by directly suggesting the solution approach ('finding a common denominator') rather than letting the student discover it through questioning alone.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 4,\n  \"R2\": 3,\n  \"R3\": 3,\n  \"R4\": 5,\n  \"R5\": 2,\n  \"brief_justification\": \"The teacher directly addresses the specific misconception and provides mathematically correct guidance toward common denominators, but the student only expresses doubt without demonstrating improved understanding or correct reasoning by the end of the dialogue.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 3, \"brief_justification\": \"The teacher uses probing questions effectively in Turns 1 and 3, but in Turn 3 partially violates the Socratic method by directly suggesting the solution approach ('finding a common denominator') rather than letting the student discover it through questioning alone.\"}\n```",
+    "quality_composite": 3.3333333333333335,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T11:13:50.402247+00:00"
+}

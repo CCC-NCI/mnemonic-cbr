@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_24",
+    "misconception_label": "When solving a problem that requires an inverse operation (e.g. missing number problems), does the original operation",
+    "misconception_features": [
+      0.0,
+      24.0,
+      2.0,
+      52.0
+    ],
+    "persona": "rule_based",
+    "architecture": "baseline",
+    "student_leg": "leg_a",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T17:49:11.266023Z",
+      "seed": 1273,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T17:49:14.945920Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: What should replace the star? \\[ \\bigstar \\times 4=108 \\]. I got \\( 432 \\) because I added the parts of the ratio as if they were a total.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "There is a specific procedure for this. Step 1 is to identify the operation; step 2 is to apply the rule for that operation. In this case, when solving for the missing number in a multiplication problem, you need to divide by the known number, not add the parts of the ratio as a total.",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Oh, I see! So instead of adding, I should be dividing. But why do we divide by the number we multiplied by? Can you explain that part a bit more?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "There is a specific procedure for this. Step 1 is to identify the operation; step 2 is to apply the rule for that operation. In this case, when solving for the missing number in a multiplication problem, you divide by the known number because division is the inverse operation of multiplication.",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "Okay, I think I get it a bit better now! So, since we multiplied by 4 to get 108, we divide by 4 to find the star. But why do we call division the \"inverse\" operation? What does that really mean?",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 1,
+    "R3": 1,
+    "R4": 4,
+    "R5": 1,
+    "R6": 5,
+    "justification_pass1": "The teacher repeatedly provides procedural rules without engaging the student's conceptual questions about why division is the inverse operation, and the student's repeated requests for deeper explanation suggest the misconception is not being addressed at the level needed.",
+    "justification_pass2": "The teacher consistently states explicit procedures with numbered steps, directly corrects the student's procedural error (using addition instead of division), and provides rule-based explanations (inverse operations) without exploring conceptual understanding, making this a textbook example of rule-based instruction.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 1,\n  \"R3\": 1,\n  \"R4\": 4,\n  \"R5\": 1,\n  \"brief_justification\": \"The teacher repeatedly provides procedural rules without engaging the student's conceptual questions about why division is the inverse operation, and the student's repeated requests for deeper explanation suggest the misconception is not being addressed at the level needed.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 5, \"brief_justification\": \"The teacher consistently states explicit procedures with numbered steps, directly corrects the student's procedural error (using addition instead of division), and provides rule-based explanations (inverse operations) without exploring conceptual understanding, making this a textbook example of rule-based instruction.\"}\n```",
+    "quality_composite": 1.3333333333333333,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T17:49:22.469718+00:00"
+}

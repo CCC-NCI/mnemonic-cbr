@@ -1,0 +1,53 @@
+{
+  "blind_id": "Dc04b604b87",
+  "subset_row": {
+    "blind_id": "Dc04b604b87",
+    "case_id": "case_7",
+    "persona": "socratic",
+    "architecture": "pure_ai",
+    "student_leg": "leg_b",
+    "llm_R5": "4",
+    "llm_quality_composite": "3.6666666666666665",
+    "llm_R6": "5",
+    "difficulty_band": "medium",
+    "r5_band": "high",
+    "word_count": "29",
+    "attention_check_type": "",
+    "attention_check_rationale": "",
+    "file_path": "dialogues/case_7__socratic__pure_ai__leg_b.json"
+  },
+  "primary_score": {
+    "R1": 4,
+    "R2": 4,
+    "R3": 3,
+    "R4": 5,
+    "R5": 4,
+    "R6": 5,
+    "justification_pass1": "The teacher directly addresses the divide-by-100 misconception and uses questioning to promote reasoning about place value, leading the student from confusion to articulating the correct relationship between dividing by 10 and moving the decimal point one place.",
+    "justification_pass2": "The teacher consistently uses probing questions to guide the student's thinking, never directly provides the answer, and helps the student discover the relationship between place value and division through their own reasoning.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 4,\n  \"R2\": 4,\n  \"R3\": 3,\n  \"R4\": 5,\n  \"R5\": 4,\n  \"brief_justification\": \"The teacher directly addresses the divide-by-100 misconception and uses questioning to promote reasoning about place value, leading the student from confusion to articulating the correct relationship between dividing by 10 and moving the decimal point one place.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 5, \"brief_justification\": \"The teacher consistently uses probing questions to guide the student's thinking, never directly provides the answer, and helps the student discover the relationship between place value and division through their own reasoning.\"}\n```",
+    "quality_composite": 3.6666666666666665,
+    "is_complete": true
+  },
+  "secondary_score": {
+    "R1": 5,
+    "R2": 5,
+    "R3": 5,
+    "R4": 5,
+    "R5": 5,
+    "R6": 5,
+    "justification_pass1": "The teacher expertly guides the student to identify the source of their own error and then uses a simplified example to help them reason their way to the correct principle.",
+    "justification_pass2": "The teacher perfectly embodies the socratic strategy by exclusively using probing questions to guide the student to self-correct their reasoning without ever giving the answer directly.",
+    "judge_provider": "gemini",
+    "judge_model": "gemini-2.5-pro",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 5,\n  \"R2\": 5,\n  \"R3\": 5,\n  \"R4\": 5,\n  \"R5\": 5,\n  \"brief_justification\": \"The teacher expertly guides the student to identify the source of their own error and then uses a simplified example to help them reason their way to the correct principle.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\n  \"R6\": 5,\n  \"brief_justification\": \"The teacher perfectly embodies the socratic strategy by exclusively using probing questions to guide the student to self-correct their reasoning without ever giving the answer directly.\"\n}\n```"
+  }
+}

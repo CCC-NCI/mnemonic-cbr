@@ -1,0 +1,53 @@
+{
+  "blind_id": "D695395a3d3",
+  "subset_row": {
+    "blind_id": "D695395a3d3",
+    "case_id": "case_2",
+    "persona": "socratic",
+    "architecture": "pure_cbr_tpl",
+    "student_leg": "leg_b",
+    "llm_R5": "3",
+    "llm_quality_composite": "1.0",
+    "llm_R6": "1",
+    "difficulty_band": "long",
+    "r5_band": "mid",
+    "word_count": "93",
+    "attention_check_type": "",
+    "attention_check_rationale": "",
+    "file_path": "dialogues/case_2__socratic__pure_cbr_tpl__leg_b.json"
+  },
+  "primary_score": {
+    "R1": 1,
+    "R2": 1,
+    "R3": 1,
+    "R4": 1,
+    "R5": 3,
+    "R6": 1,
+    "justification_pass1": "The teacher provides only irrelevant boilerplate text about unrelated misconceptions rather than engaging with the student's actual confusion about proportional changes and range, though the student does make some progress through self-directed calculation.",
+    "justification_pass2": "The teacher repeatedly provides identical, irrelevant canned responses about unrelated misconceptions rather than using probing questions to guide the student's thinking, completely failing to implement the Socratic method.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 1,\n  \"R2\": 1,\n  \"R3\": 1,\n  \"R4\": 1,\n  \"R5\": 3,\n  \"brief_justification\": \"The teacher provides only irrelevant boilerplate text about unrelated misconceptions rather than engaging with the student's actual confusion about proportional changes and range, though the student does make some progress through self-directed calculation.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\n  \"R6\": 1,\n  \"brief_justification\": \"The teacher repeatedly provides identical, irrelevant canned responses about unrelated misconceptions rather than using probing questions to guide the student's thinking, completely failing to implement the Socratic method.\"\n}\n```",
+    "quality_composite": 1.0,
+    "is_complete": true
+  },
+  "secondary_score": {
+    "R1": 1,
+    "R2": 1,
+    "R3": 1,
+    "R4": 1,
+    "R5": 3,
+    "R6": 1,
+    "justification_pass1": "The teacher's turns are non-responsive, mathematically incorrect, and place no cognitive demand on the student; however, the student makes significant progress by ignoring the teacher and pursuing their own correct line of reasoning.",
+    "justification_pass2": "The teacher does not ask any probing questions or use counterexamples; instead, they provide identical, irrelevant lists of other problems which do not guide the student's reasoning.",
+    "judge_provider": "gemini",
+    "judge_model": "gemini-2.5-pro",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 1,\n  \"R2\": 1,\n  \"R3\": 1,\n  \"R4\": 1,\n  \"R5\": 3,\n  \"brief_justification\": \"The teacher's turns are non-responsive, mathematically incorrect, and place no cognitive demand on the student; however, the student makes significant progress by ignoring the teacher and pursuing their own correct line of reasoning.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\n  \"R6\": 1,\n  \"brief_justification\": \"The teacher does not ask any probing questions or use counterexamples; instead, they provide identical, irrelevant lists of other problems which do not guide the student's reasoning.\"\n}\n```"
+  }
+}

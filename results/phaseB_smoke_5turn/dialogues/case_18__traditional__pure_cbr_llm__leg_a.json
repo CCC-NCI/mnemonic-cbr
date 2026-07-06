@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_18",
+    "misconception_label": "Assumes that an arrow on a number line starts at zero",
+    "misconception_features": [
+      0.0,
+      18.0,
+      2.0,
+      73.0
+    ],
+    "persona": "traditional",
+    "architecture": "pure_cbr_llm",
+    "student_leg": "leg_a",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T16:47:29.486530Z",
+      "seed": 985,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T16:47:33.843541Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: ![Number line with -12 and -7 marked. Starting at -12, follow an arrow pointing to the right labelled +10. Then there is an arrow labelled b pointing to the left, which ends at -7 on the number line.]() What is the value of \\( b \\) ? I got \\( -7 \\) because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's focus on the misconception that the arrow on a number line always starts at zero. In this case, the arrow labeled as \"b\" is starting at -12, not zero. Can you think about how this affects the value of b in relation to -12 and -7?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Okay, I think I get what you're saying. So the arrow for b starts at -12, not zero. But if I move to the left from -12 to get to -7, how do I figure out what b actually is? Is it just the distance I moved?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's focus on the misconception that the arrow always starts at zero. In this case, the arrow labeled as \"b\" starts at -12, not at zero. Can you think about how this affects the value of b in relation to -12 and -7?",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "So, if the arrow for b starts at -12 and ends at -7, I guess I need to figure out how far I'm moving from -12 to -7. But is it just the distance I moved, or do I need to think about the direction too? Like, is b a negative number since I'm moving left?",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 4,
+    "R2": 2,
+    "R3": 2,
+    "R4": 5,
+    "R5": 3,
+    "R6": 1,
+    "justification_pass1": "The teacher explicitly addresses the specific misconception about arrows starting at zero, but provides repetitive prompts without scaffolding the student toward understanding how to calculate the value of b, resulting in the student making some progress but still being uncertain about direction and calculation by the end.",
+    "justification_pass2": "The teacher repeatedly asks leading questions about misconceptions rather than directly explaining the concept with a worked example, which is contrary to the traditional teaching strategy of direct explanation.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 4,\n  \"R2\": 2,\n  \"R3\": 2,\n  \"R4\": 5,\n  \"R5\": 3,\n  \"brief_justification\": \"The teacher explicitly addresses the specific misconception about arrows starting at zero, but provides repetitive prompts without scaffolding the student toward understanding how to calculate the value of b, resulting in the student making some progress but still being uncertain about direction and calculation by the end.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 1, \"brief_justification\": \"The teacher repeatedly asks leading questions about misconceptions rather than directly explaining the concept with a worked example, which is contrary to the traditional teaching strategy of direct explanation.\"}\n```",
+    "quality_composite": 2.6666666666666665,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T16:47:40.299398+00:00"
+}

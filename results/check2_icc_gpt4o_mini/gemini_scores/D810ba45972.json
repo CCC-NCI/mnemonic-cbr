@@ -1,0 +1,53 @@
+{
+  "blind_id": "D810ba45972",
+  "subset_row": {
+    "blind_id": "D810ba45972",
+    "case_id": "case_8",
+    "persona": "traditional",
+    "architecture": "hybrid",
+    "student_leg": "leg_b",
+    "llm_R5": "4",
+    "llm_quality_composite": "2.3333333333333335",
+    "llm_R6": "5",
+    "difficulty_band": "medium",
+    "r5_band": "high",
+    "word_count": "32",
+    "attention_check_type": "",
+    "attention_check_rationale": "",
+    "file_path": "dialogues/case_8__traditional__hybrid__leg_b.json"
+  },
+  "primary_score": {
+    "R1": 2,
+    "R2": 2,
+    "R3": 3,
+    "R4": 5,
+    "R5": 4,
+    "R6": 5,
+    "justification_pass1": "The teacher directly tells the student the procedure and answer rather than engaging with why 'treating fractions like ordinary numbers' fails, though the student does show improved understanding by Turn 4 when they articulate the multiplying-by-one concept independently.",
+    "justification_pass2": "The teacher exemplifies the traditional strategy by directly explaining the procedure with a worked example (finding common denominators), checking understanding at each step, and providing clear, comprehensive explanations of the mathematical concepts involved.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 2,\n  \"R3\": 3,\n  \"R4\": 5,\n  \"R5\": 4,\n  \"brief_justification\": \"The teacher directly tells the student the procedure and answer rather than engaging with why 'treating fractions like ordinary numbers' fails, though the student does show improved understanding by Turn 4 when they articulate the multiplying-by-one concept independently.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\n  \"R6\": 5,\n  \"brief_justification\": \"The teacher exemplifies the traditional strategy by directly explaining the procedure with a worked example (finding common denominators), checking understanding at each step, and providing clear, comprehensive explanations of the mathematical concepts involved.\"\n}\n```",
+    "quality_composite": 2.3333333333333335,
+    "is_complete": true
+  },
+  "secondary_score": {
+    "R1": 5,
+    "R2": 4,
+    "R3": 5,
+    "R4": 5,
+    "R5": 5,
+    "R6": 4,
+    "justification_pass1": "The teacher effectively addresses the student's misconception about finding a common denominator, engages them in reasoning, provides well-calibrated support, ensures mathematical accuracy, and the student's understanding visibly improves throughout the dialogue.",
+    "justification_pass2": "The teacher effectively explains the process of finding a common denominator and provides a worked example, but could enhance clarity by explicitly stating the steps in a more structured manner.",
+    "judge_provider": "openai",
+    "judge_model": "gpt-4o-mini",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "{\n  \"R1\": 5,\n  \"R2\": 4,\n  \"R3\": 5,\n  \"R4\": 5,\n  \"R5\": 5,\n  \"brief_justification\": \"The teacher effectively addresses the student's misconception about finding a common denominator, engages them in reasoning, provides well-calibrated support, ensures mathematical accuracy, and the student's understanding visibly improves throughout the dialogue.\"\n}",
+    "pass2_raw_text": "{\"R6\": 4, \"brief_justification\": \"The teacher effectively explains the process of finding a common denominator and provides a worked example, but could enhance clarity by explicitly stating the steps in a more structured manner.\"}"
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "state": {
+    "case_id": "case_1",
+    "misconception_label": "Does not know that to factorise a quadratic expression, to find two numbers that add to give the coefficient of the x term, and multiply to give the non variable term",
+    "misconception_features": [
+      0.0,
+      1.0,
+      3.0,
+      59.0
+    ],
+    "persona": "traditional",
+    "architecture": "hybrid",
+    "student_leg": "leg_a",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T08:23:11.763433Z",
+      "seed": 141,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "cbr_grounded",
+      "ended_at": "2026-05-12T08:23:15.952719Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: Simplify the following, if possible: \\( \\frac{m^{2}+2 m-3}{m-3} \\). I got \\( m+1 \\) because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "First, let's focus on factorising a quadratic expression. Remember, we need to find two numbers that add to give the coefficient of the x term and multiply to give the constant term. Let's work through an example together to help clarify this concept. Can you think of an example where we can apply this method?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Okay, I think I get what you mean about finding two numbers that add and multiply, but I'm still a bit confused. Like, if we take \\( m^2 + 2m - 3 \\), what exactly are the numbers I'm supposed to find? Do I just look at the \\( 2 \\) and \\( -3 \\) and try to figure it out from there?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's focus on the expression \\( m^2 + 2m - 3 \\). Remember, we need to find two numbers that add to give \\( 2 \\) (the coefficient of the \\( m \\) term) and multiply to give \\( -3 \\). Can you think of two numbers that fit these criteria?",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 4,
+    "R2": 3,
+    "R3": 4,
+    "R4": 5,
+    "R5": 3,
+    "R6": 2,
+    "justification_pass1": "The teacher directly addresses the factorising misconception with accurate mathematics and appropriate scaffolding, though the student shows only partial understanding by Turn 2 and hasn't yet demonstrated successful application of the concept.",
+    "justification_pass2": "The teacher uses questioning to elicit student thinking rather than directly explaining with worked examples, which is inconsistent with the traditional strategy of direct explanation and demonstration.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 4,\n  \"R2\": 3,\n  \"R3\": 4,\n  \"R4\": 5,\n  \"R5\": 3,\n  \"brief_justification\": \"The teacher directly addresses the factorising misconception with accurate mathematics and appropriate scaffolding, though the student shows only partial understanding by Turn 2 and hasn't yet demonstrated successful application of the concept.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 2, \"brief_justification\": \"The teacher uses questioning to elicit student thinking rather than directly explaining with worked examples, which is inconsistent with the traditional strategy of direct explanation and demonstration.\"}\n```",
+    "quality_composite": 3.6666666666666665,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T08:23:21.265925+00:00"
+}

@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_19",
+    "misconception_label": "When subtracting fractions, subtracts the numerators and multiplies the denominators",
+    "misconception_features": [
+      0.0,
+      19.0,
+      3.0,
+      104.0
+    ],
+    "persona": "rule_based",
+    "architecture": "hybrid",
+    "student_leg": "leg_b",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T16:57:43.252004Z",
+      "seed": 1032,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T16:57:48.281219Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: Express the following as a single fraction, writing your answer as simply as possible: \\( \\frac{1}{s}-\\frac{t}{3} \\). I got \\( \\frac{1-t}{3 s} \\) because I treated the fractions like ordinary numbers.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "When subtracting fractions, remember to find a common denominator and keep the denominators the same. To correct your mistake, you need to subtract the numerators and keep the denominator as \\( 3s \\). So the correct answer is \\( \\frac{1-3t}{3s} \\). Keep in mind the correct procedure for subtracting fractions.",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Oh right, so I need to find a common denominator first - that's 3s in this case. But I'm a bit confused about where the 3 comes from in the numerator... is it because I multiply the 1 by 3 to match the denominator change, like 1 becomes 3?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Yes, that's correct. When finding a common denominator, you multiply the numerator and denominator by the same value. In this case, you multiply the numerator 1 by 3 to match the denominator change to 3s. Keep practicing this process to ensure you handle fractions correctly.",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "Oh okay, so I multiply 1 by 3 to get 3, and then for the other fraction I need to multiply t by s to get ts? So it would be \\( \\frac{3}{3s}-\\frac{ts}{3s} \\) and then I subtract to get \\( \\frac{3-ts}{3s} \\)? Is that right?",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 1,
+    "R3": 2,
+    "R4": 2,
+    "R5": 4,
+    "R6": 2,
+    "justification_pass1": "The teacher directly states the correct answer in Turn 1 without engaging the misconception, provides minimal cognitive demand by telling rather than prompting reasoning, but the student does show improvement by Turn 4 in understanding the common denominator process despite the teacher's initial error in Turn 1 (claiming the answer is (1-3t)/(3s) when it should be (3-ts)/(3s)).",
+    "justification_pass2": "While the teacher provides some direct corrective feedback and mentions procedures, they give the student the correct answer immediately in Turn 1 rather than guiding them through the explicit steps, and they fail to correct a significant procedural error in Turn 4 where the student writes '3-ts' instead of '3-st' or '3-3t'.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 1,\n  \"R3\": 2,\n  \"R4\": 2,\n  \"R5\": 4,\n  \"brief_justification\": \"The teacher directly states the correct answer in Turn 1 without engaging the misconception, provides minimal cognitive demand by telling rather than prompting reasoning, but the student does show improvement by Turn 4 in understanding the common denominator process despite the teacher's initial error in Turn 1 (claiming the answer is (1-3t)/(3s) when it should be (3-ts)/(3s)).\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 2, \"brief_justification\": \"While the teacher provides some direct corrective feedback and mentions procedures, they give the student the correct answer immediately in Turn 1 rather than guiding them through the explicit steps, and they fail to correct a significant procedural error in Turn 4 where the student writes '3-ts' instead of '3-st' or '3-3t'.\"}\n```",
+    "quality_composite": 1.6666666666666667,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T16:57:57.427832+00:00"
+}

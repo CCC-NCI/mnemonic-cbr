@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_8",
+    "misconception_label": "Does not find a common denominator when adding/subtracting fractions",
+    "misconception_features": [
+      0.0,
+      8.0,
+      3.0,
+      88.0
+    ],
+    "persona": "socratic",
+    "architecture": "baseline",
+    "student_leg": "leg_b",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T14:51:11.240259Z",
+      "seed": 444,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T14:51:16.324569Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: \\( \\frac{4}{5}-\\frac{1}{3}=\\frac{\\bigstar}{15} \\) What should replace the star? I got \\( 5 \\) because I treated the fractions like ordinary numbers.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let me ask you this: what would happen if you tried finding a common denominator when adding/subtracting fractions?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Um, I think you'd have to make both denominators the same number? So like, I'd need to change the 5 and the 3 to... I dunno, maybe 15? But I'm not really sure how you actually do that or why it matters when you're just subtracting.",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Why do you think it's important to have a common denominator when subtracting fractions? What would happen if the denominators were different in this problem?",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "Um, I guess... if the denominators are different, then the pieces aren't the same size? Like, fifths and thirds are different amounts, so you can't just subtract them directly? But I'm still confused about how to actually change them to 15 without messing up the fraction.",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 3,
+    "R3": 2,
+    "R4": 5,
+    "R5": 3,
+    "R6": 5,
+    "justification_pass1": "The teacher asks conceptual questions that elicit some reasoning about common denominators, but never addresses the student's actual computational error (treating fractions like ordinary numbers) or provides the scaffolding needed to convert fractions, leaving the student still confused about the procedure despite improved conceptual understanding.",
+    "justification_pass2": "The teacher perfectly exemplifies the Socratic method by exclusively using probing questions to guide the student toward understanding common denominators, never directly providing the answer or procedure, and allowing the student to construct their own reasoning about why denominators must be the same.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 3,\n  \"R3\": 2,\n  \"R4\": 5,\n  \"R5\": 3,\n  \"brief_justification\": \"The teacher asks conceptual questions that elicit some reasoning about common denominators, but never addresses the student's actual computational error (treating fractions like ordinary numbers) or provides the scaffolding needed to convert fractions, leaving the student still confused about the procedure despite improved conceptual understanding.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 5, \"brief_justification\": \"The teacher perfectly exemplifies the Socratic method by exclusively using probing questions to guide the student toward understanding common denominators, never directly providing the answer or procedure, and allowing the student to construct their own reasoning about why denominators must be the same.\"}\n```",
+    "quality_composite": 2.3333333333333335,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T14:51:23.762056+00:00"
+}

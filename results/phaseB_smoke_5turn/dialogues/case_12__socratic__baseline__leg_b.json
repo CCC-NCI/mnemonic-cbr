@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_12",
+    "misconception_label": "Thinks alternate angles are always equal",
+    "misconception_features": [
+      0.0,
+      12.0,
+      3.0,
+      25.0
+    ],
+    "persona": "socratic",
+    "architecture": "baseline",
+    "student_leg": "leg_b",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T15:35:09.179591Z",
+      "seed": 644,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T15:35:13.984316Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: Tom and Katie are arguing about alternate angles. Tom says angles \\( p \\) and \\( q \\) are alternate. Katie says angles \\( p \\) and \\( q \\) are equal. Who is correct? ![Shows two non parallel lines that are intersected by another line. Angles P and Q are both on the outside of the lines and on opposite sides of the transversal.](). I got Only\nKatie because I assumed all the angles in the figure are equal.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "How can we test if angles \\( p \\) and \\( q \\) are actually equal in this specific scenario? What other information might we need to consider in this situation?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Um, I guess we'd need to know if the two lines are actually parallel? Like, maybe alternate angles are only equal when the lines are parallel, not just whenever they're on opposite sides of the line crossing them?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let me ask you this: what would happen if you tried your method on a simpler version of the problem where the lines are parallel?",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "Oh right, so if the lines were parallel, then the alternate angles would actually be equal? But I'm still a bit confused about why it matters if they're parallel or not - like, why does that change whether the angles are equal when they're in the same positions on opposite sides of the line?",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 4,
+    "R2": 4,
+    "R3": 3,
+    "R4": 5,
+    "R5": 4,
+    "R6": 5,
+    "justification_pass1": "The teacher effectively addresses the misconception by prompting the student to consider the parallel lines condition, leading the student to discover that alternate angles are only equal when lines are parallel, though the student still seeks deeper understanding by Turn 4.",
+    "justification_pass2": "The teacher consistently uses probing questions to guide the student's thinking without directly providing answers, successfully leading the student to recognize the importance of parallel lines through questioning alone.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 4,\n  \"R2\": 4,\n  \"R3\": 3,\n  \"R4\": 5,\n  \"R5\": 4,\n  \"brief_justification\": \"The teacher effectively addresses the misconception by prompting the student to consider the parallel lines condition, leading the student to discover that alternate angles are only equal when lines are parallel, though the student still seeks deeper understanding by Turn 4.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 5, \"brief_justification\": \"The teacher consistently uses probing questions to guide the student's thinking without directly providing answers, successfully leading the student to recognize the importance of parallel lines through questioning alone.\"}\n```",
+    "quality_composite": 3.6666666666666665,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T15:35:22.669156+00:00"
+}

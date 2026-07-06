@@ -1,0 +1,66 @@
+{
+  "state": {
+    "case_id": "case_23",
+    "misconception_label": "Confuses rest and movement on a distance time graph",
+    "misconception_features": [
+      0.0,
+      23.0,
+      3.0,
+      62.0
+    ],
+    "persona": "constructive",
+    "architecture": "pure_cbr_llm",
+    "student_leg": "leg_a",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T11:52:16.378275Z",
+      "seed": 1205,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-12T11:52:20.997567Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: This graph shows how far Fido the dog is from his home. What might the negative-sloping section represent? ![A graph with time (secs) on the horizontal axis and distance (m) on the vertical axis. The graph starts at the origin, travels in a straight line up and right, travels horizontally, then travels in a straight line down and right back to the x-axis. ](). I got Fido has fallen asleep because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Great job identifying that Fido has fallen asleep during the negative-sloping section. To clarify, similar to the misconceptions we've discussed before, it's important to consider the reasoning behind why the negative slope represents Fido moving away from his home. Let's explore the concept of movement on a distance-time graph together.",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Okay, I think I get that the negative slope means Fido is moving back towards home, but I still don\u2019t really understand why it\u2019s not about him falling asleep. If he\u2019s moving back, does that mean he was really far away before? What does the horizontal part of the graph mean then?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's focus on the horizontal part of the graph. Similar to the misconceptions we've discussed before, it's crucial to understand the significance of different sections on a distance-time graph. Can you think about how the concept of rest vs. movement applies to this horizontal segment in relation to Fido's distance from home?",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 2,
+    "R3": 2,
+    "R4": 2,
+    "R5": 2,
+    "R6": 2,
+    "justification_pass1": "The teacher incorrectly validates the student's wrong answer in Turn 1 (saying 'Great job' when the student thinks the negative slope means 'fallen asleep'), provides mathematically inaccurate content (claiming negative slope means moving away when it means moving toward home), and while asking the student to reason about the horizontal section, the student's Turn 2 response shows they remain confused about the core misconception.",
+    "justification_pass2": "While the teacher attempts to break down the problem by focusing on different graph sections, they fail to scaffold effectively by not acknowledging the student's correct insight in Turn 2, providing confusing feedback in Turn 1 that contradicts the student's emerging understanding, and asking overly open questions without adjusting support to the student's demonstrated confusion.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 2,\n  \"R3\": 2,\n  \"R4\": 2,\n  \"R5\": 2,\n  \"brief_justification\": \"The teacher incorrectly validates the student's wrong answer in Turn 1 (saying 'Great job' when the student thinks the negative slope means 'fallen asleep'), provides mathematically inaccurate content (claiming negative slope means moving away when it means moving toward home), and while asking the student to reason about the horizontal section, the student's Turn 2 response shows they remain confused about the core misconception.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\n  \"R6\": 2,\n  \"brief_justification\": \"While the teacher attempts to break down the problem by focusing on different graph sections, they fail to scaffold effectively by not acknowledging the student's correct insight in Turn 2, providing confusing feedback in Turn 1 that contradicts the student's emerging understanding, and asking overly open questions without adjusting support to the student's demonstrated confusion.\"\n}\n```",
+    "quality_composite": 2.0,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T11:52:29.864542+00:00"
+}

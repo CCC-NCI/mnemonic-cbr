@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_19",
+    "misconception_label": "When subtracting fractions, subtracts the numerators and multiplies the denominators",
+    "misconception_features": [
+      0.0,
+      19.0,
+      3.0,
+      104.0
+    ],
+    "persona": "socratic",
+    "architecture": "hybrid",
+    "student_leg": "leg_b",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T16:51:18.547481Z",
+      "seed": 1002,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T16:51:23.542786Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: Express the following as a single fraction, writing your answer as simply as possible: \\( \\frac{1}{s}-\\frac{t}{3} \\). I got \\( \\frac{1-t}{3 s} \\) because I treated the fractions like ordinary numbers.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Can you explain why you subtracted the numerators and multiplied the denominators in this case? How does treating fractions like ordinary numbers affect the operations involved in subtracting fractions?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Um, I think I just did what felt natural? Like, I subtracted the top numbers because they're on top, and then multiplied the bottom numbers together because... I dunno, it seemed like the opposite operation? But now I'm confused because you're saying that's wrong - so like, do I need to do something different with the denominators instead of multiplying them?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Can you think of a situation where multiplying the denominators would give you the correct answer when subtracting fractions? Let's explore why simply subtracting the numerators and multiplying the denominators might not always work in all cases.",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "Um, I'm not really sure... like, maybe when the denominators are the same? But I don't think that's right either because then I wouldn't need to multiply them. So like, should I be finding a common denominator instead of multiplying them together?",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 3,
+    "R3": 2,
+    "R4": 5,
+    "R5": 3,
+    "R6": 4,
+    "justification_pass1": "The teacher asks questions requiring reasoning but doesn't directly address why the specific misconception (subtract numerators, multiply denominators) is incorrect, though the student does eventually arrive at the idea of common denominators through guided questioning.",
+    "justification_pass2": "The teacher consistently uses probing questions to guide the student toward discovering the error in their reasoning without directly providing the answer, though they could have used a concrete counterexample to more strongly expose the flawed reasoning.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 3,\n  \"R3\": 2,\n  \"R4\": 5,\n  \"R5\": 3,\n  \"brief_justification\": \"The teacher asks questions requiring reasoning but doesn't directly address why the specific misconception (subtract numerators, multiply denominators) is incorrect, though the student does eventually arrive at the idea of common denominators through guided questioning.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 4, \"brief_justification\": \"The teacher consistently uses probing questions to guide the student toward discovering the error in their reasoning without directly providing the answer, though they could have used a concrete counterexample to more strongly expose the flawed reasoning.\"}\n```",
+    "quality_composite": 2.3333333333333335,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T16:51:29.619515+00:00"
+}

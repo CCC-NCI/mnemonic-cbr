@@ -1,0 +1,66 @@
+{
+  "state": {
+    "case_id": "case_19",
+    "misconception_label": "When subtracting fractions, subtracts the numerators and multiplies the denominators",
+    "misconception_features": [
+      0.0,
+      19.0,
+      3.0,
+      104.0
+    ],
+    "persona": "constructive",
+    "architecture": "pure_cbr_llm",
+    "student_leg": "leg_a",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T11:14:22.949944Z",
+      "seed": 1005,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-12T11:14:27.114976Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: Express the following as a single fraction, writing your answer as simply as possible: \\( \\frac{1}{s}-\\frac{t}{3} \\). I got \\( \\frac{1-t}{3 s} \\) because I treated the fractions like ordinary numbers.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "It seems like you're treating the fractions as ordinary numbers when subtracting. Let's focus on subtracting fractions involving mixed numbers with the same denominator. Can you think about how to subtract \\( \\frac{1}{s} \\) from \\( \\frac{t}{3} \\) in terms of fractions?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "I think I get what you're saying about treating them like fractions instead of just numbers. But I'm still a bit confused about how to actually subtract them properly. Do I need to find a common denominator first, or is there another way to do it?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's focus on subtracting fractions involving mixed numbers with the same denominator. To subtract \\( \\frac{1}{s} \\) from \\( \\frac{t}{3} \\), you'll need to find a common denominator. Can you think about how you might find a common denominator in this case?",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 3,
+    "R3": 2,
+    "R4": 2,
+    "R5": 2,
+    "R6": 3,
+    "justification_pass1": "The teacher repeatedly mentions 'mixed numbers with the same denominator' which is mathematically inaccurate for this problem (these are simple fractions with different denominators), and while the student recognizes the need for a common denominator by Turn 2, there's no evidence they've corrected their original misconception about subtracting numerators and multiplying denominators.",
+    "justification_pass2": "The teacher does break down the problem and scaffold toward finding a common denominator, but provides confusing guidance by incorrectly mentioning 'mixed numbers' and 'subtracting 1/s from t/3' (reversing the original operation), which undermines the clarity and appropriateness of the support.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 3,\n  \"R3\": 2,\n  \"R4\": 2,\n  \"R5\": 2,\n  \"brief_justification\": \"The teacher repeatedly mentions 'mixed numbers with the same denominator' which is mathematically inaccurate for this problem (these are simple fractions with different denominators), and while the student recognizes the need for a common denominator by Turn 2, there's no evidence they've corrected their original misconception about subtracting numerators and multiplying denominators.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\n  \"R6\": 3,\n  \"brief_justification\": \"The teacher does break down the problem and scaffold toward finding a common denominator, but provides confusing guidance by incorrectly mentioning 'mixed numbers' and 'subtracting 1/s from t/3' (reversing the original operation), which undermines the clarity and appropriateness of the support.\"\n}\n```",
+    "quality_composite": 2.3333333333333335,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T11:14:34.335773+00:00"
+}

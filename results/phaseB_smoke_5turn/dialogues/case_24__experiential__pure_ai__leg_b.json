@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_24",
+    "misconception_label": "When solving a problem that requires an inverse operation (e.g. missing number problems), does the original operation",
+    "misconception_features": [
+      0.0,
+      24.0,
+      2.0,
+      52.0
+    ],
+    "persona": "experiential",
+    "architecture": "pure_ai",
+    "student_leg": "leg_b",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T17:48:35.801422Z",
+      "seed": 1270,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T17:48:40.938162Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: What should replace the star? \\[ \\bigstar \\times 4=108 \\]. I got \\( 432 \\) because I added the parts of the ratio as if they were a total.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's think of this problem like a recipe. When you're making a cake, you need to follow the steps in the right order. In this case, we need to reverse the steps to find the missing number. So, what operation can we do to undo multiplying by 4 in order to find the value of the star?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Oh right, so like... we need to do the opposite of multiplying by 4? So that would be dividing by 4? So I'd do 108 divided by 4 to find the star?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "That's exactly right! Think of it like sharing a pizza with friends. If you have 108 slices to split among 4 friends, how many slices would each friend get? So go ahead and divide 108 by 4 to find the value of the star.",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "So 108 divided by 4 is... 27? So the star equals 27? That makes sense with the pizza thing - if I check it, 27 times 4 does equal 108, so I was doing it backwards before by multiplying instead of dividing.",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 3,
+    "R3": 3,
+    "R4": 5,
+    "R5": 4,
+    "R6": 5,
+    "justification_pass1": "The teacher addresses inverse operations generally but doesn't engage with the student's specific ratio misconception, though the student does successfully move from the wrong operation to the correct one and demonstrates understanding by checking their answer.",
+    "justification_pass2": "The teacher consistently grounds abstract mathematical operations in concrete real-world analogies (recipe/cake-making and pizza-sharing) to help the student understand inverse operations and division.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 3,\n  \"R3\": 3,\n  \"R4\": 5,\n  \"R5\": 4,\n  \"brief_justification\": \"The teacher addresses inverse operations generally but doesn't engage with the student's specific ratio misconception, though the student does successfully move from the wrong operation to the correct one and demonstrates understanding by checking their answer.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 5, \"brief_justification\": \"The teacher consistently grounds abstract mathematical operations in concrete real-world analogies (recipe/cake-making and pizza-sharing) to help the student understand inverse operations and division.\"}\n```",
+    "quality_composite": 2.6666666666666665,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T17:48:47.149241+00:00"
+}

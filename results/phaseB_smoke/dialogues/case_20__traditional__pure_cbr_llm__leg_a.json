@@ -1,0 +1,66 @@
+{
+  "state": {
+    "case_id": "case_20",
+    "misconception_label": "Adds when calculating volume instead of multiplying",
+    "misconception_features": [
+      0.0,
+      20.0,
+      1.0,
+      58.0
+    ],
+    "persona": "traditional",
+    "architecture": "pure_cbr_llm",
+    "student_leg": "leg_a",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T11:29:18.032725Z",
+      "seed": 1085,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-12T11:29:22.607304Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: The volume of this cuboid is \\( 30 \\mathrm{~cm}^{3} \\) What length should replace the star? ![A cuboid, depth 2cm and height 3cm. The width is labelled with a star.](). I got \\( 25 \\mathrm{~cm} \\) because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's revisit how we calculate volume for a cuboid. Remember, when finding the volume, we need to multiply the length, width, and height together. Can you walk me through how you approached this problem?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "I thought I just needed to add the height and depth together to find the width. So, I did \\( 3 \\, \\text{cm} + 2 \\, \\text{cm} = 5 \\, \\text{cm} \\), and then I thought I could just take \\( 30 \\, \\text{cm}^3 \\) and subtract that from \\( 5 \\, \\text{cm} \\) to get the width. But now I'm not sure how to use multiplication instead. Can you explain how that works again?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's focus on the correct way to calculate the volume of a cuboid. Remember, we need to multiply the dimensions together, not add them. Can you try multiplying the length, width, and height to find the volume of the cuboid in this case?",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 2,
+    "R3": 2,
+    "R4": 5,
+    "R5": 1,
+    "R6": 2,
+    "justification_pass1": "The teacher correctly identifies that multiplication is needed but never directly addresses the student's specific adding misconception, and the student shows no improvement by Turn 2 (still confused about how to use multiplication) with no Turn 4 to assess further progress.",
+    "justification_pass2": "The teacher uses questioning and prompting rather than directly explaining with worked examples, which is inconsistent with the traditional strategy of explicit instruction and demonstration.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 2,\n  \"R3\": 2,\n  \"R4\": 5,\n  \"R5\": 1,\n  \"brief_justification\": \"The teacher correctly identifies that multiplication is needed but never directly addresses the student's specific adding misconception, and the student shows no improvement by Turn 2 (still confused about how to use multiplication) with no Turn 4 to assess further progress.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 2, \"brief_justification\": \"The teacher uses questioning and prompting rather than directly explaining with worked examples, which is inconsistent with the traditional strategy of explicit instruction and demonstration.\"}\n```",
+    "quality_composite": 2.0,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T11:29:32.980126+00:00"
+}

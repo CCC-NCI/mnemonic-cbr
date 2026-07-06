@@ -1,0 +1,66 @@
+{
+  "state": {
+    "case_id": "case_10",
+    "misconception_label": "Ignores negative sign when expanding bracket",
+    "misconception_features": [
+      0.0,
+      10.0,
+      1.0,
+      68.0
+    ],
+    "persona": "constructive",
+    "architecture": "baseline",
+    "student_leg": "leg_a",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T09:48:27.548372Z",
+      "seed": 553,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-12T09:48:33.389410Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: John is expanding these three brackets: \\( (x+5)(x-3)(x+6) \\) He finds it helpful to split the first bracket and view the problem as follows: \\( x(x-3)(x+6)+5(x-3)(x+6) \\) He expands the brackets further. Before he simplifies, what are the terms than contain an \\( \\boldsymbol{x}^{2} \\) ? I got \\( \\begin{array}{l}+6 x^{2} \\\\ +3 x^{2} \\\\ +5 x^{2}\\end{array} \\) because I forgot that two negatives multiply to a positive.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's go back to the part you do know, and build the next step from there. Remember to pay attention to the negative signs when expanding the brackets.",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Okay, so I need to be careful with the negative signs. When I expand \\( (x-3)(x+6) \\), I guess I should remember that the negative from the \\( -3 \\) will change things. So, if I do that correctly, what should I get for the \\( x^2 \\) terms? Can you help me figure out that part?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's go back to the part you do know, and build the next step from there. Remember to carefully consider how the negative sign affects the terms when expanding the brackets.",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 2,
+    "R3": 1,
+    "R4": 5,
+    "R5": 1,
+    "R6": 2,
+    "justification_pass1": "The teacher provides only generic reminders about negative signs without addressing the specific misconception, repeats the same vague prompt twice, and the student shows no improvement\u2014actually regressing from self-identifying their error to asking for direct help.",
+    "justification_pass2": "The teacher provides only generic reminders about negative signs without breaking the problem into manageable steps, scaffolding specific sub-tasks, or adjusting support based on the student's clear request for help in Turn 2.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 2,\n  \"R3\": 1,\n  \"R4\": 5,\n  \"R5\": 1,\n  \"brief_justification\": \"The teacher provides only generic reminders about negative signs without addressing the specific misconception, repeats the same vague prompt twice, and the student shows no improvement\u2014actually regressing from self-identifying their error to asking for direct help.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 2, \"brief_justification\": \"The teacher provides only generic reminders about negative signs without breaking the problem into manageable steps, scaffolding specific sub-tasks, or adjusting support based on the student's clear request for help in Turn 2.\"}\n```",
+    "quality_composite": 1.6666666666666667,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T09:48:39.866837+00:00"
+}

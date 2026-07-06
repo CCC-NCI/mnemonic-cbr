@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_24",
+    "misconception_label": "When solving a problem that requires an inverse operation (e.g. missing number problems), does the original operation",
+    "misconception_features": [
+      0.0,
+      24.0,
+      2.0,
+      52.0
+    ],
+    "persona": "traditional",
+    "architecture": "pure_ai",
+    "student_leg": "leg_b",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T17:52:46.777640Z",
+      "seed": 1290,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T17:52:51.036218Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: What should replace the star? \\[ \\bigstar \\times 4=108 \\]. I got \\( 432 \\) because I added the parts of the ratio as if they were a total.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "First, let's identify the original operation in the problem. The original operation is multiplication, not addition. To find the missing number, you need to perform the inverse operation of division. Can you try solving the problem again using division to find the correct answer?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Oh right, so I need to divide instead of multiply? So I should do 108 divided by 4, which gives me 27? Is that right, because the star times 4 should equal 108?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Yes, that's correct! The missing number is indeed 27 because \\( 27 \\times 4 = 108 \\). You used the correct inverse operation to find the answer. Great job!",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "Oh okay, so when there's a multiplication problem like that, I need to do the opposite operation, which is division? So like, if it was a division problem instead, would I have to multiply to find the missing number?",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 2,
+    "R3": 2,
+    "R4": 5,
+    "R5": 3,
+    "R6": 2,
+    "justification_pass1": "The teacher correctly identifies the need for inverse operations and the mathematics is accurate, but doesn't address the student's bizarre initial error about 'adding parts of a ratio' and provides minimal cognitive demand by directly telling rather than eliciting reasoning, though the student does show some progress in understanding inverse operations by Turn 4.",
+    "justification_pass2": "While the teacher does check understanding and provides some explanation, they rely heavily on guiding the student to discover the answer through questioning rather than directly explaining the concept with worked examples, which is characteristic of traditional instruction.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 2,\n  \"R3\": 2,\n  \"R4\": 5,\n  \"R5\": 3,\n  \"brief_justification\": \"The teacher correctly identifies the need for inverse operations and the mathematics is accurate, but doesn't address the student's bizarre initial error about 'adding parts of a ratio' and provides minimal cognitive demand by directly telling rather than eliciting reasoning, though the student does show some progress in understanding inverse operations by Turn 4.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 2, \"brief_justification\": \"While the teacher does check understanding and provides some explanation, they rely heavily on guiding the student to discover the answer through questioning rather than directly explaining the concept with worked examples, which is characteristic of traditional instruction.\"}\n```",
+    "quality_composite": 2.0,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T17:52:59.764130+00:00"
+}

@@ -1,0 +1,53 @@
+{
+  "blind_id": "D26cbb1eeda",
+  "subset_row": {
+    "blind_id": "D26cbb1eeda",
+    "case_id": "case_14",
+    "persona": "constructive",
+    "architecture": "pure_cbr_llm",
+    "student_leg": "leg_a",
+    "llm_R5": "3",
+    "llm_quality_composite": "2.0",
+    "llm_R6": "2",
+    "difficulty_band": "long",
+    "r5_band": "mid",
+    "word_count": "53",
+    "attention_check_type": "",
+    "attention_check_rationale": "",
+    "file_path": "dialogues/case_14__constructive__pure_cbr_llm__leg_a.json"
+  },
+  "primary_score": {
+    "R1": 2,
+    "R2": 2,
+    "R3": 2,
+    "R4": 4,
+    "R5": 3,
+    "R6": 2,
+    "justification_pass1": "The teacher correctly identifies stopping too early but never addresses the bizarre 'adding parts of ratio' misconception, provides only vague guidance about iteration without concrete criteria, and while the student moves from a confused state to asking better questions about convergence, they never actually perform the iterations or demonstrate corrected understanding.",
+    "justification_pass2": "The teacher repeatedly tells the student to iterate without breaking down the problem into manageable steps, providing concrete examples, or adjusting support based on the student's clear confusion about when to stop and how the process works.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 2,\n  \"R3\": 2,\n  \"R4\": 4,\n  \"R5\": 3,\n  \"brief_justification\": \"The teacher correctly identifies stopping too early but never addresses the bizarre 'adding parts of ratio' misconception, provides only vague guidance about iteration without concrete criteria, and while the student moves from a confused state to asking better questions about convergence, they never actually perform the iterations or demonstrate corrected understanding.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\n  \"R6\": 2,\n  \"brief_justification\": \"The teacher repeatedly tells the student to iterate without breaking down the problem into manageable steps, providing concrete examples, or adjusting support based on the student's clear confusion about when to stop and how the process works.\"\n}\n```",
+    "quality_composite": 2.0,
+    "is_complete": true
+  },
+  "secondary_score": {
+    "R1": 3,
+    "R2": 4,
+    "R3": 3,
+    "R4": 5,
+    "R5": 4,
+    "R6": 4,
+    "justification_pass1": "The teacher acknowledges the misconception but does not directly address the student's misunderstanding of iteration; the dialogue encourages reasoning and iteration, is mathematically accurate, and the student's understanding appears to improve.",
+    "justification_pass2": "The teacher effectively scaffolds the student's understanding by emphasizing the iterative process and encourages the student to continue until the solution stabilizes, but could improve by providing more explicit guidance on when to stop iterating.",
+    "judge_provider": "openai",
+    "judge_model": "gpt-4o",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 3,\n  \"R2\": 4,\n  \"R3\": 3,\n  \"R4\": 5,\n  \"R5\": 4,\n  \"brief_justification\": \"The teacher acknowledges the misconception but does not directly address the student's misunderstanding of iteration; the dialogue encourages reasoning and iteration, is mathematically accurate, and the student's understanding appears to improve.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 4, \"brief_justification\": \"The teacher effectively scaffolds the student's understanding by emphasizing the iterative process and encourages the student to continue until the solution stabilizes, but could improve by providing more explicit guidance on when to stop iterating.\"}\n```"
+  }
+}

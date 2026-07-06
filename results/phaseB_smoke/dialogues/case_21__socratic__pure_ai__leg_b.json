@@ -1,0 +1,66 @@
+{
+  "state": {
+    "case_id": "case_21",
+    "misconception_label": "When factorising a quadratic with a non-unit coefficient of x squared, believes that coefficient will be in front of both x terms in the factorised form",
+    "misconception_features": [
+      0.0,
+      21.0,
+      1.0,
+      74.0
+    ],
+    "persona": "socratic",
+    "architecture": "pure_ai",
+    "student_leg": "leg_b",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T11:32:04.832631Z",
+      "seed": 1100,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-12T11:32:09.268264Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: Step 1: Factorise the following expression \\( 3 x^{2}+5 x+2 \\). I got \\( (3 x+2)(3 x+1) \\) because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Can you explain why you chose to factorise the expression as \\( (3x+2)(3x+1) \\)? How did you decide on the coefficients in front of the x terms?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Well, I put 3x in both brackets because the first term is 3x\u00b2, so I thought the 3 had to go in front of both x's? But then when I multiply it out I get 9x\u00b2 at the start, which is wrong... so I'm confused about where the 3 should actually go.",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Why do you think the coefficient of x should be the same in both factors? Can you think of a different way to approach factoring the expression that might lead to the correct coefficients in front of the x terms?",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 3,
+    "R3": 2,
+    "R4": 5,
+    "R5": 2,
+    "R6": 5,
+    "justification_pass1": "The teacher asks questions about the misconception but doesn't provide concrete guidance when the student explicitly recognizes their error and expresses confusion, leaving them without a clear path forward to understand how to distribute the coefficient correctly.",
+    "justification_pass2": "The teacher consistently uses probing questions to guide the student's thinking, never provides direct answers, and in Turn 3 implicitly challenges the student's flawed assumption through questioning rather than correction.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\"R1\": 2, \"R2\": 3, \"R3\": 2, \"R4\": 5, \"R5\": 2, \"brief_justification\": \"The teacher asks questions about the misconception but doesn't provide concrete guidance when the student explicitly recognizes their error and expresses confusion, leaving them without a clear path forward to understand how to distribute the coefficient correctly.\"}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 5, \"brief_justification\": \"The teacher consistently uses probing questions to guide the student's thinking, never provides direct answers, and in Turn 3 implicitly challenges the student's flawed assumption through questioning rather than correction.\"}\n```",
+    "quality_composite": 2.3333333333333335,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T11:32:15.501256+00:00"
+}

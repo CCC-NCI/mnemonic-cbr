@@ -1,0 +1,66 @@
+{
+  "state": {
+    "case_id": "case_10",
+    "misconception_label": "Ignores negative sign when expanding bracket",
+    "misconception_features": [
+      0.0,
+      10.0,
+      1.0,
+      68.0
+    ],
+    "persona": "experiential",
+    "architecture": "pure_cbr_llm",
+    "student_leg": "leg_b",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T09:51:08.449168Z",
+      "seed": 566,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-12T09:51:13.478351Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: John is expanding these three brackets: \\( (x+5)(x-3)(x+6) \\) He finds it helpful to split the first bracket and view the problem as follows: \\( x(x-3)(x+6)+5(x-3)(x+6) \\) He expands the brackets further. Before he simplifies, what are the terms than contain an \\( \\boldsymbol{x}^{2} \\) ? I got \\( \\begin{array}{l}+6 x^{2} \\\\ +3 x^{2} \\\\ +5 x^{2}\\end{array} \\) because I forgot that two negatives multiply to a positive.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's think about it like baking a cake. When you mix flour and sugar together, they don't add up, they multiply to create a new ingredient. Similarly, when you have two negatives in the brackets, they multiply to give a positive term. So, in this case, the terms that contain an \\(x^2\\) are actually \\(+6x^2\\) and \\(-15x^2\\).",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Oh right, so the negative sign does matter when I multiply... but I'm still a bit confused about where the \\(-15x^2\\) comes from? Is that from the \\(5(x-3)(x+6)\\) part, and if so, how do I get \\(-15x^2\\) from that?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's think about it like going to the store and buying items at different prices. When you have a negative price for one of the items, it actually subtracts from the total cost. So, in the expression \\(5(x-3)(x+6)\\), the \\(-3\\) is like a negative price, causing the total cost to decrease by \\(-15x^2\\).",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 1,
+    "R3": 2,
+    "R4": 2,
+    "R5": 1,
+    "R6": 2,
+    "justification_pass1": "The teacher uses confusing analogies that don't address the algebraic structure of bracket expansion, provides an incomplete answer (missing terms), and the student remains confused about the mechanics by the end.",
+    "justification_pass2": "While the teacher attempts to use real-world analogies (baking, shopping), these analogies are superficial and don't accurately map to the mathematical operations, particularly the incorrect cake-mixing analogy and the confusing negative price explanation that doesn't clarify how to obtain -15x\u00b2.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\"R1\": 2, \"R2\": 1, \"R3\": 2, \"R4\": 2, \"R5\": 1, \"brief_justification\": \"The teacher uses confusing analogies that don't address the algebraic structure of bracket expansion, provides an incomplete answer (missing terms), and the student remains confused about the mechanics by the end.\"}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 2, \"brief_justification\": \"While the teacher attempts to use real-world analogies (baking, shopping), these analogies are superficial and don't accurately map to the mathematical operations, particularly the incorrect cake-mixing analogy and the confusing negative price explanation that doesn't clarify how to obtain -15x\u00b2.\"}\n```",
+    "quality_composite": 1.6666666666666667,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T09:51:20.256967+00:00"
+}

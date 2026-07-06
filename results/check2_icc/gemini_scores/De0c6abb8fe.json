@@ -1,0 +1,53 @@
+{
+  "blind_id": "De0c6abb8fe",
+  "subset_row": {
+    "blind_id": "De0c6abb8fe",
+    "case_id": "case_7",
+    "persona": "socratic",
+    "architecture": "pure_cbr_llm",
+    "student_leg": "leg_b",
+    "llm_R5": "5",
+    "llm_quality_composite": "2.0",
+    "llm_R6": "5",
+    "difficulty_band": "medium",
+    "r5_band": "high",
+    "word_count": "29",
+    "attention_check_type": "",
+    "attention_check_rationale": "",
+    "file_path": "dialogues/case_7__socratic__pure_cbr_llm__leg_b.json"
+  },
+  "primary_score": {
+    "R1": 2,
+    "R2": 2,
+    "R3": 2,
+    "R4": 5,
+    "R5": 5,
+    "R6": 5,
+    "justification_pass1": "While the teacher asks generic questions about misconceptions rather than directly addressing the student's specific error, the student successfully self-corrects from dividing by 100 (moving two places) to dividing by 10 (moving one place), demonstrating clear improvement in understanding.",
+    "justification_pass2": "The teacher consistently uses probing questions to guide the student's thinking without ever directly providing the answer, helping the student discover the correct rule about decimal point movement through their own reasoning.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 2,\n  \"R3\": 2,\n  \"R4\": 5,\n  \"R5\": 5,\n  \"brief_justification\": \"While the teacher asks generic questions about misconceptions rather than directly addressing the student's specific error, the student successfully self-corrects from dividing by 100 (moving two places) to dividing by 10 (moving one place), demonstrating clear improvement in understanding.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 5, \"brief_justification\": \"The teacher consistently uses probing questions to guide the student's thinking without ever directly providing the answer, helping the student discover the correct rule about decimal point movement through their own reasoning.\"}\n```",
+    "quality_composite": 2.0,
+    "is_complete": true
+  },
+  "secondary_score": {
+    "R1": 3,
+    "R2": 4,
+    "R3": 4,
+    "R4": 5,
+    "R5": 5,
+    "R6": 4,
+    "justification_pass1": "The teacher successfully prompts the student to self-correct and generalize a rule by asking them to reason about their own process, leading to a very strong improvement in student understanding.",
+    "justification_pass2": "The teacher consistently uses probing questions to guide the student and never gives the answer, but does not use a counterexample to expose the student's flawed reasoning.",
+    "judge_provider": "gemini",
+    "judge_model": "gemini-2.5-pro",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 3,\n  \"R2\": 4,\n  \"R3\": 4,\n  \"R4\": 5,\n  \"R5\": 5,\n  \"brief_justification\": \"The teacher successfully prompts the student to self-correct and generalize a rule by asking them to reason about their own process, leading to a very strong improvement in student understanding.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\n  \"R6\": 4,\n  \"brief_justification\": \"The teacher consistently uses probing questions to guide the student and never gives the answer, but does not use a counterexample to expose the student's flawed reasoning.\"\n}\n```"
+  }
+}

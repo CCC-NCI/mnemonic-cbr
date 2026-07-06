@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_19",
+    "misconception_label": "When subtracting fractions, subtracts the numerators and multiplies the denominators",
+    "misconception_features": [
+      0.0,
+      19.0,
+      3.0,
+      104.0
+    ],
+    "persona": "constructive",
+    "architecture": "hybrid",
+    "student_leg": "leg_b",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T16:53:24.250350Z",
+      "seed": 1012,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T16:53:29.909641Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: Express the following as a single fraction, writing your answer as simply as possible: \\( \\frac{1}{s}-\\frac{t}{3} \\). I got \\( \\frac{1-t}{3 s} \\) because I treated the fractions like ordinary numbers.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "It seems like you are treating the fractions as ordinary numbers when subtracting them. Remember that when subtracting fractions, you should find a common denominator first. Can you think of a way to rewrite the fractions with a common denominator before subtracting? This will help you get the correct answer.",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Oh right, so I need to find a common denominator first? So for \\( \\frac{1}{s}-\\frac{t}{3} \\), would the common denominator be \\( 3s \\)? But then I'm not sure how to rewrite each fraction... do I multiply the top and bottom of the first fraction by 3?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "That's a good start! Yes, the common denominator for \\( \\frac{1}{s} \\) and \\( \\frac{t}{3} \\) is indeed \\( 3s \\). To rewrite each fraction with this common denominator, you should multiply both the numerator and denominator of each fraction by the same value that will make the denominators match. Can you try applying this to both fractions now?",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "So for the first fraction \\( \\frac{1}{s} \\), I multiply the top and bottom by 3 to get \\( \\frac{3}{3s} \\), and then for the second fraction \\( \\frac{t}{3} \\), I multiply the top and bottom by \\( s \\) to get \\( \\frac{ts}{3s} \\)? Then I can subtract them to get \\( \\frac{3-ts}{3s} \\)?",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 4,
+    "R2": 4,
+    "R3": 4,
+    "R4": 5,
+    "R5": 5,
+    "R6": 5,
+    "justification_pass1": "The teacher directly addresses the misconception about subtracting fractions without common denominators, scaffolds appropriately by prompting reasoning rather than giving answers, and the student successfully corrects their approach from the flawed initial method to the correct procedure.",
+    "justification_pass2": "The teacher exemplifies the constructive strategy by identifying the student's misconception, breaking down the problem into manageable steps (first finding common denominator, then rewriting each fraction), providing scaffolded prompts that guide without telling, and adjusting support as the student demonstrates understanding.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 4,\n  \"R2\": 4,\n  \"R3\": 4,\n  \"R4\": 5,\n  \"R5\": 5,\n  \"brief_justification\": \"The teacher directly addresses the misconception about subtracting fractions without common denominators, scaffolds appropriately by prompting reasoning rather than giving answers, and the student successfully corrects their approach from the flawed initial method to the correct procedure.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 5, \"brief_justification\": \"The teacher exemplifies the constructive strategy by identifying the student's misconception, breaking down the problem into manageable steps (first finding common denominator, then rewriting each fraction), providing scaffolded prompts that guide without telling, and adjusting support as the student demonstrates understanding.\"}\n```",
+    "quality_composite": 4.0,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T16:53:36.884742+00:00"
+}

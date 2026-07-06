@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_20",
+    "misconception_label": "Adds when calculating volume instead of multiplying",
+    "misconception_features": [
+      0.0,
+      20.0,
+      1.0,
+      58.0
+    ],
+    "persona": "constructive",
+    "architecture": "hybrid",
+    "student_leg": "leg_b",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T17:04:19.048840Z",
+      "seed": 1062,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T17:04:23.550071Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: The volume of this cuboid is \\( 30 \\mathrm{~cm}^{3} \\) What length should replace the star? ![A cuboid, depth 2cm and height 3cm. The width is labelled with a star.](). I got \\( 25 \\mathrm{~cm} \\) because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "It seems like you may be adding the dimensions together instead of multiplying them to find the volume. Let's walk through the process step by step to see where the mistake might be. Think about how the dimensions of the cuboid contribute to its volume.",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Oh right, so you're saying I should multiply instead of add? So like, if I multiply 2 times 3, that gives me 6, and then... do I multiply that by 30 to get the star? Or am I still doing it wrong?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "That's a great start! You're on the right track with multiplying the dimensions to find the volume. Now, try multiplying all three dimensions together to calculate the total volume of the cuboid. Think about how each dimension contributes to the overall volume.",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "So if I multiply 2 times 3 times the star, that should equal 30? So like, 2 \u00d7 3 \u00d7 star = 30, which means 6 \u00d7 star = 30, so the star would be 5 cm? Is that right?",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 4,
+    "R2": 3,
+    "R3": 3,
+    "R4": 5,
+    "R5": 4,
+    "R6": 4,
+    "justification_pass1": "The teacher explicitly identifies and addresses the adding-instead-of-multiplying misconception, the mathematics is correct throughout, and the student successfully moves from an incorrect answer of 25 cm to the correct answer of 5 cm with appropriate reasoning, though the scaffolding could have been more precisely targeted to the student's specific confusion in Turn 2.",
+    "justification_pass2": "The teacher effectively breaks down the problem into manageable steps (identifying the error, then guiding through multiplication), scaffolds by prompting reflection rather than giving direct answers, and adjusts support as the student progresses from confusion to correct reasoning.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 4,\n  \"R2\": 3,\n  \"R3\": 3,\n  \"R4\": 5,\n  \"R5\": 4,\n  \"brief_justification\": \"The teacher explicitly identifies and addresses the adding-instead-of-multiplying misconception, the mathematics is correct throughout, and the student successfully moves from an incorrect answer of 25 cm to the correct answer of 5 cm with appropriate reasoning, though the scaffolding could have been more precisely targeted to the student's specific confusion in Turn 2.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 4, \"brief_justification\": \"The teacher effectively breaks down the problem into manageable steps (identifying the error, then guiding through multiplication), scaffolds by prompting reflection rather than giving direct answers, and adjusts support as the student progresses from confusion to correct reasoning.\"}\n```",
+    "quality_composite": 3.3333333333333335,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T17:04:30.921095+00:00"
+}

@@ -1,0 +1,65 @@
+{
+  "state": {
+    "case_id": "case_3",
+    "misconception_label": "Does not know the properties of a rectangle",
+    "misconception_features": [
+      0.0,
+      3.0,
+      3.0,
+      67.0
+    ],
+    "persona": "socratic",
+    "architecture": "pure_cbr_tpl",
+    "student_leg": "leg_a",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T06:56:31.165680Z",
+      "seed": 197,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "ended_at": "2026-05-12T06:56:33.978249Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: The angles highlighted on this rectangle with different length sides can never be... ![A rectangle with the diagonals drawn in. The angle on the right hand side at the centre is highlighted in red and the angle at the bottom at the centre is highlighted in yellow.](). I got acute because I assumed all the angles in the figure are equal.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's think about this. From similar cases:\n  1. Topic: Recall and use the intersecting diagonals properties of a rectangle. Correct answer (C): never. Student selected: always. Underlying misconception: Does not know the properties of a rectangle. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.\n  2. Topic: Identify a rectangle when presented non-conventionally. Correct answer (A): Parallelogram. Student selected: Rhombus. Underlying misconception: Does not remember that a rhombus has equal sides. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.\n  3. Topic: Calculate the area of a rectangle where the dimensions are given in the same units. Correct answer (B): \\( 40 \\mathrm{~cm}^{2} \\). Student selected: \\( 13 \\mathrm{~cm}^{2} \\). Underlying misconception: Adds when calculating area instead of multiplying. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "I see what you mean about the angles in a rectangle. So, if the diagonals intersect, the angles at the center can't be acute because the corners of the rectangle are right angles, right? But I'm still a bit confused about how that affects the angles in the middle. Can you explain that part again?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's think about this. From similar cases:\n  1. Topic: Recall and use the intersecting diagonals properties of a rectangle. Correct answer (C): never. Student selected: always. Underlying misconception: Does not know the properties of a rectangle. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.\n  2. Topic: Identify a rectangle when presented non-conventionally. Correct answer (A): Parallelogram. Student selected: Rhombus. Underlying misconception: Does not remember that a rhombus has equal sides. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.\n  3. Topic: Calculate the area of a rectangle where the dimensions are given in the same units. Correct answer (B): \\( 40 \\mathrm{~cm}^{2} \\). Student selected: \\( 13 \\mathrm{~cm}^{2} \\). Underlying misconception: Adds when calculating area instead of multiplying. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 1,
+    "R2": 1,
+    "R3": 1,
+    "R4": 1,
+    "R5": 1,
+    "R6": 1,
+    "justification_pass1": "The teacher provides only generic case examples without addressing the student's specific confusion about diagonal angles, offers no actual mathematical explanation, and the student shows no improvement in understanding by the end of the dialogue.",
+    "justification_pass2": "The teacher does not ask any probing questions or use counterexamples; instead, they simply repeat a generic list of similar cases twice, which completely fails to implement the Socratic method.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 1,\n  \"R2\": 1,\n  \"R3\": 1,\n  \"R4\": 1,\n  \"R5\": 1,\n  \"brief_justification\": \"The teacher provides only generic case examples without addressing the student's specific confusion about diagonal angles, offers no actual mathematical explanation, and the student shows no improvement in understanding by the end of the dialogue.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 1, \"brief_justification\": \"The teacher does not ask any probing questions or use counterexamples; instead, they simply repeat a generic list of similar cases twice, which completely fails to implement the Socratic method.\"}\n```",
+    "quality_composite": 1.0,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T06:56:39.861053+00:00"
+}

@@ -1,0 +1,66 @@
+{
+  "state": {
+    "case_id": "case_10",
+    "misconception_label": "Ignores negative sign when expanding bracket",
+    "misconception_features": [
+      0.0,
+      10.0,
+      1.0,
+      68.0
+    ],
+    "persona": "constructive",
+    "architecture": "hybrid",
+    "student_leg": "leg_a",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T09:50:05.371723Z",
+      "seed": 561,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-12T09:50:11.195657Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: John is expanding these three brackets: \\( (x+5)(x-3)(x+6) \\) He finds it helpful to split the first bracket and view the problem as follows: \\( x(x-3)(x+6)+5(x-3)(x+6) \\) He expands the brackets further. Before he simplifies, what are the terms than contain an \\( \\boldsymbol{x}^{2} \\) ? I got \\( \\begin{array}{l}+6 x^{2} \\\\ +3 x^{2} \\\\ +5 x^{2}\\end{array} \\) because I forgot that two negatives multiply to a positive.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "It seems like you're struggling with remembering the rule for multiplying two negatives to get a positive. Let's focus on that concept and practice a few more examples to reinforce it. Can you try expanding the brackets again, paying close attention to the signs this time?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Okay, I'll try again. So when I expand \\( (x+5)(x-3)(x+6) \\), I need to remember that when I multiply \\( (x-3) \\) and \\( (x+6) \\), the negative sign from \\( -3 \\) means I should get a negative term when I multiply it with \\( x \\). But I'm still not sure how to keep track of all the signs when I do it step by step. Can you help me with that?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's break it down step by step. When you expand the brackets, remember to apply the distributive property carefully. Start by multiplying the terms in the first two brackets, keeping track of the signs. Then, multiply the result by the third bracket, again paying attention to the signs. This will help you avoid missing any negative signs in the final answer. Let's walk through an example together to reinforce this concept.",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 2,
+    "R3": 2,
+    "R4": 3,
+    "R5": 1,
+    "R6": 2,
+    "justification_pass1": "The teacher provides only generic advice about 'paying attention to signs' and 'applying the distributive property' without addressing the specific error pattern (the student actually missed -3x\u00b2 from x\u00b7(-3)\u00b7x, not a 'two negatives' issue), and the student shows no improvement, remaining confused about sign tracking by Turn 2.",
+    "justification_pass2": "While the teacher attempts to break down the problem and offer support, they provide only generic advice about 'applying the distributive property' and 'keeping track of signs' without actually scaffolding the specific steps or adjusting support based on the student's demonstrated confusion about tracking signs through multi-step expansion.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 2,\n  \"R3\": 2,\n  \"R4\": 3,\n  \"R5\": 1,\n  \"brief_justification\": \"The teacher provides only generic advice about 'paying attention to signs' and 'applying the distributive property' without addressing the specific error pattern (the student actually missed -3x\u00b2 from x\u00b7(-3)\u00b7x, not a 'two negatives' issue), and the student shows no improvement, remaining confused about sign tracking by Turn 2.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 2, \"brief_justification\": \"While the teacher attempts to break down the problem and offer support, they provide only generic advice about 'applying the distributive property' and 'keeping track of signs' without actually scaffolding the specific steps or adjusting support based on the student's demonstrated confusion about tracking signs through multi-step expansion.\"}\n```",
+    "quality_composite": 2.0,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T09:50:19.086200+00:00"
+}

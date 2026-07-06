@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_9",
+    "misconception_label": "Believes f(x - a) translates the function up a units",
+    "misconception_features": [
+      0.0,
+      9.0,
+      3.0,
+      83.0
+    ],
+    "persona": "experiential",
+    "architecture": "baseline",
+    "student_leg": "leg_b",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T15:06:08.043284Z",
+      "seed": 514,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T15:06:13.055739Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: What transformation maps the graph of \\(y=f(x) \\) to the graph of \\( y=f(x-3) \\). I got Translation by vector\n\\(\n\\left[\\begin{array}{l}\n0 \\\\\n3\n\\end{array}\\right]\n\\) because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's think about this in terms of a real-world scenario. If you were moving a book from one shelf to the shelf three units lower, would you use the same vector as you did for your transformation?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Um, no I guess not... if I'm moving it down three units, the vector would be like [0, -3], right? But I'm still confused about why f(x-3) makes the graph move down when there's a minus sign in it - shouldn't minus mean it goes down anyway?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's think about it this way: Imagine you were sliding a piece of paper with a graph on it down a table. Would sliding it to the right translate the graph up or down?",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "No, sliding it to the right wouldn't make it go up... it would just move it to the right. Oh wait, are you saying that f(x-3) actually moves the graph to the *right*, not down? But that doesn't make sense to me - why would taking away 3 make it go right instead of left?",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 3,
+    "R3": 2,
+    "R4": 2,
+    "R5": 2,
+    "R6": 4,
+    "justification_pass1": "The teacher uses analogies that don't directly address the core misconception about horizontal translations, introduces confusion by mixing vertical/horizontal movement metaphors, and while the student begins to recognize rightward movement, they remain fundamentally confused about why subtraction causes rightward translation.",
+    "justification_pass2": "The teacher consistently uses concrete, everyday analogies (moving a book between shelves, sliding paper on a table) to help ground the abstract concept of function transformations, which is a strong implementation of the experiential strategy, though the analogies could be slightly more precise in mapping to the mathematical concept.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\"R1\": 2, \"R2\": 3, \"R3\": 2, \"R4\": 2, \"R5\": 2, \"brief_justification\": \"The teacher uses analogies that don't directly address the core misconception about horizontal translations, introduces confusion by mixing vertical/horizontal movement metaphors, and while the student begins to recognize rightward movement, they remain fundamentally confused about why subtraction causes rightward translation.\"}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 4, \"brief_justification\": \"The teacher consistently uses concrete, everyday analogies (moving a book between shelves, sliding paper on a table) to help ground the abstract concept of function transformations, which is a strong implementation of the experiential strategy, though the analogies could be slightly more precise in mapping to the mathematical concept.\"}\n```",
+    "quality_composite": 2.3333333333333335,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T15:06:20.532787+00:00"
+}

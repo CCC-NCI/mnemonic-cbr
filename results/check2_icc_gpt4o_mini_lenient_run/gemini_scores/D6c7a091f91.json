@@ -1,0 +1,53 @@
+{
+  "blind_id": "D6c7a091f91",
+  "subset_row": {
+    "blind_id": "D6c7a091f91",
+    "case_id": "case_8",
+    "persona": "rule_based",
+    "architecture": "pure_cbr_tpl",
+    "student_leg": "leg_b",
+    "llm_R5": "1",
+    "llm_quality_composite": "1.0",
+    "llm_R6": "1",
+    "difficulty_band": "medium",
+    "r5_band": "low",
+    "word_count": "32",
+    "attention_check_type": "",
+    "attention_check_rationale": "",
+    "file_path": "dialogues/case_8__rule_based__pure_cbr_tpl__leg_b.json"
+  },
+  "primary_score": {
+    "R1": 1,
+    "R2": 1,
+    "R3": 1,
+    "R4": 1,
+    "R5": 1,
+    "R6": 1,
+    "justification_pass1": "The teacher merely repeats identical lists of example cases without engaging the student's questions, providing no actual instruction, explanation, or scaffolding, while the student remains confused and makes no progress toward understanding.",
+    "justification_pass2": "The teacher never states explicit procedures, shows worked steps, or gives direct corrective feedback; instead, they only present lists of similar cases with misconceptions, which is completely inconsistent with the rule-based strategy.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\"R1\": 1, \"R2\": 1, \"R3\": 1, \"R4\": 1, \"R5\": 1, \"brief_justification\": \"The teacher merely repeats identical lists of example cases without engaging the student's questions, providing no actual instruction, explanation, or scaffolding, while the student remains confused and makes no progress toward understanding.\"}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 1, \"brief_justification\": \"The teacher never states explicit procedures, shows worked steps, or gives direct corrective feedback; instead, they only present lists of similar cases with misconceptions, which is completely inconsistent with the rule-based strategy.\"}\n```",
+    "quality_composite": 1.0,
+    "is_complete": true
+  },
+  "secondary_score": {
+    "R1": 3,
+    "R2": 4,
+    "R3": 3,
+    "R4": 5,
+    "R5": 4,
+    "R6": 2,
+    "justification_pass1": "The teacher engages with the student's misconception and encourages reasoning, but the support could be more tailored to the student's specific confusion about finding a common denominator.",
+    "justification_pass2": "The teacher does not explicitly state procedures or show worked steps, focusing instead on discussing misconceptions without providing direct corrective feedback or procedural guidance.",
+    "judge_provider": "openai",
+    "judge_model": "gpt-4o-mini",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\"R1\": 3, \"R2\": 4, \"R3\": 3, \"R4\": 5, \"R5\": 4, \"brief_justification\": \"The teacher engages with the student's misconception and encourages reasoning, but the support could be more tailored to the student's specific confusion about finding a common denominator.\"}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 2, \"brief_justification\": \"The teacher does not explicitly state procedures or show worked steps, focusing instead on discussing misconceptions without providing direct corrective feedback or procedural guidance.\"}\n```"
+  }
+}

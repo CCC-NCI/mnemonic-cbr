@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_24",
+    "misconception_label": "When solving a problem that requires an inverse operation (e.g. missing number problems), does the original operation",
+    "misconception_features": [
+      0.0,
+      24.0,
+      2.0,
+      52.0
+    ],
+    "persona": "rule_based",
+    "architecture": "hybrid",
+    "student_leg": "leg_a",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T17:50:48.181323Z",
+      "seed": 1281,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T17:50:52.783680Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: What should replace the star? \\[ \\bigstar \\times 4=108 \\]. I got \\( 432 \\) because I added the parts of the ratio as if they were a total.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "The correct approach for solving the missing number problem \\[ \\bigstar \\times 4 = 108 \\] involves using the inverse operation of multiplication, which is division. To find the value of \\(\\bigstar\\), you need to divide 108 by 4. Let's work through the correct steps together to find the accurate answer.",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Okay, so I think I get that I need to divide instead of adding. So if I divide 108 by 4, does that mean I just do \\( 108 \\div 4 \\)? But what if I forget which operation to use next time?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Yes, you are correct that to find the value of the missing number \\(\\bigstar\\), you need to divide 108 by 4. Remember, when solving missing number problems with multiplication, always use division to find the missing value. This will help you determine the correct operation to use in the future.",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "Okay, so I think I get that I need to divide 108 by 4 to find \\(\\bigstar\\), which is 27. But what if I have a problem with a different operation, like subtraction or something? How do I know which one to use?",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 1,
+    "R3": 2,
+    "R4": 5,
+    "R5": 3,
+    "R6": 5,
+    "justification_pass1": "The teacher correctly identifies the need for inverse operations but simply tells the student what to do rather than engaging with why they added ratio parts or helping them reason through when to use inverse operations, though the student does eventually arrive at the correct answer and shows some understanding by asking about generalizing to other operations.",
+    "justification_pass2": "The teacher consistently states explicit procedures (use division as the inverse of multiplication), provides direct corrective feedback on the student's procedural error (correcting the ratio addition misconception), and gives clear rule-based guidance (always use division for missing number multiplication problems), which is a textbook example of the rule-based strategy.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 1,\n  \"R3\": 2,\n  \"R4\": 5,\n  \"R5\": 3,\n  \"brief_justification\": \"The teacher correctly identifies the need for inverse operations but simply tells the student what to do rather than engaging with why they added ratio parts or helping them reason through when to use inverse operations, though the student does eventually arrive at the correct answer and shows some understanding by asking about generalizing to other operations.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 5, \"brief_justification\": \"The teacher consistently states explicit procedures (use division as the inverse of multiplication), provides direct corrective feedback on the student's procedural error (correcting the ratio addition misconception), and gives clear rule-based guidance (always use division for missing number multiplication problems), which is a textbook example of the rule-based strategy.\"}\n```",
+    "quality_composite": 1.6666666666666667,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T17:51:03.232830+00:00"
+}

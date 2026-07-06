@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_18",
+    "misconception_label": "Assumes that an arrow on a number line starts at zero",
+    "misconception_features": [
+      0.0,
+      18.0,
+      2.0,
+      73.0
+    ],
+    "persona": "experiential",
+    "architecture": "hybrid",
+    "student_leg": "leg_a",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T16:44:32.426904Z",
+      "seed": 971,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T16:44:37.229078Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: ![Number line with -12 and -7 marked. Starting at -12, follow an arrow pointing to the right labelled +10. Then there is an arrow labelled b pointing to the left, which ends at -7 on the number line.]() What is the value of \\( b \\) ? I got \\( -7 \\) because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Think of the number line as a road trip. You start at -12, drive 10 units to the right, then drive b units to the left to end up at -7. When you're driving backwards, you don't count the starting point again, just like when you're driving from a negative number to a positive one. So, what do you think \\( b \\) should be to get to -7?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Okay, I think I get what you're saying about the road trip. So, if I start at -12 and go 10 units to the right, I end up at -2, right? But then if I go back to -7, I'm not sure how far that is. Is it just 5 units back?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Think of it like this: when you're driving back on the road trip, you don't count the starting point again. So, if you're at -2 and you need to get back to -7, how many units do you need to go in the opposite direction to reach your destination?",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "Okay, so if I'm at -2 and I need to get to -7, I guess I have to go back 5 units, right? But I'm still confused about how that relates to \\( b \\). Is \\( b \\) just the distance I need to go back, or is it something else?",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 2,
+    "R3": 2,
+    "R4": 3,
+    "R5": 2,
+    "R6": 5,
+    "justification_pass1": "The teacher uses a road trip analogy but never directly addresses the student's misconception about arrows starting at zero, and by Turn 4 the student still doesn't understand what b represents despite correctly calculating the distance.",
+    "justification_pass2": "The teacher consistently uses a concrete real-world analogy (road trip with driving forward and backward) throughout the dialogue to help the student understand the abstract concept of movement on a number line, which is a textbook example of the experiential strategy.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 2,\n  \"R3\": 2,\n  \"R4\": 3,\n  \"R5\": 2,\n  \"brief_justification\": \"The teacher uses a road trip analogy but never directly addresses the student's misconception about arrows starting at zero, and by Turn 4 the student still doesn't understand what b represents despite correctly calculating the distance.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 5, \"brief_justification\": \"The teacher consistently uses a concrete real-world analogy (road trip with driving forward and backward) throughout the dialogue to help the student understand the abstract concept of movement on a number line, which is a textbook example of the experiential strategy.\"}\n```",
+    "quality_composite": 2.0,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T16:44:43.129586+00:00"
+}

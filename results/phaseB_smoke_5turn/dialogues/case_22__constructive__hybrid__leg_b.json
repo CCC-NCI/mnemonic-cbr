@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_22",
+    "misconception_label": "Does not realise that adding a larger number gives a larger answer",
+    "misconception_features": [
+      0.0,
+      22.0,
+      2.0,
+      98.0
+    ],
+    "persona": "constructive",
+    "architecture": "hybrid",
+    "student_leg": "leg_b",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T17:26:05.074194Z",
+      "seed": 1162,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T17:26:10.802332Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: Tom and Katie are discussing related calculations Tom says if you know that \\( 3748+426=4174 \\), then \\( 3748+427 \\) must equal \\( \\mathbf{4 1 7 5} \\) Katie says if you know that \\( 3748-426=3322 \\), then \\( 3748 \\) - \\( 427 \\) must equal \\( \\mathbf{3 3 2 3} \\) Who is correct? I got Only Katie because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "It seems like you may be struggling with the concept that adding a larger number gives a larger answer. Let's focus on understanding why adding a larger number results in a larger sum. Can you think about how the size of the numbers impacts the final answer in a addition problem?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Um, I think I see what you mean... like if I'm adding more, the answer should be bigger? So with Tom's one, if 3748+426=4174, then adding 427 instead would give a bigger answer than 4174, not 4175? But I'm still a bit confused about why Katie would be wrong then, because she's doing subtraction which is different, isn't it?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "You're on the right track in realizing that adding a larger number results in a larger sum. In subtraction, the same principle applies - subtracting a larger number will give a smaller result. Let's explore how this concept applies to Katie's subtraction problem and see if we can clarify any confusion there.",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "Oh right, so if I'm subtracting a bigger number, I get a smaller answer... so Katie's wrong too then? Because if 3748-426=3322, then 3748-427 would be smaller than 3322, not 3323? So both Tom and Katie are actually correct?",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 4,
+    "R2": 3,
+    "R3": 3,
+    "R4": 1,
+    "R5": 2,
+    "R6": 2,
+    "justification_pass1": "The teacher directly addresses the misconception about how number size affects operations, but makes a critical error in Turn 3 by incorrectly stating that subtracting a larger number gives a smaller result (it gives a more negative result, but the absolute difference is larger), leading the student to an incorrect final answer where they think both Tom and Katie are correct when actually both are wrong.",
+    "justification_pass2": "The teacher attempts to scaffold by breaking down the concept, but fails to adjust support when the student clearly misunderstands in Turn 2 (confusing whether 4175 is bigger than 4174), and the guidance leads the student to an incorrect conclusion that both are correct rather than helping them work through the arithmetic carefully.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 4,\n  \"R2\": 3,\n  \"R3\": 3,\n  \"R4\": 1,\n  \"R5\": 2,\n  \"brief_justification\": \"The teacher directly addresses the misconception about how number size affects operations, but makes a critical error in Turn 3 by incorrectly stating that subtracting a larger number gives a smaller result (it gives a more negative result, but the absolute difference is larger), leading the student to an incorrect final answer where they think both Tom and Katie are correct when actually both are wrong.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\n  \"R6\": 2,\n  \"brief_justification\": \"The teacher attempts to scaffold by breaking down the concept, but fails to adjust support when the student clearly misunderstands in Turn 2 (confusing whether 4175 is bigger than 4174), and the guidance leads the student to an incorrect conclusion that both are correct rather than helping them work through the arithmetic carefully.\"\n}\n```",
+    "quality_composite": 3.3333333333333335,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T17:26:20.533240+00:00"
+}

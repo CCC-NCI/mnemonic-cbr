@@ -1,0 +1,53 @@
+{
+  "blind_id": "D874b27799b",
+  "subset_row": {
+    "blind_id": "D874b27799b",
+    "case_id": "case_11",
+    "persona": "constructive",
+    "architecture": "baseline",
+    "student_leg": "leg_a",
+    "llm_R5": "4",
+    "llm_quality_composite": "2.3333333333333335",
+    "llm_R6": "3",
+    "difficulty_band": "medium",
+    "r5_band": "high",
+    "word_count": "34",
+    "attention_check_type": "",
+    "attention_check_rationale": "",
+    "file_path": "dialogues/case_11__constructive__baseline__leg_a.json"
+  },
+  "primary_score": {
+    "R1": 2,
+    "R2": 3,
+    "R3": 2,
+    "R4": 5,
+    "R5": 4,
+    "R6": 3,
+    "justification_pass1": "The teacher uses generic prompts that don't specifically address the visualization struggle, but the student does progress from confusion to correctly identifying a cone and understanding how the net components connect, suggesting some learning occurred despite minimal scaffolding.",
+    "justification_pass2": "The teacher attempts scaffolding by breaking down the problem and starting from known elements, but provides repetitive prompts without adjusting support level based on the student's continued confusion, missing opportunities to provide more targeted guidance when the student struggles to visualize the 3D shape.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 3,\n  \"R3\": 2,\n  \"R4\": 5,\n  \"R5\": 4,\n  \"brief_justification\": \"The teacher uses generic prompts that don't specifically address the visualization struggle, but the student does progress from confusion to correctly identifying a cone and understanding how the net components connect, suggesting some learning occurred despite minimal scaffolding.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 3, \"brief_justification\": \"The teacher attempts scaffolding by breaking down the problem and starting from known elements, but provides repetitive prompts without adjusting support level based on the student's continued confusion, missing opportunities to provide more targeted guidance when the student struggles to visualize the 3D shape.\"}\n```",
+    "quality_composite": 2.3333333333333335,
+    "is_complete": true
+  },
+  "secondary_score": {
+    "R1": 4,
+    "R2": 4,
+    "R3": 3,
+    "R4": 5,
+    "R5": 3,
+    "R6": 4,
+    "justification_pass1": "The teacher engages with the misconception by prompting the student to visualize the net (R1: 4), encourages reasoning by asking the student to identify and visualize shapes (R2: 4), provides moderate scaffolding but repeats the same prompt (R3: 3), maintains correct mathematical content (R4: 5), and the student's reasoning shows some improvement but remains confused (R5: 3).",
+    "justification_pass2": "The teacher effectively scaffolds within the student's Zone of Proximal Development by encouraging the student to build on known information and visualize the connection between shapes, but could provide more explicit guidance to further support the student's understanding.",
+    "judge_provider": "openai",
+    "judge_model": "gpt-4o",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 4,\n  \"R2\": 4,\n  \"R3\": 3,\n  \"R4\": 5,\n  \"R5\": 3,\n  \"brief_justification\": \"The teacher engages with the misconception by prompting the student to visualize the net (R1: 4), encourages reasoning by asking the student to identify and visualize shapes (R2: 4), provides moderate scaffolding but repeats the same prompt (R3: 3), maintains correct mathematical content (R4: 5), and the student's reasoning shows some improvement but remains confused (R5: 3).\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 4, \"brief_justification\": \"The teacher effectively scaffolds within the student's Zone of Proximal Development by encouraging the student to build on known information and visualize the connection between shapes, but could provide more explicit guidance to further support the student's understanding.\"}\n```"
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "state": {
+    "case_id": "case_8",
+    "misconception_label": "Does not find a common denominator when adding/subtracting fractions",
+    "misconception_features": [
+      0.0,
+      8.0,
+      3.0,
+      88.0
+    ],
+    "persona": "traditional",
+    "architecture": "baseline",
+    "student_leg": "leg_a",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T09:34:27.882099Z",
+      "seed": 483,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-12T09:34:32.174911Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: \\( \\frac{4}{5}-\\frac{1}{3}=\\frac{\\bigstar}{15} \\) What should replace the star? I got \\( 5 \\) because I treated the fractions like ordinary numbers.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let me explain the correct method, and then we will work through an example together. When adding or subtracting fractions, we need to find a common denominator. In this case, the common denominator for 5 and 3 is 15. Let's work through this example to find the correct answer.",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Okay, I think I get that we need a common denominator, which is 15. But how do I actually change the fractions to have that denominator? Like, what do I do with \\( \\frac{4}{5} \\) and \\( \\frac{1}{3} \\)?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let me show you how to change the fractions to have a common denominator of 15. We will multiply the numerator and denominator of \\( \\frac{4}{5} \\) by 3 to get \\( \\frac{12}{15} \\), and multiply the numerator and denominator of \\( \\frac{1}{3} \\) by 5 to get \\( \\frac{5}{15} \\).",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 1,
+    "R3": 2,
+    "R4": 5,
+    "R5": 2,
+    "R6": 5,
+    "justification_pass1": "The teacher provides mathematically correct instruction but simply tells the student the procedure without engaging with their misconception about treating fractions like ordinary numbers, offers no opportunities for student reasoning, and the student's final turn shows no evidence of improved understanding\u2014only a request for help that receives direct answers.",
+    "justification_pass2": "The teacher exemplifies the traditional strategy by providing direct explanations of the correct method, working through a concrete example with specific calculations, and systematically checking the student's understanding at each step.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 1,\n  \"R3\": 2,\n  \"R4\": 5,\n  \"R5\": 2,\n  \"brief_justification\": \"The teacher provides mathematically correct instruction but simply tells the student the procedure without engaging with their misconception about treating fractions like ordinary numbers, offers no opportunities for student reasoning, and the student's final turn shows no evidence of improved understanding\u2014only a request for help that receives direct answers.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 5, \"brief_justification\": \"The teacher exemplifies the traditional strategy by providing direct explanations of the correct method, working through a concrete example with specific calculations, and systematically checking the student's understanding at each step.\"}\n```",
+    "quality_composite": 1.6666666666666667,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T09:34:38.627761+00:00"
+}

@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_19",
+    "misconception_label": "When subtracting fractions, subtracts the numerators and multiplies the denominators",
+    "misconception_features": [
+      0.0,
+      19.0,
+      3.0,
+      104.0
+    ],
+    "persona": "experiential",
+    "architecture": "pure_cbr_llm",
+    "student_leg": "leg_b",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T16:54:24.377006Z",
+      "seed": 1016,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T16:54:29.724797Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: Express the following as a single fraction, writing your answer as simply as possible: \\( \\frac{1}{s}-\\frac{t}{3} \\). I got \\( \\frac{1-t}{3 s} \\) because I treated the fractions like ordinary numbers.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Imagine you have a pizza that is divided into 3 equal slices. If you take away \\( t \\) slices from the pizza, how many slices are left? The same idea applies when subtracting fractions - we need to find a common denominator and then subtract the numerators. So, in this case, we need to find a common denominator for \\( s \\) and 3.",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Oh right, so I need to find a common denominator first... so that would be like 3s? And then I'd have to change both fractions so they have 3s on the bottom before I subtract them?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Imagine you have two different types of candy bars, one with \\( s \\) pieces and one with 3 pieces. If you take away \\( t \\) pieces from each candy bar, how many pieces do you have left in total? Just like with the pizza slices, we need to find a common denominator to subtract the pieces correctly. So, yes, you would change both fractions so they have 3s on the bottom before subtracting them.",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "So if I change both fractions to have 3s on the bottom, would \\( \\frac{1}{s} \\) become \\( \\frac{3}{3s} \\) and \\( \\frac{t}{3} \\) become \\( \\frac{st}{3s} \\)? Then I could subtract them to get \\( \\frac{3-st}{3s} \\)?",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 2,
+    "R3": 2,
+    "R4": 2,
+    "R5": 4,
+    "R6": 2,
+    "justification_pass1": "While the student successfully arrives at the correct procedure and answer by Turn 4, the teacher's confusing analogies (especially the incoherent candy bar example in Turn 3) and failure to directly address why the original approach was wrong limit the quality of instruction, though the student does show clear improvement in understanding the common denominator procedure.",
+    "justification_pass2": "While the teacher attempts to use real-world analogies (pizza slices, candy bars), these analogies are mathematically flawed and don't accurately represent the abstract operation of subtracting fractions with different denominators, ultimately confusing rather than clarifying the concept.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 2,\n  \"R3\": 2,\n  \"R4\": 2,\n  \"R5\": 4,\n  \"brief_justification\": \"While the student successfully arrives at the correct procedure and answer by Turn 4, the teacher's confusing analogies (especially the incoherent candy bar example in Turn 3) and failure to directly address why the original approach was wrong limit the quality of instruction, though the student does show clear improvement in understanding the common denominator procedure.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 2, \"brief_justification\": \"While the teacher attempts to use real-world analogies (pizza slices, candy bars), these analogies are mathematically flawed and don't accurately represent the abstract operation of subtracting fractions with different denominators, ultimately confusing rather than clarifying the concept.\"}\n```",
+    "quality_composite": 2.0,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T16:54:36.630056+00:00"
+}

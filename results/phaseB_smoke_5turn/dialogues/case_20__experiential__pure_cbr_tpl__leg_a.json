@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_20",
+    "misconception_label": "Adds when calculating volume instead of multiplying",
+    "misconception_features": [
+      0.0,
+      20.0,
+      1.0,
+      58.0
+    ],
+    "persona": "experiential",
+    "architecture": "pure_cbr_tpl",
+    "student_leg": "leg_a",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T17:05:19.849009Z",
+      "seed": 1067,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T17:05:23.208197Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: The volume of this cuboid is \\( 30 \\mathrm{~cm}^{3} \\) What length should replace the star? ![A cuboid, depth 2cm and height 3cm. The width is labelled with a star.](). I got \\( 25 \\mathrm{~cm} \\) because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's think about this. From similar cases:\n  1. Topic: Calculate the volume of a cuboid when the dimensions are given in the same units. Correct answer (C): \\( 200 \\mathrm{~cm}^{3} \\). Student selected: \\( 19 \\mathrm{~cm}^{3} \\). Underlying misconception: Adds when calculating volume instead of multiplying. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.\n  2. Topic: Calculate the area of a rectangle where the dimensions are given in the same units. Correct answer (B): \\( 40 \\mathrm{~cm}^{2} \\). Student selected: \\( 13 \\mathrm{~cm}^{2} \\). Underlying misconception: Adds when calculating area instead of multiplying. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.\n  3. Topic: Perform calculations with areas when given in different units. Correct answer (C): \\( 404 \\mathrm{~mm}^{2} \\). Student selected: \\( 8 \\mathrm{~mm}^{2} \\). Underlying misconception: Does not convert measurements to have the same units before calculating area or volume. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "I think I get that I need to multiply the dimensions to find the volume, but I'm still not sure how to set it up. If the volume is \\( 30 \\mathrm{~cm}^{3} \\) and I have the height and depth, how do I figure out what the width should be? Can you help me with that?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's think about this. From similar cases:\n  1. Topic: Calculate the volume of a cuboid when the dimensions are given in the same units. Correct answer (C): \\( 200 \\mathrm{~cm}^{3} \\). Student selected: \\( 19 \\mathrm{~cm}^{3} \\). Underlying misconception: Adds when calculating volume instead of multiplying. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.\n  2. Topic: Calculate the area of a rectangle where the dimensions are given in the same units. Correct answer (B): \\( 40 \\mathrm{~cm}^{2} \\). Student selected: \\( 13 \\mathrm{~cm}^{2} \\). Underlying misconception: Adds when calculating area instead of multiplying. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.\n  3. Topic: Perform calculations with areas when given in different units. Correct answer (C): \\( 404 \\mathrm{~mm}^{2} \\). Student selected: \\( 8 \\mathrm{~mm}^{2} \\). Underlying misconception: Does not convert measurements to have the same units before calculating area or volume. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "Okay, I think I understand that I need to multiply the height, depth, and width to find the volume. So, if the volume is \\( 30 \\mathrm{~cm}^{3} \\) and I know the height is \\( 3 \\mathrm{~cm} \\) and the depth is \\( 2 \\mathrm{~cm} \\), how do I set up the equation to find the width? I'm just a bit confused about how to rearrange it.",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 1,
+    "R2": 1,
+    "R3": 1,
+    "R4": 3,
+    "R5": 3,
+    "R6": 1,
+    "justification_pass1": "The teacher merely repeats generic case examples without addressing the student's specific misconception or questions, though the student does show some independent progress in understanding that multiplication is needed.",
+    "justification_pass2": "The teacher provides no concrete real-world analogies or everyday situations, instead only listing abstract mathematical topics and misconceptions without any experiential grounding.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 1,\n  \"R2\": 1,\n  \"R3\": 1,\n  \"R4\": 3,\n  \"R5\": 3,\n  \"brief_justification\": \"The teacher merely repeats generic case examples without addressing the student's specific misconception or questions, though the student does show some independent progress in understanding that multiplication is needed.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 1, \"brief_justification\": \"The teacher provides no concrete real-world analogies or everyday situations, instead only listing abstract mathematical topics and misconceptions without any experiential grounding.\"}\n```",
+    "quality_composite": 1.0,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T17:05:28.888822+00:00"
+}

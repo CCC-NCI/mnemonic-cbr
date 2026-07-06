@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_23",
+    "misconception_label": "Confuses rest and movement on a distance time graph",
+    "misconception_features": [
+      0.0,
+      23.0,
+      3.0,
+      62.0
+    ],
+    "persona": "traditional",
+    "architecture": "pure_ai",
+    "student_leg": "leg_b",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T17:42:34.711218Z",
+      "seed": 1240,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T17:42:40.117849Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: This graph shows how far Fido the dog is from his home. What might the negative-sloping section represent? ![A graph with time (secs) on the horizontal axis and distance (m) on the vertical axis. The graph starts at the origin, travels in a straight line up and right, travels horizontally, then travels in a straight line down and right back to the x-axis. ](). I got Fido has fallen asleep because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's clarify the concept of rest and movement on a distance-time graph. When the line is horizontal, it means Fido is at a constant distance from his home, not moving. When the line is sloping downward, it means Fido is moving away from his home. Can you explain why you think Fido has fallen asleep during that part of the graph?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Oh right, so the horizontal bit means he's not moving... but I'm still confused about the downward slope bit. You said it means he's moving away from home, but I thought if the line goes down it means the distance is getting smaller? So wouldn't that mean he's moving *towards* his home, not away?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's clarify that misconception. When the line on a distance-time graph slopes downward, it means that the distance from the starting point is increasing, not decreasing. So in this case, Fido is actually moving away from his home during that section of the graph. Can you see how the slope of the line represents the change in distance over time now?",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "Wait, I'm still confused though... if the line is going down on the graph, doesn't that mean the numbers on the distance axis are getting smaller? Like, if we start at 10 metres and the line goes down to 5 metres, that's definitely getting closer to home, right? I don't get how that could mean moving away.",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 1,
+    "R3": 1,
+    "R4": 1,
+    "R5": 1,
+    "R6": 1,
+    "justification_pass1": "The teacher makes a critical mathematical error in Turn 3 (claiming downward slopes mean distance is increasing), fails to engage with the student's correct reasoning in Turns 2 and 4, provides no scaffolding for genuine understanding, and leaves the student more confused than at the start.",
+    "justification_pass2": "The teacher makes a fundamental mathematical error by claiming that a downward slope means distance is increasing (when it actually means decreasing), which directly contradicts the traditional strategy's emphasis on clear, accurate explanations and worked examples.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 1,\n  \"R3\": 1,\n  \"R4\": 1,\n  \"R5\": 1,\n  \"brief_justification\": \"The teacher makes a critical mathematical error in Turn 3 (claiming downward slopes mean distance is increasing), fails to engage with the student's correct reasoning in Turns 2 and 4, provides no scaffolding for genuine understanding, and leaves the student more confused than at the start.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 1, \"brief_justification\": \"The teacher makes a fundamental mathematical error by claiming that a downward slope means distance is increasing (when it actually means decreasing), which directly contradicts the traditional strategy's emphasis on clear, accurate explanations and worked examples.\"}\n```",
+    "quality_composite": 1.3333333333333333,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T17:42:46.889375+00:00"
+}

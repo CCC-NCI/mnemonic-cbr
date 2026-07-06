@@ -1,0 +1,66 @@
+{
+  "state": {
+    "case_id": "case_24",
+    "misconception_label": "When solving a problem that requires an inverse operation (e.g. missing number problems), does the original operation",
+    "misconception_features": [
+      0.0,
+      24.0,
+      2.0,
+      52.0
+    ],
+    "persona": "experiential",
+    "architecture": "pure_cbr_llm",
+    "student_leg": "leg_b",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T12:03:55.080223Z",
+      "seed": 1266,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-12T12:04:07.544887Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: What should replace the star? \\[ \\bigstar \\times 4=108 \\]. I got \\( 432 \\) because I added the parts of the ratio as if they were a total.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Imagine you have a recipe that calls for 4 cups of flour, but you only have one cup. If you need to figure out how many cups of flour you have in total, would you add the one cup you have or multiply it by 4? Think about how this relates to the missing number problem you're trying to solve.",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Oh, I see what you mean... so if I have one cup and need to multiply it by 4, I'd get 4 cups total, not add them together. But wait, in my problem the star times 4 equals 108, so does that mean I need to do the opposite and divide 108 by 4 instead of multiplying?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Think of it like this: if you have 108 pieces of candy and you want to share them equally among 4 friends, would you divide the 108 pieces by 4 to find out how many each friend gets? How does this relate to your problem with the star multiplied by 4 equaling 108?",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 3,
+    "R3": 2,
+    "R4": 5,
+    "R5": 4,
+    "R6": 5,
+    "justification_pass1": "The teacher uses analogies to prompt reasoning about inverse operations rather than directly addressing the stated misconception about ratios, but the student does successfully identify the need to divide by Turn 2, showing good trajectory despite somewhat misaligned scaffolding.",
+    "justification_pass2": "The teacher consistently grounds the abstract algebraic equation in concrete, everyday scenarios (recipe with flour cups, sharing candy among friends) that directly parallel the mathematical operations needed to solve the problem.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 3,\n  \"R3\": 2,\n  \"R4\": 5,\n  \"R5\": 4,\n  \"brief_justification\": \"The teacher uses analogies to prompt reasoning about inverse operations rather than directly addressing the stated misconception about ratios, but the student does successfully identify the need to divide by Turn 2, showing good trajectory despite somewhat misaligned scaffolding.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 5, \"brief_justification\": \"The teacher consistently grounds the abstract algebraic equation in concrete, everyday scenarios (recipe with flour cups, sharing candy among friends) that directly parallel the mathematical operations needed to solve the problem.\"}\n```",
+    "quality_composite": 2.3333333333333335,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T12:04:15.083772+00:00"
+}

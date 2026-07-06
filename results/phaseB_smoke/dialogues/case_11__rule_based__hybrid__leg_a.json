@@ -1,0 +1,66 @@
+{
+  "state": {
+    "case_id": "case_11",
+    "misconception_label": "Struggles to visualise nets of 3D shapes",
+    "misconception_features": [
+      0.0,
+      11.0,
+      3.0,
+      31.0
+    ],
+    "persona": "rule_based",
+    "architecture": "hybrid",
+    "student_leg": "leg_a",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T10:03:20.310470Z",
+      "seed": 631,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-12T10:03:25.292462Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: This is the net of a... ![A circle touching a sector](). I got Triangle because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "You are on the right track, but remember that the net of a 3D shape should show all the faces and how they connect. In this case, the shape is a triangular-based pyramid, not just a triangle. Make sure to consider all the faces when visualizing the net. Let's walk through the reasoning together to ensure you understand how to correctly identify the net of a 3D shape.",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Okay, I think I get that it's not just a triangle, but I'm still a bit confused about how the net shows all the faces. So, if it's a triangular-based pyramid, what do the other parts of the net look like? How do they all connect?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's break it down step by step. In a triangular-based pyramid, there are four triangular faces and one triangular base. Each face connects to the base, forming a pyramid shape. Remember, the net should show all these faces and how they connect to create the 3D shape. Let's visualize and draw out each face and how they connect in the net of a triangular-based pyramid.",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 2,
+    "R3": 2,
+    "R4": 2,
+    "R5": 1,
+    "R6": 2,
+    "justification_pass1": "The teacher makes a significant domain error (claiming a triangular pyramid has four triangular faces plus a triangular base, totaling five faces when it should be four total), provides mostly telling rather than eliciting reasoning, and the student shows no improvement in visualization ability, only expressing continued confusion.",
+    "justification_pass2": "While the teacher provides some direct information about the structure of a triangular-based pyramid, they primarily use guided discovery language ('let's walk through,' 'let's visualize and draw out') rather than explicitly stating procedures, showing worked steps, or giving direct corrective feedback on specific procedural errors.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 2,\n  \"R3\": 2,\n  \"R4\": 2,\n  \"R5\": 1,\n  \"brief_justification\": \"The teacher makes a significant domain error (claiming a triangular pyramid has four triangular faces plus a triangular base, totaling five faces when it should be four total), provides mostly telling rather than eliciting reasoning, and the student shows no improvement in visualization ability, only expressing continued confusion.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 2, \"brief_justification\": \"While the teacher provides some direct information about the structure of a triangular-based pyramid, they primarily use guided discovery language ('let's walk through,' 'let's visualize and draw out') rather than explicitly stating procedures, showing worked steps, or giving direct corrective feedback on specific procedural errors.\"}\n```",
+    "quality_composite": 2.0,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T10:03:32.077962+00:00"
+}

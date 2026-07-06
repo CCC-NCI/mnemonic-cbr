@@ -1,0 +1,66 @@
+{
+  "state": {
+    "case_id": "case_16",
+    "misconception_label": "Divides total amount by each side of the ratio instead of dividing by the sum of the parts",
+    "misconception_features": [
+      0.0,
+      16.0,
+      3.0,
+      83.0
+    ],
+    "persona": "experiential",
+    "architecture": "hybrid",
+    "student_leg": "leg_a",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T10:47:43.634855Z",
+      "seed": 871,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-12T10:47:48.435763Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: In the diagram, AN : NB \\( =3: 5 \\) What is the distance AN? ![A line that begins with point A, ends with point B, and has point N in between. The entire length of the line measures 48 m.](). I got \\( 16 \\mathrm{~m} \\) because I added the parts of the ratio as if they were a total.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Imagine you have a cake cut into 3 equal slices and 5 equal slices. If you want to know the total length of the cake, you wouldn't add the number of slices together, right? It's the same idea with ratios. Let's think about how we can find the total distance using the ratio given.",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "I think I get what you're saying about the cake, but I'm still a bit confused. So, if I don't just add the parts of the ratio, how do I actually find the distance AN? Do I need to do something different with the total length of 48 m?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Think of it like this: if you have 3 slices of cake that are each 8 cm long and 5 slices that are each 8 cm long, how can you find the total length of the cake? It's not just adding the number of slices together. Similarly, with the ratio given, you need to consider the relationship between the parts to find the total distance. Let's work through it together to find the correct answer for the distance AN.",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 3,
+    "R3": 2,
+    "R4": 3,
+    "R5": 1,
+    "R6": 4,
+    "justification_pass1": "The teacher uses a cake analogy that confuses rather than clarifies the ratio concept, the student remains confused by Turn 2 and shows no improvement, and the scaffolding doesn't effectively address the specific misconception of dividing by each part separately.",
+    "justification_pass2": "The teacher consistently uses a concrete, everyday analogy (slicing a cake) to explain the abstract concept of ratios and their relationship to total length, which is a strong application of the experiential strategy, though the analogy could have been slightly more precise in connecting slice size to ratio parts.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 3,\n  \"R3\": 2,\n  \"R4\": 3,\n  \"R5\": 1,\n  \"brief_justification\": \"The teacher uses a cake analogy that confuses rather than clarifies the ratio concept, the student remains confused by Turn 2 and shows no improvement, and the scaffolding doesn't effectively address the specific misconception of dividing by each part separately.\"\n}\n```\n\nThe teacher attempts to engage with ratios through an analogy but the cake metaphor is poorly constructed and doesn't directly address the student's specific error (dividing 48 by 3 and by 5 separately). The cognitive demand is moderate as the teacher asks the student to think through relationships, but the scaffolding is misaligned\u2014the student explicitly states confusion in Turn 2, yet the teacher repeats a similar confusing analogy in Turn 3. Most critically, the student shows no improvement; they remain confused and don't demonstrate any progress toward understanding that they should divide 48 by (3+5)=8 parts first.",
+    "pass2_raw_text": "```json\n{\"R6\": 4, \"brief_justification\": \"The teacher consistently uses a concrete, everyday analogy (slicing a cake) to explain the abstract concept of ratios and their relationship to total length, which is a strong application of the experiential strategy, though the analogy could have been slightly more precise in connecting slice size to ratio parts.\"}\n```",
+    "quality_composite": 2.3333333333333335,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T10:47:58.976321+00:00"
+}

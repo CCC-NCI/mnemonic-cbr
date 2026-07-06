@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_16",
+    "misconception_label": "Divides total amount by each side of the ratio instead of dividing by the sum of the parts",
+    "misconception_features": [
+      0.0,
+      16.0,
+      3.0,
+      83.0
+    ],
+    "persona": "socratic",
+    "architecture": "pure_ai",
+    "student_leg": "leg_a",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T16:18:27.748630Z",
+      "seed": 849,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T16:18:33.217373Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: In the diagram, AN : NB \\( =3: 5 \\) What is the distance AN? ![A line that begins with point A, ends with point B, and has point N in between. The entire length of the line measures 48 m.](). I got \\( 16 \\mathrm{~m} \\) because I added the parts of the ratio as if they were a total.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Why do you think adding the parts of the ratio as if they were a total would give you the correct distance for AN? Can you think of a different approach that might yield a more accurate answer?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "I guess I thought that if I just added the parts of the ratio, it would give me the right amount for AN. But now I\u2019m not sure how to use the total length of 48 m properly. Should I be dividing by something else? How do I figure out what each part of the ratio actually represents?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Can you think about what the ratio 3:5 actually represents in this context? How can you use that information to determine the distance of AN correctly using the total length of 48 m?",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "I think the ratio 3:5 means that for every 3 parts of AN, there are 5 parts of NB. So, if I add those parts together, that\u2019s 3 + 5 = 8 parts in total. I guess I should divide the total length of 48 m by 8 to find out how much each part is worth? But then how do I use that to find AN?",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 3,
+    "R3": 2,
+    "R4": 5,
+    "R5": 4,
+    "R6": 5,
+    "justification_pass1": "The teacher uses generic questioning rather than directly addressing the specific misconception of dividing by each side separately, but the student does progress from an incorrect method to understanding they need to divide by the sum of parts (8), though they still need help completing the final step.",
+    "justification_pass2": "The teacher consistently uses probing questions to guide the student's thinking without ever directly providing the answer, which is a textbook example of the Socratic method.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 3,\n  \"R3\": 2,\n  \"R4\": 5,\n  \"R5\": 4,\n  \"brief_justification\": \"The teacher uses generic questioning rather than directly addressing the specific misconception of dividing by each side separately, but the student does progress from an incorrect method to understanding they need to divide by the sum of parts (8), though they still need help completing the final step.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 5, \"brief_justification\": \"The teacher consistently uses probing questions to guide the student's thinking without ever directly providing the answer, which is a textbook example of the Socratic method.\"}\n```",
+    "quality_composite": 2.3333333333333335,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T16:18:39.961311+00:00"
+}

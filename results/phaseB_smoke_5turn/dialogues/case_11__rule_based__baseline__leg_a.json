@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_11",
+    "misconception_label": "Struggles to visualise nets of 3D shapes",
+    "misconception_features": [
+      0.0,
+      11.0,
+      3.0,
+      31.0
+    ],
+    "persona": "rule_based",
+    "architecture": "baseline",
+    "student_leg": "leg_a",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T15:30:48.190696Z",
+      "seed": 623,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T15:30:54.294669Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: This is the net of a... ![A circle touching a sector](). I got Triangle because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "There is a specific procedure for visualizing nets of 3D shapes. Step 1 is to identify the shapes in the net, and step 2 is to determine how they fit together to form the 3D shape. In this case, the net you have is not a Triangle, but rather a cone when folded correctly. Let's work through the steps together to see how the shapes fit.",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Oh, I see! So the circle is the base and the curved part is what makes it a cone? But how do I know for sure that it\u2019s a cone and not something else? I\u2019m still a bit confused about how to tell the difference between the nets of different shapes.",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "There is a specific procedure for visualizing nets of 3D shapes. Step 1 is to identify the shapes in the net, and step 2 is to determine how they fit together to form the 3D shape. In this case, the circle in the net represents the base of the cone, and the curved part represents the lateral surface. By following these steps, you can determine the correct 3D shape.",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "Okay, I think I get that the circle is the base and the curved part makes it a cone. But what about other shapes? Like, how can I tell the difference between a cone and a cylinder just by looking at their nets?",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 1,
+    "R3": 2,
+    "R4": 4,
+    "R5": 2,
+    "R6": 5,
+    "justification_pass1": "The teacher repeatedly states a generic procedure without addressing the student's specific visualization struggles, provides answers directly rather than prompting reasoning, and the student's questions show they remain confused about distinguishing between different 3D shapes' nets despite the instruction.",
+    "justification_pass2": "The teacher consistently states explicit procedures (identifying a two-step process for visualizing nets), shows worked steps (demonstrating how to apply these steps to the specific example), and provides direct corrective feedback on the student's procedural error (correcting the misidentification of the shape as a triangle and explaining it is a cone).",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 1,\n  \"R3\": 2,\n  \"R4\": 4,\n  \"R5\": 2,\n  \"brief_justification\": \"The teacher repeatedly states a generic procedure without addressing the student's specific visualization struggles, provides answers directly rather than prompting reasoning, and the student's questions show they remain confused about distinguishing between different 3D shapes' nets despite the instruction.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 5, \"brief_justification\": \"The teacher consistently states explicit procedures (identifying a two-step process for visualizing nets), shows worked steps (demonstrating how to apply these steps to the specific example), and provides direct corrective feedback on the student's procedural error (correcting the misidentification of the shape as a triangle and explaining it is a cone).\"}\n```",
+    "quality_composite": 1.6666666666666667,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T15:31:01.805031+00:00"
+}

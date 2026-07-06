@@ -1,0 +1,66 @@
+{
+  "state": {
+    "case_id": "case_18",
+    "misconception_label": "Assumes that an arrow on a number line starts at zero",
+    "misconception_features": [
+      0.0,
+      18.0,
+      2.0,
+      73.0
+    ],
+    "persona": "experiential",
+    "architecture": "baseline",
+    "student_leg": "leg_b",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T11:05:50.864909Z",
+      "seed": 964,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-12T11:05:56.364080Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: ![Number line with -12 and -7 marked. Starting at -12, follow an arrow pointing to the right labelled +10. Then there is an arrow labelled b pointing to the left, which ends at -7 on the number line.]() What is the value of \\( b \\) ? I got \\( -7 \\) because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Imagine you were walking along a number line like it was a street. If you start at -12 and walk 10 steps to the right, then take b steps to the left and end up at -7, what would the value of b be?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Oh right, so if I start at -12 and go right 10 steps, that would take me to -2, wouldn't it? Then if I need to end up at -7, I'd have to go left 5 steps, so b would be 5?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Imagine you were walking along a number line like it was a street. If you start at -12 and walk 10 steps to the right, then take b steps to the left and end up at -7, what would the value of b be?",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 3,
+    "R3": 1,
+    "R4": 5,
+    "R5": 1,
+    "R6": 5,
+    "justification_pass1": "The teacher uses a walking metaphor that prompts reasoning, but repeats it verbatim after the student correctly solves the problem, showing poor responsiveness and missing the opportunity to confirm understanding or address why the student's initial answer was wrong.",
+    "justification_pass2": "The teacher consistently uses a concrete real-world analogy of walking along a street to help the student understand the abstract number line problem, which is a textbook example of the experiential strategy.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 3,\n  \"R3\": 1,\n  \"R4\": 5,\n  \"R5\": 1,\n  \"brief_justification\": \"The teacher uses a walking metaphor that prompts reasoning, but repeats it verbatim after the student correctly solves the problem, showing poor responsiveness and missing the opportunity to confirm understanding or address why the student's initial answer was wrong.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 5, \"brief_justification\": \"The teacher consistently uses a concrete real-world analogy of walking along a street to help the student understand the abstract number line problem, which is a textbook example of the experiential strategy.\"}\n```",
+    "quality_composite": 2.0,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T11:06:03.166526+00:00"
+}

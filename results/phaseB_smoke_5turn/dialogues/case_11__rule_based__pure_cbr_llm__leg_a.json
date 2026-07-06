@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_11",
+    "misconception_label": "Struggles to visualise nets of 3D shapes",
+    "misconception_features": [
+      0.0,
+      11.0,
+      3.0,
+      31.0
+    ],
+    "persona": "rule_based",
+    "architecture": "pure_cbr_llm",
+    "student_leg": "leg_a",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T15:31:15.907254Z",
+      "seed": 625,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T15:31:20.874715Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: This is the net of a... ![A circle touching a sector](). I got Triangle because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "You selected \"Triangle\" as the net of a 3D shape, but the correct answer is \"Triangular-based pyramid.\" Remember, it's important to identify the 3D shape itself, not just one of its faces. Let's work through the reasoning together to find the correct answer.",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Okay, I see that it's a triangular-based pyramid now. But I'm still confused about how to tell the difference between the net of a pyramid and just a triangle. Like, how do I know when it's a net for a 3D shape and not just a flat shape?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "To differentiate between the net of a pyramid and just a triangle, remember that the net of a 3D shape should represent all the faces of the shape when folded together. In the case of a triangular-based pyramid, the net should show the triangular base and the three triangular faces that meet at the apex. This creates a 3D shape when folded, unlike a flat triangle. Keep practicing identifying nets to improve your visualisation skills.",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "Okay, I think I get that the net shows all the faces of the shape, but how do I know if the net is for a pyramid or another shape? Like, what should I look for in the net to tell them apart?",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 1,
+    "R3": 2,
+    "R4": 5,
+    "R5": 1,
+    "R6": 4,
+    "justification_pass1": "The teacher provides correct information but simply tells the student what to look for rather than engaging with their visualization struggle, and the student's repeated questions show they remain confused about how to identify nets despite the explanations.",
+    "justification_pass2": "The teacher consistently provides direct corrective feedback, states explicit identification procedures (look for all faces, identify base and apex-meeting triangles), and explains the rule-based distinction between nets and flat shapes, though could include more worked step-by-step examples.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\"R1\": 2, \"R2\": 1, \"R3\": 2, \"R4\": 5, \"R5\": 1, \"brief_justification\": \"The teacher provides correct information but simply tells the student what to look for rather than engaging with their visualization struggle, and the student's repeated questions show they remain confused about how to identify nets despite the explanations.\"}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 4, \"brief_justification\": \"The teacher consistently provides direct corrective feedback, states explicit identification procedures (look for all faces, identify base and apex-meeting triangles), and explains the rule-based distinction between nets and flat shapes, though could include more worked step-by-step examples.\"}\n```",
+    "quality_composite": 1.6666666666666667,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T15:31:28.030367+00:00"
+}

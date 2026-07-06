@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_16",
+    "misconception_label": "Divides total amount by each side of the ratio instead of dividing by the sum of the parts",
+    "misconception_features": [
+      0.0,
+      16.0,
+      3.0,
+      83.0
+    ],
+    "persona": "experiential",
+    "architecture": "pure_ai",
+    "student_leg": "leg_a",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T16:22:40.665744Z",
+      "seed": 869,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T16:22:52.128376Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: In the diagram, AN : NB \\( =3: 5 \\) What is the distance AN? ![A line that begins with point A, ends with point B, and has point N in between. The entire length of the line measures 48 m.](). I got \\( 16 \\mathrm{~m} \\) because I added the parts of the ratio as if they were a total.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's think of the ratio 3:5 as representing two parts of a whole distance, like two segments of a path. When we want to find the total distance, we need to combine both parts together, not divide the total distance by each part separately. So in this case, we need to add 3 and 5 to find the total distance.",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Oh, I see! So I need to add 3 and 5 together first to get the total parts, which is 8. But then what do I do with the 48 meters? Do I divide that by 8 to find out how long each part is?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Exactly! Just like if you have a cake divided into 8 slices, you wouldn't divide the total amount of cake by each slice individually to find out how much cake is in each slice. Instead, you would divide the total amount of cake by the number of slices to find out how much cake is in each slice. So in this case, you would divide the total distance of 48 meters by the total number of parts, which is 8, to find the length of each part.",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "Okay, so if I divide 48 meters by 8, I get 6 meters for each part. But then how do I find the distance AN? Do I just take the 3 parts of the ratio and multiply it by 6?",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 2,
+    "R3": 3,
+    "R4": 5,
+    "R5": 4,
+    "R6": 5,
+    "justification_pass1": "While the teacher provides mathematically correct guidance and the student progresses from confusion to nearly correct understanding, the teacher primarily tells rather than elicits reasoning, and doesn't explicitly address why dividing by each part separately was wrong.",
+    "justification_pass2": "The teacher consistently uses concrete, everyday analogies (path segments, cake slices) to explain the abstract concept of ratios, which is a textbook example of the experiential strategy.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 2,\n  \"R3\": 3,\n  \"R4\": 5,\n  \"R5\": 4,\n  \"brief_justification\": \"While the teacher provides mathematically correct guidance and the student progresses from confusion to nearly correct understanding, the teacher primarily tells rather than elicits reasoning, and doesn't explicitly address why dividing by each part separately was wrong.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 5, \"brief_justification\": \"The teacher consistently uses concrete, everyday analogies (path segments, cake slices) to explain the abstract concept of ratios, which is a textbook example of the experiential strategy.\"}\n```",
+    "quality_composite": 2.3333333333333335,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T16:22:59.049369+00:00"
+}

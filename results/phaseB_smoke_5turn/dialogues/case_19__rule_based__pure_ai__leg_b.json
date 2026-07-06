@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_19",
+    "misconception_label": "When subtracting fractions, subtracts the numerators and multiplies the denominators",
+    "misconception_features": [
+      0.0,
+      19.0,
+      3.0,
+      104.0
+    ],
+    "persona": "rule_based",
+    "architecture": "pure_ai",
+    "student_leg": "leg_b",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T16:57:17.177849Z",
+      "seed": 1030,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T16:57:22.168568Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: Express the following as a single fraction, writing your answer as simply as possible: \\( \\frac{1}{s}-\\frac{t}{3} \\). I got \\( \\frac{1-t}{3 s} \\) because I treated the fractions like ordinary numbers.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "When subtracting fractions, we must find a common denominator. In this case, the common denominator is 3s. Then, we subtract the numerators. So, the correct answer is \\( \\frac{3-1s}{3s} \\). Remember, when subtracting fractions, we keep the denominators the same.",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Oh right, so I need to find a common denominator first instead of just multiplying them together? So for \\( \\frac{1}{s}-\\frac{t}{3} \\), I'd convert \\( \\frac{1}{s} \\) to \\( \\frac{3}{3s} \\) and \\( \\frac{t}{3} \\) to \\( \\frac{st}{3s} \\), then subtract to get \\( \\frac{3-st}{3s} \\)? Is that the right way to think about it?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Yes, that's correct! You found the common denominator of 3s and then subtracted the numerators. Great job on correcting your mistake. Just remember to always find a common denominator when subtracting fractions. Keep up the good work!",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "Thanks! So basically I need to make sure both fractions have the same bottom number before I subtract them, right? I think I've got it now, but would this work the same way if I was adding fractions instead of subtracting them?",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 1,
+    "R3": 2,
+    "R4": 2,
+    "R5": 4,
+    "R6": 4,
+    "justification_pass1": "While the student successfully corrects their work and demonstrates improved understanding, the teacher makes a notation error in Turn 1 (writing \"1s\" instead of \"st\"), provides direct answers rather than prompting reasoning, and doesn't deeply engage with why the original misconception was problematic.",
+    "justification_pass2": "The teacher consistently states explicit procedures (find common denominator, subtract numerators), gives direct corrective feedback on the procedural error, and reinforces the rule, though there is a minor notational error in Turn 1 ('1s' instead of 'st').",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 1,\n  \"R3\": 2,\n  \"R4\": 2,\n  \"R5\": 4,\n  \"brief_justification\": \"While the student successfully corrects their work and demonstrates improved understanding, the teacher makes a notation error in Turn 1 (writing \\\"1s\\\" instead of \\\"st\\\"), provides direct answers rather than prompting reasoning, and doesn't deeply engage with why the original misconception was problematic.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 4, \"brief_justification\": \"The teacher consistently states explicit procedures (find common denominator, subtract numerators), gives direct corrective feedback on the procedural error, and reinforces the rule, though there is a minor notational error in Turn 1 ('1s' instead of 'st').\"}\n```",
+    "quality_composite": 1.6666666666666667,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T16:57:29.545778+00:00"
+}

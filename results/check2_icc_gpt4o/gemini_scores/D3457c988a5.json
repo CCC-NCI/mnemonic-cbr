@@ -1,0 +1,53 @@
+{
+  "blind_id": "D3457c988a5",
+  "subset_row": {
+    "blind_id": "D3457c988a5",
+    "case_id": "case_4",
+    "persona": "constructive",
+    "architecture": "hybrid",
+    "student_leg": "leg_b",
+    "llm_R5": "4",
+    "llm_quality_composite": "3.0",
+    "llm_R6": "2",
+    "difficulty_band": "long",
+    "r5_band": "high",
+    "word_count": "108",
+    "attention_check_type": "",
+    "attention_check_rationale": "",
+    "file_path": "dialogues/case_4__constructive__hybrid__leg_b.json"
+  },
+  "primary_score": {
+    "R1": 4,
+    "R2": 2,
+    "R3": 3,
+    "R4": 5,
+    "R5": 4,
+    "R6": 2,
+    "justification_pass1": "The teacher explicitly names the linear misconception and guides the student away from it, but the questions are somewhat vague and don't require deep reasoning; nevertheless, the student progresses from adding differences to correctly proposing to substitute into the equation.",
+    "justification_pass2": "While the teacher attempts to scaffold by breaking down the problem conceptually, they fail to provide appropriately adjusted support\u2014repeatedly asking vague reflective questions without directly addressing the student's confusion or guiding them to the concrete step of substituting r=3 into the equation until the student figures it out themselves in Turn 4.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 4,\n  \"R2\": 2,\n  \"R3\": 3,\n  \"R4\": 5,\n  \"R5\": 4,\n  \"brief_justification\": \"The teacher explicitly names the linear misconception and guides the student away from it, but the questions are somewhat vague and don't require deep reasoning; nevertheless, the student progresses from adding differences to correctly proposing to substitute into the equation.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 2, \"brief_justification\": \"While the teacher attempts to scaffold by breaking down the problem conceptually, they fail to provide appropriately adjusted support\u2014repeatedly asking vague reflective questions without directly addressing the student's confusion or guiding them to the concrete step of substituting r=3 into the equation until the student figures it out themselves in Turn 4.\"}\n```",
+    "quality_composite": 3.0,
+    "is_complete": true
+  },
+  "secondary_score": {
+    "R1": 5,
+    "R2": 5,
+    "R3": 4,
+    "R4": 5,
+    "R5": 5,
+    "R6": 5,
+    "justification_pass1": "The teacher directly addresses the misconception by explaining the non-linear nature of the equation, encourages reasoning by prompting the student to think about the squared term, provides appropriate scaffolding by guiding the student to use the equation, maintains correct mathematical content, and successfully helps the student improve their reasoning and correct the misconception.",
+    "justification_pass2": "The teacher effectively scaffolds within the student's Zone of Proximal Development by guiding the student to reconsider the equation's non-linear nature and encouraging them to apply the equation step-by-step to find the correct value.",
+    "judge_provider": "openai",
+    "judge_model": "gpt-4o",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 5,\n  \"R2\": 5,\n  \"R3\": 4,\n  \"R4\": 5,\n  \"R5\": 5,\n  \"brief_justification\": \"The teacher directly addresses the misconception by explaining the non-linear nature of the equation, encourages reasoning by prompting the student to think about the squared term, provides appropriate scaffolding by guiding the student to use the equation, maintains correct mathematical content, and successfully helps the student improve their reasoning and correct the misconception.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 5, \"brief_justification\": \"The teacher effectively scaffolds within the student's Zone of Proximal Development by guiding the student to reconsider the equation's non-linear nature and encouraging them to apply the equation step-by-step to find the correct value.\"}\n```"
+  }
+}

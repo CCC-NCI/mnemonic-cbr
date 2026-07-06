@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_9",
+    "misconception_label": "Believes f(x - a) translates the function up a units",
+    "misconception_features": [
+      0.0,
+      9.0,
+      3.0,
+      83.0
+    ],
+    "persona": "experiential",
+    "architecture": "baseline",
+    "student_leg": "leg_a",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T15:05:54.257844Z",
+      "seed": 513,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T15:05:59.744439Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: What transformation maps the graph of \\(y=f(x) \\) to the graph of \\( y=f(x-3) \\). I got Translation by vector\n\\(\n\\left[\\begin{array}{l}\n0 \\\\\n3\n\\end{array}\\right]\n\\) because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's think of it this way: if you shift your favorite video game character 3 spaces to the left, will they end up higher on the screen?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "I guess if I move the character to the left, they wouldn't go up on the screen, right? So maybe I got the direction wrong? But does that mean \\(f(x-3)\\) actually moves the graph to the right instead? I'm still a bit confused about how the transformations work.",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Imagine if you were walking along a path and you saw a sign that said \"3 units to the left.\" Would you end up higher or lower on the path? Think about how that relates to shifting the graph horizontally by \\( f(x-3) \\).",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "Okay, so if I\u2019m walking and I see a sign saying \"3 units to the left,\" I wouldn\u2019t go up or down, right? So I think that means \\(f(x-3)\\) actually moves the graph to the left, not up. But does that mean if it was \\(f(x+3)\\), it would go to the right? I'm still a bit mixed up about how the plus and minus signs work with the transformations.",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 2,
+    "R3": 2,
+    "R4": 2,
+    "R5": 1,
+    "R6": 4,
+    "justification_pass1": "The teacher uses analogies that fail to address the core misconception (vertical vs. horizontal shift), the domain content contains errors (f(x-3) shifts right, not left), and the student ends Turn 4 more confused than at Turn 0, now believing f(x-3) moves left when it actually moves right.",
+    "justification_pass2": "The teacher consistently uses concrete real-world analogies (video game character movement, walking along a path) to help the student understand abstract horizontal transformations, though the analogies don't fully resolve the student's confusion about the counterintuitive nature of f(x-3) shifting right.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 2,\n  \"R3\": 2,\n  \"R4\": 2,\n  \"R5\": 1,\n  \"brief_justification\": \"The teacher uses analogies that fail to address the core misconception (vertical vs. horizontal shift), the domain content contains errors (f(x-3) shifts right, not left), and the student ends Turn 4 more confused than at Turn 0, now believing f(x-3) moves left when it actually moves right.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 4, \"brief_justification\": \"The teacher consistently uses concrete real-world analogies (video game character movement, walking along a path) to help the student understand abstract horizontal transformations, though the analogies don't fully resolve the student's confusion about the counterintuitive nature of f(x-3) shifting right.\"}\n```",
+    "quality_composite": 2.0,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T15:06:08.040390+00:00"
+}

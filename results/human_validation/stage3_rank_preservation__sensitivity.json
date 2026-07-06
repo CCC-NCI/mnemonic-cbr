@@ -1,0 +1,64 @@
+{
+  "per_architecture": [
+    {
+      "architecture": "baseline",
+      "human_r5_mean": 3.184,
+      "human_n": 114,
+      "human_r5_sd": 0.983,
+      "llm_r5_mean": 2.708,
+      "llm_n": 250,
+      "llm_r5_sd": 1.301,
+      "human_rank": 4.0,
+      "llm_rank": 4.0
+    },
+    {
+      "architecture": "hybrid",
+      "human_r5_mean": 3.241,
+      "human_n": 137,
+      "human_r5_sd": 0.887,
+      "llm_r5_mean": 2.92,
+      "llm_n": 250,
+      "llm_r5_sd": 1.333,
+      "human_rank": 3.0,
+      "llm_rank": 1.0
+    },
+    {
+      "architecture": "pure_ai",
+      "human_r5_mean": 3.465,
+      "human_n": 114,
+      "human_r5_sd": 0.923,
+      "llm_r5_mean": 2.791,
+      "llm_n": 249,
+      "llm_r5_sd": 1.337,
+      "human_rank": 1.0,
+      "llm_rank": 3.0
+    },
+    {
+      "architecture": "pure_cbr_llm",
+      "human_r5_mean": 3.266,
+      "human_n": 124,
+      "human_r5_sd": 0.884,
+      "llm_r5_mean": 2.803,
+      "llm_n": 249,
+      "llm_r5_sd": 1.334,
+      "human_rank": 2.0,
+      "llm_rank": 2.0
+    },
+    {
+      "architecture": "pure_cbr_tpl",
+      "human_r5_mean": 3.133,
+      "human_n": 120,
+      "human_r5_sd": 0.995,
+      "llm_r5_mean": 2.124,
+      "llm_n": 250,
+      "llm_r5_sd": 1.218,
+      "human_rank": 5.0,
+      "llm_rank": 5.0
+    }
+  ],
+  "spearman_rho": 0.6,
+  "spearman_p": 0.28475697986529375,
+  "kendall_tau": 0.39999999999999997,
+  "kendall_p": 0.48333333333333334,
+  "n_architectures": 5
+}

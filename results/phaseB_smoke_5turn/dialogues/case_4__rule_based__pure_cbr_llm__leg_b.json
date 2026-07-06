@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_4",
+    "misconception_label": "Thinks you can find missing values in a given table by treating the row as linear and adding on the difference between the first two values given.",
+    "misconception_features": [
+      0.0,
+      4.0,
+      1.0,
+      74.0
+    ],
+    "persona": "rule_based",
+    "architecture": "pure_cbr_llm",
+    "student_leg": "leg_b",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T13:51:18.351094Z",
+      "seed": 276,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T13:51:28.995796Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: The equation \\( f=3 r^{2}+3 \\) is used to find values in the table below. What is the value covered by the star? \\begin{tabular}{|c|c|c|c|c|} \\hline\\( r \\) & \\( 1 \\) & \\( 2 \\) & \\( 3 \\) & \\( 4 \\) \\\\ \\hline\\( f \\) & \\( 6 \\) & \\( 15 \\) & \\( \\color{gold}\\bigstar \\) & \\\\ \\hline \\end{tabular}. I got \\( 24 \\) because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "You are attempting to find the missing value in the table using a linear approach, but that is not the correct method in this case. Remember, for the given equation \\( f=3 r^{2}+3 \\), the values are not linearly related. Let's revisit the equation and apply the correct procedure to find the value covered by the star.",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Oh right, so I can't just add on the difference like I did... So do I need to use the equation itself instead? Like, should I put r = 3 into the equation f = 3r\u00b2 + 3 to find the star value?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Yes, that's correct. To find the value covered by the star, substitute \\( r = 3 \\) into the equation \\( f = 3r^{2} + 3 \\) and solve for \\( f \\). Remember to use the correct procedure for this non-linear relationship. Let's work through the calculation step by step.",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "Right, okay, so I substitute r = 3 into the equation... so that's f = 3 times 3 squared plus 3? So f = 3 times 9 plus 3, which is 27 plus 3, so f = 30? Is that right?",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 4,
+    "R2": 2,
+    "R3": 3,
+    "R4": 5,
+    "R5": 5,
+    "R6": 3,
+    "justification_pass1": "The teacher explicitly identifies the linear approach misconception and redirects to the quadratic equation, the mathematics is correct throughout, and the student successfully moves from incorrect linear reasoning to correct substitution and calculation, though the teacher could have elicited more reasoning rather than directing each step.",
+    "justification_pass2": "The teacher identifies the procedural error and directs the student to use the correct method, but doesn't explicitly show worked steps or demonstrate the calculation procedure themselves, instead prompting the student to work through it.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 4,\n  \"R2\": 2,\n  \"R3\": 3,\n  \"R4\": 5,\n  \"R5\": 5,\n  \"brief_justification\": \"The teacher explicitly identifies the linear approach misconception and redirects to the quadratic equation, the mathematics is correct throughout, and the student successfully moves from incorrect linear reasoning to correct substitution and calculation, though the teacher could have elicited more reasoning rather than directing each step.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 3, \"brief_justification\": \"The teacher identifies the procedural error and directs the student to use the correct method, but doesn't explicitly show worked steps or demonstrate the calculation procedure themselves, instead prompting the student to work through it.\"}\n```",
+    "quality_composite": 3.0,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T13:51:35.254488+00:00"
+}

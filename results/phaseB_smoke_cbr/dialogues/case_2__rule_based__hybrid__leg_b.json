@@ -1,0 +1,66 @@
+{
+  "state": {
+    "case_id": "case_2",
+    "misconception_label": "Believes if you changed all values by the same proportion the range would not change",
+    "misconception_features": [
+      0.0,
+      2.0,
+      3.0,
+      39.0
+    ],
+    "persona": "rule_based",
+    "architecture": "hybrid",
+    "student_leg": "leg_b",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T08:31:05.829179Z",
+      "seed": 182,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "cbr_grounded",
+      "ended_at": "2026-05-12T08:31:09.837315Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: Tom and Katie are discussing the \\( 5 \\) plants with these heights: \\( 24 \\mathrm{~cm}, 17 \\mathrm{~cm}, 42 \\mathrm{~cm}, 26 \\mathrm{~cm}, 13 \\mathrm{~cm} \\) Tom says if all the plants were cut in half, the range wouldn't change. Katie says if all the plants grew by \\( 3 \\mathrm{~cm} \\) each, the range wouldn't change. Who do you agree with? I got Only\nTom because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "To determine if changing all values by the same proportion affects the range, remember that the range is the difference between the highest and lowest values. Let's walk through the calculation together step by step. This will help clarify why changing the values by the same proportion does indeed affect the range.",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Okay, so the range is the highest minus the lowest... so for the plants that would be 42 minus 13 which is 29 cm. But I'm still confused about why cutting them in half would change it - wouldn't 21 minus 6.5 still be the same difference?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "When you cut all the plant heights in half, you're reducing each height by the same proportion. This will affect the range because the difference between the highest and lowest values will also be halved. So, the new range would be \\( 21 \\mathrm{~cm} - 6.5 \\mathrm{~cm} = 14.5 \\mathrm{~cm} \\), which is different from the original range of 29 cm. Remember, changing values by the same proportion does impact the range.",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 4,
+    "R2": 2,
+    "R3": 2,
+    "R4": 5,
+    "R5": 1,
+    "R6": 5,
+    "justification_pass1": "The teacher correctly identifies and addresses the specific misconception about proportional changes, but primarily tells rather than elicits reasoning, and the student shows no evidence of improved understanding by the end (never gets to speak after the final explanation).",
+    "justification_pass2": "The teacher consistently provides explicit procedural steps (calculating range as highest minus lowest), shows worked calculations with specific numbers (21 - 6.5 = 14.5 cm), and gives direct corrective feedback on the student's procedural error about proportional changes affecting range.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 4,\n  \"R2\": 2,\n  \"R3\": 2,\n  \"R4\": 5,\n  \"R5\": 1,\n  \"brief_justification\": \"The teacher correctly identifies and addresses the specific misconception about proportional changes, but primarily tells rather than elicits reasoning, and the student shows no evidence of improved understanding by the end (never gets to speak after the final explanation).\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 5, \"brief_justification\": \"The teacher consistently provides explicit procedural steps (calculating range as highest minus lowest), shows worked calculations with specific numbers (21 - 6.5 = 14.5 cm), and gives direct corrective feedback on the student's procedural error about proportional changes affecting range.\"}\n```",
+    "quality_composite": 2.6666666666666665,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T08:31:17.651541+00:00"
+}

@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_18",
+    "misconception_label": "Assumes that an arrow on a number line starts at zero",
+    "misconception_features": [
+      0.0,
+      18.0,
+      2.0,
+      73.0
+    ],
+    "persona": "constructive",
+    "architecture": "pure_ai",
+    "student_leg": "leg_a",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T16:41:58.492485Z",
+      "seed": 959,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T16:42:03.592381Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: ![Number line with -12 and -7 marked. Starting at -12, follow an arrow pointing to the right labelled +10. Then there is an arrow labelled b pointing to the left, which ends at -7 on the number line.]() What is the value of \\( b \\) ? I got \\( -7 \\) because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "You're on the right track in identifying the end point of the arrow labeled \\( b \\) as -7. Remember, the arrow doesn't necessarily start at zero on a number line. Try thinking about how the arrow is moving from -12 to -7 and see if that helps you determine the value of \\( b \\).",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Okay, so I see that the arrow starts at -12 and ends at -7. I guess I need to figure out how far it moves to the right first. But if it moves to the right, does that mean I have to add something to -12? What do I add to get to -7?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "You're making progress in recognizing the movement of the arrow on the number line. Think about the direction the arrow is pointing and how that affects the value you add to -12. Remember, the arrow labeled +10 indicates movement to the right. What does that tell you about what you need to add to -12 to reach -7?",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "Okay, so if the arrow labeled +10 moves to the right from -12, I think I need to add 10 to -12 first. But then I\u2019m not sure how that connects to getting to -7. Like, if I add 10 to -12, I get -2, but that doesn't help me find \\( b \\). How do I figure out what \\( b \\) is from there?",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 4,
+    "R2": 3,
+    "R3": 2,
+    "R4": 5,
+    "R5": 3,
+    "R6": 2,
+    "justification_pass1": "The teacher explicitly addresses the misconception that arrows start at zero (Turn 1), but the scaffolding becomes misaligned as the student progresses to understanding the two-step problem while the teacher continues prompting about the first arrow, and while the student shows some improvement in understanding movement on the number line, they remain confused about finding b by Turn 4.",
+    "justification_pass2": "While the teacher attempts to scaffold by breaking down the problem and providing hints, they fail to adjust support when the student struggles repeatedly, continuing to give vague prompts rather than providing more direct guidance or smaller steps when the student clearly needs it.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 4,\n  \"R2\": 3,\n  \"R3\": 2,\n  \"R4\": 5,\n  \"R5\": 3,\n  \"brief_justification\": \"The teacher explicitly addresses the misconception that arrows start at zero (Turn 1), but the scaffolding becomes misaligned as the student progresses to understanding the two-step problem while the teacher continues prompting about the first arrow, and while the student shows some improvement in understanding movement on the number line, they remain confused about finding b by Turn 4.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\n  \"R6\": 2,\n  \"brief_justification\": \"While the teacher attempts to scaffold by breaking down the problem and providing hints, they fail to adjust support when the student struggles repeatedly, continuing to give vague prompts rather than providing more direct guidance or smaller steps when the student clearly needs it.\"\n}\n```",
+    "quality_composite": 3.0,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T16:42:11.476513+00:00"
+}

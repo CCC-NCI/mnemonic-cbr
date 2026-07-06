@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_12",
+    "misconception_label": "Thinks alternate angles are always equal",
+    "misconception_features": [
+      0.0,
+      12.0,
+      3.0,
+      25.0
+    ],
+    "persona": "rule_based",
+    "architecture": "pure_cbr_llm",
+    "student_leg": "leg_b",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T15:42:02.970450Z",
+      "seed": 676,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T15:42:08.438541Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: Tom and Katie are arguing about alternate angles. Tom says angles \\( p \\) and \\( q \\) are alternate. Katie says angles \\( p \\) and \\( q \\) are equal. Who is correct? ![Shows two non parallel lines that are intersected by another line. Angles P and Q are both on the outside of the lines and on opposite sides of the transversal.](). I got Only\nKatie because I assumed all the angles in the figure are equal.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Actually, in this case, angles \\( p \\) and \\( q \\) are not alternate angles. Alternate angles are formed when a transversal intersects two parallel lines. In this scenario, angles \\( p \\) and \\( q \\) are not equal. Can you think about what type of angles they actually are?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Oh right, so alternate angles only work when the lines are parallel... so in this diagram the lines aren't parallel, which is why p and q aren't equal even though they're on opposite sides of the transversal? So Tom would be wrong because they're not actually alternate angles at all?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "That's correct! Since the lines in the diagram are not parallel, angles \\( p \\) and \\( q \\) are not alternate angles. Therefore, Tom is incorrect in this scenario. Keep in mind that alternate angles are only formed when a transversal intersects two parallel lines.",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "So both Tom and Katie are wrong then? Tom's wrong because they're not actually alternate angles without parallel lines, and Katie's wrong because the angles aren't equal. So the answer would be that neither of them is correct?",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 4,
+    "R2": 2,
+    "R3": 3,
+    "R4": 5,
+    "R5": 4,
+    "R6": 3,
+    "justification_pass1": "The teacher directly addresses the misconception that alternate angles are always equal by clarifying the parallel lines requirement, the mathematics is accurate, and the student demonstrates clear improvement in understanding, though the teacher could have elicited more reasoning rather than directly stating corrections.",
+    "justification_pass2": "The teacher provides some direct corrective feedback and states explicit rules about alternate angles requiring parallel lines, but lacks worked steps or detailed procedural demonstrations that would exemplify a strong rule-based approach.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 4,\n  \"R2\": 2,\n  \"R3\": 3,\n  \"R4\": 5,\n  \"R5\": 4,\n  \"brief_justification\": \"The teacher directly addresses the misconception that alternate angles are always equal by clarifying the parallel lines requirement, the mathematics is accurate, and the student demonstrates clear improvement in understanding, though the teacher could have elicited more reasoning rather than directly stating corrections.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 3, \"brief_justification\": \"The teacher provides some direct corrective feedback and states explicit rules about alternate angles requiring parallel lines, but lacks worked steps or detailed procedural demonstrations that would exemplify a strong rule-based approach.\"}\n```",
+    "quality_composite": 3.0,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T15:42:14.956688+00:00"
+}

@@ -1,0 +1,66 @@
+{
+  "state": {
+    "case_id": "case_20",
+    "misconception_label": "Adds when calculating volume instead of multiplying",
+    "misconception_features": [
+      0.0,
+      20.0,
+      1.0,
+      58.0
+    ],
+    "persona": "traditional",
+    "architecture": "pure_cbr_llm",
+    "student_leg": "leg_b",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T11:29:32.984448Z",
+      "seed": 1086,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-12T11:29:37.497271Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: The volume of this cuboid is \\( 30 \\mathrm{~cm}^{3} \\) What length should replace the star? ![A cuboid, depth 2cm and height 3cm. The width is labelled with a star.](). I got \\( 25 \\mathrm{~cm} \\) because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "To find the volume of a cuboid, you need to multiply the length, width, and height together. In this case, the volume formula is \\( \\text{Volume} = \\text{length} \\times \\text{width} \\times \\text{height} \\). So, to find the missing length, you should multiply 2cm by 3cm, not add them together. Can you try calculating it again using multiplication instead of addition?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Oh right, so I need to multiply instead of add! So would it be 2 times 3 equals 6, and then... um, do I multiply that by the star to get 30? So like 6 times the star equals 30?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "That's correct! To find the missing length, you need to divide the volume (30) by the product of the known dimensions (6). So, \\( 30 \\div 6 = 5 \\). Therefore, the missing length should be 5cm.",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 4,
+    "R2": 2,
+    "R3": 2,
+    "R4": 5,
+    "R5": 4,
+    "R6": 5,
+    "justification_pass1": "The teacher explicitly addresses the addition misconception and the mathematics is correct, but provides too much direct instruction rather than eliciting student reasoning, though the student does show clear improvement in understanding the multiplicative structure by Turn 2.",
+    "justification_pass2": "The teacher directly explains the volume formula with clear worked examples, checks the student's understanding by prompting recalculation, and provides a comprehensive yet clear step-by-step solution that exemplifies traditional direct instruction.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 4,\n  \"R2\": 2,\n  \"R3\": 2,\n  \"R4\": 5,\n  \"R5\": 4,\n  \"brief_justification\": \"The teacher explicitly addresses the addition misconception and the mathematics is correct, but provides too much direct instruction rather than eliciting student reasoning, though the student does show clear improvement in understanding the multiplicative structure by Turn 2.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 5, \"brief_justification\": \"The teacher directly explains the volume formula with clear worked examples, checks the student's understanding by prompting recalculation, and provides a comprehensive yet clear step-by-step solution that exemplifies traditional direct instruction.\"}\n```",
+    "quality_composite": 2.6666666666666665,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T11:29:43.605591+00:00"
+}

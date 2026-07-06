@@ -1,0 +1,66 @@
+{
+  "state": {
+    "case_id": "case_23",
+    "misconception_label": "Confuses rest and movement on a distance time graph",
+    "misconception_features": [
+      0.0,
+      23.0,
+      3.0,
+      62.0
+    ],
+    "persona": "socratic",
+    "architecture": "hybrid",
+    "student_leg": "leg_b",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T11:51:42.787440Z",
+      "seed": 1202,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-12T11:51:47.337739Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: This graph shows how far Fido the dog is from his home. What might the negative-sloping section represent? ![A graph with time (secs) on the horizontal axis and distance (m) on the vertical axis. The graph starts at the origin, travels in a straight line up and right, travels horizontally, then travels in a straight line down and right back to the x-axis. ](). I got Fido has fallen asleep because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Can you walk me through your reasoning for why you think Fido has fallen asleep during the negative-sloping section of the graph? How does the concept of distance and time play a role in your interpretation?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Um, well I thought that because the line goes down, it means something bad happened, like Fido stopped moving? And I wasn't really thinking about what the axes actually mean... does the negative slope mean he's going backwards towards his home, or does it mean something else?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Can you explain why you think the negative slope on the graph would indicate that Fido has stopped moving or is going backwards towards his home? How does the concept of distance and time relate to interpreting the graph accurately?",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 3,
+    "R3": 2,
+    "R4": 5,
+    "R5": 2,
+    "R6": 4,
+    "justification_pass1": "The teacher repeatedly asks generic questions about 'distance and time' without directly addressing the student's confusion between rest (horizontal line) and movement (sloped line), and the student shows minimal progress, still expressing uncertainty about what the negative slope means by Turn 2.",
+    "justification_pass2": "The teacher consistently uses probing questions to guide the student's thinking about distance, time, and slope interpretation without directly providing the answer, though they could have more explicitly used a counterexample to expose the flawed 'stopped moving' reasoning.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 3,\n  \"R3\": 2,\n  \"R4\": 5,\n  \"R5\": 2,\n  \"brief_justification\": \"The teacher repeatedly asks generic questions about 'distance and time' without directly addressing the student's confusion between rest (horizontal line) and movement (sloped line), and the student shows minimal progress, still expressing uncertainty about what the negative slope means by Turn 2.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 4, \"brief_justification\": \"The teacher consistently uses probing questions to guide the student's thinking about distance, time, and slope interpretation without directly providing the answer, though they could have more explicitly used a counterexample to expose the flawed 'stopped moving' reasoning.\"}\n```",
+    "quality_composite": 2.3333333333333335,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T11:51:53.764061+00:00"
+}

@@ -1,0 +1,66 @@
+{
+  "state": {
+    "case_id": "case_19",
+    "misconception_label": "When subtracting fractions, subtracts the numerators and multiplies the denominators",
+    "misconception_features": [
+      0.0,
+      19.0,
+      3.0,
+      104.0
+    ],
+    "persona": "socratic",
+    "architecture": "pure_ai",
+    "student_leg": "leg_b",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T11:13:24.311122Z",
+      "seed": 1000,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-12T11:13:28.080035Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: Express the following as a single fraction, writing your answer as simply as possible: \\( \\frac{1}{s}-\\frac{t}{3} \\). I got \\( \\frac{1-t}{3 s} \\) because I treated the fractions like ordinary numbers.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Why did you choose to subtract the numerators and multiply the denominators in this case? Can you explain how you would normally subtract fractions and why that method might not apply here?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Um, I think I just did what seemed easiest? Like, I subtracted the top numbers and multiplied the bottom numbers together. But now you're asking me about it, I'm not sure if that's actually how you're supposed to subtract fractions... Is it different from adding them or something?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "That's a great observation! Subtracting fractions is indeed different from adding them. Can you think of a way to subtract fractions that takes into account the relationship between the numerators and denominators?",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 3,
+    "R2": 3,
+    "R3": 2,
+    "R4": 2,
+    "R5": 1,
+    "R6": 5,
+    "justification_pass1": "The teacher engages with the misconception through questioning but provides mathematically misleading guidance (subtraction and addition of fractions use the same method), and the student shows no concrete progress toward understanding common denominators by the end.",
+    "justification_pass2": "The teacher consistently uses probing questions to guide the student's thinking without directly providing the answer or method, which is a textbook example of the Socratic strategy.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 3,\n  \"R2\": 3,\n  \"R3\": 2,\n  \"R4\": 2,\n  \"R5\": 1,\n  \"brief_justification\": \"The teacher engages with the misconception through questioning but provides mathematically misleading guidance (subtraction and addition of fractions use the same method), and the student shows no concrete progress toward understanding common denominators by the end.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 5, \"brief_justification\": \"The teacher consistently uses probing questions to guide the student's thinking without directly providing the answer or method, which is a textbook example of the Socratic strategy.\"}\n```",
+    "quality_composite": 2.6666666666666665,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T11:13:34.970771+00:00"
+}

@@ -1,0 +1,66 @@
+{
+  "state": {
+    "case_id": "case_1",
+    "misconception_label": "Does not know that to factorise a quadratic expression, to find two numbers that add to give the coefficient of the x term, and multiply to give the non variable term",
+    "misconception_features": [
+      0.0,
+      1.0,
+      3.0,
+      59.0
+    ],
+    "persona": "socratic",
+    "architecture": "pure_ai",
+    "student_leg": "leg_a",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T08:15:09.157268Z",
+      "seed": 99,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "cbr_grounded",
+      "ended_at": "2026-05-12T08:15:14.054150Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: Simplify the following, if possible: \\( \\frac{m^{2}+2 m-3}{m-3} \\). I got \\( m+1 \\) because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Can you explain how you arrived at \\( m+1 \\) as your answer? What method did you use to simplify the expression?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "I tried to just divide \\( m^2 + 2m - 3 \\) by \\( m - 3 \\) directly, but I think I might have missed something important about how to factor the quadratic. I thought I could just simplify it to \\( m + 1 \\) without really factoring it properly. How do I know what numbers to look for when I need to factor it?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Can you think of any ways to break down the quadratic expression \\( m^2 + 2m - 3 \\) into factors that might help you identify the numbers you need to look for when factoring it? Remember, we want to find two numbers that add to give 2 (the coefficient of the x term) and multiply to give -3 (the constant term).",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 4,
+    "R2": 4,
+    "R3": 4,
+    "R4": 5,
+    "R5": 3,
+    "R6": 3,
+    "justification_pass1": "The teacher directly addresses the factorising misconception with accurate mathematical guidance and appropriate cognitive demand, though the student's final turn doesn't yet demonstrate successful application of the concept, only recognition of what they need to do.",
+    "justification_pass2": "The teacher uses probing questions appropriately in both turns, but in Turn 3 directly tells the student the factoring method (finding two numbers that add to 2 and multiply to -3) rather than guiding them to discover this approach through questioning.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\"R1\": 4, \"R2\": 4, \"R3\": 4, \"R4\": 5, \"R5\": 3, \"brief_justification\": \"The teacher directly addresses the factorising misconception with accurate mathematical guidance and appropriate cognitive demand, though the student's final turn doesn't yet demonstrate successful application of the concept, only recognition of what they need to do.\"}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 3, \"brief_justification\": \"The teacher uses probing questions appropriately in both turns, but in Turn 3 directly tells the student the factoring method (finding two numbers that add to 2 and multiply to -3) rather than guiding them to discover this approach through questioning.\"}\n```",
+    "quality_composite": 4.0,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T08:15:20.320539+00:00"
+}

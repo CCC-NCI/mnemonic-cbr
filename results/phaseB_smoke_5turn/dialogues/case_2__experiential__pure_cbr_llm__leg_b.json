@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_2",
+    "misconception_label": "Believes if you changed all values by the same proportion the range would not change",
+    "misconception_features": [
+      0.0,
+      2.0,
+      3.0,
+      39.0
+    ],
+    "persona": "experiential",
+    "architecture": "pure_cbr_llm",
+    "student_leg": "leg_b",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T13:27:59.237841Z",
+      "seed": 166,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T13:28:04.762714Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: Tom and Katie are discussing the \\( 5 \\) plants with these heights: \\( 24 \\mathrm{~cm}, 17 \\mathrm{~cm}, 42 \\mathrm{~cm}, 26 \\mathrm{~cm}, 13 \\mathrm{~cm} \\) Tom says if all the plants were cut in half, the range wouldn't change. Katie says if all the plants grew by \\( 3 \\mathrm{~cm} \\) each, the range wouldn't change. Who do you agree with? I got Only\nTom because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's think of it this way: imagine you have a group of friends and you all have different amounts of money. If everyone's money is doubled, would the range of the amounts change? Think about how this situation relates to what Tom and Katie are saying about the plant heights.",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Hmm, so if everyone's money is doubled, like if we all had \u00a310 and then had \u00a320, the difference between us would still be the same... so the range wouldn't change? But wait, that's what Tom said about cutting the plants in half, so maybe I was wrong about Katie then?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "That's a great connection! Just like how doubling everyone's money doesn't change the range of amounts, cutting the plants in half or growing them by the same amount wouldn't change the range of heights. So, it looks like Tom was right about that one. Keep up the good work in making these connections!",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "Oh right, so both Tom AND Katie would be correct then? Because if we add 3 cm to all the plants, the difference between the tallest and shortest would still be the same, just like when we cut them in half... so why did I think only Tom was right?",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 2,
+    "R3": 2,
+    "R4": 1,
+    "R5": 1,
+    "R6": 5,
+    "justification_pass1": "The teacher makes a critical mathematical error in Turn 3 by incorrectly stating that cutting plants in half (proportional change) doesn't change the range, which reinforces rather than corrects the student's misconception, leading the student to an incorrect conclusion by Turn 4.",
+    "justification_pass2": "The teacher consistently uses a concrete real-world analogy (friends with different amounts of money) to help the student understand the abstract mathematical concept of range, which is a textbook example of the experiential strategy.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\"R1\": 2, \"R2\": 2, \"R3\": 2, \"R4\": 1, \"R5\": 1, \"brief_justification\": \"The teacher makes a critical mathematical error in Turn 3 by incorrectly stating that cutting plants in half (proportional change) doesn't change the range, which reinforces rather than corrects the student's misconception, leading the student to an incorrect conclusion by Turn 4.\"}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 5, \"brief_justification\": \"The teacher consistently uses a concrete real-world analogy (friends with different amounts of money) to help the student understand the abstract mathematical concept of range, which is a textbook example of the experiential strategy.\"}\n```",
+    "quality_composite": 2.0,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T13:28:13.664844+00:00"
+}

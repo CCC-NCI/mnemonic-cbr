@@ -1,0 +1,53 @@
+{
+  "blind_id": "D3e50bc97a3",
+  "subset_row": {
+    "blind_id": "D3e50bc97a3",
+    "case_id": "case_10",
+    "persona": "rule_based",
+    "architecture": "hybrid",
+    "student_leg": "leg_a",
+    "llm_R5": "1",
+    "llm_quality_composite": "1.6666666666666667",
+    "llm_R6": "4",
+    "difficulty_band": "long",
+    "r5_band": "low",
+    "word_count": "76",
+    "attention_check_type": "",
+    "attention_check_rationale": "",
+    "file_path": "dialogues/case_10__rule_based__hybrid__leg_a.json"
+  },
+  "primary_score": {
+    "R1": 2,
+    "R2": 1,
+    "R3": 2,
+    "R4": 2,
+    "R5": 1,
+    "R6": 4,
+    "justification_pass1": "The teacher directly tells answers rather than engaging the student's reasoning about sign errors, provides mathematically confused explanations (conflating x\u00b2 terms with linear terms), and the student's questions suggest continued confusion about the expansion process rather than improvement in handling negative signs.",
+    "justification_pass2": "The teacher consistently provides direct corrective feedback on sign errors, explicitly states the rules for multiplying positive and negative numbers, and shows specific worked examples, which are core features of rule-based instruction, though could be slightly more systematic in presenting complete procedural steps.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\"R1\": 2, \"R2\": 1, \"R3\": 2, \"R4\": 2, \"R5\": 1, \"brief_justification\": \"The teacher directly tells answers rather than engaging the student's reasoning about sign errors, provides mathematically confused explanations (conflating x\u00b2 terms with linear terms), and the student's questions suggest continued confusion about the expansion process rather than improvement in handling negative signs.\"}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 4, \"brief_justification\": \"The teacher consistently provides direct corrective feedback on sign errors, explicitly states the rules for multiplying positive and negative numbers, and shows specific worked examples, which are core features of rule-based instruction, though could be slightly more systematic in presenting complete procedural steps.\"}\n```",
+    "quality_composite": 1.6666666666666667,
+    "is_complete": true
+  },
+  "secondary_score": {
+    "R1": 1,
+    "R2": 1,
+    "R3": 1,
+    "R4": 1,
+    "R5": 1,
+    "R6": 4,
+    "justification_pass1": "The teacher provides mathematically inaccurate corrections, fails to address the student's specific error, and offers low-level explanations, which causes the student's understanding of the expansion process to visibly regress.",
+    "justification_pass2": "The teacher consistently states explicit rules about signs in multiplication and provides direct corrective feedback on procedural errors, which are key components of this strategy.",
+    "judge_provider": "gemini",
+    "judge_model": "gemini-2.5-pro",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 1,\n  \"R2\": 1,\n  \"R3\": 1,\n  \"R4\": 1,\n  \"R5\": 1,\n  \"brief_justification\": \"The teacher provides mathematically inaccurate corrections, fails to address the student's specific error, and offers low-level explanations, which causes the student's understanding of the expansion process to visibly regress.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\n \"R6\": 4,\n \"brief_justification\": \"The teacher consistently states explicit rules about signs in multiplication and provides direct corrective feedback on procedural errors, which are key components of this strategy.\"\n}\n```"
+  }
+}

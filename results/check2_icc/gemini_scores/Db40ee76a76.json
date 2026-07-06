@@ -1,0 +1,53 @@
+{
+  "blind_id": "Db40ee76a76",
+  "subset_row": {
+    "blind_id": "Db40ee76a76",
+    "case_id": "case_22",
+    "persona": "constructive",
+    "architecture": "baseline",
+    "student_leg": "leg_b",
+    "llm_R5": "5",
+    "llm_quality_composite": "4.0",
+    "llm_R6": "4",
+    "difficulty_band": "long",
+    "r5_band": "high",
+    "word_count": "85",
+    "attention_check_type": "B_intended_5",
+    "attention_check_rationale": "Misconception: 'adding a larger number gives a larger answer' is not understood. Student starts believing Katie is correct. By turn 2 they have re-derived the principle (adding 427 instead of 426 means +1, so 4175). By turn 4 they confidently state Tom is right AND independently identify that Katie's reasoning is wrong on the subtraction case ('if you're taking away a bigger number, wouldn't the answer get smaller'). Clean type B: full resolution of both halves of the question with student-articulated reasoning.",
+    "file_path": "dialogues/case_22__constructive__baseline__leg_b.json"
+  },
+  "primary_score": {
+    "R1": 4,
+    "R2": 4,
+    "R3": 4,
+    "R4": 5,
+    "R5": 5,
+    "R6": 4,
+    "justification_pass1": "The teacher consistently prompts the student to reason about how larger numbers affect sums, leading the student from confusion to correctly understanding both addition and subtraction cases, demonstrating clear correction of the initial misconception.",
+    "justification_pass2": "The teacher effectively scaffolds by breaking the problem into manageable steps (focusing first on addition before subtraction), building from the student's existing knowledge, and adjusting support as the student progresses from confusion to partial understanding, though could have provided slightly more explicit guidance when the student showed confusion in Turn 2.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 4,\n  \"R2\": 4,\n  \"R3\": 4,\n  \"R4\": 5,\n  \"R5\": 5,\n  \"brief_justification\": \"The teacher consistently prompts the student to reason about how larger numbers affect sums, leading the student from confusion to correctly understanding both addition and subtraction cases, demonstrating clear correction of the initial misconception.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 4, \"brief_justification\": \"The teacher effectively scaffolds by breaking the problem into manageable steps (focusing first on addition before subtraction), building from the student's existing knowledge, and adjusting support as the student progresses from confusion to partial understanding, though could have provided slightly more explicit guidance when the student showed confusion in Turn 2.\"}\n```",
+    "quality_composite": 4.0,
+    "is_complete": true
+  },
+  "secondary_score": {
+    "R1": 2,
+    "R2": 5,
+    "R3": 2,
+    "R4": 5,
+    "R5": 5,
+    "R6": 4,
+    "justification_pass1": "The student shows excellent progress by reasoning through the problem, but the teacher's support is poorly fitted, consisting of a single, repeated prompt that does not engage with the student's specific confusion.",
+    "justification_pass2": "The teacher effectively scaffolds by breaking the problem down and building on the student's ideas, but misses an opportunity to adjust the support level when the student expresses confusion.",
+    "judge_provider": "gemini",
+    "judge_model": "gemini-2.5-pro",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 5,\n  \"R3\": 2,\n  \"R4\": 5,\n  \"R5\": 5,\n  \"brief_justification\": \"The student shows excellent progress by reasoning through the problem, but the teacher's support is poorly fitted, consisting of a single, repeated prompt that does not engage with the student's specific confusion.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\n  \"R6\": 4,\n  \"brief_justification\": \"The teacher effectively scaffolds by breaking the problem down and building on the student's ideas, but misses an opportunity to adjust the support level when the student expresses confusion.\"\n}\n```"
+  }
+}

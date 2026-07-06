@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_19",
+    "misconception_label": "When subtracting fractions, subtracts the numerators and multiplies the denominators",
+    "misconception_features": [
+      0.0,
+      19.0,
+      3.0,
+      104.0
+    ],
+    "persona": "constructive",
+    "architecture": "pure_cbr_llm",
+    "student_leg": "leg_b",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T16:52:07.820606Z",
+      "seed": 1006,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T16:52:12.918811Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: Express the following as a single fraction, writing your answer as simply as possible: \\( \\frac{1}{s}-\\frac{t}{3} \\). I got \\( \\frac{1-t}{3 s} \\) because I treated the fractions like ordinary numbers.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "It seems like you are treating the fractions as ordinary numbers when subtracting. Let's focus on why that approach may not work for fractions. Can you think about how we can subtract fractions in a different way that considers the numerators and denominators separately?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Um, so like... do we need to make the denominators the same first before we subtract? Because I think I remember doing that with normal fractions like 1/2 - 1/3, but I'm not sure how to do it when there are letters involved like *s* and *3*.",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "That's a great observation! When subtracting fractions with different denominators, it can be helpful to make the denominators the same. Let's walk through how we can do that with the fractions \\( \\frac{1}{s} \\) and \\( \\frac{t}{3} \\) in this problem.",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "Oh right, yeah! So like, would I need to multiply the first fraction by 3/3 and the second one by s/s to make them both have the same denominator? So it would be like... 3/3s minus st/3s? Is that right?",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 4,
+    "R2": 3,
+    "R3": 4,
+    "R4": 5,
+    "R5": 5,
+    "R6": 5,
+    "justification_pass1": "The teacher effectively addresses the specific misconception about treating fractions as ordinary numbers, uses appropriate questioning to elicit student reasoning, and the student demonstrates clear progression from the initial error to correctly identifying the need for common denominators and successfully applying the method.",
+    "justification_pass2": "The teacher exemplifies the constructive strategy by identifying the student's misconception, breaking down the problem into manageable steps (first establishing the need for common denominators, then guiding toward the specific application), and adjusting support based on the student's progress from confusion to partial understanding.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 4,\n  \"R2\": 3,\n  \"R3\": 4,\n  \"R4\": 5,\n  \"R5\": 5,\n  \"brief_justification\": \"The teacher effectively addresses the specific misconception about treating fractions as ordinary numbers, uses appropriate questioning to elicit student reasoning, and the student demonstrates clear progression from the initial error to correctly identifying the need for common denominators and successfully applying the method.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 5, \"brief_justification\": \"The teacher exemplifies the constructive strategy by identifying the student's misconception, breaking down the problem into manageable steps (first establishing the need for common denominators, then guiding toward the specific application), and adjusting support based on the student's progress from confusion to partial understanding.\"}\n```",
+    "quality_composite": 3.6666666666666665,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T16:52:22.411930+00:00"
+}

@@ -1,0 +1,66 @@
+{
+  "state": {
+    "case_id": "case_12",
+    "misconception_label": "Thinks alternate angles are always equal",
+    "misconception_features": [
+      0.0,
+      12.0,
+      3.0,
+      25.0
+    ],
+    "persona": "rule_based",
+    "architecture": "hybrid",
+    "student_leg": "leg_b",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T10:13:01.621958Z",
+      "seed": 682,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-12T10:13:06.006031Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: Tom and Katie are arguing about alternate angles. Tom says angles \\( p \\) and \\( q \\) are alternate. Katie says angles \\( p \\) and \\( q \\) are equal. Who is correct? ![Shows two non parallel lines that are intersected by another line. Angles P and Q are both on the outside of the lines and on opposite sides of the transversal.](). I got Only\nKatie because I assumed all the angles in the figure are equal.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Actually, in this case, alternate angles are not always equal. Alternate angles are formed when a transversal intersects two lines, and they are equal only when the two lines are parallel. Since the lines in the figure are not parallel, angles \\( p \\) and \\( q \\) are not equal. Remember, alternate angles are equal only when the lines are parallel.",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Oh right, so Tom is correct then? Because they ARE alternate angles, but they're just not equal because the lines aren't parallel? So like, alternate angles are only equal when you have parallel lines?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "That's correct! Tom is correct in this case because angles \\( p \\) and \\( q \\) are indeed alternate angles since they are on opposite sides of the transversal. Remember, alternate angles are only equal when the lines they lie on are parallel. Great job understanding that concept!",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 4,
+    "R2": 1,
+    "R3": 2,
+    "R4": 5,
+    "R5": 5,
+    "R6": 5,
+    "justification_pass1": "The teacher directly addresses the misconception that alternate angles are always equal by explaining the parallel lines condition, and the student demonstrates clear improvement by correctly distinguishing between the existence of alternate angles and their equality, though the teacher simply tells rather than prompts reasoning.",
+    "justification_pass2": "The teacher consistently states explicit rules about alternate angles and parallel lines, provides direct corrective feedback on the student's procedural error of assuming all angles are equal, and clearly explains the conditions under which alternate angles are equal, which is textbook rule-based instruction.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 4,\n  \"R2\": 1,\n  \"R3\": 2,\n  \"R4\": 5,\n  \"R5\": 5,\n  \"brief_justification\": \"The teacher directly addresses the misconception that alternate angles are always equal by explaining the parallel lines condition, and the student demonstrates clear improvement by correctly distinguishing between the existence of alternate angles and their equality, though the teacher simply tells rather than prompts reasoning.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 5, \"brief_justification\": \"The teacher consistently states explicit rules about alternate angles and parallel lines, provides direct corrective feedback on the student's procedural error of assuming all angles are equal, and clearly explains the conditions under which alternate angles are equal, which is textbook rule-based instruction.\"}\n```",
+    "quality_composite": 2.3333333333333335,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T10:13:13.443914+00:00"
+}

@@ -1,0 +1,66 @@
+{
+  "state": {
+    "case_id": "case_15",
+    "misconception_label": "Has used slant height and base to find area of a triangle rather than perpendicular height and base",
+    "misconception_features": [
+      0.0,
+      15.0,
+      2.0,
+      94.0
+    ],
+    "persona": "experiential",
+    "architecture": "baseline",
+    "student_leg": "leg_b",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T10:37:06.015949Z",
+      "seed": 814,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-12T10:37:11.537937Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: How would you calculate the area of this triangle? ![A triangle, base 12m. All three sides are equal.](). I got \\( \\frac{12 \\times 12}{2} \\) because I added the side lengths instead of multiplying.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "If you were looking at a real-life triangle with a base of 12 meters, would measuring the slant height give you the same answer as measuring the perpendicular height?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Um, no I don't think so... the slant height would be longer than the perpendicular height, right? But I'm still confused about which one I'm supposed to use for the area formula - is it always the perpendicular height?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Imagine you were calculating the area of a triangle using a real-life object like a book. If you measured the height from the base to the top corner perpendicular to the base, would that be the same as measuring the length of the side of the book as the slant height?",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 4,
+    "R2": 3,
+    "R3": 2,
+    "R4": 5,
+    "R5": 4,
+    "R6": 5,
+    "justification_pass1": "The teacher effectively addresses the perpendicular vs. slant height misconception and the student shows clear progress in understanding (Turn 2), but the teacher's Turn 3 response doesn't advance beyond what was already established and uses a confusing analogy that doesn't fit the scaffolding needs the student demonstrated.",
+    "justification_pass2": "The teacher consistently uses concrete real-world analogies (real-life triangles, books as physical objects) to help the student understand the abstract distinction between perpendicular and slant height, which is a textbook example of the experiential strategy.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 4,\n  \"R2\": 3,\n  \"R3\": 2,\n  \"R4\": 5,\n  \"R5\": 4,\n  \"brief_justification\": \"The teacher effectively addresses the perpendicular vs. slant height misconception and the student shows clear progress in understanding (Turn 2), but the teacher's Turn 3 response doesn't advance beyond what was already established and uses a confusing analogy that doesn't fit the scaffolding needs the student demonstrated.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 5, \"brief_justification\": \"The teacher consistently uses concrete real-world analogies (real-life triangles, books as physical objects) to help the student understand the abstract distinction between perpendicular and slant height, which is a textbook example of the experiential strategy.\"}\n```",
+    "quality_composite": 3.0,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T10:37:18.194378+00:00"
+}

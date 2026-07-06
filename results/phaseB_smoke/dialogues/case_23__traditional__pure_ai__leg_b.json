@@ -1,0 +1,66 @@
+{
+  "state": {
+    "case_id": "case_23",
+    "misconception_label": "Confuses rest and movement on a distance time graph",
+    "misconception_features": [
+      0.0,
+      23.0,
+      3.0,
+      62.0
+    ],
+    "persona": "traditional",
+    "architecture": "pure_ai",
+    "student_leg": "leg_b",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T11:58:49.614144Z",
+      "seed": 1240,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-12T11:58:54.853700Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: This graph shows how far Fido the dog is from his home. What might the negative-sloping section represent? ![A graph with time (secs) on the horizontal axis and distance (m) on the vertical axis. The graph starts at the origin, travels in a straight line up and right, travels horizontally, then travels in a straight line down and right back to the x-axis. ](). I got Fido has fallen asleep because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's clarify the concept of rest and movement on a distance-time graph. When the graph is horizontal, it represents rest, meaning Fido is not moving. When the graph is sloping downwards, it indicates that Fido is moving away from his home. Can you tell me what the negative-sloping section might represent now?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Oh right, so the downward slope means he's moving, not sleeping. But wait... if the line is going down, does that mean the distance is getting smaller? So Fido would be getting closer to his home, not moving away from it?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Yes, that's correct. When the line is sloping downwards on a distance-time graph, it means that Fido is getting closer to his home, not moving away from it. So in this case, the negative-sloping section represents Fido moving towards his home. Can you think of a scenario where Fido might be moving towards his home?",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 2,
+    "R3": 2,
+    "R4": 1,
+    "R5": 3,
+    "R6": 2,
+    "justification_pass1": "The teacher makes a critical domain error in Turn 1 (stating downward slope means moving away when it means moving closer), though this is corrected in Turn 3, and while the student does show improvement by self-correcting the error, the teacher primarily tells rather than elicits reasoning.",
+    "justification_pass2": "While the teacher does check understanding and attempts to explain concepts, they make a significant factual error in Turn 1 (stating downward slope means moving away when it means moving closer), which contradicts the traditional strategy's emphasis on clear, accurate direct explanation.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 2,\n  \"R3\": 2,\n  \"R4\": 1,\n  \"R5\": 3,\n  \"brief_justification\": \"The teacher makes a critical domain error in Turn 1 (stating downward slope means moving away when it means moving closer), though this is corrected in Turn 3, and while the student does show improvement by self-correcting the error, the teacher primarily tells rather than elicits reasoning.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 2, \"brief_justification\": \"While the teacher does check understanding and attempts to explain concepts, they make a significant factual error in Turn 1 (stating downward slope means moving away when it means moving closer), which contradicts the traditional strategy's emphasis on clear, accurate direct explanation.\"}\n```",
+    "quality_composite": 2.0,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T11:59:02.406879+00:00"
+}

@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_23",
+    "misconception_label": "Confuses rest and movement on a distance time graph",
+    "misconception_features": [
+      0.0,
+      23.0,
+      3.0,
+      62.0
+    ],
+    "persona": "constructive",
+    "architecture": "pure_cbr_llm",
+    "student_leg": "leg_a",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T17:35:24.296830Z",
+      "seed": 1205,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T17:35:29.617212Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: This graph shows how far Fido the dog is from his home. What might the negative-sloping section represent? ![A graph with time (secs) on the horizontal axis and distance (m) on the vertical axis. The graph starts at the origin, travels in a straight line up and right, travels horizontally, then travels in a straight line down and right back to the x-axis. ](). I got Fido has fallen asleep because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "It seems like you may be confusing rest and movement on the distance-time graph. Let's focus on how to interpret the different sections of the graph to determine Fido's movements accurately. Can you think about how the slope of the graph relates to Fido's motion in each section?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Okay, I think I get that the slope shows how Fido is moving. So when the line goes up, he\u2019s getting further away from home, and when it\u2019s flat, he\u2019s not moving at all. But I\u2019m still confused about the negative slope part. If he\u2019s moving back towards home, why would I think he\u2019s asleep?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "It's great that you understand how the slope reflects Fido's movement. Let's focus on the negative slope section. Think about how the direction of the slope relates to Fido's motion towards home. What does a negative slope indicate in terms of Fido's distance from home?",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "Okay, so I think a negative slope means Fido is getting closer to home, right? But if he\u2019s moving back towards home, why did I think he was asleep? Does that mean he was just resting before he started coming back? I'm still a bit confused about how to tell the difference between resting and moving back.",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 4,
+    "R2": 3,
+    "R3": 3,
+    "R4": 5,
+    "R5": 4,
+    "R6": 4,
+    "justification_pass1": "The teacher explicitly names and addresses the specific misconception about rest versus movement, the mathematical content is accurate, and the student progresses from thinking the dog is asleep during the negative slope to correctly identifying it means moving closer to home, though some confusion about distinguishing rest from movement remains.",
+    "justification_pass2": "The teacher effectively scaffolds by breaking down graph interpretation into manageable steps (slope meaning, then direction), builds on student's correct understanding, and adjusts questioning based on student progress, though could provide slightly more explicit support when confusion persists.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\"R1\": 4, \"R2\": 3, \"R3\": 3, \"R4\": 5, \"R5\": 4, \"brief_justification\": \"The teacher explicitly names and addresses the specific misconception about rest versus movement, the mathematical content is accurate, and the student progresses from thinking the dog is asleep during the negative slope to correctly identifying it means moving closer to home, though some confusion about distinguishing rest from movement remains.\"}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 4, \"brief_justification\": \"The teacher effectively scaffolds by breaking down graph interpretation into manageable steps (slope meaning, then direction), builds on student's correct understanding, and adjusts questioning based on student progress, though could provide slightly more explicit support when confusion persists.\"}\n```",
+    "quality_composite": 3.3333333333333335,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T17:35:37.119742+00:00"
+}

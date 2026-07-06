@@ -1,0 +1,66 @@
+{
+  "state": {
+    "case_id": "case_20",
+    "misconception_label": "Adds when calculating volume instead of multiplying",
+    "misconception_features": [
+      0.0,
+      20.0,
+      1.0,
+      58.0
+    ],
+    "persona": "experiential",
+    "architecture": "hybrid",
+    "student_leg": "leg_b",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T11:26:50.249818Z",
+      "seed": 1072,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-12T11:26:54.886588Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: The volume of this cuboid is \\( 30 \\mathrm{~cm}^{3} \\) What length should replace the star? ![A cuboid, depth 2cm and height 3cm. The width is labelled with a star.](). I got \\( 25 \\mathrm{~cm} \\) because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's think of the volume of a cuboid like filling up a swimming pool. If you add water to a pool with a depth of 2cm and a height of 3cm, you wouldn't just add the numbers together, right? You'd need to multiply them to find the total volume. So, let's multiply the dimensions to find the correct length to replace the star in this cuboid problem.",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Oh right, so I need to multiply instead of add! So would it be like 2 times 3 times the star equals 30? That would make the star 5 cm then, wouldn't it?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "That's right! Just like when you fill up a swimming pool, you multiply the dimensions to find the total volume. So, to find the length that replaces the star, you need to multiply 2cm by 3cm, not add them together. Keep up the great work!",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 4,
+    "R2": 2,
+    "R3": 3,
+    "R4": 5,
+    "R5": 5,
+    "R6": 4,
+    "justification_pass1": "The teacher directly addresses the add-versus-multiply misconception with a clear analogy, the mathematics is correct, and the student successfully corrects their approach and finds the right answer, though the teacher could have pushed for deeper reasoning rather than essentially telling the student what to do.",
+    "justification_pass2": "The teacher consistently uses a concrete real-world analogy (filling a swimming pool) to explain the abstract concept of volume calculation, though the analogy could have been developed more thoroughly to be a textbook example.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 4,\n  \"R2\": 2,\n  \"R3\": 3,\n  \"R4\": 5,\n  \"R5\": 5,\n  \"brief_justification\": \"The teacher directly addresses the add-versus-multiply misconception with a clear analogy, the mathematics is correct, and the student successfully corrects their approach and finds the right answer, though the teacher could have pushed for deeper reasoning rather than essentially telling the student what to do.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 4, \"brief_justification\": \"The teacher consistently uses a concrete real-world analogy (filling a swimming pool) to explain the abstract concept of volume calculation, though the analogy could have been developed more thoroughly to be a textbook example.\"}\n```",
+    "quality_composite": 3.0,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T11:27:01.351454+00:00"
+}

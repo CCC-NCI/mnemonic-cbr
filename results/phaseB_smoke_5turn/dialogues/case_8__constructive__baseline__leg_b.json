@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_8",
+    "misconception_label": "Does not find a common denominator when adding/subtracting fractions",
+    "misconception_features": [
+      0.0,
+      8.0,
+      3.0,
+      88.0
+    ],
+    "persona": "constructive",
+    "architecture": "baseline",
+    "student_leg": "leg_b",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T14:53:11.225212Z",
+      "seed": 454,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T14:53:15.777667Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: \\( \\frac{4}{5}-\\frac{1}{3}=\\frac{\\bigstar}{15} \\) What should replace the star? I got \\( 5 \\) because I treated the fractions like ordinary numbers.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's go back to the part you do know, and build the next step from there. Remember to find a common denominator when adding or subtracting fractions.",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Oh right, yeah... so I need to find a common denominator first. Um, so would that be like 15 because that's what's already in the answer? But I'm still not sure how to work out what goes on top - do I just subtract the 4 and 1 like I did before?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's continue building on what you've just realized about finding a common denominator. Think about how you can adjust the fractions to have the same denominator before adding or subtracting them.",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "Um, so like... do I need to change the top and bottom numbers of each fraction to make them both have 15 on the bottom? Like, would I multiply 4/5 by something to get it to have 15 as the denominator?",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 2,
+    "R3": 2,
+    "R4": 5,
+    "R5": 3,
+    "R6": 4,
+    "justification_pass1": "The teacher correctly identifies the need for a common denominator but doesn't directly address the student's specific error of subtracting numerators without adjustment (4-1=3, not 5), and while the student shows some progress toward understanding the procedure, they still haven't demonstrated they can correctly convert the fractions or complete the subtraction.",
+    "justification_pass2": "The teacher consistently scaffolds by breaking the problem into steps (common denominator first, then adjustment), builds on the student's existing knowledge, and adjusts support based on progress, though could have been slightly more explicit about the specific next step when the student showed readiness in Turn 4.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 2,\n  \"R3\": 2,\n  \"R4\": 5,\n  \"R5\": 3,\n  \"brief_justification\": \"The teacher correctly identifies the need for a common denominator but doesn't directly address the student's specific error of subtracting numerators without adjustment (4-1=3, not 5), and while the student shows some progress toward understanding the procedure, they still haven't demonstrated they can correctly convert the fractions or complete the subtraction.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\n  \"R6\": 4,\n  \"brief_justification\": \"The teacher consistently scaffolds by breaking the problem into steps (common denominator first, then adjustment), builds on the student's existing knowledge, and adjusts support based on progress, though could have been slightly more explicit about the specific next step when the student showed readiness in Turn 4.\"\n}\n```",
+    "quality_composite": 2.0,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T14:53:23.230323+00:00"
+}

@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_22",
+    "misconception_label": "Does not realise that adding a larger number gives a larger answer",
+    "misconception_features": [
+      0.0,
+      22.0,
+      2.0,
+      98.0
+    ],
+    "persona": "experiential",
+    "architecture": "hybrid",
+    "student_leg": "leg_a",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T17:27:56.280132Z",
+      "seed": 1171,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T17:28:03.238071Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: Tom and Katie are discussing related calculations Tom says if you know that \\( 3748+426=4174 \\), then \\( 3748+427 \\) must equal \\( \\mathbf{4 1 7 5} \\) Katie says if you know that \\( 3748-426=3322 \\), then \\( 3748 \\) - \\( 427 \\) must equal \\( \\mathbf{3 3 2 3} \\) Who is correct? I got Only Katie because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Imagine you and a friend are sharing a pizza. If you start with 8 slices and your friend gives you 4 more slices, how many slices will you have in total? Think about how adding more slices increases the total amount just like adding a larger number in your calculations.",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Okay, I think I get what you're saying about the pizza. If I start with 8 slices and get 4 more, I would have 12 slices, which is more than I started with. So, adding more does make a bigger total. But I still don\u2019t really see why Tom's answer is right. Can you explain how \\( 3748 + 427 \\) is bigger than \\( 3748 + 426 \\)?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Imagine you and your friend are playing a game where you both start with a certain number of points. If your friend adds 4 points to their score and you add 1 more point to yours, who will have the higher total? Just like with the pizza slices, adding a larger number will give you a bigger total in this scenario as well. So, in the same way, adding 427 to 3748 will give you a larger answer than adding 426.",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "I think I'm starting to get it a bit more. So, if I add 427 instead of 426, I should end up with a bigger number, just like with the pizza and the points. But can you explain again how we actually find out what \\( 3748 + 427 \\) is? Like, how do we do the math to see that it\u2019s bigger?",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 4,
+    "R2": 2,
+    "R3": 2,
+    "R4": 5,
+    "R5": 3,
+    "R6": 5,
+    "justification_pass1": "The teacher effectively addresses the specific misconception through concrete analogies, but relies heavily on telling rather than eliciting reasoning, and the student shows only partial understanding by Turn 4, still asking how to verify the calculation rather than demonstrating independent application of the concept.",
+    "justification_pass2": "The teacher consistently uses concrete, everyday analogies (pizza slices, game points) to explain the abstract concept of how adding larger numbers affects totals, which is a textbook example of the experiential strategy.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\"R1\": 4, \"R2\": 2, \"R3\": 2, \"R4\": 5, \"R5\": 3, \"brief_justification\": \"The teacher effectively addresses the specific misconception through concrete analogies, but relies heavily on telling rather than eliciting reasoning, and the student shows only partial understanding by Turn 4, still asking how to verify the calculation rather than demonstrating independent application of the concept.\"}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 5, \"brief_justification\": \"The teacher consistently uses concrete, everyday analogies (pizza slices, game points) to explain the abstract concept of how adding larger numbers affects totals, which is a textbook example of the experiential strategy.\"}\n```",
+    "quality_composite": 2.6666666666666665,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T17:28:09.894883+00:00"
+}

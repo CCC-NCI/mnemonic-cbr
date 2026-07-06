@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_23",
+    "misconception_label": "Confuses rest and movement on a distance time graph",
+    "misconception_features": [
+      0.0,
+      23.0,
+      3.0,
+      62.0
+    ],
+    "persona": "experiential",
+    "architecture": "pure_cbr_llm",
+    "student_leg": "leg_a",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T17:37:28.737303Z",
+      "seed": 1215,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T17:37:33.514793Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: This graph shows how far Fido the dog is from his home. What might the negative-sloping section represent? ![A graph with time (secs) on the horizontal axis and distance (m) on the vertical axis. The graph starts at the origin, travels in a straight line up and right, travels horizontally, then travels in a straight line down and right back to the x-axis. ](). I got Fido has fallen asleep because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Imagine Fido as a delivery dog with a package. The negative-sloping section could represent Fido running back towards his home to deliver the package. Just like when we read values off a speed-time graph, we need to focus on the correct axes to understand Fido's movements accurately.",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Oh, I think I get it a bit better now! So, when the line goes down, it means Fido is actually moving back home instead of just resting? But what does the horizontal part mean then? Is he just staying still or something?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Imagine Fido as a delivery dog with a package again. The horizontal part could represent Fido waiting at his home to pick up a new package to deliver. Just like how we calculate the distance traveled using a speed-time graph, we need to consider the area under the graph to understand Fido's movements accurately.",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "Okay, I think I'm starting to understand! So when the line goes down, Fido is actually moving back home, and the flat part means he's just waiting. But what if he was running really fast? Would that change how the graph looks?",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 1,
+    "R3": 2,
+    "R4": 2,
+    "R5": 4,
+    "R6": 4,
+    "justification_pass1": "The teacher directly tells answers rather than eliciting reasoning, introduces confusing and inaccurate analogies about speed-time graphs and areas under curves that don't apply to distance-time graphs, but the student does show improvement in understanding that downward slopes mean movement back home rather than rest.",
+    "justification_pass2": "The teacher consistently uses a concrete real-world analogy (Fido as a delivery dog with packages) to explain the abstract graph concepts, effectively grounding the mathematical representation in an everyday scenario that the student can visualize.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 1,\n  \"R3\": 2,\n  \"R4\": 2,\n  \"R5\": 4,\n  \"brief_justification\": \"The teacher directly tells answers rather than eliciting reasoning, introduces confusing and inaccurate analogies about speed-time graphs and areas under curves that don't apply to distance-time graphs, but the student does show improvement in understanding that downward slopes mean movement back home rather than rest.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 4, \"brief_justification\": \"The teacher consistently uses a concrete real-world analogy (Fido as a delivery dog with packages) to explain the abstract graph concepts, effectively grounding the mathematical representation in an everyday scenario that the student can visualize.\"}\n```",
+    "quality_composite": 1.6666666666666667,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T17:37:40.232236+00:00"
+}

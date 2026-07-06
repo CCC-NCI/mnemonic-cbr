@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_15",
+    "misconception_label": "Has used slant height and base to find area of a triangle rather than perpendicular height and base",
+    "misconception_features": [
+      0.0,
+      15.0,
+      2.0,
+      94.0
+    ],
+    "persona": "experiential",
+    "architecture": "pure_cbr_llm",
+    "student_leg": "leg_a",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T16:11:32.311703Z",
+      "seed": 815,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T16:11:37.055354Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: How would you calculate the area of this triangle? ![A triangle, base 12m. All three sides are equal.](). I got \\( \\frac{12 \\times 12}{2} \\) because I added the side lengths instead of multiplying.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Imagine you're building a roof for a house with a triangular shape. The height of the roof is the perpendicular height, not the slant height. Just like you need the correct height for the roof to fit properly, you also need the perpendicular height to calculate the area of the triangle accurately.",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Oh, I see what you mean about the roof! So, the perpendicular height is like the straight up height from the base to the top point, right? But how do I find that height if I only know the sides of the triangle?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Think of the perpendicular height as the distance from the base to the highest point of the triangle, like measuring the height of a mountain from its base to the peak. To find this height, you can use the Pythagorean theorem and the lengths of the sides of the triangle. Let's work through it together to find the correct perpendicular height.",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "Okay, I think I get that the perpendicular height is really important for finding the area. But I'm still a bit confused about how to actually find that height using the sides of the triangle. Can you show me how to use the Pythagorean theorem for this?",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 2,
+    "R3": 2,
+    "R4": 4,
+    "R5": 2,
+    "R6": 5,
+    "justification_pass1": "The teacher uses metaphors to explain perpendicular height but never directly addresses the student's actual misconception (using slant height instead of perpendicular height), and while the student shows some conceptual understanding by Turn 4, they remain dependent on the teacher to show them the procedure rather than reasoning through it themselves.",
+    "justification_pass2": "The teacher consistently grounds every explanation in concrete real-world analogies (building a roof, measuring a mountain's height) to help the student understand the abstract concept of perpendicular height, which is a textbook example of the experiential strategy.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 2,\n  \"R3\": 2,\n  \"R4\": 4,\n  \"R5\": 2,\n  \"brief_justification\": \"The teacher uses metaphors to explain perpendicular height but never directly addresses the student's actual misconception (using slant height instead of perpendicular height), and while the student shows some conceptual understanding by Turn 4, they remain dependent on the teacher to show them the procedure rather than reasoning through it themselves.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 5, \"brief_justification\": \"The teacher consistently grounds every explanation in concrete real-world analogies (building a roof, measuring a mountain's height) to help the student understand the abstract concept of perpendicular height, which is a textbook example of the experiential strategy.\"}\n```",
+    "quality_composite": 2.0,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T16:11:43.779346+00:00"
+}

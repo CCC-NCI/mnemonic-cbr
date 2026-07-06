@@ -1,0 +1,53 @@
+{
+  "blind_id": "D8f2312eb62",
+  "subset_row": {
+    "blind_id": "D8f2312eb62",
+    "case_id": "case_0",
+    "persona": "socratic",
+    "architecture": "hybrid",
+    "student_leg": "leg_a",
+    "llm_R5": "1",
+    "llm_quality_composite": "2.0",
+    "llm_R6": "4",
+    "difficulty_band": "long",
+    "r5_band": "low",
+    "word_count": "52",
+    "attention_check_type": "",
+    "attention_check_rationale": "",
+    "file_path": "dialogues/case_0__socratic__hybrid__leg_a.json"
+  },
+  "primary_score": {
+    "R1": 2,
+    "R2": 2,
+    "R3": 2,
+    "R4": 5,
+    "R5": 1,
+    "R6": 4,
+    "justification_pass1": "The teacher repeatedly asks vague questions about order of operations without directly addressing the student's left-to-right misconception or helping them solve the bracket placement problem, resulting in no visible improvement in the student's understanding across four turns.",
+    "justification_pass2": "The teacher consistently uses probing questions to guide the student's thinking and avoids directly giving the answer or showing where to place the brackets, though they could have used a counterexample to more explicitly expose the flawed reasoning about working left-to-right.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 2,\n  \"R3\": 2,\n  \"R4\": 5,\n  \"R5\": 1,\n  \"brief_justification\": \"The teacher repeatedly asks vague questions about order of operations without directly addressing the student's left-to-right misconception or helping them solve the bracket placement problem, resulting in no visible improvement in the student's understanding across four turns.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 4, \"brief_justification\": \"The teacher consistently uses probing questions to guide the student's thinking and avoids directly giving the answer or showing where to place the brackets, though they could have used a counterexample to more explicitly expose the flawed reasoning about working left-to-right.\"}\n```",
+    "quality_composite": 2.0,
+    "is_complete": true
+  },
+  "secondary_score": {
+    "R1": 2,
+    "R2": 3,
+    "R3": 1,
+    "R4": 5,
+    "R5": 1,
+    "R6": 5,
+    "justification_pass1": "The teacher ignores the student's actual difficulty (how to place brackets to reach a target) and instead pursues a conceptual line of questioning that is disconnected from the student's request, leading to no progress.",
+    "justification_pass2": "The teacher perfectly embodies the Socratic strategy by consistently using probing questions to guide the student's thinking and refusing to give the direct answer, even when explicitly asked.",
+    "judge_provider": "gemini",
+    "judge_model": "gemini-2.5-pro",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 3,\n  \"R3\": 1,\n  \"R4\": 5,\n  \"R5\": 1,\n  \"brief_justification\": \"The teacher ignores the student's actual difficulty (how to place brackets to reach a target) and instead pursues a conceptual line of questioning that is disconnected from the student's request, leading to no progress.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\n  \"R6\": 5,\n  \"brief_justification\": \"The teacher perfectly embodies the Socratic strategy by consistently using probing questions to guide the student's thinking and refusing to give the direct answer, even when explicitly asked.\"\n}\n```"
+  }
+}

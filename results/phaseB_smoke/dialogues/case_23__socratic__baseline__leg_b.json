@@ -1,0 +1,66 @@
+{
+  "state": {
+    "case_id": "case_23",
+    "misconception_label": "Confuses rest and movement on a distance time graph",
+    "misconception_features": [
+      0.0,
+      23.0,
+      3.0,
+      62.0
+    ],
+    "persona": "socratic",
+    "architecture": "baseline",
+    "student_leg": "leg_b",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T11:50:09.115023Z",
+      "seed": 1194,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-12T11:50:12.940615Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: This graph shows how far Fido the dog is from his home. What might the negative-sloping section represent? ![A graph with time (secs) on the horizontal axis and distance (m) on the vertical axis. The graph starts at the origin, travels in a straight line up and right, travels horizontally, then travels in a straight line down and right back to the x-axis. ](). I got Fido has fallen asleep because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let me ask you this: What if Fido was moving in one direction during the negative-sloping section of the graph? How would that change your interpretation?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Oh right, so if he's moving... does that mean the line going down means he's getting closer to home? But I'm confused because I thought a line going down meant something bad was happening, like he was falling or something?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let me ask you this: What if Fido was moving towards his home during the negative-sloping section? How does that change your understanding of the graph?",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 2,
+    "R3": 2,
+    "R4": 5,
+    "R5": 3,
+    "R6": 5,
+    "justification_pass1": "The teacher asks leading questions that hint at the answer rather than addressing the student's specific confusion about rest vs. movement, and while the student shows some progress in Turn 2 by recognizing movement toward home, the teacher's repetitive questioning in Turn 3 doesn't build on this emerging understanding or clarify the core misconception about what horizontal lines represent.",
+    "justification_pass2": "The teacher consistently uses probing questions to guide the student toward the correct interpretation without directly stating the answer, and subtly challenges the student's misconception about downward slopes representing 'something bad' by redirecting attention to what movement toward home would mean on the graph.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\"R1\": 2, \"R2\": 2, \"R3\": 2, \"R4\": 5, \"R5\": 3, \"brief_justification\": \"The teacher asks leading questions that hint at the answer rather than addressing the student's specific confusion about rest vs. movement, and while the student shows some progress in Turn 2 by recognizing movement toward home, the teacher's repetitive questioning in Turn 3 doesn't build on this emerging understanding or clarify the core misconception about what horizontal lines represent.\"}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 5, \"brief_justification\": \"The teacher consistently uses probing questions to guide the student toward the correct interpretation without directly stating the answer, and subtly challenges the student's misconception about downward slopes representing 'something bad' by redirecting attention to what movement toward home would mean on the graph.\"}\n```",
+    "quality_composite": 2.0,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T11:50:20.558914+00:00"
+}

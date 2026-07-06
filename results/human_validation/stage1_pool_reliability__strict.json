@@ -1,0 +1,25 @@
+{
+  "r5": {
+    "n_ratings": 427,
+    "n_raters": 33,
+    "n_targets": 140,
+    "k_mean": 3.05,
+    "sigma2_target": 0.11721550493295542,
+    "sigma2_rater": 0.05681102430604831,
+    "sigma2_error": 0.5324627261371614,
+    "icc_2_1": 0.1659126505335808,
+    "icc_2_k": 0.37760292481244717
+  },
+  "r2": {
+    "n_ratings": 427,
+    "n_raters": 33,
+    "n_targets": 140,
+    "k_mean": 3.05,
+    "sigma2_target": 0.2945580032908216,
+    "sigma2_rater": 0.16422750892739343,
+    "sigma2_error": 0.7113363864017719,
+    "icc_2_1": 0.251732749928205,
+    "icc_2_k": 0.5064369940612036
+  },
+  "_notes": "Two-way random-effects ICC via statsmodels MixedLM variance components. Sparse rater\u00d7dialogue design; k_mean = observed raters per dialogue."
+}

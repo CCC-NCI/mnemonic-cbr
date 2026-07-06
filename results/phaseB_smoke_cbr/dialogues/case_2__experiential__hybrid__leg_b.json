@@ -1,0 +1,66 @@
+{
+  "state": {
+    "case_id": "case_2",
+    "misconception_label": "Believes if you changed all values by the same proportion the range would not change",
+    "misconception_features": [
+      0.0,
+      2.0,
+      3.0,
+      39.0
+    ],
+    "persona": "experiential",
+    "architecture": "hybrid",
+    "student_leg": "leg_b",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T08:29:13.036393Z",
+      "seed": 172,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "cbr_grounded",
+      "ended_at": "2026-05-12T08:29:18.644673Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: Tom and Katie are discussing the \\( 5 \\) plants with these heights: \\( 24 \\mathrm{~cm}, 17 \\mathrm{~cm}, 42 \\mathrm{~cm}, 26 \\mathrm{~cm}, 13 \\mathrm{~cm} \\) Tom says if all the plants were cut in half, the range wouldn't change. Katie says if all the plants grew by \\( 3 \\mathrm{~cm} \\) each, the range wouldn't change. Who do you agree with? I got Only\nTom because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's think about this in terms of changing the heights of the plants. Remember how in the past, we discussed how changing all the heights by the same amount doesn't necessarily keep the range the same? Let's apply that same idea to this situation with the plants being cut in half or growing by \\(3 \\mathrm{~cm}\\) each.",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Oh right, so you're saying that adding the same amount to all the heights changes the range? But I thought... um, doesn't cutting them in half change things differently than just adding 3 cm? Like, I'm confused about why one would change the range and the other wouldn't - can you explain that bit more?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's think of it this way: imagine you have a group of friends, and you all decide to either double your allowance or increase it by $5 each. Would the range of everyone's allowance stay the same in both scenarios? Think about how changing all the heights by the same proportion might affect the range in a similar way.",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 3,
+    "R3": 2,
+    "R4": 2,
+    "R5": 1,
+    "R6": 5,
+    "justification_pass1": "The teacher misrepresents the mathematical content in Turn 1 (claiming adding the same amount doesn't keep range the same, when it does), confuses the student further, and by Turn 2 the student is more confused than initially, showing no improvement in understanding the actual misconception about proportional changes.",
+    "justification_pass2": "The teacher exemplifies the experiential strategy by grounding the abstract mathematical concept of range in a concrete, relatable real-world analogy about friends and allowances, making the proportional versus additive change distinction tangible through everyday experience.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 3,\n  \"R3\": 2,\n  \"R4\": 2,\n  \"R5\": 1,\n  \"brief_justification\": \"The teacher misrepresents the mathematical content in Turn 1 (claiming adding the same amount doesn't keep range the same, when it does), confuses the student further, and by Turn 2 the student is more confused than initially, showing no improvement in understanding the actual misconception about proportional changes.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 5, \"brief_justification\": \"The teacher exemplifies the experiential strategy by grounding the abstract mathematical concept of range in a concrete, relatable real-world analogy about friends and allowances, making the proportional versus additive change distinction tangible through everyday experience.\"}\n```",
+    "quality_composite": 2.3333333333333335,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T08:29:26.523074+00:00"
+}

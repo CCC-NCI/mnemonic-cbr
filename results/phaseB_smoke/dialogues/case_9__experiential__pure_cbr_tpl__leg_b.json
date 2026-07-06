@@ -1,0 +1,66 @@
+{
+  "state": {
+    "case_id": "case_9",
+    "misconception_label": "Believes f(x - a) translates the function up a units",
+    "misconception_features": [
+      0.0,
+      9.0,
+      3.0,
+      83.0
+    ],
+    "persona": "experiential",
+    "architecture": "pure_cbr_tpl",
+    "student_leg": "leg_b",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T09:41:14.383811Z",
+      "seed": 518,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-12T09:41:15.890587Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: What transformation maps the graph of \\(y=f(x) \\) to the graph of \\( y=f(x-3) \\). I got Translation by vector\n\\(\n\\left[\\begin{array}{l}\n0 \\\\\n3\n\\end{array}\\right]\n\\) because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's think about this. From similar cases:\n  1. Topic: Given a sketch of a quadratic graph, f(x), write down the solutions to f(x) = a. Correct answer (B): No real solutions. Student selected: \\( x=-4.25, \\quad x=0.25 \\). Underlying misconception: Solves for y=0 instead of given y-value when reading from a quadratic graph. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.\n  2. Topic: Given a sketch of a linear graph solve f(x) = n. Correct answer (A): \\( x=6 \\). Student selected: \\( x=-1.5 \\). Underlying misconception: Thinks they solve mx + c = a, by substituting in the value of a for x and therefore calculating ma + c. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.\n  3. Topic: Calculate the range from a list of data. Correct answer (C): Add all the numbers together.. Student selected: Check the units of your answer. Underlying misconception: Believes range does not need units. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Um, I'm a bit confused though - I thought the minus sign in f(x-3) meant we go down, so why would it be moving up? Like, shouldn't minus mean going down on the graph?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's think about this. From similar cases:\n  1. Topic: Given a sketch of a quadratic graph, f(x), write down the solutions to f(x) = a. Correct answer (B): No real solutions. Student selected: \\( x=-4.25, \\quad x=0.25 \\). Underlying misconception: Solves for y=0 instead of given y-value when reading from a quadratic graph. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.\n  2. Topic: Given a sketch of a linear graph solve f(x) = n. Correct answer (A): \\( x=6 \\). Student selected: \\( x=-1.5 \\). Underlying misconception: Thinks they solve mx + c = a, by substituting in the value of a for x and therefore calculating ma + c. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.\n  3. Topic: Calculate the range from a list of data. Correct answer (C): Add all the numbers together.. Student selected: Check the units of your answer. Underlying misconception: Believes range does not need units. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 1,
+    "R2": 1,
+    "R3": 1,
+    "R4": 1,
+    "R5": 1,
+    "R6": 1,
+    "justification_pass1": "The teacher provides completely irrelevant examples about unrelated topics (quadratic graphs, linear equations, range) that have nothing to do with function transformations, failing to address the student's misconception about horizontal translations, and the student shows no progress in understanding.",
+    "justification_pass2": "The teacher provides no concrete real-world analogies or everyday situations whatsoever, instead repeatedly copying irrelevant case examples that don't address the student's question about function transformations.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 1,\n  \"R2\": 1,\n  \"R3\": 1,\n  \"R4\": 1,\n  \"R5\": 1,\n  \"brief_justification\": \"The teacher provides completely irrelevant examples about unrelated topics (quadratic graphs, linear equations, range) that have nothing to do with function transformations, failing to address the student's misconception about horizontal translations, and the student shows no progress in understanding.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 1, \"brief_justification\": \"The teacher provides no concrete real-world analogies or everyday situations whatsoever, instead repeatedly copying irrelevant case examples that don't address the student's question about function transformations.\"}\n```",
+    "quality_composite": 1.0,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T09:41:22.653462+00:00"
+}

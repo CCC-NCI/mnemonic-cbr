@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_12",
+    "misconception_label": "Thinks alternate angles are always equal",
+    "misconception_features": [
+      0.0,
+      12.0,
+      3.0,
+      25.0
+    ],
+    "persona": "experiential",
+    "architecture": "baseline",
+    "student_leg": "leg_b",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T15:39:34.191505Z",
+      "seed": 664,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T15:39:39.407288Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: Tom and Katie are arguing about alternate angles. Tom says angles \\( p \\) and \\( q \\) are alternate. Katie says angles \\( p \\) and \\( q \\) are equal. Who is correct? ![Shows two non parallel lines that are intersected by another line. Angles P and Q are both on the outside of the lines and on opposite sides of the transversal.](). I got Only\nKatie because I assumed all the angles in the figure are equal.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's think of alternate angles like two people arguing on opposite sides of a fence. Just because they're on opposite sides doesn't mean they're saying the same thing. Can you see how angles \\( p \\) and \\( q \\) might not always be equal in this scenario?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Oh right, so just because they're on opposite sides of the line doesn't automatically make them equal? But I'm confused then - when ARE alternate angles equal, because I thought that was like a rule or something?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Imagine you're at a concert with two stages set up on opposite sides of the venue. Just because you can see both stages from where you're standing doesn't mean the performers on each stage are doing the same thing. Can you think of a situation where alternate angles would be equal in a similar way?",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "Oh, I think I get it now - alternate angles are only equal when the two lines being cut by the transversal are parallel to each other, right? So in the diagram with the non-parallel lines, Tom is correct that p and q are alternate angles, but Katie is wrong because they're not actually equal?",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 2,
+    "R3": 2,
+    "R4": 5,
+    "R5": 5,
+    "R6": 5,
+    "justification_pass1": "While the teacher uses metaphors rather than directly addressing the misconception and provides low cognitive demand prompts, the student successfully arrives at the correct understanding that alternate angles are only equal when lines are parallel, demonstrating clear improvement from the initial misconception.",
+    "justification_pass2": "The teacher consistently uses concrete real-world analogies (people arguing across a fence, concert with two stages) to help the student understand the abstract concept of alternate angles and when they are equal, which is a textbook example of the experiential strategy.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 2,\n  \"R3\": 2,\n  \"R4\": 5,\n  \"R5\": 5,\n  \"brief_justification\": \"While the teacher uses metaphors rather than directly addressing the misconception and provides low cognitive demand prompts, the student successfully arrives at the correct understanding that alternate angles are only equal when lines are parallel, demonstrating clear improvement from the initial misconception.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 5, \"brief_justification\": \"The teacher consistently uses concrete real-world analogies (people arguing across a fence, concert with two stages) to help the student understand the abstract concept of alternate angles and when they are equal, which is a textbook example of the experiential strategy.\"}\n```",
+    "quality_composite": 2.0,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T15:39:46.053607+00:00"
+}

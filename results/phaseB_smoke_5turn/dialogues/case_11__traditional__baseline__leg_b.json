@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_11",
+    "misconception_label": "Struggles to visualise nets of 3D shapes",
+    "misconception_features": [
+      0.0,
+      11.0,
+      3.0,
+      31.0
+    ],
+    "persona": "traditional",
+    "architecture": "baseline",
+    "student_leg": "leg_b",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T15:33:07.764230Z",
+      "seed": 634,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T15:33:12.845134Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: This is the net of a... ![A circle touching a sector](). I got Triangle because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let me explain the correct method for determining the net of a 3D shape, and then we will work through an example together. Can you tell me what shapes make up the net you have drawn?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Um, okay... so looking at it again, I can see there's a circle and then like a curved bit next to it? Is the curved bit a sector? I'm still not really sure how those pieces fit together to make a 3D shape though.",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's start by identifying the shapes in the net you have drawn. Yes, the circle is a shape, and the curved part next to it is indeed a sector. Now, let's work through how these shapes fit together to create a 3D shape. Let's visualize it step by step together.",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "Okay, so we have a circle and a sector... um, does the sector wrap around the circle somehow? Like, does it curve to make the side of something? I'm trying to picture it in my head but I'm not really getting how they connect together to form a 3D shape.",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 2,
+    "R3": 2,
+    "R4": 4,
+    "R5": 2,
+    "R6": 2,
+    "justification_pass1": "The teacher correctly identifies the shapes but offers only vague promises to 'visualize step by step' without actually providing concrete guidance, leaving the student still unable to connect the net to a 3D shape (cone) by Turn 4.",
+    "justification_pass2": "The teacher uses some traditional elements like offering to explain the correct method and working through examples, but fails to provide the direct explanation and worked example that defines the traditional strategy, instead relying heavily on guided discovery through questioning.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 2,\n  \"R3\": 2,\n  \"R4\": 4,\n  \"R5\": 2,\n  \"brief_justification\": \"The teacher correctly identifies the shapes but offers only vague promises to 'visualize step by step' without actually providing concrete guidance, leaving the student still unable to connect the net to a 3D shape (cone) by Turn 4.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 2, \"brief_justification\": \"The teacher uses some traditional elements like offering to explain the correct method and working through examples, but fails to provide the direct explanation and worked example that defines the traditional strategy, instead relying heavily on guided discovery through questioning.\"}\n```",
+    "quality_composite": 2.0,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T15:33:20.082374+00:00"
+}

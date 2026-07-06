@@ -1,0 +1,66 @@
+{
+  "state": {
+    "case_id": "case_19",
+    "misconception_label": "When subtracting fractions, subtracts the numerators and multiplies the denominators",
+    "misconception_features": [
+      0.0,
+      19.0,
+      3.0,
+      104.0
+    ],
+    "persona": "rule_based",
+    "architecture": "pure_ai",
+    "student_leg": "leg_a",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T11:18:40.519556Z",
+      "seed": 1029,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-12T11:18:44.705008Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: Express the following as a single fraction, writing your answer as simply as possible: \\( \\frac{1}{s}-\\frac{t}{3} \\). I got \\( \\frac{1-t}{3 s} \\) because I treated the fractions like ordinary numbers.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "When subtracting fractions, you need to find a common denominator. In this case, the common denominator is 3s. So the correct answer is \\( \\frac{3s-t}{3s} \\). Remember to keep the denominator the same when subtracting fractions.",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Oh, I see! So I need to use a common denominator like 3s instead of just multiplying the denominators. But how do I actually change the fractions to have that common denominator? Do I just multiply the top and bottom by whatever I need?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Yes, that's correct! To find a common denominator, you need to multiply each fraction by the missing factor that will make the denominators the same. In this case, you'll multiply the first fraction by 3 and the second fraction by s. Remember to apply the same operation to the numerator and denominator of each fraction.",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 1,
+    "R3": 2,
+    "R4": 2,
+    "R5": 3,
+    "R6": 5,
+    "justification_pass1": "The teacher directly states the correct answer without engaging the misconception, provides minimal cognitive demand by telling rather than prompting reasoning, and makes a domain error in Turn 3 (the correct answer should be (3-st)/(3s), not (3s-t)/(3s)), though the student does show some progress in understanding the need for common denominators.",
+    "justification_pass2": "The teacher consistently states explicit procedures (find common denominator, multiply by missing factors), provides direct corrective feedback on the procedural error (corrects the wrong answer with the right one), and explains the worked steps clearly throughout both turns.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 1,\n  \"R3\": 2,\n  \"R4\": 2,\n  \"R5\": 3,\n  \"brief_justification\": \"The teacher directly states the correct answer without engaging the misconception, provides minimal cognitive demand by telling rather than prompting reasoning, and makes a domain error in Turn 3 (the correct answer should be (3-st)/(3s), not (3s-t)/(3s)), though the student does show some progress in understanding the need for common denominators.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 5, \"brief_justification\": \"The teacher consistently states explicit procedures (find common denominator, multiply by missing factors), provides direct corrective feedback on the procedural error (corrects the wrong answer with the right one), and explains the worked steps clearly throughout both turns.\"}\n```",
+    "quality_composite": 1.6666666666666667,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T11:18:52.386370+00:00"
+}

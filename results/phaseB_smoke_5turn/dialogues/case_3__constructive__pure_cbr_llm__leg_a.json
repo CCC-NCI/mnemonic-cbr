@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_3",
+    "misconception_label": "Does not know the properties of a rectangle",
+    "misconception_features": [
+      0.0,
+      3.0,
+      3.0,
+      67.0
+    ],
+    "persona": "constructive",
+    "architecture": "pure_cbr_llm",
+    "student_leg": "leg_a",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T13:35:52.744200Z",
+      "seed": 205,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T13:35:56.531157Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: The angles highlighted on this rectangle with different length sides can never be... ![A rectangle with the diagonals drawn in. The angle on the right hand side at the centre is highlighted in red and the angle at the bottom at the centre is highlighted in yellow.](). I got acute because I assumed all the angles in the figure are equal.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's focus on the properties of a rectangle. Remember that in a rectangle, opposite angles are equal. Can you think about how this property relates to the angles you highlighted in the figure?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Okay, so if opposite angles are equal, does that mean the angles I highlighted are also equal to the angles at the corners of the rectangle? But then, how can I tell if they\u2019re acute or not? I thought they could be any size.",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's focus on the intersecting diagonals property of a rectangle. Can you think about how this property can help determine the angles you highlighted in the figure? Remember, the intersecting diagonals of a rectangle bisect each other and form right angles.",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "Oh, I see! So if the diagonals bisect each other and form right angles, does that mean the angles I highlighted are actually right angles too? But if they\u2019re right angles, how can they be acute? I\u2019m still a bit confused about how to tell the difference.",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 2,
+    "R3": 2,
+    "R4": 1,
+    "R5": 1,
+    "R6": 2,
+    "justification_pass1": "The teacher provides mathematically incorrect information (diagonals of a rectangle do not form right angles unless it's a square), fails to address the student's actual confusion about angles at the center versus corners, and the student becomes more confused rather than improving their understanding.",
+    "justification_pass2": "While the teacher attempts to break down the problem into steps, they provide incorrect mathematical information (claiming rectangle diagonals form right angles, which is false) and fail to adjust their approach when the student shows confusion, not effectively scaffolding within the student's ZPD.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\"R1\": 2, \"R2\": 2, \"R3\": 2, \"R4\": 1, \"R5\": 1, \"brief_justification\": \"The teacher provides mathematically incorrect information (diagonals of a rectangle do not form right angles unless it's a square), fails to address the student's actual confusion about angles at the center versus corners, and the student becomes more confused rather than improving their understanding.\"}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 2, \"brief_justification\": \"While the teacher attempts to break down the problem into steps, they provide incorrect mathematical information (claiming rectangle diagonals form right angles, which is false) and fail to adjust their approach when the student shows confusion, not effectively scaffolding within the student's ZPD.\"}\n```",
+    "quality_composite": 2.0,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T13:36:03.876107+00:00"
+}

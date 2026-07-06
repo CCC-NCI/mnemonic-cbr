@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_11",
+    "misconception_label": "Struggles to visualise nets of 3D shapes",
+    "misconception_features": [
+      0.0,
+      11.0,
+      3.0,
+      31.0
+    ],
+    "persona": "experiential",
+    "architecture": "pure_cbr_tpl",
+    "student_leg": "leg_b",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T15:29:44.565825Z",
+      "seed": 618,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T15:29:48.007260Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: This is the net of a... ![A circle touching a sector](). I got Triangle because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's think about this. From similar cases:\n  1. Topic: Identify the net of a non-prism. Correct answer (C): Triangularbased pyramid. Student selected: Triangle. Underlying misconception: Names one of the faces of a 3D shape rather than the 3D shape name. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.\n  2. Topic: Identify and count the faces, vertices and edges of a 3D shape. Correct answer (B): \\( 1 \\). Student selected: \\( 0 \\). Underlying misconception: Believes only straight lines count as edges on 3D shapes. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.\n  3. Topic: Identify cross sections of 3D shapes. Correct answer (C): Cuboid. Student selected: Rectangle. Underlying misconception: Does not know that a solid is a 3D shape. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Oh right, I see what you mean \u2013 I said \"Triangle\" but that's just one of the flat shapes that makes it up, not the actual 3D shape itself, isn't it? So if a net folds up, I need to think about what solid shape it becomes, not just name one of the pieces?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's think about this. From similar cases:\n  1. Topic: Identify the net of a non-prism. Correct answer (C): Triangularbased pyramid. Student selected: Triangle. Underlying misconception: Names one of the faces of a 3D shape rather than the 3D shape name. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.\n  2. Topic: Identify and count the faces, vertices and edges of a 3D shape. Correct answer (B): \\( 1 \\). Student selected: \\( 0 \\). Underlying misconception: Believes only straight lines count as edges on 3D shapes. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.\n  3. Topic: Identify cross sections of 3D shapes. Correct answer (C): Cuboid. Student selected: Rectangle. Underlying misconception: Does not know that a solid is a 3D shape. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "Yeah, that makes sense now \u2013 so I need to imagine it folding up into a proper 3D shape. But with this one, I'm still a bit confused because there's a circle and a sector... does that fold up into a cone? Is that what I should have said instead of triangle?",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 1,
+    "R2": 1,
+    "R3": 1,
+    "R4": 3,
+    "R5": 4,
+    "R6": 1,
+    "justification_pass1": "The teacher merely copy-pastes generic case examples without engaging with the student's actual thinking, providing no scaffolding or reasoning prompts, though the student manages to self-correct and progress independently despite the lack of teaching.",
+    "justification_pass2": "The teacher merely lists similar problem cases with misconceptions and correct answers without using any real-world analogies or concrete everyday situations to ground the abstract mathematical concepts.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 1,\n  \"R2\": 1,\n  \"R3\": 1,\n  \"R4\": 3,\n  \"R5\": 4,\n  \"brief_justification\": \"The teacher merely copy-pastes generic case examples without engaging with the student's actual thinking, providing no scaffolding or reasoning prompts, though the student manages to self-correct and progress independently despite the lack of teaching.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 1, \"brief_justification\": \"The teacher merely lists similar problem cases with misconceptions and correct answers without using any real-world analogies or concrete everyday situations to ground the abstract mathematical concepts.\"}\n```",
+    "quality_composite": 1.0,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T15:29:54.166201+00:00"
+}

@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_11",
+    "misconception_label": "Struggles to visualise nets of 3D shapes",
+    "misconception_features": [
+      0.0,
+      11.0,
+      3.0,
+      31.0
+    ],
+    "persona": "rule_based",
+    "architecture": "baseline",
+    "student_leg": "leg_b",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T15:31:01.811602Z",
+      "seed": 624,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T15:31:09.244803Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: This is the net of a... ![A circle touching a sector](). I got Triangle because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "There is a specific procedure for visualizing nets of 3D shapes. Step 1 is to identify the shapes in the net, and step 2 is to mentally fold the net to form the 3D shape. In this case, make sure to correctly identify the shapes in the net and visualize how they will come together to form the shape.",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Oh right, so I need to look at what shapes are actually there first. So I can see there's a circle and... is that a sector? Like a slice of pizza shape? But I'm still confused about how those fold together - wouldn't they just make a cone or something, not a triangle?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "There is a specific procedure for visualizing nets of 3D shapes. Step 1 is to correctly identify the shapes in the net, and step 2 is to mentally fold the net to form the 3D shape. In this case, the circle and sector should fold together to form a cone, not a triangle.",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "Oh okay, so it IS a cone! I think I see it now - the circle would be the base and the sector wraps around to make the curved side. But I'm still a bit confused about how exactly the sector curves up - like, does the straight edge of the sector connect to the circle, or does it overlap with itself?",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 1,
+    "R3": 2,
+    "R4": 5,
+    "R5": 3,
+    "R6": 5,
+    "justification_pass1": "The teacher provides mathematically correct information but merely states a generic procedure and the answer rather than engaging with the student's specific visualization difficulties, though the student does make some progress in understanding by Turn 4.",
+    "justification_pass2": "The teacher consistently states explicit procedures (Step 1 and Step 2 for visualizing nets), provides direct corrective feedback on the student's procedural error (identifying it as a cone, not a triangle), and reinforces the systematic approach throughout the dialogue.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 1,\n  \"R3\": 2,\n  \"R4\": 5,\n  \"R5\": 3,\n  \"brief_justification\": \"The teacher provides mathematically correct information but merely states a generic procedure and the answer rather than engaging with the student's specific visualization difficulties, though the student does make some progress in understanding by Turn 4.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 5, \"brief_justification\": \"The teacher consistently states explicit procedures (Step 1 and Step 2 for visualizing nets), provides direct corrective feedback on the student's procedural error (identifying it as a cone, not a triangle), and reinforces the systematic approach throughout the dialogue.\"}\n```",
+    "quality_composite": 1.6666666666666667,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T15:31:15.901150+00:00"
+}

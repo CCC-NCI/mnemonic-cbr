@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_23",
+    "misconception_label": "Confuses rest and movement on a distance time graph",
+    "misconception_features": [
+      0.0,
+      23.0,
+      3.0,
+      62.0
+    ],
+    "persona": "socratic",
+    "architecture": "hybrid",
+    "student_leg": "leg_a",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T17:34:32.985583Z",
+      "seed": 1201,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T17:34:37.688938Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: This graph shows how far Fido the dog is from his home. What might the negative-sloping section represent? ![A graph with time (secs) on the horizontal axis and distance (m) on the vertical axis. The graph starts at the origin, travels in a straight line up and right, travels horizontally, then travels in a straight line down and right back to the x-axis. ](). I got Fido has fallen asleep because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Can you explain to me the relationship between the movement of Fido on the graph and the negative-sloping section? How does the direction of the line correspond to Fido's distance from home at that point in time?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Um, I think the negative-sloping section means that Fido is getting closer to home, but I thought if he was falling asleep, he wouldn't be moving at all. So, does that mean when the line goes down, it shows that he's actually moving back home? I'm still a bit confused about how to tell the difference between resting and moving on the graph.",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Can you think of any other examples where a negative-sloping section on a distance-time graph might represent movement rather than rest? How could we use the information from the graph to determine if Fido is actually moving back home during that section?",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "I guess if the line is going down, it means Fido is moving closer to home, not resting. But I still don't really get how to tell when he's resting or moving just by looking at the graph. Like, what if he was just walking really slowly? How would I know if he's actually moving or just taking a break?",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 3,
+    "R3": 2,
+    "R4": 5,
+    "R5": 2,
+    "R6": 5,
+    "justification_pass1": "The teacher asks probing questions but never directly addresses the core misconception (horizontal line = rest, not negative slope), and by Turn 4 the student still cannot distinguish rest from movement on the graph.",
+    "justification_pass2": "The teacher consistently uses probing questions to guide the student toward understanding the relationship between graph features and movement, never directly stating that negative slope means returning home or that horizontal sections represent rest, which is a textbook example of Socratic method.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 3,\n  \"R3\": 2,\n  \"R4\": 5,\n  \"R5\": 2,\n  \"brief_justification\": \"The teacher asks probing questions but never directly addresses the core misconception (horizontal line = rest, not negative slope), and by Turn 4 the student still cannot distinguish rest from movement on the graph.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 5, \"brief_justification\": \"The teacher consistently uses probing questions to guide the student toward understanding the relationship between graph features and movement, never directly stating that negative slope means returning home or that horizontal sections represent rest, which is a textbook example of Socratic method.\"}\n```",
+    "quality_composite": 2.3333333333333335,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T17:34:44.651494+00:00"
+}

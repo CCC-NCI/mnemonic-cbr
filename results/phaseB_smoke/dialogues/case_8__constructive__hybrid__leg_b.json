@@ -1,0 +1,66 @@
+{
+  "state": {
+    "case_id": "case_8",
+    "misconception_label": "Does not find a common denominator when adding/subtracting fractions",
+    "misconception_features": [
+      0.0,
+      8.0,
+      3.0,
+      88.0
+    ],
+    "persona": "constructive",
+    "architecture": "hybrid",
+    "student_leg": "leg_b",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T09:30:15.666859Z",
+      "seed": 462,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-12T09:30:20.125261Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: \\( \\frac{4}{5}-\\frac{1}{3}=\\frac{\\bigstar}{15} \\) What should replace the star? I got \\( 5 \\) because I treated the fractions like ordinary numbers.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "It seems like you may be treating the fractions as whole numbers when finding the common denominator. Remember, when adding or subtracting fractions, we need to find a common denominator. In this case, what do you notice about the denominators 5 and 3? How can we find a common denominator for these fractions?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Um, so like... the denominators are 5 and 3, and they're different numbers? I think I need to make them the same somehow? Would I just multiply them together to get 15, or is there something else I'm supposed to do?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "You're on the right track! Since 5 and 3 are different numbers, we need to find a common multiple of both numbers to use as the denominator. Multiplying them together is a great strategy to find a common denominator. Can you try using 15 as the common denominator to rewrite the fractions before subtracting them?",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 3,
+    "R3": 3,
+    "R4": 5,
+    "R5": 2,
+    "R6": 5,
+    "justification_pass1": "The teacher correctly addresses finding common denominators but doesn't explicitly engage with the student's specific error of subtracting numerators directly (4-1=3, not 5), and while the student shows some progress in understanding common denominators, they haven't yet demonstrated they can correctly convert the numerators, leaving the core misconception unresolved.",
+    "justification_pass2": "The teacher exemplifies the constructive strategy by breaking down the problem into manageable steps (identifying denominators, finding common denominator, then rewriting fractions), scaffolding within the student's ZPD by building on their correct intuition about multiplying 5 and 3, and adjusting support by first diagnosing the misconception, then guiding toward the solution without directly providing the answer.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 3,\n  \"R3\": 3,\n  \"R4\": 5,\n  \"R5\": 2,\n  \"brief_justification\": \"The teacher correctly addresses finding common denominators but doesn't explicitly engage with the student's specific error of subtracting numerators directly (4-1=3, not 5), and while the student shows some progress in understanding common denominators, they haven't yet demonstrated they can correctly convert the numerators, leaving the core misconception unresolved.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 5, \"brief_justification\": \"The teacher exemplifies the constructive strategy by breaking down the problem into manageable steps (identifying denominators, finding common denominator, then rewriting fractions), scaffolding within the student's ZPD by building on their correct intuition about multiplying 5 and 3, and adjusting support by first diagnosing the misconception, then guiding toward the solution without directly providing the answer.\"}\n```",
+    "quality_composite": 2.6666666666666665,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T09:30:29.035726+00:00"
+}

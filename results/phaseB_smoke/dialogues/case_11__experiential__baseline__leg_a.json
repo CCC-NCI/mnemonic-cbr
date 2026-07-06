@@ -1,0 +1,66 @@
+{
+  "state": {
+    "case_id": "case_11",
+    "misconception_label": "Struggles to visualise nets of 3D shapes",
+    "misconception_features": [
+      0.0,
+      11.0,
+      3.0,
+      31.0
+    ],
+    "persona": "experiential",
+    "architecture": "baseline",
+    "student_leg": "leg_a",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T09:59:53.977843Z",
+      "seed": 613,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-12T09:59:57.529587Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: This is the net of a... ![A circle touching a sector](). I got Triangle because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Imagine you were trying to make a physical model of this shape using paper \u2014 would your net be able to fold into the shape you're thinking of?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "I guess if I tried to fold the net into a triangle, it wouldn't really work because it doesn't have straight edges like a triangle does. But I'm still not sure what shape it actually makes. Is it something like a cone or a cylinder?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Imagine you were trying to wrap a piece of paper around this shape to see what it looks like from all angles \u2014 would your net still make sense in 3D space?",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 4,
+    "R2": 4,
+    "R3": 2,
+    "R4": 5,
+    "R5": 3,
+    "R6": 5,
+    "justification_pass1": "The teacher effectively engages the misconception through visualization prompts that require reasoning, but when the student narrows it down to cone or cylinder in Turn 2, the teacher repeats a similar vague prompt instead of providing targeted scaffolding to help distinguish between these options, leaving the student still uncertain at the end.",
+    "justification_pass2": "The teacher consistently uses concrete, physical analogies (folding paper, wrapping paper around shapes) to help the student visualize and understand the abstract geometric concept of nets and 3D shapes.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 4,\n  \"R2\": 4,\n  \"R3\": 2,\n  \"R4\": 5,\n  \"R5\": 3,\n  \"brief_justification\": \"The teacher effectively engages the misconception through visualization prompts that require reasoning, but when the student narrows it down to cone or cylinder in Turn 2, the teacher repeats a similar vague prompt instead of providing targeted scaffolding to help distinguish between these options, leaving the student still uncertain at the end.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 5, \"brief_justification\": \"The teacher consistently uses concrete, physical analogies (folding paper, wrapping paper around shapes) to help the student visualize and understand the abstract geometric concept of nets and 3D shapes.\"}\n```",
+    "quality_composite": 3.3333333333333335,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T10:00:08.088957+00:00"
+}

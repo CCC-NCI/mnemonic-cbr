@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_13",
+    "misconception_label": "Answers as if there are 100 minutes in an hour when changing from hours to minutes",
+    "misconception_features": [
+      0.0,
+      13.0,
+      1.0,
+      29.0
+    ],
+    "persona": "experiential",
+    "architecture": "hybrid",
+    "student_leg": "leg_a",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T15:51:21.684642Z",
+      "seed": 721,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T15:51:28.145776Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: Hannah's journey to camp is \\( 3 \\) hours and \\( 16 \\) minutes. Tori's journey to camp is \\( 214 \\) minutes. What is the difference in their journeys in minutes? I got \\( 102 \\) minutes because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's think about it in terms of a clock. Imagine each hour on the clock as having 60 minutes, just like how each hour in real life has 60 minutes. So, if Hannah's journey is 3 hours and 16 minutes, how many minutes is that in total? And how does that compare to Tori's 214 minutes?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Okay, so if I think about it like that, I guess 3 hours would be 300 minutes, right? But then I have to add the 16 minutes, so that would be 316 minutes in total for Hannah. But I'm still confused about how to find the difference with Tori's 214 minutes. Can you help me with that part?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's think of it this way: if each hour is like a slice of pizza with 60 minutes, how many slices of pizza would Hannah have eaten (3 hours) plus a few minutes (16 minutes)? And then, how many slices of pizza does Tori have (214 minutes)? Let's compare the amount of pizza each person ate to find the difference in minutes between their journeys.",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "Okay, so if I think of it like pizza, Hannah has 3 slices plus a bit more, which is 316 minutes. Tori has 214 minutes, so I guess I need to find out how many slices of pizza are left after I take Tori's away from Hannah's. But I'm not sure how to do that. Do I just subtract 214 from 316?",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 2,
+    "R3": 2,
+    "R4": 1,
+    "R5": 1,
+    "R6": 5,
+    "justification_pass1": "The teacher fails to directly address the student's misconception that 3 hours equals 300 minutes (treating hours as having 100 minutes), instead using vague analogies that don't correct the error, resulting in the student maintaining the incorrect calculation of 316 minutes throughout.",
+    "justification_pass2": "The teacher consistently grounds the abstract mathematical concepts in concrete, everyday analogies (clock, pizza slices) to help the student understand time conversion and subtraction, which is a textbook example of the experiential strategy.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 2,\n  \"R3\": 2,\n  \"R4\": 1,\n  \"R5\": 1,\n  \"brief_justification\": \"The teacher fails to directly address the student's misconception that 3 hours equals 300 minutes (treating hours as having 100 minutes), instead using vague analogies that don't correct the error, resulting in the student maintaining the incorrect calculation of 316 minutes throughout.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 5, \"brief_justification\": \"The teacher consistently grounds the abstract mathematical concepts in concrete, everyday analogies (clock, pizza slices) to help the student understand time conversion and subtraction, which is a textbook example of the experiential strategy.\"}\n```",
+    "quality_composite": 2.0,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T15:51:35.885892+00:00"
+}

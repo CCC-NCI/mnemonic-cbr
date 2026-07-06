@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_12",
+    "misconception_label": "Thinks alternate angles are always equal",
+    "misconception_features": [
+      0.0,
+      12.0,
+      3.0,
+      25.0
+    ],
+    "persona": "constructive",
+    "architecture": "pure_cbr_tpl",
+    "student_leg": "leg_b",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T15:38:19.438727Z",
+      "seed": 658,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T15:38:22.903903Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: Tom and Katie are arguing about alternate angles. Tom says angles \\( p \\) and \\( q \\) are alternate. Katie says angles \\( p \\) and \\( q \\) are equal. Who is correct? ![Shows two non parallel lines that are intersected by another line. Angles P and Q are both on the outside of the lines and on opposite sides of the transversal.](). I got Only\nKatie because I assumed all the angles in the figure are equal.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's think about this. From similar cases:\n  1. Topic: Recognise the vertically opposite angles relationship. Correct answer (C): Vertically opposite angles. Student selected: Alternate angles. Underlying misconception: Confuses alternate and opposite angles. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.\n  2. Topic: Identify corresponding angles. Correct answer (C): C. Student selected: A. Underlying misconception: Confuses corresponding and vertically opposite angles. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.\n  3. Topic: Recognise the vertically opposite angles relationship. Correct answer (C): C. Student selected: A. Underlying misconception: Confuses vertically opposite angles with angles on a straight line. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Oh right, so I'm confusing different types of angles... but I'm still a bit confused because I thought if angles are in the same position on the transversal they'd be equal? And also, does it matter whether the lines are parallel or not, because I didn't really think about that before?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's think about this. From similar cases:\n  1. Topic: Recognise the vertically opposite angles relationship. Correct answer (C): Vertically opposite angles. Student selected: Alternate angles. Underlying misconception: Confuses alternate and opposite angles. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.\n  2. Topic: Identify corresponding angles. Correct answer (C): C. Student selected: A. Underlying misconception: Confuses corresponding and vertically opposite angles. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.\n  3. Topic: Recognise the vertically opposite angles relationship. Correct answer (C): C. Student selected: A. Underlying misconception: Confuses vertically opposite angles with angles on a straight line. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "Oh, I think I see now - so alternate angles are only equal when the two lines are actually parallel to each other, right? But in the question, the lines aren't parallel, so even though p and q are in alternate positions, they're not equal... so Tom is correct that they're alternate angles, but Katie is wrong because they're not equal?",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 1,
+    "R2": 1,
+    "R3": 1,
+    "R4": 5,
+    "R5": 5,
+    "R6": 1,
+    "justification_pass1": "The teacher merely pastes generic examples without addressing the student's specific confusion, providing no scaffolding or reasoning prompts, yet the student independently arrives at the correct understanding that alternate angles are only equal when lines are parallel.",
+    "justification_pass2": "The teacher merely repeats identical lists of misconceptions without scaffolding, breaking down the problem into steps, or adjusting support based on the student's evolving understanding, which directly contradicts the constructive strategy.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 1,\n  \"R2\": 1,\n  \"R3\": 1,\n  \"R4\": 5,\n  \"R5\": 5,\n  \"brief_justification\": \"The teacher merely pastes generic examples without addressing the student's specific confusion, providing no scaffolding or reasoning prompts, yet the student independently arrives at the correct understanding that alternate angles are only equal when lines are parallel.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 1, \"brief_justification\": \"The teacher merely repeats identical lists of misconceptions without scaffolding, breaking down the problem into steps, or adjusting support based on the student's evolving understanding, which directly contradicts the constructive strategy.\"}\n```",
+    "quality_composite": 1.0,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T15:38:31.799100+00:00"
+}

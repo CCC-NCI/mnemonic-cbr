@@ -1,0 +1,66 @@
+{
+  "state": {
+    "case_id": "case_7",
+    "misconception_label": "Divided by 100 rather than 10",
+    "misconception_features": [
+      0.0,
+      7.0,
+      3.0,
+      21.0
+    ],
+    "persona": "rule_based",
+    "architecture": "pure_cbr_llm",
+    "student_leg": "leg_a",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T09:23:24.889648Z",
+      "seed": 425,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-12T09:23:28.387136Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: \\( 43.2 \\div 10= \\). I got \\( 0.432 \\) because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "You divided by 100 instead of 10. Remember, when dividing by 10, you move the decimal point one place to the left. So, \\( 43.2 \\div 10 = 4.32 \\). Keep in mind the correct rule for dividing by 10.",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Oh, I see! So when I divide by 10, I just move the decimal point one space to the left. But why do I keep getting confused and thinking it's 100? Is there a way to remember which one to use?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "When dividing by 10, you move the decimal point one place to the left. To remember, think about how 10 has one zero, so you move the decimal one place. Keep practicing to reinforce the correct procedure.",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 4,
+    "R2": 1,
+    "R3": 2,
+    "R4": 5,
+    "R5": 2,
+    "R6": 5,
+    "justification_pass1": "The teacher explicitly identifies and addresses the specific misconception (dividing by 100 instead of 10) and provides accurate mathematical content, but simply tells the student the correct procedure without eliciting reasoning, and while the student can restate the rule in Turn 2, there's no evidence they understand why it works or can apply it independently.",
+    "justification_pass2": "The teacher consistently states explicit rules (move decimal one place left when dividing by 10), provides direct corrective feedback on the procedural error (divided by 100 instead of 10), and shows the worked correct answer (4.32), which is a textbook example of rule-based instruction.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 4,\n  \"R2\": 1,\n  \"R3\": 2,\n  \"R4\": 5,\n  \"R5\": 2,\n  \"brief_justification\": \"The teacher explicitly identifies and addresses the specific misconception (dividing by 100 instead of 10) and provides accurate mathematical content, but simply tells the student the correct procedure without eliciting reasoning, and while the student can restate the rule in Turn 2, there's no evidence they understand why it works or can apply it independently.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 5, \"brief_justification\": \"The teacher consistently states explicit rules (move decimal one place left when dividing by 10), provides direct corrective feedback on the procedural error (divided by 100 instead of 10), and shows the worked correct answer (4.32), which is a textbook example of rule-based instruction.\"}\n```",
+    "quality_composite": 2.3333333333333335,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T09:23:36.160770+00:00"
+}

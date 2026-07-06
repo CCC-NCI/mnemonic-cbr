@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_11",
+    "misconception_label": "Struggles to visualise nets of 3D shapes",
+    "misconception_features": [
+      0.0,
+      11.0,
+      3.0,
+      31.0
+    ],
+    "persona": "experiential",
+    "architecture": "pure_cbr_llm",
+    "student_leg": "leg_a",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T15:28:55.721817Z",
+      "seed": 615,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T15:29:14.248755Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: This is the net of a... ![A circle touching a sector](). I got Triangle because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's think about the net of a 3D shape like building a model out of paper. Just like how a triangular-based pyramid has a base and three triangular faces that come together to form a point, the net also shows how these faces connect in 3D space. Let's explore how the shapes fit together in the real world to help us identify the correct net.",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "I think I get that the net shows how the shapes fit together, but I'm still confused. If the net has a circle and a sector, how does that make something like a cone? I thought it would be something with more straight edges, like a triangle.",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Imagine folding the net of a cone along the curved lines to create the shape. Just like how a cuboid can be folded along its edges to form a solid shape, the cone can be visualized in the same way. Let's explore how the net represents the cone's curved surface in 3D space.",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "Okay, I think I see what you mean about folding the net to make a cone. So, the circle is the base, and the sector is the curved part that wraps around? But I still don\u2019t really get how it all comes together. Can you show me how the sector connects to the circle when it\u2019s folded?",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 2,
+    "R3": 2,
+    "R4": 4,
+    "R5": 3,
+    "R6": 2,
+    "justification_pass1": "The teacher uses vague analogies rather than directly addressing the visualization difficulty, provides minimal concrete guidance despite the student's explicit request for help understanding how the sector connects to the circle, though the student does show some progress in understanding the cone's components by Turn 4.",
+    "justification_pass2": "While the teacher attempts to use concrete analogies like 'building a model out of paper' and 'folding along curved lines,' these remain abstract geometric descriptions rather than grounding the explanation in everyday real-world situations or experiences that would make the concept tangible.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 2,\n  \"R3\": 2,\n  \"R4\": 4,\n  \"R5\": 3,\n  \"brief_justification\": \"The teacher uses vague analogies rather than directly addressing the visualization difficulty, provides minimal concrete guidance despite the student's explicit request for help understanding how the sector connects to the circle, though the student does show some progress in understanding the cone's components by Turn 4.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 2, \"brief_justification\": \"While the teacher attempts to use concrete analogies like 'building a model out of paper' and 'folding along curved lines,' these remain abstract geometric descriptions rather than grounding the explanation in everyday real-world situations or experiences that would make the concept tangible.\"}\n```",
+    "quality_composite": 2.0,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T15:29:21.825842+00:00"
+}

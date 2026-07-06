@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_22",
+    "misconception_label": "Does not realise that adding a larger number gives a larger answer",
+    "misconception_features": [
+      0.0,
+      22.0,
+      2.0,
+      98.0
+    ],
+    "persona": "rule_based",
+    "architecture": "pure_cbr_llm",
+    "student_leg": "leg_a",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T17:28:51.982724Z",
+      "seed": 1175,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T17:28:57.356005Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: Tom and Katie are discussing related calculations Tom says if you know that \\( 3748+426=4174 \\), then \\( 3748+427 \\) must equal \\( \\mathbf{4 1 7 5} \\) Katie says if you know that \\( 3748-426=3322 \\), then \\( 3748 \\) - \\( 427 \\) must equal \\( \\mathbf{3 3 2 3} \\) Who is correct? I got Only Katie because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "You are correct that Katie is right in this scenario. When subtracting, a larger number will give a smaller answer. Make sure to subtract each digit in the correct column to get the correct result.",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Okay, I think I get that when you subtract a bigger number, the answer gets smaller, like with Katie's example. But I'm still confused about Tom's part. Why does adding a bigger number not work the same way? I thought it would just change the last digit.",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "When adding numbers, adding a larger number will actually give a larger answer, not just change the last digit. Remember to add each digit in the correct column to get the correct result. Let's walk through the reasoning that leads to the correct answer.",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "Okay, I think I understand that when you add a bigger number, the total goes up, not just the last digit. So for Tom's example, if \\( 3748 + 426 = 4174 \\), then adding \\( 427 \\) should make it even bigger than \\( 4174 \\), right? But I'm still not sure how to actually work it out step by step. Can we go through that?",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 3,
+    "R2": 2,
+    "R3": 2,
+    "R4": 5,
+    "R5": 4,
+    "R6": 2,
+    "justification_pass1": "The teacher correctly identifies and states the misconception about addition, but primarily tells rather than elicits reasoning, though the student does show clear progress from confusion to understanding the core principle by Turn 4.",
+    "justification_pass2": "While the teacher makes some general procedural statements about adding/subtracting in columns and gives direct feedback, they fail to show worked steps or demonstrate the explicit calculation procedures that would be central to a rule-based approach, especially when the student explicitly requests step-by-step guidance in Turn 4.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 3,\n  \"R2\": 2,\n  \"R3\": 2,\n  \"R4\": 5,\n  \"R5\": 4,\n  \"brief_justification\": \"The teacher correctly identifies and states the misconception about addition, but primarily tells rather than elicits reasoning, though the student does show clear progress from confusion to understanding the core principle by Turn 4.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 2, \"brief_justification\": \"While the teacher makes some general procedural statements about adding/subtracting in columns and gives direct feedback, they fail to show worked steps or demonstrate the explicit calculation procedures that would be central to a rule-based approach, especially when the student explicitly requests step-by-step guidance in Turn 4.\"}\n```",
+    "quality_composite": 2.3333333333333335,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T17:29:05.988711+00:00"
+}

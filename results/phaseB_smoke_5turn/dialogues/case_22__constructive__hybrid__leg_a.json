@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_22",
+    "misconception_label": "Does not realise that adding a larger number gives a larger answer",
+    "misconception_features": [
+      0.0,
+      22.0,
+      2.0,
+      98.0
+    ],
+    "persona": "constructive",
+    "architecture": "hybrid",
+    "student_leg": "leg_a",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T17:25:48.258408Z",
+      "seed": 1161,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T17:25:54.520736Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: Tom and Katie are discussing related calculations Tom says if you know that \\( 3748+426=4174 \\), then \\( 3748+427 \\) must equal \\( \\mathbf{4 1 7 5} \\) Katie says if you know that \\( 3748-426=3322 \\), then \\( 3748 \\) - \\( 427 \\) must equal \\( \\mathbf{3 3 2 3} \\) Who is correct? I got Only Katie because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "It seems like you are struggling with the concept of adding larger numbers. Let's break it down step by step. Think about how you can apply the same logic you used in the first calculation to the second one. Can you identify any patterns or strategies that might help you solve it correctly?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Okay, I think I see what you're saying about patterns. So, if Tom added 426 to 3748 and got 4174, then adding 427 should give a bigger number, right? But I'm still confused about how that works with Katie's example. Why does subtracting 427 from 3748 give a smaller number than subtracting 426?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "It's great that you're recognizing the pattern in adding larger numbers. In Katie's example, remember that when you subtract a larger number, the result will be smaller because you're taking away more. Think about how this relates to the concept of adding and subtracting with larger numbers. Can you apply this understanding to solve the second calculation?",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "Okay, I think I get it a bit better now! So, if Tom added 426 and got 4174, then adding 427 should definitely give a bigger number, like 4175. But with Katie's example, I guess if you take away more, like 427 instead of 426, it makes sense that you end up with a smaller number, right? But why do I keep mixing them up?",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 4,
+    "R2": 2,
+    "R3": 3,
+    "R4": 5,
+    "R5": 4,
+    "R6": 2,
+    "justification_pass1": "The teacher directly addresses the misconception about larger numbers and their effects on operations, the mathematics is correct, and the student shows clear improvement from initial confusion to understanding both addition and subtraction cases, though the teacher could have demanded more active reasoning rather than guiding so heavily.",
+    "justification_pass2": "While the teacher attempts to break down the problem and encourage pattern recognition, they fail to scaffold effectively within the student's ZPD by not addressing the student's specific confusion about 'Only Katie' being correct, missing that the student actually needs help verifying both Tom AND Katie are correct, and not adjusting support when the student continues to express confusion across multiple turns.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 4,\n  \"R2\": 2,\n  \"R3\": 3,\n  \"R4\": 5,\n  \"R5\": 4,\n  \"brief_justification\": \"The teacher directly addresses the misconception about larger numbers and their effects on operations, the mathematics is correct, and the student shows clear improvement from initial confusion to understanding both addition and subtraction cases, though the teacher could have demanded more active reasoning rather than guiding so heavily.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 2, \"brief_justification\": \"While the teacher attempts to break down the problem and encourage pattern recognition, they fail to scaffold effectively within the student's ZPD by not addressing the student's specific confusion about 'Only Katie' being correct, missing that the student actually needs help verifying both Tom AND Katie are correct, and not adjusting support when the student continues to express confusion across multiple turns.\"}\n```",
+    "quality_composite": 3.0,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T17:26:05.068488+00:00"
+}

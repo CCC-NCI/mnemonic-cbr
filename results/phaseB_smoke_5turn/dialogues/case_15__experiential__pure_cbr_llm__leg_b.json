@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_15",
+    "misconception_label": "Has used slant height and base to find area of a triangle rather than perpendicular height and base",
+    "misconception_features": [
+      0.0,
+      15.0,
+      2.0,
+      94.0
+    ],
+    "persona": "experiential",
+    "architecture": "pure_cbr_llm",
+    "student_leg": "leg_b",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T16:11:43.789947Z",
+      "seed": 816,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T16:11:51.051209Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: How would you calculate the area of this triangle? ![A triangle, base 12m. All three sides are equal.](). I got \\( \\frac{12 \\times 12}{2} \\) because I added the side lengths instead of multiplying.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's imagine this triangle as a tent. The base of the tent is like the foundation on the ground, and the perpendicular height is like the pole holding up the tent. Just like you wouldn't measure the slant height of a tent to calculate how much fabric you need, we need to use the perpendicular height in our triangle formula to find the correct area.",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Oh, I think I get it now - so the perpendicular height is like the straight line going up from the base, not the slanted side of the triangle? But how do I actually find what the perpendicular height is if it's not one of the sides I can measure?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Imagine the trapezium as a rooftop with parallel sides supporting it. Just like how you wouldn't measure the slant height of a rooftop to find its area, we need to focus on the perpendicular height to calculate the correct area of the trapezium. To find the perpendicular height, you can draw a straight line from the top base to the bottom base, creating a right angle with the bases.",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "Wait, but we're talking about a triangle, not a trapezium - did you mean to say triangle? And if I draw a line from the top point straight down to the base, that would be the perpendicular height, right? So for that equilateral triangle with base 12m, I'd need to figure out how long that vertical line actually is before I can use the formula?",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 1,
+    "R3": 2,
+    "R4": 2,
+    "R5": 3,
+    "R6": 4,
+    "justification_pass1": "The teacher uses analogies rather than directly addressing the slant-vs-perpendicular height misconception, makes a confusing trapezium error in Turn 3, and doesn't guide the student to actually calculate the perpendicular height, though the student does show some conceptual progress by Turn 4.",
+    "justification_pass2": "The teacher consistently uses concrete real-world analogies (tent, rooftop) to explain the abstract concept of perpendicular height in area calculations, though there is a minor error in Turn 3 where trapezium is mentioned instead of triangle.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 1,\n  \"R3\": 2,\n  \"R4\": 2,\n  \"R5\": 3,\n  \"brief_justification\": \"The teacher uses analogies rather than directly addressing the slant-vs-perpendicular height misconception, makes a confusing trapezium error in Turn 3, and doesn't guide the student to actually calculate the perpendicular height, though the student does show some conceptual progress by Turn 4.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 4, \"brief_justification\": \"The teacher consistently uses concrete real-world analogies (tent, rooftop) to explain the abstract concept of perpendicular height in area calculations, though there is a minor error in Turn 3 where trapezium is mentioned instead of triangle.\"}\n```",
+    "quality_composite": 1.6666666666666667,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T16:11:58.213783+00:00"
+}

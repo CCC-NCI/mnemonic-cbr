@@ -1,0 +1,66 @@
+{
+  "state": {
+    "case_id": "case_5",
+    "misconception_label": "Does not know units of area should be squared",
+    "misconception_features": [
+      0.0,
+      5.0,
+      3.0,
+      23.0
+    ],
+    "persona": "experiential",
+    "architecture": "pure_cbr_tpl",
+    "student_leg": "leg_a",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T09:03:05.294663Z",
+      "seed": 317,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-12T09:03:06.717356Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: James has answered a question on the area of a trapezium and got an answer of \\( 54 \\). Behind the star he has written the units that he used. \\( 54 \\, \\bigstar \\) Which of the following units could be correct? I got \\( m \\) because I added the side lengths instead of multiplying.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's think about this. From similar cases:\n  1. Topic: Convert from km\u00b2 to m\u00b2. Correct answer (B): \\( 2000000 \\). Student selected: \\( 2000 \\). Underlying misconception: Does not square the conversion factor when converting squared units. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.\n  2. Topic: Perform calculations with areas when given in different units. Correct answer (C): \\( 404 \\mathrm{~mm}^{2} \\). Student selected: \\( 8 \\mathrm{~mm}^{2} \\). Underlying misconception: Does not convert measurements to have the same units before calculating area or volume. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.\n  3. Topic: Calculate the area of a right-angled triangle where the dimensions are given in the same units. Correct answer (D): \\( 44 \\mathrm{~cm}^{2} \\). Student selected: \\( 88 \\mathrm{~cm}^{2} \\). Underlying misconception: Does not divide by 2 when calculating the area of a triangle. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "I see what you mean about the area needing to be squared, but I still don't get why it matters. Like, if I just add the lengths, why can't I just use \\( m \\) as the unit? What does squaring the units actually change?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's think about this. From similar cases:\n  1. Topic: Convert from km\u00b2 to m\u00b2. Correct answer (B): \\( 2000000 \\). Student selected: \\( 2000 \\). Underlying misconception: Does not square the conversion factor when converting squared units. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.\n  2. Topic: Perform calculations with areas when given in different units. Correct answer (C): \\( 404 \\mathrm{~mm}^{2} \\). Student selected: \\( 8 \\mathrm{~mm}^{2} \\). Underlying misconception: Does not convert measurements to have the same units before calculating area or volume. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.\n  3. Topic: Calculate the area of a right-angled triangle where the dimensions are given in the same units. Correct answer (D): \\( 44 \\mathrm{~cm}^{2} \\). Student selected: \\( 88 \\mathrm{~cm}^{2} \\). Underlying misconception: Does not divide by 2 when calculating the area of a triangle. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 1,
+    "R2": 1,
+    "R3": 1,
+    "R4": 1,
+    "R5": 1,
+    "R6": 1,
+    "justification_pass1": "The teacher provides identical, irrelevant example cases twice without addressing the student's specific misconception about why area units are squared, and the student shows no improvement, explicitly stating continued confusion in Turn 2.",
+    "justification_pass2": "The teacher provides no concrete real-world analogies or everyday situations to ground the abstract concept of squared units, instead repeatedly listing technical misconceptions and correct answers without experiential context.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 1,\n  \"R2\": 1,\n  \"R3\": 1,\n  \"R4\": 1,\n  \"R5\": 1,\n  \"brief_justification\": \"The teacher provides identical, irrelevant example cases twice without addressing the student's specific misconception about why area units are squared, and the student shows no improvement, explicitly stating continued confusion in Turn 2.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 1, \"brief_justification\": \"The teacher provides no concrete real-world analogies or everyday situations to ground the abstract concept of squared units, instead repeatedly listing technical misconceptions and correct answers without experiential context.\"}\n```",
+    "quality_composite": 1.0,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T09:03:13.274424+00:00"
+}

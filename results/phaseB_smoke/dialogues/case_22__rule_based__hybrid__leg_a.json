@@ -1,0 +1,66 @@
+{
+  "state": {
+    "case_id": "case_22",
+    "misconception_label": "Does not realise that adding a larger number gives a larger answer",
+    "misconception_features": [
+      0.0,
+      22.0,
+      2.0,
+      98.0
+    ],
+    "persona": "rule_based",
+    "architecture": "hybrid",
+    "student_leg": "leg_a",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T11:47:34.316584Z",
+      "seed": 1181,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-12T11:47:39.181390Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: Tom and Katie are discussing related calculations Tom says if you know that \\( 3748+426=4174 \\), then \\( 3748+427 \\) must equal \\( \\mathbf{4 1 7 5} \\) Katie says if you know that \\( 3748-426=3322 \\), then \\( 3748 \\) - \\( 427 \\) must equal \\( \\mathbf{3 3 2 3} \\) Who is correct? I got Only Katie because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "You are close, but there seems to be a misconception in how you are approaching the addition and subtraction. Remember, when adding a larger number, the result should also be larger. Let's walk through the reasoning together to see why the correct answers should be \\(4175\\) for the addition and \\(3321\\) for the subtraction.",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Okay, I think I get it a bit better now. So, if Tom is adding \\( 427 \\) instead of \\( 426 \\), the answer should actually be \\( 4175 \\) because it's a bigger number? But I\u2019m still confused about how Katie's answer is \\( 3321 \\) instead of \\( 3323 \\). Can you explain that part again?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Yes, that's correct! When adding a larger number like \\(427\\), the result should be larger, so the answer is indeed \\(4175\\). For subtraction, remember that when subtracting a smaller number from a larger number, the result should also be larger. So, the correct answer for \\(3748 - 427\\) is actually \\(3321\\). Keep practicing, and you'll get the hang of it!",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 1,
+    "R3": 2,
+    "R4": 1,
+    "R5": 2,
+    "R6": 2,
+    "justification_pass1": "The teacher provides incorrect mathematical content (claiming subtracting a larger number gives a larger result), offers minimal cognitive demand by simply stating answers rather than eliciting reasoning, and the student shows confusion rather than improvement by Turn 2.",
+    "justification_pass2": "The teacher provides some direct corrective feedback and states the correct answers, but fails to show explicit worked steps or state clear procedural rules for how to systematically solve these problems, instead relying on vague conceptual explanations about 'larger numbers.'",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 1,\n  \"R3\": 2,\n  \"R4\": 1,\n  \"R5\": 2,\n  \"brief_justification\": \"The teacher provides incorrect mathematical content (claiming subtracting a larger number gives a larger result), offers minimal cognitive demand by simply stating answers rather than eliciting reasoning, and the student shows confusion rather than improvement by Turn 2.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 2, \"brief_justification\": \"The teacher provides some direct corrective feedback and states the correct answers, but fails to show explicit worked steps or state clear procedural rules for how to systematically solve these problems, instead relying on vague conceptual explanations about 'larger numbers.'\"}\n```",
+    "quality_composite": 1.6666666666666667,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T11:47:46.655426+00:00"
+}

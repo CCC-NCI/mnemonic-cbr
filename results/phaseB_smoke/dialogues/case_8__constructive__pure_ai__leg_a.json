@@ -1,0 +1,66 @@
+{
+  "state": {
+    "case_id": "case_8",
+    "misconception_label": "Does not find a common denominator when adding/subtracting fractions",
+    "misconception_features": [
+      0.0,
+      8.0,
+      3.0,
+      88.0
+    ],
+    "persona": "constructive",
+    "architecture": "pure_ai",
+    "student_leg": "leg_a",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T09:29:38.220832Z",
+      "seed": 459,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-12T09:29:42.359361Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: \\( \\frac{4}{5}-\\frac{1}{3}=\\frac{\\bigstar}{15} \\) What should replace the star? I got \\( 5 \\) because I treated the fractions like ordinary numbers.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "It's great that you're trying to treat the fractions like ordinary numbers, but with fractions, we need to find a common denominator before we can add or subtract. Can you think of a common multiple for 5 and 3 to find a common denominator for \\( \\frac{4}{5} \\) and \\( \\frac{1}{3} \\)?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Okay, I think I get that I need a common denominator. The multiples of 5 are 5, 10, 15, and the multiples of 3 are 3, 6, 9, 12, 15. So, 15 is the common denominator! But what do I do with the numerators now?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "That's correct! Since we found the common denominator as 15, we can now rewrite \\( \\frac{4}{5} \\) and \\( \\frac{1}{3} \\) with denominators of 15. Can you try converting both fractions so they have a denominator of 15?",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 3,
+    "R2": 3,
+    "R3": 4,
+    "R4": 5,
+    "R5": 3,
+    "R6": 5,
+    "justification_pass1": "The teacher correctly addresses the common denominator misconception and scaffolds appropriately by breaking the task into steps, though the student's final turn doesn't yet demonstrate they can complete the conversion independently, leaving the misconception correction incomplete.",
+    "justification_pass2": "The teacher exemplifies the constructive strategy by breaking the problem into manageable steps (first finding common denominator, then converting fractions), scaffolding appropriately by acknowledging the student's correct identification of 15, and adjusting support by asking the student to attempt the next step independently after demonstrating understanding.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 3,\n  \"R2\": 3,\n  \"R3\": 4,\n  \"R4\": 5,\n  \"R5\": 3,\n  \"brief_justification\": \"The teacher correctly addresses the common denominator misconception and scaffolds appropriately by breaking the task into steps, though the student's final turn doesn't yet demonstrate they can complete the conversion independently, leaving the misconception correction incomplete.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 5, \"brief_justification\": \"The teacher exemplifies the constructive strategy by breaking the problem into manageable steps (first finding common denominator, then converting fractions), scaffolding appropriately by acknowledging the student's correct identification of 15, and adjusting support by asking the student to attempt the next step independently after demonstrating understanding.\"}\n```",
+    "quality_composite": 3.3333333333333335,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T09:29:49.805147+00:00"
+}

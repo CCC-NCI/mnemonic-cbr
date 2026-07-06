@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_12",
+    "misconception_label": "Thinks alternate angles are always equal",
+    "misconception_features": [
+      0.0,
+      12.0,
+      3.0,
+      25.0
+    ],
+    "persona": "rule_based",
+    "architecture": "pure_cbr_llm",
+    "student_leg": "leg_a",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T15:41:47.517843Z",
+      "seed": 675,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T15:41:53.018016Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: Tom and Katie are arguing about alternate angles. Tom says angles \\( p \\) and \\( q \\) are alternate. Katie says angles \\( p \\) and \\( q \\) are equal. Who is correct? ![Shows two non parallel lines that are intersected by another line. Angles P and Q are both on the outside of the lines and on opposite sides of the transversal.](). I got Only\nKatie because I assumed all the angles in the figure are equal.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Alternate angles are not always equal. In this case, angles \\( p \\) and \\( q \\) are alternate, but that does not mean they are necessarily equal. Remember, alternate angles are formed when a transversal intersects two lines.",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Okay, I think I get that alternate angles are formed by a transversal and two lines, but I'm still confused. So, if the lines aren't parallel, how can I tell if the alternate angles are equal or not? Do I just have to look at the angles and see if they look the same?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "To determine if alternate angles are equal when the lines are not parallel, remember that alternate angles are always equal only when the lines are parallel. Look for other angle relationships, such as vertically opposite angles, to determine if angles are equal in this case.",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "Okay, I think I get that alternate angles are only equal when the lines are parallel. But if the lines aren't parallel, how do I know if the angles are equal? Like, do I just have to compare them visually, or is there a way to calculate it?",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 3,
+    "R2": 1,
+    "R3": 2,
+    "R4": 5,
+    "R5": 2,
+    "R6": 3,
+    "justification_pass1": "The teacher correctly identifies that alternate angles are only equal when lines are parallel, but simply tells the student the answer rather than guiding them to discover it, and the student remains confused about how to determine angle equality by Turn 4.",
+    "justification_pass2": "The teacher provides some direct statements about rules (e.g., 'alternate angles are always equal only when the lines are parallel') but does not show worked steps, demonstrate procedures explicitly, or give specific corrective feedback on how to apply the rule to the actual problem with the non-parallel lines.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 3,\n  \"R2\": 1,\n  \"R3\": 2,\n  \"R4\": 5,\n  \"R5\": 2,\n  \"brief_justification\": \"The teacher correctly identifies that alternate angles are only equal when lines are parallel, but simply tells the student the answer rather than guiding them to discover it, and the student remains confused about how to determine angle equality by Turn 4.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 3, \"brief_justification\": \"The teacher provides some direct statements about rules (e.g., 'alternate angles are always equal only when the lines are parallel') but does not show worked steps, demonstrate procedures explicitly, or give specific corrective feedback on how to apply the rule to the actual problem with the non-parallel lines.\"}\n```",
+    "quality_composite": 2.0,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T15:42:02.965616+00:00"
+}

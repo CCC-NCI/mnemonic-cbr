@@ -1,0 +1,66 @@
+{
+  "state": {
+    "case_id": "case_24",
+    "misconception_label": "When solving a problem that requires an inverse operation (e.g. missing number problems), does the original operation",
+    "misconception_features": [
+      0.0,
+      24.0,
+      2.0,
+      52.0
+    ],
+    "persona": "experiential",
+    "architecture": "hybrid",
+    "student_leg": "leg_a",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T12:04:56.098940Z",
+      "seed": 1271,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-12T12:05:00.553626Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: What should replace the star? \\[ \\bigstar \\times 4=108 \\]. I got \\( 432 \\) because I added the parts of the ratio as if they were a total.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Imagine you're at a bake sale and you have 4 trays of cookies, but you don't know how many cookies are on each tray. You know that the total number of cookies is 108. How would you figure out how many cookies are on each tray? This situation is similar to the problem you're working on with the missing number. Let's think about how we can use the inverse operation to solve it.",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Okay, so if I have 4 trays and they all have the same number of cookies, I guess I need to figure out how many cookies are on one tray by dividing the total number of cookies, right? So, would I divide 108 by 4 to find out how many cookies are on each tray? But then, how does that connect back to the star in the equation?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Imagine you have a cake that you need to divide into 4 equal slices. If you know the total number of slices is 108, how would you find out how many slices are in each part? Just like dividing the total number of cookies by the number of trays, dividing the total number of slices by the number of parts will help you find the missing number in the equation.",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 1,
+    "R2": 2,
+    "R3": 2,
+    "R4": 2,
+    "R5": 2,
+    "R6": 5,
+    "justification_pass1": "The teacher never addresses the student's actual misconception about ratios and instead uses analogies that don't connect back to the original equation, while the student shows some progress in understanding division but remains confused about how it relates to the star problem.",
+    "justification_pass2": "The teacher consistently uses concrete, everyday analogies (bake sale with cookie trays, dividing a cake into slices) to ground the abstract division operation in relatable real-world situations throughout both turns.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 1,\n  \"R2\": 2,\n  \"R3\": 2,\n  \"R4\": 2,\n  \"R5\": 2,\n  \"brief_justification\": \"The teacher never addresses the student's actual misconception about ratios and instead uses analogies that don't connect back to the original equation, while the student shows some progress in understanding division but remains confused about how it relates to the star problem.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 5, \"brief_justification\": \"The teacher consistently uses concrete, everyday analogies (bake sale with cookie trays, dividing a cake into slices) to ground the abstract division operation in relatable real-world situations throughout both turns.\"}\n```",
+    "quality_composite": 1.6666666666666667,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T12:05:07.274198+00:00"
+}

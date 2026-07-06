@@ -1,0 +1,66 @@
+{
+  "state": {
+    "case_id": "case_18",
+    "misconception_label": "Assumes that an arrow on a number line starts at zero",
+    "misconception_features": [
+      0.0,
+      18.0,
+      2.0,
+      73.0
+    ],
+    "persona": "experiential",
+    "architecture": "baseline",
+    "student_leg": "leg_a",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T11:05:38.714308Z",
+      "seed": 963,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-12T11:05:43.482860Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: ![Number line with -12 and -7 marked. Starting at -12, follow an arrow pointing to the right labelled +10. Then there is an arrow labelled b pointing to the left, which ends at -7 on the number line.]() What is the value of \\( b \\) ? I got \\( -7 \\) because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Imagine you were moving objects along a number line. If you start at -12 and move 10 units to the right, then move some units to the left to end up at -7, what would the value of \\( b \\) be in this situation?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Okay, so if I start at -12 and move 10 units to the right, I think I get to -2. But then I have to move left to end at -7. So, how far do I need to move left from -2 to get to -7? I'm not sure how to figure that out.",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Imagine you were sliding objects along a number line. If you start at -12 and move 10 units to the right to reach -2, how many units would you need to slide to the left to end up at -7? Would your method still give the right answer if you were physically moving objects along the number line?",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 4,
+    "R2": 3,
+    "R3": 2,
+    "R4": 5,
+    "R5": 4,
+    "R6": 4,
+    "justification_pass1": "The teacher effectively addresses the misconception by emphasizing starting position through concrete movement scenarios, and the student successfully corrects their understanding by Turn 2 (recognizing -12 as the starting point and reaching -2), though the teacher's final turn is somewhat repetitive rather than helping with the remaining calculation.",
+    "justification_pass2": "The teacher consistently uses concrete physical analogies (moving/sliding objects along a number line) to ground the abstract mathematical concept, though the analogies are somewhat repetitive and could have been more varied or deeply connected to everyday situations.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\"R1\": 4, \"R2\": 3, \"R3\": 2, \"R4\": 5, \"R5\": 4, \"brief_justification\": \"The teacher effectively addresses the misconception by emphasizing starting position through concrete movement scenarios, and the student successfully corrects their understanding by Turn 2 (recognizing -12 as the starting point and reaching -2), though the teacher's final turn is somewhat repetitive rather than helping with the remaining calculation.\"}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 4, \"brief_justification\": \"The teacher consistently uses concrete physical analogies (moving/sliding objects along a number line) to ground the abstract mathematical concept, though the analogies are somewhat repetitive and could have been more varied or deeply connected to everyday situations.\"}\n```",
+    "quality_composite": 3.0,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T11:05:50.861296+00:00"
+}

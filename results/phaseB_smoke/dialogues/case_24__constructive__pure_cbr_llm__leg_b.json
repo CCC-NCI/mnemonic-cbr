@@ -1,0 +1,66 @@
+{
+  "state": {
+    "case_id": "case_24",
+    "misconception_label": "When solving a problem that requires an inverse operation (e.g. missing number problems), does the original operation",
+    "misconception_features": [
+      0.0,
+      24.0,
+      2.0,
+      52.0
+    ],
+    "persona": "constructive",
+    "architecture": "pure_cbr_llm",
+    "student_leg": "leg_b",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T12:01:48.822581Z",
+      "seed": 1256,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-12T12:01:53.209335Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: What should replace the star? \\[ \\bigstar \\times 4=108 \\]. I got \\( 432 \\) because I added the parts of the ratio as if they were a total.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's think about the operation needed to find the missing number in the equation \\(\\bigstar \\times 4 = 108\\). Consider the relationship between multiplication and division. Can you think about how you might use division to find the value of \\(\\bigstar\\)?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Oh, so I need to divide instead of multiply? So I should do 108 divided by 4 to get the star? That would give me 27, right? But I'm not really sure why dividing works when the problem has a multiplication sign in it...",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's focus on the relationship between multiplication and division. Think about how division can help you find the missing number in a multiplication problem. Try to connect the concept of inverse operations to this situation.",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 1,
+    "R2": 2,
+    "R3": 2,
+    "R4": 5,
+    "R5": 2,
+    "R6": 3,
+    "justification_pass1": "The teacher ignores the student's actual misconception about ratios and instead addresses a different issue about inverse operations, and while the student gets the correct answer (27), they explicitly state they don't understand why dividing works, showing the misconception remains unresolved.",
+    "justification_pass2": "The teacher breaks down the problem and scaffolds by directing attention to the multiplication-division relationship, but doesn't fully adjust support when the student explicitly states confusion in Turn 2, instead repeating similar guidance rather than providing a more concrete intermediate step.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 1,\n  \"R2\": 2,\n  \"R3\": 2,\n  \"R4\": 5,\n  \"R5\": 2,\n  \"brief_justification\": \"The teacher ignores the student's actual misconception about ratios and instead addresses a different issue about inverse operations, and while the student gets the correct answer (27), they explicitly state they don't understand why dividing works, showing the misconception remains unresolved.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\n  \"R6\": 3,\n  \"brief_justification\": \"The teacher breaks down the problem and scaffolds by directing attention to the multiplication-division relationship, but doesn't fully adjust support when the student explicitly states confusion in Turn 2, instead repeating similar guidance rather than providing a more concrete intermediate step.\"\n}\n```",
+    "quality_composite": 1.6666666666666667,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T12:02:01.914249+00:00"
+}

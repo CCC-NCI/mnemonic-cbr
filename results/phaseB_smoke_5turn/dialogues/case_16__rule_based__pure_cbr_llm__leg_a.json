@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_16",
+    "misconception_label": "Divides total amount by each side of the ratio instead of dividing by the sum of the parts",
+    "misconception_features": [
+      0.0,
+      16.0,
+      3.0,
+      83.0
+    ],
+    "persona": "rule_based",
+    "architecture": "pure_cbr_llm",
+    "student_leg": "leg_a",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T16:23:59.183839Z",
+      "seed": 875,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T16:24:04.628500Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: In the diagram, AN : NB \\( =3: 5 \\) What is the distance AN? ![A line that begins with point A, ends with point B, and has point N in between. The entire length of the line measures 48 m.](). I got \\( 16 \\mathrm{~m} \\) because I added the parts of the ratio as if they were a total.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "You should divide the total amount by the sum of the parts in the ratio, not by each side individually. In this case, the correct distance for AN is 30 m, calculated by dividing the total length of 48 m by the sum of the parts in the ratio 3:5.",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Oh, I see! So I should add the parts of the ratio together first, which is \\(3 + 5 = 8\\), and then divide the total length of 48 m by 8. But how do I find the actual lengths for AN and NB after that?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "That's correct! After finding the total sum of the parts in the ratio, you can then multiply this sum by each part to determine the actual lengths. For AN, you would calculate \\( 30 \\mathrm{~m} \\times \\frac{3}{8} \\), which gives you \\( 11.25 \\mathrm{~m} \\). For NB, you would calculate \\( 30 \\mathrm{~m} \\times \\frac{5}{8} \\), which gives you \\( 18.75 \\mathrm{~m} \\).",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "Okay, I think I get how to add the parts of the ratio and divide the total length by that. But when you said to multiply by each part to find the lengths, I got a bit confused. So, for AN, I should do \\( 30 \\mathrm{~m} \\times \\frac{3}{8} \\), but what does that actually mean? How do I do that calculation?",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 1,
+    "R3": 2,
+    "R4": 1,
+    "R5": 1,
+    "R6": 2,
+    "justification_pass1": "The teacher directly states answers without eliciting reasoning, makes a critical mathematical error in Turn 3 (claiming 30m \u00d7 3/8 when it should be 48m \u00f7 8 \u00d7 3), and the student remains confused about the procedure by Turn 4, showing no real improvement in understanding.",
+    "justification_pass2": "While the teacher attempts to state procedures and give corrective feedback, the explanations contain significant mathematical errors (claiming AN = 30m when it should be 18m, and providing incorrect calculation methods in Turn 3), which undermines the core requirement of rule-based teaching to provide accurate explicit procedures.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 1,\n  \"R3\": 2,\n  \"R4\": 1,\n  \"R5\": 1,\n  \"brief_justification\": \"The teacher directly states answers without eliciting reasoning, makes a critical mathematical error in Turn 3 (claiming 30m \u00d7 3/8 when it should be 48m \u00f7 8 \u00d7 3), and the student remains confused about the procedure by Turn 4, showing no real improvement in understanding.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 2, \"brief_justification\": \"While the teacher attempts to state procedures and give corrective feedback, the explanations contain significant mathematical errors (claiming AN = 30m when it should be 18m, and providing incorrect calculation methods in Turn 3), which undermines the core requirement of rule-based teaching to provide accurate explicit procedures.\"}\n```",
+    "quality_composite": 1.6666666666666667,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T16:24:13.805937+00:00"
+}

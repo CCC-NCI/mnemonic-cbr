@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_11",
+    "misconception_label": "Struggles to visualise nets of 3D shapes",
+    "misconception_features": [
+      0.0,
+      11.0,
+      3.0,
+      31.0
+    ],
+    "persona": "constructive",
+    "architecture": "pure_cbr_llm",
+    "student_leg": "leg_a",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T15:26:31.627989Z",
+      "seed": 605,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T15:26:38.394003Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: This is the net of a... ![A circle touching a sector](). I got Triangle because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's think about the net of a 3D shape as a whole, rather than focusing on just one face. Remember, the net represents the entire shape when folded up. Can you try to visualize how the different faces connect to form the shape? Let's work through it together.",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Okay, I think I get what you mean about looking at the whole net. So, if I imagine folding it up, it\u2019s not just about the triangle part? But I still don\u2019t really see how the circle and the sector fit together to make a 3D shape. What shape would that be?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's focus on how all the faces come together to create the 3D shape. Remember, each face of the net corresponds to a specific part of the shape when folded. Can you think about how the circle and sector may form a particular 3D shape, considering their positions and connections in the net?",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "I think I get that the circle and the sector are part of the same shape, but I'm still confused about what 3D shape they make together. Is it like a cone or something? I just can't picture how they fit when it's all folded up. Can you help me see that?",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 3,
+    "R3": 2,
+    "R4": 5,
+    "R5": 2,
+    "R6": 2,
+    "justification_pass1": "The teacher repeatedly asks generic questions about visualizing and connecting faces without addressing the specific difficulty of matching a circle and sector to form a cone, and while the student eventually guesses 'cone,' they explicitly state they still cannot picture how it folds, showing minimal progress on the core visualization misconception.",
+    "justification_pass2": "The teacher repeatedly asks the student to visualize and think about the shape without breaking down the problem into manageable steps or adjusting support when the student explicitly requests help twice, failing to scaffold effectively within the student's ZPD.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 3,\n  \"R3\": 2,\n  \"R4\": 5,\n  \"R5\": 2,\n  \"brief_justification\": \"The teacher repeatedly asks generic questions about visualizing and connecting faces without addressing the specific difficulty of matching a circle and sector to form a cone, and while the student eventually guesses 'cone,' they explicitly state they still cannot picture how it folds, showing minimal progress on the core visualization misconception.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 2, \"brief_justification\": \"The teacher repeatedly asks the student to visualize and think about the shape without breaking down the problem into manageable steps or adjusting support when the student explicitly requests help twice, failing to scaffold effectively within the student's ZPD.\"}\n```",
+    "quality_composite": 2.3333333333333335,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T15:26:49.039358+00:00"
+}

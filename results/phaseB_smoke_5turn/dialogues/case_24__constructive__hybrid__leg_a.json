@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_24",
+    "misconception_label": "When solving a problem that requires an inverse operation (e.g. missing number problems), does the original operation",
+    "misconception_features": [
+      0.0,
+      24.0,
+      2.0,
+      52.0
+    ],
+    "persona": "constructive",
+    "architecture": "hybrid",
+    "student_leg": "leg_a",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T17:46:39.104705Z",
+      "seed": 1261,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T17:46:43.937250Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: What should replace the star? \\[ \\bigstar \\times 4=108 \\]. I got \\( 432 \\) because I added the parts of the ratio as if they were a total.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "It seems like you may be approaching this problem as if it were a multiplication question rather than a missing number problem involving division. Let's try to focus on the concept of finding the missing number by using the inverse operation. Can you think about how you can use division to solve for the missing number in this equation?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Okay, I think I get what you're saying about using division instead. So, if I have \\(\\bigstar \\times 4 = 108\\), I should divide 108 by 4 to find the star, right? But I'm still a bit confused about how that works with the numbers. Can you explain why I can't just add them like I did before?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "It's great that you're thinking about using division to find the missing number. Remember, when we're dealing with a missing number problem, we're looking to undo the original operation to find the unknown value. In this case, dividing 108 by 4 will help us determine what the missing number, represented by the star, should be. Let's work through it step by step together.",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "Okay, so if I divide 108 by 4, I should get the value of the star, right? But I'm still not sure why adding the numbers doesn't work. I thought maybe it would give me some kind of total or something. Can you help me understand that part better?",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 2,
+    "R3": 2,
+    "R4": 3,
+    "R5": 2,
+    "R6": 3,
+    "justification_pass1": "The teacher correctly identifies the need for inverse operations but never addresses the student's specific confusion about 'adding parts of a ratio' or why their original approach was incorrect, and the student remains confused about why addition doesn't work even by Turn 4.",
+    "justification_pass2": "The teacher identifies the conceptual error and attempts to scaffold by introducing the inverse operation concept, but provides limited step-by-step breakdown and doesn't directly address the student's persistent confusion about why addition doesn't work, missing opportunities to adjust support level to the student's demonstrated need.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 2,\n  \"R3\": 2,\n  \"R4\": 3,\n  \"R5\": 2,\n  \"brief_justification\": \"The teacher correctly identifies the need for inverse operations but never addresses the student's specific confusion about 'adding parts of a ratio' or why their original approach was incorrect, and the student remains confused about why addition doesn't work even by Turn 4.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 3, \"brief_justification\": \"The teacher identifies the conceptual error and attempts to scaffold by introducing the inverse operation concept, but provides limited step-by-step breakdown and doesn't directly address the student's persistent confusion about why addition doesn't work, missing opportunities to adjust support level to the student's demonstrated need.\"}\n```",
+    "quality_composite": 2.0,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T17:46:51.259281+00:00"
+}

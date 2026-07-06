@@ -1,0 +1,66 @@
+{
+  "state": {
+    "case_id": "case_18",
+    "misconception_label": "Assumes that an arrow on a number line starts at zero",
+    "misconception_features": [
+      0.0,
+      18.0,
+      2.0,
+      73.0
+    ],
+    "persona": "socratic",
+    "architecture": "hybrid",
+    "student_leg": "leg_a",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T11:03:05.005851Z",
+      "seed": 951,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-12T11:03:09.914585Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: ![Number line with -12 and -7 marked. Starting at -12, follow an arrow pointing to the right labelled +10. Then there is an arrow labelled b pointing to the left, which ends at -7 on the number line.]() What is the value of \\( b \\) ? I got \\( -7 \\) because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Why do you think the arrow starting at -12 goes to +10? Can you explain your reasoning for how you arrived at the value of -7 for \\( b \\)?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "I thought the arrow just moved from -12 to -7 directly, like it was just counting up. But now I'm not sure how the +10 fits in. Does that mean I need to add something to -12 first before I can figure out \\( b \\)?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Why do you think adding +10 is involved in finding the value of \\( b \\)? How does this relate to the misconception of assuming that an arrow on a number line starts at zero?",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 3,
+    "R3": 2,
+    "R4": 2,
+    "R5": 2,
+    "R6": 5,
+    "justification_pass1": "The teacher asks probing questions but explicitly mentions the misconception in Turn 3 rather than helping the student discover it, the questions maintain cognitive demand but lack appropriate scaffolding, and the student shows confusion rather than improvement by Turn 2.",
+    "justification_pass2": "The teacher consistently uses probing questions to guide the student's thinking, never provides direct answers, and in Turn 3 addresses a misconception about arrows starting at zero, which is characteristic of using questioning to expose flawed reasoning.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 3,\n  \"R3\": 2,\n  \"R4\": 2,\n  \"R5\": 2,\n  \"brief_justification\": \"The teacher asks probing questions but explicitly mentions the misconception in Turn 3 rather than helping the student discover it, the questions maintain cognitive demand but lack appropriate scaffolding, and the student shows confusion rather than improvement by Turn 2.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 5, \"brief_justification\": \"The teacher consistently uses probing questions to guide the student's thinking, never provides direct answers, and in Turn 3 addresses a misconception about arrows starting at zero, which is characteristic of using questioning to expose flawed reasoning.\"}\n```",
+    "quality_composite": 2.3333333333333335,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T11:03:17.110477+00:00"
+}

@@ -1,0 +1,66 @@
+{
+  "state": {
+    "case_id": "case_16",
+    "misconception_label": "Divides total amount by each side of the ratio instead of dividing by the sum of the parts",
+    "misconception_features": [
+      0.0,
+      16.0,
+      3.0,
+      83.0
+    ],
+    "persona": "rule_based",
+    "architecture": "pure_ai",
+    "student_leg": "leg_a",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T10:49:16.105848Z",
+      "seed": 879,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-12T10:49:24.540904Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: In the diagram, AN : NB \\( =3: 5 \\) What is the distance AN? ![A line that begins with point A, ends with point B, and has point N in between. The entire length of the line measures 48 m.](). I got \\( 16 \\mathrm{~m} \\) because I added the parts of the ratio as if they were a total.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "To find the distance AN, you need to divide the total length of 48m by the sum of the parts in the ratio (3 + 5). Let's correct the mistake by dividing 48 by 8, not by each individual part. So, the correct distance of AN is \\( \\frac{48}{8} = 6 \\) m. Remember, always divide by the sum of the parts in the ratio, not by each individual part.",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Oh, I see! So I should add the parts of the ratio together first, which is 3 + 5 = 8, and then divide the total length by that. But why do I divide by the sum instead of just using the parts? Can you explain that a bit more?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Yes, that's correct! By dividing the total length by the sum of the parts in the ratio, you are essentially distributing the total amount proportionally based on the ratio. This ensures that each part receives the correct proportion of the total length. Remember, ratios represent the relationship between different parts, so it's important to consider them as a whole when dividing the total amount.",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 1,
+    "R3": 2,
+    "R4": 2,
+    "R5": 2,
+    "R6": 3,
+    "justification_pass1": "The teacher directly tells the answer and procedure without engaging the misconception deeply, makes a mathematical error (AN should be 18m, not 6m), and while the student asks a good follow-up question, there's no evidence they can now solve the problem correctly themselves.",
+    "justification_pass2": "The teacher provides direct corrective feedback and states explicit procedures in Turn 1, but Turn 3 shifts to conceptual explanation of why the procedure works rather than reinforcing the rule-based approach, which dilutes the strategy fidelity.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 1,\n  \"R3\": 2,\n  \"R4\": 2,\n  \"R5\": 2,\n  \"brief_justification\": \"The teacher directly tells the answer and procedure without engaging the misconception deeply, makes a mathematical error (AN should be 18m, not 6m), and while the student asks a good follow-up question, there's no evidence they can now solve the problem correctly themselves.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 3, \"brief_justification\": \"The teacher provides direct corrective feedback and states explicit procedures in Turn 1, but Turn 3 shifts to conceptual explanation of why the procedure works rather than reinforcing the rule-based approach, which dilutes the strategy fidelity.\"}\n```",
+    "quality_composite": 1.6666666666666667,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T10:49:31.623390+00:00"
+}

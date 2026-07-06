@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_1",
+    "misconception_label": "Does not know that to factorise a quadratic expression, to find two numbers that add to give the coefficient of the x term, and multiply to give the non variable term",
+    "misconception_features": [
+      0.0,
+      1.0,
+      3.0,
+      59.0
+    ],
+    "persona": "experiential",
+    "architecture": "hybrid",
+    "student_leg": "leg_b",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T13:18:03.056690Z",
+      "seed": 122,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T13:18:08.695173Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: Simplify the following, if possible: \\( \\frac{m^{2}+2 m-3}{m-3} \\). I got \\( m+1 \\) because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's think of factorising a quadratic expression like solving a puzzle. Just like in a puzzle, we need to find two numbers that fit together perfectly. In this case, we need to find two numbers that add to give the coefficient of the variable term (in this case, 2) and multiply to give the non-variable term (in this case, -3). Can you think of two numbers that fit those criteria?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Um, so I need two numbers that add up to 2 and multiply to make -3? That's confusing... would it be like 3 and -1? Because 3 minus 1 is 2, and 3 times -1 is -3?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "That's a great start! Just like in the examples we looked at earlier, we need to make sure the numbers multiply to give -3 and add up to 2. Let's double-check our numbers and see if they fit both criteria.",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "Oh right, yeah! So 3 and -1... if I add them together that's 3 plus -1 which equals 2, and if I multiply them I get 3 times -1 which is -3. So those numbers do work! But then... how do I use them to factorise the m\u00b2 + 2m - 3 bit?",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 4,
+    "R2": 3,
+    "R3": 4,
+    "R4": 5,
+    "R5": 4,
+    "R6": 2,
+    "justification_pass1": "The teacher directly addresses the factorising misconception with clear criteria, the student successfully identifies the correct numbers (3 and -1) and verifies both conditions, though the dialogue ends before completing the factorisation process.",
+    "justification_pass2": "The teacher uses a generic puzzle metaphor but does not connect the mathematical concepts to concrete real-world situations or everyday experiences that would ground the abstract algebra in experiential understanding.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 4,\n  \"R2\": 3,\n  \"R3\": 4,\n  \"R4\": 5,\n  \"R5\": 4,\n  \"brief_justification\": \"The teacher directly addresses the factorising misconception with clear criteria, the student successfully identifies the correct numbers (3 and -1) and verifies both conditions, though the dialogue ends before completing the factorisation process.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 2, \"brief_justification\": \"The teacher uses a generic puzzle metaphor but does not connect the mathematical concepts to concrete real-world situations or everyday experiences that would ground the abstract algebra in experiential understanding.\"}\n```",
+    "quality_composite": 3.6666666666666665,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T13:18:17.083034+00:00"
+}

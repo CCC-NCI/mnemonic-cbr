@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_20",
+    "misconception_label": "Adds when calculating volume instead of multiplying",
+    "misconception_features": [
+      0.0,
+      20.0,
+      1.0,
+      58.0
+    ],
+    "persona": "socratic",
+    "architecture": "pure_ai",
+    "student_leg": "leg_b",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T17:01:36.182749Z",
+      "seed": 1050,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T17:01:42.370511Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: The volume of this cuboid is \\( 30 \\mathrm{~cm}^{3} \\) What length should replace the star? ![A cuboid, depth 2cm and height 3cm. The width is labelled with a star.](). I got \\( 25 \\mathrm{~cm} \\) because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Why do you think adding the dimensions together would give you the volume? Can you think of a different approach that might be more appropriate for finding the volume of a cuboid?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Oh right, so I shouldn't be adding them... um, should I be multiplying instead? Like, 2 times 3 times the star equals 30? I'm still a bit confused about why we multiply for volume though - is it because volume is like, the space inside the shape or something?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "That's a great start to recognizing the correct operation for finding the volume of a cuboid. Can you think about why multiplying the dimensions together makes sense when trying to calculate the amount of space inside a three-dimensional shape? What happens to the space if we were to add the dimensions instead?",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "Um, I think I see it now... like, if we add them we just get a number that doesn't really mean anything, but if we multiply them we're kind of counting how many little cubes fit inside? So like, 2 times 3 times the star would be 30, which means the star is... 5? But I'm still not totally sure why multiplying gives us the actual space inside and adding doesn't.",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 3,
+    "R2": 3,
+    "R3": 2,
+    "R4": 5,
+    "R5": 3,
+    "R6": 5,
+    "justification_pass1": "The teacher addresses the adding misconception and prompts reasoning about why multiplication is appropriate, but the student's final turn shows they still lack deep understanding of why multiplication represents volume, suggesting the scaffolding didn't quite bridge the conceptual gap.",
+    "justification_pass2": "The teacher consistently uses probing questions to guide the student's thinking without ever directly providing the answer, helping the student discover that multiplication (not addition) is needed and arrive at the answer of 5cm independently.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 3,\n  \"R2\": 3,\n  \"R3\": 2,\n  \"R4\": 5,\n  \"R5\": 3,\n  \"brief_justification\": \"The teacher addresses the adding misconception and prompts reasoning about why multiplication is appropriate, but the student's final turn shows they still lack deep understanding of why multiplication represents volume, suggesting the scaffolding didn't quite bridge the conceptual gap.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 5, \"brief_justification\": \"The teacher consistently uses probing questions to guide the student's thinking without ever directly providing the answer, helping the student discover that multiplication (not addition) is needed and arrive at the answer of 5cm independently.\"}\n```",
+    "quality_composite": 2.6666666666666665,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T17:01:56.398046+00:00"
+}

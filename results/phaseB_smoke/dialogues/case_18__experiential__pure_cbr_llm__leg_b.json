@@ -1,0 +1,66 @@
+{
+  "state": {
+    "case_id": "case_18",
+    "misconception_label": "Assumes that an arrow on a number line starts at zero",
+    "misconception_features": [
+      0.0,
+      18.0,
+      2.0,
+      73.0
+    ],
+    "persona": "experiential",
+    "architecture": "pure_cbr_llm",
+    "student_leg": "leg_b",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T11:06:14.218310Z",
+      "seed": 966,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-12T11:06:18.007672Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: ![Number line with -12 and -7 marked. Starting at -12, follow an arrow pointing to the right labelled +10. Then there is an arrow labelled b pointing to the left, which ends at -7 on the number line.]() What is the value of \\( b \\) ? I got \\( -7 \\) because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's think of the number line like a journey. Imagine you start at -12 and then move 10 steps to the right. What point do you end up at? Let's walk through the steps together to find the correct value for \\( b \\).",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "So if I start at -12 and move 10 steps to the right, that would be like... -12 + 10, which is -2, right? But then I'm confused about what b is supposed to be - is b the arrow that goes from -2 to -7, or is it something else?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Think of the number line like a road trip. Starting at -12, you drive 10 miles to the right. What point do you end up at? Then, think about the arrow going from that point to -7 as a detour. What would be the total distance traveled from -12 to -7?",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 3,
+    "R3": 2,
+    "R4": 2,
+    "R5": 2,
+    "R6": 5,
+    "justification_pass1": "The teacher uses journey metaphors but doesn't directly address the 'arrow starts at zero' misconception, and in Turn 3 confusingly asks about 'total distance from -12 to -7' which doesn't help find b (the change from -2 to -7), while the student shows partial progress but remains confused about what b represents.",
+    "justification_pass2": "The teacher consistently uses concrete real-world analogies (journey, walking steps, road trip, driving miles, detour) to ground the abstract number line problem in everyday experiential situations.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 3,\n  \"R3\": 2,\n  \"R4\": 2,\n  \"R5\": 2,\n  \"brief_justification\": \"The teacher uses journey metaphors but doesn't directly address the 'arrow starts at zero' misconception, and in Turn 3 confusingly asks about 'total distance from -12 to -7' which doesn't help find b (the change from -2 to -7), while the student shows partial progress but remains confused about what b represents.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 5, \"brief_justification\": \"The teacher consistently uses concrete real-world analogies (journey, walking steps, road trip, driving miles, detour) to ground the abstract number line problem in everyday experiential situations.\"}\n```",
+    "quality_composite": 2.3333333333333335,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T11:06:24.910922+00:00"
+}

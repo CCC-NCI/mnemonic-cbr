@@ -1,0 +1,66 @@
+{
+  "state": {
+    "case_id": "case_14",
+    "misconception_label": "Stops iteration too early when solving equations",
+    "misconception_features": [
+      0.0,
+      14.0,
+      3.0,
+      85.0
+    ],
+    "persona": "experiential",
+    "architecture": "baseline",
+    "student_leg": "leg_a",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T10:27:48.090781Z",
+      "seed": 763,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-12T10:27:51.657305Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: \\( x_{n+1}=5-\\frac{1}{x_{n}} \\) Using a starting value of \\( x_{1}=2 \\), what is the solution to \\( x=5-\\frac{1}{x} \\) to \\( 2 \\) decimal places? I got \\( 4.78 \\) because I added the parts of the ratio as if they were a total.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Think of this equation like a recipe for a cake. Each step in the recipe is important to get the final result just right. In this case, make sure to follow each step of the equation carefully to find the solution.",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Okay, I think I get that I need to follow each step carefully like a recipe. So, if I keep going with the iterations, I might get a better answer? But I'm still not sure how many times I should keep doing it before I stop. How do I know when I've got it right?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Imagine you were baking a cake and each time you mixed the ingredients, the cake got a little bit closer to being perfect. Just like with baking, keep iterating with the equation until you get closer and closer to the right answer.",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 1,
+    "R2": 1,
+    "R3": 1,
+    "R4": 2,
+    "R5": 1,
+    "R6": 2,
+    "justification_pass1": "The teacher uses vague metaphors about cake recipes that fail to address the specific misconception about stopping iteration too early, provides no concrete guidance on convergence criteria, and the student remains confused about when to stop iterating.",
+    "justification_pass2": "While the teacher attempts to use real-world analogies (cake baking, recipes), these analogies are superficial and don't meaningfully connect the abstract mathematical concepts of iteration, convergence, or fixed points to concrete experiential understanding that would help the student solve the problem.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\"R1\": 1, \"R2\": 1, \"R3\": 1, \"R4\": 2, \"R5\": 1, \"brief_justification\": \"The teacher uses vague metaphors about cake recipes that fail to address the specific misconception about stopping iteration too early, provides no concrete guidance on convergence criteria, and the student remains confused about when to stop iterating.\"}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 2, \"brief_justification\": \"While the teacher attempts to use real-world analogies (cake baking, recipes), these analogies are superficial and don't meaningfully connect the abstract mathematical concepts of iteration, convergence, or fixed points to concrete experiential understanding that would help the student solve the problem.\"}\n```",
+    "quality_composite": 1.0,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T10:27:57.925278+00:00"
+}

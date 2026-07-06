@@ -1,0 +1,53 @@
+{
+  "blind_id": "D028a998a1d",
+  "subset_row": {
+    "blind_id": "D028a998a1d",
+    "case_id": "case_11",
+    "persona": "constructive",
+    "architecture": "pure_cbr_tpl",
+    "student_leg": "leg_a",
+    "llm_R5": "1",
+    "llm_quality_composite": "1.0",
+    "llm_R6": "1",
+    "difficulty_band": "medium",
+    "r5_band": "low",
+    "word_count": "34",
+    "attention_check_type": "",
+    "attention_check_rationale": "",
+    "file_path": "dialogues/case_11__constructive__pure_cbr_tpl__leg_a.json"
+  },
+  "primary_score": {
+    "R1": 1,
+    "R2": 1,
+    "R3": 1,
+    "R4": 2,
+    "R5": 1,
+    "R6": 1,
+    "justification_pass1": "The teacher merely repeats identical lists of similar cases without addressing the student's specific questions about visualizing nets, and the student shows no progress in understanding, repeatedly asking the same question about distinguishing nets from individual faces.",
+    "justification_pass2": "The teacher simply repeats identical generic case examples without scaffolding, breaking down the problem into steps, or adjusting support based on the student's specific confusion about distinguishing nets from individual faces.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 1,\n  \"R2\": 1,\n  \"R3\": 1,\n  \"R4\": 2,\n  \"R5\": 1,\n  \"brief_justification\": \"The teacher merely repeats identical lists of similar cases without addressing the student's specific questions about visualizing nets, and the student shows no progress in understanding, repeatedly asking the same question about distinguishing nets from individual faces.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 1, \"brief_justification\": \"The teacher simply repeats identical generic case examples without scaffolding, breaking down the problem into steps, or adjusting support based on the student's specific confusion about distinguishing nets from individual faces.\"}\n```",
+    "quality_composite": 1.0,
+    "is_complete": true
+  },
+  "secondary_score": {
+    "R1": 1,
+    "R2": 1,
+    "R3": 1,
+    "R4": 3,
+    "R5": 1,
+    "R6": 1,
+    "justification_pass1": "The teacher repeatedly provides a list of past errors instead of engaging with the student's current, specific questions, leading to no cognitive demand and no student progress.",
+    "justification_pass2": "The teacher provides a static, non-interactive list of past problems rather than scaffolding the student's current thinking, breaking down the problem, or adjusting to their questions.",
+    "judge_provider": "gemini",
+    "judge_model": "gemini-2.5-pro",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 1,\n  \"R2\": 1,\n  \"R3\": 1,\n  \"R4\": 3,\n  \"R5\": 1,\n  \"brief_justification\": \"The teacher repeatedly provides a list of past errors instead of engaging with the student's current, specific questions, leading to no cognitive demand and no student progress.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\n  \"R6\": 1,\n  \"brief_justification\": \"The teacher provides a static, non-interactive list of past problems rather than scaffolding the student's current thinking, breaking down the problem, or adjusting to their questions.\"\n}\n```"
+  }
+}

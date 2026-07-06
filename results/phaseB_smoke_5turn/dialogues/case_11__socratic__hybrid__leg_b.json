@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_11",
+    "misconception_label": "Struggles to visualise nets of 3D shapes",
+    "misconception_features": [
+      0.0,
+      11.0,
+      3.0,
+      31.0
+    ],
+    "persona": "socratic",
+    "architecture": "hybrid",
+    "student_leg": "leg_b",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T15:25:54.161103Z",
+      "seed": 602,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T15:25:59.891580Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: This is the net of a... ![A circle touching a sector](). I got Triangle because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Can you explain why you chose a triangle as the net for this shape? What characteristics of the 3D shape can you identify in the net? Remember, the net should represent all the faces and edges of the 3D shape.",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Um, I think I was wrong... looking at it again, I see there's a circle and then that curved bit attached to it, so maybe it's a cone? But I'm still confused about how the flat circle and the curved piece actually fold up together - like, does the curved bit wrap around the circle or something?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Can you think about how the net of a cone would look like? Consider the shape of a cone and how it would unfold into a flat net. What shapes do you see in the net that correspond to the different parts of the cone?",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "Yeah, so like... the circle would be the flat bottom of the cone, right? And then the curved bit - is that the side that wraps around it? But I'm still confused about how they actually connect together when you fold it up - like, does the edge of the circle match up with the straight edge of that curved piece?",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 3,
+    "R3": 2,
+    "R4": 5,
+    "R5": 3,
+    "R6": 4,
+    "justification_pass1": "The teacher asks generic questions about nets rather than addressing the specific visualization struggle, and while the student progresses from triangle to cone, they remain confused about the fundamental folding mechanism by the end.",
+    "justification_pass2": "The teacher consistently uses probing questions to guide the student's thinking about the net and 3D shape without directly providing answers, which is characteristic of Socratic teaching, though no counterexamples are explicitly used to expose the initial flawed reasoning about the triangle.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 3,\n  \"R3\": 2,\n  \"R4\": 5,\n  \"R5\": 3,\n  \"brief_justification\": \"The teacher asks generic questions about nets rather than addressing the specific visualization struggle, and while the student progresses from triangle to cone, they remain confused about the fundamental folding mechanism by the end.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 4, \"brief_justification\": \"The teacher consistently uses probing questions to guide the student's thinking about the net and 3D shape without directly providing answers, which is characteristic of Socratic teaching, though no counterexamples are explicitly used to expose the initial flawed reasoning about the triangle.\"}\n```",
+    "quality_composite": 2.3333333333333335,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T15:26:08.083912+00:00"
+}

@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_23",
+    "misconception_label": "Confuses rest and movement on a distance time graph",
+    "misconception_features": [
+      0.0,
+      23.0,
+      3.0,
+      62.0
+    ],
+    "persona": "rule_based",
+    "architecture": "hybrid",
+    "student_leg": "leg_b",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T17:40:49.972700Z",
+      "seed": 1232,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T17:40:54.657405Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: This graph shows how far Fido the dog is from his home. What might the negative-sloping section represent? ![A graph with time (secs) on the horizontal axis and distance (m) on the vertical axis. The graph starts at the origin, travels in a straight line up and right, travels horizontally, then travels in a straight line down and right back to the x-axis. ](). I got Fido has fallen asleep because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "You may have confused rest and movement on the distance-time graph. Remember that a horizontal line does not necessarily mean zero distance. Let's revisit the graph and discuss how to correctly interpret the negative-sloping section.",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Oh right, so the horizontal line means Fido isn't moving, not that he's asleep? But then I'm still confused about the downward sloping bit - does that mean he's going backwards towards his home, or does it mean something else?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "You are correct that a horizontal line on a distance-time graph indicates that Fido is not moving. As for the downward sloping section, it actually represents Fido moving away from his home in the opposite direction. Remember, the slope of the line on a distance-time graph indicates the speed and direction of movement.",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "Wait, I'm confused again - if the line is going down, how can that mean he's moving away from home? Wouldn't moving away make the distance bigger, not smaller? Or does the downward slope mean he's actually getting closer to home?",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 3,
+    "R2": 1,
+    "R3": 2,
+    "R4": 1,
+    "R5": 1,
+    "R6": 2,
+    "justification_pass1": "The teacher identifies the misconception initially but then provides mathematically incorrect information in Turn 3 (claiming downward slope means moving away rather than returning home), which confuses the student further and prevents any progress toward resolving the original misconception.",
+    "justification_pass2": "While the teacher attempts to state rules about graph interpretation, they provide incorrect information in Turn 3 (claiming downward slope means moving away when it actually means returning home), which contradicts the rule-based strategy's requirement for direct corrective feedback on errors.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 3,\n  \"R2\": 1,\n  \"R3\": 2,\n  \"R4\": 1,\n  \"R5\": 1,\n  \"brief_justification\": \"The teacher identifies the misconception initially but then provides mathematically incorrect information in Turn 3 (claiming downward slope means moving away rather than returning home), which confuses the student further and prevents any progress toward resolving the original misconception.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 2, \"brief_justification\": \"While the teacher attempts to state rules about graph interpretation, they provide incorrect information in Turn 3 (claiming downward slope means moving away when it actually means returning home), which contradicts the rule-based strategy's requirement for direct corrective feedback on errors.\"}\n```",
+    "quality_composite": 2.0,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T17:41:02.654868+00:00"
+}

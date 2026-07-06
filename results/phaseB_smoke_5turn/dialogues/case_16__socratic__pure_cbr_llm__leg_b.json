@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_16",
+    "misconception_label": "Divides total amount by each side of the ratio instead of dividing by the sum of the parts",
+    "misconception_features": [
+      0.0,
+      16.0,
+      3.0,
+      83.0
+    ],
+    "persona": "socratic",
+    "architecture": "pure_cbr_llm",
+    "student_leg": "leg_b",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T16:17:53.139874Z",
+      "seed": 846,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T16:17:58.023629Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: In the diagram, AN : NB \\( =3: 5 \\) What is the distance AN? ![A line that begins with point A, ends with point B, and has point N in between. The entire length of the line measures 48 m.](). I got \\( 16 \\mathrm{~m} \\) because I added the parts of the ratio as if they were a total.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Why do you think adding the parts of the ratio gives you the total distance? Can you explain your reasoning behind your calculation of \\( 16 \\mathrm{~m} \\)?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Um, I think I divided 48 by 3 to get 16m because 3 is the first part of the ratio? But now I'm confused because you're saying that's wrong... does that mean I shouldn't just divide by the 3?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Why do you think dividing by 3 gives you the total distance? Can you explain why that might not be the correct approach based on the information in the ratio?",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "Oh, I see... so like, the 3 in the ratio 3:5 doesn't mean I should divide 48 by 3, because the ratio is showing how the line is split into parts, not like... the actual distance? So I need to do something with both the 3 and the 5 together first?",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 4,
+    "R2": 4,
+    "R3": 3,
+    "R4": 5,
+    "R5": 4,
+    "R6": 5,
+    "justification_pass1": "The teacher effectively uses questioning to address the specific misconception of dividing by individual ratio parts, maintaining high cognitive demand throughout, and the student demonstrates clear progress from dividing by 3 alone to recognizing the need to work with both parts of the ratio together.",
+    "justification_pass2": "The teacher consistently uses probing questions to guide the student's thinking without ever directly providing the answer, successfully leading the student to recognize their conceptual error about ratios through self-reflection.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 4,\n  \"R2\": 4,\n  \"R3\": 3,\n  \"R4\": 5,\n  \"R5\": 4,\n  \"brief_justification\": \"The teacher effectively uses questioning to address the specific misconception of dividing by individual ratio parts, maintaining high cognitive demand throughout, and the student demonstrates clear progress from dividing by 3 alone to recognizing the need to work with both parts of the ratio together.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 5, \"brief_justification\": \"The teacher consistently uses probing questions to guide the student's thinking without ever directly providing the answer, successfully leading the student to recognize their conceptual error about ratios through self-reflection.\"}\n```",
+    "quality_composite": 3.6666666666666665,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T16:18:04.910780+00:00"
+}

@@ -1,0 +1,66 @@
+{
+  "state": {
+    "case_id": "case_15",
+    "misconception_label": "Has used slant height and base to find area of a triangle rather than perpendicular height and base",
+    "misconception_features": [
+      0.0,
+      15.0,
+      2.0,
+      94.0
+    ],
+    "persona": "experiential",
+    "architecture": "hybrid",
+    "student_leg": "leg_a",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T10:38:18.214260Z",
+      "seed": 821,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-12T10:38:23.387429Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: How would you calculate the area of this triangle? ![A triangle, base 12m. All three sides are equal.](). I got \\( \\frac{12 \\times 12}{2} \\) because I added the side lengths instead of multiplying.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Imagine you are building a roof for a house with a slanted roof. The slant height is like the length of the roof, but we actually need to focus on the height from the peak of the roof down to the base. Just like how we need to consider the perpendicular height in finding the area of a triangle, not just the slant height. Let's reevaluate the calculation using the correct height measurement.",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Okay, I think I get that we need the height that goes straight down from the top to the base, not the slant height. But how do I find that height if I only know the sides of the triangle? Is there a way to figure it out?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Imagine you are at the top of a hill and you want to find the height down to the base. You can drop a vertical line straight down to the base to represent the perpendicular height. In this case, you can use the Pythagorean theorem to find the perpendicular height by considering the sides of the triangle as the two shorter sides of a right triangle.",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 4,
+    "R2": 3,
+    "R3": 3,
+    "R4": 2,
+    "R5": 4,
+    "R6": 5,
+    "justification_pass1": "The teacher effectively addresses the slant vs. perpendicular height misconception and the student shows clear progress, but the instruction to use sides as 'two shorter sides of a right triangle' is mathematically imprecise (should specify using half the base and the side length).",
+    "justification_pass2": "The teacher consistently uses concrete real-world analogies (building a roof, standing on a hill) to explain the abstract concept of perpendicular height in triangles, which is a textbook example of the experiential strategy.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 4,\n  \"R2\": 3,\n  \"R3\": 3,\n  \"R4\": 2,\n  \"R5\": 4,\n  \"brief_justification\": \"The teacher effectively addresses the slant vs. perpendicular height misconception and the student shows clear progress, but the instruction to use sides as 'two shorter sides of a right triangle' is mathematically imprecise (should specify using half the base and the side length).\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 5, \"brief_justification\": \"The teacher consistently uses concrete real-world analogies (building a roof, standing on a hill) to explain the abstract concept of perpendicular height in triangles, which is a textbook example of the experiential strategy.\"}\n```",
+    "quality_composite": 3.3333333333333335,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T10:38:29.879489+00:00"
+}

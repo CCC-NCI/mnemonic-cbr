@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_24",
+    "misconception_label": "When solving a problem that requires an inverse operation (e.g. missing number problems), does the original operation",
+    "misconception_features": [
+      0.0,
+      24.0,
+      2.0,
+      52.0
+    ],
+    "persona": "constructive",
+    "architecture": "baseline",
+    "student_leg": "leg_a",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T17:45:05.445553Z",
+      "seed": 1253,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T17:45:09.402818Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: What should replace the star? \\[ \\bigstar \\times 4=108 \\]. I got \\( 432 \\) because I added the parts of the ratio as if they were a total.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's go back to what you've already figured out and work from there. What can we do next to find the value of the star in the equation?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "I think we need to do something to the \\( 108 \\) to find out what the star is. Maybe I should divide instead of adding? But I'm not really sure how that works. Can you help me figure out what to do next?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's go back to the part you do know, and build the next step from there. Think about how you can use division to find the value of the star in the equation. Remember, division is the inverse operation of multiplication.",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "Okay, so if division is the opposite of multiplication, then I think I should divide \\( 108 \\) by \\( 4 \\) to find the star. So, is it \\( 108 \\div 4 \\)? But I'm not sure what that gives me. Can you help me with the calculation?",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 2,
+    "R3": 2,
+    "R4": 4,
+    "R5": 3,
+    "R6": 4,
+    "justification_pass1": "The teacher provides mathematically correct guidance about inverse operations but never addresses the student's specific confusion about ratios mentioned in Turn 0, offers only generic prompts that don't deeply engage the misconception, and while the student progresses to identifying the correct operation, they still cannot execute it independently by Turn 4.",
+    "justification_pass2": "The teacher consistently scaffolds by redirecting the student to build on their existing knowledge, breaks the problem into manageable steps (identifying the operation, then applying it), and adjusts support by providing hints about inverse operations rather than direct answers, though could have been slightly more responsive to the student's specific calculation request.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 2,\n  \"R3\": 2,\n  \"R4\": 4,\n  \"R5\": 3,\n  \"brief_justification\": \"The teacher provides mathematically correct guidance about inverse operations but never addresses the student's specific confusion about ratios mentioned in Turn 0, offers only generic prompts that don't deeply engage the misconception, and while the student progresses to identifying the correct operation, they still cannot execute it independently by Turn 4.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 4, \"brief_justification\": \"The teacher consistently scaffolds by redirecting the student to build on their existing knowledge, breaks the problem into manageable steps (identifying the operation, then applying it), and adjusts support by providing hints about inverse operations rather than direct answers, though could have been slightly more responsive to the student's specific calculation request.\"}\n```",
+    "quality_composite": 2.0,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T17:45:17.270606+00:00"
+}

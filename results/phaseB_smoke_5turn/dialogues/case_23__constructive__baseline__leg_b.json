@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_23",
+    "misconception_label": "Confuses rest and movement on a distance time graph",
+    "misconception_features": [
+      0.0,
+      23.0,
+      3.0,
+      62.0
+    ],
+    "persona": "constructive",
+    "architecture": "baseline",
+    "student_leg": "leg_b",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T17:35:11.386049Z",
+      "seed": 1204,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T17:35:16.601412Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: This graph shows how far Fido the dog is from his home. What might the negative-sloping section represent? ![A graph with time (secs) on the horizontal axis and distance (m) on the vertical axis. The graph starts at the origin, travels in a straight line up and right, travels horizontally, then travels in a straight line down and right back to the x-axis. ](). I got Fido has fallen asleep because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's go back to the part you do know, and build the next step from there. Remember, we are looking at Fido's distance from home on the graph.",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Oh right, yeah... so the first part going up means Fido is moving away from home because the distance is getting bigger. But then the flat bit in the middle - that's when he stops moving, isn't it? So what does it mean when the line goes down - does that mean he's going backwards or something?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's build on what you've already identified. Remember, when the line goes down on the graph, it doesn't necessarily mean Fido is moving backwards. Let's think about what else it could represent based on what you know about distance and movement.",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "Hmm, so if the line going down doesn't mean he's going backwards... does it mean the distance is getting smaller? Like, maybe Fido is walking back towards home? But I'm still confused because I thought if he's moving, the line should go up, not down.",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 4,
+    "R2": 3,
+    "R3": 4,
+    "R4": 5,
+    "R5": 4,
+    "R6": 5,
+    "justification_pass1": "The teacher effectively addresses the specific misconception by building from what the student knows, leading them to recognize that downward slopes mean decreasing distance (movement toward home), with the student showing clear progress from confusing rest/movement to correctly interpreting the negative slope by Turn 4.",
+    "justification_pass2": "The teacher exemplifies the constructive strategy by consistently scaffolding from the student's existing understanding (starting with what they know), breaking down the problem into manageable steps (first understanding upward slope, then flat section, then downward slope), and adjusting support by providing just enough guidance to move the student forward without giving away the answer.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 4,\n  \"R2\": 3,\n  \"R3\": 4,\n  \"R4\": 5,\n  \"R5\": 4,\n  \"brief_justification\": \"The teacher effectively addresses the specific misconception by building from what the student knows, leading them to recognize that downward slopes mean decreasing distance (movement toward home), with the student showing clear progress from confusing rest/movement to correctly interpreting the negative slope by Turn 4.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 5, \"brief_justification\": \"The teacher exemplifies the constructive strategy by consistently scaffolding from the student's existing understanding (starting with what they know), breaking down the problem into manageable steps (first understanding upward slope, then flat section, then downward slope), and adjusting support by providing just enough guidance to move the student forward without giving away the answer.\"}\n```",
+    "quality_composite": 3.6666666666666665,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T17:35:24.290874+00:00"
+}

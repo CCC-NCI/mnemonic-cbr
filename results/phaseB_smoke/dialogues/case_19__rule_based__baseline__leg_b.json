@@ -1,0 +1,66 @@
+{
+  "state": {
+    "case_id": "case_19",
+    "misconception_label": "When subtracting fractions, subtracts the numerators and multiplies the denominators",
+    "misconception_features": [
+      0.0,
+      19.0,
+      3.0,
+      104.0
+    ],
+    "persona": "rule_based",
+    "architecture": "baseline",
+    "student_leg": "leg_b",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T11:17:51.763782Z",
+      "seed": 1024,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-12T11:17:55.953158Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: Express the following as a single fraction, writing your answer as simply as possible: \\( \\frac{1}{s}-\\frac{t}{3} \\). I got \\( \\frac{1-t}{3 s} \\) because I treated the fractions like ordinary numbers.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "There is a specific procedure for subtracting fractions. Step 1 is to subtract the numerators and keep the denominators the same. Step 2 is to simplify the fraction if possible. In this case, you should subtract the numerators \\(1 - t\\) and keep the denominator as \\(3s\\).",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Wait, but I thought you had to make the denominators the same first before you can subtract them? Like, I have *s* and *3* as my denominators, so shouldn't I need to find a common denominator or something?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "There is a specific procedure for subtracting fractions. Step 1 is to subtract the numerators and keep the denominators the same. In this case, you should subtract the numerators \\(1 - t\\) and keep the denominator as \\(3s\\).",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 1,
+    "R2": 1,
+    "R3": 1,
+    "R4": 1,
+    "R5": 1,
+    "R6": 1,
+    "justification_pass1": "The teacher provides mathematically incorrect instruction (claiming to subtract numerators without finding common denominators), ignores the student's correct insight about needing common denominators, and simply repeats the wrong procedure, resulting in no improvement in student understanding.",
+    "justification_pass2": "While the teacher attempts to state explicit procedures, the procedure given is mathematically incorrect (you cannot subtract fractions without a common denominator), and the teacher fails to provide direct corrective feedback when the student correctly identifies this error in Turn 2.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 1,\n  \"R2\": 1,\n  \"R3\": 1,\n  \"R4\": 1,\n  \"R5\": 1,\n  \"brief_justification\": \"The teacher provides mathematically incorrect instruction (claiming to subtract numerators without finding common denominators), ignores the student's correct insight about needing common denominators, and simply repeats the wrong procedure, resulting in no improvement in student understanding.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 1, \"brief_justification\": \"While the teacher attempts to state explicit procedures, the procedure given is mathematically incorrect (you cannot subtract fractions without a common denominator), and the teacher fails to provide direct corrective feedback when the student correctly identifies this error in Turn 2.\"}\n```",
+    "quality_composite": 1.0,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T11:18:02.668215+00:00"
+}

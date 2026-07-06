@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_13",
+    "misconception_label": "Answers as if there are 100 minutes in an hour when changing from hours to minutes",
+    "misconception_features": [
+      0.0,
+      13.0,
+      1.0,
+      29.0
+    ],
+    "persona": "rule_based",
+    "architecture": "pure_ai",
+    "student_leg": "leg_a",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T15:53:04.288677Z",
+      "seed": 729,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T15:53:10.229733Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: Hannah's journey to camp is \\( 3 \\) hours and \\( 16 \\) minutes. Tori's journey to camp is \\( 214 \\) minutes. What is the difference in their journeys in minutes? I got \\( 102 \\) minutes because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "To convert hours to minutes, remember that there are 60 minutes in 1 hour. Let's correct the error in your calculation. Since Hannah's journey is 3 hours and 16 minutes, we should convert the hours to minutes first before finding the difference in their journeys. Let's work through the correct steps together.",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Okay, so if there are 60 minutes in an hour, then for Hannah's journey, I need to change the 3 hours into minutes first, right? So that would be \\( 3 \\times 60 \\), which is \\( 180 \\) minutes, and then I add the \\( 16 \\) minutes. But then what do I do next to find the difference with Tori's \\( 214 \\) minutes?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "You're on the right track with converting Hannah's 3 hours to minutes. Now that you have 196 minutes for Hannah's journey, to find the difference with Tori's 214 minutes, you need to subtract the two quantities. Remember, subtracting means finding the difference between the two numbers. Let's calculate the final answer together.",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "Okay, so I think I have it now! So Hannah's journey is \\( 196 \\) minutes. To find the difference with Tori's \\( 214 \\) minutes, I just need to do \\( 214 - 196 \\), right? But what if I get confused with the subtraction? How do I make sure I don\u2019t mess that up?",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 2,
+    "R3": 2,
+    "R4": 5,
+    "R5": 4,
+    "R6": 5,
+    "justification_pass1": "The teacher directly states the correct conversion rule and guides the student step-by-step to the answer rather than probing the misconception or requiring independent reasoning, though the student does successfully apply the correct method by the end.",
+    "justification_pass2": "The teacher consistently states explicit procedures (converting hours to minutes using 60 minutes per hour, subtracting to find difference), provides direct corrective feedback on the student's calculation error, and guides the student through worked steps in a systematic manner.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 2,\n  \"R3\": 2,\n  \"R4\": 5,\n  \"R5\": 4,\n  \"brief_justification\": \"The teacher directly states the correct conversion rule and guides the student step-by-step to the answer rather than probing the misconception or requiring independent reasoning, though the student does successfully apply the correct method by the end.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 5, \"brief_justification\": \"The teacher consistently states explicit procedures (converting hours to minutes using 60 minutes per hour, subtracting to find difference), provides direct corrective feedback on the student's calculation error, and guides the student through worked steps in a systematic manner.\"}\n```",
+    "quality_composite": 2.0,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T15:53:16.676854+00:00"
+}

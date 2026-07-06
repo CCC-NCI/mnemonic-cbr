@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_19",
+    "misconception_label": "When subtracting fractions, subtracts the numerators and multiplies the denominators",
+    "misconception_features": [
+      0.0,
+      19.0,
+      3.0,
+      104.0
+    ],
+    "persona": "rule_based",
+    "architecture": "baseline",
+    "student_leg": "leg_a",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T16:55:47.454554Z",
+      "seed": 1023,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T16:55:52.874682Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: Express the following as a single fraction, writing your answer as simply as possible: \\( \\frac{1}{s}-\\frac{t}{3} \\). I got \\( \\frac{1-t}{3 s} \\) because I treated the fractions like ordinary numbers.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "There is a specific procedure for subtracting fractions. Step 1 is to subtract the numerators and keep the denominators the same. Step 2 is to simplify the resulting fraction. In your calculation, you incorrectly multiplied the denominators. Remember to only subtract the numerators when subtracting fractions.",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Oh, I see! So I shouldn't multiply the denominators when I'm subtracting fractions. I guess I need to find a common denominator first, right? Can you explain how to do that with \\( \\frac{1}{s} \\) and \\( \\frac{t}{3} \\)?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "That's correct. When subtracting fractions, you first find a common denominator. In this case, the common denominator for \\( \\frac{1}{s} \\) and \\( \\frac{t}{3} \\) would be \\( 3s \\).",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "Okay, so if the common denominator is \\( 3s \\), then how do I rewrite each fraction with that denominator? Do I just change the top numbers, or do I need to do something else too? I'm still a bit confused about how to actually combine them after that.",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 1,
+    "R2": 1,
+    "R3": 2,
+    "R4": 1,
+    "R5": 3,
+    "R6": 2,
+    "justification_pass1": "The teacher gives mathematically incorrect instruction in Turn 1 (claiming to subtract numerators without common denominators first), fails to engage meaningfully with the misconception, provides direct answers rather than prompting reasoning, though the student does show some progress by Turn 2 in recognizing the need for common denominators.",
+    "justification_pass2": "While the teacher does state some explicit procedures and gives direct feedback, Turn 1 contains a critical procedural error (incorrectly stating that you subtract numerators and keep denominators the same when subtracting fractions), which undermines the rule-based approach that requires accurate procedural instruction.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 1,\n  \"R2\": 1,\n  \"R3\": 2,\n  \"R4\": 1,\n  \"R5\": 3,\n  \"brief_justification\": \"The teacher gives mathematically incorrect instruction in Turn 1 (claiming to subtract numerators without common denominators first), fails to engage meaningfully with the misconception, provides direct answers rather than prompting reasoning, though the student does show some progress by Turn 2 in recognizing the need for common denominators.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 2, \"brief_justification\": \"While the teacher does state some explicit procedures and gives direct feedback, Turn 1 contains a critical procedural error (incorrectly stating that you subtract numerators and keep denominators the same when subtracting fractions), which undermines the rule-based approach that requires accurate procedural instruction.\"}\n```",
+    "quality_composite": 1.3333333333333333,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T16:55:59.736334+00:00"
+}

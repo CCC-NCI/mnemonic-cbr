@@ -1,0 +1,66 @@
+{
+  "state": {
+    "case_id": "case_10",
+    "misconception_label": "Ignores negative sign when expanding bracket",
+    "misconception_features": [
+      0.0,
+      10.0,
+      1.0,
+      68.0
+    ],
+    "persona": "experiential",
+    "architecture": "hybrid",
+    "student_leg": "leg_a",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T09:52:01.901099Z",
+      "seed": 571,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-12T09:52:07.664051Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: John is expanding these three brackets: \\( (x+5)(x-3)(x+6) \\) He finds it helpful to split the first bracket and view the problem as follows: \\( x(x-3)(x+6)+5(x-3)(x+6) \\) He expands the brackets further. Before he simplifies, what are the terms than contain an \\( \\boldsymbol{x}^{2} \\) ? I got \\( \\begin{array}{l}+6 x^{2} \\\\ +3 x^{2} \\\\ +5 x^{2}\\end{array} \\) because I forgot that two negatives multiply to a positive.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's think about it this way: when you have a negative sign in front of a number, it's like flipping the direction. Just like how a negative number times a negative number gives a positive result. So, when you're expanding brackets, remember to carefully consider the signs of each term to get the correct answer. Let's walk through it together.",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Okay, I think I get what you're saying about the negative signs. So when I expand \\( (x-3) \\), I should remember that it changes things, right? Can we go through how to expand it step by step? I'm still a bit confused about how the signs work when I multiply them.",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Imagine you have a bank account with $10 and you owe a friend $15. When you pay them back, your balance will be negative $5. It's similar to when you expand a bracket with a negative sign - it changes the direction of the terms. Let's apply this concept to expanding the bracket \\( (x-3) \\) step by step to see how the signs work when we multiply them.",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 1,
+    "R3": 2,
+    "R4": 3,
+    "R5": 1,
+    "R6": 4,
+    "justification_pass1": "The teacher uses vague metaphors (direction flipping, bank accounts) that don't directly address the specific error of ignoring negative signs when expanding brackets, never works through the actual problem, and the student remains confused by Turn 2, showing no improvement in understanding the misconception.",
+    "justification_pass2": "The teacher consistently uses concrete real-world analogies (flipping direction, bank account with debts) to explain the abstract concept of multiplying negative numbers, which is a strong implementation of the experiential strategy.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 1,\n  \"R3\": 2,\n  \"R4\": 3,\n  \"R5\": 1,\n  \"brief_justification\": \"The teacher uses vague metaphors (direction flipping, bank accounts) that don't directly address the specific error of ignoring negative signs when expanding brackets, never works through the actual problem, and the student remains confused by Turn 2, showing no improvement in understanding the misconception.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 4, \"brief_justification\": \"The teacher consistently uses concrete real-world analogies (flipping direction, bank account with debts) to explain the abstract concept of multiplying negative numbers, which is a strong implementation of the experiential strategy.\"}\n```",
+    "quality_composite": 1.6666666666666667,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T09:52:14.450491+00:00"
+}

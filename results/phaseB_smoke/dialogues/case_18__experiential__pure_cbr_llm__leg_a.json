@@ -1,0 +1,66 @@
+{
+  "state": {
+    "case_id": "case_18",
+    "misconception_label": "Assumes that an arrow on a number line starts at zero",
+    "misconception_features": [
+      0.0,
+      18.0,
+      2.0,
+      73.0
+    ],
+    "persona": "experiential",
+    "architecture": "pure_cbr_llm",
+    "student_leg": "leg_a",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T11:06:03.172482Z",
+      "seed": 965,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-12T11:06:07.483304Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: ![Number line with -12 and -7 marked. Starting at -12, follow an arrow pointing to the right labelled +10. Then there is an arrow labelled b pointing to the left, which ends at -7 on the number line.]() What is the value of \\( b \\) ? I got \\( -7 \\) because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's think of the number line like a road trip. You started at -12, then traveled 10 units to the right. Now, the arrow pointing left from there is like turning around and going back, not starting at zero. So, what value does this journey end at?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Okay, I think I get it a bit better now. So, if I start at -12 and go 10 units to the right, I end up at -2. But then I have to go back to the left, right? How far do I need to go to get to -7 from -2?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Think of it like taking a road trip in reverse. You started at -2 and need to go back 5 units to get to -7. So, how far is it from -2 to -7 when you're driving backwards on the number line?",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 4,
+    "R2": 3,
+    "R3": 4,
+    "R4": 5,
+    "R5": 5,
+    "R6": 5,
+    "justification_pass1": "The teacher effectively addresses the misconception that arrows start at zero by emphasizing the journey continues from -12, and the student demonstrates clear progress by correctly identifying the intermediate position at -2 and asking the right follow-up question about the distance needed.",
+    "justification_pass2": "The teacher consistently uses a concrete real-world analogy (road trip with forward and backward travel) throughout both turns to help the student understand the abstract concept of movement on a number line, which is a textbook example of the experiential strategy.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 4,\n  \"R2\": 3,\n  \"R3\": 4,\n  \"R4\": 5,\n  \"R5\": 5,\n  \"brief_justification\": \"The teacher effectively addresses the misconception that arrows start at zero by emphasizing the journey continues from -12, and the student demonstrates clear progress by correctly identifying the intermediate position at -2 and asking the right follow-up question about the distance needed.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 5, \"brief_justification\": \"The teacher consistently uses a concrete real-world analogy (road trip with forward and backward travel) throughout both turns to help the student understand the abstract concept of movement on a number line, which is a textbook example of the experiential strategy.\"}\n```",
+    "quality_composite": 3.6666666666666665,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T11:06:14.212795+00:00"
+}

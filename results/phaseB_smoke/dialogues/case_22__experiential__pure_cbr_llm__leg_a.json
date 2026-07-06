@@ -1,0 +1,66 @@
+{
+  "state": {
+    "case_id": "case_22",
+    "misconception_label": "Does not realise that adding a larger number gives a larger answer",
+    "misconception_features": [
+      0.0,
+      22.0,
+      2.0,
+      98.0
+    ],
+    "persona": "experiential",
+    "architecture": "pure_cbr_llm",
+    "student_leg": "leg_a",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T11:44:24.713554Z",
+      "seed": 1165,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-12T11:44:29.122381Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: Tom and Katie are discussing related calculations Tom says if you know that \\( 3748+426=4174 \\), then \\( 3748+427 \\) must equal \\( \\mathbf{4 1 7 5} \\) Katie says if you know that \\( 3748-426=3322 \\), then \\( 3748 \\) - \\( 427 \\) must equal \\( \\mathbf{3 3 2 3} \\) Who is correct? I got Only Katie because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's think of adding numbers as combining items in a grocery store. If we add more items to our cart, the total cost will be higher. In this case, adding a larger number will give us a larger answer, just like adding more items will increase our total cost. Let's walk through the reasoning together to see why Katie's answer is correct in this situation.",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Okay, I think I get what you're saying about adding more items means a bigger total. So, if Tom's right, then \\( 3748 + 427 \\) should be bigger than \\( 4174 \\), right? But how does that work with Katie's subtraction? I'm still a bit confused about why her answer is different.",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's think about Katie's subtraction as removing items from our grocery cart. Just like taking items away will decrease the total cost, subtracting a larger number will give us a smaller answer. Let's walk through the reasoning together to see why Katie's answer is correct for subtraction in this situation.",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 3,
+    "R2": 2,
+    "R3": 2,
+    "R4": 2,
+    "R5": 2,
+    "R6": 5,
+    "justification_pass1": "The teacher addresses the misconception with a grocery analogy but provides mostly direct explanations rather than eliciting reasoning, and the student's Turn 2 response reveals continued confusion about the basic problem (incorrectly thinking Tom's answer should be bigger than 4174, when it already is 4175), suggesting the misconception persists.",
+    "justification_pass2": "The teacher consistently grounds abstract addition and subtraction concepts in the concrete, everyday analogy of adding and removing items from a grocery cart with corresponding changes in total cost, which is a textbook application of the experiential strategy.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\"R1\": 3, \"R2\": 2, \"R3\": 2, \"R4\": 2, \"R5\": 2, \"brief_justification\": \"The teacher addresses the misconception with a grocery analogy but provides mostly direct explanations rather than eliciting reasoning, and the student's Turn 2 response reveals continued confusion about the basic problem (incorrectly thinking Tom's answer should be bigger than 4174, when it already is 4175), suggesting the misconception persists.\"}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 5, \"brief_justification\": \"The teacher consistently grounds abstract addition and subtraction concepts in the concrete, everyday analogy of adding and removing items from a grocery cart with corresponding changes in total cost, which is a textbook application of the experiential strategy.\"}\n```",
+    "quality_composite": 2.3333333333333335,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T11:44:36.091221+00:00"
+}

@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_0",
+    "misconception_label": "Confuses the order of operations, believes addition comes before multiplication",
+    "misconception_features": [
+      0.0,
+      0.0,
+      1.0,
+      70.0
+    ],
+    "persona": "traditional",
+    "architecture": "pure_cbr_llm",
+    "student_leg": "leg_b",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T12:07:17.130667Z",
+      "seed": 86,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T12:07:21.881218Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: \\[ 3 \\times 2+4-5 \\] Where do the brackets need to go to make the answer equal \\( 13 \\) ? I got Does not need brackets because I worked left to right instead of following the order of operations.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's revisit the order of operations. Remember, we must follow the correct sequence when solving mathematical expressions. Can you tell me what the order of operations is and how it applies to the expression you provided?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Um, okay so I think it's like... you do addition first, then multiplication? Or wait, maybe it's the other way around? I'm not really sure which one comes first, miss/sir. Can you tell me which operation I should do before the other one?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's focus on the order of operations. Remember, when simplifying expressions, we always start with any operations inside parentheses or brackets, then move on to exponents, followed by multiplication and division from left to right, and finally addition and subtraction from left to right. Can you apply this order to the expression you provided and see if you get the correct answer?",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "Oh right, so multiplication comes before addition! So for 3 \u00d7 2 + 4 - 5, I'd do 3 \u00d7 2 first which is 6, then 6 + 4 - 5... that gives me 5, not 13. So I do need brackets somewhere, don't I? Where should they go to make it equal 13?",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 2,
+    "R3": 2,
+    "R4": 5,
+    "R5": 4,
+    "R6": 2,
+    "justification_pass1": "The teacher provides accurate content and the student does correct their misconception about operation order, but the teacher never explicitly addresses the specific confusion about addition before multiplication, instead offering generic explanations and leaving the bracket placement question unanswered.",
+    "justification_pass2": "The teacher uses questioning and guided discovery rather than direct explanation with worked examples, which is inconsistent with the traditional strategy of explicitly demonstrating solutions.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 2,\n  \"R3\": 2,\n  \"R4\": 5,\n  \"R5\": 4,\n  \"brief_justification\": \"The teacher provides accurate content and the student does correct their misconception about operation order, but the teacher never explicitly addresses the specific confusion about addition before multiplication, instead offering generic explanations and leaving the bracket placement question unanswered.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 2, \"brief_justification\": \"The teacher uses questioning and guided discovery rather than direct explanation with worked examples, which is inconsistent with the traditional strategy of explicitly demonstrating solutions.\"}\n```",
+    "quality_composite": 2.0,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T12:07:28.267073+00:00"
+}

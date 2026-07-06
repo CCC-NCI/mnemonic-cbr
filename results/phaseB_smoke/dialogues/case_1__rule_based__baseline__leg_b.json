@@ -1,0 +1,65 @@
+{
+  "state": {
+    "case_id": "case_1",
+    "misconception_label": "Does not know that to factorise a quadratic expression, to find two numbers that add to give the coefficient of the x term, and multiply to give the non variable term",
+    "misconception_features": [
+      0.0,
+      1.0,
+      3.0,
+      59.0
+    ],
+    "persona": "rule_based",
+    "architecture": "baseline",
+    "student_leg": "leg_b",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T06:42:57.124396Z",
+      "seed": 124,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "ended_at": "2026-05-12T06:43:02.386277Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: Simplify the following, if possible: \\( \\frac{m^{2}+2 m-3}{m-3} \\). I got \\( m+1 \\) because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "There is a specific procedure for factorising quadratic expressions. Step 1 is to identify two numbers that add to give the coefficient of the x term, and multiply to give the constant term. Step 2 is to use these numbers to factorise the expression. In this case, for \\( \\frac{m^{2}+2m-3}{m-3} \\), you need to factorise the numerator before simplifying.",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Oh right, so I need to find two numbers that add to make 2 and multiply to make -3? So that would be... 3 and -1? And then how do I use those numbers to actually factorise it into brackets?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "There is a specific procedure for factorising quadratic expressions. Step 1 is to identify two numbers that add to give the coefficient of the x term, and multiply to give the constant term. Step 2 is to use these numbers to factorise the expression. In this case, for \\( \\frac{m^{2}+2m-3}{m-3} \\), you correctly found the numbers 3 and -1. To factorise, you would write the numerator as \\( (m+3)(m-1) \\).",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 3,
+    "R2": 1,
+    "R3": 2,
+    "R4": 5,
+    "R5": 2,
+    "R6": 5,
+    "justification_pass1": "The teacher addresses the factorising procedure and provides correct mathematics, but simply tells the student the answer in Turn 3 rather than scaffolding them to construct the factorised form themselves, resulting in no visible improvement in the student's ability to execute the factorisation independently.",
+    "justification_pass2": "The teacher consistently states explicit procedures with numbered steps, shows worked examples of factorization, and provides direct corrective feedback by confirming the student's numbers were correct and then explicitly showing how to write the factored form.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 3,\n  \"R2\": 1,\n  \"R3\": 2,\n  \"R4\": 5,\n  \"R5\": 2,\n  \"brief_justification\": \"The teacher addresses the factorising procedure and provides correct mathematics, but simply tells the student the answer in Turn 3 rather than scaffolding them to construct the factorised form themselves, resulting in no visible improvement in the student's ability to execute the factorisation independently.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 5, \"brief_justification\": \"The teacher consistently states explicit procedures with numbered steps, shows worked examples of factorization, and provides direct corrective feedback by confirming the student's numbers were correct and then explicitly showing how to write the factored form.\"}\n```",
+    "quality_composite": 2.0,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T06:43:08.956822+00:00"
+}

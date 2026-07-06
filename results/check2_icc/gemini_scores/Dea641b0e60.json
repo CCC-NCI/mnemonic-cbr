@@ -1,0 +1,53 @@
+{
+  "blind_id": "Dea641b0e60",
+  "subset_row": {
+    "blind_id": "Dea641b0e60",
+    "case_id": "case_4",
+    "persona": "constructive",
+    "architecture": "pure_ai",
+    "student_leg": "leg_a",
+    "llm_R5": "4",
+    "llm_quality_composite": "3.3333333333333335",
+    "llm_R6": "4",
+    "difficulty_band": "long",
+    "r5_band": "high",
+    "word_count": "108",
+    "attention_check_type": "",
+    "attention_check_rationale": "",
+    "file_path": "dialogues/case_4__constructive__pure_ai__leg_a.json"
+  },
+  "primary_score": {
+    "R1": 4,
+    "R2": 3,
+    "R3": 3,
+    "R4": 5,
+    "R5": 4,
+    "R6": 4,
+    "justification_pass1": "The teacher explicitly names the misconception in Turn 1, guides the student to substitute correctly, and the student successfully computes f=30 by Turn 4, though some uncertainty about the pattern remains.",
+    "justification_pass2": "The teacher effectively scaffolds by identifying the student's misconception, redirecting them to use the equation rather than pattern-finding, and breaking the problem into manageable steps (recognizing the approach, then applying it), though could have provided slightly more structured guidance when the student expressed confusion in Turn 2.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 4,\n  \"R2\": 3,\n  \"R3\": 3,\n  \"R4\": 5,\n  \"R5\": 4,\n  \"brief_justification\": \"The teacher explicitly names the misconception in Turn 1, guides the student to substitute correctly, and the student successfully computes f=30 by Turn 4, though some uncertainty about the pattern remains.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 4, \"brief_justification\": \"The teacher effectively scaffolds by identifying the student's misconception, redirecting them to use the equation rather than pattern-finding, and breaking the problem into manageable steps (recognizing the approach, then applying it), though could have provided slightly more structured guidance when the student expressed confusion in Turn 2.\"}\n```",
+    "quality_composite": 3.3333333333333335,
+    "is_complete": true
+  },
+  "secondary_score": {
+    "R1": 5,
+    "R2": 5,
+    "R3": 4,
+    "R4": 5,
+    "R5": 5,
+    "R6": 5,
+    "justification_pass1": "The teacher accurately identifies the student's misconception and uses open-ended questions to guide the student to the correct calculation, resulting in a clear improvement in the student's reasoning.",
+    "justification_pass2": "The teacher provides excellent scaffolding by diagnosing the student's error and using targeted questions to guide them toward the correct method without giving away the answer.",
+    "judge_provider": "gemini",
+    "judge_model": "gemini-2.5-pro",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 5,\n  \"R2\": 5,\n  \"R3\": 4,\n  \"R4\": 5,\n  \"R5\": 5,\n  \"brief_justification\": \"The teacher accurately identifies the student's misconception and uses open-ended questions to guide the student to the correct calculation, resulting in a clear improvement in the student's reasoning.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\n  \"R6\": 5,\n  \"brief_justification\": \"The teacher provides excellent scaffolding by diagnosing the student's error and using targeted questions to guide them toward the correct method without giving away the answer.\"\n}\n```"
+  }
+}

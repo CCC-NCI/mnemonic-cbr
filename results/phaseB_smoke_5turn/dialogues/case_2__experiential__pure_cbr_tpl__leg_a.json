@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_2",
+    "misconception_label": "Believes if you changed all values by the same proportion the range would not change",
+    "misconception_features": [
+      0.0,
+      2.0,
+      3.0,
+      39.0
+    ],
+    "persona": "experiential",
+    "architecture": "pure_cbr_tpl",
+    "student_leg": "leg_a",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T13:28:13.668351Z",
+      "seed": 167,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T13:28:17.664110Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: Tom and Katie are discussing the \\( 5 \\) plants with these heights: \\( 24 \\mathrm{~cm}, 17 \\mathrm{~cm}, 42 \\mathrm{~cm}, 26 \\mathrm{~cm}, 13 \\mathrm{~cm} \\) Tom says if all the plants were cut in half, the range wouldn't change. Katie says if all the plants grew by \\( 3 \\mathrm{~cm} \\) each, the range wouldn't change. Who do you agree with? I got Only\nTom because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's think about this. From similar cases:\n  1. Topic: Calculate the range from a list of data. Correct answer (C): Add all the numbers together.. Student selected: Check the units of your answer. Underlying misconception: Believes range does not need units. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.\n  2. Topic: Compare sets of data using the range. Correct answer (A): The girls because their range is lower. Student selected: The boys because their mean is lower. Underlying misconception: Thinks a lower average means the data is more consistent. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.\n  3. Topic: Given information about one part, work out other parts. Correct answer (D): \\( 1600 \\ \\mathrm{ml} \\). Student selected: \\( 1201 \\ \\mathrm{ml} \\). Underlying misconception: Thinks a difference of one part in a ratio means the quantities will differ by one unit. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Okay, I see what you're saying. So, if I cut all the heights in half, the range would actually change because the smallest and largest values would both be halved. But I'm still not sure about Katie's part. If all the plants grew by \\( 3 \\mathrm{~cm} \\), wouldn't the range still stay the same? Can you help me understand that?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's think about this. From similar cases:\n  1. Topic: Calculate the range from a list of data. Correct answer (C): Add all the numbers together.. Student selected: Check the units of your answer. Underlying misconception: Believes range does not need units. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.\n  2. Topic: Compare sets of data using the range. Correct answer (A): The girls because their range is lower. Student selected: The boys because their mean is lower. Underlying misconception: Thinks a lower average means the data is more consistent. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.\n  3. Topic: Given information about one part, work out other parts. Correct answer (D): \\( 1600 \\ \\mathrm{ml} \\). Student selected: \\( 1201 \\ \\mathrm{ml} \\). Underlying misconception: Thinks a difference of one part in a ratio means the quantities will differ by one unit. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "Okay, I think I get that if I cut the heights in half, the range changes because the smallest and largest values are both halved. But with Katie's example, if all the plants grow by \\( 3 \\mathrm{~cm} \\), wouldn't that just add \\( 3 \\mathrm{~cm} \\) to both the smallest and largest heights? So, doesn't that mean the range stays the same? I'm a bit confused about how that works.",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 1,
+    "R2": 1,
+    "R3": 1,
+    "R4": 1,
+    "R5": 2,
+    "R6": 1,
+    "justification_pass1": "The teacher provides only irrelevant boilerplate text about unrelated misconceptions instead of addressing the student's actual confusion about proportional vs. additive changes to range, while the student does show some progress in understanding the multiplicative case but remains confused about the additive case.",
+    "justification_pass2": "The teacher provides no experiential teaching whatsoever, instead repeatedly copying generic misconception examples that are unrelated to the student's actual question about range and plant heights.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 1,\n  \"R2\": 1,\n  \"R3\": 1,\n  \"R4\": 1,\n  \"R5\": 2,\n  \"brief_justification\": \"The teacher provides only irrelevant boilerplate text about unrelated misconceptions instead of addressing the student's actual confusion about proportional vs. additive changes to range, while the student does show some progress in understanding the multiplicative case but remains confused about the additive case.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 1, \"brief_justification\": \"The teacher provides no experiential teaching whatsoever, instead repeatedly copying generic misconception examples that are unrelated to the student's actual question about range and plant heights.\"}\n```",
+    "quality_composite": 1.0,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T13:28:24.732810+00:00"
+}

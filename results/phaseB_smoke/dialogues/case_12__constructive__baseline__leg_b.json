@@ -1,0 +1,66 @@
+{
+  "state": {
+    "case_id": "case_12",
+    "misconception_label": "Thinks alternate angles are always equal",
+    "misconception_features": [
+      0.0,
+      12.0,
+      3.0,
+      25.0
+    ],
+    "persona": "constructive",
+    "architecture": "baseline",
+    "student_leg": "leg_b",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T10:07:47.824699Z",
+      "seed": 654,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-12T10:07:51.438544Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: Tom and Katie are arguing about alternate angles. Tom says angles \\( p \\) and \\( q \\) are alternate. Katie says angles \\( p \\) and \\( q \\) are equal. Who is correct? ![Shows two non parallel lines that are intersected by another line. Angles P and Q are both on the outside of the lines and on opposite sides of the transversal.](). I got Only\nKatie because I assumed all the angles in the figure are equal.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's go back to the part you do know, and build the next step from there. Remember, not all angles in the figure are necessarily equal. What can we infer about alternate angles when two lines are intersected by a transversal?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Um, so you're saying that alternate angles aren't always equal then? I thought the rule was that alternate angles are always the same... but maybe they're only equal in certain situations? Like, do they have to be on parallel lines or something?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's continue building on what you've just mentioned. Can you think of a specific condition where alternate angles are guaranteed to be equal?",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 4,
+    "R2": 4,
+    "R3": 4,
+    "R4": 5,
+    "R5": 4,
+    "R6": 5,
+    "justification_pass1": "The teacher effectively addresses the misconception by prompting the student to identify the parallel lines condition, and the student demonstrates clear progress from believing alternate angles are always equal to recognizing they need specific conditions (parallel lines).",
+    "justification_pass2": "The teacher exemplifies the constructive strategy by breaking down the problem into manageable steps, starting from what the student knows, scaffolding toward the key insight about parallel lines, and adjusting support as the student progresses from misconception to near-discovery of the correct condition.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 4,\n  \"R2\": 4,\n  \"R3\": 4,\n  \"R4\": 5,\n  \"R5\": 4,\n  \"brief_justification\": \"The teacher effectively addresses the misconception by prompting the student to identify the parallel lines condition, and the student demonstrates clear progress from believing alternate angles are always equal to recognizing they need specific conditions (parallel lines).\"\n}\n```",
+    "pass2_raw_text": "```json\n{\n  \"R6\": 5,\n  \"brief_justification\": \"The teacher exemplifies the constructive strategy by breaking down the problem into manageable steps, starting from what the student knows, scaffolding toward the key insight about parallel lines, and adjusting support as the student progresses from misconception to near-discovery of the correct condition.\"\n}\n```",
+    "quality_composite": 4.0,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T10:07:58.333210+00:00"
+}

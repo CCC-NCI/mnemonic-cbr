@@ -1,0 +1,64 @@
+log file           = results/_logger_test/logs/run_phaseB_smoke_20260517T131052Z.txt
+========================================================================
+Phase B-proper smoke — full 250-cell matrix
+========================================================================
+mode               = STUB (no API calls)
+student mode       = pure_ai
+turns per dialogue = 4
+output root        = results/_logger_test
+data file          = data/all_train.csv
+cases × personas × archs × legs = 5 × 5 × 5 × 2 = 250 cells (truncated to first 2 via --max-cells)
+case base          = 500
+resume             = on
+
+[1/5] Loading EEDI cases...
+      loaded 500 cases; using first 5 as targets.
+
+[2/5] Building cleaned mnemonic engine...
+      Base similarity = embeddings (cosine).
+
+[3/5] Wiring providers and scorer...
+      teacher       = StubProvider(provider='stub', model='stub')
+      student_leg_a = StubProvider(provider='stub', model='stub')
+      student_leg_b = StubProvider(provider='stub', model='stub')
+      judge_primary = StubProvider(provider='stub', model='stub')
+
+[4/5] Stub mode — no API spend.
+
+[5/5] Running 2 cells...
+  [2/2] completed=2 skipped=0 degraded=0 (321.6 cells/sec)
+
+------------------------------------------------------------------------
+Phase B-proper run summary
+------------------------------------------------------------------------
+cells in matrix    = 2
+completed this run = 2
+skipped (resumed)  = 0
+degraded           = 0
+manifest rows      = 2
+elapsed            = 0.0s
+
+  [PASS] manifest row count >= cells run
+  [PASS] no degraded cells
+  [PASS] JSON dir exists
+  [PASS] SQLite manifest exists
+
+All Phase B-proper checks PASSED.
+
+[post] dialogues inspection → results/_logger_test/dialogues_inspection.md
+Phase D analysis summary
+
+- Generated: 2026-05-17T13:11:08Z
+- Manifest:  `results/_logger_test/manifest.sqlite`
+- Filter:    `real`
+
+---
+
+Manifest summary
+- Total rows in manifest: 2
+- Rows after filter:      0
+
+ERROR: no rows match filter=real. Either run more dialogues (USE_REAL_LLMS=1 ...) or pass --filter all to include stub rows.
+[post] analysis returned non-zero: 2
+
+[DONE] run_phaseB_smoke completed in 16.0s — log: results/_logger_test/logs/run_phaseB_smoke_20260517T131052Z.txt

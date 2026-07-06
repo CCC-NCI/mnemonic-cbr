@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_18",
+    "misconception_label": "Assumes that an arrow on a number line starts at zero",
+    "misconception_features": [
+      0.0,
+      18.0,
+      2.0,
+      73.0
+    ],
+    "persona": "experiential",
+    "architecture": "baseline",
+    "student_leg": "leg_b",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T16:43:08.851255Z",
+      "seed": 964,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T16:43:14.210658Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: ![Number line with -12 and -7 marked. Starting at -12, follow an arrow pointing to the right labelled +10. Then there is an arrow labelled b pointing to the left, which ends at -7 on the number line.]() What is the value of \\( b \\) ? I got \\( -7 \\) because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Think of the number line like a road. When you start at -12 and move 10 units to the right, you end up at -2, not 0. So, when you move back to -7, you need to take into account where you started from. Can you see how this relates to your current calculation for \\( b \\)?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Oh right, so if I start at -12 and go right +10, that takes me to -2, not back to zero. Then from -2, I need to work out how far left to go to reach -7... so would that be -5 for b? I'm still a bit confused about why the arrow doesn't start from zero though.",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Think of the number line like a race track. Starting at -12, when you move 10 units to the right, you end up at -2 on the track, not at the starting line. So, when you need to find how far left to go to reach -7, you need to consider where you started from on the track. Can you see how this relates to your calculation for \\( b \\)?",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "Yeah, I think I get it now - so from -2, I need to go left 5 units to get to -7, which means b = -5. But I'm still a bit confused about why we don't start counting from zero like we normally do... is it because the arrow just starts wherever it starts on the number line?",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 2,
+    "R3": 1,
+    "R4": 5,
+    "R5": 2,
+    "R6": 4,
+    "justification_pass1": "The teacher uses correct mathematics and metaphors but fails to directly address the student's persistent misconception about arrows starting at zero, merely restating the same analogy without explaining why arrows represent movements from their actual starting positions, and the student explicitly states confusion about this core issue in both turns 2 and 4.",
+    "justification_pass2": "The teacher consistently uses concrete real-world analogies (road, race track) to ground the abstract number line concept in everyday situations, which is a strong implementation of the experiential strategy, though the analogies could have been developed more deeply to address the student's persistent confusion about starting points.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 2,\n  \"R3\": 1,\n  \"R4\": 5,\n  \"R5\": 2,\n  \"brief_justification\": \"The teacher uses correct mathematics and metaphors but fails to directly address the student's persistent misconception about arrows starting at zero, merely restating the same analogy without explaining why arrows represent movements from their actual starting positions, and the student explicitly states confusion about this core issue in both turns 2 and 4.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 4, \"brief_justification\": \"The teacher consistently uses concrete real-world analogies (road, race track) to ground the abstract number line concept in everyday situations, which is a strong implementation of the experiential strategy, though the analogies could have been developed more deeply to address the student's persistent confusion about starting points.\"}\n```",
+    "quality_composite": 1.6666666666666667,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T16:43:21.480040+00:00"
+}

@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_11",
+    "misconception_label": "Struggles to visualise nets of 3D shapes",
+    "misconception_features": [
+      0.0,
+      11.0,
+      3.0,
+      31.0
+    ],
+    "persona": "experiential",
+    "architecture": "pure_ai",
+    "student_leg": "leg_a",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T15:29:54.171415Z",
+      "seed": 619,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T15:30:00.330376Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: This is the net of a... ![A circle touching a sector](). I got Triangle because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Imagine you have a piece of paper that you need to fold to create a 3D shape. Think of the net as a blueprint for the shape, just like how a pattern is used to sew clothing. Can you see how the net shows how the shape will come together when folded?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "I think I get what you mean about the net being like a blueprint, but I'm still confused. So, if I fold this net, it makes a 3D shape, right? But how do I know what shape it actually makes? Like, how does a circle and a sector turn into something else?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Think of the net as a puzzle piece that you need to fit together to form the 3D shape. Just like how you can see how different puzzle pieces fit together to create a complete picture, the net shows how the individual shapes come together to form the 3D shape. It's like putting together a jigsaw puzzle!",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "Okay, I think I get that the net is like a puzzle, but I'm still not sure how the circle and sector fit together to make a 3D shape. Can you help me picture what it looks like when it's all folded up? Like, what kind of shape does it actually turn into?",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 2,
+    "R3": 2,
+    "R4": 3,
+    "R5": 1,
+    "R6": 4,
+    "justification_pass1": "The teacher uses generic analogies (blueprint, puzzle) that don't address the specific challenge of visualizing how a circle and sector fold into a cone, and the student remains confused throughout, showing no progress in understanding the actual 3D shape formation.",
+    "justification_pass2": "The teacher consistently uses concrete, everyday analogies (clothing patterns, blueprints, jigsaw puzzles) to explain the abstract concept of a geometric net, which is characteristic of the experiential strategy, though they could have been more specific about the actual 3D shape being formed.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\"R1\": 2, \"R2\": 2, \"R3\": 2, \"R4\": 3, \"R5\": 1, \"brief_justification\": \"The teacher uses generic analogies (blueprint, puzzle) that don't address the specific challenge of visualizing how a circle and sector fold into a cone, and the student remains confused throughout, showing no progress in understanding the actual 3D shape formation.\"}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 4, \"brief_justification\": \"The teacher consistently uses concrete, everyday analogies (clothing patterns, blueprints, jigsaw puzzles) to explain the abstract concept of a geometric net, which is characteristic of the experiential strategy, though they could have been more specific about the actual 3D shape being formed.\"}\n```",
+    "quality_composite": 2.0,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T15:30:07.499491+00:00"
+}

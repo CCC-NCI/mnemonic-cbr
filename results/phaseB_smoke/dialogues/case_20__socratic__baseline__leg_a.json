@@ -1,0 +1,66 @@
+{
+  "state": {
+    "case_id": "case_20",
+    "misconception_label": "Adds when calculating volume instead of multiplying",
+    "misconception_features": [
+      0.0,
+      20.0,
+      1.0,
+      58.0
+    ],
+    "persona": "socratic",
+    "architecture": "baseline",
+    "student_leg": "leg_a",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T11:21:21.339248Z",
+      "seed": 1043,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-12T11:21:24.686023Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: The volume of this cuboid is \\( 30 \\mathrm{~cm}^{3} \\) What length should replace the star? ![A cuboid, depth 2cm and height 3cm. The width is labelled with a star.](). I got \\( 25 \\mathrm{~cm} \\) because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's explore what might happen if you tried a different approach to this problem. What if you considered how the dimensions of the cuboid are related to each other when calculating the volume?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "I guess the dimensions do relate to each other, but I'm still not sure how to use them together. I thought I just needed to add them up to get the volume. So, if I shouldn't add, what exactly should I do with the numbers?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let me ask you this: What would happen if you tried your method on a simpler version of the problem, like a cube with sides of length 2 cm?",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 4,
+    "R2": 4,
+    "R3": 4,
+    "R4": 5,
+    "R5": 2,
+    "R6": 5,
+    "justification_pass1": "The teacher effectively engages the misconception through a well-calibrated counterexample strategy that requires genuine reasoning, but the student's final turn shows they haven't yet grasped the correct operation (multiplication), only that addition might be wrong.",
+    "justification_pass2": "The teacher consistently uses probing questions without giving direct answers, and in Turn 3 employs a counterexample (simpler cube case) to help the student discover the flaw in their additive reasoning\u2014a textbook application of the Socratic method.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 4,\n  \"R2\": 4,\n  \"R3\": 4,\n  \"R4\": 5,\n  \"R5\": 2,\n  \"brief_justification\": \"The teacher effectively engages the misconception through a well-calibrated counterexample strategy that requires genuine reasoning, but the student's final turn shows they haven't yet grasped the correct operation (multiplication), only that addition might be wrong.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 5, \"brief_justification\": \"The teacher consistently uses probing questions without giving direct answers, and in Turn 3 employs a counterexample (simpler cube case) to help the student discover the flaw in their additive reasoning\u2014a textbook application of the Socratic method.\"}\n```",
+    "quality_composite": 4.0,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T11:21:39.096398+00:00"
+}

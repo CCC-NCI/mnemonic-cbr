@@ -1,0 +1,66 @@
+{
+  "state": {
+    "case_id": "case_12",
+    "misconception_label": "Thinks alternate angles are always equal",
+    "misconception_features": [
+      0.0,
+      12.0,
+      3.0,
+      25.0
+    ],
+    "persona": "experiential",
+    "architecture": "baseline",
+    "student_leg": "leg_a",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T10:09:25.619417Z",
+      "seed": 663,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-12T10:09:29.198523Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: Tom and Katie are arguing about alternate angles. Tom says angles \\( p \\) and \\( q \\) are alternate. Katie says angles \\( p \\) and \\( q \\) are equal. Who is correct? ![Shows two non parallel lines that are intersected by another line. Angles P and Q are both on the outside of the lines and on opposite sides of the transversal.](). I got Only\nKatie because I assumed all the angles in the figure are equal.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Imagine you were looking at a street intersection. If two cars are driving in opposite directions, are they going to end up in the same spot? Think about how this relates to the angles in the figure you have.",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "I think I get what you're saying about the cars not ending up in the same spot. So, if the lines aren't parallel, then the angles might not be equal? But I'm still confused about what makes angles alternate if they're not equal. Can you explain that a bit more?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Imagine you were sitting at a dinner table with a friend. If you're sitting on opposite sides, are you both going to have the same view? Think about how this relates to the angles in the figure you have.",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 2,
+    "R3": 1,
+    "R4": 3,
+    "R5": 2,
+    "R6": 5,
+    "justification_pass1": "The teacher uses vague analogies that don't directly address the misconception about when alternate angles are equal, and when the student explicitly asks for clarification about what makes angles alternate, the teacher responds with another unhelpful analogy instead of providing the needed mathematical explanation.",
+    "justification_pass2": "The teacher consistently uses concrete real-world analogies (street intersections with cars, dinner table seating) to help the student understand the abstract geometric concepts of alternate angles and their properties, which is a textbook example of the experiential strategy.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 2,\n  \"R3\": 1,\n  \"R4\": 3,\n  \"R5\": 2,\n  \"brief_justification\": \"The teacher uses vague analogies that don't directly address the misconception about when alternate angles are equal, and when the student explicitly asks for clarification about what makes angles alternate, the teacher responds with another unhelpful analogy instead of providing the needed mathematical explanation.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 5, \"brief_justification\": \"The teacher consistently uses concrete real-world analogies (street intersections with cars, dinner table seating) to help the student understand the abstract geometric concepts of alternate angles and their properties, which is a textbook example of the experiential strategy.\"}\n```",
+    "quality_composite": 1.6666666666666667,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T10:09:35.903055+00:00"
+}

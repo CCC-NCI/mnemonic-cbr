@@ -1,0 +1,53 @@
+{
+  "blind_id": "D32f8b94038",
+  "subset_row": {
+    "blind_id": "D32f8b94038",
+    "case_id": "case_17",
+    "persona": "constructive",
+    "architecture": "hybrid",
+    "student_leg": "leg_a",
+    "llm_R5": "1",
+    "llm_quality_composite": "1.3333333333333333",
+    "llm_R6": "2",
+    "difficulty_band": "long",
+    "r5_band": "low",
+    "word_count": "48",
+    "attention_check_type": "",
+    "attention_check_rationale": "",
+    "file_path": "dialogues/case_17__constructive__hybrid__leg_a.json"
+  },
+  "primary_score": {
+    "R1": 1,
+    "R2": 2,
+    "R3": 1,
+    "R4": 2,
+    "R5": 1,
+    "R6": 2,
+    "justification_pass1": "The teacher fails to address the core misconception that the student is working with the wrong expression (sum of one even and one odd number instead of two odd numbers), provides vague encouragement without substantive guidance, and the student ends more confused than at the start, explicitly stating the expression is odd.",
+    "justification_pass2": "While the teacher offers encouragement and attempts to scaffold, they fail to recognize the student's fundamental misconception (using 2n instead of 2n+1 for odd numbers) and instead repeatedly provides vague prompts that don't adjust to the student's actual struggle, missing the Zone of Proximal Development.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 1,\n  \"R2\": 2,\n  \"R3\": 1,\n  \"R4\": 2,\n  \"R5\": 1,\n  \"brief_justification\": \"The teacher fails to address the core misconception that the student is working with the wrong expression (sum of one even and one odd number instead of two odd numbers), provides vague encouragement without substantive guidance, and the student ends more confused than at the start, explicitly stating the expression is odd.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 2, \"brief_justification\": \"While the teacher offers encouragement and attempts to scaffold, they fail to recognize the student's fundamental misconception (using 2n instead of 2n+1 for odd numbers) and instead repeatedly provides vague prompts that don't adjust to the student's actual struggle, missing the Zone of Proximal Development.\"}\n```",
+    "quality_composite": 1.3333333333333333,
+    "is_complete": true
+  },
+  "secondary_score": {
+    "R1": null,
+    "R2": null,
+    "R3": null,
+    "R4": null,
+    "R5": null,
+    "R6": 4,
+    "justification_pass1": "",
+    "justification_pass2": "The teacher effectively scaffolds the student's understanding by encouraging them to simplify the expression and guiding them to recognize the properties of even and odd numbers, while also adjusting support based on the student's progress.",
+    "judge_provider": "openai",
+    "judge_model": "gpt-4o-mini",
+    "pass1_error": "could not extract valid JSON object from response",
+    "pass2_error": "",
+    "pass1_raw_text": "{\n  \"R1\": 4,\n  \"R2\": 4,\n  \"R3\": 4,\n  \"R4\": 5,\n  \"R5\": 3,\n  \"brief_justification\": \"The teacher effectively engages with the student's misconception about even numbers and encourages reasoning, but the student's understanding does not significantly progress beyond recognizing \\(2n\\) as even.\"\n}",
+    "pass2_raw_text": "{\"R6\": 4, \"brief_justification\": \"The teacher effectively scaffolds the student's understanding by encouraging them to simplify the expression and guiding them to recognize the properties of even and odd numbers, while also adjusting support based on the student's progress.\"}"
+  }
+}

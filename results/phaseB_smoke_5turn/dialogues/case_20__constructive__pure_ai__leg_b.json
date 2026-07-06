@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_20",
+    "misconception_label": "Adds when calculating volume instead of multiplying",
+    "misconception_features": [
+      0.0,
+      20.0,
+      1.0,
+      58.0
+    ],
+    "persona": "constructive",
+    "architecture": "pure_ai",
+    "student_leg": "leg_b",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T17:03:52.938521Z",
+      "seed": 1060,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T17:03:58.052100Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: The volume of this cuboid is \\( 30 \\mathrm{~cm}^{3} \\) What length should replace the star? ![A cuboid, depth 2cm and height 3cm. The width is labelled with a star.](). I got \\( 25 \\mathrm{~cm} \\) because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "It looks like you may have multiplied instead of adding to find the volume. Remember, when calculating the volume of a cuboid, you need to multiply the length, width, and height. Try using multiplication instead of addition to find the correct length to replace the star.",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Oh right, so I need to multiply instead of add? So would it be like 2 times 3 times the star equals 30? That would make the star 5 cm then, yeah? But I'm still a bit confused about why we multiply - is it because we're finding how much space is inside the cuboid?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "That's correct! Multiplying the length, width, and height gives you the total space inside the cuboid, which is the volume. So, in this case, 2 times 3 times the star should equal 30. Can you now solve for the length of the star using this multiplication method?",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "Yeah, so if 2 times 3 is 6, then I need to find what times 6 equals 30, which is 5. So the star is 5 cm! That makes sense now - we're multiplying because we're working out the total space inside, not just adding up the sides. Thanks, that's clearer!",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 1,
+    "R2": 2,
+    "R3": 2,
+    "R4": 1,
+    "R5": 3,
+    "R6": 3,
+    "justification_pass1": "The teacher incorrectly diagnoses the student's misconception (claiming they multiplied instead of added when the opposite is true), provides minimal cognitive demand by directly telling rather than eliciting reasoning, but the student does eventually arrive at the correct answer and shows some conceptual understanding despite the flawed instruction.",
+    "justification_pass2": "The teacher does break down the problem into steps and provides some scaffolding by identifying the error and guiding toward the correct formula, but misses opportunities to probe the student's understanding more deeply before directly telling them what to do, and doesn't adjust support level based on the student's quick grasp of the concept.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 1,\n  \"R2\": 2,\n  \"R3\": 2,\n  \"R4\": 1,\n  \"R5\": 3,\n  \"brief_justification\": \"The teacher incorrectly diagnoses the student's misconception (claiming they multiplied instead of added when the opposite is true), provides minimal cognitive demand by directly telling rather than eliciting reasoning, but the student does eventually arrive at the correct answer and shows some conceptual understanding despite the flawed instruction.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 3, \"brief_justification\": \"The teacher does break down the problem into steps and provides some scaffolding by identifying the error and guiding toward the correct formula, but misses opportunities to probe the student's understanding more deeply before directly telling them what to do, and doesn't adjust support level based on the student's quick grasp of the concept.\"}\n```",
+    "quality_composite": 1.6666666666666667,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T17:04:05.268672+00:00"
+}

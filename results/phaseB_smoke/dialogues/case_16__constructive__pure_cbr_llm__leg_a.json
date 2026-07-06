@@ -1,0 +1,66 @@
+{
+  "state": {
+    "case_id": "case_16",
+    "misconception_label": "Divides total amount by each side of the ratio instead of dividing by the sum of the parts",
+    "misconception_features": [
+      0.0,
+      16.0,
+      3.0,
+      83.0
+    ],
+    "persona": "constructive",
+    "architecture": "pure_cbr_llm",
+    "student_leg": "leg_a",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T10:44:37.601014Z",
+      "seed": 855,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-12T10:44:44.896193Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: In the diagram, AN : NB \\( =3: 5 \\) What is the distance AN? ![A line that begins with point A, ends with point B, and has point N in between. The entire length of the line measures 48 m.](). I got \\( 16 \\mathrm{~m} \\) because I added the parts of the ratio as if they were a total.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "It seems like you may be making the same mistake as in a previous misconception where the total is not being calculated correctly. Let's focus on finding the sum of the parts in the ratio, rather than treating them as individual totals. This will help us determine the correct distance for AN. Can you try to approach the problem from this perspective?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Okay, so I think I need to add the parts of the ratio together first? So if I add \\(3 + 5\\), that gives me \\(8\\). But then what do I do with that? How do I use that to find AN? I'm still a bit confused.",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "That's a good start! Now that you have the sum of the parts of the ratio, think about how this total relates to the actual distance of AN. Consider how you can use this sum to determine the length of AN within the ratio.",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 2,
+    "R3": 2,
+    "R4": 5,
+    "R5": 2,
+    "R6": 4,
+    "justification_pass1": "The teacher vaguely references the misconception but never explicitly addresses what the student did wrong (dividing 48 by 3 instead of finding 3/8 of 48), and while the student identifies the sum of parts (8), they remain confused about the next step, showing minimal progress toward resolving the original misconception.",
+    "justification_pass2": "The teacher effectively breaks down the problem into manageable steps (first finding the sum, then relating it to the total distance), scaffolds by building on the student's correct partial work, and adjusts support by providing hints rather than direct answers when the student shows progress.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 2,\n  \"R3\": 2,\n  \"R4\": 5,\n  \"R5\": 2,\n  \"brief_justification\": \"The teacher vaguely references the misconception but never explicitly addresses what the student did wrong (dividing 48 by 3 instead of finding 3/8 of 48), and while the student identifies the sum of parts (8), they remain confused about the next step, showing minimal progress toward resolving the original misconception.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 4, \"brief_justification\": \"The teacher effectively breaks down the problem into manageable steps (first finding the sum, then relating it to the total distance), scaffolds by building on the student's correct partial work, and adjusts support by providing hints rather than direct answers when the student shows progress.\"}\n```",
+    "quality_composite": 2.0,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T10:44:55.243798+00:00"
+}

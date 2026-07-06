@@ -1,0 +1,66 @@
+{
+  "state": {
+    "case_id": "case_24",
+    "misconception_label": "When solving a problem that requires an inverse operation (e.g. missing number problems), does the original operation",
+    "misconception_features": [
+      0.0,
+      24.0,
+      2.0,
+      52.0
+    ],
+    "persona": "traditional",
+    "architecture": "pure_cbr_llm",
+    "student_leg": "leg_b",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T12:07:34.888701Z",
+      "seed": 1286,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-12T12:07:38.653851Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: What should replace the star? \\[ \\bigstar \\times 4=108 \\]. I got \\( 432 \\) because I added the parts of the ratio as if they were a total.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "First, let's identify the correct operation needed to solve this problem. Remember, when dealing with inverse operations like multiplication and division, you need to undo the original operation. Can you think about how to reverse the multiplication in this case to find the correct answer?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Oh right, so I need to divide instead of multiply? So I should do 108 divided by 4 to find the star? That would give me 27, wouldn't it?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Great job identifying the correct operation needed to solve this problem! However, the answer you provided is not correct. Can you walk me through your reasoning for dividing 108 by 4 to find the value of the star?",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 1,
+    "R2": 3,
+    "R3": 2,
+    "R4": 1,
+    "R5": 4,
+    "R6": 2,
+    "justification_pass1": "The teacher fails to address the student's bizarre initial misconception about ratios, provides mathematically incorrect feedback in Turn 3 (claiming 27 is wrong when it's correct), but the student does successfully identify and apply the inverse operation despite the teacher's error.",
+    "justification_pass2": "The teacher uses guided questioning and asks students to explain their reasoning rather than directly explaining with worked examples, which is inconsistent with the traditional strategy of direct instruction.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 1,\n  \"R2\": 3,\n  \"R3\": 2,\n  \"R4\": 1,\n  \"R5\": 4,\n  \"brief_justification\": \"The teacher fails to address the student's bizarre initial misconception about ratios, provides mathematically incorrect feedback in Turn 3 (claiming 27 is wrong when it's correct), but the student does successfully identify and apply the inverse operation despite the teacher's error.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 2, \"brief_justification\": \"The teacher uses guided questioning and asks students to explain their reasoning rather than directly explaining with worked examples, which is inconsistent with the traditional strategy of direct instruction.\"}\n```",
+    "quality_composite": 2.0,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T12:07:45.469269+00:00"
+}

@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_8",
+    "misconception_label": "Does not find a common denominator when adding/subtracting fractions",
+    "misconception_features": [
+      0.0,
+      8.0,
+      3.0,
+      88.0
+    ],
+    "persona": "socratic",
+    "architecture": "pure_cbr_tpl",
+    "student_leg": "leg_b",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T14:51:55.959107Z",
+      "seed": 448,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T14:51:59.630832Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: \\( \\frac{4}{5}-\\frac{1}{3}=\\frac{\\bigstar}{15} \\) What should replace the star? I got \\( 5 \\) because I treated the fractions like ordinary numbers.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's think about this. From similar cases:\n  1. Topic: Add proper fractions with the same denominator. Correct answer (D): \\( 1 \\). Student selected: \\( \\frac{11}{22} \\). Underlying misconception: When adding fractions, adds the numerators and denominators. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.\n  2. Topic: Add proper fractions with different denominators where one is a multiple of the other. Correct answer (A): \\( \\frac{5}{9} \\). Student selected: \\( \\frac{3}{12} \\). Underlying misconception: When adding fractions, adds the numerators and denominators. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.\n  3. Topic: Subtract proper fractions with different denominators which do not share a common factor. Correct answer (C): \\( 17 \\). Student selected: \\( 19 \\). Underlying misconception: Forgets to change the numerators when finding equivalent fractions. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Oh right, so I see from those examples that I can't just add or subtract the numerators and denominators like they're normal numbers... but I'm still a bit confused about what I'm supposed to do instead? Like, why does the denominator have to be 15 in my problem, and how do I figure out what the numerators should actually be?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's think about this. From similar cases:\n  1. Topic: Add proper fractions with the same denominator. Correct answer (D): \\( 1 \\). Student selected: \\( \\frac{11}{22} \\). Underlying misconception: When adding fractions, adds the numerators and denominators. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.\n  2. Topic: Add proper fractions with different denominators where one is a multiple of the other. Correct answer (A): \\( \\frac{5}{9} \\). Student selected: \\( \\frac{3}{12} \\). Underlying misconception: When adding fractions, adds the numerators and denominators. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.\n  3. Topic: Subtract proper fractions with different denominators which do not share a common factor. Correct answer (C): \\( 17 \\). Student selected: \\( 19 \\). Underlying misconception: Forgets to change the numerators when finding equivalent fractions. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "Yeah, I think I'm starting to get that I need to change the numerators too, not just use 15 as the denominator... but I'm still confused about *how* to change them? Like, do I multiply the numerators by something, or what's the actual method I'm supposed to use?",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 1,
+    "R2": 1,
+    "R3": 1,
+    "R4": 2,
+    "R5": 1,
+    "R6": 1,
+    "justification_pass1": "The teacher merely repeats the same three example cases without engaging the student's specific questions about how to find equivalent fractions, providing no actual instruction or scaffolding despite the student's explicit requests for help with the method.",
+    "justification_pass2": "The teacher repeatedly provides the same list of example problems with answers and misconceptions rather than asking probing questions to guide the student's thinking, which is completely inconsistent with the Socratic method.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 1,\n  \"R2\": 1,\n  \"R3\": 1,\n  \"R4\": 2,\n  \"R5\": 1,\n  \"brief_justification\": \"The teacher merely repeats the same three example cases without engaging the student's specific questions about how to find equivalent fractions, providing no actual instruction or scaffolding despite the student's explicit requests for help with the method.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 1, \"brief_justification\": \"The teacher repeatedly provides the same list of example problems with answers and misconceptions rather than asking probing questions to guide the student's thinking, which is completely inconsistent with the Socratic method.\"}\n```",
+    "quality_composite": 1.0,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T14:52:05.776911+00:00"
+}

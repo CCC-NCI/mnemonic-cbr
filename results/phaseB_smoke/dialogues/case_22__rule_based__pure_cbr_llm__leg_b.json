@@ -1,0 +1,66 @@
+{
+  "state": {
+    "case_id": "case_22",
+    "misconception_label": "Does not realise that adding a larger number gives a larger answer",
+    "misconception_features": [
+      0.0,
+      22.0,
+      2.0,
+      98.0
+    ],
+    "persona": "rule_based",
+    "architecture": "pure_cbr_llm",
+    "student_leg": "leg_b",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T11:46:37.780535Z",
+      "seed": 1176,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-12T11:46:41.844316Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: Tom and Katie are discussing related calculations Tom says if you know that \\( 3748+426=4174 \\), then \\( 3748+427 \\) must equal \\( \\mathbf{4 1 7 5} \\) Katie says if you know that \\( 3748-426=3322 \\), then \\( 3748 \\) - \\( 427 \\) must equal \\( \\mathbf{3 3 2 3} \\) Who is correct? I got Only Katie because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "You are correct that Katie is right in this case. When subtracting, you need to remember to subtract each digit in the correct column to get the correct answer. In this case, you subtracted the hundreds column incorrectly, leading to the wrong answer. Remember, when subtracting, you need to borrow from the next column if necessary to get the correct result.",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Oh right, so Katie is correct because she subtracted properly with the borrowing and stuff. But wait, what about Tom's one with the addition? Is he wrong then, or did he do it right too?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Tom is actually correct in this case. When adding, you need to make sure to add each digit in the correct column to get the correct answer. Tom's calculation was correct, resulting in the sum of \\( 3748+427 \\) being \\( 4175 \\).",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 1,
+    "R2": 1,
+    "R3": 1,
+    "R4": 1,
+    "R5": 1,
+    "R6": 2,
+    "justification_pass1": "The teacher completely misses the student's misconception about whether adding a larger number gives a larger answer, provides mathematically incorrect feedback (claiming Katie is right when she's wrong, and confusing the student about column subtraction), and simply tells answers rather than engaging the student's reasoning.",
+    "justification_pass2": "While the teacher provides direct corrective feedback, they fail to state explicit procedures or show worked steps that would demonstrate the rule-based calculations, instead offering vague references to 'borrowing' and 'correct columns' without actually working through the problems.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 1,\n  \"R2\": 1,\n  \"R3\": 1,\n  \"R4\": 1,\n  \"R5\": 1,\n  \"brief_justification\": \"The teacher completely misses the student's misconception about whether adding a larger number gives a larger answer, provides mathematically incorrect feedback (claiming Katie is right when she's wrong, and confusing the student about column subtraction), and simply tells answers rather than engaging the student's reasoning.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 2, \"brief_justification\": \"While the teacher provides direct corrective feedback, they fail to state explicit procedures or show worked steps that would demonstrate the rule-based calculations, instead offering vague references to 'borrowing' and 'correct columns' without actually working through the problems.\"}\n```",
+    "quality_composite": 1.0,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T11:46:49.004152+00:00"
+}

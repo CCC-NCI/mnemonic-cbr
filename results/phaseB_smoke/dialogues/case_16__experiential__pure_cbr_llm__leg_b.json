@@ -1,0 +1,66 @@
+{
+  "state": {
+    "case_id": "case_16",
+    "misconception_label": "Divides total amount by each side of the ratio instead of dividing by the sum of the parts",
+    "misconception_features": [
+      0.0,
+      16.0,
+      3.0,
+      83.0
+    ],
+    "persona": "experiential",
+    "architecture": "pure_cbr_llm",
+    "student_leg": "leg_b",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T10:46:48.268560Z",
+      "seed": 866,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-12T10:46:52.840866Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: In the diagram, AN : NB \\( =3: 5 \\) What is the distance AN? ![A line that begins with point A, ends with point B, and has point N in between. The entire length of the line measures 48 m.](). I got \\( 16 \\mathrm{~m} \\) because I added the parts of the ratio as if they were a total.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's think of the ratio as representing different parts of a whole, like segments of a line. Just like in the examples we looked at before, the parts in the ratio should add up to the total length. Let's try to find the correct distance for AN by considering the relationship between the parts in the ratio.",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Oh right, so I need to add 3 and 5 together first to get 8, and then... do something with that? Like, does that mean I divide 48 by 8 instead of dividing it by 3 and 5 separately?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's think of the total length of the line as the sum of all the parts in the ratio, just like we did in the previous examples. So, if AN : NB is 3:5, we need to find the total length by adding 3 and 5 together before dividing 48 by that sum.",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 2,
+    "R3": 2,
+    "R4": 5,
+    "R5": 4,
+    "R6": 2,
+    "justification_pass1": "While the teacher provides mathematically correct guidance and the student shows clear progress in understanding (moving from the misconception to the correct approach), the teacher mostly tells rather than elicits reasoning, and doesn't explicitly address why the original approach of dividing by each part separately was incorrect.",
+    "justification_pass2": "While the teacher uses the phrase 'like segments of a line' and 'parts of a whole,' these are abstract mathematical descriptions rather than concrete real-world analogies or everyday situations that would characterize the experiential strategy.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 2,\n  \"R3\": 2,\n  \"R4\": 5,\n  \"R5\": 4,\n  \"brief_justification\": \"While the teacher provides mathematically correct guidance and the student shows clear progress in understanding (moving from the misconception to the correct approach), the teacher mostly tells rather than elicits reasoning, and doesn't explicitly address why the original approach of dividing by each part separately was incorrect.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 2, \"brief_justification\": \"While the teacher uses the phrase 'like segments of a line' and 'parts of a whole,' these are abstract mathematical descriptions rather than concrete real-world analogies or everyday situations that would characterize the experiential strategy.\"}\n```",
+    "quality_composite": 2.0,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T10:47:00.141534+00:00"
+}

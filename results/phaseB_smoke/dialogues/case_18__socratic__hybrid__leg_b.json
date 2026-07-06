@@ -1,0 +1,66 @@
+{
+  "state": {
+    "case_id": "case_18",
+    "misconception_label": "Assumes that an arrow on a number line starts at zero",
+    "misconception_features": [
+      0.0,
+      18.0,
+      2.0,
+      73.0
+    ],
+    "persona": "socratic",
+    "architecture": "hybrid",
+    "student_leg": "leg_b",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T11:03:17.115147Z",
+      "seed": 952,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-12T11:03:21.351521Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: ![Number line with -12 and -7 marked. Starting at -12, follow an arrow pointing to the right labelled +10. Then there is an arrow labelled b pointing to the left, which ends at -7 on the number line.]() What is the value of \\( b \\) ? I got \\( -7 \\) because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Why did you assume the arrow starts at zero on the number line? Can you explain the reasoning behind your choice of starting point for the arrow labeled \\( b \\)?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Oh, I think I see what you mean... I was just looking at where the arrow ends up at -7 and thought that was the answer. But you're saying the arrow doesn't start at zero? So I need to figure out where arrow b actually starts from first, don't I? Is it supposed to start from where the first arrow ended up?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Can you think of any other examples where you might have assumed the starting point incorrectly in a math problem? How can we approach this problem differently to make sure we're considering all the information given on the number line?",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 3,
+    "R3": 2,
+    "R4": 3,
+    "R5": 4,
+    "R6": 5,
+    "justification_pass1": "While the teacher identifies the misconception in Turn 1, they fail to help the student complete the problem after the student shows understanding in Turn 2, instead asking vague metacognitive questions that don't advance the mathematical work, though the student does show clear progress in recognizing their error.",
+    "justification_pass2": "The teacher exemplifies the Socratic method by exclusively using probing questions to guide the student's thinking, never stating the answer directly, and effectively exposing the student's flawed reasoning about the starting point through strategic questioning.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\"R1\": 2, \"R2\": 3, \"R3\": 2, \"R4\": 3, \"R5\": 4, \"brief_justification\": \"While the teacher identifies the misconception in Turn 1, they fail to help the student complete the problem after the student shows understanding in Turn 2, instead asking vague metacognitive questions that don't advance the mathematical work, though the student does show clear progress in recognizing their error.\"}\n```",
+    "pass2_raw_text": "```json\n{\n  \"R6\": 5,\n  \"brief_justification\": \"The teacher exemplifies the Socratic method by exclusively using probing questions to guide the student's thinking, never stating the answer directly, and effectively exposing the student's flawed reasoning about the starting point through strategic questioning.\"\n}\n```",
+    "quality_composite": 2.3333333333333335,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T11:03:28.395729+00:00"
+}

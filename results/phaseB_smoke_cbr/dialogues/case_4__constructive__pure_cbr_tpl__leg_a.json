@@ -1,0 +1,66 @@
+{
+  "state": {
+    "case_id": "case_4",
+    "misconception_label": "Thinks you can find missing values in a given table by treating the row as linear and adding on the difference between the first two values given.",
+    "misconception_features": [
+      0.0,
+      4.0,
+      1.0,
+      74.0
+    ],
+    "persona": "constructive",
+    "architecture": "pure_cbr_tpl",
+    "student_leg": "leg_a",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T08:45:54.496710Z",
+      "seed": 257,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "cbr_grounded",
+      "ended_at": "2026-05-12T08:45:56.466243Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: The equation \\( f=3 r^{2}+3 \\) is used to find values in the table below. What is the value covered by the star? \\begin{tabular}{|c|c|c|c|c|} \\hline\\( r \\) & \\( 1 \\) & \\( 2 \\) & \\( 3 \\) & \\( 4 \\) \\\\ \\hline\\( f \\) & \\( 6 \\) & \\( 15 \\) & \\( \\color{gold}\\bigstar \\) & \\\\ \\hline \\end{tabular}. I got \\( 24 \\) because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's think about this. From similar cases:\n  1. Topic: Given a positive x value, find a y value in a table of values for lines in the form y = mx + c. Correct answer (C): \\( 1 \\). Student selected: \\( 6 \\). Underlying misconception: Does not realise that a pair of coordinates can be used to find missing parts of an equation. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.\n  2. Topic: Subtract decimals where the numbers involved have a different number of decimal places. Correct answer (C): \\( 1.62 \\). Student selected: \\( 4.41 \\). Underlying misconception: Hasn't lined up the place value columns when writing out the calculation. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.\n  3. Topic: Interpret continuous data using a line graph. Correct answer (A): \\( 25 \\). Student selected: \\( 85 \\). Underlying misconception: Adds instead of subtracts when asked to find the difference. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "I see what you're saying, but I'm still a bit confused. I thought I could just find the difference between the first two values and keep adding that to get the next one. So, if I got \\( 6 \\) to \\( 15 \\) by adding \\( 9 \\), I thought I could just add \\( 9 \\) again to get \\( 24 \\). Can you help me understand how to find the missing value correctly?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's think about this. From similar cases:\n  1. Topic: Given a positive x value, find a y value in a table of values for lines in the form y = mx + c. Correct answer (C): \\( 1 \\). Student selected: \\( 6 \\). Underlying misconception: Does not realise that a pair of coordinates can be used to find missing parts of an equation. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.\n  2. Topic: Subtract decimals where the numbers involved have a different number of decimal places. Correct answer (C): \\( 1.62 \\). Student selected: \\( 4.41 \\). Underlying misconception: Hasn't lined up the place value columns when writing out the calculation. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.\n  3. Topic: Interpret continuous data using a line graph. Correct answer (A): \\( 25 \\). Student selected: \\( 85 \\). Underlying misconception: Adds instead of subtracts when asked to find the difference. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 1,
+    "R2": 1,
+    "R3": 1,
+    "R4": 1,
+    "R5": 1,
+    "R6": 1,
+    "justification_pass1": "The teacher completely ignores the student's clearly articulated misconception about linear patterns and instead repeatedly provides irrelevant examples from unrelated topics, offering no actual mathematical guidance on the quadratic function problem at hand.",
+    "justification_pass2": "The teacher provides no scaffolding, problem breakdown, or adjusted support\u2014instead repeating identical, irrelevant examples from unrelated topics twice, completely ignoring the student's clearly articulated misconception about linear versus quadratic relationships.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 1,\n  \"R2\": 1,\n  \"R3\": 1,\n  \"R4\": 1,\n  \"R5\": 1,\n  \"brief_justification\": \"The teacher completely ignores the student's clearly articulated misconception about linear patterns and instead repeatedly provides irrelevant examples from unrelated topics, offering no actual mathematical guidance on the quadratic function problem at hand.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 1, \"brief_justification\": \"The teacher provides no scaffolding, problem breakdown, or adjusted support\u2014instead repeating identical, irrelevant examples from unrelated topics twice, completely ignoring the student's clearly articulated misconception about linear versus quadratic relationships.\"}\n```",
+    "quality_composite": 1.0,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T08:46:04.015043+00:00"
+}

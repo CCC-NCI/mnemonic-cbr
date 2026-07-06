@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_18",
+    "misconception_label": "Assumes that an arrow on a number line starts at zero",
+    "misconception_features": [
+      0.0,
+      18.0,
+      2.0,
+      73.0
+    ],
+    "persona": "socratic",
+    "architecture": "pure_ai",
+    "student_leg": "leg_a",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T16:39:48.238369Z",
+      "seed": 949,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T16:39:53.267213Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: ![Number line with -12 and -7 marked. Starting at -12, follow an arrow pointing to the right labelled +10. Then there is an arrow labelled b pointing to the left, which ends at -7 on the number line.]() What is the value of \\( b \\) ? I got \\( -7 \\) because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Hmm, I see you labeled the arrow starting at -12 as +10. Can you explain why you chose to label it that way? Let's think about the direction of the arrow and how it relates to the numbers on the number line.",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "I thought the arrow was just moving from zero, but now I see it starts at -12. So, if it goes +10 from there, it should end up at -2, right? But then I don't get how that connects to the arrow \\( b \\) that goes to -7. Can you help me figure that out?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Hmm, it seems like you're on the right track with understanding the starting point of the arrow at -12. Now, think about the direction of the arrow labeled \\( b \\) going to the left. How does that relate to the position of -7 on the number line in relation to -12?",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "Okay, so if the arrow labeled \\( b \\) is going to the left and ends at -7, I guess that means it starts somewhere to the right of -7, but I\u2019m not sure where exactly. If the arrow from -12 goes to -2, then does that mean I have to figure out how far back to -7 from there? I\u2019m a bit confused about how to find the starting point for arrow \\( b \\). Can you help me with that?",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 4,
+    "R2": 4,
+    "R3": 3,
+    "R4": 5,
+    "R5": 4,
+    "R6": 5,
+    "justification_pass1": "The teacher effectively addresses the zero-starting misconception in Turn 1, maintains high cognitive demand through questioning, and the student demonstrates clear progress from thinking arrows start at zero to correctly identifying -12 as the starting point and reasoning about arrow b's position, though some confusion remains about the final calculation.",
+    "justification_pass2": "The teacher consistently uses probing questions to guide the student's thinking without giving direct answers, asking about arrow direction, starting points, and relationships between positions, which is a textbook example of Socratic questioning.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\"R1\": 4, \"R2\": 4, \"R3\": 3, \"R4\": 5, \"R5\": 4, \"brief_justification\": \"The teacher effectively addresses the zero-starting misconception in Turn 1, maintains high cognitive demand through questioning, and the student demonstrates clear progress from thinking arrows start at zero to correctly identifying -12 as the starting point and reasoning about arrow b's position, though some confusion remains about the final calculation.\"}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 5, \"brief_justification\": \"The teacher consistently uses probing questions to guide the student's thinking without giving direct answers, asking about arrow direction, starting points, and relationships between positions, which is a textbook example of Socratic questioning.\"}\n```",
+    "quality_composite": 3.6666666666666665,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T16:40:01.062229+00:00"
+}

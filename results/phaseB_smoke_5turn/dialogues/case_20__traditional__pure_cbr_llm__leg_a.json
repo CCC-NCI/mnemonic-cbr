@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_20",
+    "misconception_label": "Adds when calculating volume instead of multiplying",
+    "misconception_features": [
+      0.0,
+      20.0,
+      1.0,
+      58.0
+    ],
+    "persona": "traditional",
+    "architecture": "pure_cbr_llm",
+    "student_leg": "leg_a",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T17:09:04.440438Z",
+      "seed": 1085,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T17:09:09.790287Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: The volume of this cuboid is \\( 30 \\mathrm{~cm}^{3} \\) What length should replace the star? ![A cuboid, depth 2cm and height 3cm. The width is labelled with a star.](). I got \\( 25 \\mathrm{~cm} \\) because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "When calculating the volume of a cuboid, you need to multiply the length, width, and height. In this case, you have the volume as 30 cm\u00b3 and two of the dimensions given. Can you walk me through how you attempted to find the missing dimension?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "I thought I could just add the height and depth together, so I did \\( 3 + 2 = 5 \\) and then I just took that away from 30 to get the width. But now I'm confused because I see you said I should multiply instead. How does that work exactly?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "To find the volume of a cuboid, you need to multiply the three dimensions together - length, width, and height. Adding the dimensions together will not give you the correct volume. Can you try multiplying the dimensions instead of adding them to see if you get a different result?",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "Okay, I think I get that I need to multiply instead of add. So if I have the height as \\( 3 \\) cm and the depth as \\( 2 \\) cm, I can multiply those together first, right? But then how do I use that to find the width? Do I just divide the volume by that result?",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 2,
+    "R3": 2,
+    "R4": 5,
+    "R5": 4,
+    "R6": 2,
+    "justification_pass1": "The teacher correctly identifies multiplication vs. addition but provides generic correction rather than deeply engaging with why the student added; however, the student does show clear progress from adding dimensions to understanding multiplication and proposing division to find the missing dimension.",
+    "justification_pass2": "The teacher uses questioning to guide the student toward discovery rather than directly explaining the formula and providing a worked example, which is characteristic of inquiry-based rather than traditional instruction.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 2,\n  \"R3\": 2,\n  \"R4\": 5,\n  \"R5\": 4,\n  \"brief_justification\": \"The teacher correctly identifies multiplication vs. addition but provides generic correction rather than deeply engaging with why the student added; however, the student does show clear progress from adding dimensions to understanding multiplication and proposing division to find the missing dimension.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 2, \"brief_justification\": \"The teacher uses questioning to guide the student toward discovery rather than directly explaining the formula and providing a worked example, which is characteristic of inquiry-based rather than traditional instruction.\"}\n```",
+    "quality_composite": 2.0,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T17:09:16.862664+00:00"
+}

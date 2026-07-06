@@ -1,0 +1,53 @@
+{
+  "blind_id": "D2dd748d40b",
+  "subset_row": {
+    "blind_id": "D2dd748d40b",
+    "case_id": "case_23",
+    "persona": "experiential",
+    "architecture": "baseline",
+    "student_leg": "leg_b",
+    "llm_R5": "3",
+    "llm_quality_composite": "2.0",
+    "llm_R6": "4",
+    "difficulty_band": "long",
+    "r5_band": "mid",
+    "word_count": "92",
+    "attention_check_type": "",
+    "attention_check_rationale": "",
+    "file_path": "dialogues/case_23__experiential__baseline__leg_b.json"
+  },
+  "primary_score": {
+    "R1": 2,
+    "R2": 2,
+    "R3": 2,
+    "R4": 1,
+    "R5": 3,
+    "R6": 4,
+    "justification_pass1": "The teacher provides mathematically incorrect explanations (claiming downward slopes mean moving away, and that distance decreases as a car moves away), fails to directly address the distance-time graph misconception, but the student does eventually self-correct to the right understanding despite the poor instruction.",
+    "justification_pass2": "The teacher consistently uses concrete real-world analogies (rollercoaster ride, car driving away) to explain the abstract graph concept, though the rollercoaster analogy in Turn 1 contains a directional error that creates confusion.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 2,\n  \"R3\": 2,\n  \"R4\": 1,\n  \"R5\": 3,\n  \"brief_justification\": \"The teacher provides mathematically incorrect explanations (claiming downward slopes mean moving away, and that distance decreases as a car moves away), fails to directly address the distance-time graph misconception, but the student does eventually self-correct to the right understanding despite the poor instruction.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 4, \"brief_justification\": \"The teacher consistently uses concrete real-world analogies (rollercoaster ride, car driving away) to explain the abstract graph concept, though the rollercoaster analogy in Turn 1 contains a directional error that creates confusion.\"}\n```",
+    "quality_composite": 2.0,
+    "is_complete": true
+  },
+  "secondary_score": {
+    "R1": 4,
+    "R2": 4,
+    "R3": 3,
+    "R4": 5,
+    "R5": 3,
+    "R6": 4,
+    "justification_pass1": "The teacher engages with the student's misconception effectively and encourages reasoning, but the scaffolding could be more tailored to the student's specific confusion about distance and movement.",
+    "justification_pass2": "The teacher effectively uses real-world analogies, like a rollercoaster and a car, to connect abstract concepts of the graph to concrete experiences, though some clarification could enhance understanding.",
+    "judge_provider": "openai",
+    "judge_model": "gpt-4o-mini",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "{\n  \"R1\": 4,\n  \"R2\": 4,\n  \"R3\": 3,\n  \"R4\": 5,\n  \"R5\": 3,\n  \"brief_justification\": \"The teacher engages with the student's misconception effectively and encourages reasoning, but the scaffolding could be more tailored to the student's specific confusion about distance and movement.\"\n}",
+    "pass2_raw_text": "{\"R6\": 4, \"brief_justification\": \"The teacher effectively uses real-world analogies, like a rollercoaster and a car, to connect abstract concepts of the graph to concrete experiences, though some clarification could enhance understanding.\"}"
+  }
+}

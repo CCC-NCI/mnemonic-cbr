@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_23",
+    "misconception_label": "Confuses rest and movement on a distance time graph",
+    "misconception_features": [
+      0.0,
+      23.0,
+      3.0,
+      62.0
+    ],
+    "persona": "socratic",
+    "architecture": "pure_cbr_llm",
+    "student_leg": "leg_b",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T17:33:14.546125Z",
+      "seed": 1196,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T17:33:19.848738Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: This graph shows how far Fido the dog is from his home. What might the negative-sloping section represent? ![A graph with time (secs) on the horizontal axis and distance (m) on the vertical axis. The graph starts at the origin, travels in a straight line up and right, travels horizontally, then travels in a straight line down and right back to the x-axis. ](). I got Fido has fallen asleep because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Can you explain why you think Fido falling asleep is represented by the negative-sloping section on the graph? What do you think the negative slope might indicate in terms of Fido's movement?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Um, well I thought if the line goes down it means something is decreasing, so I thought maybe the distance was going down because Fido was sleeping and not moving? But now I'm confused because if he's asleep he wouldn't be moving at all, so wouldn't the line just be flat like the middle bit? Does the downward slope mean he's actually moving?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Why do you think a downward slope on a distance-time graph would indicate movement rather than rest? How might you interpret the negative slope in terms of Fido's distance from home?",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "Oh right, so if the line is going down, that means the distance is getting smaller, doesn't it? So Fido must be moving back towards his home? But I'm still a bit confused about why it's called a \"negative\" slope if he's actually moving - shouldn't negative mean he's not doing anything?",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 4,
+    "R2": 4,
+    "R3": 4,
+    "R4": 5,
+    "R5": 4,
+    "R6": 5,
+    "justification_pass1": "The teacher effectively addresses the rest/movement confusion through well-calibrated questioning that prompts the student to reason through the misconception, leading to visible progress from confusing downward slope with rest to correctly understanding it indicates movement toward home, though some minor confusion about terminology remains.",
+    "justification_pass2": "The teacher consistently uses probing questions to guide the student's thinking, never provides direct answers, and helps the student discover the contradiction in their own reasoning about sleep versus movement through questioning.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 4,\n  \"R2\": 4,\n  \"R3\": 4,\n  \"R4\": 5,\n  \"R5\": 4,\n  \"brief_justification\": \"The teacher effectively addresses the rest/movement confusion through well-calibrated questioning that prompts the student to reason through the misconception, leading to visible progress from confusing downward slope with rest to correctly understanding it indicates movement toward home, though some minor confusion about terminology remains.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 5, \"brief_justification\": \"The teacher consistently uses probing questions to guide the student's thinking, never provides direct answers, and helps the student discover the contradiction in their own reasoning about sleep versus movement through questioning.\"}\n```",
+    "quality_composite": 4.0,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T17:33:29.899603+00:00"
+}

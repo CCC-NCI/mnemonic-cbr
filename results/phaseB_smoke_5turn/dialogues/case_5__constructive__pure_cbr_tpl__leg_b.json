@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_5",
+    "misconception_label": "Does not know units of area should be squared",
+    "misconception_features": [
+      0.0,
+      5.0,
+      3.0,
+      23.0
+    ],
+    "persona": "constructive",
+    "architecture": "pure_cbr_tpl",
+    "student_leg": "leg_b",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T14:22:51.243446Z",
+      "seed": 308,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T14:22:54.516212Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: James has answered a question on the area of a trapezium and got an answer of \\( 54 \\). Behind the star he has written the units that he used. \\( 54 \\, \\bigstar \\) Which of the following units could be correct? I got \\( m \\) because I added the side lengths instead of multiplying.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's think about this. From similar cases:\n  1. Topic: Convert from km\u00b2 to m\u00b2. Correct answer (B): \\( 2000000 \\). Student selected: \\( 2000 \\). Underlying misconception: Does not square the conversion factor when converting squared units. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.\n  2. Topic: Perform calculations with areas when given in different units. Correct answer (C): \\( 404 \\mathrm{~mm}^{2} \\). Student selected: \\( 8 \\mathrm{~mm}^{2} \\). Underlying misconception: Does not convert measurements to have the same units before calculating area or volume. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.\n  3. Topic: Calculate the area of a right-angled triangle where the dimensions are given in the same units. Correct answer (D): \\( 44 \\mathrm{~cm}^{2} \\). Student selected: \\( 88 \\mathrm{~cm}^{2} \\). Underlying misconception: Does not divide by 2 when calculating the area of a triangle. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Oh right, so you're saying the units need to be squared because we're multiplying two measurements together? But I'm still a bit confused - does that mean the answer should be something like m\u00b2 instead of just m, or am I still getting it wrong?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's think about this. From similar cases:\n  1. Topic: Convert from km\u00b2 to m\u00b2. Correct answer (B): \\( 2000000 \\). Student selected: \\( 2000 \\). Underlying misconception: Does not square the conversion factor when converting squared units. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.\n  2. Topic: Perform calculations with areas when given in different units. Correct answer (C): \\( 404 \\mathrm{~mm}^{2} \\). Student selected: \\( 8 \\mathrm{~mm}^{2} \\). Underlying misconception: Does not convert measurements to have the same units before calculating area or volume. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.\n  3. Topic: Calculate the area of a right-angled triangle where the dimensions are given in the same units. Correct answer (D): \\( 44 \\mathrm{~cm}^{2} \\). Student selected: \\( 88 \\mathrm{~cm}^{2} \\). Underlying misconception: Does not divide by 2 when calculating the area of a triangle. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "Yeah, I think I get it now - so when we multiply two lengths together like metres times metres, we get m\u00b2, not just m. So for the trapezium question, the answer should definitely be something squared like m\u00b2 or cm\u00b2, right? But I'm still not totally sure why we have to square the units - is it just because we're multiplying two numbers together?",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 1,
+    "R2": 1,
+    "R3": 1,
+    "R4": 2,
+    "R5": 3,
+    "R6": 1,
+    "justification_pass1": "The teacher merely repeats identical lists of unrelated examples without addressing the student's specific misconception about why area units are squared, though the student does show some progress in understanding through self-reflection.",
+    "justification_pass2": "The teacher simply repeats the same list of similar cases verbatim without scaffolding, breaking down the problem into steps, or adjusting support based on the student's evolving understanding, which directly contradicts the constructive strategy.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 1,\n  \"R2\": 1,\n  \"R3\": 1,\n  \"R4\": 2,\n  \"R5\": 3,\n  \"brief_justification\": \"The teacher merely repeats identical lists of unrelated examples without addressing the student's specific misconception about why area units are squared, though the student does show some progress in understanding through self-reflection.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\n  \"R6\": 1,\n  \"brief_justification\": \"The teacher simply repeats the same list of similar cases verbatim without scaffolding, breaking down the problem into steps, or adjusting support based on the student's evolving understanding, which directly contradicts the constructive strategy.\"\n}\n```",
+    "quality_composite": 1.0,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T14:23:01.173392+00:00"
+}

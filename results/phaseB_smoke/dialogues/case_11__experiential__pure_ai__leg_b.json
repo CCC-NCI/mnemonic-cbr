@@ -1,0 +1,66 @@
+{
+  "state": {
+    "case_id": "case_11",
+    "misconception_label": "Struggles to visualise nets of 3D shapes",
+    "misconception_features": [
+      0.0,
+      11.0,
+      3.0,
+      31.0
+    ],
+    "persona": "experiential",
+    "architecture": "pure_ai",
+    "student_leg": "leg_b",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T10:01:10.643616Z",
+      "seed": 620,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-12T10:01:15.423202Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: This is the net of a... ![A circle touching a sector](). I got Triangle because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Imagine you have a paper circle and you fold it to create a cone. The net of a cone would look like the unfolded paper circle. Can you see how the net of a 3D shape is like unfolding the shape into a 2D representation?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Oh right, so like... you're unfolding it flat? So the circle and that curved bit together would make the cone when you fold them back up? But I'm still a bit confused about how the sector part fits with the circle - does that curved edge match up with the circle's edge or something?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Imagine you have a cone made of paper with a curved edge, just like the sector you mentioned. When you unfold the cone into a net, the curved edge of the sector will match up with the circle's edge to form the shape of the cone. It's like piecing together a puzzle to see how the 3D shape fits into a 2D net.",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 4,
+    "R2": 2,
+    "R3": 3,
+    "R4": 5,
+    "R5": 4,
+    "R6": 5,
+    "justification_pass1": "The teacher directly addresses the net visualization misconception with accurate content and the student shows clear progress from confusion to understanding how the sector's curved edge matches the circle, though the teacher mostly explains rather than prompting student reasoning.",
+    "justification_pass2": "The teacher consistently uses concrete, everyday analogies (paper folding, puzzle pieces) to help the student visualize the abstract relationship between 3D cones and their 2D nets, which is a textbook example of the experiential strategy.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 4,\n  \"R2\": 2,\n  \"R3\": 3,\n  \"R4\": 5,\n  \"R5\": 4,\n  \"brief_justification\": \"The teacher directly addresses the net visualization misconception with accurate content and the student shows clear progress from confusion to understanding how the sector's curved edge matches the circle, though the teacher mostly explains rather than prompting student reasoning.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 5, \"brief_justification\": \"The teacher consistently uses concrete, everyday analogies (paper folding, puzzle pieces) to help the student visualize the abstract relationship between 3D cones and their 2D nets, which is a textbook example of the experiential strategy.\"}\n```",
+    "quality_composite": 3.0,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T10:01:22.933393+00:00"
+}

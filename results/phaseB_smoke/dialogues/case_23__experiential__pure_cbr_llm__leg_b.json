@@ -1,0 +1,66 @@
+{
+  "state": {
+    "case_id": "case_23",
+    "misconception_label": "Confuses rest and movement on a distance time graph",
+    "misconception_features": [
+      0.0,
+      23.0,
+      3.0,
+      62.0
+    ],
+    "persona": "experiential",
+    "architecture": "pure_cbr_llm",
+    "student_leg": "leg_b",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T11:54:21.338686Z",
+      "seed": 1216,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-12T11:54:25.612432Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: This graph shows how far Fido the dog is from his home. What might the negative-sloping section represent? ![A graph with time (secs) on the horizontal axis and distance (m) on the vertical axis. The graph starts at the origin, travels in a straight line up and right, travels horizontally, then travels in a straight line down and right back to the x-axis. ](). I got Fido has fallen asleep because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Imagine you're watching a movie and the main character goes for a walk. When the character stops to take a break, does that mean they've suddenly disappeared? Just like in the movie, a horizontal line on a distance-time graph doesn't mean the object has disappeared, it just means it's not moving. Can you see how this relates to Fido the dog's journey on the graph?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Oh right, so the flat bit means Fido stopped moving, like when he's just sitting still? But then what about the bit that goes down - does that mean he's going backwards towards his home, or is that something else?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Imagine you're on a road trip and you stop at a rest area before continuing on your journey. That flat section on the graph could represent Fido taking a break, just like you would on a road trip. And when the line goes down, it doesn't mean Fido is going backwards towards his home, it could mean something else entirely. Let's explore that together.",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 2,
+    "R3": 2,
+    "R4": 2,
+    "R5": 4,
+    "R6": 5,
+    "justification_pass1": "While the student shows clear improvement in understanding (Turn 2 demonstrates they've grasped the horizontal section and correctly interpreted the downward slope), the teacher's final turn misleadingly suggests the downward slope might mean \"something else entirely\" when the student had already correctly identified it as returning home, and relies heavily on analogies rather than engaging directly with graph interpretation.",
+    "justification_pass2": "The teacher consistently uses concrete, relatable real-world analogies (watching a movie character walk, taking a road trip with rest stops) to help the student understand the abstract concept of distance-time graphs, which is a textbook example of the experiential strategy.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 2,\n  \"R3\": 2,\n  \"R4\": 2,\n  \"R5\": 4,\n  \"brief_justification\": \"While the student shows clear improvement in understanding (Turn 2 demonstrates they've grasped the horizontal section and correctly interpreted the downward slope), the teacher's final turn misleadingly suggests the downward slope might mean \\\"something else entirely\\\" when the student had already correctly identified it as returning home, and relies heavily on analogies rather than engaging directly with graph interpretation.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 5, \"brief_justification\": \"The teacher consistently uses concrete, relatable real-world analogies (watching a movie character walk, taking a road trip with rest stops) to help the student understand the abstract concept of distance-time graphs, which is a textbook example of the experiential strategy.\"}\n```",
+    "quality_composite": 2.0,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T11:54:32.911560+00:00"
+}

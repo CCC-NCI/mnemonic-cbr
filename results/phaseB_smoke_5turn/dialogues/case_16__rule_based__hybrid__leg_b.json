@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_16",
+    "misconception_label": "Divides total amount by each side of the ratio instead of dividing by the sum of the parts",
+    "misconception_features": [
+      0.0,
+      16.0,
+      3.0,
+      83.0
+    ],
+    "persona": "rule_based",
+    "architecture": "hybrid",
+    "student_leg": "leg_b",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T16:25:30.753183Z",
+      "seed": 882,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T16:25:36.201241Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: In the diagram, AN : NB \\( =3: 5 \\) What is the distance AN? ![A line that begins with point A, ends with point B, and has point N in between. The entire length of the line measures 48 m.](). I got \\( 16 \\mathrm{~m} \\) because I added the parts of the ratio as if they were a total.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "You made a common mistake by adding the parts of the ratio as if they were a total. Remember, to find the total distance, you need to divide by the sum of the parts. Let's correct this by dividing 48 m by the sum of 3 and 5. So, the correct distance for AN is \\( \\frac{48}{3+5} = 6 \\mathrm{~m} \\).",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Oh right, so I need to add 3 and 5 together first to get 8, then divide 48 by 8 to get 6 m for AN? But wait, why do we add the ratio numbers together instead of just dividing 48 by 3 like I did?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Yes, exactly. Adding the ratio numbers together gives us the total number of parts in the ratio. This helps us find the value of each part. When you divide the total distance by the sum of the parts, you are essentially distributing the total among the parts according to the ratio. So, in this case, dividing 48 by 8 gives us the length of each part, which is 6 meters for AN.",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "Oh, I think I get it now - so the 8 is like the total number of equal parts the whole line is split into, and since AN is 3 of those parts, I multiply 6 by 3 to get 18 m for AN? Is that right?",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 1,
+    "R3": 2,
+    "R4": 2,
+    "R5": 4,
+    "R6": 2,
+    "justification_pass1": "The teacher directly tells the answer rather than eliciting reasoning, makes a significant mathematical error in Turn 1 (stating AN = 6m when it should be 18m), but the student does show improvement by Turn 4 when they correctly work out that AN = 18m despite the teacher's error.",
+    "justification_pass2": "While the teacher does state some explicit procedures and identifies the procedural error, they make a critical mathematical error in Turn 1 (claiming AN = 6m instead of 18m) and fail to provide clear, correct worked steps that would be central to a rule-based approach.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 1,\n  \"R3\": 2,\n  \"R4\": 2,\n  \"R5\": 4,\n  \"brief_justification\": \"The teacher directly tells the answer rather than eliciting reasoning, makes a significant mathematical error in Turn 1 (stating AN = 6m when it should be 18m), but the student does show improvement by Turn 4 when they correctly work out that AN = 18m despite the teacher's error.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 2, \"brief_justification\": \"While the teacher does state some explicit procedures and identifies the procedural error, they make a critical mathematical error in Turn 1 (claiming AN = 6m instead of 18m) and fail to provide clear, correct worked steps that would be central to a rule-based approach.\"}\n```",
+    "quality_composite": 1.6666666666666667,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T16:25:45.093877+00:00"
+}

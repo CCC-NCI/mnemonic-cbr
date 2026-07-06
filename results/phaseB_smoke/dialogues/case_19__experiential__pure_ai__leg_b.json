@@ -1,0 +1,66 @@
+{
+  "state": {
+    "case_id": "case_19",
+    "misconception_label": "When subtracting fractions, subtracts the numerators and multiplies the denominators",
+    "misconception_features": [
+      0.0,
+      19.0,
+      3.0,
+      104.0
+    ],
+    "persona": "experiential",
+    "architecture": "pure_ai",
+    "student_leg": "leg_b",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T11:17:07.326343Z",
+      "seed": 1020,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-12T11:17:11.828610Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: Express the following as a single fraction, writing your answer as simply as possible: \\( \\frac{1}{s}-\\frac{t}{3} \\). I got \\( \\frac{1-t}{3 s} \\) because I treated the fractions like ordinary numbers.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Imagine you have a pizza cut into 3 equal slices, and another pizza cut into \\( s \\) equal slices. If you take away \\( t \\) slices from the first pizza, how many slices are left in total? And how many slices are left in terms of the entire amount of pizza? This can help you visualize how to subtract fractions correctly.",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Hmm, so if I take away t slices from the pizza cut into 3 slices, I'd have 3 - t slices left... but I'm confused about how that connects to the s slices from the other pizza? Do I need to make both pizzas have the same number of slices first before I can subtract them?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Imagine you have two different sized pizzas, one with 3 slices and the other with \\( s \\) slices. If you want to compare the slices from both pizzas, you need to make them the same size. Try to find a common denominator for the number of slices in both pizzas so you can subtract them accurately. Think about how you can relate this to the fractions in the question.",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 3,
+    "R3": 2,
+    "R4": 2,
+    "R5": 4,
+    "R6": 4,
+    "justification_pass1": "While the teacher uses a pizza analogy to prompt reasoning about common denominators, the analogy is confusing (mixing two pizzas creates conceptual problems) and doesn't directly address why the student's specific operation (subtracting numerators, multiplying denominators) is incorrect, though the student does show improved understanding by Turn 2 about needing common denominators.",
+    "justification_pass2": "The teacher consistently uses a concrete pizza analogy to ground the abstract concept of fraction subtraction with unlike denominators, though the analogy becomes slightly strained when comparing different-sized pizzas rather than different slice sizes of the same total amount.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\"R1\": 2, \"R2\": 3, \"R3\": 2, \"R4\": 2, \"R5\": 4, \"brief_justification\": \"While the teacher uses a pizza analogy to prompt reasoning about common denominators, the analogy is confusing (mixing two pizzas creates conceptual problems) and doesn't directly address why the student's specific operation (subtracting numerators, multiplying denominators) is incorrect, though the student does show improved understanding by Turn 2 about needing common denominators.\"}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 4, \"brief_justification\": \"The teacher consistently uses a concrete pizza analogy to ground the abstract concept of fraction subtraction with unlike denominators, though the analogy becomes slightly strained when comparing different-sized pizzas rather than different slice sizes of the same total amount.\"}\n```",
+    "quality_composite": 2.3333333333333335,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T11:17:19.304619+00:00"
+}

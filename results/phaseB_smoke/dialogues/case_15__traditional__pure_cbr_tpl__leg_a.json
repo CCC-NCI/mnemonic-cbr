@@ -1,0 +1,66 @@
+{
+  "state": {
+    "case_id": "case_15",
+    "misconception_label": "Has used slant height and base to find area of a triangle rather than perpendicular height and base",
+    "misconception_features": [
+      0.0,
+      15.0,
+      2.0,
+      94.0
+    ],
+    "persona": "traditional",
+    "architecture": "pure_cbr_tpl",
+    "student_leg": "leg_a",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T10:41:15.380387Z",
+      "seed": 837,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-12T10:41:16.634118Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: How would you calculate the area of this triangle? ![A triangle, base 12m. All three sides are equal.](). I got \\( \\frac{12 \\times 12}{2} \\) because I added the side lengths instead of multiplying.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's think about this. From similar cases:\n  1. Topic: Calculate the area of a right-angled triangle where the dimensions are given in the same units. Correct answer (A): \\( 54 \\mathrm{~cm}^{2} \\). Student selected: \\( 67.5 \\mathrm{~cm}^{2} \\). Underlying misconception: Has used slant height and base to find area of a triangle rather than perpendicular height and base. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.\n  2. Topic: Calculate the area of a trapezium where the dimensions are given in the same units. Correct answer (C): \\( 7 \\). Student selected: \\( 8 \\). Underlying misconception: Uses slant height instead of perpendicular height to find area of a trapezium. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.\n  3. Topic: Calculate the area of a trapezium where the dimensions are given in the same units. Correct answer (B): \\( 9+10 \\). Student selected: \\( 7+7.5 \\). Underlying misconception: Uses slant heights instead of parallel sides to find area of a trapezium. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "I think I get that I shouldn't just use the side lengths to find the area. So, for the triangle, I need the height that goes straight down from the top to the base, right? But how do I find that height if I only know the sides?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's think about this. From similar cases:\n  1. Topic: Calculate the area of a right-angled triangle where the dimensions are given in the same units. Correct answer (A): \\( 54 \\mathrm{~cm}^{2} \\). Student selected: \\( 67.5 \\mathrm{~cm}^{2} \\). Underlying misconception: Has used slant height and base to find area of a triangle rather than perpendicular height and base. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.\n  2. Topic: Calculate the area of a trapezium where the dimensions are given in the same units. Correct answer (C): \\( 7 \\). Student selected: \\( 8 \\). Underlying misconception: Uses slant height instead of perpendicular height to find area of a trapezium. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.\n  3. Topic: Calculate the area of a trapezium where the dimensions are given in the same units. Correct answer (B): \\( 9+10 \\). Student selected: \\( 7+7.5 \\). Underlying misconception: Uses slant heights instead of parallel sides to find area of a trapezium. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 1,
+    "R2": 1,
+    "R3": 1,
+    "R4": 3,
+    "R5": 2,
+    "R6": 1,
+    "justification_pass1": "The teacher merely repeats identical generic examples without engaging the student's specific question about finding perpendicular height in an equilateral triangle, providing no actual scaffolding or mathematical guidance despite the student showing readiness to learn.",
+    "justification_pass2": "The teacher does not explain directly or provide worked examples as required by the traditional strategy, but instead repeatedly presents the same list of similar misconceptions without any direct instruction, explanation, or demonstration of how to solve the problem.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 1,\n  \"R2\": 1,\n  \"R3\": 1,\n  \"R4\": 3,\n  \"R5\": 2,\n  \"brief_justification\": \"The teacher merely repeats identical generic examples without engaging the student's specific question about finding perpendicular height in an equilateral triangle, providing no actual scaffolding or mathematical guidance despite the student showing readiness to learn.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 1, \"brief_justification\": \"The teacher does not explain directly or provide worked examples as required by the traditional strategy, but instead repeatedly presents the same list of similar misconceptions without any direct instruction, explanation, or demonstration of how to solve the problem.\"}\n```",
+    "quality_composite": 1.0,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T10:41:25.646480+00:00"
+}

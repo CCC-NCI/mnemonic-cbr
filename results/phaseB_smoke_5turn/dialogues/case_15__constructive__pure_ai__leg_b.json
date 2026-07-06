@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_15",
+    "misconception_label": "Has used slant height and base to find area of a triangle rather than perpendicular height and base",
+    "misconception_features": [
+      0.0,
+      15.0,
+      2.0,
+      94.0
+    ],
+    "persona": "constructive",
+    "architecture": "pure_ai",
+    "student_leg": "leg_b",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T16:10:24.962276Z",
+      "seed": 810,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T16:10:31.085402Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: How would you calculate the area of this triangle? ![A triangle, base 12m. All three sides are equal.](). I got \\( \\frac{12 \\times 12}{2} \\) because I added the side lengths instead of multiplying.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "It looks like you're on the right track with using the base and height to find the area of a triangle. To find the perpendicular height, you can draw a line from the vertex opposite the base to the base to create a right triangle. Try finding the perpendicular height using this method and then calculate the area using the formula \\( \\frac{1}{2} \\times \\text{base} \\times \\text{perpendicular height} \\).",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Oh right, so I need to draw a line straight down from the top to the base, not use the slanted side? Um, but how do I actually work out what that perpendicular height is then - do I need to measure it or can I calculate it somehow?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "You're correct that you need to find the perpendicular height, not the slant height. To calculate the perpendicular height, you can use the Pythagorean theorem within the right triangle you created. Remember, the Pythagorean theorem states that the square of the hypotenuse is equal to the sum of the squares of the other two sides. Give that a try!",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "So like, the slanted side would be the hypotenuse, right? And then I'd split the base in half to make a right triangle, so I'd have half of 12 which is 6, and then use Pythagoras to find the height? So it would be like... the side squared minus 6 squared equals the height squared?",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 4,
+    "R2": 4,
+    "R3": 4,
+    "R4": 5,
+    "R5": 5,
+    "R6": 5,
+    "justification_pass1": "The teacher directly addresses the slant vs. perpendicular height misconception, scaffolds appropriately by prompting the student to use Pythagoras rather than giving the answer, and the student demonstrates clear progression from confusion to correctly setting up the problem by Turn 4.",
+    "justification_pass2": "The teacher exemplifies the constructive strategy by breaking down the problem into manageable steps (first identifying perpendicular height, then applying Pythagorean theorem), scaffolding appropriately within the student's ZPD without giving direct answers, and adjusting support as the student progresses from confusion to near-complete understanding.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 4,\n  \"R2\": 4,\n  \"R3\": 4,\n  \"R4\": 5,\n  \"R5\": 5,\n  \"brief_justification\": \"The teacher directly addresses the slant vs. perpendicular height misconception, scaffolds appropriately by prompting the student to use Pythagoras rather than giving the answer, and the student demonstrates clear progression from confusion to correctly setting up the problem by Turn 4.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 5, \"brief_justification\": \"The teacher exemplifies the constructive strategy by breaking down the problem into manageable steps (first identifying perpendicular height, then applying Pythagorean theorem), scaffolding appropriately within the student's ZPD without giving direct answers, and adjusting support as the student progresses from confusion to near-complete understanding.\"}\n```",
+    "quality_composite": 4.0,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T16:10:37.943708+00:00"
+}

@@ -1,0 +1,66 @@
+{
+  "state": {
+    "case_id": "case_20",
+    "misconception_label": "Adds when calculating volume instead of multiplying",
+    "misconception_features": [
+      0.0,
+      20.0,
+      1.0,
+      58.0
+    ],
+    "persona": "rule_based",
+    "architecture": "pure_ai",
+    "student_leg": "leg_b",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T11:28:17.135786Z",
+      "seed": 1080,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-12T11:28:21.450565Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: The volume of this cuboid is \\( 30 \\mathrm{~cm}^{3} \\) What length should replace the star? ![A cuboid, depth 2cm and height 3cm. The width is labelled with a star.](). I got \\( 25 \\mathrm{~cm} \\) because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "To find the volume of a cuboid, you need to multiply the length, width, and height. Since the volume is given as \\( 30 \\mathrm{~cm}^{3} \\) and the depth is 2cm and the height is 3cm, you should multiply these dimensions together to find the missing length. Let's correct the calculation by multiplying instead of adding.",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Oh right, so I need to multiply them? So it would be 2 times 3 times the star equals 30? That gives me 6 times the star equals 30, so the star would be 5cm? Is that right?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Yes, you are on the right track. However, when multiplying 2 by 3, you should get 6, not 5. So the correct calculation should be 2 times 3 times the star equals 30, which simplifies to 6 times the star equals 30. Therefore, the correct length for the missing dimension is 5 cm. Keep practicing with multiplying to find the volume of cuboids.",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 1,
+    "R3": 2,
+    "R4": 2,
+    "R5": 4,
+    "R6": 5,
+    "justification_pass1": "The teacher directly tells the student to multiply instead of add without exploring why they added, provides minimal cognitive demand by stating the method rather than eliciting reasoning, makes a confusing error in Turn 3 (saying \"you should get 6, not 5\" when the student correctly got 6), but the student does successfully shift from adding to multiplying and arrives at the correct answer.",
+    "justification_pass2": "The teacher explicitly states the volume formula procedure, directly corrects the student's initial error of adding instead of multiplying, provides worked steps showing the calculation (2\u00d73\u00d7star=30, then 6\u00d7star=30, therefore star=5), and gives clear corrective feedback on the procedural approach.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 1,\n  \"R3\": 2,\n  \"R4\": 2,\n  \"R5\": 4,\n  \"brief_justification\": \"The teacher directly tells the student to multiply instead of add without exploring why they added, provides minimal cognitive demand by stating the method rather than eliciting reasoning, makes a confusing error in Turn 3 (saying \\\"you should get 6, not 5\\\" when the student correctly got 6), but the student does successfully shift from adding to multiplying and arrives at the correct answer.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 5, \"brief_justification\": \"The teacher explicitly states the volume formula procedure, directly corrects the student's initial error of adding instead of multiplying, provides worked steps showing the calculation (2\u00d73\u00d7star=30, then 6\u00d7star=30, therefore star=5), and gives clear corrective feedback on the procedural approach.\"}\n```",
+    "quality_composite": 1.6666666666666667,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T11:28:30.344259+00:00"
+}

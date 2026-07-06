@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_0",
+    "misconception_label": "Confuses the order of operations, believes addition comes before multiplication",
+    "misconception_features": [
+      0.0,
+      0.0,
+      1.0,
+      70.0
+    ],
+    "persona": "experiential",
+    "architecture": "hybrid",
+    "student_leg": "leg_b",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T12:03:45.366968Z",
+      "seed": 72,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T12:03:50.446889Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: \\[ 3 \\times 2+4-5 \\] Where do the brackets need to go to make the answer equal \\( 13 \\) ? I got Does not need brackets because I worked left to right instead of following the order of operations.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's think of the order of operations like following a recipe. Just like you wouldn't put frosting on a cake before baking it, we need to follow the order of operations in math. In this case, we need to multiply before we add or subtract. Let's try solving the problem step by step using the correct order.",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Oh right, so I need to do the multiplication first... so that would be 3 times 2 which is 6, and then 6 plus 4 minus 5? But that gives me 5, not 13, so I still need brackets somewhere, don't I?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's think of the brackets like parentheses in a sentence. Just like you need to group certain words together to make sense of a sentence, we need to group certain operations together in math to get the right answer. Try grouping the multiplication and addition together first, then subtracting afterwards. See if that helps you get to the correct answer of 13.",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "So if I group the multiplication and addition together, that would be like... (3 \u00d7 2 + 4) - 5? Let me work that out: 6 + 4 is 10, then 10 - 5 is 5... but that's still not 13. Am I putting the brackets in the wrong place?",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 2,
+    "R3": 2,
+    "R4": 2,
+    "R5": 3,
+    "R6": 4,
+    "justification_pass1": "The teacher addresses order of operations generally but doesn't engage with the student's specific left-to-right misconception, provides vague guidance that leads the student astray (grouping multiplication and addition doesn't yield 13), and while the student does correct their order of operations understanding by Turn 2, they remain confused about bracket placement due to the teacher's mathematically incorrect suggestion.",
+    "justification_pass2": "The teacher consistently uses concrete real-world analogies (recipe/baking cake, parentheses in sentences) to explain abstract mathematical concepts (order of operations, brackets), which is a strong implementation of the experiential strategy.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 2,\n  \"R3\": 2,\n  \"R4\": 2,\n  \"R5\": 3,\n  \"brief_justification\": \"The teacher addresses order of operations generally but doesn't engage with the student's specific left-to-right misconception, provides vague guidance that leads the student astray (grouping multiplication and addition doesn't yield 13), and while the student does correct their order of operations understanding by Turn 2, they remain confused about bracket placement due to the teacher's mathematically incorrect suggestion.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 4, \"brief_justification\": \"The teacher consistently uses concrete real-world analogies (recipe/baking cake, parentheses in sentences) to explain abstract mathematical concepts (order of operations, brackets), which is a strong implementation of the experiential strategy.\"}\n```",
+    "quality_composite": 2.0,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T12:03:57.906372+00:00"
+}

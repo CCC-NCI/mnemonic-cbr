@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_20",
+    "misconception_label": "Adds when calculating volume instead of multiplying",
+    "misconception_features": [
+      0.0,
+      20.0,
+      1.0,
+      58.0
+    ],
+    "persona": "rule_based",
+    "architecture": "hybrid",
+    "student_leg": "leg_b",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T17:08:25.330112Z",
+      "seed": 1082,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T17:08:31.222366Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: The volume of this cuboid is \\( 30 \\mathrm{~cm}^{3} \\) What length should replace the star? ![A cuboid, depth 2cm and height 3cm. The width is labelled with a star.](). I got \\( 25 \\mathrm{~cm} \\) because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "When calculating the volume of a cuboid, you need to multiply the length, width, and height. In this case, since the volume is \\(30 \\mathrm{~cm}^{3}\\) and the depth is 2 cm and the height is 3 cm, you should multiply these dimensions together to find the missing length. So, the correct answer should be \\(30 = 2 \\times 3 \\times \\text{length}\\). Can you now try solving for the missing length using multiplication?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Oh right, so I need to multiply them together, not add them! So if I do 2 times 3, that's 6, and then I need to find what times 6 equals 30... so that would be 5 cm? Is that right?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "You're on the right track! However, when solving for the missing length in the equation \\(30 = 2 \\times 3 \\times \\text{length}\\), you need to divide 30 by the product of 2 and 3, not find what times 6 equals 30. So, the correct calculation should be \\(30 = 2 \\times 3 \\times \\text{length} \\Rightarrow 30 = 6 \\times \\text{length} \\Rightarrow \\text{length} = \\frac{30}{6} = 5 \\, \\text{cm}\\). Keep in mind to multiply the dimensions when calculating volume.",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "Oh wait, so I actually did get 5 cm right then? I'm a bit confused because you said I needed to divide, but when I said \"what times 6 equals 30\" I was kind of doing that in my head... is dividing the same as finding what times something equals a number?",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 4,
+    "R2": 2,
+    "R3": 2,
+    "R4": 5,
+    "R5": 4,
+    "R6": 5,
+    "justification_pass1": "The teacher directly addresses the addition misconception and provides mathematically correct guidance, but unnecessarily corrects the student in Turn 3 when they had already reasoned correctly, though the student does demonstrate clear improvement in understanding the multiplication requirement for volume.",
+    "justification_pass2": "The teacher consistently states explicit procedures (multiply length, width, and height for volume), shows worked steps with clear mathematical notation (30 = 2 \u00d7 3 \u00d7 length \u2192 length = 30/6 = 5), and provides direct corrective feedback on procedural errors (correcting the student's initial approach and clarifying the division procedure in Turn 3).",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 4,\n  \"R2\": 2,\n  \"R3\": 2,\n  \"R4\": 5,\n  \"R5\": 4,\n  \"brief_justification\": \"The teacher directly addresses the addition misconception and provides mathematically correct guidance, but unnecessarily corrects the student in Turn 3 when they had already reasoned correctly, though the student does demonstrate clear improvement in understanding the multiplication requirement for volume.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 5, \"brief_justification\": \"The teacher consistently states explicit procedures (multiply length, width, and height for volume), shows worked steps with clear mathematical notation (30 = 2 \u00d7 3 \u00d7 length \u2192 length = 30/6 = 5), and provides direct corrective feedback on procedural errors (correcting the student's initial approach and clarifying the division procedure in Turn 3).\"}\n```",
+    "quality_composite": 2.6666666666666665,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T17:08:38.687266+00:00"
+}

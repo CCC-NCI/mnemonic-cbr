@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_18",
+    "misconception_label": "Assumes that an arrow on a number line starts at zero",
+    "misconception_features": [
+      0.0,
+      18.0,
+      2.0,
+      73.0
+    ],
+    "persona": "socratic",
+    "architecture": "pure_cbr_llm",
+    "student_leg": "leg_a",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T16:38:58.616796Z",
+      "seed": 945,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T16:39:05.212921Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: ![Number line with -12 and -7 marked. Starting at -12, follow an arrow pointing to the right labelled +10. Then there is an arrow labelled b pointing to the left, which ends at -7 on the number line.]() What is the value of \\( b \\) ? I got \\( -7 \\) because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Can you explain why you chose \\( -7 \\) as the value of \\( b \\)? What assumption are you making about the starting point of the arrow on the number line?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "I thought the arrow for \\( b \\) started at zero, so I just looked at where it ended at \\( -7 \\). But now I'm not sure if that's right. If the arrow starts at \\( -12 \\), how do I figure out what \\( b \\) really is?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Why do you think assuming the arrow starts at zero led you to select \\( -7 \\) as the value of \\( b \\)? What might be a different way to approach finding the value of \\( b \\) if the arrow doesn't start at zero?",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "I guess I thought the arrow always starts at zero because that's how we usually see number lines. But now I see that it starts at \\( -12 \\). So, if I follow the arrow that goes +10 from \\( -12 \\), I end up at \\( -2 \\). Then, if the arrow for \\( b \\) goes to the left and ends at \\( -7 \\), I\u2019m not sure how to find \\( b \\) from there. Do I need to think about how far left it goes from \\( -2 \\)?",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 4,
+    "R2": 4,
+    "R3": 3,
+    "R4": 5,
+    "R5": 4,
+    "R6": 5,
+    "justification_pass1": "The teacher effectively identifies and addresses the zero-starting-point misconception through questioning, maintains high cognitive demand, and the student progresses from the misconception to correctly identifying -2 as the intermediate point and recognizing the need to calculate the distance from -2 to -7, though the teacher could have provided slightly more targeted scaffolding at the final step.",
+    "justification_pass2": "The teacher consistently uses probing questions to guide the student's thinking without ever directly providing the answer, helping them identify their flawed assumption about the starting point and encouraging them to reason through the correct approach independently.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 4,\n  \"R2\": 4,\n  \"R3\": 3,\n  \"R4\": 5,\n  \"R5\": 4,\n  \"brief_justification\": \"The teacher effectively identifies and addresses the zero-starting-point misconception through questioning, maintains high cognitive demand, and the student progresses from the misconception to correctly identifying -2 as the intermediate point and recognizing the need to calculate the distance from -2 to -7, though the teacher could have provided slightly more targeted scaffolding at the final step.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 5, \"brief_justification\": \"The teacher consistently uses probing questions to guide the student's thinking without ever directly providing the answer, helping them identify their flawed assumption about the starting point and encouraging them to reason through the correct approach independently.\"}\n```",
+    "quality_composite": 3.6666666666666665,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T16:39:12.724674+00:00"
+}

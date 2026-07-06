@@ -1,0 +1,66 @@
+{
+  "state": {
+    "case_id": "case_14",
+    "misconception_label": "Stops iteration too early when solving equations",
+    "misconception_features": [
+      0.0,
+      14.0,
+      3.0,
+      85.0
+    ],
+    "persona": "rule_based",
+    "architecture": "pure_cbr_tpl",
+    "student_leg": "leg_a",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T10:30:30.643726Z",
+      "seed": 777,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-12T10:30:31.617521Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: \\( x_{n+1}=5-\\frac{1}{x_{n}} \\) Using a starting value of \\( x_{1}=2 \\), what is the solution to \\( x=5-\\frac{1}{x} \\) to \\( 2 \\) decimal places? I got \\( 4.78 \\) because I added the parts of the ratio as if they were a total.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's think about this. From similar cases:\n  1. Topic: Select the correct answer to an iteration question to the required degree of accuracy. Correct answer (A): \\( 0.826 \\). Student selected: \\( 0.830 \\). Underlying misconception: Stops iteration too early when solving equations. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.\n  2. Topic: Carry out the first stage in an iteration solution. Correct answer (A): \\( \\frac{8}{9} \\). Student selected: \\( \\frac{7}{9} \\). Underlying misconception: Believes the subscript in iteration notation is the value to be substituted. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.\n  3. Topic: Solve a linear equation using a function machine. Correct answer (D): \\( \\begin{array}{l}-4 \\\\ \\times 3\\end{array} \\). Student selected: \\( \\begin{array}{l}\\times 3 \\\\ -4\\end{array} \\). Underlying misconception: Does not reverse the order of operations when finding the input of a function machine. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "I think I get that I might have stopped too early with my calculations. I just thought I was supposed to keep using the last answer to find the next one, but maybe I need to do more steps? How do I know when to stop?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's think about this. From similar cases:\n  1. Topic: Select the correct answer to an iteration question to the required degree of accuracy. Correct answer (A): \\( 0.826 \\). Student selected: \\( 0.830 \\). Underlying misconception: Stops iteration too early when solving equations. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.\n  2. Topic: Carry out the first stage in an iteration solution. Correct answer (A): \\( \\frac{8}{9} \\). Student selected: \\( \\frac{7}{9} \\). Underlying misconception: Believes the subscript in iteration notation is the value to be substituted. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.\n  3. Topic: Solve a linear equation using a function machine. Correct answer (D): \\( \\begin{array}{l}-4 \\\\ \\times 3\\end{array} \\). Student selected: \\( \\begin{array}{l}\\times 3 \\\\ -4\\end{array} \\). Underlying misconception: Does not reverse the order of operations when finding the input of a function machine. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 1,
+    "R2": 1,
+    "R3": 1,
+    "R4": 1,
+    "R5": 1,
+    "R6": 1,
+    "justification_pass1": "The teacher merely repeats identical lists of unrelated worked examples twice without engaging the student's actual question about when to stop iterating, providing no substantive instruction, scaffolding, or pathway to correcting the misconception.",
+    "justification_pass2": "The teacher never states explicit procedures, shows worked steps, or gives direct corrective feedback; instead, they only present analogous problem examples without any rule-based instruction or procedural guidance.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 1,\n  \"R2\": 1,\n  \"R3\": 1,\n  \"R4\": 1,\n  \"R5\": 1,\n  \"brief_justification\": \"The teacher merely repeats identical lists of unrelated worked examples twice without engaging the student's actual question about when to stop iterating, providing no substantive instruction, scaffolding, or pathway to correcting the misconception.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 1, \"brief_justification\": \"The teacher never states explicit procedures, shows worked steps, or gives direct corrective feedback; instead, they only present analogous problem examples without any rule-based instruction or procedural guidance.\"}\n```",
+    "quality_composite": 1.0,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T10:30:37.545374+00:00"
+}

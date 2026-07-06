@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_18",
+    "misconception_label": "Assumes that an arrow on a number line starts at zero",
+    "misconception_features": [
+      0.0,
+      18.0,
+      2.0,
+      73.0
+    ],
+    "persona": "traditional",
+    "architecture": "pure_ai",
+    "student_leg": "leg_a",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T16:48:15.819969Z",
+      "seed": 989,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T16:48:21.026313Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: ![Number line with -12 and -7 marked. Starting at -12, follow an arrow pointing to the right labelled +10. Then there is an arrow labelled b pointing to the left, which ends at -7 on the number line.]() What is the value of \\( b \\) ? I got \\( -7 \\) because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Ok, let's clarify the starting point of the arrow on the number line. Remember, the arrow doesn't always start at zero. Can you identify where the arrow labeled \\( b \\) actually starts on the number line in relation to the number -12?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Oh, I see what you mean! So the arrow labeled \\( b \\) starts at -12, not zero. But if I follow the arrow to the left, how do I know how far to go to find \\( b \\)? I'm still a bit confused about how to figure that out.",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Ok, let's work through this step by step. Since the arrow labeled \\( b \\) starts at -12 and ends at -7, we need to figure out how many units we move to the left from -12 to reach -7. Let's calculate the difference between the two values to find the value of \\( b \\). Can you try that calculation and tell me what you get?",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "Okay, so if I start at -12 and go to -7, I guess I need to find out how many units that is. So, I think I would subtract -7 from -12, right? But I'm not sure how to do that correctly. Can you help me with the subtraction part?",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 4,
+    "R2": 3,
+    "R3": 3,
+    "R4": 2,
+    "R5": 2,
+    "R6": 2,
+    "justification_pass1": "The teacher directly addresses the 'arrow starts at zero' misconception and the student recognizes it, but there's a domain accuracy issue (the teacher asks to find 'b' by calculating difference when b is actually the change/displacement, not the endpoint), and the student remains confused about the calculation method by Turn 4.",
+    "justification_pass2": "The teacher uses guided questioning and prompts for student discovery rather than directly explaining with worked examples, which is the hallmark of traditional instruction.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 4,\n  \"R2\": 3,\n  \"R3\": 3,\n  \"R4\": 2,\n  \"R5\": 2,\n  \"brief_justification\": \"The teacher directly addresses the 'arrow starts at zero' misconception and the student recognizes it, but there's a domain accuracy issue (the teacher asks to find 'b' by calculating difference when b is actually the change/displacement, not the endpoint), and the student remains confused about the calculation method by Turn 4.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 2, \"brief_justification\": \"The teacher uses guided questioning and prompts for student discovery rather than directly explaining with worked examples, which is the hallmark of traditional instruction.\"}\n```",
+    "quality_composite": 3.3333333333333335,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T16:48:28.660427+00:00"
+}

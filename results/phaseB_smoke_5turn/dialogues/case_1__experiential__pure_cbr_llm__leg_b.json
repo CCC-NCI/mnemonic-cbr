@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_1",
+    "misconception_label": "Does not know that to factorise a quadratic expression, to find two numbers that add to give the coefficient of the x term, and multiply to give the non variable term",
+    "misconception_features": [
+      0.0,
+      1.0,
+      3.0,
+      59.0
+    ],
+    "persona": "experiential",
+    "architecture": "pure_cbr_llm",
+    "student_leg": "leg_b",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T13:16:56.240833Z",
+      "seed": 116,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T13:17:00.926313Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: Simplify the following, if possible: \\( \\frac{m^{2}+2 m-3}{m-3} \\). I got \\( m+1 \\) because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's think of factorising like baking a cake. You need to find two numbers that add up to give the amount of sugar (coefficient of the x term) and multiply to give the amount of flour (non-variable term). In this case, the numbers should add to give 2 and multiply to give -3. Can you think of two numbers that fit those criteria?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Um, so I need two numbers that add to 2 and multiply to -3? That would be... 3 and -1, right? Because 3 plus -1 is 2, and 3 times -1 is -3?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "That's a great analogy with the cake! However, in this case, the numbers need to multiply to give -3, not -1. Can you think of two different numbers that multiply to give -3?",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "Oh wait, I think I got confused - didn't I say 3 times -1 is -3? So wouldn't 3 and -1 be the right numbers then? Or am I still getting something wrong?",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 4,
+    "R2": 3,
+    "R3": 2,
+    "R4": 1,
+    "R5": 2,
+    "R6": 2,
+    "justification_pass1": "The teacher directly addresses the factorising misconception with an explicit strategy, but makes a critical mathematical error in Turn 3 (incorrectly stating the student's correct answer of 3 and -1 is wrong), which confuses the student and derails their correct reasoning.",
+    "justification_pass2": "The teacher introduces a baking cake analogy in Turn 1, but it's superficial and forced rather than genuinely connecting factoring to concrete real-world experience, and the analogy is abandoned immediately afterward in favor of abstract mathematical correction.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 4,\n  \"R2\": 3,\n  \"R3\": 2,\n  \"R4\": 1,\n  \"R5\": 2,\n  \"brief_justification\": \"The teacher directly addresses the factorising misconception with an explicit strategy, but makes a critical mathematical error in Turn 3 (incorrectly stating the student's correct answer of 3 and -1 is wrong), which confuses the student and derails their correct reasoning.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 2, \"brief_justification\": \"The teacher introduces a baking cake analogy in Turn 1, but it's superficial and forced rather than genuinely connecting factoring to concrete real-world experience, and the analogy is abandoned immediately afterward in favor of abstract mathematical correction.\"}\n```",
+    "quality_composite": 3.0,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T13:17:07.936813+00:00"
+}

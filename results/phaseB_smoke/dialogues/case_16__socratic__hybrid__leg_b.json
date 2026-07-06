@@ -1,0 +1,66 @@
+{
+  "state": {
+    "case_id": "case_16",
+    "misconception_label": "Divides total amount by each side of the ratio instead of dividing by the sum of the parts",
+    "misconception_features": [
+      0.0,
+      16.0,
+      3.0,
+      83.0
+    ],
+    "persona": "socratic",
+    "architecture": "hybrid",
+    "student_leg": "leg_b",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T10:44:05.443772Z",
+      "seed": 852,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-12T10:44:09.231087Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: In the diagram, AN : NB \\( =3: 5 \\) What is the distance AN? ![A line that begins with point A, ends with point B, and has point N in between. The entire length of the line measures 48 m.](). I got \\( 16 \\mathrm{~m} \\) because I added the parts of the ratio as if they were a total.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Why do you think adding the parts of the ratio would give you the total distance? Can you explain how the ratio \\(3:5\\) relates to the total distance of 48 m in this scenario?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Um, I think I was dividing 48 by 3 to get 16, but now I'm confused because the ratio 3:5 has two parts... does that mean I need to use both numbers somehow? Like, should I be adding 3 and 5 together first?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "That's a good observation. Think about the ratio as representing the parts of the whole. Instead of dividing by each part separately, consider how the parts relate to each other within the total distance of 48 m. Can you see a way to combine the parts to find the total distance?",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 4,
+    "R2": 4,
+    "R3": 4,
+    "R4": 5,
+    "R5": 4,
+    "R6": 5,
+    "justification_pass1": "The teacher effectively addresses the specific misconception through questioning that leads the student to recognize they need to add the ratio parts (3+5), with the student showing clear progress from dividing by 3 alone to understanding both parts must be combined, though the dialogue ends before full resolution.",
+    "justification_pass2": "The teacher consistently uses probing questions to guide the student's thinking without directly providing the answer, helping them discover that they need to add the ratio parts (3+5=8) to find how the total relates to the segments, which is textbook Socratic method.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 4,\n  \"R2\": 4,\n  \"R3\": 4,\n  \"R4\": 5,\n  \"R5\": 4,\n  \"brief_justification\": \"The teacher effectively addresses the specific misconception through questioning that leads the student to recognize they need to add the ratio parts (3+5), with the student showing clear progress from dividing by 3 alone to understanding both parts must be combined, though the dialogue ends before full resolution.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\n  \"R6\": 5,\n  \"brief_justification\": \"The teacher consistently uses probing questions to guide the student's thinking without directly providing the answer, helping them discover that they need to add the ratio parts (3+5=8) to find how the total relates to the segments, which is textbook Socratic method.\"\n}\n```",
+    "quality_composite": 4.0,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T10:44:16.205599+00:00"
+}

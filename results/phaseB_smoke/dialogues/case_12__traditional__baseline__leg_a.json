@@ -1,0 +1,66 @@
+{
+  "state": {
+    "case_id": "case_12",
+    "misconception_label": "Thinks alternate angles are always equal",
+    "misconception_features": [
+      0.0,
+      12.0,
+      3.0,
+      25.0
+    ],
+    "persona": "traditional",
+    "architecture": "baseline",
+    "student_leg": "leg_a",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T10:13:13.447358Z",
+      "seed": 683,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-12T10:13:18.828378Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: Tom and Katie are arguing about alternate angles. Tom says angles \\( p \\) and \\( q \\) are alternate. Katie says angles \\( p \\) and \\( q \\) are equal. Who is correct? ![Shows two non parallel lines that are intersected by another line. Angles P and Q are both on the outside of the lines and on opposite sides of the transversal.](). I got Only\nKatie because I assumed all the angles in the figure are equal.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let me explain the correct method, and then we will work through an example together. Can you tell me what alternate angles are supposed to be?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Um, I think alternate angles are the ones that are on opposite sides of the transversal, right? But I thought they were always equal, like all angles in the figure. So, if they're not always equal, when are they equal? I'm a bit confused about that.",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let me clarify that alternate angles are angles on opposite sides of the transversal. They are equal only when the two intersected lines are parallel. Let's work through an example to illustrate this concept.",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 1,
+    "R3": 2,
+    "R4": 5,
+    "R5": 1,
+    "R6": 5,
+    "justification_pass1": "The teacher correctly identifies the parallel lines condition but simply tells the answer rather than engaging the student's reasoning, and the student never demonstrates understanding or corrects their misconception through their own reasoning.",
+    "justification_pass2": "The teacher provides direct explanation of the concept, checks student understanding by asking what alternate angles are, and then clearly explains the key condition (parallel lines) with a promise to work through an example, which is textbook traditional instruction.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 1,\n  \"R3\": 2,\n  \"R4\": 5,\n  \"R5\": 1,\n  \"brief_justification\": \"The teacher correctly identifies the parallel lines condition but simply tells the answer rather than engaging the student's reasoning, and the student never demonstrates understanding or corrects their misconception through their own reasoning.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 5, \"brief_justification\": \"The teacher provides direct explanation of the concept, checks student understanding by asking what alternate angles are, and then clearly explains the key condition (parallel lines) with a promise to work through an example, which is textbook traditional instruction.\"}\n```",
+    "quality_composite": 1.6666666666666667,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T10:13:25.524444+00:00"
+}

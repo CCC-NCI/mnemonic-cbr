@@ -1,0 +1,66 @@
+{
+  "state": {
+    "case_id": "case_20",
+    "misconception_label": "Adds when calculating volume instead of multiplying",
+    "misconception_features": [
+      0.0,
+      20.0,
+      1.0,
+      58.0
+    ],
+    "persona": "socratic",
+    "architecture": "pure_cbr_llm",
+    "student_leg": "leg_b",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T11:22:01.955908Z",
+      "seed": 1046,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-12T11:22:05.510507Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: The volume of this cuboid is \\( 30 \\mathrm{~cm}^{3} \\) What length should replace the star? ![A cuboid, depth 2cm and height 3cm. The width is labelled with a star.](). I got \\( 25 \\mathrm{~cm} \\) because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Why did you choose to add the dimensions when calculating the volume of the cuboid? Can you explain why multiplying the dimensions might be a more appropriate approach in this situation?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Um, I think I added them because that's what I usually do with measurements? But now you mention it, I'm not really sure why multiplying would work better... Does multiplying give you the actual space inside the cuboid or something?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Can you think about why adding the dimensions might not accurately represent the volume of the cuboid? How does multiplying the dimensions relate to finding the total space inside the cuboid?",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 4,
+    "R2": 4,
+    "R3": 2,
+    "R4": 5,
+    "R5": 2,
+    "R6": 5,
+    "justification_pass1": "The teacher directly addresses the addition misconception and prompts reasoning about why multiplication is appropriate, but the scaffolding is insufficient as the student remains confused by Turn 2 and the teacher's Turn 3 essentially repeats the same questions without providing the concrete support needed to move forward.",
+    "justification_pass2": "The teacher consistently uses probing questions to guide the student toward understanding without directly providing the answer, asking the student to reason about why addition is inappropriate and how multiplication relates to volume.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\"R1\": 4, \"R2\": 4, \"R3\": 2, \"R4\": 5, \"R5\": 2, \"brief_justification\": \"The teacher directly addresses the addition misconception and prompts reasoning about why multiplication is appropriate, but the scaffolding is insufficient as the student remains confused by Turn 2 and the teacher's Turn 3 essentially repeats the same questions without providing the concrete support needed to move forward.\"}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 5, \"brief_justification\": \"The teacher consistently uses probing questions to guide the student toward understanding without directly providing the answer, asking the student to reason about why addition is inappropriate and how multiplication relates to volume.\"}\n```",
+    "quality_composite": 3.3333333333333335,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T11:22:12.790582+00:00"
+}

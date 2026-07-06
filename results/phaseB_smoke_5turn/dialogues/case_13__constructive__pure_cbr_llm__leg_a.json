@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_13",
+    "misconception_label": "Answers as if there are 100 minutes in an hour when changing from hours to minutes",
+    "misconception_features": [
+      0.0,
+      13.0,
+      1.0,
+      29.0
+    ],
+    "persona": "constructive",
+    "architecture": "pure_cbr_llm",
+    "student_leg": "leg_a",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T15:48:03.535284Z",
+      "seed": 705,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T15:48:08.548684Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: Hannah's journey to camp is \\( 3 \\) hours and \\( 16 \\) minutes. Tori's journey to camp is \\( 214 \\) minutes. What is the difference in their journeys in minutes? I got \\( 102 \\) minutes because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "It seems like you may have a misconception about how to convert hours into minutes. Let's think about how many minutes are in an hour and apply that to the given times for Hannah and Tori's journeys. What do you think the first step should be to find the correct answer?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "I think I need to change Hannah's hours into minutes, but I thought there were 100 minutes in an hour. So, if I do \\(3 \\times 100\\) plus \\(16\\), that gives me \\(316\\) minutes for her. But then I\u2019m not sure how to find the difference with Tori's \\(214\\) minutes. Is that right?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "It looks like you may have a misconception about the number of minutes in an hour. Let's explore how many minutes are actually in an hour and use that to convert Hannah's journey time correctly. How can we adjust your calculation to accurately find the total minutes for Hannah's journey?",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "Okay, so if there aren\u2019t 100 minutes in an hour, then how many minutes are actually in an hour? I think I need to use that number to change Hannah's time into minutes. Can you help me figure out what that is?",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 2,
+    "R3": 2,
+    "R4": 5,
+    "R5": 1,
+    "R6": 2,
+    "justification_pass1": "The teacher repeatedly acknowledges the misconception but never provides the crucial information (60 minutes in an hour), leaving the student still asking for the answer by Turn 4 without any visible progress in understanding.",
+    "justification_pass2": "While the teacher identifies the misconception and attempts to guide the student, they repeatedly ask open-ended questions without providing the scaffolding or breaking down the problem into manageable steps that would help the student discover that there are 60 minutes in an hour, leaving the student still confused and directly asking for the answer by Turn 4.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 2,\n  \"R3\": 2,\n  \"R4\": 5,\n  \"R5\": 1,\n  \"brief_justification\": \"The teacher repeatedly acknowledges the misconception but never provides the crucial information (60 minutes in an hour), leaving the student still asking for the answer by Turn 4 without any visible progress in understanding.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 2, \"brief_justification\": \"While the teacher identifies the misconception and attempts to guide the student, they repeatedly ask open-ended questions without providing the scaffolding or breaking down the problem into manageable steps that would help the student discover that there are 60 minutes in an hour, leaving the student still confused and directly asking for the answer by Turn 4.\"}\n```",
+    "quality_composite": 2.0,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T15:48:15.460709+00:00"
+}

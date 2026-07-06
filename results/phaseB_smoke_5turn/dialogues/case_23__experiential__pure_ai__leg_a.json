@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_23",
+    "misconception_label": "Confuses rest and movement on a distance time graph",
+    "misconception_features": [
+      0.0,
+      23.0,
+      3.0,
+      62.0
+    ],
+    "persona": "experiential",
+    "architecture": "pure_ai",
+    "student_leg": "leg_a",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T17:38:12.251188Z",
+      "seed": 1219,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T17:38:17.953796Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: This graph shows how far Fido the dog is from his home. What might the negative-sloping section represent? ![A graph with time (secs) on the horizontal axis and distance (m) on the vertical axis. The graph starts at the origin, travels in a straight line up and right, travels horizontally, then travels in a straight line down and right back to the x-axis. ](). I got Fido has fallen asleep because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Imagine Fido is on a walk with his owner. The negative-sloping section could represent the part where he is walking away from home. Just like how the graph shows a decrease in distance from the origin, Fido is moving further away from his starting point.",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Oh, I think I get it a bit better now! So when the line goes down, it means Fido is getting further away from home, not that he\u2019s asleep. But what does it mean when the line is flat? Is he just standing still or something?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Imagine Fido hitting a traffic jam during his walk. When the line is flat, it could represent him waiting in one spot, not moving at all. Just like how the graph shows no change in distance from the origin, Fido is stuck in one place until the traffic clears.",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "Okay, I think I get it now! So when the line is flat, Fido is just not moving, like he's waiting for something. But what about the part where the line goes up? Does that mean he's getting closer to home?",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 1,
+    "R2": 1,
+    "R3": 1,
+    "R4": 1,
+    "R5": 1,
+    "R6": 2,
+    "justification_pass1": "The teacher provides mathematically incorrect information (claiming negative slope means moving away from home when it actually means returning home), fails to address the student's misconception about rest vs. movement, and the student ends up more confused, asking basic questions that suggest the core misconception remains unaddressed.",
+    "justification_pass2": "While the teacher attempts to use real-world scenarios (walk, traffic jam), they fundamentally misinterpret the graph by claiming negative slope means moving away from home when it actually means returning home (decreasing distance), undermining the experiential strategy's effectiveness.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 1,\n  \"R2\": 1,\n  \"R3\": 1,\n  \"R4\": 1,\n  \"R5\": 1,\n  \"brief_justification\": \"The teacher provides mathematically incorrect information (claiming negative slope means moving away from home when it actually means returning home), fails to address the student's misconception about rest vs. movement, and the student ends up more confused, asking basic questions that suggest the core misconception remains unaddressed.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 2, \"brief_justification\": \"While the teacher attempts to use real-world scenarios (walk, traffic jam), they fundamentally misinterpret the graph by claiming negative slope means moving away from home when it actually means returning home (decreasing distance), undermining the experiential strategy's effectiveness.\"}\n```",
+    "quality_composite": 1.0,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T17:38:25.018250+00:00"
+}

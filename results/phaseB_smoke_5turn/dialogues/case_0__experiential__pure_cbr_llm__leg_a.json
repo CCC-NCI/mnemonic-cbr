@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_0",
+    "misconception_label": "Confuses the order of operations, believes addition comes before multiplication",
+    "misconception_features": [
+      0.0,
+      0.0,
+      1.0,
+      70.0
+    ],
+    "persona": "experiential",
+    "architecture": "pure_cbr_llm",
+    "student_leg": "leg_a",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T12:02:10.597146Z",
+      "seed": 65,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T12:02:16.933803Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: \\[ 3 \\times 2+4-5 \\] Where do the brackets need to go to make the answer equal \\( 13 \\) ? I got Does not need brackets because I worked left to right instead of following the order of operations.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's think about this problem like planning a road trip. Just like you wouldn't start driving without knowing your route, we need to follow the order of operations in math. Remember, multiplication comes before addition, just like mapping out your stops before hitting the road. Let's reorder the operations and see if we can reach our destination of \\( 13 \\).",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Okay, I think I get what you're saying about following the order of operations like planning a road trip. So, if multiplication comes before addition, does that mean I should do the \\(3 \\times 2\\) first? But if I do that, I still don't see how to get to \\(13\\). Can you help me figure out where the brackets would go?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's think of the \\(3 \\times 2\\) as the main attraction on our road trip, like a must-see landmark. Once we've visited that spot, we can move on to the other stops, like adding \\(4\\) and subtracting \\(5\\). By following the order of operations like following a planned route, we can make sure we reach our final destination of \\(13\\).",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "Okay, I think I get that I need to do the \\(3 \\times 2\\) first, which is \\(6\\). But then I\u2019m not sure how to add \\(4\\) and subtract \\(5\\) to get to \\(13\\). Should I put brackets around the \\(4 - 5\\) part or something?",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 2,
+    "R3": 2,
+    "R4": 2,
+    "R5": 2,
+    "R6": 4,
+    "justification_pass1": "The teacher uses an extended metaphor that obscures rather than clarifies the mathematics, fails to directly address the student's left-to-right misconception, and doesn't help the student understand that brackets are needed to change the standard order (making addition happen before multiplication), leaving the student confused about how to reach 13.",
+    "justification_pass2": "The teacher consistently uses a concrete real-world analogy (planning a road trip with routes and landmarks) to explain the abstract concept of order of operations, though the analogy could be more precisely mapped to help the student solve the specific bracketing problem.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 2,\n  \"R3\": 2,\n  \"R4\": 2,\n  \"R5\": 2,\n  \"brief_justification\": \"The teacher uses an extended metaphor that obscures rather than clarifies the mathematics, fails to directly address the student's left-to-right misconception, and doesn't help the student understand that brackets are needed to change the standard order (making addition happen before multiplication), leaving the student confused about how to reach 13.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 4, \"brief_justification\": \"The teacher consistently uses a concrete real-world analogy (planning a road trip with routes and landmarks) to explain the abstract concept of order of operations, though the analogy could be more precisely mapped to help the student solve the specific bracketing problem.\"}\n```",
+    "quality_composite": 2.0,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T12:02:24.821346+00:00"
+}

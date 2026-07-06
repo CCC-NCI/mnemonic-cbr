@@ -1,0 +1,36 @@
+\begin{table}[htbp]
+\centering
+\caption{Cross-student variance on R5: per-cell mean absolute difference between leg\_a (OpenAI student) and leg\_b (Anthropic student), and per-cell Pearson r.}
+\label{tab:cross-student}
+\begin{tabular}{lrrrr}
+\toprule
+persona & architecture & mean\_abs\_diff & pearson\_r & n \\
+\midrule
+constructive & baseline & 1.000 & 0.476 & 25 \\
+constructive & hybrid & 1.240 & 0.303 & 25 \\
+constructive & pure\_ai & 1.125 & 0.435 & 24 \\
+constructive & pure\_cbr\_llm & 1.160 & 0.517 & 25 \\
+constructive & pure\_cbr\_tpl & 1.280 & 0.100 & 25 \\
+experiential & baseline & 1.440 & 0.208 & 25 \\
+experiential & hybrid & 1.640 & 0.154 & 25 \\
+experiential & pure\_ai & 1.280 & 0.471 & 25 \\
+experiential & pure\_cbr\_llm & 1.000 & 0.442 & 24 \\
+experiential & pure\_cbr\_tpl & 1.320 & 0.167 & 25 \\
+rule\_based & baseline & 1.200 & 0.184 & 25 \\
+rule\_based & hybrid & 1.440 & 0.267 & 25 \\
+rule\_based & pure\_ai & 1.360 & 0.345 & 25 \\
+rule\_based & pure\_cbr\_llm & 1.480 & 0.438 & 25 \\
+rule\_based & pure\_cbr\_tpl & 1.440 & 0.166 & 25 \\
+socratic & baseline & 1.280 & 0.344 & 25 \\
+socratic & hybrid & 1.160 & 0.277 & 25 \\
+socratic & pure\_ai & 1.480 & 0.269 & 25 \\
+socratic & pure\_cbr\_llm & 1.560 & -0.094 & 25 \\
+socratic & pure\_cbr\_tpl & 1.200 & 0.146 & 25 \\
+traditional & baseline & 1.120 & 0.158 & 25 \\
+traditional & hybrid & 1.160 & 0.450 & 25 \\
+traditional & pure\_ai & 1.760 & 0.128 & 25 \\
+traditional & pure\_cbr\_llm & 1.360 & 0.251 & 25 \\
+traditional & pure\_cbr\_tpl & 1.280 & 0.127 & 25 \\
+\bottomrule
+\end{tabular}
+\end{table}

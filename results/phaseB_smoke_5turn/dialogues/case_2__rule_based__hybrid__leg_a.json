@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_2",
+    "misconception_label": "Believes if you changed all values by the same proportion the range would not change",
+    "misconception_features": [
+      0.0,
+      2.0,
+      3.0,
+      39.0
+    ],
+    "persona": "rule_based",
+    "architecture": "hybrid",
+    "student_leg": "leg_a",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T13:31:11.237423Z",
+      "seed": 181,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T13:31:16.254132Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: Tom and Katie are discussing the \\( 5 \\) plants with these heights: \\( 24 \\mathrm{~cm}, 17 \\mathrm{~cm}, 42 \\mathrm{~cm}, 26 \\mathrm{~cm}, 13 \\mathrm{~cm} \\) Tom says if all the plants were cut in half, the range wouldn't change. Katie says if all the plants grew by \\( 3 \\mathrm{~cm} \\) each, the range wouldn't change. Who do you agree with? I got Only\nTom because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "The correct rule for calculating the range is to subtract the smallest value from the largest value. In this case, if all the plants were cut in half or grew by the same amount, the range would indeed change. Let's work through the steps together to see why.",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Okay, so I get that the range is the biggest height minus the smallest height. But if they all get cut in half or grow by the same amount, why does that change the range? I thought it would just stay the same because they're all changing together. Can you explain that a bit more?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "When all values are changed by the same proportion, it affects the overall spread of the data. Just like how changing the units of measurement doesn't change the actual quantities, changing the heights by the same amount will still affect the range. Let's work through an example to see how this plays out.",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "Okay, I think I get that the range is the biggest height minus the smallest height, but I'm still a bit confused. So if all the plants are cut in half, the biggest and smallest heights change, right? But how does that actually change the range? Can you show me an example with the numbers?",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 1,
+    "R2": 1,
+    "R3": 1,
+    "R4": 1,
+    "R5": 1,
+    "R6": 2,
+    "justification_pass1": "The teacher incorrectly states that the range changes when all values change by the same amount (it doesn't for addition, only for multiplication), never engages with the specific misconception about proportional change, provides confusing analogies instead of concrete examples the student repeatedly requests, and the student shows no improvement in understanding across turns.",
+    "justification_pass2": "The teacher states a rule initially but then provides incorrect information (claiming the range would change when it actually wouldn't for addition, and would change for halving), uses vague conceptual explanations rather than showing worked steps with actual numbers, and fails to provide the direct corrective feedback with explicit calculations that characterize the rule-based strategy.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 1,\n  \"R2\": 1,\n  \"R3\": 1,\n  \"R4\": 1,\n  \"R5\": 1,\n  \"brief_justification\": \"The teacher incorrectly states that the range changes when all values change by the same amount (it doesn't for addition, only for multiplication), never engages with the specific misconception about proportional change, provides confusing analogies instead of concrete examples the student repeatedly requests, and the student shows no improvement in understanding across turns.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 2, \"brief_justification\": \"The teacher states a rule initially but then provides incorrect information (claiming the range would change when it actually wouldn't for addition, and would change for halving), uses vague conceptual explanations rather than showing worked steps with actual numbers, and fails to provide the direct corrective feedback with explicit calculations that characterize the rule-based strategy.\"}\n```",
+    "quality_composite": 1.0,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T13:31:24.141798+00:00"
+}

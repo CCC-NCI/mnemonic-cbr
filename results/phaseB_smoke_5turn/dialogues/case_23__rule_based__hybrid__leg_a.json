@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_23",
+    "misconception_label": "Confuses rest and movement on a distance time graph",
+    "misconception_features": [
+      0.0,
+      23.0,
+      3.0,
+      62.0
+    ],
+    "persona": "rule_based",
+    "architecture": "hybrid",
+    "student_leg": "leg_a",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T17:40:36.129790Z",
+      "seed": 1231,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T17:40:42.471343Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: This graph shows how far Fido the dog is from his home. What might the negative-sloping section represent? ![A graph with time (secs) on the horizontal axis and distance (m) on the vertical axis. The graph starts at the origin, travels in a straight line up and right, travels horizontally, then travels in a straight line down and right back to the x-axis. ](). I got Fido has fallen asleep because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "The negative-sloping section on a distance-time graph represents Fido moving away from his home. Remember, the slope on a distance-time graph represents speed or rate of change in distance. So in this case, Fido is moving further away from his home during that time period.",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Oh, I see! So the negative slope means Fido is actually moving away from home, not falling asleep. But what does it mean when the graph is horizontal? Is he just standing still then?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Remember, on a distance-time graph, a horizontal line represents no change in distance over time, not necessarily that Fido is standing still. It could mean he's stopped, but it could also mean he's moving at a constant speed. Keep in mind that the slope of the graph gives us information about Fido's movement.",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "Okay, I think I get it a bit better now! So when the line is horizontal, it means Fido isn't changing his distance, but he could still be moving? That\u2019s kinda confusing. How do we know if he\u2019s just stopped or moving at a constant speed?",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 1,
+    "R2": 1,
+    "R3": 1,
+    "R4": 1,
+    "R5": 1,
+    "R6": 2,
+    "justification_pass1": "The teacher makes a critical mathematical error in Turn 1 (claiming negative slope means moving away when it actually means returning home), fails to address the student's actual misconception about rest vs. movement, and in Turn 3 incorrectly suggests horizontal lines could mean constant speed movement, leaving the student more confused than at the start.",
+    "justification_pass2": "The teacher provides some direct statements about graph interpretation but makes a significant conceptual error in Turn 3 (claiming horizontal lines could mean constant speed rather than being stationary), fails to show worked steps or explicit procedures, and doesn't provide systematic rule-based instruction for interpreting distance-time graphs.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 1,\n  \"R2\": 1,\n  \"R3\": 1,\n  \"R4\": 1,\n  \"R5\": 1,\n  \"brief_justification\": \"The teacher makes a critical mathematical error in Turn 1 (claiming negative slope means moving away when it actually means returning home), fails to address the student's actual misconception about rest vs. movement, and in Turn 3 incorrectly suggests horizontal lines could mean constant speed movement, leaving the student more confused than at the start.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 2, \"brief_justification\": \"The teacher provides some direct statements about graph interpretation but makes a significant conceptual error in Turn 3 (claiming horizontal lines could mean constant speed rather than being stationary), fails to show worked steps or explicit procedures, and doesn't provide systematic rule-based instruction for interpreting distance-time graphs.\"}\n```",
+    "quality_composite": 1.0,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T17:40:49.968929+00:00"
+}

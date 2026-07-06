@@ -1,0 +1,66 @@
+{
+  "state": {
+    "case_id": "case_7",
+    "misconception_label": "Divided by 100 rather than 10",
+    "misconception_features": [
+      0.0,
+      7.0,
+      3.0,
+      21.0
+    ],
+    "persona": "experiential",
+    "architecture": "pure_cbr_tpl",
+    "student_leg": "leg_a",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T09:21:54.440097Z",
+      "seed": 417,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-12T09:21:55.770662Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: \\( 43.2 \\div 10= \\). I got \\( 0.432 \\) because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's think about this. From similar cases:\n  1. Topic: Solve problems involving converting between fractions, decimals and percentages. Correct answer (D): Neither is correct. Student selected: Only\nJo. Underlying misconception: Divides by 1000 instead of 100 when converting a percentage to a decimal. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.\n  2. Topic: Divide decimals by 1000. Correct answer (A): \\( 0.02304 \\). Student selected: \\( 0.2304 \\). Underlying misconception: When dividing involving a power of 10, gives an answer 10 times bigger than it should be. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.\n  3. Topic: Convert decimals less than 1 with 1 decimal place to percentages. Correct answer (A): \\( 60 \\% \\). Student selected: \\( 6 \\% \\). Underlying misconception: Multiplies by 10 instead of 100 when converting decimal to percentage. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "I think I get that I should be dividing by 10, but I still don't really understand why I got \\( 0.432 \\) instead of something bigger. Like, when I see the decimal point, I just think it should move over more. Can you explain how it works again?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's think about this. From similar cases:\n  1. Topic: Solve problems involving converting between fractions, decimals and percentages. Correct answer (D): Neither is correct. Student selected: Only\nJo. Underlying misconception: Divides by 1000 instead of 100 when converting a percentage to a decimal. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.\n  2. Topic: Divide decimals by 1000. Correct answer (A): \\( 0.02304 \\). Student selected: \\( 0.2304 \\). Underlying misconception: When dividing involving a power of 10, gives an answer 10 times bigger than it should be. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.\n  3. Topic: Convert decimals less than 1 with 1 decimal place to percentages. Correct answer (A): \\( 60 \\% \\). Student selected: \\( 6 \\% \\). Underlying misconception: Multiplies by 10 instead of 100 when converting decimal to percentage. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 1,
+    "R2": 1,
+    "R3": 1,
+    "R4": 3,
+    "R5": 1,
+    "R6": 1,
+    "justification_pass1": "The teacher merely repeats identical lists of unrelated example problems without addressing the student's specific misconception about dividing by 100 instead of 10, provides no scaffolding or reasoning opportunities, and the student shows no improvement\u2014in fact expressing more confusion in Turn 2.",
+    "justification_pass2": "The teacher provides no concrete real-world analogies or everyday situations whatsoever, instead repeatedly listing abstract similar problem cases with misconceptions, which is completely inconsistent with the experiential strategy.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 1,\n  \"R2\": 1,\n  \"R3\": 1,\n  \"R4\": 3,\n  \"R5\": 1,\n  \"brief_justification\": \"The teacher merely repeats identical lists of unrelated example problems without addressing the student's specific misconception about dividing by 100 instead of 10, provides no scaffolding or reasoning opportunities, and the student shows no improvement\u2014in fact expressing more confusion in Turn 2.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 1, \"brief_justification\": \"The teacher provides no concrete real-world analogies or everyday situations whatsoever, instead repeatedly listing abstract similar problem cases with misconceptions, which is completely inconsistent with the experiential strategy.\"}\n```",
+    "quality_composite": 1.0,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T09:22:01.842323+00:00"
+}

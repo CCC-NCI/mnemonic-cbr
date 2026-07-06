@@ -1,0 +1,66 @@
+{
+  "state": {
+    "case_id": "case_20",
+    "misconception_label": "Adds when calculating volume instead of multiplying",
+    "misconception_features": [
+      0.0,
+      20.0,
+      1.0,
+      58.0
+    ],
+    "persona": "traditional",
+    "architecture": "baseline",
+    "student_leg": "leg_b",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T11:29:05.841718Z",
+      "seed": 1084,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-12T11:29:10.119013Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: The volume of this cuboid is \\( 30 \\mathrm{~cm}^{3} \\) What length should replace the star? ![A cuboid, depth 2cm and height 3cm. The width is labelled with a star.](). I got \\( 25 \\mathrm{~cm} \\) because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let me explain the correct method, and then we will work through an example together. When calculating volume of a cuboid, you need to multiply the length, width, and height. So the correct calculation should be \\( 2 \\mathrm{~cm} \\times 3 \\mathrm{~cm} \\times \\text{star} \\). Let's solve it step by step.",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Oh right, so I need to multiply them together, not add them? So would it be 2 times 3 times the star equals 30? That would make the star 5 then, wouldn't it?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let me provide a brief worked example to clarify. If we multiply 2 cm by 3 cm by 5 cm, the result should be 30 cm\u00b3. Therefore, the length to replace the star is indeed 5 cm.",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 1,
+    "R3": 2,
+    "R4": 5,
+    "R5": 3,
+    "R6": 5,
+    "justification_pass1": "The teacher directly tells the correct method without exploring why the student added instead of multiplied, provides the answer rather than letting the student work through it, though the student does show some improvement by correctly calculating the answer in Turn 2.",
+    "justification_pass2": "The teacher exemplifies the traditional strategy by directly explaining the correct formula, providing a worked example with step-by-step calculation, and verifying the student's understanding with clear confirmation of the correct answer.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 1,\n  \"R3\": 2,\n  \"R4\": 5,\n  \"R5\": 3,\n  \"brief_justification\": \"The teacher directly tells the correct method without exploring why the student added instead of multiplied, provides the answer rather than letting the student work through it, though the student does show some improvement by correctly calculating the answer in Turn 2.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 5, \"brief_justification\": \"The teacher exemplifies the traditional strategy by directly explaining the correct formula, providing a worked example with step-by-step calculation, and verifying the student's understanding with clear confirmation of the correct answer.\"}\n```",
+    "quality_composite": 1.6666666666666667,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T11:29:18.027035+00:00"
+}

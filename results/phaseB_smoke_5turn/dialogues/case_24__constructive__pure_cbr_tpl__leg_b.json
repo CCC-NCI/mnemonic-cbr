@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_24",
+    "misconception_label": "When solving a problem that requires an inverse operation (e.g. missing number problems), does the original operation",
+    "misconception_features": [
+      0.0,
+      24.0,
+      2.0,
+      52.0
+    ],
+    "persona": "constructive",
+    "architecture": "pure_cbr_tpl",
+    "student_leg": "leg_b",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T17:46:04.480818Z",
+      "seed": 1258,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T17:46:07.795300Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: What should replace the star? \\[ \\bigstar \\times 4=108 \\]. I got \\( 432 \\) because I added the parts of the ratio as if they were a total.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's think about this. From similar cases:\n  1. Topic: Complete missing number mental subtraction problems up to 100. Correct answer (A): \\( 75 \\). Student selected: \\( 1 \\). Underlying misconception: When solving a problem that requires an inverse operation (e.g. missing number problems), does the original operation. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.\n  2. Topic: Complete missing number mental subtraction problems with numbers over 1000. Correct answer (A): \\( 0 \\). Student selected: \\( 4 \\). Underlying misconception: When solving a problem that requires an inverse operation (e.g. missing number problems), does the original operation. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.\n  3. Topic: Complete missing number mental addition problems with numbers over 1000. Correct answer (D): \\( 4 \\). Student selected: \\( 0 \\). Underlying misconception: When solving a problem that requires an inverse operation (e.g. missing number problems), does the original operation. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Oh, I think I see what you mean... so when I have a multiplication problem like \u2b50 \u00d7 4 = 108, I shouldn't multiply 108 by 4 to get the answer, right? But I'm still a bit confused about what I should do instead - should I be dividing instead?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's think about this. From similar cases:\n  1. Topic: Complete missing number mental subtraction problems up to 100. Correct answer (A): \\( 75 \\). Student selected: \\( 1 \\). Underlying misconception: When solving a problem that requires an inverse operation (e.g. missing number problems), does the original operation. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.\n  2. Topic: Complete missing number mental subtraction problems with numbers over 1000. Correct answer (A): \\( 0 \\). Student selected: \\( 4 \\). Underlying misconception: When solving a problem that requires an inverse operation (e.g. missing number problems), does the original operation. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.\n  3. Topic: Complete missing number mental addition problems with numbers over 1000. Correct answer (D): \\( 4 \\). Student selected: \\( 0 \\). Underlying misconception: When solving a problem that requires an inverse operation (e.g. missing number problems), does the original operation. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "Yeah, so if the star times 4 equals 108, then I need to divide 108 by 4 to find the star, right? So that would be 108 \u00f7 4 = 27? I think I was doing the opposite operation before, but I'm still not totally sure why dividing is the right thing to do instead of multiplying...",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 1,
+    "R2": 1,
+    "R3": 1,
+    "R4": 3,
+    "R5": 3,
+    "R6": 1,
+    "justification_pass1": "The teacher merely pastes generic examples without engaging the student's specific problem or explaining why inverse operations are needed, though the student does eventually arrive at the correct answer through their own reasoning despite minimal teaching support.",
+    "justification_pass2": "The teacher merely repeats identical lists of similar cases without scaffolding, breaking down the problem into steps, or adjusting support based on the student's clear progress from confusion to near-understanding.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 1,\n  \"R2\": 1,\n  \"R3\": 1,\n  \"R4\": 3,\n  \"R5\": 3,\n  \"brief_justification\": \"The teacher merely pastes generic examples without engaging the student's specific problem or explaining why inverse operations are needed, though the student does eventually arrive at the correct answer through their own reasoning despite minimal teaching support.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 1, \"brief_justification\": \"The teacher merely repeats identical lists of similar cases without scaffolding, breaking down the problem into steps, or adjusting support based on the student's clear progress from confusion to near-understanding.\"}\n```",
+    "quality_composite": 1.0,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T17:46:14.457831+00:00"
+}

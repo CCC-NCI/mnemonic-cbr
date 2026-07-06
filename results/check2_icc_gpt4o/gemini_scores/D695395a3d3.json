@@ -1,0 +1,53 @@
+{
+  "blind_id": "D695395a3d3",
+  "subset_row": {
+    "blind_id": "D695395a3d3",
+    "case_id": "case_2",
+    "persona": "socratic",
+    "architecture": "pure_cbr_tpl",
+    "student_leg": "leg_b",
+    "llm_R5": "3",
+    "llm_quality_composite": "1.0",
+    "llm_R6": "1",
+    "difficulty_band": "long",
+    "r5_band": "mid",
+    "word_count": "93",
+    "attention_check_type": "",
+    "attention_check_rationale": "",
+    "file_path": "dialogues/case_2__socratic__pure_cbr_tpl__leg_b.json"
+  },
+  "primary_score": {
+    "R1": 1,
+    "R2": 1,
+    "R3": 1,
+    "R4": 1,
+    "R5": 3,
+    "R6": 1,
+    "justification_pass1": "The teacher provides only irrelevant boilerplate text about unrelated misconceptions rather than engaging with the student's actual confusion about proportional changes and range, though the student does make some progress through self-directed calculation.",
+    "justification_pass2": "The teacher repeatedly provides identical, irrelevant canned responses about unrelated misconceptions rather than using probing questions to guide the student's thinking, completely failing to implement the Socratic method.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 1,\n  \"R2\": 1,\n  \"R3\": 1,\n  \"R4\": 1,\n  \"R5\": 3,\n  \"brief_justification\": \"The teacher provides only irrelevant boilerplate text about unrelated misconceptions rather than engaging with the student's actual confusion about proportional changes and range, though the student does make some progress through self-directed calculation.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\n  \"R6\": 1,\n  \"brief_justification\": \"The teacher repeatedly provides identical, irrelevant canned responses about unrelated misconceptions rather than using probing questions to guide the student's thinking, completely failing to implement the Socratic method.\"\n}\n```",
+    "quality_composite": 1.0,
+    "is_complete": true
+  },
+  "secondary_score": {
+    "R1": 2,
+    "R2": 2,
+    "R3": 2,
+    "R4": 3,
+    "R5": 3,
+    "R6": 1,
+    "justification_pass1": "The teacher repeatedly presents unrelated examples without directly addressing the student's specific misconception, provides minimal cognitive challenge, offers generic scaffolding, maintains correct mathematical content, and the student's reasoning shows slight improvement but remains confused about Katie's scenario.",
+    "justification_pass2": "The teacher does not engage in probing questions or use counterexamples, instead repeating unrelated intervention topics without addressing the student's specific reasoning or question.",
+    "judge_provider": "openai",
+    "judge_model": "gpt-4o",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 2,\n  \"R3\": 2,\n  \"R4\": 3,\n  \"R5\": 3,\n  \"brief_justification\": \"The teacher repeatedly presents unrelated examples without directly addressing the student's specific misconception, provides minimal cognitive challenge, offers generic scaffolding, maintains correct mathematical content, and the student's reasoning shows slight improvement but remains confused about Katie's scenario.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 1, \"brief_justification\": \"The teacher does not engage in probing questions or use counterexamples, instead repeating unrelated intervention topics without addressing the student's specific reasoning or question.\"}\n```"
+  }
+}

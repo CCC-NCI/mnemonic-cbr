@@ -1,0 +1,66 @@
+{
+  "state": {
+    "case_id": "case_8",
+    "misconception_label": "Does not find a common denominator when adding/subtracting fractions",
+    "misconception_features": [
+      0.0,
+      8.0,
+      3.0,
+      88.0
+    ],
+    "persona": "experiential",
+    "architecture": "hybrid",
+    "student_leg": "leg_b",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T09:32:13.908004Z",
+      "seed": 472,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-12T09:32:18.855695Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: \\( \\frac{4}{5}-\\frac{1}{3}=\\frac{\\bigstar}{15} \\) What should replace the star? I got \\( 5 \\) because I treated the fractions like ordinary numbers.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Imagine you have a pizza cut into 5 slices and another pizza cut into 3 slices. When you combine them, the slices don't magically become the same size. You need to find a common denominator to make them match. So, in this case, what should the common denominator be to add \\( \\frac{4}{5} \\) and \\( \\frac{1}{3} \\)?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Oh right, so the slices need to be the same size... Um, would it be 15? Because 5 times 3 is 15? But I'm not really sure why we multiply the denominators together - is that always what we do?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Imagine you have a bag of marbles, and one bag has 5 red marbles and the other has 3 blue marbles. To compare the two bags, you need to make sure they have the same number of marbles total, which is why you multiply the denominators. So, in this case, we need to find a common denominator of 15 to add \\( \\frac{4}{5} \\) and \\( \\frac{1}{3} \\).",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 2,
+    "R3": 2,
+    "R4": 2,
+    "R5": 1,
+    "R6": 2,
+    "justification_pass1": "The teacher uses analogies that are mathematically flawed (the marble analogy incorrectly explains why denominators are multiplied), doesn't address the student's actual calculation error or the 'treated like ordinary numbers' misconception, and the student ends confused about why to multiply denominators rather than understanding how to convert fractions.",
+    "justification_pass2": "While the teacher uses concrete analogies (pizza slices, marbles), the marbles analogy in Turn 3 is mathematically incoherent and doesn't actually ground the concept of common denominators in a meaningful real-world situation that clarifies the abstract mathematics.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 2,\n  \"R3\": 2,\n  \"R4\": 2,\n  \"R5\": 1,\n  \"brief_justification\": \"The teacher uses analogies that are mathematically flawed (the marble analogy incorrectly explains why denominators are multiplied), doesn't address the student's actual calculation error or the 'treated like ordinary numbers' misconception, and the student ends confused about why to multiply denominators rather than understanding how to convert fractions.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 2, \"brief_justification\": \"While the teacher uses concrete analogies (pizza slices, marbles), the marbles analogy in Turn 3 is mathematically incoherent and doesn't actually ground the concept of common denominators in a meaningful real-world situation that clarifies the abstract mathematics.\"}\n```",
+    "quality_composite": 2.0,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T09:32:26.598008+00:00"
+}

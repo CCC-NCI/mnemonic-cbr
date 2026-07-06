@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_18",
+    "misconception_label": "Assumes that an arrow on a number line starts at zero",
+    "misconception_features": [
+      0.0,
+      18.0,
+      2.0,
+      73.0
+    ],
+    "persona": "experiential",
+    "architecture": "hybrid",
+    "student_leg": "leg_b",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T16:44:43.134876Z",
+      "seed": 972,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T16:44:48.581588Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: ![Number line with -12 and -7 marked. Starting at -12, follow an arrow pointing to the right labelled +10. Then there is an arrow labelled b pointing to the left, which ends at -7 on the number line.]() What is the value of \\( b \\) ? I got \\( -7 \\) because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Imagine you have a bank account with a balance of -12 dollars. Then, you receive a deposit of +10 dollars but later make a withdrawal of \\( b \\) dollars. What would your final balance be? Let's think about how adding and subtracting integers work in this situation to find the correct value of \\( b \\).",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Oh right, so I start at -12, then add 10 which would give me -2, and then I need to subtract b to get to -7? So that means b would be 5 because -2 minus 5 equals -7? Is that right?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "That's a great start! Let's think of it this way: imagine you are on a road trip starting at -12 miles. You drive 10 miles forward to -2 miles, then you need to drive 5 miles back to reach -7 miles. So, the value of \\( b \\) should be 5, just like you correctly reasoned. Keep up the good work!",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "Oh yeah, that makes sense now! So the arrow labelled b isn't showing where it ends up on the number line, it's showing how far you move, right? So b = 5 because that's the distance you travel backwards, not the final position?",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 4,
+    "R2": 3,
+    "R3": 4,
+    "R4": 5,
+    "R5": 5,
+    "R6": 5,
+    "justification_pass1": "The teacher effectively addresses the misconception through contextualized prompts that lead the student to distinguish between position and displacement, resulting in clear conceptual progress from confusing arrow endpoints with values to understanding arrows represent movements.",
+    "justification_pass2": "The teacher consistently grounds the abstract number line problem in concrete real-world analogies (bank account transactions in Turn 1, road trip with distances in Turn 3), making this a textbook example of the experiential strategy.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\"R1\": 4, \"R2\": 3, \"R3\": 4, \"R4\": 5, \"R5\": 5, \"brief_justification\": \"The teacher effectively addresses the misconception through contextualized prompts that lead the student to distinguish between position and displacement, resulting in clear conceptual progress from confusing arrow endpoints with values to understanding arrows represent movements.\"}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 5, \"brief_justification\": \"The teacher consistently grounds the abstract number line problem in concrete real-world analogies (bank account transactions in Turn 1, road trip with distances in Turn 3), making this a textbook example of the experiential strategy.\"}\n```",
+    "quality_composite": 3.6666666666666665,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T16:44:55.043896+00:00"
+}

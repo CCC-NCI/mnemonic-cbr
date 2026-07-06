@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_22",
+    "misconception_label": "Does not realise that adding a larger number gives a larger answer",
+    "misconception_features": [
+      0.0,
+      22.0,
+      2.0,
+      98.0
+    ],
+    "persona": "traditional",
+    "architecture": "pure_cbr_llm",
+    "student_leg": "leg_b",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T17:31:08.076151Z",
+      "seed": 1186,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T17:31:13.193709Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: Tom and Katie are discussing related calculations Tom says if you know that \\( 3748+426=4174 \\), then \\( 3748+427 \\) must equal \\( \\mathbf{4 1 7 5} \\) Katie says if you know that \\( 3748-426=3322 \\), then \\( 3748 \\) - \\( 427 \\) must equal \\( \\mathbf{3 3 2 3} \\) Who is correct? I got Only Katie because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's focus on the addition first. When adding numbers, remember that a larger number will give a larger answer. Can you explain why you chose \\(4175\\) for \\(3748+427\\) and how that aligns with the concept of adding larger numbers?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Um, I think I said 4175 because I just added 1 to the answer, like 4174 plus 1? But now you're saying that adding a larger number should give a larger answer, so if we're adding 427 instead of 426, that's bigger, so the answer should be bigger too... does that mean 4175 is actually right then?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's walk through the reasoning together. Think about how adding a larger number affects the total sum. Can you try recalculating \\(3748+427\\) using the understanding that a larger number will give a larger answer?",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "Oh right, so if I'm adding 427 instead of 426, that's 1 more, so the answer should be 1 more than 4174, which would be 4175. So Tom is actually correct? But then why did I think only Katie was right before... was I just confused about the subtraction one too?",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 4,
+    "R2": 3,
+    "R3": 3,
+    "R4": 5,
+    "R5": 4,
+    "R6": 2,
+    "justification_pass1": "The teacher directly addresses the misconception about adding larger numbers giving larger answers, the mathematics is correct, and the student demonstrates clear improvement in understanding by Turn 4, though the scaffolding could have been more precisely calibrated to the student's initial confusion about Katie's answer.",
+    "justification_pass2": "The teacher uses guided questioning to lead the student to discover the answer rather than directly explaining with worked examples as the traditional strategy requires, though they do provide some direct conceptual guidance about larger numbers yielding larger sums.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 4,\n  \"R2\": 3,\n  \"R3\": 3,\n  \"R4\": 5,\n  \"R5\": 4,\n  \"brief_justification\": \"The teacher directly addresses the misconception about adding larger numbers giving larger answers, the mathematics is correct, and the student demonstrates clear improvement in understanding by Turn 4, though the scaffolding could have been more precisely calibrated to the student's initial confusion about Katie's answer.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 2, \"brief_justification\": \"The teacher uses guided questioning to lead the student to discover the answer rather than directly explaining with worked examples as the traditional strategy requires, though they do provide some direct conceptual guidance about larger numbers yielding larger sums.\"}\n```",
+    "quality_composite": 3.3333333333333335,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T17:31:20.051053+00:00"
+}

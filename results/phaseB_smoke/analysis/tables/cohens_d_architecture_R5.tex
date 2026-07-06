@@ -1,0 +1,21 @@
+\begin{table}[htbp]
+\centering
+\caption{Pairwise Cohen's d on R5 between levels of architecture.}
+\label{tab:cohensd-architecture-R5}
+\begin{tabular}{lrrrrrrrr}
+\toprule
+level\_a & level\_b & n\_a & n\_b & mean\_a & mean\_b & d & abs\_d & magnitude \\
+\midrule
+pure\_ai & pure\_cbr\_tpl & 250 & 250 & 2.332 & 1.300 & 1.111 & 1.111 & large \\
+hybrid & pure\_cbr\_tpl & 250 & 250 & 2.244 & 1.300 & 0.951 & 0.951 & large \\
+pure\_cbr\_llm & pure\_cbr\_tpl & 250 & 250 & 2.168 & 1.300 & 0.928 & 0.928 & large \\
+baseline & pure\_cbr\_tpl & 250 & 250 & 2.096 & 1.300 & 0.826 & 0.826 & large \\
+baseline & pure\_ai & 250 & 250 & 2.096 & 2.332 & -0.205 & 0.205 & small \\
+pure\_ai & pure\_cbr\_llm & 250 & 250 & 2.332 & 2.168 & 0.145 & 0.145 & negligible \\
+baseline & hybrid & 250 & 250 & 2.096 & 2.244 & -0.123 & 0.123 & negligible \\
+hybrid & pure\_ai & 250 & 250 & 2.244 & 2.332 & -0.075 & 0.075 & negligible \\
+hybrid & pure\_cbr\_llm & 250 & 250 & 2.244 & 2.168 & 0.064 & 0.064 & negligible \\
+baseline & pure\_cbr\_llm & 250 & 250 & 2.096 & 2.168 & -0.062 & 0.062 & negligible \\
+\bottomrule
+\end{tabular}
+\end{table}

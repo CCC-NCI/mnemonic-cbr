@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_19",
+    "misconception_label": "When subtracting fractions, subtracts the numerators and multiplies the denominators",
+    "misconception_features": [
+      0.0,
+      19.0,
+      3.0,
+      104.0
+    ],
+    "persona": "socratic",
+    "architecture": "pure_ai",
+    "student_leg": "leg_a",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T16:50:36.396382Z",
+      "seed": 999,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T16:50:42.452574Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: Express the following as a single fraction, writing your answer as simply as possible: \\( \\frac{1}{s}-\\frac{t}{3} \\). I got \\( \\frac{1-t}{3 s} \\) because I treated the fractions like ordinary numbers.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Why do you think it's appropriate to multiply the denominators when subtracting fractions? Can you think of a scenario where this approach might not work?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "I guess I thought that since I was just combining the fractions, it made sense to multiply the denominators like I would with regular numbers. But now that you mention it, I can see that it might not work if the fractions have different denominators. So, how do I actually find a common denominator to subtract them properly?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "That's a great observation! To find a common denominator when subtracting fractions, you need to identify the least common multiple of the denominators. Can you think of a way to determine the least common multiple of 3 and s in this specific case?",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "I think the least common multiple of 3 and s would be 3s, right? But I'm not really sure how to use that to actually subtract the fractions. Do I need to change both fractions to have that common denominator first?",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 4,
+    "R2": 4,
+    "R3": 4,
+    "R4": 5,
+    "R5": 4,
+    "R6": 5,
+    "justification_pass1": "The teacher effectively addresses the specific misconception through questioning, maintains high cognitive demand by having the student reason through the process, and the student shows clear progression from the initial error to understanding the need for a common denominator and identifying it correctly.",
+    "justification_pass2": "The teacher consistently uses probing questions to guide the student's thinking, never directly provides answers, and employs a counterexample scenario in Turn 1 to expose the flaw in the student's reasoning, which is a textbook example of the Socratic method.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 4,\n  \"R2\": 4,\n  \"R3\": 4,\n  \"R4\": 5,\n  \"R5\": 4,\n  \"brief_justification\": \"The teacher effectively addresses the specific misconception through questioning, maintains high cognitive demand by having the student reason through the process, and the student shows clear progression from the initial error to understanding the need for a common denominator and identifying it correctly.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 5, \"brief_justification\": \"The teacher consistently uses probing questions to guide the student's thinking, never directly provides answers, and employs a counterexample scenario in Turn 1 to expose the flaw in the student's reasoning, which is a textbook example of the Socratic method.\"}\n```",
+    "quality_composite": 4.0,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T16:50:49.757387+00:00"
+}

@@ -1,0 +1,66 @@
+{
+  "state": {
+    "case_id": "case_11",
+    "misconception_label": "Struggles to visualise nets of 3D shapes",
+    "misconception_features": [
+      0.0,
+      11.0,
+      3.0,
+      31.0
+    ],
+    "persona": "traditional",
+    "architecture": "hybrid",
+    "student_leg": "leg_b",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T10:05:21.586379Z",
+      "seed": 642,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-12T10:05:26.650211Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: This is the net of a... ![A circle touching a sector](). I got Triangle because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's take a step back and focus on the concept of nets of 3D shapes. Remember, a net is a 2D representation of a 3D shape when unfolded. In this case, the shape you have is not a triangle but rather a triangular-based pyramid. Can you think about how the different faces of the pyramid would unfold into a flat net?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Oh right, so a triangular pyramid has like... four triangle faces? But I'm still confused because in the picture there's a circle and a sector thing, not triangles - so how does that make a pyramid if there's no triangles in the net?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's clarify the concept by focusing on the faces of the pyramid. Remember that the net should show all the faces of the 3D shape when unfolded. In this case, the circle and sector represent the base of the pyramid, while the triangles represent the three triangular faces that meet at the apex. Can you visualize how these faces would come together to form the triangular-based pyramid?",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 2,
+    "R3": 1,
+    "R4": 1,
+    "R5": 1,
+    "R6": 2,
+    "justification_pass1": "The teacher provides mathematically incorrect information (a circle and sector form a cone, not a triangular pyramid), fails to address the student's actual confusion about the circle/sector in the image, and the student shows no improvement in understanding by the end.",
+    "justification_pass2": "The teacher uses questioning and guided discovery rather than direct explanation with worked examples, and provides incorrect information (claiming a circle and sector form a triangular pyramid when they actually form a cone), which contradicts the traditional strategy's emphasis on clear, direct instruction.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 2,\n  \"R3\": 1,\n  \"R4\": 1,\n  \"R5\": 1,\n  \"brief_justification\": \"The teacher provides mathematically incorrect information (a circle and sector form a cone, not a triangular pyramid), fails to address the student's actual confusion about the circle/sector in the image, and the student shows no improvement in understanding by the end.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 2, \"brief_justification\": \"The teacher uses questioning and guided discovery rather than direct explanation with worked examples, and provides incorrect information (claiming a circle and sector form a triangular pyramid when they actually form a cone), which contradicts the traditional strategy's emphasis on clear, direct instruction.\"}\n```",
+    "quality_composite": 1.6666666666666667,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T10:05:33.527366+00:00"
+}

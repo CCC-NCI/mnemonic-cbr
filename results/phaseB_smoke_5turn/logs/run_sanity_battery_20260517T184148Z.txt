@@ -1,0 +1,37 @@
+# Phase C sanity-check battery
+
+- Generated: 2026-05-17T18:41:48Z
+- Manifest:  `results/phaseB_smoke_5turn/manifest.sqlite`
+- Real mode: True (checks 4 and 5 need this)
+
+---
+
+## Check 1 — Persona discriminability
+- **Pass:** `True`
+- Mean pairwise cosine = 0.638 (pass <= 0.85: True); max = 0.833 (pass <= 0.95: True). Observation (not gating): socratic-vs-rule_based = 0.488 (vs median 0.641: below).
+
+## Check 3 — R5 contamination (length / sentiment)
+- **Pass:** `True`
+- r(R5, length) = -0.205 (pass |r|<=0.5: True); r(R5, sentiment) = 0.300 (pass: True).
+
+## Check 4 — Shuffle-persona (adversarial; needs real judge)
+- **Pass:** `True`
+- n = 40; mean R6 original = 3.17; mean R6 shuffled = 1.82; drop = +1.35 (pass drop >= 1.0: True).
+
+## Check 5 — Dialogue-order corruption (adversarial; needs real judge)
+- **Pass:** `False`
+- n = 40; mean R5 original = 2.58; mean R5 swapped = 2.42; drop = +0.15 (pass drop >= 0.5: False).
+
+---
+
+## Gate decision
+
+**Gate not fully cleared.** Failed: Check 5: dialogue-order corruption. 
+
+_Output also written as JSON: `results/phaseB_smoke_5turn/sanity_summary.json`._
+
+
+Wrote results/phaseB_smoke_5turn/sanity_summary.md
+Wrote results/phaseB_smoke_5turn/sanity_summary.json
+
+[ERROR] run_sanity_battery failed (ExitCode: 1) after 4m48s — log: results/phaseB_smoke_5turn/logs/run_sanity_battery_20260517T184148Z.txt

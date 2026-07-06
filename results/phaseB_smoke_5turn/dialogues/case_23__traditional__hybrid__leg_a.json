@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_23",
+    "misconception_label": "Confuses rest and movement on a distance time graph",
+    "misconception_features": [
+      0.0,
+      23.0,
+      3.0,
+      62.0
+    ],
+    "persona": "traditional",
+    "architecture": "hybrid",
+    "student_leg": "leg_a",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T17:42:46.896205Z",
+      "seed": 1241,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T17:42:52.220609Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: This graph shows how far Fido the dog is from his home. What might the negative-sloping section represent? ![A graph with time (secs) on the horizontal axis and distance (m) on the vertical axis. The graph starts at the origin, travels in a straight line up and right, travels horizontally, then travels in a straight line down and right back to the x-axis. ](). I got Fido has fallen asleep because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "First, let's clarify the concept of rest and movement on a distance-time graph. A horizontal line on a distance-time graph does not necessarily mean a distance of 0, as seen in previous cases where misconceptions arose. Let's work through an example together to solidify your understanding. Can you explain to me what you think the negative-sloping section represents on the graph of Fido the dog's distance from home?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Okay, I think I get what you're saying about the horizontal line not meaning he's at home. So, for the negative-sloping part, I guess it might mean he's moving back towards home? But I thought that if he was moving back, he would be resting first, like falling asleep or something. Can you help me understand how to tell the difference?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's focus on the concept of rest versus movement on a distance-time graph. Remember, a negative-sloping section indicates that Fido is moving back towards home, not necessarily that he is resting. Can you think of any scenarios where Fido might be moving back towards home without resting first?",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "Okay, so if Fido is moving back towards home, that means he could be running or walking back, right? But I still don\u2019t really get how to tell when he\u2019s resting versus moving. Like, if he was just standing still, wouldn\u2019t that look the same as the horizontal line? How do I know for sure?",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 3,
+    "R2": 2,
+    "R3": 2,
+    "R4": 5,
+    "R5": 2,
+    "R6": 2,
+    "justification_pass1": "The teacher correctly identifies and addresses the rest/movement confusion, but primarily tells rather than elicits reasoning, and by Turn 4 the student still explicitly states they don't understand the difference between resting and moving on the graph.",
+    "justification_pass2": "The teacher uses questioning and guided discovery rather than direct explanation with worked examples, which contradicts the traditional strategy of explicitly explaining concepts upfront.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 3,\n  \"R2\": 2,\n  \"R3\": 2,\n  \"R4\": 5,\n  \"R5\": 2,\n  \"brief_justification\": \"The teacher correctly identifies and addresses the rest/movement confusion, but primarily tells rather than elicits reasoning, and by Turn 4 the student still explicitly states they don't understand the difference between resting and moving on the graph.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 2, \"brief_justification\": \"The teacher uses questioning and guided discovery rather than direct explanation with worked examples, which contradicts the traditional strategy of explicitly explaining concepts upfront.\"}\n```",
+    "quality_composite": 2.3333333333333335,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T17:42:58.460003+00:00"
+}

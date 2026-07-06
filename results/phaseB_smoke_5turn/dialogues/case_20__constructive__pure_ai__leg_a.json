@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_20",
+    "misconception_label": "Adds when calculating volume instead of multiplying",
+    "misconception_features": [
+      0.0,
+      20.0,
+      1.0,
+      58.0
+    ],
+    "persona": "constructive",
+    "architecture": "pure_ai",
+    "student_leg": "leg_a",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T17:03:37.992696Z",
+      "seed": 1059,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T17:03:43.406865Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: The volume of this cuboid is \\( 30 \\mathrm{~cm}^{3} \\) What length should replace the star? ![A cuboid, depth 2cm and height 3cm. The width is labelled with a star.](). I got \\( 25 \\mathrm{~cm} \\) because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "It looks like you added the dimensions together instead of multiplying them to find the volume. Remember, to find the volume of a cuboid, you need to multiply the length, width, and height. Try multiplying the dimensions together instead of adding them to find the correct volume.",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Oh, I see! So I should multiply the depth, height, and width instead of adding them? But if I multiply 2 cm and 3 cm, how do I figure out what the width should be to make the total volume 30 cm\u00b3?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Great job understanding that you need to multiply the dimensions to find the volume! To figure out the width, you can use the formula: Volume = Length x Width x Height. Since the volume is 30 cm\u00b3, and the depth is 2 cm and the height is 3 cm, you can plug those values in and solve for the width. Give it a try!",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "Okay, so if I use the formula, I have 30 cm\u00b3 = Width x 2 cm x 3 cm. But I'm not sure how to solve for the width. Do I just divide 30 by the other two numbers?",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 4,
+    "R2": 2,
+    "R3": 2,
+    "R4": 5,
+    "R5": 3,
+    "R6": 3,
+    "justification_pass1": "The teacher explicitly identifies the adding-instead-of-multiplying misconception and provides mathematically correct guidance, but offers minimal cognitive challenge by essentially telling the student what to do rather than eliciting reasoning, and by Turn 4 the student still needs to ask whether to divide, suggesting incomplete understanding of the inverse relationship.",
+    "justification_pass2": "The teacher does break down the problem into steps and provides scaffolding by guiding the student toward the volume formula, but misses opportunities to adjust support based on the student's clear signal in Turn 4 that they need more explicit help with the division operation, instead leaving them with another question rather than confirming their correct reasoning.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 4,\n  \"R2\": 2,\n  \"R3\": 2,\n  \"R4\": 5,\n  \"R5\": 3,\n  \"brief_justification\": \"The teacher explicitly identifies the adding-instead-of-multiplying misconception and provides mathematically correct guidance, but offers minimal cognitive challenge by essentially telling the student what to do rather than eliciting reasoning, and by Turn 4 the student still needs to ask whether to divide, suggesting incomplete understanding of the inverse relationship.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 3, \"brief_justification\": \"The teacher does break down the problem into steps and provides scaffolding by guiding the student toward the volume formula, but misses opportunities to adjust support based on the student's clear signal in Turn 4 that they need more explicit help with the division operation, instead leaving them with another question rather than confirming their correct reasoning.\"}\n```",
+    "quality_composite": 2.6666666666666665,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T17:03:52.932827+00:00"
+}

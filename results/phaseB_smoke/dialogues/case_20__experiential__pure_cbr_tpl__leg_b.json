@@ -1,0 +1,66 @@
+{
+  "state": {
+    "case_id": "case_20",
+    "misconception_label": "Adds when calculating volume instead of multiplying",
+    "misconception_features": [
+      0.0,
+      20.0,
+      1.0,
+      58.0
+    ],
+    "persona": "experiential",
+    "architecture": "pure_cbr_tpl",
+    "student_leg": "leg_b",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T11:26:07.566407Z",
+      "seed": 1068,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-12T11:26:09.607951Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: The volume of this cuboid is \\( 30 \\mathrm{~cm}^{3} \\) What length should replace the star? ![A cuboid, depth 2cm and height 3cm. The width is labelled with a star.](). I got \\( 25 \\mathrm{~cm} \\) because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's think about this. From similar cases:\n  1. Topic: Calculate the volume of a cuboid when the dimensions are given in the same units. Correct answer (C): \\( 200 \\mathrm{~cm}^{3} \\). Student selected: \\( 19 \\mathrm{~cm}^{3} \\). Underlying misconception: Adds when calculating volume instead of multiplying. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.\n  2. Topic: Calculate the area of a rectangle where the dimensions are given in the same units. Correct answer (B): \\( 40 \\mathrm{~cm}^{2} \\). Student selected: \\( 13 \\mathrm{~cm}^{2} \\). Underlying misconception: Adds when calculating area instead of multiplying. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.\n  3. Topic: Perform calculations with areas when given in different units. Correct answer (C): \\( 404 \\mathrm{~mm}^{2} \\). Student selected: \\( 8 \\mathrm{~mm}^{2} \\). Underlying misconception: Does not convert measurements to have the same units before calculating area or volume. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Oh right, so I think I see the problem - I added 2 and 3 to get 5, then subtracted from 30 to get 25. But looking at those examples, it seems like I should be multiplying instead of adding? So would I need to do something like multiply 2 and 3 together first, and then... do something with 30?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's think about this. From similar cases:\n  1. Topic: Calculate the volume of a cuboid when the dimensions are given in the same units. Correct answer (C): \\( 200 \\mathrm{~cm}^{3} \\). Student selected: \\( 19 \\mathrm{~cm}^{3} \\). Underlying misconception: Adds when calculating volume instead of multiplying. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.\n  2. Topic: Calculate the area of a rectangle where the dimensions are given in the same units. Correct answer (B): \\( 40 \\mathrm{~cm}^{2} \\). Student selected: \\( 13 \\mathrm{~cm}^{2} \\). Underlying misconception: Adds when calculating area instead of multiplying. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.\n  3. Topic: Perform calculations with areas when given in different units. Correct answer (C): \\( 404 \\mathrm{~mm}^{2} \\). Student selected: \\( 8 \\mathrm{~mm}^{2} \\). Underlying misconception: Does not convert measurements to have the same units before calculating area or volume. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 1,
+    "R2": 1,
+    "R3": 1,
+    "R4": 3,
+    "R5": 2,
+    "R6": 1,
+    "justification_pass1": "The teacher merely presents identical example cases twice without any explanation, acknowledgment of the student's partial insight in Turn 2, or guidance toward the correct solution, failing to engage with the misconception or scaffold learning despite the student showing readiness to progress.",
+    "justification_pass2": "The teacher provides no concrete real-world analogies or everyday situations whatsoever, instead only presenting abstract mathematical examples with numerical answers and misconception labels.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 1,\n  \"R2\": 1,\n  \"R3\": 1,\n  \"R4\": 3,\n  \"R5\": 2,\n  \"brief_justification\": \"The teacher merely presents identical example cases twice without any explanation, acknowledgment of the student's partial insight in Turn 2, or guidance toward the correct solution, failing to engage with the misconception or scaffold learning despite the student showing readiness to progress.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 1, \"brief_justification\": \"The teacher provides no concrete real-world analogies or everyday situations whatsoever, instead only presenting abstract mathematical examples with numerical answers and misconception labels.\"}\n```",
+    "quality_composite": 1.0,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T11:26:15.844174+00:00"
+}

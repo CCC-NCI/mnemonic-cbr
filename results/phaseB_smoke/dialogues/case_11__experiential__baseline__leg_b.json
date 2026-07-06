@@ -1,0 +1,66 @@
+{
+  "state": {
+    "case_id": "case_11",
+    "misconception_label": "Struggles to visualise nets of 3D shapes",
+    "misconception_features": [
+      0.0,
+      11.0,
+      3.0,
+      31.0
+    ],
+    "persona": "experiential",
+    "architecture": "baseline",
+    "student_leg": "leg_b",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T10:00:08.095916Z",
+      "seed": 614,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-12T10:00:12.684108Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: This is the net of a... ![A circle touching a sector](). I got Triangle because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Imagine you were trying to wrap a gift with wrapping paper. If you cut out the net of the shape incorrectly, would it still fit around the gift properly?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Oh right, so like... if the net is wrong, it wouldn't wrap around it properly? So I need to think about what shape it would actually fold into, not just guess? But I'm still confused about this one - how do I know if a circle and a sector would fold into something or if they even go together?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Imagine you were trying to fold a paper airplane. If you cut out the wrong shape for the wings, would it still fly properly? Just like with the gift wrapping, you need to think about how the shapes will fit together when folded.",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 2,
+    "R3": 1,
+    "R4": 3,
+    "R5": 1,
+    "R6": 2,
+    "justification_pass1": "The teacher uses generic analogies (gift wrapping, paper airplane) that don't address the specific challenge of visualizing how a circle and sector fold into a cone, and the student remains confused with no progress made toward understanding the actual net.",
+    "justification_pass2": "While the teacher attempts to use real-world analogies (gift wrapping, paper airplane), these analogies don't actually help connect the abstract concept to concrete understanding\u2014they simply restate the problem without explaining how a circle and sector specifically relate to any 3D shape, making the experiential strategy superficial rather than genuinely grounding.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 2,\n  \"R3\": 1,\n  \"R4\": 3,\n  \"R5\": 1,\n  \"brief_justification\": \"The teacher uses generic analogies (gift wrapping, paper airplane) that don't address the specific challenge of visualizing how a circle and sector fold into a cone, and the student remains confused with no progress made toward understanding the actual net.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 2, \"brief_justification\": \"While the teacher attempts to use real-world analogies (gift wrapping, paper airplane), these analogies don't actually help connect the abstract concept to concrete understanding\u2014they simply restate the problem without explaining how a circle and sector specifically relate to any 3D shape, making the experiential strategy superficial rather than genuinely grounding.\"}\n```",
+    "quality_composite": 1.6666666666666667,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T10:00:20.654852+00:00"
+}

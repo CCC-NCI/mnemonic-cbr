@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_22",
+    "misconception_label": "Does not realise that adding a larger number gives a larger answer",
+    "misconception_features": [
+      0.0,
+      22.0,
+      2.0,
+      98.0
+    ],
+    "persona": "traditional",
+    "architecture": "hybrid",
+    "student_leg": "leg_b",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T17:32:23.744481Z",
+      "seed": 1192,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T17:32:29.480678Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: Tom and Katie are discussing related calculations Tom says if you know that \\( 3748+426=4174 \\), then \\( 3748+427 \\) must equal \\( \\mathbf{4 1 7 5} \\) Katie says if you know that \\( 3748-426=3322 \\), then \\( 3748 \\) - \\( 427 \\) must equal \\( \\mathbf{3 3 2 3} \\) Who is correct? I got Only Katie because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's revisit the concept of addition with larger numbers. Remember, when adding a larger number to another number, the sum will be larger as well. Let's work through an example together to solidify this understanding. Can you explain how adding a larger number affects the total?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Um, so like... if I'm adding a bigger number, the answer gets bigger? So if 3748 + 426 = 4174, then adding 427 instead would make it bigger because 427 is bigger than 426? But I'm still confused about why Katie would be wrong then, because doesn't subtracting a bigger number make the answer smaller?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "That's a great observation! When adding a larger number, the sum will indeed be larger. In Katie's case, subtracting a larger number will actually make the answer smaller because you are taking away a larger quantity from the original number. Let's work through an example to see this in action. What would \\( 3748 - 427 \\) be if we follow the same logic?",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "Oh right, so if I'm subtracting 427 instead of 426, I'm taking away more, so the answer should be smaller... so it would be 3321, not 3323? So both Tom and Katie are actually correct then?",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 4,
+    "R2": 3,
+    "R3": 4,
+    "R4": 5,
+    "R5": 5,
+    "R6": 2,
+    "justification_pass1": "The teacher directly addresses the misconception about how adding/subtracting larger numbers affects results, the mathematics is correct throughout, and the student demonstrates clear progression from confusion to correctly reasoning that subtracting a larger number yields a smaller result (3321 vs 3323).",
+    "justification_pass2": "The teacher uses guided questioning rather than direct explanation with worked examples, which is inconsistent with the traditional strategy of explicitly demonstrating solutions and checking understanding through direct instruction.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 4,\n  \"R2\": 3,\n  \"R3\": 4,\n  \"R4\": 5,\n  \"R5\": 5,\n  \"brief_justification\": \"The teacher directly addresses the misconception about how adding/subtracting larger numbers affects results, the mathematics is correct throughout, and the student demonstrates clear progression from confusion to correctly reasoning that subtracting a larger number yields a smaller result (3321 vs 3323).\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 2, \"brief_justification\": \"The teacher uses guided questioning rather than direct explanation with worked examples, which is inconsistent with the traditional strategy of explicitly demonstrating solutions and checking understanding through direct instruction.\"}\n```",
+    "quality_composite": 3.6666666666666665,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T17:32:35.936382+00:00"
+}

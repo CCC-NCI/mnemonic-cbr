@@ -1,0 +1,66 @@
+{
+  "state": {
+    "case_id": "case_19",
+    "misconception_label": "When subtracting fractions, subtracts the numerators and multiplies the denominators",
+    "misconception_features": [
+      0.0,
+      19.0,
+      3.0,
+      104.0
+    ],
+    "persona": "socratic",
+    "architecture": "pure_cbr_llm",
+    "student_leg": "leg_a",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T11:12:26.911227Z",
+      "seed": 995,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-12T11:12:33.524999Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: Express the following as a single fraction, writing your answer as simply as possible: \\( \\frac{1}{s}-\\frac{t}{3} \\). I got \\( \\frac{1-t}{3 s} \\) because I treated the fractions like ordinary numbers.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Why do you think treating fractions like ordinary numbers would lead to the correct answer in this case? Can you walk me through your reasoning for subtracting the numerators and denominators?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "I thought it would work because when you subtract normal numbers, you just take away the smaller from the bigger, right? So I figured it would be the same with fractions. But now I\u2019m not sure if that\u2019s the right way to think about it. How do you actually subtract fractions properly?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Can you think of a situation where treating fractions like ordinary numbers might not work when subtracting them? How could considering the individual parts of the fractions help you better understand how to subtract them correctly?",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 3,
+    "R2": 4,
+    "R3": 2,
+    "R4": 5,
+    "R5": 1,
+    "R6": 5,
+    "justification_pass1": "The teacher consistently uses questioning to promote reasoning about the misconception, but the student shows no actual progress in understanding how to subtract fractions correctly, only expressing confusion and asking to be told the method.",
+    "justification_pass2": "The teacher consistently uses probing questions to guide the student's thinking, never provides direct answers even when explicitly asked, and prompts the student to discover contradictions in their reasoning through considering counterexamples.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 3,\n  \"R2\": 4,\n  \"R3\": 2,\n  \"R4\": 5,\n  \"R5\": 1,\n  \"brief_justification\": \"The teacher consistently uses questioning to promote reasoning about the misconception, but the student shows no actual progress in understanding how to subtract fractions correctly, only expressing confusion and asking to be told the method.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 5, \"brief_justification\": \"The teacher consistently uses probing questions to guide the student's thinking, never provides direct answers even when explicitly asked, and prompts the student to discover contradictions in their reasoning through considering counterexamples.\"}\n```",
+    "quality_composite": 3.0,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T11:12:39.550620+00:00"
+}

@@ -1,0 +1,66 @@
+{
+  "state": {
+    "case_id": "case_15",
+    "misconception_label": "Has used slant height and base to find area of a triangle rather than perpendicular height and base",
+    "misconception_features": [
+      0.0,
+      15.0,
+      2.0,
+      94.0
+    ],
+    "persona": "experiential",
+    "architecture": "baseline",
+    "student_leg": "leg_a",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T10:36:53.316715Z",
+      "seed": 813,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-12T10:36:57.576771Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: How would you calculate the area of this triangle? ![A triangle, base 12m. All three sides are equal.](). I got \\( \\frac{12 \\times 12}{2} \\) because I added the side lengths instead of multiplying.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Imagine if you were trying to find the area of a triangle using everyday objects like books or tiles. Would adding the side lengths together still give you the correct answer, or would you need to consider the perpendicular height and base instead?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "I guess adding the side lengths doesn't really help with the area, but I'm not sure how to find the perpendicular height. Do I just measure straight up from the base to the top point of the triangle?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Imagine if you were looking at a bookshelf and trying to find the area of a triangle made by the shelves. Would measuring straight up from the base to the top point of the triangle give you the height you need, or would you need to find a different way to measure it accurately?",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 1,
+    "R2": 2,
+    "R3": 1,
+    "R4": 2,
+    "R5": 1,
+    "R6": 2,
+    "justification_pass1": "The teacher never addresses the actual misconception (using slant height instead of perpendicular height), instead focusing on the student's self-reported error about adding side lengths, and the vague analogies confuse rather than clarify, leaving the student uncertain about how to find perpendicular height in Turn 2 and receiving no concrete help in Turn 3.",
+    "justification_pass2": "While the teacher attempts to use everyday objects like books, tiles, and bookshelves, these analogies are vague and don't actually ground the mathematical concept in concrete real-world experiences that would help the student understand perpendicular height or area calculation.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 1,\n  \"R2\": 2,\n  \"R3\": 1,\n  \"R4\": 2,\n  \"R5\": 1,\n  \"brief_justification\": \"The teacher never addresses the actual misconception (using slant height instead of perpendicular height), instead focusing on the student's self-reported error about adding side lengths, and the vague analogies confuse rather than clarify, leaving the student uncertain about how to find perpendicular height in Turn 2 and receiving no concrete help in Turn 3.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 2, \"brief_justification\": \"While the teacher attempts to use everyday objects like books, tiles, and bookshelves, these analogies are vague and don't actually ground the mathematical concept in concrete real-world experiences that would help the student understand perpendicular height or area calculation.\"}\n```",
+    "quality_composite": 1.3333333333333333,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T10:37:06.011184+00:00"
+}

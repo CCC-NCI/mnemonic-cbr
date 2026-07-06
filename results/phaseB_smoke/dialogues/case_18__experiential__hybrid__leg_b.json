@@ -1,0 +1,66 @@
+{
+  "state": {
+    "case_id": "case_18",
+    "misconception_label": "Assumes that an arrow on a number line starts at zero",
+    "misconception_features": [
+      0.0,
+      18.0,
+      2.0,
+      73.0
+    ],
+    "persona": "experiential",
+    "architecture": "hybrid",
+    "student_leg": "leg_b",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T11:07:25.414701Z",
+      "seed": 972,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-12T11:07:30.345592Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: ![Number line with -12 and -7 marked. Starting at -12, follow an arrow pointing to the right labelled +10. Then there is an arrow labelled b pointing to the left, which ends at -7 on the number line.]() What is the value of \\( b \\) ? I got \\( -7 \\) because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Imagine you're on a hike and you start at -12 on the number line. You walk 10 steps to the right, then turn around and walk back 5 steps to the left. What position do you end up at? Let's think about how each step affects your final location on the number line.",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Oh right, so if I start at -12 and go right 10 steps, that would be -12 + 10 which is -2, and then if I go left 5 steps from there I'd end up at -7. But wait, is that what the arrow b is showing? I'm confused about whether b is the number of steps I walk or the place I end up at.",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's think of the arrow labeled b as representing the steps you take, just like on a hike. So if you start at -12 and take 10 steps to the right, you end up at -2. Then, if you turn around and take 5 steps to the left, where would you end up? Let's use our hiking analogy to figure it out.",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 3,
+    "R3": 2,
+    "R4": 5,
+    "R5": 2,
+    "R6": 5,
+    "justification_pass1": "The teacher uses a hiking analogy that requires some reasoning, but doesn't directly address the student's core misconception about arrows starting at zero, and by Turn 2 the student shows new confusion about what b represents that isn't resolved by Turn 3's repetition of the same analogy.",
+    "justification_pass2": "The teacher consistently uses a concrete hiking analogy throughout both turns, grounding the abstract number line operations in the everyday experience of walking forward and backward along a path.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 3,\n  \"R3\": 2,\n  \"R4\": 5,\n  \"R5\": 2,\n  \"brief_justification\": \"The teacher uses a hiking analogy that requires some reasoning, but doesn't directly address the student's core misconception about arrows starting at zero, and by Turn 2 the student shows new confusion about what b represents that isn't resolved by Turn 3's repetition of the same analogy.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 5, \"brief_justification\": \"The teacher consistently uses a concrete hiking analogy throughout both turns, grounding the abstract number line operations in the everyday experience of walking forward and backward along a path.\"}\n```",
+    "quality_composite": 2.3333333333333335,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T11:07:36.610896+00:00"
+}

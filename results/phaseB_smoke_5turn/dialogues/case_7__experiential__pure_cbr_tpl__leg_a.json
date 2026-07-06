@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_7",
+    "misconception_label": "Divided by 100 rather than 10",
+    "misconception_features": [
+      0.0,
+      7.0,
+      3.0,
+      21.0
+    ],
+    "persona": "experiential",
+    "architecture": "pure_cbr_tpl",
+    "student_leg": "leg_a",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T14:45:37.492034Z",
+      "seed": 417,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T14:45:40.388421Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: \\( 43.2 \\div 10= \\). I got \\( 0.432 \\) because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's think about this. From similar cases:\n  1. Topic: Solve problems involving converting between fractions, decimals and percentages. Correct answer (D): Neither is correct. Student selected: Only\nJo. Underlying misconception: Divides by 1000 instead of 100 when converting a percentage to a decimal. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.\n  2. Topic: Divide decimals by 1000. Correct answer (A): \\( 0.02304 \\). Student selected: \\( 0.2304 \\). Underlying misconception: When dividing involving a power of 10, gives an answer 10 times bigger than it should be. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.\n  3. Topic: Convert decimals less than 1 with 1 decimal place to percentages. Correct answer (A): \\( 60 \\% \\). Student selected: \\( 6 \\% \\). Underlying misconception: Multiplies by 10 instead of 100 when converting decimal to percentage. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "I think I get that I might be dividing by 100 instead of 10, but I'm still not sure how to actually do the division right. Like, when I see \\( 43.2 \\div 10 \\), I just feel like I should move the decimal point, but I don't know where to move it. Can you explain that part again?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's think about this. From similar cases:\n  1. Topic: Solve problems involving converting between fractions, decimals and percentages. Correct answer (D): Neither is correct. Student selected: Only\nJo. Underlying misconception: Divides by 1000 instead of 100 when converting a percentage to a decimal. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.\n  2. Topic: Divide decimals by 1000. Correct answer (A): \\( 0.02304 \\). Student selected: \\( 0.2304 \\). Underlying misconception: When dividing involving a power of 10, gives an answer 10 times bigger than it should be. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.\n  3. Topic: Convert decimals less than 1 with 1 decimal place to percentages. Correct answer (A): \\( 60 \\% \\). Student selected: \\( 6 \\% \\). Underlying misconception: Multiplies by 10 instead of 100 when converting decimal to percentage. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "Okay, I think I understand that I need to move the decimal point when I divide by 10, but I'm not sure how many places to move it. Do I move it one place to the left or right? Can you help me with that?",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 1,
+    "R2": 1,
+    "R3": 1,
+    "R4": 2,
+    "R5": 1,
+    "R6": 1,
+    "justification_pass1": "The teacher merely repeats irrelevant case examples without addressing the student's specific misconception or questions, providing no actual instruction while the student remains confused about the basic procedure of moving the decimal point.",
+    "justification_pass2": "The teacher never uses concrete real-world analogies or everyday situations to explain the concept, instead only repeating abstract references to similar mathematical cases and misconceptions.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 1,\n  \"R2\": 1,\n  \"R3\": 1,\n  \"R4\": 2,\n  \"R5\": 1,\n  \"brief_justification\": \"The teacher merely repeats irrelevant case examples without addressing the student's specific misconception or questions, providing no actual instruction while the student remains confused about the basic procedure of moving the decimal point.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 1, \"brief_justification\": \"The teacher never uses concrete real-world analogies or everyday situations to explain the concept, instead only repeating abstract references to similar mathematical cases and misconceptions.\"}\n```",
+    "quality_composite": 1.0,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T14:45:46.045192+00:00"
+}

@@ -1,0 +1,66 @@
+{
+  "state": {
+    "case_id": "case_17",
+    "misconception_label": "Does not understand that 2n represents an even number",
+    "misconception_features": [
+      0.0,
+      17.0,
+      3.0,
+      47.0
+    ],
+    "persona": "rule_based",
+    "architecture": "baseline",
+    "student_leg": "leg_a",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T10:57:32.666662Z",
+      "seed": 923,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-12T10:57:37.025445Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: Which of these shows part of the proof that the sum of two odd numbers is even? I got \\( \\begin{array}{l}2 n+(2 m+1) \\\\ =2(n+m)+1\\end{array} \\) because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "There is a specific rule for determining if a number is even or odd. Step 1 is to identify the operation being performed; step 2 is to apply the rule for that operation. In this case, remember that 2n represents an even number.",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Okay, I think I get that 2n is supposed to be even, but I'm still confused about how that works with the odd numbers. So if 2n is even, what does that mean when I add it to 2m + 1? Does that change anything?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Remember that when you add an even number (2n) to any number, the result will always be an even number. In this case, when you add 2n to 2m + 1, the sum will still be even. So, the sum of two odd numbers will always be even.",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 1,
+    "R3": 2,
+    "R4": 1,
+    "R5": 1,
+    "R6": 2,
+    "justification_pass1": "The teacher directly tells the student that 2n is even but provides mathematically incorrect reasoning in Turn 3 (claiming 2n + (2m+1) is even, when it's actually odd), fails to engage with the student's actual work or require reasoning, and the student shows no improvement in understanding the original problem about sum of two odd numbers.",
+    "justification_pass2": "While the teacher mentions explicit steps and rules in Turn 1, they provide incorrect mathematical information in Turn 3 (claiming 2n + (2m+1) is even and that adding an even number to any number always yields an even number), which undermines the procedural accuracy central to rule-based instruction.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 1,\n  \"R3\": 2,\n  \"R4\": 1,\n  \"R5\": 1,\n  \"brief_justification\": \"The teacher directly tells the student that 2n is even but provides mathematically incorrect reasoning in Turn 3 (claiming 2n + (2m+1) is even, when it's actually odd), fails to engage with the student's actual work or require reasoning, and the student shows no improvement in understanding the original problem about sum of two odd numbers.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 2, \"brief_justification\": \"While the teacher mentions explicit steps and rules in Turn 1, they provide incorrect mathematical information in Turn 3 (claiming 2n + (2m+1) is even and that adding an even number to any number always yields an even number), which undermines the procedural accuracy central to rule-based instruction.\"}\n```",
+    "quality_composite": 1.6666666666666667,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T10:57:44.966858+00:00"
+}

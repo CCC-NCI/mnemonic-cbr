@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_22",
+    "misconception_label": "Does not realise that adding a larger number gives a larger answer",
+    "misconception_features": [
+      0.0,
+      22.0,
+      2.0,
+      98.0
+    ],
+    "persona": "traditional",
+    "architecture": "pure_cbr_llm",
+    "student_leg": "leg_a",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T17:30:55.788694Z",
+      "seed": 1185,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T17:31:01.211351Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: Tom and Katie are discussing related calculations Tom says if you know that \\( 3748+426=4174 \\), then \\( 3748+427 \\) must equal \\( \\mathbf{4 1 7 5} \\) Katie says if you know that \\( 3748-426=3322 \\), then \\( 3748 \\) - \\( 427 \\) must equal \\( \\mathbf{3 3 2 3} \\) Who is correct? I got Only Katie because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's focus on the addition example first. It seems like you might have made a similar mistake as in the case of adding powers of 10. Let's walk through the reasoning step by step to see where the misconception might be happening. Why do you think Katie's answer might be correct in this situation?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "I think Katie's answer might be correct because when you subtract a bigger number, it makes the answer smaller, right? But with Tom's example, I'm not sure why adding a bigger number would change the answer like that. Can you help me understand why \\( 3748 + 427 \\) isn't just \\( 4175 \\)?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's focus on the misconception that adding a larger number gives a larger answer. In the case of adding powers of 10, we saw that this misconception led to selecting the wrong answer. Similarly, in this addition problem, adding a larger number does not always result in a larger answer. Let's work through the steps together to see why \\( 3748 + 427 \\) is not equal to \\( 4175 \\).",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "Okay, I think I get that adding a bigger number should give a bigger answer, but I'm still confused about how to actually work out \\( 3748 + 427 \\). If \\( 3748 + 426 = 4174 \\), then how do we go from there to find \\( 3748 + 427 \\)? Can you show me how to do that step by step?",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 1,
+    "R2": 2,
+    "R3": 1,
+    "R4": 1,
+    "R5": 1,
+    "R6": 2,
+    "justification_pass1": "The teacher incorrectly states that 'adding a larger number does not always result in a larger answer' (Turn 3), which is mathematically false, and fails to address the student's actual confusion about how to use the related calculation, resulting in no visible improvement in student understanding.",
+    "justification_pass2": "The teacher repeatedly alludes to misconceptions and references prior examples without directly explaining the concept or providing a worked example, despite the student explicitly requesting step-by-step demonstration in Turn 4.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 1,\n  \"R2\": 2,\n  \"R3\": 1,\n  \"R4\": 1,\n  \"R5\": 1,\n  \"brief_justification\": \"The teacher incorrectly states that 'adding a larger number does not always result in a larger answer' (Turn 3), which is mathematically false, and fails to address the student's actual confusion about how to use the related calculation, resulting in no visible improvement in student understanding.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 2, \"brief_justification\": \"The teacher repeatedly alludes to misconceptions and references prior examples without directly explaining the concept or providing a worked example, despite the student explicitly requesting step-by-step demonstration in Turn 4.\"}\n```",
+    "quality_composite": 1.3333333333333333,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T17:31:08.071446+00:00"
+}

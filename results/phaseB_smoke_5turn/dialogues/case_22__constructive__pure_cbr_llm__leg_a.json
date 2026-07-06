@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_22",
+    "misconception_label": "Does not realise that adding a larger number gives a larger answer",
+    "misconception_features": [
+      0.0,
+      22.0,
+      2.0,
+      98.0
+    ],
+    "persona": "constructive",
+    "architecture": "pure_cbr_llm",
+    "student_leg": "leg_a",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T17:24:26.257130Z",
+      "seed": 1155,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T17:24:32.350334Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: Tom and Katie are discussing related calculations Tom says if you know that \\( 3748+426=4174 \\), then \\( 3748+427 \\) must equal \\( \\mathbf{4 1 7 5} \\) Katie says if you know that \\( 3748-426=3322 \\), then \\( 3748 \\) - \\( 427 \\) must equal \\( \\mathbf{3 3 2 3} \\) Who is correct? I got Only Katie because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "It seems like you may have a misconception about how adding larger numbers affects the result. Let's focus on why adding a larger number gives a larger answer in this case. Can you think about how the place value of each digit contributes to the total sum?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "I think I get what you're saying about place value, but I'm still confused. Like, if you add 426 to 3748 and then add 427, why does it change the answer? I thought it would just be like changing one number at the end. Can you explain that a bit more?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "It seems like you may be experiencing a similar misconception to when students add powers of 10 onto the wrong column. Let's focus on how the place value of each digit affects the total sum when adding larger numbers. Can you try breaking down the addition step by step to see how each digit contributes to the final answer?",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "Okay, I think I see what you're saying about place value. So when I add 426 to 3748, it changes the total because of the value of the digits in 427 compared to 426, right? But I'm still not sure how that makes the answer bigger. Can you show me how the numbers change when I add them?",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 2,
+    "R3": 1,
+    "R4": 3,
+    "R5": 1,
+    "R6": 2,
+    "justification_pass1": "The teacher repeatedly invokes place value without addressing the core misconception that adding a larger number yields a larger sum, and the student shows no improvement, ending by asking the teacher to show them rather than reasoning through it themselves.",
+    "justification_pass2": "The teacher repeatedly identifies misconceptions and asks the student to work through the problem independently, but fails to break the problem into manageable steps, provide scaffolding adjusted to the student's struggling responses, or offer the concrete support needed when the student explicitly requests help multiple times.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 2,\n  \"R3\": 1,\n  \"R4\": 3,\n  \"R5\": 1,\n  \"brief_justification\": \"The teacher repeatedly invokes place value without addressing the core misconception that adding a larger number yields a larger sum, and the student shows no improvement, ending by asking the teacher to show them rather than reasoning through it themselves.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 2, \"brief_justification\": \"The teacher repeatedly identifies misconceptions and asks the student to work through the problem independently, but fails to break the problem into manageable steps, provide scaffolding adjusted to the student's struggling responses, or offer the concrete support needed when the student explicitly requests help multiple times.\"}\n```",
+    "quality_composite": 1.6666666666666667,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T17:24:39.973156+00:00"
+}

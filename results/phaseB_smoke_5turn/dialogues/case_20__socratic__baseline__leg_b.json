@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_20",
+    "misconception_label": "Adds when calculating volume instead of multiplying",
+    "misconception_features": [
+      0.0,
+      20.0,
+      1.0,
+      58.0
+    ],
+    "persona": "socratic",
+    "architecture": "baseline",
+    "student_leg": "leg_b",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T17:00:25.371699Z",
+      "seed": 1044,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T17:00:31.253755Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: The volume of this cuboid is \\( 30 \\mathrm{~cm}^{3} \\) What length should replace the star? ![A cuboid, depth 2cm and height 3cm. The width is labelled with a star.](). I got \\( 25 \\mathrm{~cm} \\) because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let me ask you this: what would happen if you tried your method on a simpler version of the problem, such as a cube with side length 2cm?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Um, okay so if it's a cube with side 2cm, I'd add them together... so 2 + 2 + 2 = 6cm\u00b3? But wait, that doesn't seem right because I think the volume should be bigger than that. Is that not how you're supposed to do it?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let me ask you this: why do you think the volume of a cube with side length 2cm should be bigger than 6cm\u00b3?",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "Well, because like... a cube takes up more space than just adding the sides together, doesn't it? Like if I have a 2cm cube, it's actually quite a big block, not just 6 of something. But I'm not really sure how to work out what the actual volume should be then.",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 4,
+    "R2": 4,
+    "R3": 4,
+    "R4": 5,
+    "R5": 4,
+    "R6": 5,
+    "justification_pass1": "The teacher effectively engages the addition misconception through a well-calibrated simpler case that prompts the student to recognize the inadequacy of adding dimensions, leading to visible progress as the student begins to understand that volume requires more than addition, though multiplication hasn't yet been explicitly established.",
+    "justification_pass2": "The teacher perfectly exemplifies the Socratic method by using a simpler counterexample (the cube) to expose the student's flawed reasoning about volume calculation, asking probing questions rather than giving direct answers, and guiding the student to recognize their own misconception through questioning.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 4,\n  \"R2\": 4,\n  \"R3\": 4,\n  \"R4\": 5,\n  \"R5\": 4,\n  \"brief_justification\": \"The teacher effectively engages the addition misconception through a well-calibrated simpler case that prompts the student to recognize the inadequacy of adding dimensions, leading to visible progress as the student begins to understand that volume requires more than addition, though multiplication hasn't yet been explicitly established.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 5, \"brief_justification\": \"The teacher perfectly exemplifies the Socratic method by using a simpler counterexample (the cube) to expose the student's flawed reasoning about volume calculation, asking probing questions rather than giving direct answers, and guiding the student to recognize their own misconception through questioning.\"}\n```",
+    "quality_composite": 4.0,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T17:00:38.270155+00:00"
+}

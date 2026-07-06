@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_13",
+    "misconception_label": "Answers as if there are 100 minutes in an hour when changing from hours to minutes",
+    "misconception_features": [
+      0.0,
+      13.0,
+      1.0,
+      29.0
+    ],
+    "persona": "constructive",
+    "architecture": "baseline",
+    "student_leg": "leg_b",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T15:47:50.943001Z",
+      "seed": 704,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T15:47:57.284221Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: Hannah's journey to camp is \\( 3 \\) hours and \\( 16 \\) minutes. Tori's journey to camp is \\( 214 \\) minutes. What is the difference in their journeys in minutes? I got \\( 102 \\) minutes because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's go back to the part you do know, and build the next step from there. Remember, when converting hours to minutes, there are 60 minutes in 1 hour.",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Oh right, 60 minutes in an hour, not 100 - I think I was mixing that up. So if Hannah's journey is 3 hours, that would be 3 times 60, which is... 180 minutes? Then I need to add the 16 minutes on top of that?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's keep building from where you left off. You're correct that Hannah's journey of 3 hours would be 180 minutes. Now, how would you add the additional 16 minutes to that total?",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "So I'd add 180 plus 16, which gives me 196 minutes for Hannah's journey. Then I need to subtract Tori's 214 minutes from that to find the difference, right?",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 4,
+    "R2": 3,
+    "R3": 4,
+    "R4": 5,
+    "R5": 5,
+    "R6": 5,
+    "justification_pass1": "The teacher directly addresses the 60-vs-100 misconception, provides appropriately calibrated scaffolding, and the student demonstrates clear correction of the error by independently applying the correct conversion and completing the problem.",
+    "justification_pass2": "The teacher exemplifies the constructive strategy by identifying the student's foundational knowledge (60 minutes per hour), scaffolding step-by-step through the conversion process, and adjusting support by confirming correct reasoning before prompting the next manageable step.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 4,\n  \"R2\": 3,\n  \"R3\": 4,\n  \"R4\": 5,\n  \"R5\": 5,\n  \"brief_justification\": \"The teacher directly addresses the 60-vs-100 misconception, provides appropriately calibrated scaffolding, and the student demonstrates clear correction of the error by independently applying the correct conversion and completing the problem.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 5, \"brief_justification\": \"The teacher exemplifies the constructive strategy by identifying the student's foundational knowledge (60 minutes per hour), scaffolding step-by-step through the conversion process, and adjusting support by confirming correct reasoning before prompting the next manageable step.\"}\n```",
+    "quality_composite": 3.6666666666666665,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T15:48:03.531008+00:00"
+}

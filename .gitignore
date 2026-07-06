@@ -1,0 +1,16 @@
+# API keys — never commit
+keys.txt
+.env
+*.key
+
+# Python temp files
+__pycache__/
+*.pyc
+*.pyo
+
+# macOS
+.DS_Store
+
+# IDE
+.vscode/
+.idea/

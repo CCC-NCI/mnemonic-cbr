@@ -1,0 +1,65 @@
+{
+  "state": {
+    "case_id": "case_1",
+    "misconception_label": "Does not know that to factorise a quadratic expression, to find two numbers that add to give the coefficient of the x term, and multiply to give the non variable term",
+    "misconception_features": [
+      0.0,
+      1.0,
+      3.0,
+      59.0
+    ],
+    "persona": "traditional",
+    "architecture": "hybrid",
+    "student_leg": "leg_a",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T06:46:08.077388Z",
+      "seed": 141,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "ended_at": "2026-05-12T06:46:12.911006Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: Simplify the following, if possible: \\( \\frac{m^{2}+2 m-3}{m-3} \\). I got \\( m+1 \\) because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's focus on factorising quadratic expressions. Remember, we need to find two numbers that add to give the coefficient of the x term and multiply to give the constant term. Let's work through some examples together to solidify this concept. Can you think of any numbers that fit these criteria for the expression you mentioned?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Okay, so I think I need to find two numbers that add to 2 and multiply to -3 for the expression \\( m^2 + 2m - 3 \\). But I'm not really sure how to find those numbers. Can you help me figure out what they are?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's focus on finding the two numbers that add to give 2 and multiply to give -3 for the expression \\( m^2 + 2m - 3 \\). Remember, it's important to factorise the expression correctly to simplify it. Can you think of two numbers that fit these criteria?",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 4,
+    "R2": 3,
+    "R3": 2,
+    "R4": 5,
+    "R5": 3,
+    "R6": 2,
+    "justification_pass1": "The teacher correctly identifies and addresses the factorisation misconception with accurate mathematics, but repeatedly asks the same question without providing scaffolding when the student explicitly asks for help, and while the student shows understanding of the criteria by Turn 2, they don't demonstrate ability to apply it independently.",
+    "justification_pass2": "The teacher repeatedly asks the student to find the numbers themselves rather than directly explaining or providing worked examples, which contradicts the traditional strategy of direct explanation with worked examples.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 4,\n  \"R2\": 3,\n  \"R3\": 2,\n  \"R4\": 5,\n  \"R5\": 3,\n  \"brief_justification\": \"The teacher correctly identifies and addresses the factorisation misconception with accurate mathematics, but repeatedly asks the same question without providing scaffolding when the student explicitly asks for help, and while the student shows understanding of the criteria by Turn 2, they don't demonstrate ability to apply it independently.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 2, \"brief_justification\": \"The teacher repeatedly asks the student to find the numbers themselves rather than directly explaining or providing worked examples, which contradicts the traditional strategy of direct explanation with worked examples.\"}\n```",
+    "quality_composite": 3.0,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T06:46:19.524339+00:00"
+}

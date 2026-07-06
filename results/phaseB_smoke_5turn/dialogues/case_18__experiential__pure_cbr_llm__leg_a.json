@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_18",
+    "misconception_label": "Assumes that an arrow on a number line starts at zero",
+    "misconception_features": [
+      0.0,
+      18.0,
+      2.0,
+      73.0
+    ],
+    "persona": "experiential",
+    "architecture": "pure_cbr_llm",
+    "student_leg": "leg_a",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T16:43:21.484419Z",
+      "seed": 965,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T16:43:26.574132Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: ![Number line with -12 and -7 marked. Starting at -12, follow an arrow pointing to the right labelled +10. Then there is an arrow labelled b pointing to the left, which ends at -7 on the number line.]() What is the value of \\( b \\) ? I got \\( -7 \\) because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Think of the number line as a journey. Starting at -12, you move 10 steps to the right. Then you need to move back in the opposite direction to reach -7. What number do you land on if you take those steps?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Okay, so if I start at -12 and move 10 steps to the right, I think I land on -2. But then if I have to go back to -7, I\u2019m not sure how to figure out what \\( b \\) is. Do I just count how many steps I need to go back from -2 to -7?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Think of the number line like a road trip. You started at -12 and drove 10 miles to the right, landing at -2. Now, when you drive back to -7, you need to think about the total distance you traveled, not just the last segment. What would be the total number of miles you drove from -12 to -7?",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "Okay, so I think I get it a bit better now. If I start at -12 and go to -2, that\u2019s 10 steps to the right. Then from -2 to -7, I have to go back 5 steps. So, does that mean \\( b \\) is -5? But I\u2019m still confused about how to figure out the value of \\( b \\) from that. Can you help me with that?",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 3,
+    "R3": 2,
+    "R4": 2,
+    "R5": 3,
+    "R6": 5,
+    "justification_pass1": "The teacher uses journey metaphors but never directly addresses the student's misconception about arrows starting at zero, and introduces confusing language about 'total distance' that conflates the problem; the student does improve from -7 to -5 but remains confused about what b represents.",
+    "justification_pass2": "The teacher consistently uses concrete real-world analogies (journey, road trip with miles driven) to ground the abstract number line problem in everyday experiences, which is a textbook example of the experiential strategy.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 3,\n  \"R3\": 2,\n  \"R4\": 2,\n  \"R5\": 3,\n  \"brief_justification\": \"The teacher uses journey metaphors but never directly addresses the student's misconception about arrows starting at zero, and introduces confusing language about 'total distance' that conflates the problem; the student does improve from -7 to -5 but remains confused about what b represents.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 5, \"brief_justification\": \"The teacher consistently uses concrete real-world analogies (journey, road trip with miles driven) to ground the abstract number line problem in everyday experiences, which is a textbook example of the experiential strategy.\"}\n```",
+    "quality_composite": 2.3333333333333335,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T16:43:32.923493+00:00"
+}

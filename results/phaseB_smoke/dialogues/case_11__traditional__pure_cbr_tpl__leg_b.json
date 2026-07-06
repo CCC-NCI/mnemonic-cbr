@@ -1,0 +1,66 @@
+{
+  "state": {
+    "case_id": "case_11",
+    "misconception_label": "Struggles to visualise nets of 3D shapes",
+    "misconception_features": [
+      0.0,
+      11.0,
+      3.0,
+      31.0
+    ],
+    "persona": "traditional",
+    "architecture": "pure_cbr_tpl",
+    "student_leg": "leg_b",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T10:04:40.678194Z",
+      "seed": 638,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-12T10:04:42.589477Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: This is the net of a... ![A circle touching a sector](). I got Triangle because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's think about this. From similar cases:\n  1. Topic: Identify the net of a non-prism. Correct answer (C): Triangularbased pyramid. Student selected: Triangle. Underlying misconception: Names one of the faces of a 3D shape rather than the 3D shape name. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.\n  2. Topic: Identify and count the faces, vertices and edges of a 3D shape. Correct answer (B): \\( 1 \\). Student selected: \\( 0 \\). Underlying misconception: Believes only straight lines count as edges on 3D shapes. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.\n  3. Topic: Identify cross sections of 3D shapes. Correct answer (C): Cuboid. Student selected: Rectangle. Underlying misconception: Does not know that a solid is a 3D shape. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Oh right, I see what you mean - I said \"Triangle\" but that's just one of the flat shapes on the net, not the actual 3D shape itself, isn't it? So if there's a circle and a sector, when I fold them up together, what 3D shape would that actually make?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's think about this. From similar cases:\n  1. Topic: Identify the net of a non-prism. Correct answer (C): Triangularbased pyramid. Student selected: Triangle. Underlying misconception: Names one of the faces of a 3D shape rather than the 3D shape name. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.\n  2. Topic: Identify and count the faces, vertices and edges of a 3D shape. Correct answer (B): \\( 1 \\). Student selected: \\( 0 \\). Underlying misconception: Believes only straight lines count as edges on 3D shapes. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.\n  3. Topic: Identify cross sections of 3D shapes. Correct answer (C): Cuboid. Student selected: Rectangle. Underlying misconception: Does not know that a solid is a 3D shape. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 1,
+    "R2": 1,
+    "R3": 1,
+    "R4": 2,
+    "R5": 1,
+    "R6": 1,
+    "justification_pass1": "The teacher merely repeats identical generic case examples without addressing the student's specific question about how a circle and sector fold into a 3D shape, failing to engage with the misconception or scaffold the student's emerging understanding.",
+    "justification_pass2": "The teacher does not explain anything directly, provide worked examples, or check understanding; instead, they repeatedly paste irrelevant case examples without any actual instruction or engagement with the student's question.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 1,\n  \"R2\": 1,\n  \"R3\": 1,\n  \"R4\": 2,\n  \"R5\": 1,\n  \"brief_justification\": \"The teacher merely repeats identical generic case examples without addressing the student's specific question about how a circle and sector fold into a 3D shape, failing to engage with the misconception or scaffold the student's emerging understanding.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 1, \"brief_justification\": \"The teacher does not explain anything directly, provide worked examples, or check understanding; instead, they repeatedly paste irrelevant case examples without any actual instruction or engagement with the student's question.\"}\n```",
+    "quality_composite": 1.0,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T10:04:49.340925+00:00"
+}

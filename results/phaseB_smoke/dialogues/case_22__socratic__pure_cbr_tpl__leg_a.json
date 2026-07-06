@@ -1,0 +1,66 @@
+{
+  "state": {
+    "case_id": "case_22",
+    "misconception_label": "Does not realise that adding a larger number gives a larger answer",
+    "misconception_features": [
+      0.0,
+      22.0,
+      2.0,
+      98.0
+    ],
+    "persona": "socratic",
+    "architecture": "pure_cbr_tpl",
+    "student_leg": "leg_a",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T11:41:07.378583Z",
+      "seed": 1147,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-12T11:41:09.287421Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: Tom and Katie are discussing related calculations Tom says if you know that \\( 3748+426=4174 \\), then \\( 3748+427 \\) must equal \\( \\mathbf{4 1 7 5} \\) Katie says if you know that \\( 3748-426=3322 \\), then \\( 3748 \\) - \\( 427 \\) must equal \\( \\mathbf{3 3 2 3} \\) Who is correct? I got Only Katie because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's think about this. From similar cases:\n  1. Topic: Find 100 more than a given number. Correct answer (A): \\( 73,080 \\). Student selected: \\( 73,980 \\). Underlying misconception: When adding powers of 10 adds onto the wrong column. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.\n  2. Topic: Divide decimals by 1000. Correct answer (A): \\( 0.02304 \\). Student selected: \\( 0.2304 \\). Underlying misconception: When dividing involving a power of 10, gives an answer 10 times bigger than it should be. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.\n  3. Topic: Add fractions involving mixed number fractions with the same denominator. Correct answer (D): \\( 2 \\). Student selected: \\( \\frac{4}{3} \\). Underlying misconception: Thinks you add the number of wholes to the numerator when converting a mixed number to an improper fraction.. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Okay, I think I get what you're saying. So, if Tom is adding \\( 427 \\) instead of \\( 426 \\), the answer should actually be bigger than \\( 4174 \\), right? But I'm still confused about how Katie's answer is wrong. Can you help me understand why \\( 3748 - 427 \\) isn't \\( 3 3 2 3 \\)?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's think about this. From similar cases:\n  1. Topic: Find 100 more than a given number. Correct answer (A): \\( 73,080 \\). Student selected: \\( 73,980 \\). Underlying misconception: When adding powers of 10 adds onto the wrong column. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.\n  2. Topic: Divide decimals by 1000. Correct answer (A): \\( 0.02304 \\). Student selected: \\( 0.2304 \\). Underlying misconception: When dividing involving a power of 10, gives an answer 10 times bigger than it should be. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.\n  3. Topic: Add fractions involving mixed number fractions with the same denominator. Correct answer (D): \\( 2 \\). Student selected: \\( \\frac{4}{3} \\). Underlying misconception: Thinks you add the number of wholes to the numerator when converting a mixed number to an improper fraction.. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 1,
+    "R2": 1,
+    "R3": 1,
+    "R4": 1,
+    "R5": 2,
+    "R6": 1,
+    "justification_pass1": "The teacher provides completely irrelevant examples from unrelated topics instead of addressing the student's misconception about how adding/subtracting larger numbers affects results, making no meaningful pedagogical progress despite the student showing some improvement in Turn 2.",
+    "justification_pass2": "The teacher does not ask any probing questions, provide counterexamples, or guide discovery; instead, they repeatedly paste irrelevant examples from unrelated math topics that do not address the student's specific problem about addition and subtraction.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 1,\n  \"R2\": 1,\n  \"R3\": 1,\n  \"R4\": 1,\n  \"R5\": 2,\n  \"brief_justification\": \"The teacher provides completely irrelevant examples from unrelated topics instead of addressing the student's misconception about how adding/subtracting larger numbers affects results, making no meaningful pedagogical progress despite the student showing some improvement in Turn 2.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 1, \"brief_justification\": \"The teacher does not ask any probing questions, provide counterexamples, or guide discovery; instead, they repeatedly paste irrelevant examples from unrelated math topics that do not address the student's specific problem about addition and subtraction.\"}\n```",
+    "quality_composite": 1.0,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T11:41:16.052826+00:00"
+}

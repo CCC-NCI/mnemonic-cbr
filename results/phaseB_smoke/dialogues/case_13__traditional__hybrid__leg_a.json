@@ -1,0 +1,66 @@
+{
+  "state": {
+    "case_id": "case_13",
+    "misconception_label": "Answers as if there are 100 minutes in an hour when changing from hours to minutes",
+    "misconception_features": [
+      0.0,
+      13.0,
+      1.0,
+      29.0
+    ],
+    "persona": "traditional",
+    "architecture": "hybrid",
+    "student_leg": "leg_a",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T10:23:52.309840Z",
+      "seed": 741,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-12T10:23:56.799280Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: Hannah's journey to camp is \\( 3 \\) hours and \\( 16 \\) minutes. Tori's journey to camp is \\( 214 \\) minutes. What is the difference in their journeys in minutes? I got \\( 102 \\) minutes because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "First, let's convert Hannah's journey to minutes. Remember, there are 60 minutes in an hour, not 100. Once we have both times in minutes, we can find the difference. Can you try converting the hours to minutes for both journeys again?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Okay, so if I change Hannah's journey to minutes, I should multiply the hours by 60, right? So, \\( 3 \\) hours would be \\( 3 \\times 60 = 180 \\) minutes. But then I add the \\( 16 \\) minutes, so that makes \\( 196 \\) minutes for Hannah. Is that right? I'm still a bit confused about how to find the difference after that.",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Great job on converting Hannah's journey to minutes! Now, let's do the same for Tori's journey by remembering that there are 60 minutes in an hour. Once we have both times in minutes, we can find the difference by subtracting the two values. Can you try converting Tori's journey to minutes and then find the difference between their journeys?",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 3,
+    "R2": 2,
+    "R3": 2,
+    "R4": 2,
+    "R5": 4,
+    "R6": 2,
+    "justification_pass1": "The teacher directly addresses the 100-minutes misconception and the student successfully corrects Hannah's conversion, but Turn 3 contains a mathematical error (asking to convert Tori's already-given minutes) and provides minimal cognitive challenge by essentially telling the student what to do rather than probing their understanding.",
+    "justification_pass2": "The teacher uses guided questioning rather than direct explanation with worked examples, which is inconsistent with the traditional strategy of explicitly demonstrating the solution method.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 3,\n  \"R2\": 2,\n  \"R3\": 2,\n  \"R4\": 2,\n  \"R5\": 4,\n  \"brief_justification\": \"The teacher directly addresses the 100-minutes misconception and the student successfully corrects Hannah's conversion, but Turn 3 contains a mathematical error (asking to convert Tori's already-given minutes) and provides minimal cognitive challenge by essentially telling the student what to do rather than probing their understanding.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 2, \"brief_justification\": \"The teacher uses guided questioning rather than direct explanation with worked examples, which is inconsistent with the traditional strategy of explicitly demonstrating the solution method.\"}\n```",
+    "quality_composite": 2.3333333333333335,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T10:24:03.353271+00:00"
+}

@@ -1,0 +1,66 @@
+{
+  "state": {
+    "case_id": "case_16",
+    "misconception_label": "Divides total amount by each side of the ratio instead of dividing by the sum of the parts",
+    "misconception_features": [
+      0.0,
+      16.0,
+      3.0,
+      83.0
+    ],
+    "persona": "rule_based",
+    "architecture": "pure_cbr_llm",
+    "student_leg": "leg_a",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T10:48:31.697376Z",
+      "seed": 875,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-12T10:48:36.605706Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: In the diagram, AN : NB \\( =3: 5 \\) What is the distance AN? ![A line that begins with point A, ends with point B, and has point N in between. The entire length of the line measures 48 m.](). I got \\( 16 \\mathrm{~m} \\) because I added the parts of the ratio as if they were a total.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "You divided by each side of the ratio, but you should divide by the sum of the parts instead. Let's correct this by finding the sum of the parts in the ratio \\(3:5\\) and then dividing the total length of 48m by that sum.",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Okay, so I think I get it a bit better now. The sum of the parts in the ratio \\(3:5\\) is \\(8\\) (because \\(3 + 5 = 8\\)). So, I should divide \\(48\\) by \\(8\\) instead of just dividing by \\(3\\) and \\(5\\) separately. But what do I do with the \\(3\\) and \\(5\\) after that?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "You are correct that the sum of the parts in the ratio \\(3:5\\) is \\(8\\). After dividing \\(48\\) by \\(8\\) to find the value of each part, you should multiply this value by the specific part in the ratio to find the distance of AN. So, in this case, you would multiply \\(6\\) by \\(3\\) to get the distance of AN.",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 4,
+    "R2": 2,
+    "R3": 3,
+    "R4": 5,
+    "R5": 3,
+    "R6": 5,
+    "justification_pass1": "The teacher directly addresses the specific misconception and provides mathematically correct guidance, but does most of the reasoning for the student rather than eliciting it, and while the student shows some progress in understanding the sum of parts, they still need the final step explained to them rather than working it out.",
+    "justification_pass2": "The teacher consistently provides explicit procedural steps (divide by sum of parts, then multiply by specific ratio part), gives direct corrective feedback on the student's error (dividing by each side separately), and clearly states the rule-based procedure throughout the dialogue.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 4,\n  \"R2\": 2,\n  \"R3\": 3,\n  \"R4\": 5,\n  \"R5\": 3,\n  \"brief_justification\": \"The teacher directly addresses the specific misconception and provides mathematically correct guidance, but does most of the reasoning for the student rather than eliciting it, and while the student shows some progress in understanding the sum of parts, they still need the final step explained to them rather than working it out.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 5, \"brief_justification\": \"The teacher consistently provides explicit procedural steps (divide by sum of parts, then multiply by specific ratio part), gives direct corrective feedback on the student's error (dividing by each side separately), and clearly states the rule-based procedure throughout the dialogue.\"}\n```",
+    "quality_composite": 3.0,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T10:48:45.310312+00:00"
+}

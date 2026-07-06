@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_1",
+    "misconception_label": "Does not know that to factorise a quadratic expression, to find two numbers that add to give the coefficient of the x term, and multiply to give the non variable term",
+    "misconception_features": [
+      0.0,
+      1.0,
+      3.0,
+      59.0
+    ],
+    "persona": "traditional",
+    "architecture": "pure_cbr_tpl",
+    "student_leg": "leg_b",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T13:21:57.354421Z",
+      "seed": 138,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T13:22:00.317932Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: Simplify the following, if possible: \\( \\frac{m^{2}+2 m-3}{m-3} \\). I got \\( m+1 \\) because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's think about this. From similar cases:\n  1. Topic: Factorise a quadratic expression in the form x\u00b2 + bx + c. Correct answer (C): Add to give \\( 5 \\) and multiply to give \\( 6 \\). Student selected: Add to give \\( 6 \\) and multiply to give \\( 5 \\). Underlying misconception: Does not know that to factorise a quadratic expression, to find two numbers that add to give the coefficient of the x term, and multiply to give the non variable term. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.\n  2. Topic: Factorise a quadratic expression in the form x\u00b2 + bx + c. Correct answer (C): \\( (x+1)(x+5) \\). Student selected: \\( (x+2)(x+3) \\). Underlying misconception: Does not know that to factorise a quadratic expression, to find two numbers that add to give the coefficient of the x term, and multiply to give the non variable term. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.\n  3. Topic: Factorise a quadratic expression in the form x\u00b2 + bx + c. Correct answer (B): \\( (x+3)(x+12) \\) \\( (x+3)(x+12) \\). Student selected: \\( (x+4)(x+9) \\) \\( (x+4)(x+9) \\). Underlying misconception: Believes that when factorising a quadratic, they can choose any two numbers that multiply to give the constant. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Oh right, so I need to find two numbers that add up to make the middle number AND multiply to make the last number? I think I see what you mean now - like I was just picking any numbers that multiply to give -3, but I wasn't checking if they also added up to 2. Is that what I did wrong?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's think about this. From similar cases:\n  1. Topic: Factorise a quadratic expression in the form x\u00b2 + bx + c. Correct answer (C): Add to give \\( 5 \\) and multiply to give \\( 6 \\). Student selected: Add to give \\( 6 \\) and multiply to give \\( 5 \\). Underlying misconception: Does not know that to factorise a quadratic expression, to find two numbers that add to give the coefficient of the x term, and multiply to give the non variable term. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.\n  2. Topic: Factorise a quadratic expression in the form x\u00b2 + bx + c. Correct answer (C): \\( (x+1)(x+5) \\). Student selected: \\( (x+2)(x+3) \\). Underlying misconception: Does not know that to factorise a quadratic expression, to find two numbers that add to give the coefficient of the x term, and multiply to give the non variable term. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.\n  3. Topic: Factorise a quadratic expression in the form x\u00b2 + bx + c. Correct answer (B): \\( (x+3)(x+12) \\) \\( (x+3)(x+12) \\). Student selected: \\( (x+4)(x+9) \\) \\( (x+4)(x+9) \\). Underlying misconception: Believes that when factorising a quadratic, they can choose any two numbers that multiply to give the constant. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "Yeah, that makes sense! So for my problem, I need to find two numbers that add to 2 and multiply to -3... would that be like 3 and -1? Because 3 plus -1 is 2, and 3 times -1 is -3?",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 1,
+    "R2": 1,
+    "R3": 1,
+    "R4": 3,
+    "R5": 4,
+    "R6": 1,
+    "justification_pass1": "The teacher merely repeats identical generic examples without engaging with the student's specific work or reasoning, yet the student somehow self-corrects and demonstrates improved understanding despite the lack of meaningful teaching intervention.",
+    "justification_pass2": "The teacher never directly explains the concept or provides worked examples, instead only presenting lists of similar cases without explanation, which completely fails to instantiate the traditional strategy of direct explanation with worked examples.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 1,\n  \"R2\": 1,\n  \"R3\": 1,\n  \"R4\": 3,\n  \"R5\": 4,\n  \"brief_justification\": \"The teacher merely repeats identical generic examples without engaging with the student's specific work or reasoning, yet the student somehow self-corrects and demonstrates improved understanding despite the lack of meaningful teaching intervention.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 1, \"brief_justification\": \"The teacher never directly explains the concept or provides worked examples, instead only presenting lists of similar cases without explanation, which completely fails to instantiate the traditional strategy of direct explanation with worked examples.\"}\n```",
+    "quality_composite": 1.0,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T13:22:07.538145+00:00"
+}

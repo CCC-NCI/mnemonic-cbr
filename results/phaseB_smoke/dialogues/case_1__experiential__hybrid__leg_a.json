@@ -1,0 +1,65 @@
+{
+  "state": {
+    "case_id": "case_1",
+    "misconception_label": "Does not know that to factorise a quadratic expression, to find two numbers that add to give the coefficient of the x term, and multiply to give the non variable term",
+    "misconception_features": [
+      0.0,
+      1.0,
+      3.0,
+      59.0
+    ],
+    "persona": "experiential",
+    "architecture": "hybrid",
+    "student_leg": "leg_a",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T06:42:24.199212Z",
+      "seed": 121,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "ended_at": "2026-05-12T06:42:28.282998Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: Simplify the following, if possible: \\( \\frac{m^{2}+2 m-3}{m-3} \\). I got \\( m+1 \\) because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Think of factorising a quadratic expression like finding two numbers that add up to the coefficient of the x term and multiply to give the constant term. It's like trying to figure out the right combination of ingredients for a recipe - you need to find the right pair that works together perfectly. In this case, for \\( \\frac{m^{2}+2 m-3}{m-3} \\), try to break down the expression into factors that fit this rule.",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Okay, I think I get what you're saying about finding two numbers that add to the middle number, which is 2, and multiply to give the last number, -3. But I'm not really sure how to find those numbers. Can you help me figure out what they are?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Think of it like trying to solve a puzzle where the pieces have to fit just right. In this case, the two numbers you're looking for are -1 and 3 because they add up to 2 and multiply to -3. So, factorise the expression using these numbers and see if it gives you the correct answer.",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 4,
+    "R2": 2,
+    "R3": 2,
+    "R4": 5,
+    "R5": 2,
+    "R6": 2,
+    "justification_pass1": "The teacher correctly identifies and addresses the factorising misconception with accurate mathematics, but ultimately gives away the answer (-1 and 3) when the student asks for help, reducing cognitive demand and providing little evidence the student can now apply the method independently.",
+    "justification_pass2": "While the teacher attempts to use analogies (recipe ingredients, puzzle pieces), these are superficial metaphors for abstract mathematical processes rather than concrete real-world situations that ground the mathematical concepts in experiential understanding.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 4,\n  \"R2\": 2,\n  \"R3\": 2,\n  \"R4\": 5,\n  \"R5\": 2,\n  \"brief_justification\": \"The teacher correctly identifies and addresses the factorising misconception with accurate mathematics, but ultimately gives away the answer (-1 and 3) when the student asks for help, reducing cognitive demand and providing little evidence the student can now apply the method independently.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 2, \"brief_justification\": \"While the teacher attempts to use analogies (recipe ingredients, puzzle pieces), these are superficial metaphors for abstract mathematical processes rather than concrete real-world situations that ground the mathematical concepts in experiential understanding.\"}\n```",
+    "quality_composite": 2.6666666666666665,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T06:42:35.389702+00:00"
+}

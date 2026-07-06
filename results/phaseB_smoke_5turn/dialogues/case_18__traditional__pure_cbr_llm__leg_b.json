@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_18",
+    "misconception_label": "Assumes that an arrow on a number line starts at zero",
+    "misconception_features": [
+      0.0,
+      18.0,
+      2.0,
+      73.0
+    ],
+    "persona": "traditional",
+    "architecture": "pure_cbr_llm",
+    "student_leg": "leg_b",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T16:47:40.305312Z",
+      "seed": 986,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T16:47:47.311265Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: ![Number line with -12 and -7 marked. Starting at -12, follow an arrow pointing to the right labelled +10. Then there is an arrow labelled b pointing to the left, which ends at -7 on the number line.]() What is the value of \\( b \\) ? I got \\( -7 \\) because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's focus on understanding how to read integers on a number line accurately. Remember, each dash doesn't always represent 1. Can you explain to me how you determined the value of \\( b \\) on the number line you provided?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Um, I think I just looked at where the arrow ended up, which was at -7, so I thought that was the answer. But now you're saying the dashes might not be 1 each? So do I need to work out what each dash is worth first, or... I'm confused about what I'm actually supposed to be finding with the arrow labelled b?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's clarify the misconception about assuming each dash on the number line represents 1. In this case, the arrow labeled \\( b \\) does not necessarily start at zero. Can you think about how we can determine the value of \\( b \\) without assuming the starting point?",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "Oh right, so the arrow b doesn't start at zero - it starts where the first arrow ended up? So I need to work out where the +10 arrow takes me from -12 first, and then that's where the b arrow starts from?",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 5,
+    "R2": 4,
+    "R3": 4,
+    "R4": 5,
+    "R5": 5,
+    "R6": 2,
+    "justification_pass1": "The teacher explicitly addresses the specific misconception that arrows start at zero (Turn 3), uses questioning to promote reasoning rather than telling, and the student demonstrates clear conceptual progress from confusion to understanding that the second arrow starts where the first ended.",
+    "justification_pass2": "The teacher uses questioning to guide discovery rather than directly explaining with worked examples, which is inconsistent with the traditional strategy of explicit instruction and demonstration.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 5,\n  \"R2\": 4,\n  \"R3\": 4,\n  \"R4\": 5,\n  \"R5\": 5,\n  \"brief_justification\": \"The teacher explicitly addresses the specific misconception that arrows start at zero (Turn 3), uses questioning to promote reasoning rather than telling, and the student demonstrates clear conceptual progress from confusion to understanding that the second arrow starts where the first ended.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 2, \"brief_justification\": \"The teacher uses questioning to guide discovery rather than directly explaining with worked examples, which is inconsistent with the traditional strategy of explicit instruction and demonstration.\"}\n```",
+    "quality_composite": 4.333333333333333,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T16:47:54.005619+00:00"
+}

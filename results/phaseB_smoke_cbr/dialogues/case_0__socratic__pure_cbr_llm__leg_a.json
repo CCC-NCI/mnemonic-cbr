@@ -1,0 +1,66 @@
+{
+  "state": {
+    "case_id": "case_0",
+    "misconception_label": "Confuses the order of operations, believes addition comes before multiplication",
+    "misconception_features": [
+      0.0,
+      0.0,
+      1.0,
+      70.0
+    ],
+    "persona": "socratic",
+    "architecture": "pure_cbr_llm",
+    "student_leg": "leg_a",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T08:05:17.240165Z",
+      "seed": 45,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "cbr_grounded",
+      "ended_at": "2026-05-12T08:05:24.573094Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: \\[ 3 \\times 2+4-5 \\] Where do the brackets need to go to make the answer equal \\( 13 \\) ? I got Does not need brackets because I worked left to right instead of following the order of operations.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Why do you think it's important to follow the order of operations when solving mathematical expressions? Can you explain how the order of operations affects the outcome of your calculations in this problem?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "I guess following the order of operations is important because it makes sure everyone gets the same answer. But I'm still not sure why multiplication should come before addition. If I just do it left to right, why isn't that okay? Can you explain that a bit more?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Why do you think it's necessary to prioritize multiplication over addition in this expression? Can you think of a situation where following the order of operations might lead to a different answer than working from left to right?",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 3,
+    "R3": 2,
+    "R4": 4,
+    "R5": 1,
+    "R6": 5,
+    "justification_pass1": "The teacher asks questions about order of operations but never directly addresses the student's specific left-to-right misconception or helps them understand why multiplication must precede addition, and the student shows no progress in understanding by the end, still asking for explanation of the same concept.",
+    "justification_pass2": "The teacher consistently uses probing questions to guide the student's thinking without ever directly explaining the answer or why order of operations matters, which is a textbook example of the Socratic method.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\"R1\": 2, \"R2\": 3, \"R3\": 2, \"R4\": 4, \"R5\": 1, \"brief_justification\": \"The teacher asks questions about order of operations but never directly addresses the student's specific left-to-right misconception or helps them understand why multiplication must precede addition, and the student shows no progress in understanding by the end, still asking for explanation of the same concept.\"}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 5, \"brief_justification\": \"The teacher consistently uses probing questions to guide the student's thinking without ever directly explaining the answer or why order of operations matters, which is a textbook example of the Socratic method.\"}\n```",
+    "quality_composite": 2.3333333333333335,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T08:05:32.662201+00:00"
+}

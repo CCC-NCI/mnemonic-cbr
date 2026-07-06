@@ -1,0 +1,66 @@
+{
+  "state": {
+    "case_id": "case_2",
+    "misconception_label": "Believes if you changed all values by the same proportion the range would not change",
+    "misconception_features": [
+      0.0,
+      2.0,
+      3.0,
+      39.0
+    ],
+    "persona": "experiential",
+    "architecture": "pure_ai",
+    "student_leg": "leg_a",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T08:28:37.576189Z",
+      "seed": 169,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "cbr_grounded",
+      "ended_at": "2026-05-12T08:28:42.165980Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: Tom and Katie are discussing the \\( 5 \\) plants with these heights: \\( 24 \\mathrm{~cm}, 17 \\mathrm{~cm}, 42 \\mathrm{~cm}, 26 \\mathrm{~cm}, 13 \\mathrm{~cm} \\) Tom says if all the plants were cut in half, the range wouldn't change. Katie says if all the plants grew by \\( 3 \\mathrm{~cm} \\) each, the range wouldn't change. Who do you agree with? I got Only\nTom because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's think about it in terms of a group of friends playing basketball. If everyone in the group grew taller by the same amount, would the tallest and shortest person in the group stay the same? Or would the range of heights change?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "I think if everyone grew taller by the same amount, the tallest and shortest person would still be the same, so the range wouldn't change. But I\u2019m not sure if that\u2019s right because I thought the range only depends on the numbers. Does it really change if they all grow by the same amount?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's imagine you and your friends are all given a dollar each. If everyone in the group earned double the money they started with, would the person with the most money and the person with the least money still be the same? Think about how this scenario relates to changing all the plant heights by the same amount.",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 3,
+    "R3": 2,
+    "R4": 2,
+    "R5": 1,
+    "R6": 5,
+    "justification_pass1": "The teacher uses analogies that confuse additive vs. multiplicative changes (the basketball analogy addresses addition correctly, but the money analogy conflates doubling with the original problem), and the student shows no improvement\u2014they correctly understood Katie's case initially but now express confusion about whether adding the same amount changes the range.",
+    "justification_pass2": "The teacher consistently uses concrete, relatable real-world analogies (basketball players' heights, friends earning money) to help the student understand the abstract mathematical concept of range, which is a textbook example of the experiential strategy.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 3,\n  \"R3\": 2,\n  \"R4\": 2,\n  \"R5\": 1,\n  \"brief_justification\": \"The teacher uses analogies that confuse additive vs. multiplicative changes (the basketball analogy addresses addition correctly, but the money analogy conflates doubling with the original problem), and the student shows no improvement\u2014they correctly understood Katie's case initially but now express confusion about whether adding the same amount changes the range.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 5, \"brief_justification\": \"The teacher consistently uses concrete, relatable real-world analogies (basketball players' heights, friends earning money) to help the student understand the abstract mathematical concept of range, which is a textbook example of the experiential strategy.\"}\n```",
+    "quality_composite": 2.3333333333333335,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T08:28:49.770518+00:00"
+}

@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_23",
+    "misconception_label": "Confuses rest and movement on a distance time graph",
+    "misconception_features": [
+      0.0,
+      23.0,
+      3.0,
+      62.0
+    ],
+    "persona": "experiential",
+    "architecture": "hybrid",
+    "student_leg": "leg_a",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T17:38:38.130748Z",
+      "seed": 1221,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T17:38:43.203165Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: This graph shows how far Fido the dog is from his home. What might the negative-sloping section represent? ![A graph with time (secs) on the horizontal axis and distance (m) on the vertical axis. The graph starts at the origin, travels in a straight line up and right, travels horizontally, then travels in a straight line down and right back to the x-axis. ](). I got Fido has fallen asleep because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Imagine you're watching a movie where the main character is walking away from their home, then stops for a break before walking back. The negative-sloping section represents the character moving away, pausing, then moving back towards their starting point. Just like in the movie, the negative slope on the graph shows Fido moving away from home and then returning.",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Oh, I think I get it a bit better now! So the negative slope means Fido is actually moving back towards home, not just resting. But what does it mean when the line is flat? Is he just standing still then?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Imagine you're looking at a map of a road trip. When the line is flat on the graph, it's like the car is cruising at a constant speed along a straight highway. Fido isn't standing still, he's actually moving steadily at the same distance from home.",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "Okay, I think I get it a bit more now! So when the line is flat, Fido is moving at a steady pace, but not changing how far he is from home. But what about the part where he goes up? Does that mean he\u2019s getting further away from home really quickly?",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 1,
+    "R3": 2,
+    "R4": 1,
+    "R5": 1,
+    "R6": 5,
+    "justification_pass1": "The teacher provides incorrect mathematical content (claiming flat lines mean constant movement rather than rest) and uses confusing analogies that fail to address the student's misconception, resulting in the student developing new confusion about flat sections representing steady movement rather than standing still.",
+    "justification_pass2": "The teacher consistently uses concrete, everyday analogies (watching a movie of someone walking, a road trip with a car on a highway) to explain abstract graph concepts, which is a textbook implementation of the experiential strategy.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 1,\n  \"R3\": 2,\n  \"R4\": 1,\n  \"R5\": 1,\n  \"brief_justification\": \"The teacher provides incorrect mathematical content (claiming flat lines mean constant movement rather than rest) and uses confusing analogies that fail to address the student's misconception, resulting in the student developing new confusion about flat sections representing steady movement rather than standing still.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 5, \"brief_justification\": \"The teacher consistently uses concrete, everyday analogies (watching a movie of someone walking, a road trip with a car on a highway) to explain abstract graph concepts, which is a textbook implementation of the experiential strategy.\"}\n```",
+    "quality_composite": 1.6666666666666667,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T17:38:50.182582+00:00"
+}

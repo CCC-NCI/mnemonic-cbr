@@ -1,0 +1,66 @@
+{
+  "state": {
+    "case_id": "case_12",
+    "misconception_label": "Thinks alternate angles are always equal",
+    "misconception_features": [
+      0.0,
+      12.0,
+      3.0,
+      25.0
+    ],
+    "persona": "experiential",
+    "architecture": "hybrid",
+    "student_leg": "leg_b",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T10:11:08.690528Z",
+      "seed": 672,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-12T10:11:12.989487Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: Tom and Katie are arguing about alternate angles. Tom says angles \\( p \\) and \\( q \\) are alternate. Katie says angles \\( p \\) and \\( q \\) are equal. Who is correct? ![Shows two non parallel lines that are intersected by another line. Angles P and Q are both on the outside of the lines and on opposite sides of the transversal.](). I got Only\nKatie because I assumed all the angles in the figure are equal.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's think about a see-saw. When one side goes up, the other side goes down. In this case, if angle \\( p \\) goes up, angle \\( q \\) goes down. So, they are not equal but instead alternate angles. Can you see how they are like the see-saw?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Oh, I think I get the see-saw thing - so alternate angles are on opposite sides like the see-saw going up and down. But wait, does that mean alternate angles are *always* equal then, or only sometimes? Because in my problem, p and q are on opposite sides of the line but they don't look the same size...",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Imagine you and a friend are playing on a see-saw. Even though you both take turns going up and down, your weights might be different, right? Just like how angles \\( p \\) and \\( q \\) can be on opposite sides but not necessarily equal in size. So, alternate angles are not always equal, just like how your weights on the see-saw might not be the same.",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 4,
+    "R2": 2,
+    "R3": 2,
+    "R4": 2,
+    "R5": 2,
+    "R6": 2,
+    "justification_pass1": "The teacher directly addresses the misconception that alternate angles are always equal, but the see-saw analogy is mathematically misleading (alternate angles ARE equal when lines are parallel, which is the standard definition), the cognitive demand is low with the teacher mostly telling rather than eliciting reasoning, and the student remains confused about when alternate angles are equal.",
+    "justification_pass2": "While the teacher attempts to use a concrete real-world analogy (see-saw), the analogy is mathematically misleading and confusing\u2014it incorrectly suggests alternate angles work like opposite movements and that unequal weights relate to unequal angles, which undermines rather than clarifies the mathematical concept.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 4,\n  \"R2\": 2,\n  \"R3\": 2,\n  \"R4\": 2,\n  \"R5\": 2,\n  \"brief_justification\": \"The teacher directly addresses the misconception that alternate angles are always equal, but the see-saw analogy is mathematically misleading (alternate angles ARE equal when lines are parallel, which is the standard definition), the cognitive demand is low with the teacher mostly telling rather than eliciting reasoning, and the student remains confused about when alternate angles are equal.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 2, \"brief_justification\": \"While the teacher attempts to use a concrete real-world analogy (see-saw), the analogy is mathematically misleading and confusing\u2014it incorrectly suggests alternate angles work like opposite movements and that unequal weights relate to unequal angles, which undermines rather than clarifies the mathematical concept.\"}\n```",
+    "quality_composite": 2.6666666666666665,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T10:11:20.412231+00:00"
+}

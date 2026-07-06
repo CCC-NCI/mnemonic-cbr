@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_20",
+    "misconception_label": "Adds when calculating volume instead of multiplying",
+    "misconception_features": [
+      0.0,
+      20.0,
+      1.0,
+      58.0
+    ],
+    "persona": "traditional",
+    "architecture": "hybrid",
+    "student_leg": "leg_a",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T17:10:15.983682Z",
+      "seed": 1091,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T17:10:21.746771Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: The volume of this cuboid is \\( 30 \\mathrm{~cm}^{3} \\) What length should replace the star? ![A cuboid, depth 2cm and height 3cm. The width is labelled with a star.](). I got \\( 25 \\mathrm{~cm} \\) because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "First, let's recall that to find the volume of a cuboid, we need to multiply the length, width, and height. In this case, we have the volume as \\(30 \\mathrm{~cm}^{3}\\) and the dimensions given are depth 2cm and height 3cm. Can you walk me through how you calculated the length of the missing side?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Okay, so I thought I just needed to add the depth and height together. I added \\(2 \\mathrm{~cm} + 3 \\mathrm{~cm}\\) and got \\(5 \\mathrm{~cm}\\), but then I thought maybe I needed to do something else to get to \\(30 \\mathrm{~cm}^{3}\\). How do I actually use those numbers to find the length?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "You're on the right track by recognizing that you need to do something else to find the length. Instead of adding the depth and height, remember that to find the volume of a cuboid, you need to multiply the dimensions together. Try multiplying the depth and height instead of adding them to get the correct length.",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "Okay, so if I multiply the depth and height, I would do \\(2 \\mathrm{~cm} \\times 3 \\mathrm{~cm} = 6 \\mathrm{~cm}^{2}\\). But I still don't get how to find the length from the volume of \\(30 \\mathrm{~cm}^{3}\\). Do I need to divide \\(30 \\mathrm{~cm}^{3}\\) by \\(6 \\mathrm{~cm}^{2}\\) to get the length?",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 4,
+    "R2": 3,
+    "R3": 3,
+    "R4": 5,
+    "R5": 4,
+    "R6": 2,
+    "justification_pass1": "The teacher directly addresses the adding vs. multiplying misconception and the student progresses from adding dimensions to correctly proposing division to find the missing length, though the teacher could have been more explicit about the volume formula structure earlier.",
+    "justification_pass2": "The teacher uses questioning and guided discovery rather than direct explanation with worked examples, which is inconsistent with the traditional strategy of explaining directly and providing clear worked examples upfront.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\"R1\": 4, \"R2\": 3, \"R3\": 3, \"R4\": 5, \"R5\": 4, \"brief_justification\": \"The teacher directly addresses the adding vs. multiplying misconception and the student progresses from adding dimensions to correctly proposing division to find the missing length, though the teacher could have been more explicit about the volume formula structure earlier.\"}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 2, \"brief_justification\": \"The teacher uses questioning and guided discovery rather than direct explanation with worked examples, which is inconsistent with the traditional strategy of explaining directly and providing clear worked examples upfront.\"}\n```",
+    "quality_composite": 3.3333333333333335,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T17:10:27.421745+00:00"
+}

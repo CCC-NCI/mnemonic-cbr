@@ -1,0 +1,53 @@
+{
+  "blind_id": "Dadf124dc9d",
+  "subset_row": {
+    "blind_id": "Dadf124dc9d",
+    "case_id": "case_16",
+    "persona": "traditional",
+    "architecture": "pure_cbr_tpl",
+    "student_leg": "leg_a",
+    "llm_R5": "4",
+    "llm_quality_composite": "1.0",
+    "llm_R6": "1",
+    "difficulty_band": "long",
+    "r5_band": "high",
+    "word_count": "81",
+    "attention_check_type": "",
+    "attention_check_rationale": "",
+    "file_path": "dialogues/case_16__traditional__pure_cbr_tpl__leg_a.json"
+  },
+  "primary_score": {
+    "R1": 1,
+    "R2": 1,
+    "R3": 1,
+    "R4": 3,
+    "R5": 4,
+    "R6": 1,
+    "justification_pass1": "The teacher merely presents unrelated example cases without engaging the student's specific misconception or providing scaffolded reasoning, yet the student somehow progresses independently to nearly correct understanding by Turn 4.",
+    "justification_pass2": "The teacher never provides direct explanation or worked examples, instead repeatedly presenting the same list of similar cases without walking through the solution, which completely fails to implement the traditional teaching strategy of clear, direct instruction.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 1,\n  \"R2\": 1,\n  \"R3\": 1,\n  \"R4\": 3,\n  \"R5\": 4,\n  \"brief_justification\": \"The teacher merely presents unrelated example cases without engaging the student's specific misconception or providing scaffolded reasoning, yet the student somehow progresses independently to nearly correct understanding by Turn 4.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 1, \"brief_justification\": \"The teacher never provides direct explanation or worked examples, instead repeatedly presenting the same list of similar cases without walking through the solution, which completely fails to implement the traditional teaching strategy of clear, direct instruction.\"}\n```",
+    "quality_composite": 1.0,
+    "is_complete": true
+  },
+  "secondary_score": {
+    "R1": 1,
+    "R2": 1,
+    "R3": 1,
+    "R4": 4,
+    "R5": 1,
+    "R6": 1,
+    "justification_pass1": "The teacher repeatedly provides the same generic, irrelevant list of other problems, failing to engage with the student's specific misconception or questions, resulting in an implausible student trajectory.",
+    "justification_pass2": "The teacher does not provide a direct explanation or a worked example, instead repeating an abstract list of similar cases that fails to address the student's specific questions.",
+    "judge_provider": "gemini",
+    "judge_model": "gemini-2.5-pro",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 1,\n  \"R2\": 1,\n  \"R3\": 1,\n  \"R4\": 4,\n  \"R5\": 1,\n  \"brief_justification\": \"The teacher repeatedly provides the same generic, irrelevant list of other problems, failing to engage with the student's specific misconception or questions, resulting in an implausible student trajectory.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\n  \"R6\": 1,\n  \"brief_justification\": \"The teacher does not provide a direct explanation or a worked example, instead repeating an abstract list of similar cases that fails to address the student's specific questions.\"\n}\n```"
+  }
+}

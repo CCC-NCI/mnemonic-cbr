@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_21",
+    "misconception_label": "When factorising a quadratic with a non-unit coefficient of x squared, believes that coefficient will be in front of both x terms in the factorised form",
+    "misconception_features": [
+      0.0,
+      21.0,
+      1.0,
+      74.0
+    ],
+    "persona": "constructive",
+    "architecture": "pure_ai",
+    "student_leg": "leg_a",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T17:14:09.700691Z",
+      "seed": 1109,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T17:14:19.668976Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: Step 1: Factorise the following expression \\( 3 x^{2}+5 x+2 \\). I got \\( (3 x+2)(3 x+1) \\) because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "It looks like you're on the right track with factoring the expression. Remember, when factoring a quadratic with a non-unit coefficient of x squared, you need to consider both the coefficient in front of x squared and the constant term. Can you try breaking down the expression further by factoring out the common factors?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Okay, I think I get that I need to think about the coefficients more carefully. So, if I break it down, should I be looking for numbers that multiply to give me \\(3 \\times 2 = 6\\) and add to \\(5\\)? But I'm still not sure how to include the \\(3\\) in the factors. Can you help me with that?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "You're on the right track with considering the product and sum of the constant term, but don't forget to also include the coefficient of \\(x^{2}\\) in your factorisation. Try factoring out the common factor of \\(3\\) first before finding the correct pair of numbers that multiply to \\(6\\) and add to \\(5\\). This will help you correctly incorporate the coefficient in front of \\(x^{2}\\) into the factorised form.",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "Okay, so if I factor out the \\(3\\) first, I get \\(3(x^{2} + \\frac{5}{3}x + \\frac{2}{3})\\). But then, how do I find the numbers that multiply to \\(6\\) and add to \\(\\frac{5}{3}\\)? That part still feels confusing to me!",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 2,
+    "R3": 1,
+    "R4": 1,
+    "R5": 1,
+    "R6": 2,
+    "justification_pass1": "The teacher fails to directly address the student's misconception about placing 3 in front of both x terms, gives mathematically incorrect advice about factoring out 3 from a quadratic that doesn't have 3 as a common factor, and the student becomes more confused rather than improving their understanding.",
+    "justification_pass2": "The teacher provides vague hints rather than breaking the problem into manageable steps, and gives misleading guidance (suggesting to factor out 3 first, which complicates rather than scaffolds the problem), failing to adjust support when the student becomes more confused.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 2,\n  \"R3\": 1,\n  \"R4\": 1,\n  \"R5\": 1,\n  \"brief_justification\": \"The teacher fails to directly address the student's misconception about placing 3 in front of both x terms, gives mathematically incorrect advice about factoring out 3 from a quadratic that doesn't have 3 as a common factor, and the student becomes more confused rather than improving their understanding.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\n  \"R6\": 2,\n  \"brief_justification\": \"The teacher provides vague hints rather than breaking the problem into manageable steps, and gives misleading guidance (suggesting to factor out 3 first, which complicates rather than scaffolds the problem), failing to adjust support when the student becomes more confused.\"\n}\n```",
+    "quality_composite": 1.6666666666666667,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T17:14:26.762813+00:00"
+}

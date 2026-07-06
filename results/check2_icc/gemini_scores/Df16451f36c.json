@@ -1,0 +1,53 @@
+{
+  "blind_id": "Df16451f36c",
+  "subset_row": {
+    "blind_id": "Df16451f36c",
+    "case_id": "case_7",
+    "persona": "constructive",
+    "architecture": "pure_ai",
+    "student_leg": "leg_b",
+    "llm_R5": "3",
+    "llm_quality_composite": "3.0",
+    "llm_R6": "5",
+    "difficulty_band": "medium",
+    "r5_band": "mid",
+    "word_count": "29",
+    "attention_check_type": "",
+    "attention_check_rationale": "",
+    "file_path": "dialogues/case_7__constructive__pure_ai__leg_b.json"
+  },
+  "primary_score": {
+    "R1": 4,
+    "R2": 2,
+    "R3": 3,
+    "R4": 5,
+    "R5": 3,
+    "R6": 5,
+    "justification_pass1": "The teacher explicitly identifies the specific misconception (dividing by 100 instead of 10) and provides mathematically correct guidance, but relies heavily on procedural rules rather than developing conceptual understanding, and while the student arrives at the correct answer, they still seek confirmation rather than demonstrating independent mastery.",
+    "justification_pass2": "The teacher exemplifies the constructive strategy by identifying the student's error, breaking the problem into manageable steps (first understanding how many times 10 goes into 43.2, then addressing decimal placement), providing scaffolded hints rather than direct answers, and adjusting support based on the student's demonstrated understanding at each turn.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 4,\n  \"R2\": 2,\n  \"R3\": 3,\n  \"R4\": 5,\n  \"R5\": 3,\n  \"brief_justification\": \"The teacher explicitly identifies the specific misconception (dividing by 100 instead of 10) and provides mathematically correct guidance, but relies heavily on procedural rules rather than developing conceptual understanding, and while the student arrives at the correct answer, they still seek confirmation rather than demonstrating independent mastery.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 5, \"brief_justification\": \"The teacher exemplifies the constructive strategy by identifying the student's error, breaking the problem into manageable steps (first understanding how many times 10 goes into 43.2, then addressing decimal placement), providing scaffolded hints rather than direct answers, and adjusting support based on the student's demonstrated understanding at each turn.\"}\n```",
+    "quality_composite": 3.0,
+    "is_complete": true
+  },
+  "secondary_score": {
+    "R1": 3,
+    "R2": 2,
+    "R3": 2,
+    "R4": 5,
+    "R5": 3,
+    "R6": 5,
+    "justification_pass1": "The teacher correctly identifies the misconception but then provides a procedural rule rather than helping the student reason from their initial correct estimation.",
+    "justification_pass2": "The teacher perfectly exemplifies the strategy by breaking the problem into steps and adjusting the level of scaffolding from a conceptual prompt to a direct rule based on the student's demonstrated need.",
+    "judge_provider": "gemini",
+    "judge_model": "gemini-2.5-pro",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 3,\n  \"R2\": 2,\n  \"R3\": 2,\n  \"R4\": 5,\n  \"R5\": 3,\n  \"brief_justification\": \"The teacher correctly identifies the misconception but then provides a procedural rule rather than helping the student reason from their initial correct estimation.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\n  \"R6\": 5,\n  \"brief_justification\": \"The teacher perfectly exemplifies the strategy by breaking the problem into steps and adjusting the level of scaffolding from a conceptual prompt to a direct rule based on the student's demonstrated need.\"\n}\n```"
+  }
+}

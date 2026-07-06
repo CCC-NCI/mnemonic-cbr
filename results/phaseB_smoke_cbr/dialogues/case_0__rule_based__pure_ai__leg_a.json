@@ -1,0 +1,66 @@
+{
+  "state": {
+    "case_id": "case_0",
+    "misconception_label": "Confuses the order of operations, believes addition comes before multiplication",
+    "misconception_features": [
+      0.0,
+      0.0,
+      1.0,
+      70.0
+    ],
+    "persona": "rule_based",
+    "architecture": "pure_ai",
+    "student_leg": "leg_a",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T08:11:28.325129Z",
+      "seed": 79,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "cbr_grounded",
+      "ended_at": "2026-05-12T08:11:32.360829Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: \\[ 3 \\times 2+4-5 \\] Where do the brackets need to go to make the answer equal \\( 13 \\) ? I got Does not need brackets because I worked left to right instead of following the order of operations.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "The correct order of operations is parentheses, exponents, multiplication and division (from left to right), and addition and subtraction (from left to right). You should perform the multiplication before the addition. In this case, the correct expression is: \\[ 3 \\times (2+4) - 5 \\] Keep in mind to follow the order of operations to get the correct answer.",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Oh, I see! So I should do the multiplication first before adding. But what if I wanted to add the numbers first? Would that change the answer a lot? I'm still a bit confused about when to use brackets.",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "It's great that you're thinking about different ways to approach the problem! If you wanted to add the numbers first, you would need to add parentheses around the addition operation to ensure it is done before the multiplication. So the expression would be: \\[ 3 \\times (2+4-5) \\]. Remember, the order of operations helps us simplify expressions in a consistent way. Keep practicing and you'll get the hang of it!",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 1,
+    "R3": 2,
+    "R4": 2,
+    "R5": 1,
+    "R6": 4,
+    "justification_pass1": "The teacher directly provides answers rather than eliciting reasoning, gives an incorrect solution in Turn 1 (should be 3\u00d7(2+4)-5=13 but states this as 'correct' without verification), provides another incorrect expression in Turn 3 (3\u00d7(2+4-5)=3\u00d71=3, not 13), and the student's Turn 2 response shows continued confusion about when brackets are needed, indicating the misconception persists.",
+    "justification_pass2": "The teacher consistently states explicit procedures (order of operations), provides worked examples with correct bracket placement, and gives direct corrective feedback on the procedural error, though the encouragement in Turn 3 adds a slightly supportive element beyond pure rule-based instruction.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 1,\n  \"R3\": 2,\n  \"R4\": 2,\n  \"R5\": 1,\n  \"brief_justification\": \"The teacher directly provides answers rather than eliciting reasoning, gives an incorrect solution in Turn 1 (should be 3\u00d7(2+4)-5=13 but states this as 'correct' without verification), provides another incorrect expression in Turn 3 (3\u00d7(2+4-5)=3\u00d71=3, not 13), and the student's Turn 2 response shows continued confusion about when brackets are needed, indicating the misconception persists.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 4, \"brief_justification\": \"The teacher consistently states explicit procedures (order of operations), provides worked examples with correct bracket placement, and gives direct corrective feedback on the procedural error, though the encouragement in Turn 3 adds a slightly supportive element beyond pure rule-based instruction.\"}\n```",
+    "quality_composite": 1.6666666666666667,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T08:11:40.748344+00:00"
+}

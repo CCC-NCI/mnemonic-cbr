@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_20",
+    "misconception_label": "Adds when calculating volume instead of multiplying",
+    "misconception_features": [
+      0.0,
+      20.0,
+      1.0,
+      58.0
+    ],
+    "persona": "traditional",
+    "architecture": "pure_cbr_llm",
+    "student_leg": "leg_b",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T17:09:16.868373Z",
+      "seed": 1086,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T17:09:21.845210Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: The volume of this cuboid is \\( 30 \\mathrm{~cm}^{3} \\) What length should replace the star? ![A cuboid, depth 2cm and height 3cm. The width is labelled with a star.](). I got \\( 25 \\mathrm{~cm} \\) because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "So, when calculating the volume of a cuboid, we need to multiply the length, width, and height together. In this case, the volume formula is \\( \\text{Volume} = \\text{length} \\times \\text{width} \\times \\text{height} \\). Can you try using this formula to find the correct length that replaces the star in the given cuboid?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Oh right, so I need to multiply them together, not add them? So if the volume is 30 and I have 2 and 3, then I'd do... star times 2 times 3 equals 30? So that would be star times 6 equals 30, which means the star is 5 cm?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "That's correct, you need to multiply the dimensions to find the volume. However, your calculation seems a bit off. Let's revisit the formula and work through it together to find the correct length that replaces the star in the cuboid.",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "Wait, I thought I got it right that time? Star times 2 times 3 equals 30, so star times 6 equals 30, which gives me 5 cm... but you said my calculation was off? Did I do the multiplication wrong or something?",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 3,
+    "R2": 2,
+    "R3": 1,
+    "R4": 1,
+    "R5": 3,
+    "R6": 2,
+    "justification_pass1": "The teacher initially addresses the multiplication vs. addition misconception and the student correctly solves the problem in Turn 2, but the teacher incorrectly tells the student their correct answer is wrong, demonstrating poor domain accuracy and inappropriate scaffolding that confuses rather than helps the student.",
+    "justification_pass2": "The teacher fails to provide direct explanation or worked examples as expected in traditional teaching, and incorrectly tells the student their correct calculation is wrong, undermining the clarity that is central to the traditional strategy.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 3,\n  \"R2\": 2,\n  \"R3\": 1,\n  \"R4\": 1,\n  \"R5\": 3,\n  \"brief_justification\": \"The teacher initially addresses the multiplication vs. addition misconception and the student correctly solves the problem in Turn 2, but the teacher incorrectly tells the student their correct answer is wrong, demonstrating poor domain accuracy and inappropriate scaffolding that confuses rather than helps the student.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 2, \"brief_justification\": \"The teacher fails to provide direct explanation or worked examples as expected in traditional teaching, and incorrectly tells the student their correct calculation is wrong, undermining the clarity that is central to the traditional strategy.\"}\n```",
+    "quality_composite": 2.0,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T17:09:29.124837+00:00"
+}

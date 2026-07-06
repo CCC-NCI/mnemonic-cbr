@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_14",
+    "misconception_label": "Stops iteration too early when solving equations",
+    "misconception_features": [
+      0.0,
+      14.0,
+      3.0,
+      85.0
+    ],
+    "persona": "experiential",
+    "architecture": "pure_cbr_llm",
+    "student_leg": "leg_a",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T16:00:50.894688Z",
+      "seed": 765,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T16:00:55.421377Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: \\( x_{n+1}=5-\\frac{1}{x_{n}} \\) Using a starting value of \\( x_{1}=2 \\), what is the solution to \\( x=5-\\frac{1}{x} \\) to \\( 2 \\) decimal places? I got \\( 4.78 \\) because I added the parts of the ratio as if they were a total.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Think of the iteration process as following a recipe. Just like in baking, each step is important to get the final result right. In this case, we need to make sure we're following the correct steps to find the solution to the equation. Let's walk through the reasoning together to reach the correct answer.",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Okay, I see what you mean about following the steps like a recipe. So, I guess I need to keep going with the iterations until I get really close to the answer? How many times should I do it to make sure I get the right answer?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Think of the iteration process like tuning a musical instrument. You need to keep adjusting until you hit the right note. In this case, keep iterating until you reach the required degree of accuracy specified in the question.",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "So, if I keep doing the iterations until I get really close to the answer, how do I know when I've got it to two decimal places? Like, do I just keep going until the numbers stop changing much?",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 1,
+    "R2": 2,
+    "R3": 1,
+    "R4": 3,
+    "R5": 2,
+    "R6": 2,
+    "justification_pass1": "The teacher uses vague metaphors (recipe, tuning instrument) that don't address the specific misconception of stopping iteration too early, and the student's final question shows they still don't understand the concrete criterion for convergence to two decimal places.",
+    "justification_pass2": "While the teacher uses analogies (recipe, tuning instrument), these are superficial metaphors that don't meaningfully connect the mathematical concept of iterative convergence to concrete real-world understanding, and they fail to help the student grasp the actual mathematical process.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\"R1\": 1, \"R2\": 2, \"R3\": 1, \"R4\": 3, \"R5\": 2, \"brief_justification\": \"The teacher uses vague metaphors (recipe, tuning instrument) that don't address the specific misconception of stopping iteration too early, and the student's final question shows they still don't understand the concrete criterion for convergence to two decimal places.\"}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 2, \"brief_justification\": \"While the teacher uses analogies (recipe, tuning instrument), these are superficial metaphors that don't meaningfully connect the mathematical concept of iterative convergence to concrete real-world understanding, and they fail to help the student grasp the actual mathematical process.\"}\n```",
+    "quality_composite": 1.3333333333333333,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T16:01:01.861550+00:00"
+}

@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_23",
+    "misconception_label": "Confuses rest and movement on a distance time graph",
+    "misconception_features": [
+      0.0,
+      23.0,
+      3.0,
+      62.0
+    ],
+    "persona": "constructive",
+    "architecture": "baseline",
+    "student_leg": "leg_a",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T17:34:57.767526Z",
+      "seed": 1203,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T17:35:04.107503Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: This graph shows how far Fido the dog is from his home. What might the negative-sloping section represent? ![A graph with time (secs) on the horizontal axis and distance (m) on the vertical axis. The graph starts at the origin, travels in a straight line up and right, travels horizontally, then travels in a straight line down and right back to the x-axis. ](). I got Fido has fallen asleep because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's go back to the part you do know, and build the next step from there. Can you think about how the graph might show Fido's movement when he is asleep?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "I guess if Fido is asleep, he wouldn't be moving, so maybe that part of the graph where it goes straight across means he\u2019s just staying still? But then I\u2019m not sure why it goes down after that. Does that mean he\u2019s moving back home?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's continue building on your understanding. You're correct that the straight line on the graph represents when Fido is staying still. Now, let's think about why the graph goes down after that.",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "Okay, so if the straight line means Fido is staying still, then maybe the part where it goes down means he\u2019s moving back home? But I\u2019m not sure how to tell if he\u2019s going back home or just moving away. How do we know which way he\u2019s going?",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 4,
+    "R2": 3,
+    "R3": 4,
+    "R4": 5,
+    "R5": 5,
+    "R6": 5,
+    "justification_pass1": "The teacher effectively addresses the specific misconception by guiding the student to recognize that horizontal lines represent rest (not negative slopes), and the student demonstrates clear progress from confusing rest with the negative slope to correctly identifying both the horizontal section as stillness and the downward slope as movement toward home.",
+    "justification_pass2": "The teacher exemplifies the constructive strategy by starting from the student's existing understanding (the horizontal section), breaking down the problem into manageable steps (first confirming the horizontal section, then addressing the downward slope), and scaffolding within the student's ZPD by building progressively on what they already know rather than providing direct answers.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 4,\n  \"R2\": 3,\n  \"R3\": 4,\n  \"R4\": 5,\n  \"R5\": 5,\n  \"brief_justification\": \"The teacher effectively addresses the specific misconception by guiding the student to recognize that horizontal lines represent rest (not negative slopes), and the student demonstrates clear progress from confusing rest with the negative slope to correctly identifying both the horizontal section as stillness and the downward slope as movement toward home.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\n  \"R6\": 5,\n  \"brief_justification\": \"The teacher exemplifies the constructive strategy by starting from the student's existing understanding (the horizontal section), breaking down the problem into manageable steps (first confirming the horizontal section, then addressing the downward slope), and scaffolding within the student's ZPD by building progressively on what they already know rather than providing direct answers.\"\n}\n```",
+    "quality_composite": 3.6666666666666665,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T17:35:11.379592+00:00"
+}

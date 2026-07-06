@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_20",
+    "misconception_label": "Adds when calculating volume instead of multiplying",
+    "misconception_features": [
+      0.0,
+      20.0,
+      1.0,
+      58.0
+    ],
+    "persona": "constructive",
+    "architecture": "pure_cbr_llm",
+    "student_leg": "leg_b",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T17:03:06.961188Z",
+      "seed": 1056,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T17:03:11.560814Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: The volume of this cuboid is \\( 30 \\mathrm{~cm}^{3} \\) What length should replace the star? ![A cuboid, depth 2cm and height 3cm. The width is labelled with a star.](). I got \\( 25 \\mathrm{~cm} \\) because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "It looks like you may be adding instead of multiplying when calculating the volume of the cuboid. Let's walk through the reasoning together to find the correct answer. Can you explain how you approached finding the volume of the cuboid?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Um, yeah... I think I added the numbers together? So I did 2 + 3 + 30 and got 35, then... I'm not really sure how I got 25 actually. But you said I should multiply instead - so should I do 2 \u00d7 3 \u00d7 something to get 30?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "It seems like you may have added the dimensions together instead of multiplying them to find the volume. Let's focus on multiplying the dimensions together to calculate the correct volume of the cuboid. Can you try multiplying 2 \u00d7 3 \u00d7 something to find the volume?",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "Yeah, okay... so if I do 2 \u00d7 3, that's 6, and then I need to multiply that by something to get 30? So would it be 6 \u00d7 5 = 30? Is that right?",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 4,
+    "R2": 3,
+    "R3": 3,
+    "R4": 5,
+    "R5": 4,
+    "R6": 3,
+    "justification_pass1": "The teacher explicitly identifies and addresses the addition misconception, the mathematics is correct, and the student successfully transitions from adding to multiplying to find the missing dimension, though the teacher could have pushed for deeper conceptual understanding rather than procedural correction.",
+    "justification_pass2": "The teacher does break the problem into steps and provides scaffolding by guiding the student toward multiplication, but repeats nearly identical prompts without adjusting support level based on the student's clear progress in Turn 2, missing an opportunity to provide differentiated scaffolding within the ZPD.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 4,\n  \"R2\": 3,\n  \"R3\": 3,\n  \"R4\": 5,\n  \"R5\": 4,\n  \"brief_justification\": \"The teacher explicitly identifies and addresses the addition misconception, the mathematics is correct, and the student successfully transitions from adding to multiplying to find the missing dimension, though the teacher could have pushed for deeper conceptual understanding rather than procedural correction.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 3, \"brief_justification\": \"The teacher does break the problem into steps and provides scaffolding by guiding the student toward multiplication, but repeats nearly identical prompts without adjusting support level based on the student's clear progress in Turn 2, missing an opportunity to provide differentiated scaffolding within the ZPD.\"}\n```",
+    "quality_composite": 3.3333333333333335,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T17:03:18.716007+00:00"
+}

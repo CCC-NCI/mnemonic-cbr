@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_23",
+    "misconception_label": "Confuses rest and movement on a distance time graph",
+    "misconception_features": [
+      0.0,
+      23.0,
+      3.0,
+      62.0
+    ],
+    "persona": "rule_based",
+    "architecture": "pure_ai",
+    "student_leg": "leg_a",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T17:40:12.125814Z",
+      "seed": 1229,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T17:40:17.073071Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: This graph shows how far Fido the dog is from his home. What might the negative-sloping section represent? ![A graph with time (secs) on the horizontal axis and distance (m) on the vertical axis. The graph starts at the origin, travels in a straight line up and right, travels horizontally, then travels in a straight line down and right back to the x-axis. ](). I got Fido has fallen asleep because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "The negative-sloping section of the graph represents Fido moving away from his home. Remember, on a distance-time graph, a downward slope indicates movement away from the starting point. Keep in mind the direction of the slope when interpreting the graph.",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Okay, I think I get it a bit better now. So, the negative slope means Fido is moving back towards home, not falling asleep. But why does it go down instead of just staying flat if he\u2019s moving?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "The negative slope on the graph indicates that Fido is moving away from his home, not towards it. When the slope is downward, it means that the distance from the starting point is decreasing, showing movement in the opposite direction. Remember to consider the direction of the slope when interpreting the graph.",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "Okay, I think I understand that the negative slope means Fido is getting closer to home, but I'm still a bit confused. If he\u2019s moving back towards home, why does the line go down instead of just staying flat? Does that mean he\u2019s actually moving?",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 1,
+    "R2": 1,
+    "R3": 1,
+    "R4": 1,
+    "R5": 1,
+    "R6": 2,
+    "justification_pass1": "The teacher provides mathematically incorrect information (claiming negative slope means moving away when it means returning home), fails to address the student's core confusion about rest versus movement, and the student remains confused throughout with no improvement in understanding.",
+    "justification_pass2": "While the teacher attempts to state explicit rules about graph interpretation, the explanations are confusing and contradictory (claiming negative slope means moving away in turns 1 and 3, when it actually means returning home), lacking the clear procedural steps and accurate corrective feedback characteristic of rule-based instruction.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 1,\n  \"R2\": 1,\n  \"R3\": 1,\n  \"R4\": 1,\n  \"R5\": 1,\n  \"brief_justification\": \"The teacher provides mathematically incorrect information (claiming negative slope means moving away when it means returning home), fails to address the student's core confusion about rest versus movement, and the student remains confused throughout with no improvement in understanding.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 2, \"brief_justification\": \"While the teacher attempts to state explicit rules about graph interpretation, the explanations are confusing and contradictory (claiming negative slope means moving away in turns 1 and 3, when it actually means returning home), lacking the clear procedural steps and accurate corrective feedback characteristic of rule-based instruction.\"}\n```",
+    "quality_composite": 1.0,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T17:40:24.773704+00:00"
+}

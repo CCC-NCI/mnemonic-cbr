@@ -1,0 +1,66 @@
+{
+  "state": {
+    "case_id": "case_22",
+    "misconception_label": "Does not realise that adding a larger number gives a larger answer",
+    "misconception_features": [
+      0.0,
+      22.0,
+      2.0,
+      98.0
+    ],
+    "persona": "experiential",
+    "architecture": "baseline",
+    "student_leg": "leg_b",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T11:44:13.364761Z",
+      "seed": 1164,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-12T11:44:18.062191Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: Tom and Katie are discussing related calculations Tom says if you know that \\( 3748+426=4174 \\), then \\( 3748+427 \\) must equal \\( \\mathbf{4 1 7 5} \\) Katie says if you know that \\( 3748-426=3322 \\), then \\( 3748 \\) - \\( 427 \\) must equal \\( \\mathbf{3 3 2 3} \\) Who is correct? I got Only Katie because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Imagine you were playing with a set of blocks. If you have 3748 blocks and add 426 more, you would end up with 4174 blocks. What would happen if you added 427 blocks instead?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Oh right, so if I add one more block, I'd have one more block at the end, so it would be 4175 instead of 4174. So Tom would be correct then? But I'm still confused about Katie's one - does the same thing happen when you're taking away blocks?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Imagine you were playing with a set of blocks again. If you start with 3748 blocks and take away 426, you would end up with 3322 blocks. What would happen if you took away 427 blocks instead?",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 4,
+    "R2": 3,
+    "R3": 4,
+    "R4": 5,
+    "R5": 4,
+    "R6": 5,
+    "justification_pass1": "The teacher effectively uses concrete analogies to address the misconception about how changing addends/subtrahends affects results, and the student demonstrates clear progress by correctly reasoning about addition and beginning to extend that reasoning to subtraction.",
+    "justification_pass2": "The teacher consistently grounds the abstract arithmetic operations in the concrete, everyday analogy of adding and removing blocks, making both explanations experiential and accessible.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\"R1\": 4, \"R2\": 3, \"R3\": 4, \"R4\": 5, \"R5\": 4, \"brief_justification\": \"The teacher effectively uses concrete analogies to address the misconception about how changing addends/subtrahends affects results, and the student demonstrates clear progress by correctly reasoning about addition and beginning to extend that reasoning to subtraction.\"}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 5, \"brief_justification\": \"The teacher consistently grounds the abstract arithmetic operations in the concrete, everyday analogy of adding and removing blocks, making both explanations experiential and accessible.\"}\n```",
+    "quality_composite": 3.6666666666666665,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T11:44:24.706728+00:00"
+}

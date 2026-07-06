@@ -1,0 +1,66 @@
+{
+  "state": {
+    "case_id": "case_16",
+    "misconception_label": "Divides total amount by each side of the ratio instead of dividing by the sum of the parts",
+    "misconception_features": [
+      0.0,
+      16.0,
+      3.0,
+      83.0
+    ],
+    "persona": "traditional",
+    "architecture": "pure_cbr_tpl",
+    "student_leg": "leg_a",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T10:50:47.932333Z",
+      "seed": 887,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-12T10:50:49.356545Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: In the diagram, AN : NB \\( =3: 5 \\) What is the distance AN? ![A line that begins with point A, ends with point B, and has point N in between. The entire length of the line measures 48 m.](). I got \\( 16 \\mathrm{~m} \\) because I added the parts of the ratio as if they were a total.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's think about this. From similar cases:\n  1. Topic: Given information about one part, work out the whole. Correct answer (B): \\( 98 \\). Student selected: \\( 72 \\). Underlying misconception: Thinks the number in the ratio is the total. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.\n  2. Topic: Given information about the relationship between two parts (e.g. one part is worth 5 more than another), work out the whole. Correct answer (C): \\( \u00a3 252 \\). Student selected: \\( \u00a3 112 \\). Underlying misconception: In ratio question where the difference between the sides is given, uses that as the total for one side instead. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.\n  3. Topic: Given information about the relationship between two parts (e.g. one part is worth 5 more than another), work out other parts. Correct answer (B): \\( 72 \\). Student selected: \\( 96 \\). Underlying misconception: In ratio question where the difference between the sides is given, uses that as the total for one side instead. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "I see what you're saying, but I'm still a bit confused. So, if the ratio is 3:5, I shouldn't just add those numbers together to get 8 and then divide 48 by 8, right? How do I actually use the ratio to find AN?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's think about this. From similar cases:\n  1. Topic: Given information about one part, work out the whole. Correct answer (B): \\( 98 \\). Student selected: \\( 72 \\). Underlying misconception: Thinks the number in the ratio is the total. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.\n  2. Topic: Given information about the relationship between two parts (e.g. one part is worth 5 more than another), work out the whole. Correct answer (C): \\( \u00a3 252 \\). Student selected: \\( \u00a3 112 \\). Underlying misconception: In ratio question where the difference between the sides is given, uses that as the total for one side instead. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.\n  3. Topic: Given information about the relationship between two parts (e.g. one part is worth 5 more than another), work out other parts. Correct answer (B): \\( 72 \\). Student selected: \\( 96 \\). Underlying misconception: In ratio question where the difference between the sides is given, uses that as the total for one side instead. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 1,
+    "R2": 1,
+    "R3": 1,
+    "R4": 1,
+    "R5": 1,
+    "R6": 1,
+    "justification_pass1": "The teacher provides only generic, irrelevant examples from unrelated problems without addressing the student's specific misconception about dividing by parts versus sum, and the student explicitly states continued confusion with no improvement in understanding.",
+    "justification_pass2": "The teacher never provides direct explanation, worked examples, or clear instruction; instead, they repeatedly paste irrelevant similar cases without addressing the student's specific question about how to use the ratio.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 1,\n  \"R2\": 1,\n  \"R3\": 1,\n  \"R4\": 1,\n  \"R5\": 1,\n  \"brief_justification\": \"The teacher provides only generic, irrelevant examples from unrelated problems without addressing the student's specific misconception about dividing by parts versus sum, and the student explicitly states continued confusion with no improvement in understanding.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 1, \"brief_justification\": \"The teacher never provides direct explanation, worked examples, or clear instruction; instead, they repeatedly paste irrelevant similar cases without addressing the student's specific question about how to use the ratio.\"}\n```",
+    "quality_composite": 1.0,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T10:50:55.770220+00:00"
+}

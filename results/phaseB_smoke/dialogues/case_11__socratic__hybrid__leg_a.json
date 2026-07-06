@@ -1,0 +1,66 @@
+{
+  "state": {
+    "case_id": "case_11",
+    "misconception_label": "Struggles to visualise nets of 3D shapes",
+    "misconception_features": [
+      0.0,
+      11.0,
+      3.0,
+      31.0
+    ],
+    "persona": "socratic",
+    "architecture": "hybrid",
+    "student_leg": "leg_a",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T09:57:35.830103Z",
+      "seed": 601,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-12T09:57:41.111121Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: This is the net of a... ![A circle touching a sector](). I got Triangle because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's think about the properties of a triangle and how they relate to the net you've drawn. Can you identify the number of vertices and edges a triangle has, and how that connects to the net you've sketched?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Um, I think a triangle has 3 vertices and 3 edges, right? But the net I drew has a circle and a sector, so I guess that doesn't really match up. I'm still confused about how to tell what shape the net actually makes. Can you help me see that better?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's focus on the key features of a net and how they correspond to the 3D shape it represents. How do the vertices and edges of the net relate to the vertices and edges of the 3D shape? Let's explore this connection further to clarify the relationship between the net and the shape it forms.",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 3,
+    "R3": 1,
+    "R4": 2,
+    "R5": 1,
+    "R6": 4,
+    "justification_pass1": "The teacher repeatedly asks about vertices and edges without acknowledging that a circle-and-sector net (forming a cone) has fundamentally different properties than polyhedra, mismatching the scaffold to the student's actual confusion about curved surfaces, and the student shows no progress by the end.",
+    "justification_pass2": "The teacher consistently uses probing questions to guide the student's thinking without directly revealing the answer (cone), though they could have employed a counterexample when the student incorrectly suggested triangle to more strongly expose the flawed reasoning.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\"R1\": 2, \"R2\": 3, \"R3\": 1, \"R4\": 2, \"R5\": 1, \"brief_justification\": \"The teacher repeatedly asks about vertices and edges without acknowledging that a circle-and-sector net (forming a cone) has fundamentally different properties than polyhedra, mismatching the scaffold to the student's actual confusion about curved surfaces, and the student shows no progress by the end.\"}\n```",
+    "pass2_raw_text": "```json\n{\n  \"R6\": 4,\n  \"brief_justification\": \"The teacher consistently uses probing questions to guide the student's thinking without directly revealing the answer (cone), though they could have employed a counterexample when the student incorrectly suggested triangle to more strongly expose the flawed reasoning.\"\n}\n```",
+    "quality_composite": 2.0,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T09:57:48.162791+00:00"
+}

@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_11",
+    "misconception_label": "Struggles to visualise nets of 3D shapes",
+    "misconception_features": [
+      0.0,
+      11.0,
+      3.0,
+      31.0
+    ],
+    "persona": "rule_based",
+    "architecture": "pure_cbr_llm",
+    "student_leg": "leg_b",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T15:31:28.035719Z",
+      "seed": 626,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T15:31:34.743963Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: This is the net of a... ![A circle touching a sector](). I got Triangle because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "You selected \"Triangle\" as the net of a 3D shape, but the correct answer is \"Triangular-based pyramid\". Remember, the net shows how the 3D shape unfolds into a 2D shape. Let's walk through the reasoning together to find the correct answer.",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Oh right, so the net *unfolds* into a 3D shape - I think I was just looking at the shapes I could see instead of imagining how they'd fold up. So if there's a circle and a sector, when they fold together they make a triangular-based pyramid? I'm still a bit confused about how the circle part works though - wouldn't that make it round?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "The circle in the net of a triangular-based pyramid represents the base of the pyramid when it is folded up. Remember, the net shows how the 3D shape unfolds into a 2D shape, so it may look different from the final 3D shape. Keep practicing visualizing how the net folds to help you better understand 3D shapes.",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "Wait, but I'm still confused - a triangular-based pyramid has a triangle as the base, not a circle, right? So how does the circle become a triangle when it folds up? Is the circle actually meant to be a triangle in the net, or does it actually turn into a triangle somehow?",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 1,
+    "R3": 2,
+    "R4": 1,
+    "R5": 1,
+    "R6": 2,
+    "justification_pass1": "The teacher provides mathematically incorrect information (claiming a circle is the base of a triangular-based pyramid), fails to engage with the student's valid confusion, and the student becomes more confused rather than improving their understanding.",
+    "justification_pass2": "The teacher provides direct corrective feedback but fails to state explicit procedures or show worked steps for visualizing how nets fold into 3D shapes, and notably gives incorrect information (claiming a circle is part of a triangular pyramid's net, which is geometrically wrong).",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 1,\n  \"R3\": 2,\n  \"R4\": 1,\n  \"R5\": 1,\n  \"brief_justification\": \"The teacher provides mathematically incorrect information (claiming a circle is the base of a triangular-based pyramid), fails to engage with the student's valid confusion, and the student becomes more confused rather than improving their understanding.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 2, \"brief_justification\": \"The teacher provides direct corrective feedback but fails to state explicit procedures or show worked steps for visualizing how nets fold into 3D shapes, and notably gives incorrect information (claiming a circle is part of a triangular pyramid's net, which is geometrically wrong).\"}\n```",
+    "quality_composite": 1.6666666666666667,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T15:31:42.321728+00:00"
+}

@@ -1,0 +1,65 @@
+{
+  "state": {
+    "case_id": "case_2",
+    "misconception_label": "Believes if you changed all values by the same proportion the range would not change",
+    "misconception_features": [
+      0.0,
+      2.0,
+      3.0,
+      39.0
+    ],
+    "persona": "traditional",
+    "architecture": "pure_cbr_tpl",
+    "student_leg": "leg_b",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T06:54:48.243374Z",
+      "seed": 188,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "ended_at": "2026-05-12T06:54:49.961102Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: Tom and Katie are discussing the \\( 5 \\) plants with these heights: \\( 24 \\mathrm{~cm}, 17 \\mathrm{~cm}, 42 \\mathrm{~cm}, 26 \\mathrm{~cm}, 13 \\mathrm{~cm} \\) Tom says if all the plants were cut in half, the range wouldn't change. Katie says if all the plants grew by \\( 3 \\mathrm{~cm} \\) each, the range wouldn't change. Who do you agree with? I got Only\nTom because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's think about this. From similar cases:\n  1. Topic: Calculate the range from a list of data. Correct answer (C): Add all the numbers together.. Student selected: Check the units of your answer. Underlying misconception: Believes range does not need units. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.\n  2. Topic: Compare sets of data using the range. Correct answer (A): The girls because their range is lower. Student selected: The boys because their mean is lower. Underlying misconception: Thinks a lower average means the data is more consistent. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.\n  3. Topic: Given information about one part, work out other parts. Correct answer (D): \\( 1600 \\ \\mathrm{ml} \\). Student selected: \\( 1201 \\ \\mathrm{ml} \\). Underlying misconception: Thinks a difference of one part in a ratio means the quantities will differ by one unit. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Oh right, so you're saying I need to actually work out what the range is in both cases? Like, I need to find the difference between the biggest and smallest plant for each scenario? I think I just assumed that adding the same amount wouldn't change it, but I'm not really sure how to check if that's right...",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's think about this. From similar cases:\n  1. Topic: Calculate the range from a list of data. Correct answer (C): Add all the numbers together.. Student selected: Check the units of your answer. Underlying misconception: Believes range does not need units. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.\n  2. Topic: Compare sets of data using the range. Correct answer (A): The girls because their range is lower. Student selected: The boys because their mean is lower. Underlying misconception: Thinks a lower average means the data is more consistent. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.\n  3. Topic: Given information about one part, work out other parts. Correct answer (D): \\( 1600 \\ \\mathrm{ml} \\). Student selected: \\( 1201 \\ \\mathrm{ml} \\). Underlying misconception: Thinks a difference of one part in a ratio means the quantities will differ by one unit. Intervention focus: surface why the selected answer is wrong and walk through the reasoning that leads to the correct answer.",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 1,
+    "R2": 1,
+    "R3": 1,
+    "R4": 1,
+    "R5": 1,
+    "R6": 1,
+    "justification_pass1": "The teacher merely repeats irrelevant examples from unrelated misconceptions without addressing the student's actual confusion about proportional versus additive changes to range, providing no meaningful engagement, scaffolding, or progression.",
+    "justification_pass2": "The teacher repeatedly provides irrelevant, templated responses about unrelated misconceptions instead of directly explaining how to calculate range or providing worked examples for the actual problem about plant heights.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 1,\n  \"R2\": 1,\n  \"R3\": 1,\n  \"R4\": 1,\n  \"R5\": 1,\n  \"brief_justification\": \"The teacher merely repeats irrelevant examples from unrelated misconceptions without addressing the student's actual confusion about proportional versus additive changes to range, providing no meaningful engagement, scaffolding, or progression.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 1, \"brief_justification\": \"The teacher repeatedly provides irrelevant, templated responses about unrelated misconceptions instead of directly explaining how to calculate range or providing worked examples for the actual problem about plant heights.\"}\n```",
+    "quality_composite": 1.0,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T06:54:57.385043+00:00"
+}

@@ -1,0 +1,66 @@
+{
+  "state": {
+    "case_id": "case_23",
+    "misconception_label": "Confuses rest and movement on a distance time graph",
+    "misconception_features": [
+      0.0,
+      23.0,
+      3.0,
+      62.0
+    ],
+    "persona": "experiential",
+    "architecture": "baseline",
+    "student_leg": "leg_a",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T11:53:44.742225Z",
+      "seed": 1213,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-12T11:53:48.630179Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: This graph shows how far Fido the dog is from his home. What might the negative-sloping section represent? ![A graph with time (secs) on the horizontal axis and distance (m) on the vertical axis. The graph starts at the origin, travels in a straight line up and right, travels horizontally, then travels in a straight line down and right back to the x-axis. ](). I got Fido has fallen asleep because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's think about it in terms of someone walking back home from school. If they start moving away from home, the distance from home increases, but when they turn around and start walking back, the distance from home decreases. Would your method still make sense in this situation?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "I think I get what you're saying. So, when someone is walking back home, the distance gets smaller, which is like the negative slope on the graph? But if Fido is falling asleep, wouldn't he just stay at the same distance? I'm still a bit confused about how to tell the difference between resting and moving back home.",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Imagine you were watching a friend walk back home from school. As they get closer to home, the distance decreases, just like the negative slope on the graph. Would your method still give the right answer in this situation?",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 4,
+    "R2": 3,
+    "R3": 2,
+    "R4": 5,
+    "R5": 3,
+    "R6": 5,
+    "justification_pass1": "The teacher effectively addresses the specific misconception by contrasting movement (negative slope) with rest (horizontal), and the student shows partial progress in Turn 2 by recognizing that rest means staying at the same distance, though Turn 3 repeats the same analogy without building on the student's emerging understanding.",
+    "justification_pass2": "The teacher consistently uses concrete, everyday analogies (walking home from school, watching a friend) to explain the abstract concept of negative slope representing decreasing distance, which is a textbook example of the experiential strategy.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 4,\n  \"R2\": 3,\n  \"R3\": 2,\n  \"R4\": 5,\n  \"R5\": 3,\n  \"brief_justification\": \"The teacher effectively addresses the specific misconception by contrasting movement (negative slope) with rest (horizontal), and the student shows partial progress in Turn 2 by recognizing that rest means staying at the same distance, though Turn 3 repeats the same analogy without building on the student's emerging understanding.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 5, \"brief_justification\": \"The teacher consistently uses concrete, everyday analogies (walking home from school, watching a friend) to explain the abstract concept of negative slope representing decreasing distance, which is a textbook example of the experiential strategy.\"}\n```",
+    "quality_composite": 3.0,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T11:53:55.191486+00:00"
+}

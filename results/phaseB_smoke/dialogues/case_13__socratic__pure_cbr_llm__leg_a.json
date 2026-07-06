@@ -1,0 +1,66 @@
+{
+  "state": {
+    "case_id": "case_13",
+    "misconception_label": "Answers as if there are 100 minutes in an hour when changing from hours to minutes",
+    "misconception_features": [
+      0.0,
+      13.0,
+      1.0,
+      29.0
+    ],
+    "persona": "socratic",
+    "architecture": "pure_cbr_llm",
+    "student_leg": "leg_a",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T10:15:20.967698Z",
+      "seed": 695,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-12T10:15:26.472113Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: Hannah's journey to camp is \\( 3 \\) hours and \\( 16 \\) minutes. Tori's journey to camp is \\( 214 \\) minutes. What is the difference in their journeys in minutes? I got \\( 102 \\) minutes because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Why did you choose to convert hours to minutes as if there are 100 minutes in an hour? Can you explain your reasoning for this choice?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "I guess I thought that since there are 60 minutes in an hour, I could just treat it like a base-10 thing and say \\( 3 \\) hours is \\( 300 \\) minutes, but then I added the \\( 16 \\) minutes and got \\( 316 \\) minutes total. I\u2019m not really sure how to do it right, though. Should I be using \\( 60 \\) instead of \\( 100 \\) for the minutes?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Why do you think using \\( 60 \\) for minutes might lead to a more accurate conversion than \\( 100 \\)? Can you walk me through how you would convert \\( 3 \\) hours and \\( 16 \\) minutes into just minutes using \\( 60 \\) as the base?",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 4,
+    "R2": 4,
+    "R3": 3,
+    "R4": 5,
+    "R5": 4,
+    "R6": 4,
+    "justification_pass1": "The teacher directly addresses the 100-minutes misconception and maintains high cognitive demand through questioning, though the student self-corrects before the teacher provides much scaffolding, and by Turn 3 the student has already identified the correct approach (using 60) and only needs to execute it.",
+    "justification_pass2": "The teacher consistently uses probing questions to guide the student toward discovering the correct conversion method without directly providing the answer, though a counterexample could have strengthened the Socratic approach.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 4,\n  \"R2\": 4,\n  \"R3\": 3,\n  \"R4\": 5,\n  \"R5\": 4,\n  \"brief_justification\": \"The teacher directly addresses the 100-minutes misconception and maintains high cognitive demand through questioning, though the student self-corrects before the teacher provides much scaffolding, and by Turn 3 the student has already identified the correct approach (using 60) and only needs to execute it.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 4, \"brief_justification\": \"The teacher consistently uses probing questions to guide the student toward discovering the correct conversion method without directly providing the answer, though a counterexample could have strengthened the Socratic approach.\"}\n```",
+    "quality_composite": 3.6666666666666665,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T10:15:33.383795+00:00"
+}

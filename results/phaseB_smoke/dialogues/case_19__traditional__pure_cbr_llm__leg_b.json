@@ -1,0 +1,66 @@
+{
+  "state": {
+    "case_id": "case_19",
+    "misconception_label": "When subtracting fractions, subtracts the numerators and multiplies the denominators",
+    "misconception_features": [
+      0.0,
+      19.0,
+      3.0,
+      104.0
+    ],
+    "persona": "traditional",
+    "architecture": "pure_cbr_llm",
+    "student_leg": "leg_b",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T11:20:01.000249Z",
+      "seed": 1036,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-12T11:20:04.590374Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: Express the following as a single fraction, writing your answer as simply as possible: \\( \\frac{1}{s}-\\frac{t}{3} \\). I got \\( \\frac{1-t}{3 s} \\) because I treated the fractions like ordinary numbers.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "It seems like you may be subtracting the numerators and denominators when dealing with fractions. Let's walk through the correct process step by step. First, we need to find a common denominator before subtracting the fractions. Can you tell me what the common denominator should be in this case?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Um, so I need to find a common denominator first? I think it would be like... 3s? Because s and 3 are the denominators, so I multiply them together?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "That's correct! To add or subtract fractions, we need to make sure they have the same denominator. In this case, the common denominator is indeed 3s. Now, let's continue through the subtraction process step by step.",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 3,
+    "R2": 2,
+    "R3": 3,
+    "R4": 5,
+    "R5": 2,
+    "R6": 2,
+    "justification_pass1": "The teacher correctly identifies the misconception and provides accurate mathematics, but asks only procedural questions that don't require deep reasoning, and the student's final turn shows only procedural recall of finding common denominators without demonstrating understanding of why the original approach was wrong.",
+    "justification_pass2": "While the teacher does check understanding, they rely heavily on guided questioning rather than directly explaining the procedure with worked examples, which is the hallmark of traditional instruction.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 3,\n  \"R2\": 2,\n  \"R3\": 3,\n  \"R4\": 5,\n  \"R5\": 2,\n  \"brief_justification\": \"The teacher correctly identifies the misconception and provides accurate mathematics, but asks only procedural questions that don't require deep reasoning, and the student's final turn shows only procedural recall of finding common denominators without demonstrating understanding of why the original approach was wrong.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 2, \"brief_justification\": \"While the teacher does check understanding, they rely heavily on guided questioning rather than directly explaining the procedure with worked examples, which is the hallmark of traditional instruction.\"}\n```",
+    "quality_composite": 2.6666666666666665,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T11:20:14.163210+00:00"
+}

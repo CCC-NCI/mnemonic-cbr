@@ -1,0 +1,66 @@
+{
+  "state": {
+    "case_id": "case_20",
+    "misconception_label": "Adds when calculating volume instead of multiplying",
+    "misconception_features": [
+      0.0,
+      20.0,
+      1.0,
+      58.0
+    ],
+    "persona": "socratic",
+    "architecture": "hybrid",
+    "student_leg": "leg_a",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T11:22:53.361614Z",
+      "seed": 1051,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-12T11:22:56.874506Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: The volume of this cuboid is \\( 30 \\mathrm{~cm}^{3} \\) What length should replace the star? ![A cuboid, depth 2cm and height 3cm. The width is labelled with a star.](). I got \\( 25 \\mathrm{~cm} \\) because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "Why do you think you added the dimensions instead of multiplying them to find the volume? Can you walk me through your reasoning for arriving at \\( 25 \\mathrm{~cm} \\)?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "I thought I just needed to add the dimensions together because it seemed like I was combining all the sides of the cuboid. I guess I didn't really think about how volume works. So, if I need to multiply instead, does that mean I should be multiplying the depth, height, and the width? How does that actually give me the volume?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Why do you think multiplying the dimensions gives you the volume of the cuboid? Can you explain how adding the dimensions together might not accurately represent the total space inside the cuboid?",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 4,
+    "R2": 4,
+    "R3": 2,
+    "R4": 5,
+    "R5": 2,
+    "R6": 5,
+    "justification_pass1": "The teacher directly addresses the adding vs. multiplying misconception and maintains high cognitive demand through questioning, but the scaffolding is insufficient as the student explicitly asks for conceptual help in Turn 2 yet receives only more questions, and by Turn 3 the student shows no visible progress in understanding why multiplication is appropriate for volume.",
+    "justification_pass2": "The teacher consistently uses probing questions to guide the student's thinking without giving direct answers, asking the student to explain their reasoning and consider why their approach might be flawed, which is a textbook example of the Socratic method.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 4,\n  \"R2\": 4,\n  \"R3\": 2,\n  \"R4\": 5,\n  \"R5\": 2,\n  \"brief_justification\": \"The teacher directly addresses the adding vs. multiplying misconception and maintains high cognitive demand through questioning, but the scaffolding is insufficient as the student explicitly asks for conceptual help in Turn 2 yet receives only more questions, and by Turn 3 the student shows no visible progress in understanding why multiplication is appropriate for volume.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 5, \"brief_justification\": \"The teacher consistently uses probing questions to guide the student's thinking without giving direct answers, asking the student to explain their reasoning and consider why their approach might be flawed, which is a textbook example of the Socratic method.\"}\n```",
+    "quality_composite": 3.3333333333333335,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T11:23:03.681090+00:00"
+}

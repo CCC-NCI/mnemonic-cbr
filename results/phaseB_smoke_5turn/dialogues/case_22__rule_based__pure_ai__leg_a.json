@@ -1,0 +1,71 @@
+{
+  "state": {
+    "case_id": "case_22",
+    "misconception_label": "Does not realise that adding a larger number gives a larger answer",
+    "misconception_features": [
+      0.0,
+      22.0,
+      2.0,
+      98.0
+    ],
+    "persona": "rule_based",
+    "architecture": "pure_ai",
+    "student_leg": "leg_a",
+    "max_turns": 5,
+    "metadata": {
+      "started_at": "2026-05-17T17:29:37.764844Z",
+      "seed": 1179,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-17T17:29:42.770850Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: Tom and Katie are discussing related calculations Tom says if you know that \\( 3748+426=4174 \\), then \\( 3748+427 \\) must equal \\( \\mathbf{4 1 7 5} \\) Katie says if you know that \\( 3748-426=3322 \\), then \\( 3748 \\) - \\( 427 \\) must equal \\( \\mathbf{3 3 2 3} \\) Who is correct? I got Only Katie because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "You are correct in your reasoning that adding a larger number gives a larger answer. However, in your calculations, you made an error. Let's focus on the step where you subtracted 427 from 3748. Remember, when subtracting, you need to borrow from the next digit if necessary. Keep practicing this concept to reinforce the correct algorithm.",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Okay, I think I get that adding a bigger number should give a bigger answer, but I'm still confused about how to subtract correctly. Can you help me understand how to borrow from the next digit when I'm subtracting? I thought I was doing it right, but maybe I missed something.",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "You're on the right track in recognizing the importance of borrowing when subtracting. To correctly subtract 427 from 3748, start by borrowing from the next digit when needed. Let's walk through the steps together to ensure you understand the process.",
+        "turn_index": 3
+      },
+      {
+        "speaker": "student",
+        "text": "Okay, so if I\u2019m subtracting 427 from 3748, I think I need to look at each digit and see if I can take away the number without going negative, right? Like, if I can\u2019t take away from a digit, I have to borrow from the next one? Can you show me how to do that step by step? I'm still a bit confused about when to borrow.",
+        "turn_index": 4
+      }
+    ]
+  },
+  "score": {
+    "R1": 1,
+    "R2": 1,
+    "R3": 1,
+    "R4": 1,
+    "R5": 1,
+    "R6": 2,
+    "justification_pass1": "The teacher misidentifies the student's correct reasoning about addition as an error, incorrectly focuses on subtraction borrowing when the student was right about Katie, and provides mathematically inaccurate feedback that confuses rather than clarifies the misconception.",
+    "justification_pass2": "While the teacher mentions the borrowing procedure and references 'the correct algorithm,' they never actually show the worked steps or state the explicit procedure, instead repeatedly deferring with phrases like 'let's walk through the steps' without doing so.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 1,\n  \"R2\": 1,\n  \"R3\": 1,\n  \"R4\": 1,\n  \"R5\": 1,\n  \"brief_justification\": \"The teacher misidentifies the student's correct reasoning about addition as an error, incorrectly focuses on subtraction borrowing when the student was right about Katie, and provides mathematically inaccurate feedback that confuses rather than clarifies the misconception.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 2, \"brief_justification\": \"While the teacher mentions the borrowing procedure and references 'the correct algorithm,' they never actually show the worked steps or state the explicit procedure, instead repeatedly deferring with phrases like 'let's walk through the steps' without doing so.\"}\n```",
+    "quality_composite": 1.0,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-17T17:29:49.929100+00:00"
+}

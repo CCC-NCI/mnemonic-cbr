@@ -1,0 +1,65 @@
+{
+  "state": {
+    "case_id": "case_0",
+    "misconception_label": "Confuses the order of operations, believes addition comes before multiplication",
+    "misconception_features": [
+      0.0,
+      0.0,
+      1.0,
+      70.0
+    ],
+    "persona": "constructive",
+    "architecture": "pure_cbr_llm",
+    "student_leg": "leg_a",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T06:20:34.201026Z",
+      "seed": 55,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "ended_at": "2026-05-12T06:20:42.580025Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: \\[ 3 \\times 2+4-5 \\] Where do the brackets need to go to make the answer equal \\( 13 \\) ? I got Does not need brackets because I worked left to right instead of following the order of operations.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "It seems like you may be confusing the order of operations. Let's focus on using the correct order to solve this problem. Can you identify which operation should be done first in the expression \\( 3 \\times 2+4-5 \\) to get the correct answer of \\( 13 \\)?",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "I think multiplication should be done first, but I still don\u2019t get how to make it equal \\( 13 \\). If I do \\( 3 \\times 2 \\) first, I get \\( 6 \\), and then I add \\( 4 \\) to get \\( 10 \\), and then subtract \\( 5 \\) to get \\( 5 \\). So, how do I get to \\( 13 \\) from that?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "It seems like you are on the right track by recognizing that multiplication should be done first. To move towards the correct answer of \\( 13 \\), consider the order of operations and think about how you can adjust the steps you took after multiplying \\( 3 \\times 2 \\). Keep in mind the correct sequence of operations to reach the desired result.",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 2,
+    "R2": 2,
+    "R3": 1,
+    "R4": 1,
+    "R5": 2,
+    "R6": 2,
+    "justification_pass1": "The teacher misunderstands the problem (which asks where to place brackets to make the expression equal 13, not to evaluate it using standard order), provides vague guidance that doesn't help the student understand bracket placement, and the student remains confused by Turn 3 despite correctly applying order of operations in Turn 2.",
+    "justification_pass2": "The teacher identifies the student's confusion and attempts to guide them, but fails to break down the problem into manageable steps or provide scaffolding adjusted to the student's actual struggle (finding where to place brackets), instead offering vague directives to 'consider the order of operations' without concrete support.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 2,\n  \"R2\": 2,\n  \"R3\": 1,\n  \"R4\": 1,\n  \"R5\": 2,\n  \"brief_justification\": \"The teacher misunderstands the problem (which asks where to place brackets to make the expression equal 13, not to evaluate it using standard order), provides vague guidance that doesn't help the student understand bracket placement, and the student remains confused by Turn 3 despite correctly applying order of operations in Turn 2.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 2, \"brief_justification\": \"The teacher identifies the student's confusion and attempts to guide them, but fails to break down the problem into manageable steps or provide scaffolding adjusted to the student's actual struggle (finding where to place brackets), instead offering vague directives to 'consider the order of operations' without concrete support.\"}\n```",
+    "quality_composite": 1.6666666666666667,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T06:20:50.578529+00:00"
+}

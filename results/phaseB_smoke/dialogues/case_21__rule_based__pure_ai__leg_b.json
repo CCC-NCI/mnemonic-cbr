@@ -1,0 +1,66 @@
+{
+  "state": {
+    "case_id": "case_21",
+    "misconception_label": "When factorising a quadratic with a non-unit coefficient of x squared, believes that coefficient will be in front of both x terms in the factorised form",
+    "misconception_features": [
+      0.0,
+      21.0,
+      1.0,
+      74.0
+    ],
+    "persona": "rule_based",
+    "architecture": "pure_ai",
+    "student_leg": "leg_b",
+    "max_turns": 4,
+    "metadata": {
+      "started_at": "2026-05-12T11:37:42.796627Z",
+      "seed": 1130,
+      "teacher_temperature": 0.7,
+      "student_temperature": 0.3,
+      "k_retrieve": 3,
+      "student_mode": "pure_ai",
+      "ended_at": "2026-05-12T11:37:47.680845Z"
+    },
+    "turn_history": [
+      {
+        "speaker": "student",
+        "text": "I have: Step 1: Factorise the following expression \\( 3 x^{2}+5 x+2 \\). I got \\( (3 x+2)(3 x+1) \\) because I'm not sure I worked it out the right way.",
+        "turn_index": 0
+      },
+      {
+        "speaker": "teacher",
+        "text": "To factorise the expression \\( 3x^2+5x+2 \\), you need to find two numbers that multiply to \\( 3 \\times 2 = 6 \\) and add up to \\( 5 \\) (the coefficient of the middle term). The correct factorisation is \\( (3x+2)(x+1) \\). Remember, the coefficient of the x term does not go in front of both x terms in the factorised form.",
+        "turn_index": 1
+      },
+      {
+        "speaker": "student",
+        "text": "Oh right, so the 3 only goes in front of one of the x terms, not both? But how do I know which bracket gets the 3 and which one doesn't? Is it always the first one?",
+        "turn_index": 2
+      },
+      {
+        "speaker": "teacher",
+        "text": "Yes, that's correct. The coefficient of the x term only goes in front of one of the x terms in the factorised form. In this case, the 3 goes in front of the \\(x\\) term in the first bracket because it is the coefficient of the \\(x^2\\) term. The second bracket will just have \\(x+1\\). Remember, the goal is to factorise the expression by breaking it down into two separate binomials.",
+        "turn_index": 3
+      }
+    ]
+  },
+  "score": {
+    "R1": 3,
+    "R2": 1,
+    "R3": 2,
+    "R4": 2,
+    "R5": 1,
+    "R6": 5,
+    "justification_pass1": "The teacher identifies the misconception and provides the correct answer, but offers an inaccurate rule ('it's always the first one'), gives no opportunity for student reasoning, and the student's final turn shows they've adopted a procedural rule rather than understanding why the factorisation works.",
+    "justification_pass2": "The teacher consistently states explicit procedures (find two numbers that multiply to 6 and add to 5), provides direct corrective feedback on the procedural error (corrects the factorization from (3x+2)(3x+1) to (3x+2)(x+1)), and explains the rule about coefficient placement, which are all hallmarks of rule-based instruction.",
+    "judge_provider": "anthropic",
+    "judge_model": "claude-sonnet-4-5",
+    "pass1_error": "",
+    "pass2_error": "",
+    "pass1_raw_text": "```json\n{\n  \"R1\": 3,\n  \"R2\": 1,\n  \"R3\": 2,\n  \"R4\": 2,\n  \"R5\": 1,\n  \"brief_justification\": \"The teacher identifies the misconception and provides the correct answer, but offers an inaccurate rule ('it's always the first one'), gives no opportunity for student reasoning, and the student's final turn shows they've adopted a procedural rule rather than understanding why the factorisation works.\"\n}\n```",
+    "pass2_raw_text": "```json\n{\"R6\": 5, \"brief_justification\": \"The teacher consistently states explicit procedures (find two numbers that multiply to 6 and add to 5), provides direct corrective feedback on the procedural error (corrects the factorization from (3x+2)(3x+1) to (3x+2)(x+1)), and explains the rule about coefficient placement, which are all hallmarks of rule-based instruction.\"}\n```",
+    "quality_composite": 2.0,
+    "is_complete": true
+  },
+  "written_at_utc": "2026-05-12T11:37:54.532420+00:00"
+}
