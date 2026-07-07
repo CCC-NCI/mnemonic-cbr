@@ -66,7 +66,7 @@ R5 mean by architecture (five turn, terminal reasoning state):
 | baseline       | 2.71    | 250 |
 | pure_cbr_tpl   | 2.12    | 250 |
 
-**The honest reading.** All four LLM-using architectures cluster within 0.14 points of one another and dominate the no-LLM template floor (`pure_cbr_tpl` at 2.12). Hybrid leads the next-best LLM architecture at Cohen's *d* = 0.09, which is trivial by Cohen (1988) conventions. What is clearly established is that any LLM-based tutor beats the template baseline; adding retrieval on top of an LLM gives only a small extra edge on R5. Architectural effects on the pedagogical quality items R1, R2, R3 are much larger (χ²(4) between 243.75 and 344.83 under the mixed model).
+All four LLM-using architectures cluster within 0.14 points of one another and dominate the no-LLM template floor (`pure_cbr_tpl` at 2.12). Hybrid leads the next-best LLM architecture at Cohen's *d* = 0.09, which is trivial by Cohen (1988) conventions. What is clearly established is that any LLM-based tutor beats the template baseline; adding retrieval on top of an LLM gives only a small extra edge on R5. Architectural effects on the pedagogical quality items R1, R2, R3 are much larger (χ²(4) between 243.75 and 344.83 under the mixed model).
 
 ### Inter-judge reliability (Check 2)
 
